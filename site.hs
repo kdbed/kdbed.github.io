@@ -7,7 +7,7 @@ import           Hakyll
 --------------------------------------------------------------------------------
 configuration :: Configuration
 configuration = defaultConfiguration
-    { destinationDirectory = "public"}
+    { destinationDirectory = "docs"}
 
 main :: IO ()
 main = hakyllWith configuration $ do
