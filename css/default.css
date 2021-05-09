@@ -16,7 +16,7 @@ html {
 body {
     color: black;
     font-size: 20px;
-    margin: 80px auto 0px auto;
+    margin: 40px auto 0px auto;
 }
 
 header {
@@ -80,7 +80,7 @@ footer {
     color: #999999;
     font-size: 22px;
     text-align: center;
-    height: 4em;
+    height: 2em;
     background-color: #323232;
     position: absolute;
     bottom: 0;
