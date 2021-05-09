@@ -5,7 +5,7 @@ title: Hello
 * The Basics
 ** Hello
 
-Test: $$\Sum i$$
+Test: $\Sigma i$
 Begin with a simple hello world program cite:kurt2018get:
 #+begin_src haskell -n :tangle hello.hs
 --hello.hs : first haskell file
