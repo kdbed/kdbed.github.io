@@ -2,7 +2,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 import           Data.Monoid (mappend)
 import           Hakyll
-import           import Text.Pandoc.Options
+import           Text.Pandoc.Options
 --------------------------------------------------------------------------------
 configuration :: Configuration
 configuration = defaultConfiguration
