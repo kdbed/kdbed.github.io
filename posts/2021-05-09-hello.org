@@ -1,17 +1,13 @@
-#+title: Hello
-#+hugo_base_dir: /home/kdb/Documents/github/owlglass
-#+hugo_auto_set_lastmod: t
-#+options: H:2
-#+HUGO_SECTION: computer-science/programming-languages/haskell
-#+hugo_weight: 1
-
+---
+title: Hello
+---
 
 * The Basics
 ** Hello
 
 Begin with a simple hello world program cite:kurt2018get:
-#+begin_src haskell -n -r :tangle hello.hs
---hello.hs : first haskell file                                                                                                                                 
+#+begin_src haskell -n :tangle hello.hs
+--hello.hs : first haskell file
 main = do
   print "Hello World!"
 #+end_src
@@ -19,12 +15,12 @@ main = do
 
 Compile the code by passing *hello.hs* to GHC as an argument:
 #+begin_src shell -n :exports both :results output verbatim
-ghc hello.hs                                                                                              
+ghc hello.hs
 #+end_src
 
 Thus GHC has created three files: *hello*, the binary executable, along with hello.hi and hello.o.  The binary can be executed from the command line:
 #+begin_src shell -n :exports both :results output verbatim
-./hello                                                                                                    
+./hello
 #+end_src
 
 ** Messy Main

@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Owlglass - 2021-05-09-hello</title>
+        <title>Owlglass - Hello</title>
         <link rel="stylesheet" href="../css/default.css" />
     </head>
     <body>
@@ -21,7 +21,7 @@
         </header>
 
         <main role="main">
-            <h1>2021-05-09-hello</h1>
+            <h1>Hello</h1>
             <article>
     <section class="header">
         Posted on May  9, 2021
@@ -29,16 +29,15 @@
     </section>
     <section>
         <h1 id="the-basics">The Basics</h1>
-<h2 id="hello-1">Hello</h2>
+<h2 id="hello">Hello</h2>
 <p>Begin with a simple hello world program <span class="citation" data-cites="kurt2018get">cite:kurt2018get</span>:</p>
-<pre><code>--hello.hs : first haskell file                                                                                                                                 
-main = do
-  print &quot;Hello World!&quot;
-</code></pre>
+<div class="sourceCode" id="cb1" data-startFrom data-tangle="hello.hs"><pre class="sourceCode numberSource haskell numberLines"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">--hello.hs : first haskell file</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>main <span class="ot">=</span> <span class="kw">do</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>  <span class="fu">print</span> <span class="st">&quot;Hello World!&quot;</span></span></code></pre></div>
 <p>Compile the code by passing <strong>hello.hs</strong> to GHC as an argument:</p>
-<div class="sourceCode" id="cb2" data-startFrom data-exports="both" data-results="output verbatim"><pre class="sourceCode numberSource shell numberLines"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1"></a>ghc hello.hs                                                                                              </span></code></pre></div>
+<div class="sourceCode" id="cb2" data-startFrom data-exports="both" data-results="output verbatim"><pre class="sourceCode numberSource shell numberLines"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1"></a>ghc hello.hs</span></code></pre></div>
 <p>Thus GHC has created three files: <strong>hello</strong>, the binary executable, along with hello.hi and hello.o. The binary can be executed from the command line:</p>
-<div class="sourceCode" id="cb3" data-startFrom data-exports="both" data-results="output verbatim"><pre class="sourceCode numberSource shell numberLines"><code class="sourceCode"><span id="cb3-1"><a href="#cb3-1"></a>./hello                                                                                                    </span></code></pre></div>
+<div class="sourceCode" id="cb3" data-startFrom data-exports="both" data-results="output verbatim"><pre class="sourceCode numberSource shell numberLines"><code class="sourceCode"><span id="cb3-1"><a href="#cb3-1"></a>./hello</span></code></pre></div>
 <h2 id="messy-main">Messy Main</h2>
 <p>To gain some intuition for the structure of Haskell programs, we introduce messyMain, which defies the good practice of writing modular code:</p>
 <div class="sourceCode" id="cb4" data-startFrom data-tangle="messyMain.hs"><pre class="sourceCode numberSource haskell numberLines"><code class="sourceCode haskell"><span id="cb4-1"><a href="#cb4-1"></a><span class="co">--messyMain.hs : an example to fix</span></span>
