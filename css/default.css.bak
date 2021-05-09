@@ -1,154 +1,60 @@
-html {
-  font-size: 62.5%;
-}
+@import "base.css";
+
 
 body {
-  font-size: 1.6rem;
-  color: #000;
+    color: black;
+    font-size: 16px;
+    margin: 0px auto 0px auto;
+    width: 600px;
 }
 
 header {
-  border-bottom: 0.2rem solid #000;
+    border-bottom: 2px solid black;
+    margin-bottom: 30px;
+    padding: 12px 0px 12px 0px;
 }
 
 nav {
-  text-align: right;
+    text-align: right;
 }
 
 nav a {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 footer {
-    color: #999999;
+    border-top: solid 2px black;
+    color: #555;
     font-size: 12px;
-    text-align: center;
-    height: 4em;
-    background-color: #323232;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    overflow: hidden;
-    padding-top: 1em;
-    font-family: 'Open Sans', sans-serif;
+    margin-top: 30px;
+    padding: 12px 0px 12px 0px;
+    text-align: right;
 }
-
-footer a {
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: none;
-}
-
 
 h1 {
-  font-size: 2.4rem;
+    font-size: 24px;
 }
 
 h2 {
-  font-size: 2rem;
+    font-size: 20px;
 }
 
 article .header {
-  font-size: 1.4rem;
-  font-style: italic;
-  color: #555;
+    color: #555;
+    font-size: 14px;
+    font-style: italic;
 }
 
 .logo a {
-  font-weight: bold;
-  color: #000;
-  text-decoration: none;
-}
-
-@media (max-width: 319px) {
-  body {
-    width: 90%;
-    margin: 0;
-    padding: 0 5%;
-  }
-  header {
-    margin: 4.2rem 0;
-  }
-  nav {
-    margin: 0 auto 3rem;
-    text-align: center;
-  }
-  footer {
-    text-align: center;
-  }
-  .logo {
-    text-align: center;
-    margin: 1rem auto 3rem;
-  }
-  .logo a {
-    font-size: 2.4rem;
-  }
-  nav a {
-    display: block;
-    line-height: 1.6;
-  }
-}
-
-@media (min-width: 320px) {
-  body {
-    width: 90%;
-    margin: 0;
-    padding: 0 5%;
-  }
-  header {
-    margin: 4.2rem 0;
-  }
-  nav {
-    margin: 0 auto 3rem;
-    text-align: center;
-  }
-  footer {
-    text-align: center;
-  }
-  .logo {
-    text-align: center;
-    margin: 1rem auto 3rem;
-  }
-  .logo a {
-    font-size: 2.4rem;
-  }
-  nav a {
-    display: inline;
-    margin: 0 0.6rem;
-  }
-}
-
-@media (min-width: 640px) {
-  body {
-    width: 60rem;
-    margin: 0 auto;
-    padding: 0;
-  }
-  header {
-    margin: 0 0 3rem;
-    padding: 1.2rem 0;
-  }
-  nav {
-    margin: 0;
-    text-align: right;
-  }
-  nav a {
-    margin: 0 0 0 1.2rem;
-    display: inline;
-  }
-  footer {
-    text-align: right;
-  }
-  .logo {
-    margin: 0;
-    text-align: left;
-  }
-  .logo a {
+    color: black;
     float: left;
-    font-size: 1.8rem;
-  }
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
 }
+
