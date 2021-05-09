@@ -15,8 +15,8 @@ html {
 
 body {
     color: black;
-    font-size: 16px;
-    margin: 40px auto 0px auto;
+    font-size: 20px;
+    margin: 80px auto 0px auto;
 }
 
 header {
@@ -29,7 +29,7 @@ div.logo a {
     color: #FFFFFF;
     float: left;
     font-family: 'Newsreader', serif;
-    font-size: 28px;
+    font-size: 38px;
     font-weight: bold;
     text-decoration: none;
 }
@@ -41,7 +41,7 @@ header nav {
 header nav a {
     color: #d1cddc!important;
     font-family: 'Newsreader',serif;
-    font-size: 14px;
+    font-size: 24px;
     font-weight: bold;
     margin-left: 12px;
     text-decoration: none;
@@ -53,14 +53,14 @@ header nav a:hover{
 }
 
 main {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
   margin-bottom: 5.5rem; /* footer-height + 1.5rem */
 }
 
 main h1{
   color: #6e618d;
-  font-size: 36px;
+  font-size: 46px;
   font-family: 'Newsreader',serif;
 }
 
@@ -68,7 +68,7 @@ main, /* this line for archives page */
 main p{
     color: #333333;
     font-family: 'Newsreader', serif;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 main a{
@@ -78,7 +78,7 @@ main a{
 
 footer {
     color: #999999;
-    font-size: 12px;
+    font-size: 22px;
     text-align: center;
     height: 4em;
     background-color: #323232;
@@ -98,7 +98,7 @@ footer a {
 
 section.header {
     color: #555;
-    font-size: 14px;
+    font-size: 20px;
     font-style: italic;
 }
 
