@@ -96,7 +96,7 @@ withTOC = defaultHakyllWriterOptions
         , writerTemplate        = Just tocTemplate
         }
 
-tocTemplate :: Text.Pandoc.Templates.Template Text
+tocTemplate :: Text.Pandoc.Templates.Template T.Text
 tocTemplate = either error id . runIdentity . compileTemplate "" $ T.unlines
   [ "<div class=\"toc\"><div class=\"header\">Table of Contents</div>"
   , "$toc$"
