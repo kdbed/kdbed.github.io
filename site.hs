@@ -4,6 +4,8 @@ import           Data.Monoid (mappend)
 import           Hakyll
 import           Text.Pandoc.Options
 import qualified Data.Text                     as T
+import           Text
+import           Text.Pandoc.Templates
 --------------------------------------------------------------------------------
 configuration :: Configuration
 configuration = defaultConfiguration
@@ -95,7 +97,7 @@ withTOC = defaultHakyllWriterOptions
         , writerTemplate        = Just tocTemplate
         }
 
-tocTemplate :: Template T.Text
+tocTemplate :: Template Text
 tocTemplate = either error id . runIdentity . compileTemplate "" $ T.unlines
   [ "<div class=\"toc\"><div class=\"header\">Table of Contents</div>"
   , "$toc$"
