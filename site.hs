@@ -3,6 +3,7 @@
 import           Data.Monoid (mappend)
 import           Hakyll
 import           Text.Pandoc.Options
+import qualified Data.Text                     as T
 --------------------------------------------------------------------------------
 configuration :: Configuration
 configuration = defaultConfiguration
