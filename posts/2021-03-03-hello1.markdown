@@ -1,9 +1,5 @@
 +++
 title = "Hello"
-author = ["svejk"]
-lastmod = 2021-05-10T23:10:30-04:00
-draft = false
-weight = 1
 +++
 
 <div class="ox-hugo-toc toc">
