@@ -26,7 +26,7 @@ main = hakyllWith configuration $ do
 
     match "posts/*" $ do
         route $ setExtension "html"
-        compile $ pandocMathCompiler
+        compile $ pandocMathCompilerWith defaultHakyllReaderOptions withTOC
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
@@ -85,3 +85,19 @@ pandocMathCompiler =
       }
   in pandocCompilerWith defaultHakyllReaderOptions writerOptions
 
+
+withTOC :: WriterOptions
+withTOC = defaultHakyllWriterOptions
+        { writerNumberSections  = True
+        , writerTableOfContents = True
+        , writerTOCDepth        = 2
+        , writerTemplate        = Just tocTemplate
+        }
+
+tocTemplate :: Template Text
+tocTemplate = either error id . runIdentity . compileTemplate "" $ T.unlines
+  [ "<div class=\"toc\"><div class=\"header\">Table of Contents</div>"
+  , "$toc$"
+  , "</div>"
+  , "$body$"
+  ]
