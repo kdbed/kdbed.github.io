@@ -3,8 +3,6 @@
 import           Data.Monoid (mappend)
 import           Hakyll
 import           Text.Pandoc.Options
-import qualified Data.Text                     as T
-import           Text.Pandoc.Templates
 --------------------------------------------------------------------------------
 configuration :: Configuration
 configuration = defaultConfiguration
@@ -28,7 +26,7 @@ main = hakyllWith configuration $ do
 
     match "posts/*" $ do
         route $ setExtension "html"
-        compile $ pandocMathCompilerWith defaultHakyllReaderOptions withTOC
+        compile $ pandocMathCompiler
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
@@ -88,18 +86,3 @@ pandocMathCompiler =
   in pandocCompilerWith defaultHakyllReaderOptions writerOptions
 
 
-withTOC :: WriterOptions
-withTOC = defaultHakyllWriterOptions
-        { writerNumberSections  = True
-        , writerTableOfContents = True
-        , writerTOCDepth        = 2
-        , writerTemplate        = Just tocTemplate
-        }
-
-tocTemplate :: Text.Pandoc.Templates.Template T.Text
-tocTemplate = either error id . runIdentity . compileTemplate "" $ T.unlines
-  [ "<div class=\"toc\"><div class=\"header\">Table of Contents</div>"
-  , "$toc$"
-  , "</div>"
-  , "$body$"
-  ]
