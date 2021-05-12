@@ -30,15 +30,12 @@
         
     </section>
     <section>
-        <h1 id="table-of-contents">Table of contents</h1>
-<p>{:toc}</p>
-<h1 id="the-basics">The Basics</h1>
+        <h1 id="the-basics">The Basics</h1>
 <h2 id="hello">Hello</h2>
 <p>Begin with a simple hello world program <span class="citation" data-cites="kurt2018get">cite:kurt2018get</span>:</p>
-<pre><code>--hello.hs : first haskell file
-main = do
-  print &quot;Hello World!&quot;
-</code></pre>
+<div class="sourceCode" id="cb1" data-startFrom data-tangle="hello.hs"><pre class="sourceCode numberSource haskell numberLines"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">--hello.hs : first haskell file</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>main <span class="ot">=</span> <span class="kw">do</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>  <span class="fu">print</span> <span class="st">&quot;Hello World!&quot;</span></span></code></pre></div>
 <p>Compile the code by passing <strong>hello.hs</strong> to GHC as an argument:</p>
 <div class="sourceCode" id="cb2" data-startFrom data-exports="both" data-results="output verbatim"><pre class="sourceCode numberSource shell numberLines"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1"></a>ghc hello.hs</span></code></pre></div>
 <p>Thus GHC has created three files: <strong>hello</strong>, the binary executable, along with hello.hi and hello.o. The binary can be executed from the command line:</p>

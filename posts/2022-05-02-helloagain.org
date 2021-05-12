@@ -1,14 +1,13 @@
 ---
 title : hello again
 ---
-* Table of contents
-{:toc}
+#+toc: headlines 2
 
 * The Basics
 ** Hello
 
 Begin with a simple hello world program cite:kurt2018get:
-#+begin_src haskell -n -r :tangle hello.hs
+#+begin_src haskell -n :tangle hello.hs
 --hello.hs : first haskell file
 main = do
   print "Hello World!"
