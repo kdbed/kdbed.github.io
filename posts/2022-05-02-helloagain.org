@@ -1,32 +1,45 @@
----
-title : Hello Again
----
-#+options: toc: 2
+#+title: Hello
+#+hugo_base_dir: /home/kdb/Documents/github/owlglass
+#+HUGO_SECTION: computer-science/programming-languages
+#+hugo_weight: 1
+#+options: toc 2
+
+* TOC
+:PROPERTIES:
+:TOC:      :include all :depth 2
+:END:
+:CONTENTS:
+- [[#toc][TOC]]
+- [[#the-basics][The Basics]]
+  - [[#hello][Hello]]
+  - [[#messy-main][Messy Main]]
+:END:
+
 
 * The Basics
 ** Hello
 
-Begin with a simple hello world program cite:kurt2018get:
-#+begin_src haskell -n :tangle hello.hs
---hello.hs : first haskell file
+Begin with a simple hello world program:
+#+begin_src haskell :tangle hello.hs
+-- hello.hs
 main = do
   print "Hello World!"
 #+end_src
 
 
 Compile the code by passing *hello.hs* to GHC as an argument:
-#+begin_src shell -n :exports both :results output verbatim
-ghc hello.hs
+#+begin_src shell :exports both :results output verbatim
+ghc hello.hs                                                                                              
 #+end_src
 
 Thus GHC has created three files: *hello*, the binary executable, along with hello.hi and hello.o.  The binary can be executed from the command line:
-#+begin_src shell -n :exports both :results output verbatim
-./hello
+#+begin_src shell :exports both :results output verbatim
+./hello                                                                                                    
 #+end_src
 
 ** Messy Main
 To gain some intuition for the structure of Haskell programs, we introduce messyMain, which defies the good practice of writing modular code:
-#+begin_src haskell -n :tangle messyMain.hs
+#+begin_src haskell :tangle messyMain.hs
 --messyMain.hs : an example to fix
 main :: IO()
 main = do
@@ -40,5 +53,3 @@ main = do
           "Thanks for buying " ++ title ++ "\nthanks, \n" ++
           author )
 #+end_src
-
-
