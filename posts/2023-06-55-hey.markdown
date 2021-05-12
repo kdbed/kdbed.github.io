@@ -1,7 +1,6 @@
 ---
 title = "Hello"
-author = ["svejk"]
-draft = false
+author = "svejk"
 ---
 
 <div class="ox-hugo-toc toc">
