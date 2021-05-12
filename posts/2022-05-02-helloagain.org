@@ -1,5 +1,5 @@
 ---
-title : hello again
+title : Hello Again
 ---
 #+options: toc: 2
 
