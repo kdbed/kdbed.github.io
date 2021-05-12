@@ -1,7 +1,7 @@
 ---
 title : hello again
 ---
-#+toc: headlines 2
+#+options: toc: 2
 
 * The Basics
 ** Hello
