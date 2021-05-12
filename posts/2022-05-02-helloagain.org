@@ -19,7 +19,7 @@
 * The Basics
 ** Hello
 
-$ \Sigma $
+$$ \Sigma $$
 Begin with a simple hello world program:
 #+begin_src haskell :tangle hello.hs
 -- hello.hs
