@@ -1,0 +1,44 @@
+#+title: Introduction
+#+SETUPFILE:/home/kdb/org-roam/hugo_setup.org
+#+HUGO_SECTION: computer-science/ai-ml
+#+hugo_weight: 5
+
+* Genetic Algorithms
+Genetic algorithms cite:sheppard2016genetic use random exploration of the problem space along with evolutionary processes, e.g., mutation and crossover, to improve guesses.  With no knowledge in the problem domain, they may aid in understanding the problem space and potential solutions. Here is an example for password guessing.  Start with a randomly-generated initial sequence of letters, then mutate one random letter at a time until the sequence is "Hello World!".
+
+Pseudocode:
+#+begin_example
+_letters = [a..zA..Z !]
+target = "Hello World!"
+guess = get 12 random letters from _letters
+while guess != target:
+    index = get random value from [0..length of target]
+    guess[index] = get 1 random value from _letters
+#+end_example
+There is a terrible inefficiency arising from the fact that this procedure has no way of telling if one guess is better than another; one can help it make an informed guess by telling it how many letters of the guess are in the correct locations.  This metric is the fitness value.
+
+#+begin_src python :tangle /home/kdb/Documents/gitstage/test.py :session test
+def f(x):
+    return x*x
+#+end_src
+
+#+RESULTS:
+
+#+begin_src python :results output :tangle yes :session test
+print(f(6))
+#+end_src
+
+#+RESULTS:
+: 36
+
+
+
+
+
+
+
+
+
+
+
+bibliography:../../refs.bib
