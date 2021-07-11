@@ -1,0 +1,152 @@
+#+TITLE: Fundamentals of Quantum Information Processing
+#+OPTIONS: toc:2
+
+
+* Brief Introduction to Classical Information Processing
+cite:Dr.MakhamisaSenekane9714
+
+#+begin_src python :results output verbatim :session session1 
+a = 3
+print(a)
+#+end_src
+
+#+RESULTS:
+: 3
+
+#+begin_src python :results output verbatim :session session1
+print(a) 
+#+end_src
+
+#+RESULTS:
+: 3
+
+
+#+NAME: python_plot
+#+BEGIN_SRC python :results img.png file
+
+import matplotlib.pyplot as plt
+plt.plot(range(5))
+plt.savefig('img.png')
+return 'img.png'
+
+#+END_SRC
+
+#+RESULTS: python_plot
+[[file:img.png]]
+
+
+
+
+
+
+
+
+#+BEGIN_SRC python :noweb yes :tangle main.py
+<<imports>>
+
+<<some-func>>
+
+<<class-dfn>>
+
+<<main-func>>
+
+if __name__ == '__main__':
+    status = main()
+    sys.exit(status)
+#+END_SRC
+
+** imports
+Now, we define a block that gives us the imports. We do not have to use any tangle headers here because noweb will put it in where it belongs.
+
+#+NAME: imports
+#+BEGIN_SRC python
+import sys
+import numpy as np
+import matplotlib.pyplot as plt
+
+from argparse import ArgumentParser
+#+END_SRC
+
+** utility function
+Now we define a function we will want imported from the main file.
+
+#+NAME: some-func
+#+BEGIN_SRC python
+def utility_func(arg=None):
+    return 'you called a utility function with this arg: {0}'.format(arg)
+#+END_SRC
+
+** class definition
+Finally, let us define a class. Note we use noweb here too, and we get the indentation correct!
+
+#+NAME: class-dfn
+#+BEGIN_SRC python :noweb yes
+class HelloWorld(object):
+    def __init__(self, who):
+        self.who = who
+
+    def __call__(self):
+        return 'Hello {0}'.format(self.who)
+
+    <<some-other-func>>
+#+END_SRC
+
+*** some class function
+Now, let us make the some-other-func. This block is not indented, but with the noweb syntax above, it seems to get correctly indented. Amazing.
+
+#+NAME: some-other-func
+#+BEGIN_SRC python
+def test(self):
+    return True
+#+END_SRC
+
+** The main function
+
+This is a typical function that could be used to make your module into a script, and is only run when the module is used as a script..
+
+#+NAME: main-func
+#+BEGIN_SRC python
+def main():
+    parser = ArgumentParser(description="Say hi")
+    parser.add_argument(
+        "-w", "--who", type=str, default="world", help="Who to say hello to"
+    )
+    args = parser.parse_args()
+
+    who = args.who
+
+    greeter = HelloWorld(who)
+    greeter()
+
+    print("test func = ", greeter.test())
+
+    print(utility_func())
+    print(utility_func(5))
+
+    return 0
+#+END_SRC
+
+** Tangle and run the code
+
+This link will extract the code to main.py: elisp:org-babel-tangle
+
+We can run the code like this (linux):
+#+NAME: bashrun-helloworld
+#+BEGIN_SRC sh :results output
+python main.py --w John 2>&1
+true
+#+END_SRC
+
+#+RESULTS: bashrun-helloworld
+#+begin_example
+Traceback (most recent call last):
+  File "/home/kdb/Documents/github/org-roam/Quantum Computing/main.py", line 3, in <module>
+    import matplotlib.pyplot as plt
+  File "/usr/lib/python3.9/site-packages/matplotlib/__init__.py", line 107, in <module>
+    from . import _api, cbook, docstring, rcsetup
+  File "/usr/lib/python3.9/site-packages/matplotlib/rcsetup.py", line 24, in <module>
+    from matplotlib import _api, animation, cbook
+  File "/usr/lib/python3.9/site-packages/matplotlib/animation.py", line 34, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+#+end_example
