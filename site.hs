@@ -9,7 +9,7 @@ configuration = defaultConfiguration
     { destinationDirectory = "docs"}
 
 main :: IO ()
-main = hakyllWith configuration $ do
+  main = hakyllWith configuration $ do
     match "images/*" $ do
         route   idRoute
         compile copyFileCompiler
