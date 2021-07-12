@@ -1,10 +1,7 @@
-+++
+---
 title = "Assembly Language and Computer Architecture Foundations"
-author = ["svejk"]
-lastmod = 2021-07-12T01:07:31-04:00
-draft = false
 weight = 1
-+++
+---
 
 ## Contents {#contents}
 
