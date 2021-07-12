@@ -1,7 +1,6 @@
----
++++
 title = "Assembly Language and Computer Architecture Foundations"
-weight = 1
----
++++
 
 ## Contents {#contents}
 
