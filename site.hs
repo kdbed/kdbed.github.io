@@ -59,13 +59,13 @@ main = hakyllWith configuration $ do
                 >>= loadAndApplyTemplate "templates/default.html" indexCtx
                 >>= relativizeUrls
 
-    match "templates/*" $ compile templateBodyCompiler
+      match "templates/*" $ compile templateBodyCompiler
 
 
 --------------------------------------------------------------------------------
 postCtx :: Context String
 postCtx =
---    dateField "date" "%B %e, %Y" `mappend`
+    dateField "date" "%B %e, %Y" `mappend`
     defaultContext
 
 pandocMathCompiler :: Compiler (Item String)
