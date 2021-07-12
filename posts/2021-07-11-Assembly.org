@@ -20,7 +20,7 @@
 We consider the fundamentals of computer functioning, describing the core model of computation, enumerating its extensions and focusing on two of them, registers and the hardware stack. cite:IgorZhirkov10
 ** The Core Architecture
 *** Models of Computation
-All ideas -- algorithms included -- need precise, finite expressions.  We take a fixed set of basic actions as building blocks.  A _Model of Computation_ is a set of basic operations and their respective costs.  The costs are usually integer numbers and are used to reason about the algorithms' complexity via calculating the combined cost of all their operations.  Most models of computation are also _abstract machines_ : they describe a hypothetical computer whose instructions correspond to the model's basic operations.  The other type of models, decision trees, are discussed elsewhere ([[file:../../2021-07-11-decisionTrees.org][decisionTrees]]).
+All ideas -- algorithms included -- need precise, finite expressions.  We take a fixed set of basic actions as building blocks.  A _Model of Computation_ is a set of basic operations and their respective costs.  The costs are usually integer numbers and are used to reason about the algorithms' complexity via calculating the combined cost of all their operations.  Most models of computation are also _abstract machines_ : they describe a hypothetical computer whose instructions correspond to the model's basic operations.  The other type of models, decision trees, are discussed elsewhere ([[file:../../2021-07-11-decisionTrees.html][decisionTrees]]).
 
 *** Von Neumann Architecture
 
