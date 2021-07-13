@@ -1,6 +1,6 @@
-+++
+---
 title = "Assembly Language and Computer Architecture Foundations"
-+++
+---
 
 ## Contents {#contents}
 
