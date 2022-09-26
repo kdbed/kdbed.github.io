@@ -1,3 +1,0 @@
-[submodule "path_to_submodule"] 
-  path = themes/cortex 
-  url = git://kdbed/cortex
