@@ -15,5 +15,4 @@
 *** TODO Trash
 ** TODO seal bathtub
 ** TODO nicotine test
-*** TODO quit
 ** TODO bloodwork
