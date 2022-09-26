@@ -82,6 +82,18 @@ Use the Impacket tool GetNPUsers.py to try to get a hash for each user</descript
     </item>
     
     <item>
+      <title>cpp-proj-nix</title>
+      <link>https://kdbed.github.io/posts/cpp_proj_nix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/cpp_proj_nix/</guid>
+      <description>Template Project in C++ using Nix Taken from this blog post.
+Creating a C++ project Create a sample C++ project with the following dependencies
+C++ compiler, of course. That might be GCC or Clang. Boost Poco The program does nothing more than printing what compiler it was built with and which versions of boost and poco it is linked against.
+Code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 #include &amp;lt;boost/lexical_cast.</description>
+    </item>
+    
+    <item>
       <title>DNS Zone Transfers</title>
       <link>https://kdbed.github.io/posts/dnszonetransfers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -313,7 +325,7 @@ sudo wfuzz -c -f out -w wordlist -u &amp;#34;http://trick.htb&amp;#34; -H &amp;#
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/todo/</guid>
-      <description>TODO Complete Summer Yard Work TODO Burn outstanding refuse TODO Chainsaw fallen biggies TODO Clear pricks TODO Windows and Doors TODO Schedule Professional Assessment TODO Fix Garage Door TODO Send baby ABCs to Austin TODO Basement TODO Mattress TODO Trash TODO seal bathtub TODO nicotine test TODO bloodwork </description>
+      <description>TODO Complete Summer Yard Work TODO Burn outstanding refuse TODO Chainsaw fallen biggies TODO Clear pricks TODO Windows and Doors TODO Schedule Professional Assessment TODO Fix Garage Door TODO Send baby ABCs to Austin TODO Basement TODO Mattress TODO Trash TODO seal bathtub TODO nicotine test TODO quit TODO bloodwork </description>
     </item>
     
     <item>

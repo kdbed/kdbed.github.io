@@ -47,6 +47,8 @@ build content/posts/securityplus.md: org2md org/securityplus.org
 
 build content/posts/isakmp.md: org2md org/isakmp.org
 
+build content/posts/cpp_proj_nix.md: org2md org/cpp_proj_nix.org
+
 build content/posts/20220824081229-words.md: org2md org/20220824081229-words.org
 
 build content/posts/todo.md: org2md org/todo.org

@@ -16,7 +16,7 @@ Drawing on the First, Fourth, Ninth, and Fourteenth Amendments, the Court said t
 
 Because the Court determined that abortions were within a woman’s “zone of privacy,” it was therefore ruling that a woman had a fundamental right to the procedure. Although this right was fundamental, that did not mean that it could not be limited.
 
-The Court said that as a fundamental right, any limitations on abortion must meet the standards of strict scrutiny. This meant that there must have been “compelling state interest” in regulating abortions, and the legislation must have been narrowly tailored to meet this “compelling” state interest. [Constitution Center](https://constitutioncenter.posts/interactive-constitution/blog/landmark-cases-roe-v-wade)
+The Court said that as a fundamental right, any limitations on abortion must meet the standards of strict scrutiny. This meant that there must have been “compelling state interest” in regulating abortions, and the legislation must have been narrowly tailored to meet this “compelling” state interest. [Constitution Center](https://constitutioncenter.org/interactive-constitution/blog/landmark-cases-roe-v-wade)
 
 
 ### Dobbs V Jackson Women's Health Center {#dobbs-v-jackson-women-s-health-center}
