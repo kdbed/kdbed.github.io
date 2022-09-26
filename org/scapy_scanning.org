@@ -1,0 +1,62 @@
+:PROPERTIES:
+:ID:       91f63959-8c6c-40be-b254-3032417e56e9
+:END:
+#+title: Active Scanning with Scapy
+#+filetags: :recon:scanning:scapy:pentest:
+
+* Scanning Networks with Scapy
+Nmap implements several types of scans and can be used to detect the versions of operating systems and services; it can also perform custom vulnerability scanning.  Here we'll implement a couple of simple scans using =scapy= in Python.
+
+- _SYN scan_ : A SYN scan sends a TCP SYN packet to a port and looks for a SYN/ACK packet in response.
+- _DNS scan_ : A DNS scan tests whether a DNS server is running on the target system.
+
+=Scapy= makes it easy to create and send custom packets over the network and to sniff network traffic for responses.
+
+* Port Scan
+#+begin_src python :noweb yes :tangle /home/kdb/Documents/github/pentesting_scripts/scanning/PortScan.py
+from scapy.all import *
+import ipaddress
+
+ports = [25,80,53,443,445,3306,8080,8443]
+
+<<synscanner>>
+
+<<dnsscanner>>
+
+host = input("Enter IP Address: ")
+try:
+    ipaddress.ip_address(host)
+except:
+    print("Invalid address")
+    exit(-1)
+
+SynScan(host)
+DNSScan(host)
+#+end_src
+
+** SYN Scan
+#+NAME: synscanner
+#+begin_src python
+def SynScan(host):
+    ans,unans = sr(IP(dst=host) /
+                   TCP(sport=33333, dport=ports, flags="S")
+                   ,timeout=2,verbose=0)
+    print("Open ports at %s:" % host)
+    for (s,r,) in ans:
+        if s[TCP].dport == r[TCP].sport and r[TCP].flags == "SA":
+            print(s[TCP].dport)
+#+end_src
+
+** DNS Scan
+#+NAME: dnsscanner
+#+begin_src python
+def DNSScan(host):
+    ans,unans  = sr(IP(dst=host) /
+                    UDP(dport=53) /
+                    DNS(rd=1,qd=DNSQR(qname="google.com"))
+                    ,timeout=2,verbose=0)
+    if ans and ans[UDP]:
+        print("DNS Server at %s" % host)
+#+end_src
+* Source
+*Python for Cybersecurity* - Howard E Poston

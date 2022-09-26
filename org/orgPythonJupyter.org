@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       53e1afbc-f7c3-408c-a2c5-08522bfaf9f5
+:END:
+#+title: Org Mode - Python/Jupyter Example
+#+filetags: :example:jupyter:python:org-roam:org:
+
+
+* Create a Session
+Initialize server with org-babel-exp-src-block.  Afterwards, 'Enter' in the sourceblock will execute.
+#+begin_src jupyter-python :session hello
+print('ello, world!')
+#+end_src
+
+#+RESULTS:
+: ello, world!
+
+** Create a plot
+#+begin_src jupyter-python :session hello
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+ax.plot([1, 2, 3, 4], [1, 4, 2, 3])
+pass
+#+end_src
+
+#+RESULTS:
+[[file:./.ob-jupyter/b52e1cc392ed9e25b195906d382b298c1ea3670a.png]]
+
+* Ocaml
+
+#+begin_src ocaml :results output
+print_string "Hello world!\n"
+#+end_src
+
+#+RESULTS:
+: Hello world!

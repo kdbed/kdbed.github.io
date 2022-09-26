@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       f5619053-0167-4610-9ac5-483fa986426a
+:END:
+#+title: Z3 Basics
+#+filetags: :SMT:Z3:

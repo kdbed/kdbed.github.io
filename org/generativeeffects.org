@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       d6f8025c-aa62-4726-bb6e-817ae6b0fbb1
+:END:
+#+title: Generative Effects: Orders and Galois Connections

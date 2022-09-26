@@ -1,0 +1,76 @@
+
+rule org2md
+  command = emacs --batch -l ~/.emacs.d/init.el -l publish.el --eval "(jethro/publish \"$in\")"
+  description = org2md $in
+
+build content/posts/originalism.md: org2md org/originalism.org
+
+build content/posts/IdentityIQEssentialsIntroduction.md: org2md org/IdentityIQEssentialsIntroduction.org
+
+build content/posts/abortion.md: org2md org/abortion.org
+
+build content/posts/happiness.md: org2md org/happiness.org
+
+build content/posts/dnszonetransfers.md: org2md org/dnszonetransfers.org
+
+build content/posts/introtopwntools.md: org2md org/introtopwntools.org
+
+build content/posts/nietzsche.md: org2md org/nietzsche.org
+
+build content/posts/greenhouseemissions.md: org2md org/greenhouseemissions.org
+
+build content/posts/algorithms.md: org2md org/algorithms.org
+
+build content/posts/kerberoasting.md: org2md org/kerberoasting.org
+
+build content/posts/impacket.md: org2md org/impacket.org
+
+build content/posts/scapy_scanning.md: org2md org/scapy_scanning.org
+
+build content/posts/birthdayattack.md: org2md org/birthdayattack.org
+
+build content/posts/linpeas.md: org2md org/linpeas.org
+
+build content/posts/quotes.md: org2md org/quotes.org
+
+build content/posts/subdomainenumeration.md: org2md org/subdomainenumeration.org
+
+build content/posts/wfuzz.md: org2md org/wfuzz.org
+
+build content/posts/marx.md: org2md org/marx.org
+
+build content/posts/z3_basics.md: org2md org/z3_basics.org
+
+build content/posts/s_mime.md: org2md org/s_mime.org
+
+build content/posts/securityplus.md: org2md org/securityplus.org
+
+build content/posts/isakmp.md: org2md org/isakmp.org
+
+build content/posts/20220824081229-words.md: org2md org/20220824081229-words.org
+
+build content/posts/todo.md: org2md org/todo.org
+
+build content/posts/category_theory.md: org2md org/category_theory.org
+
+build content/posts/as_rep_roasting.md: org2md org/as_rep_roasting.org
+
+build content/posts/dopamine.md: org2md org/dopamine.org
+
+build content/posts/generativeeffects.md: org2md org/generativeeffects.org
+
+build content/posts/nietzsche_and_stoicism.md: org2md org/nietzsche_and_stoicism.org
+
+build content/posts/sha1cracker.md: org2md org/sha1cracker.org
+
+build content/posts/kerberos.md: org2md org/kerberos.org
+
+build content/posts/roevwade.md: org2md org/roevwade.org
+
+build content/posts/orgPythonJupyter.md: org2md org/orgPythonJupyter.org
+
+build content/posts/haskelltest.md: org2md org/haskelltest.org
+
+build content/posts/sha1.md: org2md org/sha1.org
+
+build content/posts/smtps.md: org2md org/smtps.org

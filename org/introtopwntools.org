@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID:       f3ea418e-4561-4db2-a7a9-c53948438a64
+:END:
+#+title: Intro to Pwntools - TryHackMe
+#+filetags: :binary:pwntools:pwn:tryHackMe:
+#+PROPERTY: header-args:sh :prologue "exec 2>&1" :epilogue :dir /home/kdb/Downloads/IntroToPwntools/IntroToPwntools
+
+* Intro to Pwntools
+Source materials here [[https://github.com/dizmascyberlabs/IntroToPwntools][dizmascyberlabs]]
+[[https://github.com/apogiatzis/gdb-peda-pwndbg-gef][Install gdb-pwndbg-peda-gef]]
+** Checksec
+Same source code, compiled with different protections in place:
+#+begin_src sh :results output replace :exports both
+checksec checksec/intro2pwn2
+#+end_src
+
+#+RESULTS:
+: [*] '/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn2'
+:     Arch:     i386-32-little
+:     RELRO:    Partial RELRO
+:     Stack:    No canary found
+:     NX:       NX disabled
+:     PIE:      No PIE (0x8048000)
+:     RWX:      Has RWX segments
+
+#+begin_src sh -n :exports both :results output verbatim
+checksec checksec/intro2pwn1
+#+end_src
+
+#+RESULTS:
+: [*] '/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn1'
+:     Arch:     i386-32-little
+:     RELRO:    Full RELRO
+:     Stack:    Canary found
+:     NX:       NX enabled
+:     PIE:      PIE enabled

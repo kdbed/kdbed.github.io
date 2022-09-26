@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       81d684ca-d89a-408b-bb3f-10d8e50a60bb
+:END:
+#+title: S_MIME
+#+filetags: :email:secPlus:
+
+
+* S/MIME
+
+* [[id:aa7e4645-4608-4ee8-b18f-4ede83fc1330][ComptTIA Security+]]

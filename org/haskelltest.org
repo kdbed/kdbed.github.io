@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       acdc67cd-43a2-4060-b54a-cb80a48050b8
+:END:
+#+title: haskellTest
+#+filetags: :org:haskell:org-roam:example:
+
+#+begin_src haskell :exports both :post org-babel-haskell-formatter(*this*)
+import Control.Monad
+
+:{
+
+  map
+      (\x -> x*x + x + 1)
+      [1..10]
+:}
+#+end_src
+
+#+RESULTS:
+:  [3,7,13,21,31,43,57,73,91,111]

@@ -1,0 +1,88 @@
+:PROPERTIES:
+:ID:       9ecc66d6-d120-4ab0-9fcd-c2550b052d8f
+:END:
+#+title: sha1Cracker
+#+filetags: :pentest:crack:password:rust:cryptography
+
+* Implementing a [[id:b74d623f-efe7-4b7e-814e-7a7f2c179f13][sha1]] hash cracker in Rust
+
+#+begin_src rust :noweb yes :tangle /home/kdb/Documents/github/pentesting_scripts/password_crack/sha1_cracker/src/main.rs
+
+<<imports>>
+
+fn main() -> Result<(), Box<dyn Error>> {
+
+    <<inputs>>
+
+    <<readFile>>
+
+    <<checkPass>>
+
+    println!("password not found in wordlist.");
+
+    Ok(())
+
+}
+
+#+end_src
+
+** Imports
+
+#+NAME: imports
+#+begin_src rust
+use sha1::Digest;
+use std::{
+    env,
+    error::Error,
+    fs::File,
+    io::{BufRead, BufReader},
+};
+
+const SHA1_HEX_STRING_LENGTH: usize = 40;
+#+end_src
+
+** Inputs
+
+#+NAME: inputs
+#+begin_src rust
+let args: Vec<String> = env::args().collect();
+
+if args.len() != 3 {
+    println!("Usage:");
+    println!("sha1_cracker: <wordlist.txt> <sha1_hash>");
+    return Ok(());
+}
+
+let hash_to_crack = args[2].trim();
+if hash_to_crack.len() != SHA1_HEX_STRING_LENGTH {
+    return Err("sha1 hash is not valid.".into());
+}
+#+end_src
+
+
+** Read File
+
+#+NAME: readFile
+#+begin_src rust
+let wordlist_file = File::open(&args[1])?;
+let reader = BufReader::new(&wordlist_file);
+#+end_src
+
+
+** Check Pass
+
+#+NAME: checkPass
+#+begin_src rust
+for line in reader.lines() {
+    let line = line?;
+    let common_password = line.trim();
+    if hash_to_crack == &hex::encode(sha1::Sha1::digest(common_password.as_bytes())) {
+        println!("Password found: {}", &common_password);
+        return Ok(());
+    }
+}
+#+end_src
+
+
+* Bibliography
+Black Hat Rust
