@@ -2,6 +2,7 @@ baseURL = "https://kdbed.github.io/"
 languageCode = "en-us"
 title = "Braindump"
 theme = "cortex"
+publishDir = "docs"
 [params]
 email = "kdbednar8@gmail.com"
 footer = "Icon by Freepik. Built with ♥ with Org-mode and Hugo."
