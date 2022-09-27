@@ -1,5 +1,5 @@
 +++
-title = "cpp-proj-nix"
+title = "C++ and Nix"
 author = ["svejk"]
 draft = false
 +++
@@ -69,7 +69,7 @@ To compile and run:
 -   `c++ -o printEnv printEnv.cpp -lPocoFoundation -lboost_system`
 -   ./printEnv
 
-{{< figure src="./images/nixRun.jpg" >}}
+{{< figure src="/images/nixRun.jpg" >}}
 
 
 ### default.nix {#default-dot-nix}

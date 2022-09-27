@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       454a36c9-f1be-416c-8a7b-591b50a0acc6
 :END:
-#+title: cpp-proj-nix
+#+title: C++ and Nix
 #+filetags: :template:nix:cpp:
 
 
@@ -56,7 +56,7 @@ To compile and run:
 - ./printEnv
 
 #+attr_org: :width 700
-[[./images/nixRun.jpg]]
+[[../static/images/nixRun.jpg]]
 ** default.nix
 #+begin_src nix -n :tangle ~/Documents/scratch/cpp/nix_temp/default.nix
 with import <nixpkgs> {};

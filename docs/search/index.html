@@ -118,6 +118,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/cpp_proj_nix\/": {
+        
+        "title": "C\u002b\u002b and Nix",
+        "tags": [],
+        "content": "Template Project in C++ using Nix Taken from this blog post.\nCreating a C++ project Create a sample C++ project with the following dependencies\nC++ compiler, of course. That might be GCC or Clang. Boost Poco The program does nothing more than printing what compiler it was built with and which versions of boost and poco it is linked against.\nCode 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 #include \u0026lt;boost/lexical_cast.hpp\u0026gt; #include \u0026lt;Poco/Environment.h\u0026gt; #include \u0026lt;iostream\u0026gt; #if defined(__clang__) #define CC \u0026#34;clang++\u0026#34; #elif defined (__GNUC__) #define CC \u0026#34;g++\u0026#34; #else #define CC \u0026#34;\u0026lt;unknown compiler\u0026gt;\u0026#34; #endif int main() { std::cout \u0026lt;\u0026lt; \u0026#34;Hello World!\\n\u0026#34; \u0026lt;\u0026lt; \u0026#34;Compiler: \u0026#34; \u0026lt;\u0026lt; CC \u0026lt;\u0026lt; \u0026#34; \u0026#34; \u0026lt;\u0026lt; __VERSION__ \u0026lt;\u0026lt; \u0026#39;\\n\u0026#39; \u0026lt;\u0026lt; \u0026#34;Boost: \u0026#34; \u0026lt;\u0026lt; (BOOST_VERSION / 100000) \u0026lt;\u0026lt; \u0026#39;.\u0026#39; \u0026lt;\u0026lt; (BOOST_VERSION / 100 % 1000) \u0026lt;\u0026lt; \u0026#39;.\u0026#39; \u0026lt;\u0026lt; (BOOST_VERSION % 100) \u0026lt;\u0026lt; \u0026#39;\\n\u0026#39; \u0026lt;\u0026lt; \u0026#34;POCO: \u0026#34; \u0026lt;\u0026lt; (Poco::Environment::libraryVersion() \u0026gt;\u0026gt; 24) \u0026lt;\u0026lt; \u0026#39;.\u0026#39; \u0026lt;\u0026lt; (Poco::Environment::libraryVersion() \u0026gt;\u0026gt; 16 \u0026amp; 0xff) \u0026lt;\u0026lt; \u0026#39;.\u0026#39; \u0026lt;\u0026lt; (Poco::Environment::libraryVersion() \u0026gt;\u0026gt; 8 \u0026amp; 0xff) \u0026lt;\u0026lt; \u0026#39;\\n\u0026#39;; } nix-shell We can either install a C++ compiler by running nix-env with the appropriate arguments, or just run a shell that exposes a C++ compiler in its PATH environment. Let us not clutter the system’s PATH environment with compilers from the beginning, because often people would use different compilers for each project anyway.\nPath The path list is full of paths that begin with nix/store\u0026hellip;. Each of them could be considered what one would call a package on typical Linux distributions. We can easily install multiple compilers with different versions, or even the same version with different sets of patches applied, next to each other in /nix/store and not have any of them collide during a project’s build, because nix does simply only map the packages into the current PATH that are needed.\nRun To compile and run:\nnix-shell -p gcc poco boost c++ -o printEnv printEnv.cpp -lPocoFoundation -lboost_system ./printEnv default.nix 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 with import \u0026lt;nixpkgs\u0026gt; {}; stdenv.mkDerivation { name = \u0026#34;my-app\u0026#34;; src = ./.; buildInputs = [ boost poco ]; buildPhase = \u0026#34;c++ -o printEnv printEnv.cpp -lPocoFoundation -lboost_system\u0026#34;; installPhase = \u0026#39;\u0026#39; mkdir -p $out/bin cp printEnv $out/bin/ \u0026#39;\u0026#39;; } Then simply run nix-build.\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/cpp_proj_nix\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/categories\/": {
         
         "title": "Categories",
@@ -144,16 +154,6 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/securityplus\/"
-    },
-    
-    
-    
-    "https:\/\/kdbed.github.io\/posts\/cpp_proj_nix\/": {
-        
-        "title": "cpp-proj-nix",
-        "tags": [],
-        "content": "Template Project in C++ using Nix Taken from this blog post.\nCreating a C++ project Create a sample C++ project with the following dependencies\nC++ compiler, of course. That might be GCC or Clang. Boost Poco The program does nothing more than printing what compiler it was built with and which versions of boost and poco it is linked against.\nCode 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 #include \u0026lt;boost/lexical_cast.hpp\u0026gt; #include \u0026lt;Poco/Environment.h\u0026gt; #include \u0026lt;iostream\u0026gt; #if defined(__clang__) #define CC \u0026#34;clang++\u0026#34; #elif defined (__GNUC__) #define CC \u0026#34;g++\u0026#34; #else #define CC \u0026#34;\u0026lt;unknown compiler\u0026gt;\u0026#34; #endif int main() { std::cout \u0026lt;\u0026lt; \u0026#34;Hello World!\\n\u0026#34; \u0026lt;\u0026lt; \u0026#34;Compiler: \u0026#34; \u0026lt;\u0026lt; CC \u0026lt;\u0026lt; \u0026#34; \u0026#34; \u0026lt;\u0026lt; __VERSION__ \u0026lt;\u0026lt; \u0026#39;\\n\u0026#39; \u0026lt;\u0026lt; \u0026#34;Boost: \u0026#34; \u0026lt;\u0026lt; (BOOST_VERSION / 100000) \u0026lt;\u0026lt; \u0026#39;.\u0026#39; \u0026lt;\u0026lt; (BOOST_VERSION / 100 % 1000) \u0026lt;\u0026lt; \u0026#39;.\u0026#39; \u0026lt;\u0026lt; (BOOST_VERSION % 100) \u0026lt;\u0026lt; \u0026#39;\\n\u0026#39; \u0026lt;\u0026lt; \u0026#34;POCO: \u0026#34; \u0026lt;\u0026lt; (Poco::Environment::libraryVersion() \u0026gt;\u0026gt; 24) \u0026lt;\u0026lt; \u0026#39;.\u0026#39; \u0026lt;\u0026lt; (Poco::Environment::libraryVersion() \u0026gt;\u0026gt; 16 \u0026amp; 0xff) \u0026lt;\u0026lt; \u0026#39;.\u0026#39; \u0026lt;\u0026lt; (Poco::Environment::libraryVersion() \u0026gt;\u0026gt; 8 \u0026amp; 0xff) \u0026lt;\u0026lt; \u0026#39;\\n\u0026#39;; } nix-shell We can either install a C++ compiler by running nix-env with the appropriate arguments, or just run a shell that exposes a C++ compiler in its PATH environment. Let us not clutter the system’s PATH environment with compilers from the beginning, because often people would use different compilers for each project anyway.\nPath The path list is full of paths that begin with nix/store\u0026hellip;. Each of them could be considered what one would call a package on typical Linux distributions. We can easily install multiple compilers with different versions, or even the same version with different sets of patches applied, next to each other in /nix/store and not have any of them collide during a project’s build, because nix does simply only map the packages into the current PATH that are needed.\nRun To compile and run:\nnix-shell -p gcc poco boost c++ -o printEnv printEnv.cpp -lPocoFoundation -lboost_system ./printEnv default.nix 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 with import \u0026lt;nixpkgs\u0026gt; {}; stdenv.mkDerivation { name = \u0026#34;my-app\u0026#34;; src = ./.; buildInputs = [ boost poco ]; buildPhase = \u0026#34;c++ -o printEnv printEnv.cpp -lPocoFoundation -lboost_system\u0026#34;; installPhase = \u0026#39;\u0026#39; mkdir -p $out/bin cp printEnv $out/bin/ \u0026#39;\u0026#39;; } Then simply run nix-build.\n", 
-        "url": "https:\/\/kdbed.github.io\/posts\/cpp_proj_nix\/"
     },
     
     
@@ -252,7 +252,7 @@ window.store = {
         
         "title": "Intro to Pwntools - TryHackMe",
         "tags": [],
-        "content": "Intro to Pwntools Source materials here dizmascyberlabs Install gdb-pwndbg-peda-gef\nChecksec Same source code, compiled with different protections in place:\nchecksec checksec/intro2pwn2 [*] \u0026#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn2\u0026#39; Arch: i386-32-little RELRO: Partial RELRO Stack: No canary found NX: NX disabled PIE: No PIE (0x8048000) RWX: Has RWX segments 1 checksec checksec/intro2pwn1 [*] \u0026#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn1\u0026#39; Arch: i386-32-little RELRO: Full RELRO Stack: Canary found NX: NX enabled PIE: PIE enabled ", 
+        "content": "Intro to Pwntools Source materials here dizmascyberlabs Install gdb-pwndbg-peda-gef\nChecksec Same source code, compiled with different protections in place:\n1 checksec checksec/intro2pwn2 [*] \u0026#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn2\u0026#39; Arch: i386-32-little RELRO: Partial RELRO Stack: No canary found NX: NX disabled PIE: No PIE (0x8048000) RWX: Has RWX segments 1 checksec checksec/intro2pwn1 [*] \u0026#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn1\u0026#39; Arch: i386-32-little RELRO: Full RELRO Stack: Canary found NX: NX enabled PIE: PIE enabled RELRO = Relocation Read-Only; makes the global offset table (GOT) read-only after the linker resolves functions to it. The GOT is important for techniques such as the ret-to-libc attack Stack Canaries = tokens placed after a stack to detect a stack overflow. Stack canaries sit beside the stack in memory (where the program variables are stored), and if there is a stack overflow, then the canary will be corrupted. This allows the program to detect a buffer overflow and shut down. ", 
         "url": "https:\/\/kdbed.github.io\/posts\/introtopwntools\/"
     },
     
@@ -358,6 +358,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/relro\/": {
+        
+        "title": "RELRO",
+        "tags": [],
+        "content": "https://www.redhat.com/en/blog/hardening-elf-binaries-using-relocation-read-only-relro\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/relro\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/s_mime\/": {
         
         "title": "S_MIME",
@@ -394,6 +404,16 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/smtps\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/stack_canaries\/": {
+        
+        "title": "Stack Canaries",
+        "tags": [],
+        "content": "https://www.sans.org/blog/stack-canaries-gingerly-sidestepping-the-cage/\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/stack_canaries\/"
     },
     
     

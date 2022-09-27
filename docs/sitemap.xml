@@ -20,13 +20,13 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/birthdayattack/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/cpp_proj_nix/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/categories/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/category_theory/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/securityplus/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/cpp_proj_nix/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/dnszonetransfers/</loc>
   </url><url>
@@ -68,6 +68,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/quotes/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/relro/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/s_mime/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/sha1/</loc>
@@ -75,6 +77,8 @@
     <loc>https://kdbed.github.io/posts/sha1cracker/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/smtps/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/stack_canaries/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/subdomainenumeration/</loc>
   </url><url>

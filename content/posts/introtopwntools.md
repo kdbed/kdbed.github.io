@@ -6,7 +6,8 @@ draft = false
 
 ## Intro to Pwntools {#intro-to-pwntools}
 
-Source materials here [dizmascyberlabs](https://github.com/dizmascyberlabs/IntroToPwntools)
+Source materials here [dizmascyberlabs
+](https://github.com/dizmascyberlabs/IntroToPwntools)
 [Install gdb-pwndbg-peda-gef](https://github.com/apogiatzis/gdb-peda-pwndbg-gef)
 
 
@@ -14,9 +15,9 @@ Source materials here [dizmascyberlabs](https://github.com/dizmascyberlabs/Intro
 
 Same source code, compiled with different protections in place:
 
-```sh
+{{< highlight sh "linenos=table, linenostart=1" >}}
 checksec checksec/intro2pwn2
-```
+{{< /highlight >}}
 
 ```text
 [*] '/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn2'
@@ -40,3 +41,6 @@ checksec checksec/intro2pwn1
     NX:       NX enabled
     PIE:      PIE enabled
 ```
+
+-   [RELRO]({{<relref "relro.md#" >}})  = Relocation Read-Only; makes the global offset table (GOT) read-only after the linker resolves functions to it. The GOT is important for techniques such as the ret-to-libc attack
+-   [Stack Canaries]({{<relref "stack_canaries.md#" >}}) = tokens placed after a stack to detect a stack overflow. Stack canaries sit beside the stack in memory (where the program variables are stored), and if there is a stack overflow, then the canary will be corrupted. This allows the program to detect a buffer overflow and shut down.

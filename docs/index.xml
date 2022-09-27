@@ -64,6 +64,18 @@ Use the Impacket tool GetNPUsers.py to try to get a hash for each user</descript
     </item>
     
     <item>
+      <title>C&#43;&#43; and Nix</title>
+      <link>https://kdbed.github.io/posts/cpp_proj_nix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/cpp_proj_nix/</guid>
+      <description>Template Project in C++ using Nix Taken from this blog post.
+Creating a C++ project Create a sample C++ project with the following dependencies
+C++ compiler, of course. That might be GCC or Clang. Boost Poco The program does nothing more than printing what compiler it was built with and which versions of boost and poco it is linked against.
+Code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 #include &amp;lt;boost/lexical_cast.</description>
+    </item>
+    
+    <item>
       <title>Category Theory</title>
       <link>https://kdbed.github.io/posts/category_theory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -79,18 +91,6 @@ Use the Impacket tool GetNPUsers.py to try to get a hash for each user</descript
       
       <guid>https://kdbed.github.io/posts/securityplus/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>cpp-proj-nix</title>
-      <link>https://kdbed.github.io/posts/cpp_proj_nix/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/cpp_proj_nix/</guid>
-      <description>Template Project in C++ using Nix Taken from this blog post.
-Creating a C++ project Create a sample C++ project with the following dependencies
-C++ compiler, of course. That might be GCC or Clang. Boost Poco The program does nothing more than printing what compiler it was built with and which versions of boost and poco it is linked against.
-Code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 #include &amp;lt;boost/lexical_cast.</description>
     </item>
     
     <item>
@@ -183,7 +183,7 @@ How DNS Works DNS (Domain Name System) is like an Internet phonebook.</descripti
       <guid>https://kdbed.github.io/posts/introtopwntools/</guid>
       <description>Intro to Pwntools Source materials here dizmascyberlabs Install gdb-pwndbg-peda-gef
 Checksec Same source code, compiled with different protections in place:
-checksec checksec/intro2pwn2 [*] &amp;#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn2&amp;#39; Arch: i386-32-little RELRO: Partial RELRO Stack: No canary found NX: NX disabled PIE: No PIE (0x8048000) RWX: Has RWX segments 1 checksec checksec/intro2pwn1 [*] &amp;#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn1&amp;#39; Arch: i386-32-little RELRO: Full RELRO Stack: Canary found NX: NX enabled PIE: PIE enabled </description>
+1 checksec checksec/intro2pwn2 [*] &amp;#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn2&amp;#39; Arch: i386-32-little RELRO: Partial RELRO Stack: No canary found NX: NX disabled PIE: No PIE (0x8048000) RWX: Has RWX segments 1 checksec checksec/intro2pwn1 [*] &amp;#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn1&amp;#39; Arch: i386-32-little RELRO: Full RELRO Stack: Canary found NX: NX enabled PIE: PIE enabled RELRO = Relocation Read-Only; makes the global offset table (GOT) read-only after the linker resolves functions to it.</description>
     </item>
     
     <item>
@@ -273,6 +273,15 @@ Quote 2 &amp;ldquo;Meet these two here,&amp;rdquo; the man said. &amp;ldquo;Ask 
     </item>
     
     <item>
+      <title>RELRO</title>
+      <link>https://kdbed.github.io/posts/relro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/relro/</guid>
+      <description>https://www.redhat.com/en/blog/hardening-elf-binaries-using-relocation-read-only-relro</description>
+    </item>
+    
+    <item>
       <title>S_MIME</title>
       <link>https://kdbed.github.io/posts/s_mime/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -306,6 +315,15 @@ Quote 2 &amp;ldquo;Meet these two here,&amp;rdquo; the man said. &amp;ldquo;Ask 
       
       <guid>https://kdbed.github.io/posts/smtps/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Stack Canaries</title>
+      <link>https://kdbed.github.io/posts/stack_canaries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/stack_canaries/</guid>
+      <description>https://www.sans.org/blog/stack-canaries-gingerly-sidestepping-the-cage/</description>
     </item>
     
     <item>
