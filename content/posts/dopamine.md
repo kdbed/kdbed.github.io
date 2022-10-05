@@ -1,5 +1,5 @@
 +++
-title = "dopamine"
+title = "Dopamine"
 author = ["svejk"]
 draft = false
 +++

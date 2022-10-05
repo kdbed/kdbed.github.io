@@ -1,5 +1,5 @@
 +++
-title = "happiness"
+title = "Happiness"
 author = ["svejk"]
 draft = false
 +++

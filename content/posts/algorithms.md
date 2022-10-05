@@ -1,5 +1,5 @@
 +++
-title = "algorithms"
+title = "Algorithms"
 author = ["svejk"]
 draft = false
 +++
