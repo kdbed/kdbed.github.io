@@ -31,6 +31,8 @@ build content/posts/scapy_scanning.md: org2md org/scapy_scanning.org
 
 build content/posts/birthdayattack.md: org2md org/birthdayattack.org
 
+build content/posts/20221004204210-powershell.md: org2md org/20221004204210-powershell.org
+
 build content/posts/linpeas.md: org2md org/linpeas.org
 
 build content/posts/quotes.md: org2md org/quotes.org
@@ -46,6 +48,8 @@ build content/posts/z3_basics.md: org2md org/z3_basics.org
 build content/posts/s_mime.md: org2md org/s_mime.org
 
 build content/posts/securityplus.md: org2md org/securityplus.org
+
+build content/posts/xor.md: org2md org/xor.org
 
 build content/posts/isakmp.md: org2md org/isakmp.org
 
