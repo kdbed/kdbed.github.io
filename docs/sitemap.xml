@@ -66,6 +66,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/20221004204210-powershell/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/quotes/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/relro/</loc>
@@ -89,6 +91,8 @@
     <loc>https://kdbed.github.io/posts/wfuzz/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/20220824081229-words/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/xor/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/z3_basics/</loc>
   </url>
