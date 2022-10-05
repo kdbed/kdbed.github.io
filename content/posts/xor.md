@@ -15,7 +15,5 @@ XOR is a 'programmable inverter': one input bit decides whether to invert the ot
 
 \\(X = A \bigoplus B\\)
 
-{{< figure src="./images/xor.png" >}}
-
 
 ### Properties {#properties}
