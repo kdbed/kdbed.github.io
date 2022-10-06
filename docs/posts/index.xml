@@ -25,6 +25,15 @@
     </item>
     
     <item>
+      <title>Active Directory</title>
+      <link>https://kdbed.github.io/posts/20221005124255-active_directory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/20221005124255-active_directory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Active Scanning with Scapy</title>
       <link>https://kdbed.github.io/posts/scapy_scanning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -260,12 +269,22 @@ print(&amp;#39;ello, world!&amp;#39;) Create a plot import matplotlib.pyplot as 
     </item>
     
     <item>
-      <title>powershell</title>
+      <title>Powershell</title>
       <link>https://kdbed.github.io/posts/20221004204210-powershell/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/20221004204210-powershell/</guid>
-      <description>Get-Aduser kbednar1 </description>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PowerShell - Get Domain Controllers in Forest</title>
+      <link>https://kdbed.github.io/posts/20221005124124-powershell_get_domain_controllers_in_forest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/20221005124124-powershell_get_domain_controllers_in_forest/</guid>
+      <description>To list all of the domain controllers in an Active Directory forest:
+(Get-ADForest).Domains | %{ Get-ADDomainController -Filter * -Server $_ }| Format-Table -Property Name,ComputerObjectDN,Domain,Forest,IPv4Address,OperatingSystem,OperatingSystemVersion </description>
     </item>
     
     <item>

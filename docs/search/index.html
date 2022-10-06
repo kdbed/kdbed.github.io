@@ -78,6 +78,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/20221005124255-active_directory\/": {
+        
+        "title": "Active Directory",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/posts\/20221005124255-active_directory\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/scapy_scanning\/": {
         
         "title": "Active Scanning with Scapy",
@@ -350,10 +360,20 @@ window.store = {
     
     "https:\/\/kdbed.github.io\/posts\/20221004204210-powershell\/": {
         
-        "title": "powershell",
+        "title": "Powershell",
         "tags": [],
-        "content": "Get-Aduser kbednar1 ", 
+        "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/20221004204210-powershell\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/20221005124124-powershell_get_domain_controllers_in_forest\/": {
+        
+        "title": "PowerShell - Get Domain Controllers in Forest",
+        "tags": [],
+        "content": "To list all of the domain controllers in an Active Directory forest:\n(Get-ADForest).Domains | %{ Get-ADDomainController -Filter * -Server $_ }| Format-Table -Property Name,ComputerObjectDN,Domain,Forest,IPv4Address,OperatingSystem,OperatingSystemVersion ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/20221005124124-powershell_get_domain_controllers_in_forest\/"
     },
     
     

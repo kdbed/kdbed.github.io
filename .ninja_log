@@ -81,3 +81,6 @@
 3	30228	0	docs/posts/introtopwntools.md	89e4cbc8de2c2e9c
 26760	53266	0	docs/posts/20221004204210-powershell.md	a494addbec0bf02a
 26513	53222	0	docs/posts/birthdayattack.md	e6472c961e580477
+2	9933	1665022810604177235	content/posts/20221005124124-powershell_get_domain_controllers_in_forest.md	a50bfd6ff98642de
+2	11183	1665022811857603904	content/posts/20221005124255-active_directory.md	6e928f5b31442fa2
+1	11231	1665022811894273265	content/posts/20221004204210-powershell.md	a494addbec0bf02a

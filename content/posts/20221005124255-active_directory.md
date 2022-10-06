@@ -1,9 +1,5 @@
 +++
-title = "Powershell"
+title = "Active Directory"
 author = ["svejk"]
 draft = false
 +++
-
-```powershell
-
-```

@@ -71,9 +71,13 @@ build content/posts/nietzsche_and_stoicism.md: org2md org/nietzsche_and_stoicism
 
 build content/posts/sha1cracker.md: org2md org/sha1cracker.org
 
+build content/posts/20221005124124-powershell_get_domain_controllers_in_forest.md: org2md org/20221005124124-powershell_get_domain_controllers_in_forest.org
+
 build content/posts/kerberos.md: org2md org/kerberos.org
 
 build content/posts/roevwade.md: org2md org/roevwade.org
+
+build content/posts/20221005124255-active_directory.md: org2md org/20221005124255-active_directory.org
 
 build content/posts/orgPythonJupyter.md: org2md org/orgPythonJupyter.org
 

@@ -1,29 +1,9 @@
 :PROPERTIES:
 :ID:       81224a3e-c402-48c5-aefa-9ca9533faf9a
 :END:
-#+title: powershell
+#+title: Powershell
 
 
 
 #+begin_src powershell :results output
-Get-Aduser kbednar1
 #+end_src
-
-#+RESULTS:
-#+begin_example
-
-
-DistinguishedName : CN=Bednar\, Kyle (kbednar1),OU=Office365,OU=People,OU=Accounts,DC=uhhs,DC=com
-Enabled           : True
-GivenName         : Kyle
-Name              : Bednar, Kyle (kbednar1)
-ObjectClass       : user
-ObjectGUID        : 9e4ecb0a-4e93-4baa-81b6-5192f973110d
-SamAccountName    : kbednar1
-SID               : S-1-5-21-191044553-1107890727-1469997231-2103008
-Surname           : Bednar
-UserPrincipalName : kbednar1@uhhs.com
-
-
-
-#+end_example
