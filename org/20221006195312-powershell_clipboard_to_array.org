@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       f70f9db9-268a-4e16-a8cd-cb6d7636ec1b
+:END:
+#+title: PowerShell - Clipboard to Array
+#+filetags: :powerShell:
+
+
+#+begin_src powershell
+(Get-Clipboard) -split '\t|\r?\n'
+#+end_src
