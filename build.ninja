@@ -7,7 +7,11 @@ build content/posts/originalism.md: org2md org/originalism.org
 
 build content/posts/IdentityIQEssentialsIntroduction.md: org2md org/IdentityIQEssentialsIntroduction.org
 
+build content/posts/20221006195312-powershell_clipboard_to_array.md: org2md org/20221006195312-powershell_clipboard_to_array.org
+
 build content/posts/abortion.md: org2md org/abortion.org
+
+build content/posts/20221006200406-powershell_classes.md: org2md org/20221006200406-powershell_classes.org
 
 build content/posts/happiness.md: org2md org/happiness.org
 
@@ -55,6 +59,8 @@ build content/posts/isakmp.md: org2md org/isakmp.org
 
 build content/posts/cpp_proj_nix.md: org2md org/cpp_proj_nix.org
 
+build content/posts/20221006200600-powershell.md: org2md org/20221006200600-powershell.org
+
 build content/posts/20220824081229-words.md: org2md org/20220824081229-words.org
 
 build content/posts/todo.md: org2md org/todo.org
@@ -86,5 +92,7 @@ build content/posts/haskelltest.md: org2md org/haskelltest.org
 build content/posts/sha1.md: org2md org/sha1.org
 
 build content/posts/smtps.md: org2md org/smtps.org
+
+build content/posts/20221006193807-account_lockout_splunk.md: org2md org/20221006193807-account_lockout_splunk.org
 
 build content/posts/stack_canaries.md: org2md org/stack_canaries.org

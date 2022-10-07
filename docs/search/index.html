@@ -78,6 +78,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/20221006193807-account_lockout_splunk\/": {
+        
+        "title": "Account Lockout - Splunk",
+        "tags": [],
+        "content": "index=wineventlog Account_Name=\u0026lt;\u0026lt;accountNameHere\u0026gt;\u0026gt;\u0026gt; (EventCode=4740 OR EventCode=4625 OR EventCode=644 OR EventCode=529 OR EventCode=675 OR EventCode=676 OR EventCode=681 OR EventCode=4771 OR EventCode=4770 OR EventCode=4768 OR EventCode=4776 OR EventCode=4777 OR EventCode=4725 OR EventCode=4723 OR EventCode=4724 OR EventCode=4767 OR EventCode=4800 OR EventCode=4801) | eval Account0=mvindex(Account_Name,0) | eval Account1=mvindex(Account_Name,1) | eval Account=case(EventCode==4624,Account1, EventCode==4625,Account1, EventCode==4648,Account1, EventCode==4722,Account1, EventCode==4723,Account1, EventCode==4724,Account1, EventCode==4725,Account1, EventCode==4738,Account1, EventCode==4740,Account1, EventCode==4767,Account1, EventCode==4768,Account0, EventCode==4769,Account0, EventCode==4771,Account0, EventCode==4770,Account0, EventCode==5140,Account0, EventCode==4778,Account0, EventCode==4779,Account0, EventCode==4800,Account0, EventCode==4801,Account0) | fillnull Value=\u0026#34;-\u0026#34; Account | eval ActionBy=case(EventCode==4725,Account0, EventCode==4722,src_user, EventCode==4767,src_user, EventCode==4723,src_user, EventCode==4724,src_user, EventCode==4738,src_user, EventCode==4794,src_user) | eval Time=strftime(_time, \u0026#34;%m/%d/%y %H:%M:%S\u0026#34;) | sort -_time | eval Caller_Machine=if(Caller_Machine_Name!= NULL, Caller_Machine_Name, Caller_Computer_Name) | fillnull Value=\u0026#34;-\u0026#34; Caller_Machine | rex field=Process_Name \u0026#34;(?P\u0026lt;Process_Name\u0026gt;[^\\\\\\]+)$\u0026#34; | fillnull Value=\u0026#34;-\u0026#34; Process_Name | rex field=Caller_Process_Name \u0026#34;(?P\u0026lt;Caller_Process_Name\u0026gt;[^\\\\\\]+)$\u0026#34; | fillnull Value=\u0026#34;-\u0026#34; Caller_Process_Name | rename \u0026#34;Authentication_Package\u0026#34; as \u0026#34;Auth_Package\u0026#34;, \u0026#34;Source_Network_Address\u0026#34; as \u0026#34;Src_Netw_Addr\u0026#34; | replace \u0026#34;MICROSOFT_AUTHENTICATION_PACKAGE_V1_0\u0026#34; with \u0026#34;MsAuthPkgV1_0\u0026#34; in Auth_Package | replace \u0026#34;Microsoft Unified Security Protocol Provider\u0026#34; with \u0026#34;MsUnifiedSecProt\u0026#34; in Auth_Package | eval EventCode=case(EventCode==4740, \u0026#34;4740 Locked\u0026#34;, EventCode==4625, \u0026#34;4625 Logon Failed\u0026#34;, EventCode==644, \u0026#34;644 Locked\u0026#34;, EventCode==529, \u0026#34;529 Logon Failed\u0026#34;, EventCode==4768, \u0026#34;4768 Kerb TGT Req\u0026#34;, EventCode==4771, \u0026#34;4771 Kerb Pre-Auth Failed\u0026#34;, EventCode==4770, \u0026#34;4770 Kerb Svc Tkt Renewed\u0026#34;, EventCode==4624, \u0026#34;4624 Logon OK\u0026#34;, EventCode==4648, \u0026#34;4648 Logon Attempt Explicit Creds (ie. Task/RunAs)\u0026#34;, EventCode==4767, \u0026#34;4767 Unlocked\u0026#34;, EventCode==12294, \u0026#34;12294 Potential attack against Administrator\u0026#34;, EventCode==4794, \u0026#34;4794 DSRM Admin PW Set Attempt\u0026#34;, EventCode==4725, \u0026#34;4725 Disabled\u0026#34;, EventCode==4722, \u0026#34;4722 Enabled\u0026#34;, EventCode==4723, \u0026#34;4723 PW change attempt\u0026#34;,EventCode==4724, \u0026#34;4724 PW reset attempt\u0026#34;, EventCode==4738, \u0026#34;4738 Object changed\u0026#34;, EventCode==4720, \u0026#34;4720 Created\u0026#34;, EventCode==4726, \u0026#34;4726 Deleted\u0026#34;, EventCode==4778, \u0026#34;4778 Session Reconnect\u0026#34;, EventCode==4779, \u0026#34;4779 Session Disconnect\u0026#34;, EventCode==4800, \u0026#34;4800 Wks Locked\u0026#34;, EventCode==4801, \u0026#34;4801 Wks Unlocked\u0026#34;, 1=1, EventCode) | eval Logon_Type=case(Logon_Type==2, \u0026#34;2 Interactive\u0026#34;, Logon_Type==3, \u0026#34;3 Network\u0026#34;, Logon_Type==4, \u0026#34;4 Batch\u0026#34;, Logon_Type==5, \u0026#34;5 Service\u0026#34;, Logon_Type==7, \u0026#34;7 Unlock\u0026#34;, Logon_Type==8, \u0026#34;8 NetworkClearText\u0026#34;, Logon_Type==9, \u0026#34;9 NewCredentials\u0026#34;, Logon_Type==10, \u0026#34;10 RemoteInteractive\u0026#34;, Logon_Type==11, \u0026#34;11 CachedInteractive\u0026#34;, 1=1, Logon_Type) | table Time, Account, EventCode, ActionBy, Caller_Machine, Failure_Reason, Client_Address, Logon_Type, Logon_Process, Auth_Package, Caller_Process_Name, Process_Name, ComputerName, Workstation_Name, Src_Netw_Addr ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/20221006193807-account_lockout_splunk\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/20221005124255-active_directory\/": {
         
         "title": "Active Directory",
@@ -364,6 +374,36 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/20221004204210-powershell\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/20221006200600-powershell\/": {
+        
+        "title": "PowerShell",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/posts\/20221006200600-powershell\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/20221006200406-powershell_classes\/": {
+        
+        "title": "PowerShell - Classes",
+        "tags": [],
+        "content": "PowerShell - Classes Introduction PowerShell is an object-oriented language. When you run commands, see the output on your screen, those are objects.\nSkeleton of a class called student:\nclass student { } Classes have properties that look like parameters that are attributes that describe that class. The example below shows a class called student with two properties; FirstName and LastName.\nWhen you define a property, you should always define a type that sets a specific schema for what property values can hold. In the example below, both properties are defined as strings.\nStudent Class Class with two properties:\nclass student { [string]$FirstName [string]$LastName } After you define a class, create an object from it or instantiate an object. There are multiple ways to instantiate objects from classes; one common way is to use type accelerators such as [student] which represent the class, followed by a default method that comes with every class called new().\nUsing the type accelerator shortcut is the same as creating an object using the New-Object command.\nOnce you\u0026rsquo;ve created an object from that class, then assign values to properties. The example below is assigning values of Tyler and Muir for the FirstName and LastName properties.\nclass student { [string]$FirstName [string]$LastName } $student1 = [student]::new() $student1.FirstName = \u0026#39;Tyler\u0026#39; $student1.LastName = \u0026#39;Muir\u0026#39; $student1 | Get-Member $student1 | Write-Output Notice that Get-Member returns four methods and two properties. The properties probably look familiar, but the methods sure don\u0026rsquo;t. PowerShell adds certain methods by default, but you can add your own methods or even modify the default methods.\nMethods Defining methods with a scriptblock\n[\u0026lt;output type\u0026gt;]\u0026lt;name\u0026gt;() { \u0026lt;code that runs when the method is executed\u0026gt; } Method parameters set set inside the parentheses ().\nreturn is mandatory PowerShell functions will return objects by simply placing the object anywhere in the function; if a method returns an object, you must use the return construct as shown below.\n[string]GetName() { return \u0026#39;foo\u0026#39; } References Taken from: ATA\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/20221006200406-powershell_classes\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/20221006195312-powershell_clipboard_to_array\/": {
+        
+        "title": "PowerShell - Clipboard to Array",
+        "tags": [],
+        "content": "(Get-Clipboard) -split \u0026#39;\\t|\\r?\\n\u0026#39; ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/20221006195312-powershell_clipboard_to_array\/"
     },
     
     

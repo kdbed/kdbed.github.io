@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><title>Z3 Basics</title>
+<html><title>Account Lockout - Splunk</title>
 
 
 <meta charset="utf-8">
@@ -26,8 +26,23 @@
   <div class="grid">
     <div class="page" data-level="1">
       <div class="content">
-        <h1>Z3 Basics</h1>
-        
+        <h1>Account Lockout - Splunk</h1>
+        <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>index=wineventlog Account_Name=&lt;&lt;accountNameHere&gt;&gt;&gt;
+</span></span><span style="display:flex;"><span>(EventCode=4740 OR EventCode=4625 OR EventCode=644 OR EventCode=529 OR EventCode=675 OR EventCode=676 OR EventCode=681 OR EventCode=4771 OR EventCode=4770 OR EventCode=4768 OR EventCode=4776 OR EventCode=4777 OR EventCode=4725 OR EventCode=4723 OR EventCode=4724 OR EventCode=4767 OR EventCode=4800 OR EventCode=4801)
+</span></span><span style="display:flex;"><span>| eval Account0=mvindex(Account_Name,0) | eval Account1=mvindex(Account_Name,1)
+</span></span><span style="display:flex;"><span>| eval Account=case(EventCode==4624,Account1, EventCode==4625,Account1, EventCode==4648,Account1, EventCode==4722,Account1, EventCode==4723,Account1, EventCode==4724,Account1, EventCode==4725,Account1, EventCode==4738,Account1, EventCode==4740,Account1, EventCode==4767,Account1, EventCode==4768,Account0, EventCode==4769,Account0, EventCode==4771,Account0, EventCode==4770,Account0, EventCode==5140,Account0, EventCode==4778,Account0, EventCode==4779,Account0, EventCode==4800,Account0, EventCode==4801,Account0) | fillnull Value=&#34;-&#34; Account
+</span></span><span style="display:flex;"><span>| eval ActionBy=case(EventCode==4725,Account0, EventCode==4722,src_user, EventCode==4767,src_user, EventCode==4723,src_user, EventCode==4724,src_user, EventCode==4738,src_user, EventCode==4794,src_user)
+</span></span><span style="display:flex;"><span>| eval Time=strftime(_time, &#34;%m/%d/%y %H:%M:%S&#34;) | sort -_time
+</span></span><span style="display:flex;"><span>| eval Caller_Machine=if(Caller_Machine_Name!= NULL, Caller_Machine_Name, Caller_Computer_Name) | fillnull Value=&#34;-&#34; Caller_Machine
+</span></span><span style="display:flex;"><span>| rex field=Process_Name &#34;(?P&lt;Process_Name&gt;[^\\\]+)$&#34; | fillnull Value=&#34;-&#34; Process_Name
+</span></span><span style="display:flex;"><span>| rex field=Caller_Process_Name &#34;(?P&lt;Caller_Process_Name&gt;[^\\\]+)$&#34; | fillnull Value=&#34;-&#34; Caller_Process_Name
+</span></span><span style="display:flex;"><span>| rename &#34;Authentication_Package&#34; as &#34;Auth_Package&#34;, &#34;Source_Network_Address&#34; as &#34;Src_Netw_Addr&#34;
+</span></span><span style="display:flex;"><span>| replace &#34;MICROSOFT_AUTHENTICATION_PACKAGE_V1_0&#34; with &#34;MsAuthPkgV1_0&#34; in Auth_Package
+</span></span><span style="display:flex;"><span>| replace &#34;Microsoft Unified Security Protocol Provider&#34; with &#34;MsUnifiedSecProt&#34; in Auth_Package
+</span></span><span style="display:flex;"><span>| eval EventCode=case(EventCode==4740, &#34;4740 Locked&#34;, EventCode==4625, &#34;4625 Logon Failed&#34;, EventCode==644, &#34;644 Locked&#34;, EventCode==529, &#34;529 Logon Failed&#34;, EventCode==4768, &#34;4768 Kerb TGT Req&#34;, EventCode==4771, &#34;4771 Kerb Pre-Auth Failed&#34;, EventCode==4770, &#34;4770 Kerb Svc Tkt Renewed&#34;, EventCode==4624, &#34;4624 Logon OK&#34;, EventCode==4648, &#34;4648 Logon Attempt Explicit Creds (ie. Task/RunAs)&#34;, EventCode==4767, &#34;4767 Unlocked&#34;, EventCode==12294, &#34;12294 Potential attack against Administrator&#34;, EventCode==4794, &#34;4794 DSRM Admin PW Set Attempt&#34;, EventCode==4725, &#34;4725 Disabled&#34;, EventCode==4722, &#34;4722 Enabled&#34;, EventCode==4723, &#34;4723 PW change attempt&#34;,EventCode==4724, &#34;4724 PW reset attempt&#34;, EventCode==4738, &#34;4738 Object changed&#34;, EventCode==4720, &#34;4720 Created&#34;, EventCode==4726, &#34;4726 Deleted&#34;, EventCode==4778, &#34;4778 Session Reconnect&#34;, EventCode==4779, &#34;4779 Session Disconnect&#34;, EventCode==4800, &#34;4800 Wks Locked&#34;, EventCode==4801, &#34;4801 Wks Unlocked&#34;, 1=1, EventCode)
+</span></span><span style="display:flex;"><span>| eval Logon_Type=case(Logon_Type==2, &#34;2 Interactive&#34;, Logon_Type==3, &#34;3 Network&#34;, Logon_Type==4, &#34;4 Batch&#34;, Logon_Type==5, &#34;5 Service&#34;, Logon_Type==7, &#34;7 Unlock&#34;, Logon_Type==8, &#34;8 NetworkClearText&#34;, Logon_Type==9, &#34;9 NewCredentials&#34;, Logon_Type==10, &#34;10 RemoteInteractive&#34;, Logon_Type==11, &#34;11 CachedInteractive&#34;, 1=1, Logon_Type)
+</span></span><span style="display:flex;"><span>| table Time, Account, EventCode, ActionBy, Caller_Machine, Failure_Reason, Client_Address, Logon_Type, Logon_Process, Auth_Package, Caller_Process_Name, Process_Name, ComputerName, Workstation_Name, Src_Netw_Addr
+</span></span></code></pre></div>
       </div>
       
 
