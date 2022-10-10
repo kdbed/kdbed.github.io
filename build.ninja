@@ -3,6 +3,8 @@ rule org2md
   command = emacs --batch -l ~/.emacs.d/init.el -l publish.el --eval "(jethro/publish \"$in\")"
   description = org2md $in
 
+build content/posts/information_security.md: org2md org/information_security.org
+
 build content/posts/originalism.md: org2md org/originalism.org
 
 build content/posts/IdentityIQEssentialsIntroduction.md: org2md org/IdentityIQEssentialsIntroduction.org
@@ -19,9 +21,13 @@ build content/posts/dnszonetransfers.md: org2md org/dnszonetransfers.org
 
 build content/posts/introtopwntools.md: org2md org/introtopwntools.org
 
+build content/posts/nx.md: org2md org/nx.org
+
 build content/posts/relro.md: org2md org/relro.org
 
 build content/posts/nietzsche.md: org2md org/nietzsche.org
+
+build content/posts/binary_analysis.md: org2md org/binary_analysis.org
 
 build content/posts/greenhouseemissions.md: org2md org/greenhouseemissions.org
 
@@ -75,7 +81,11 @@ build content/posts/generativeeffects.md: org2md org/generativeeffects.org
 
 build content/posts/nietzsche_and_stoicism.md: org2md org/nietzsche_and_stoicism.org
 
+build content/posts/pie.md: org2md org/pie.org
+
 build content/posts/sha1cracker.md: org2md org/sha1cracker.org
+
+build content/posts/computer_science.md: org2md org/computer_science.org
 
 build content/posts/20221005124124-powershell_get_domain_controllers_in_forest.md: org2md org/20221005124124-powershell_get_domain_controllers_in_forest.org
 
@@ -85,7 +95,13 @@ build content/posts/roevwade.md: org2md org/roevwade.org
 
 build content/posts/20221005124255-active_directory.md: org2md org/20221005124255-active_directory.org
 
+build content/posts/splunk.md: org2md org/splunk.org
+
 build content/posts/orgPythonJupyter.md: org2md org/orgPythonJupyter.org
+
+build content/posts/malware.md: org2md org/malware.org
+
+build content/posts/fileless_malware.md: org2md org/fileless_malware.org
 
 build content/posts/haskelltest.md: org2md org/haskelltest.org
 

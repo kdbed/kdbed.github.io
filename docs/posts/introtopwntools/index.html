@@ -27,7 +27,8 @@
     <div class="page" data-level="1">
       <div class="content">
         <h1>Intro to Pwntools - TryHackMe</h1>
-        <h2 id="intro-to-pwntools">Intro to Pwntools</h2>
+        <p>Basics of <a href="/posts/binary_analysis/">Binary Analysis</a></p>
+<h2 id="intro-to-pwntools">Intro to Pwntools</h2>
 <p>Source materials here <a href="https://github.com/dizmascyberlabs/IntroToPwntools">dizmascyberlabs
 </a>
 <a href="https://github.com/apogiatzis/gdb-peda-pwndbg-gef">Install gdb-pwndbg-peda-gef</a></p>
@@ -65,11 +66,86 @@
 </span></span></code></pre></div><ul>
 <li><a href="/posts/relro/">RELRO</a>  = Relocation Read-Only; makes the global offset table (GOT) read-only after the linker resolves functions to it. The GOT is important for techniques such as the ret-to-libc attack</li>
 <li><a href="/posts/stack_canaries/">Stack Canaries</a> = tokens placed after a stack to detect a stack overflow. Stack canaries sit beside the stack in memory (where the program variables are stored), and if there is a stack overflow, then the canary will be corrupted. This allows the program to detect a buffer overflow and shut down.</li>
+<li><a href="/posts/nx/">NX</a> = NX is short for non-executable. If this is enabled, then memory segments can be either writable or executable, but not both. This stops potential attackers from injecting their own malicious code (called shellcode) into the program, because something in a writable segment cannot be executed.  On the vulnerable binary, you may have noticed the extra line RWX that indicates that there are segments which can be read, written, and executed. <a href="https://en.wikipedia.org/wiki/Executable%5Fspace%5Fprotection">wiki</a></li>
+<li><a href="/posts/pie/">PIE</a> = PIE stands for Position Independent Executable. This loads the program dependencies into random locations, so attacks that rely on memory layout are more difficult to conduct.  <a href="https://access.redhat.com/blogs/766093/posts/1975793">redhat</a></li>
 </ul>
+<p>Resource for properties involved in <code>checksec</code> : <a href="https://blog.siphos.be/2011/07/high-level-explanation-on-some-binary-executable-security/">siphos</a></p>
+<h3 id="cyclic">Cyclic</h3>
+<p>If we look at the files and permissions in the cyclic directory:</p>
+<figure><img src="/images/cyclic1.jpg"/>
+</figure>
 
+<p>You will see that the flag file and intro2pwn3 are owned by the same user, and that the suid bit is set for intro2pwn3. This means that the program will keep its permissions when it executes.</p>
+<p>Taking a look at the c code:</p>
+<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat cyclic/test_cyclic.c</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>#include &lt;stdio.h&gt;
+</span></span><span style="display:flex;"><span>#include &lt;stdlib.h&gt;
+</span></span><span style="display:flex;"><span>#include &lt;unistd.h&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>void print_flag() {
+</span></span><span style="display:flex;"><span>	printf(&#34;Getting Flag:\n&#34;);
+</span></span><span style="display:flex;"><span>	fflush(stdout);
+</span></span><span style="display:flex;"><span>	char *cat_flag[3] = {&#34;/bin/cat&#34;, &#34;flag.txt&#34;, NULL};
+</span></span><span style="display:flex;"><span>	execve(&#34;/bin/cat&#34;, cat_flag,  NULL);
+</span></span><span style="display:flex;"><span>	exit(0);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>void start(){
+</span></span><span style="display:flex;"><span>	char name[24];
+</span></span><span style="display:flex;"><span>	gets(name);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>int main(){
+</span></span><span style="display:flex;"><span>	printf(&#34;I run as dizmas.\n&#34;);
+</span></span><span style="display:flex;"><span>	printf(&#34;Who are you?: &#34;);
+</span></span><span style="display:flex;"><span>	start();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We see that although we (buzz) can run this program, the <code>print_flag()</code> function isn&rsquo;t executed. This program is vulnerable to a buffer overflow, because it uses the gets() function, which does not check to see if the user input is actually in bounds. In our case, the name variable has 24 bytes allocated, so if we input more than 24 bytes, we can write to other parts of memory. An important part of the memory we can overwrite is the instruction pointer (IP), which is called the eip on 32-bit machines, and rip on 64-bit machines. The IP points to the next instruction to be executed, so if we redirect the eip in our binary to the <code>print_flag()</code> function, we can print the flag.</p>
+<h4 id="cyclic">Cyclic</h4>
+<p>To control the IP, the first thing we need do is to is overflow the stack with a pattern, so we can see where the IP is.  A file <code>alphabet</code> is provided; start gdb with <code>gdb intro2pwn3</code> and run with the alphabet file <code>r &lt; alphabet</code>:</p>
+<figure><img src="/images/over1.jpg"/>
+</figure>
+
+<p>We&rsquo;ve caused a segmentation fault, and you may observe that there is an invalid address at 0x4a4a4a4a. If you scroll up, you can see the values at each register. For eip, it has been overwritten with 0x4a4a4a4a.</p>
+<p>The alphabet file can be produced with <code>cyclic 100</code>.</p>
+<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cyclic <span style="color:#40a070">100</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>aaaabaaacaaadaaaeaaafaaagaaahaaaiaaajaaakaaalaaamaaanaaaoaaapaaaqaaaraaasaaataaauaaavaaawaaaxaaayaaa
+</span></span></code></pre></div>
       </div>
       
 
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
 
    
 

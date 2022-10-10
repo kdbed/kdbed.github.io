@@ -82,7 +82,7 @@ window.store = {
         
         "title": "Account Lockout - Splunk",
         "tags": [],
-        "content": "index=wineventlog Account_Name=\u0026lt;\u0026lt;accountNameHere\u0026gt;\u0026gt;\u0026gt; (EventCode=4740 OR EventCode=4625 OR EventCode=644 OR EventCode=529 OR EventCode=675 OR EventCode=676 OR EventCode=681 OR EventCode=4771 OR EventCode=4770 OR EventCode=4768 OR EventCode=4776 OR EventCode=4777 OR EventCode=4725 OR EventCode=4723 OR EventCode=4724 OR EventCode=4767 OR EventCode=4800 OR EventCode=4801) | eval Account0=mvindex(Account_Name,0) | eval Account1=mvindex(Account_Name,1) | eval Account=case(EventCode==4624,Account1, EventCode==4625,Account1, EventCode==4648,Account1, EventCode==4722,Account1, EventCode==4723,Account1, EventCode==4724,Account1, EventCode==4725,Account1, EventCode==4738,Account1, EventCode==4740,Account1, EventCode==4767,Account1, EventCode==4768,Account0, EventCode==4769,Account0, EventCode==4771,Account0, EventCode==4770,Account0, EventCode==5140,Account0, EventCode==4778,Account0, EventCode==4779,Account0, EventCode==4800,Account0, EventCode==4801,Account0) | fillnull Value=\u0026#34;-\u0026#34; Account | eval ActionBy=case(EventCode==4725,Account0, EventCode==4722,src_user, EventCode==4767,src_user, EventCode==4723,src_user, EventCode==4724,src_user, EventCode==4738,src_user, EventCode==4794,src_user) | eval Time=strftime(_time, \u0026#34;%m/%d/%y %H:%M:%S\u0026#34;) | sort -_time | eval Caller_Machine=if(Caller_Machine_Name!= NULL, Caller_Machine_Name, Caller_Computer_Name) | fillnull Value=\u0026#34;-\u0026#34; Caller_Machine | rex field=Process_Name \u0026#34;(?P\u0026lt;Process_Name\u0026gt;[^\\\\\\]+)$\u0026#34; | fillnull Value=\u0026#34;-\u0026#34; Process_Name | rex field=Caller_Process_Name \u0026#34;(?P\u0026lt;Caller_Process_Name\u0026gt;[^\\\\\\]+)$\u0026#34; | fillnull Value=\u0026#34;-\u0026#34; Caller_Process_Name | rename \u0026#34;Authentication_Package\u0026#34; as \u0026#34;Auth_Package\u0026#34;, \u0026#34;Source_Network_Address\u0026#34; as \u0026#34;Src_Netw_Addr\u0026#34; | replace \u0026#34;MICROSOFT_AUTHENTICATION_PACKAGE_V1_0\u0026#34; with \u0026#34;MsAuthPkgV1_0\u0026#34; in Auth_Package | replace \u0026#34;Microsoft Unified Security Protocol Provider\u0026#34; with \u0026#34;MsUnifiedSecProt\u0026#34; in Auth_Package | eval EventCode=case(EventCode==4740, \u0026#34;4740 Locked\u0026#34;, EventCode==4625, \u0026#34;4625 Logon Failed\u0026#34;, EventCode==644, \u0026#34;644 Locked\u0026#34;, EventCode==529, \u0026#34;529 Logon Failed\u0026#34;, EventCode==4768, \u0026#34;4768 Kerb TGT Req\u0026#34;, EventCode==4771, \u0026#34;4771 Kerb Pre-Auth Failed\u0026#34;, EventCode==4770, \u0026#34;4770 Kerb Svc Tkt Renewed\u0026#34;, EventCode==4624, \u0026#34;4624 Logon OK\u0026#34;, EventCode==4648, \u0026#34;4648 Logon Attempt Explicit Creds (ie. Task/RunAs)\u0026#34;, EventCode==4767, \u0026#34;4767 Unlocked\u0026#34;, EventCode==12294, \u0026#34;12294 Potential attack against Administrator\u0026#34;, EventCode==4794, \u0026#34;4794 DSRM Admin PW Set Attempt\u0026#34;, EventCode==4725, \u0026#34;4725 Disabled\u0026#34;, EventCode==4722, \u0026#34;4722 Enabled\u0026#34;, EventCode==4723, \u0026#34;4723 PW change attempt\u0026#34;,EventCode==4724, \u0026#34;4724 PW reset attempt\u0026#34;, EventCode==4738, \u0026#34;4738 Object changed\u0026#34;, EventCode==4720, \u0026#34;4720 Created\u0026#34;, EventCode==4726, \u0026#34;4726 Deleted\u0026#34;, EventCode==4778, \u0026#34;4778 Session Reconnect\u0026#34;, EventCode==4779, \u0026#34;4779 Session Disconnect\u0026#34;, EventCode==4800, \u0026#34;4800 Wks Locked\u0026#34;, EventCode==4801, \u0026#34;4801 Wks Unlocked\u0026#34;, 1=1, EventCode) | eval Logon_Type=case(Logon_Type==2, \u0026#34;2 Interactive\u0026#34;, Logon_Type==3, \u0026#34;3 Network\u0026#34;, Logon_Type==4, \u0026#34;4 Batch\u0026#34;, Logon_Type==5, \u0026#34;5 Service\u0026#34;, Logon_Type==7, \u0026#34;7 Unlock\u0026#34;, Logon_Type==8, \u0026#34;8 NetworkClearText\u0026#34;, Logon_Type==9, \u0026#34;9 NewCredentials\u0026#34;, Logon_Type==10, \u0026#34;10 RemoteInteractive\u0026#34;, Logon_Type==11, \u0026#34;11 CachedInteractive\u0026#34;, 1=1, Logon_Type) | table Time, Account, EventCode, ActionBy, Caller_Machine, Failure_Reason, Client_Address, Logon_Type, Logon_Process, Auth_Package, Caller_Process_Name, Process_Name, ComputerName, Workstation_Name, Src_Netw_Addr ", 
+        "content": "Monitoring Active Directory account lockouts with Splunk\nindex=wineventlog Account_Name=\u0026lt;\u0026lt;accountNameHere\u0026gt;\u0026gt;\u0026gt; (EventCode=4740 OR EventCode=4625 OR EventCode=644 OR EventCode=529 OR EventCode=675 OR EventCode=676 OR EventCode=681 OR EventCode=4771 OR EventCode=4770 OR EventCode=4768 OR EventCode=4776 OR EventCode=4777 OR EventCode=4725 OR EventCode=4723 OR EventCode=4724 OR EventCode=4767 OR EventCode=4800 OR EventCode=4801) | eval Account0=mvindex(Account_Name,0) | eval Account1=mvindex(Account_Name,1) | eval Account=case(EventCode==4624,Account1, EventCode==4625,Account1, EventCode==4648,Account1, EventCode==4722,Account1, EventCode==4723,Account1, EventCode==4724,Account1, EventCode==4725,Account1, EventCode==4738,Account1, EventCode==4740,Account1, EventCode==4767,Account1, EventCode==4768,Account0, EventCode==4769,Account0, EventCode==4771,Account0, EventCode==4770,Account0, EventCode==5140,Account0, EventCode==4778,Account0, EventCode==4779,Account0, EventCode==4800,Account0, EventCode==4801,Account0) | fillnull Value=\u0026#34;-\u0026#34; Account | eval ActionBy=case(EventCode==4725,Account0, EventCode==4722,src_user, EventCode==4767,src_user, EventCode==4723,src_user, EventCode==4724,src_user, EventCode==4738,src_user, EventCode==4794,src_user) | eval Time=strftime(_time, \u0026#34;%m/%d/%y %H:%M:%S\u0026#34;) | sort -_time | eval Caller_Machine=if(Caller_Machine_Name!= NULL, Caller_Machine_Name, Caller_Computer_Name) | fillnull Value=\u0026#34;-\u0026#34; Caller_Machine | rex field=Process_Name \u0026#34;(?P\u0026lt;Process_Name\u0026gt;[^\\\\\\]+)$\u0026#34; | fillnull Value=\u0026#34;-\u0026#34; Process_Name | rex field=Caller_Process_Name \u0026#34;(?P\u0026lt;Caller_Process_Name\u0026gt;[^\\\\\\]+)$\u0026#34; | fillnull Value=\u0026#34;-\u0026#34; Caller_Process_Name | rename \u0026#34;Authentication_Package\u0026#34; as \u0026#34;Auth_Package\u0026#34;, \u0026#34;Source_Network_Address\u0026#34; as \u0026#34;Src_Netw_Addr\u0026#34; | replace \u0026#34;MICROSOFT_AUTHENTICATION_PACKAGE_V1_0\u0026#34; with \u0026#34;MsAuthPkgV1_0\u0026#34; in Auth_Package | replace \u0026#34;Microsoft Unified Security Protocol Provider\u0026#34; with \u0026#34;MsUnifiedSecProt\u0026#34; in Auth_Package | eval EventCode=case(EventCode==4740, \u0026#34;4740 Locked\u0026#34;, EventCode==4625, \u0026#34;4625 Logon Failed\u0026#34;, EventCode==644, \u0026#34;644 Locked\u0026#34;, EventCode==529, \u0026#34;529 Logon Failed\u0026#34;, EventCode==4768, \u0026#34;4768 Kerb TGT Req\u0026#34;, EventCode==4771, \u0026#34;4771 Kerb Pre-Auth Failed\u0026#34;, EventCode==4770, \u0026#34;4770 Kerb Svc Tkt Renewed\u0026#34;, EventCode==4624, \u0026#34;4624 Logon OK\u0026#34;, EventCode==4648, \u0026#34;4648 Logon Attempt Explicit Creds (ie. Task/RunAs)\u0026#34;, EventCode==4767, \u0026#34;4767 Unlocked\u0026#34;, EventCode==12294, \u0026#34;12294 Potential attack against Administrator\u0026#34;, EventCode==4794, \u0026#34;4794 DSRM Admin PW Set Attempt\u0026#34;, EventCode==4725, \u0026#34;4725 Disabled\u0026#34;, EventCode==4722, \u0026#34;4722 Enabled\u0026#34;, EventCode==4723, \u0026#34;4723 PW change attempt\u0026#34;,EventCode==4724, \u0026#34;4724 PW reset attempt\u0026#34;, EventCode==4738, \u0026#34;4738 Object changed\u0026#34;, EventCode==4720, \u0026#34;4720 Created\u0026#34;, EventCode==4726, \u0026#34;4726 Deleted\u0026#34;, EventCode==4778, \u0026#34;4778 Session Reconnect\u0026#34;, EventCode==4779, \u0026#34;4779 Session Disconnect\u0026#34;, EventCode==4800, \u0026#34;4800 Wks Locked\u0026#34;, EventCode==4801, \u0026#34;4801 Wks Unlocked\u0026#34;, 1=1, EventCode) | eval Logon_Type=case(Logon_Type==2, \u0026#34;2 Interactive\u0026#34;, Logon_Type==3, \u0026#34;3 Network\u0026#34;, Logon_Type==4, \u0026#34;4 Batch\u0026#34;, Logon_Type==5, \u0026#34;5 Service\u0026#34;, Logon_Type==7, \u0026#34;7 Unlock\u0026#34;, Logon_Type==8, \u0026#34;8 NetworkClearText\u0026#34;, Logon_Type==9, \u0026#34;9 NewCredentials\u0026#34;, Logon_Type==10, \u0026#34;10 RemoteInteractive\u0026#34;, Logon_Type==11, \u0026#34;11 CachedInteractive\u0026#34;, 1=1, Logon_Type) | table Time, Account, EventCode, ActionBy, Caller_Machine, Failure_Reason, Client_Address, Logon_Type, Logon_Process, Auth_Package, Caller_Process_Name, Process_Name, ComputerName, Workstation_Name, Src_Netw_Addr ", 
         "url": "https:\/\/kdbed.github.io\/posts\/20221006193807-account_lockout_splunk\/"
     },
     
@@ -124,6 +124,16 @@ window.store = {
         "tags": [],
         "content": "AS-REP Roasting Two key attacks on Kerberos security in Active Directory include kerberoasting and AS-REP Roasting. Kerberoasting typically requires credentials on the domain to authenticate with. There is an option for an account to have the property “Do not require Kerberos preauthentication” or UF_DONT_REQUIRE_PREAUTH set to true. AS-REP Roasting is an attack against Kerberos for these accounts.\nUse the Impacket tool GetNPUsers.py to try to get a hash for each user\nλ ~/ctf/htb/forest/ for user in $(cat usernames.txt); do GetNPUsers.py -no-pass -dc-ip 10.10.10.161 htb/${user} | grep -v Impacket; done [*] Getting TGT for sebastien [-] User sebastien doesn\u0026#39;t have UF_DONT_REQUIRE_PREAUTH set [*] Getting TGT for lucinda [-] User lucinda doesn\u0026#39;t have UF_DONT_REQUIRE_PREAUTH set [*] Getting TGT for svc-alfresco $krb5asrep$23$svc-alfresco@HTB:25311259ddd6d0e65a4ae2cd898c547b$2328b382956004167ef612abbfd0b3350d362f386d70deadf093d73dd33fadea8bf648d3d7c1cab3565b508a9dafb06cb399ac26e04521ffa22edc882213994257e53976a81b78aaf49dfe02da14f6f76fc7def2a7d4e7e8ff696efa29a1ac4a8df2c0f7856df3c7aa7bbff60e93c1e1fbfc538745a0ffefa3f383d68ddfb4984d1194bc56cc9d168b69a512901815da53cba71a2d0a13c6369fd1b74b9ce3367119502354b2cae4ae3096e5ba4a041fa8a0d1d7f4a92c0f47d2c6ee7bcc73b7f2c3b10955799c807bf43d3035488fb385c68568e770d87d771343e16266ea8f [*] Getting TGT for andy [-] User andy doesn\u0026#39;t have UF_DONT_REQUIRE_PREAUTH set [*] Getting TGT for mark [-] User mark doesn\u0026#39;t have UF_DONT_REQUIRE_PREAUTH set [*] Getting TGT for santi [-] User santi doesn\u0026#39;t have UF_DONT_REQUIRE_PREAUTH set The hash is quickly cracked with hashcat.\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/as_rep_roasting\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/binary_analysis\/": {
+        
+        "title": "Binary Analysis",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/posts\/binary_analysis\/"
     },
     
     
@@ -178,6 +188,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/computer_science\/": {
+        
+        "title": "Computer Science",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/posts\/computer_science\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/dnszonetransfers\/": {
         
         "title": "DNS Zone Transfers",
@@ -198,11 +218,21 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/fileless_malware\/": {
+        
+        "title": "Fileless Malware",
+        "tags": [],
+        "content": "What is Fileless Malware? Traditionally, antivirus and other endpoint security products have focused on files (executables) to detect and prevent malware. There are several advantages to this. Files can be hashed, queried in reputation services, examined by both static analysis and machine learning, and easily excluded for false detections.\nThis is a problem for hackers: if the malware’s signature is detected two days after release, the attacker’s ROI (return on investment) may be significantly less than expected, or even negligible.\nFileless malware is malicious code that does not require using an executable file on the endpoint’s file system besides those that are already there. It is typically injected into some running process and executes only in RAM. This makes it far more difficult for traditional antivirus software and other endpoint security products to detect or prevent because of the low footprint and the absence of files to scan. These often utilize system processes available and trusted by the OS. Examples include:\nVBScript JScript PowerShell Windows Management Instrumentation (WMI) Batch files Mshta and rundll32 (or other Windows signed files capable of running malicious code) Malware hidden within documents is also considered fileless. Although such data files are not allowed to run code, there are vulnerabilities in Microsoft Office and PDF readers that adversaries can exploit to obtain code execution. For example, an infected document could trigger a malicious PowerShell command. There are also a few built-in functionalities that allow code execution within documents, like macros and DDE attack.\nHow Does Fileless Malware work? The most common form of fileless malware in the wild is when a victim clicks on a spam link within an email or fraudulent website. That link or website then loads the Flash application and implements a relevant exploit in order to infect the user’s machine. Afterward, the malware uses shellcode in order to run a command that allows it to both download and execute the payload solely within memory.\nCharacteristics This type of malicious software makes use of programs that are already on the computer. Its behavior can’t be detected by heuristics scanners and it has no identifiable code or signature.\nAdditionally, fileless malware resides within the memory of the system.\nIn order to function, it takes advantage of the processes of the infected operating system. More advanced fileless malware can also be combined with other types of malware to facilitate complex cyberattacks. It can even circumvent both whitelisting and sandboxing under the right circumstances.\nStages of a Fileless Malware Attack Such attacks function in a fairly unique way:\nMalware gains access to the machine oftentimes with a phishing email or social engineering tactic, or perhaps compromised credentials\nThe program establishes persistance implementing a backdoor\ndata exfiltration Common Fileless Malware Techniques Memory resident malware By using the memory space of a real Windows file, attackers can load malicious code that lies dormant until activated. The fileless aspect is that the malware can’t be detected by standard file-scanning antivirus software.\nRootkits Because rootkits exist on the kernel rather than in a file, they have powerful abilities to avoid detection. They are 100% fileless, but fit into this category as it evolves.\nWindows Registry Malware Like in the example mentioned above, these attacks takes advantage of the Windows Registry database that stores low-level settings for various applications. The malware relies on code executed through a file, but this file is set to self-destruct after execution, allowing the malware to persist as fileless.\nFalse credentials As the name suggests, this type of attack involves using compromised credentials from a legitimate user (aka – stolen username and password). After the hacker has gained access to the system, they then implement shellcode in order to facilitate their attack on the machine.\nIn extreme cases, they may even place code within the registry in order to establish ongoing access to the computer.\nFileless ransomware For those who are unfamiliar with this type of malware, ransomware is a malicious program that hackers use in order to extort money from their victims. They often encrypt sensitive data and threaten to delete it unless a certain amount of money is paid, often via cryptocurrency.\nWhen this type of fileless attack occurs, hackers are able to carry out the attack without ever writing to the disk of the machine. This makes it difficult to discern until it’s too late.\nExploit kits Threat actors use a collection of tools known as exploit kits in order to take advantage of vulnerabilities on a victim’s computer. These attacks generally begin as a typical fileless malware attack would, meaning they often convince the user to click on a fraudulent link.\nOnce the program is able to infiltrate the machine, the exploit kit can scan the system to determine vulnerabilities to take advantage of and then come up with a specific set of exploits to deploy. Oftentimes, the malware will go undetected and gain extensive access to the system and data.\nThe problem One of the reasons fileless malware is so compelling is that security products cannot just block the system files or software that are utilized in these kinds of attack. For example, PowerShell: More importantly, from a defensive point of view, blocking it would be futile: There are many public sources explaining how to bypass the PowerShell execution policy, and other ways to use it that bypass the PowerShell.exe block. To name a few:\nRun PowerShell with dlls only, with a simple rundll32 command using PowerShdll Convert PowerShell scripts into other EXE files, with tools like PS2EXE Use malware that utilizes its own copy of PowerShell.exe or modifies the local PowerShell to avoid recognition of PowerShell by security products Embed a PowerShell script in the pixels of a PNG file and generate a one-liner to execute it using Invoke-PSImage Blocking MS Office Macros In an attempt to eliminate this attack vector, Microsoft added an option to disable macros as a site setting (starting in Office 2016). However, most environments still allow them, so security vendors have mainly tackled this in two ways:\nBlock macros across the board – this enforces the same restrictions being offered by Microsoft for organizations that can do without macros Extract the macro code for static analysis or reputation checks – this can work in some cases. However, the shortcoming of this approach is that such code is extremely difficult to classify and detect within a tolerable false positive rate, especially for never-seen-before malicious macros. In addition, very few repositories of benign and malicious code exist. Another option is looking for common functions typically found in attacks, but again these are variable and not widely-catalogued Server-Side Detection Some products use agent-side monitoring only and make the decision on the server or in the cloud. This approach has the same disadvantages as any detection that does not happen on the endpoint. Mainly, in order to work, it requires connectivity and prevention is impossible because the agent has to wait for the server to respond before acting.\nDetection Behavior, not identity The key is to look at the behavior of processes executing on the endpoint rather than inspecting the files on the machine. This is effective because, despite the large and increasing number of malware variants, they operate in very similar ways. The number of malware behaviors is considerably smaller than the number of ways a malicious file might look, making this approach suitable for prevention and detection.\nAlthough SentinelOne uses multiple engines, including static and behavioral AI, the behavioral approach is extremely good at detecting and preventing this type of attack because it is agnostic regarding the attack vector.\nThe effectiveness of this approach is demonstrated in examples like the WannaCry campaign, where SentinelOne was able to defend customers before the ransomware had been seen in the wild.\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/fileless_malware\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/generativeeffects\/": {
         
         "title": "Generative Effects: Orders and Galois Connections",
         "tags": [],
-        "content": "", 
+        "content": "Introduction From An Invitation to Applied Category Theory - Seven Sketches in Compositionality \u0026ndash; Fong/Spivak\nA wide variety of situations exhibit something called compositionality \u0026ndash; wherein systems or relationships can be combined to form new systems or relationships. Category-theoretic constructs can be used to describe the compositionality in such situations. A structural approach to modeling with Category Theory : introduction.\nMore Than the Sum of Their Parts ", 
         "url": "https:\/\/kdbed.github.io\/posts\/generativeeffects\/"
     },
     
@@ -230,9 +260,9 @@ window.store = {
     
     "https:\/\/kdbed.github.io\/posts\/haskelltest\/": {
         
-        "title": "haskellTest",
+        "title": "Haskell - Org Test",
         "tags": [],
-        "content": "import Control.Monad :{ map (\\x -\u0026gt; x*x + x + 1) [1..10] :} [3,7,13,21,31,43,57,73,91,111] ", 
+        "content": "Map import Control.Monad :{ map (\\x -\u0026gt; x*x + x + 1) [1..10] :} [3,7,13,21,31,43,57,73,91,111] ", 
         "url": "https:\/\/kdbed.github.io\/posts\/haskelltest\/"
     },
     
@@ -258,6 +288,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/information_security\/": {
+        
+        "title": "Information Security",
+        "tags": [],
+        "content": "Computer Science\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/information_security\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/isakmp\/": {
         
         "title": "Internet Security Association and Key Management Protocol (ISAKMP)",
@@ -272,7 +312,7 @@ window.store = {
         
         "title": "Intro to Pwntools - TryHackMe",
         "tags": [],
-        "content": "Intro to Pwntools Source materials here dizmascyberlabs Install gdb-pwndbg-peda-gef\nChecksec Same source code, compiled with different protections in place:\n1 checksec checksec/intro2pwn2 [*] \u0026#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn2\u0026#39; Arch: i386-32-little RELRO: Partial RELRO Stack: No canary found NX: NX disabled PIE: No PIE (0x8048000) RWX: Has RWX segments 1 checksec checksec/intro2pwn1 [*] \u0026#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn1\u0026#39; Arch: i386-32-little RELRO: Full RELRO Stack: Canary found NX: NX enabled PIE: PIE enabled RELRO = Relocation Read-Only; makes the global offset table (GOT) read-only after the linker resolves functions to it. The GOT is important for techniques such as the ret-to-libc attack Stack Canaries = tokens placed after a stack to detect a stack overflow. Stack canaries sit beside the stack in memory (where the program variables are stored), and if there is a stack overflow, then the canary will be corrupted. This allows the program to detect a buffer overflow and shut down. ", 
+        "content": "Basics of Binary Analysis\nIntro to Pwntools Source materials here dizmascyberlabs Install gdb-pwndbg-peda-gef\nChecksec Same source code, compiled with different protections in place:\n1 checksec checksec/intro2pwn2 [*] \u0026#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn2\u0026#39; Arch: i386-32-little RELRO: Partial RELRO Stack: No canary found NX: NX disabled PIE: No PIE (0x8048000) RWX: Has RWX segments 1 checksec checksec/intro2pwn1 [*] \u0026#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn1\u0026#39; Arch: i386-32-little RELRO: Full RELRO Stack: Canary found NX: NX enabled PIE: PIE enabled RELRO = Relocation Read-Only; makes the global offset table (GOT) read-only after the linker resolves functions to it. The GOT is important for techniques such as the ret-to-libc attack Stack Canaries = tokens placed after a stack to detect a stack overflow. Stack canaries sit beside the stack in memory (where the program variables are stored), and if there is a stack overflow, then the canary will be corrupted. This allows the program to detect a buffer overflow and shut down. NX = NX is short for non-executable. If this is enabled, then memory segments can be either writable or executable, but not both. This stops potential attackers from injecting their own malicious code (called shellcode) into the program, because something in a writable segment cannot be executed. On the vulnerable binary, you may have noticed the extra line RWX that indicates that there are segments which can be read, written, and executed. wiki PIE = PIE stands for Position Independent Executable. This loads the program dependencies into random locations, so attacks that rely on memory layout are more difficult to conduct. redhat Resource for properties involved in checksec : siphos\nCyclic If we look at the files and permissions in the cyclic directory:\nYou will see that the flag file and intro2pwn3 are owned by the same user, and that the suid bit is set for intro2pwn3. This means that the program will keep its permissions when it executes.\nTaking a look at the c code:\n1 cat cyclic/test_cyclic.c #include \u0026lt;stdio.h\u0026gt; #include \u0026lt;stdlib.h\u0026gt; #include \u0026lt;unistd.h\u0026gt; void print_flag() { printf(\u0026#34;Getting Flag:\\n\u0026#34;); fflush(stdout); char *cat_flag[3] = {\u0026#34;/bin/cat\u0026#34;, \u0026#34;flag.txt\u0026#34;, NULL}; execve(\u0026#34;/bin/cat\u0026#34;, cat_flag, NULL); exit(0); } void start(){ char name[24]; gets(name); } int main(){ printf(\u0026#34;I run as dizmas.\\n\u0026#34;); printf(\u0026#34;Who are you?: \u0026#34;); start(); } We see that although we (buzz) can run this program, the print_flag() function isn\u0026rsquo;t executed. This program is vulnerable to a buffer overflow, because it uses the gets() function, which does not check to see if the user input is actually in bounds. In our case, the name variable has 24 bytes allocated, so if we input more than 24 bytes, we can write to other parts of memory. An important part of the memory we can overwrite is the instruction pointer (IP), which is called the eip on 32-bit machines, and rip on 64-bit machines. The IP points to the next instruction to be executed, so if we redirect the eip in our binary to the print_flag() function, we can print the flag.\nCyclic To control the IP, the first thing we need do is to is overflow the stack with a pattern, so we can see where the IP is. A file alphabet is provided; start gdb with gdb intro2pwn3 and run with the alphabet file r \u0026lt; alphabet:\nWe\u0026rsquo;ve caused a segmentation fault, and you may observe that there is an invalid address at 0x4a4a4a4a. If you scroll up, you can see the values at each register. For eip, it has been overwritten with 0x4a4a4a4a.\nThe alphabet file can be produced with cyclic 100.\n1 cyclic 100 aaaabaaacaaadaaaeaaafaaagaaahaaaiaaajaaakaaalaaamaaanaaaoaaapaaaqaaaraaasaaataaauaaavaaawaaaxaaayaaa ", 
         "url": "https:\/\/kdbed.github.io\/posts\/introtopwntools\/"
     },
     
@@ -308,6 +348,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/malware\/": {
+        
+        "title": "Malware",
+        "tags": [],
+        "content": "Information Security\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/malware\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/marx\/": {
         
         "title": "Marx",
@@ -338,6 +388,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/nx\/": {
+        
+        "title": "NX",
+        "tags": [],
+        "content": "Binary Analysis\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/nx\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/orgpythonjupyter\/": {
         
         "title": "Org Mode - Python\/Jupyter Example",
@@ -354,6 +414,16 @@ window.store = {
         "tags": [],
         "content": "Originalism, the theory that the Constitution should be interpreted according to the meaning or intent of the drafters, has great appeal to Americans. At one time closely associated with the conservative movement, originalism is now commonly held as an important, if not the exclusive, device for interpreting the Constitution. This has not been our historic practice. Over thirty years ago, Munzer and Nickel (1977, 1029) wrote that “one does not have to dig very deeply into the literature of American constitutional law to suspect that many constitutional provisions do not mean today what their framers thought they meant.” Yet originalism still has great appeal. (_The Failed Promise of Originalism_ - Frank Cross)\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/originalism\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/pie\/": {
+        
+        "title": "PIE",
+        "tags": [],
+        "content": "Binary Analysis\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pie\/"
     },
     
     
@@ -474,6 +544,16 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/smtps\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/splunk\/": {
+        
+        "title": "Splunk",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/posts\/splunk\/"
     },
     
     

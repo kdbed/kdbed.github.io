@@ -4,6 +4,8 @@ author = ["svejk"]
 draft = false
 +++
 
+Monitoring [Active Directory]({{<relref "20221005124255-active_directory.md#" >}}) account lockouts with [Splunk]({{<relref "splunk.md#" >}})
+
 ```text
 index=wineventlog Account_Name=<<accountNameHere>>>
 (EventCode=4740 OR EventCode=4625 OR EventCode=644 OR EventCode=529 OR EventCode=675 OR EventCode=676 OR EventCode=681 OR EventCode=4771 OR EventCode=4770 OR EventCode=4768 OR EventCode=4776 OR EventCode=4777 OR EventCode=4725 OR EventCode=4723 OR EventCode=4724 OR EventCode=4767 OR EventCode=4800 OR EventCode=4801)

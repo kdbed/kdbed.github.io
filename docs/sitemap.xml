@@ -22,6 +22,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/as_rep_roasting/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/binary_analysis/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/birthdayattack/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/cpp_proj_nix/</loc>
@@ -32,9 +34,13 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/securityplus/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/computer_science/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/dnszonetransfers/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/dopamine/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/fileless_malware/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/generativeeffects/</loc>
   </url><url>
@@ -48,6 +54,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/impacket/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/information_security/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/isakmp/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/introtopwntools/</loc>
@@ -58,15 +66,21 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/linpeas/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/malware/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/marx/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/nietzsche/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/nietzsche_and_stoicism/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/nx/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/orgpythonjupyter/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/originalism/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/pie/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/</loc>
   </url><url>
@@ -91,6 +105,8 @@
     <loc>https://kdbed.github.io/posts/sha1cracker/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/smtps/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/splunk/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/stack_canaries/</loc>
   </url><url>

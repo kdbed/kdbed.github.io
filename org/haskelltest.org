@@ -1,9 +1,11 @@
 :PROPERTIES:
 :ID:       acdc67cd-43a2-4060-b54a-cb80a48050b8
 :END:
-#+title: haskellTest
+#+title: Haskell - Org Test
 #+filetags: :org:haskell:org-roam:example:
 
+
+* Map
 #+begin_src haskell :exports both :post org-babel-haskell-formatter(*this*)
 import Control.Monad
 

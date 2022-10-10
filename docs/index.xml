@@ -31,7 +31,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/20221006193807-account_lockout_splunk/</guid>
-      <description>index=wineventlog Account_Name=&amp;lt;&amp;lt;accountNameHere&amp;gt;&amp;gt;&amp;gt; (EventCode=4740 OR EventCode=4625 OR EventCode=644 OR EventCode=529 OR EventCode=675 OR EventCode=676 OR EventCode=681 OR EventCode=4771 OR EventCode=4770 OR EventCode=4768 OR EventCode=4776 OR EventCode=4777 OR EventCode=4725 OR EventCode=4723 OR EventCode=4724 OR EventCode=4767 OR EventCode=4800 OR EventCode=4801) | eval Account0=mvindex(Account_Name,0) | eval Account1=mvindex(Account_Name,1) | eval Account=case(EventCode==4624,Account1, EventCode==4625,Account1, EventCode==4648,Account1, EventCode==4722,Account1, EventCode==4723,Account1, EventCode==4724,Account1, EventCode==4725,Account1, EventCode==4738,Account1, EventCode==4740,Account1, EventCode==4767,Account1, EventCode==4768,Account0, EventCode==4769,Account0, EventCode==4771,Account0, EventCode==4770,Account0, EventCode==5140,Account0, EventCode==4778,Account0, EventCode==4779,Account0, EventCode==4800,Account0, EventCode==4801,Account0) | fillnull Value=&amp;#34;-&amp;#34; Account | eval ActionBy=case(EventCode==4725,Account0, EventCode==4722,src_user, EventCode==4767,src_user, EventCode==4723,src_user, EventCode==4724,src_user, EventCode==4738,src_user, EventCode==4794,src_user) | eval Time=strftime(_time, &amp;#34;%m/%d/%y %H:%M:%S&amp;#34;) | sort -_time | eval Caller_Machine=if(Caller_Machine_Name!</description>
+      <description>Monitoring Active Directory account lockouts with Splunk
+index=wineventlog Account_Name=&amp;lt;&amp;lt;accountNameHere&amp;gt;&amp;gt;&amp;gt; (EventCode=4740 OR EventCode=4625 OR EventCode=644 OR EventCode=529 OR EventCode=675 OR EventCode=676 OR EventCode=681 OR EventCode=4771 OR EventCode=4770 OR EventCode=4768 OR EventCode=4776 OR EventCode=4777 OR EventCode=4725 OR EventCode=4723 OR EventCode=4724 OR EventCode=4767 OR EventCode=4800 OR EventCode=4801) | eval Account0=mvindex(Account_Name,0) | eval Account1=mvindex(Account_Name,1) | eval Account=case(EventCode==4624,Account1, EventCode==4625,Account1, EventCode==4648,Account1, EventCode==4722,Account1, EventCode==4723,Account1, EventCode==4724,Account1, EventCode==4725,Account1, EventCode==4738,Account1, EventCode==4740,Account1, EventCode==4767,Account1, EventCode==4768,Account0, EventCode==4769,Account0, EventCode==4771,Account0, EventCode==4770,Account0, EventCode==5140,Account0, EventCode==4778,Account0, EventCode==4779,Account0, EventCode==4800,Account0, EventCode==4801,Account0) | fillnull Value=&amp;#34;-&amp;#34; Account | eval ActionBy=case(EventCode==4725,Account0, EventCode==4722,src_user, EventCode==4767,src_user, EventCode==4723,src_user, EventCode==4724,src_user, EventCode==4738,src_user, EventCode==4794,src_user) | eval Time=strftime(_time, &amp;#34;%m/%d/%y %H:%M:%S&amp;#34;) | sort -_time | eval Caller_Machine=if(Caller_Machine_Name!</description>
     </item>
     
     <item>
@@ -70,6 +71,15 @@ SYN scan : A SYN scan sends a TCP SYN packet to a port and looks for a SYN/ACK p
       <guid>https://kdbed.github.io/posts/as_rep_roasting/</guid>
       <description>AS-REP Roasting Two key attacks on Kerberos security in Active Directory include kerberoasting and AS-REP Roasting. Kerberoasting typically requires credentials on the domain to authenticate with. There is an option for an account to have the property “Do not require Kerberos preauthentication” or UF_DONT_REQUIRE_PREAUTH set to true. AS-REP Roasting is an attack against Kerberos for these accounts.
 Use the Impacket tool GetNPUsers.py to try to get a hash for each user</description>
+    </item>
+    
+    <item>
+      <title>Binary Analysis</title>
+      <link>https://kdbed.github.io/posts/binary_analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/binary_analysis/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -112,6 +122,15 @@ Code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 #include &amp;l
     </item>
     
     <item>
+      <title>Computer Science</title>
+      <link>https://kdbed.github.io/posts/computer_science/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/computer_science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>DNS Zone Transfers</title>
       <link>https://kdbed.github.io/posts/dnszonetransfers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -131,12 +150,24 @@ How DNS Works DNS (Domain Name System) is like an Internet phonebook.</descripti
     </item>
     
     <item>
+      <title>Fileless Malware</title>
+      <link>https://kdbed.github.io/posts/fileless_malware/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/fileless_malware/</guid>
+      <description>What is Fileless Malware? Traditionally, antivirus and other endpoint security products have focused on files (executables) to detect and prevent malware. There are several advantages to this. Files can be hashed, queried in reputation services, examined by both static analysis and machine learning, and easily excluded for false detections.
+This is a problem for hackers: if the malware’s signature is detected two days after release, the attacker’s ROI (return on investment) may be significantly less than expected, or even negligible.</description>
+    </item>
+    
+    <item>
       <title>Generative Effects: Orders and Galois Connections</title>
       <link>https://kdbed.github.io/posts/generativeeffects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/generativeeffects/</guid>
-      <description></description>
+      <description>Introduction From An Invitation to Applied Category Theory - Seven Sketches in Compositionality &amp;ndash; Fong/Spivak
+A wide variety of situations exhibit something called compositionality &amp;ndash; wherein systems or relationships can be combined to form new systems or relationships. Category-theoretic constructs can be used to describe the compositionality in such situations. A structural approach to modeling with Category Theory : introduction.
+More Than the Sum of Their Parts </description>
     </item>
     
     <item>
@@ -158,12 +189,12 @@ How DNS Works DNS (Domain Name System) is like an Internet phonebook.</descripti
     </item>
     
     <item>
-      <title>haskellTest</title>
+      <title>Haskell - Org Test</title>
       <link>https://kdbed.github.io/posts/haskelltest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/haskelltest/</guid>
-      <description>import Control.Monad :{ map (\x -&amp;gt; x*x + x + 1) [1..10] :} [3,7,13,21,31,43,57,73,91,111] </description>
+      <description>Map import Control.Monad :{ map (\x -&amp;gt; x*x + x + 1) [1..10] :} [3,7,13,21,31,43,57,73,91,111] </description>
     </item>
     
     <item>
@@ -185,6 +216,15 @@ How DNS Works DNS (Domain Name System) is like an Internet phonebook.</descripti
     </item>
     
     <item>
+      <title>Information Security</title>
+      <link>https://kdbed.github.io/posts/information_security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/information_security/</guid>
+      <description>Computer Science</description>
+    </item>
+    
+    <item>
       <title>Internet Security Association and Key Management Protocol (ISAKMP)</title>
       <link>https://kdbed.github.io/posts/isakmp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -199,7 +239,8 @@ How DNS Works DNS (Domain Name System) is like an Internet phonebook.</descripti
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/introtopwntools/</guid>
-      <description>Intro to Pwntools Source materials here dizmascyberlabs Install gdb-pwndbg-peda-gef
+      <description>Basics of Binary Analysis
+Intro to Pwntools Source materials here dizmascyberlabs Install gdb-pwndbg-peda-gef
 Checksec Same source code, compiled with different protections in place:
 1 checksec checksec/intro2pwn2 [*] &amp;#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn2&amp;#39; Arch: i386-32-little RELRO: Partial RELRO Stack: No canary found NX: NX disabled PIE: No PIE (0x8048000) RWX: Has RWX segments 1 checksec checksec/intro2pwn1 [*] &amp;#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn1&amp;#39; Arch: i386-32-little RELRO: Full RELRO Stack: Canary found NX: NX enabled PIE: PIE enabled RELRO = Relocation Read-Only; makes the global offset table (GOT) read-only after the linker resolves functions to it.</description>
     </item>
@@ -233,6 +274,15 @@ Checksec Same source code, compiled with different protections in place:
     </item>
     
     <item>
+      <title>Malware</title>
+      <link>https://kdbed.github.io/posts/malware/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/malware/</guid>
+      <description>Information Security</description>
+    </item>
+    
+    <item>
       <title>Marx</title>
       <link>https://kdbed.github.io/posts/marx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -260,6 +310,15 @@ Checksec Same source code, compiled with different protections in place:
     </item>
     
     <item>
+      <title>NX</title>
+      <link>https://kdbed.github.io/posts/nx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/nx/</guid>
+      <description>Binary Analysis</description>
+    </item>
+    
+    <item>
       <title>Org Mode - Python/Jupyter Example</title>
       <link>https://kdbed.github.io/posts/orgpythonjupyter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -276,6 +335,15 @@ print(&amp;#39;ello, world!&amp;#39;) Create a plot import matplotlib.pyplot as 
       
       <guid>https://kdbed.github.io/posts/originalism/</guid>
       <description>Originalism, the theory that the Constitution should be interpreted according to the meaning or intent of the drafters, has great appeal to Americans. At one time closely associated with the conservative movement, originalism is now commonly held as an important, if not the exclusive, device for interpreting the Constitution. This has not been our historic practice. Over thirty years ago, Munzer and Nickel (1977, 1029) wrote that “one does not have to dig very deeply into the literature of American constitutional law to suspect that many constitutional provisions do not mean today what their framers thought they meant.</description>
+    </item>
+    
+    <item>
+      <title>PIE</title>
+      <link>https://kdbed.github.io/posts/pie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pie/</guid>
+      <description>Binary Analysis</description>
     </item>
     
     <item>
@@ -381,6 +449,15 @@ Quote 2 &amp;ldquo;Meet these two here,&amp;rdquo; the man said. &amp;ldquo;Ask 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/smtps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Splunk</title>
+      <link>https://kdbed.github.io/posts/splunk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/splunk/</guid>
       <description></description>
     </item>
     

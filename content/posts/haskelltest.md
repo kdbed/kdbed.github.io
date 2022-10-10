@@ -1,8 +1,10 @@
 +++
-title = "haskellTest"
+title = "Haskell - Org Test"
 author = ["svejk"]
 draft = false
 +++
+
+## Map {#map}
 
 ```haskell
 import Control.Monad

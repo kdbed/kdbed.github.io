@@ -2,3 +2,11 @@
 :ID:       d6f8025c-aa62-4726-bb6e-817ae6b0fbb1
 :END:
 #+title: Generative Effects: Orders and Galois Connections
+#+filetags: :compositionality:categoryTheory:
+
+* Introduction
+From /An Invitation to Applied Category Theory - Seven Sketches in Compositionality/ -- Fong/Spivak
+
+A wide variety of situations exhibit something called /compositionality/ -- wherein systems or relationships can be combined to form new systems or relationships. Category-theoretic constructs can be used to describe the compositionality in such situations. A structural approach to modeling with [[id:b0fcc595-856c-42ec-96ac-b3f689b07448][Category Theory]] : introduction.
+
+* More Than the Sum of Their Parts

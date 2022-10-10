@@ -2,8 +2,9 @@
 :ID:       35d62927-8abe-471a-85ee-c159badb413f
 :END:
 #+title: Account Lockout - Splunk
-#+filetags: :eventLogs:activeDirectory:splunk:
+#+filetags: :SIEM:eventLogs:activeDirectory:splunk:
 
+Monitoring [[id:eb1af46c-3b9b-4292-bfb2-5737c2264ce9][Active Directory]] account lockouts with [[id:b4a4659e-de34-4490-bcc2-a2c5568ca684][Splunk]]
 
 #+begin_example
 index=wineventlog Account_Name=<<accountNameHere>>>
