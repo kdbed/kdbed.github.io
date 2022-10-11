@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       8580e1fc-fd91-435a-baa3-2a87fbb2666f
+:END:
+#+title: Politics
+
+[[id:4e3a204d-ef71-41a3-8f80-f576868a792b][Political Science]]

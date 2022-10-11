@@ -90,6 +90,8 @@ PowerShell functions will return objects by simply placing the object anywhere i
 }
 #+end_src
 
+#+RESULTS:
+
 
 * References
 Taken from: [[https://adamtheautomator.com/powershell-classes/][ATA]]
