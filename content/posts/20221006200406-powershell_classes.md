@@ -37,7 +37,7 @@ class student {
 
 After you define a class, create an object from it or instantiate an object. There are multiple ways to instantiate objects from classes; one common way is to use type accelerators such as [student] which represent the class, followed by a default method that comes with every class called new().
 
-Using the type accelerator shortcut is the same as creating an object using the New-Object command.
+Using the type accelerator shortcut is the same as creating an object using the New-Object command. ==
 
 Once you've created an object from that class, then assign values to properties. The example below is assigning values of _Tyler_ and _Muir_ for the `FirstName` and `LastName` properties.
 

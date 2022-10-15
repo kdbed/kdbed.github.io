@@ -43,6 +43,8 @@ build content/posts/birthdayattack.md: org2md org/birthdayattack.org
 
 build content/posts/20221004204210-powershell.md: org2md org/20221004204210-powershell.org
 
+build content/posts/20221010191100-philosophy.md: org2md org/20221010191100-philosophy.org
+
 build content/posts/linpeas.md: org2md org/linpeas.org
 
 build content/posts/quotes.md: org2md org/quotes.org
@@ -65,7 +67,11 @@ build content/posts/isakmp.md: org2md org/isakmp.org
 
 build content/posts/cpp_proj_nix.md: org2md org/cpp_proj_nix.org
 
+build content/posts/20221010191047-political_science.md: org2md org/20221010191047-political_science.org
+
 build content/posts/20221006200600-powershell.md: org2md org/20221006200600-powershell.org
+
+build content/posts/20221010191009-politics.md: org2md org/20221010191009-politics.org
 
 build content/posts/20220824081229-words.md: org2md org/20220824081229-words.org
 
@@ -85,11 +91,15 @@ build content/posts/pie.md: org2md org/pie.org
 
 build content/posts/sha1cracker.md: org2md org/sha1cracker.org
 
+build content/posts/20221010211227-powershell_log_function.md: org2md org/20221010211227-powershell_log_function.org
+
 build content/posts/computer_science.md: org2md org/computer_science.org
 
 build content/posts/20221005124124-powershell_get_domain_controllers_in_forest.md: org2md org/20221005124124-powershell_get_domain_controllers_in_forest.org
 
 build content/posts/kerberos.md: org2md org/kerberos.org
+
+build content/posts/20221010201948-powershell_script_encryption.md: org2md org/20221010201948-powershell_script_encryption.org
 
 build content/posts/roevwade.md: org2md org/roevwade.org
 
@@ -104,6 +114,8 @@ build content/posts/malware.md: org2md org/malware.org
 build content/posts/fileless_malware.md: org2md org/fileless_malware.org
 
 build content/posts/haskelltest.md: org2md org/haskelltest.org
+
+build content/posts/20221010190736-trump_policies_and_actions.md: org2md org/20221010190736-trump_policies_and_actions.org
 
 build content/posts/sha1.md: org2md org/sha1.org
 

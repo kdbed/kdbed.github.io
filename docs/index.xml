@@ -338,12 +338,39 @@ print(&amp;#39;ello, world!&amp;#39;) Create a plot import matplotlib.pyplot as 
     </item>
     
     <item>
+      <title>Philosophy</title>
+      <link>https://kdbed.github.io/posts/20221010191100-philosophy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/20221010191100-philosophy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>PIE</title>
       <link>https://kdbed.github.io/posts/pie/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/pie/</guid>
       <description>Binary Analysis</description>
+    </item>
+    
+    <item>
+      <title>Political Science</title>
+      <link>https://kdbed.github.io/posts/20221010191047-political_science/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/20221010191047-political_science/</guid>
+      <description>Philosophy</description>
+    </item>
+    
+    <item>
+      <title>Politics</title>
+      <link>https://kdbed.github.io/posts/20221010191009-politics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/20221010191009-politics/</guid>
+      <description>Political Science</description>
     </item>
     
     <item>
@@ -393,6 +420,25 @@ When you define a property, you should always define a type that sets a specific
       <guid>https://kdbed.github.io/posts/20221005124124-powershell_get_domain_controllers_in_forest/</guid>
       <description>To list all of the domain controllers in an Active Directory forest:
 (Get-ADForest).Domains | %{ Get-ADDomainController -Filter * -Server $_ }| Format-Table -Property Name,ComputerObjectDN,Domain,Forest,IPv4Address,OperatingSystem,OperatingSystemVersion </description>
+    </item>
+    
+    <item>
+      <title>PowerShell - Log Function</title>
+      <link>https://kdbed.github.io/posts/20221010211227-powershell_log_function/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/20221010211227-powershell_log_function/</guid>
+      <description>Log Function for PowerShell function Write-Log { [CmdletBinding()] param( [Parameter()] [ValidateNotNullOrEmpty()] [string]$Message, [Parameter()] [ValidateNotNullOrEmpty()] [ValidateSet(&amp;#39;Information&amp;#39;,&amp;#39;Warning&amp;#39;,&amp;#39;Error&amp;#39;)] [string]$Severity = &amp;#39;Information&amp;#39; ) [pscustomobject]@{ Time = (Get-Date -f g) Message = $Message Severity = $Severity } | Export-Csv -Path &amp;#34;$env:Temp\LogFile.csv&amp;#34; -Append -NoTypeInformation } From : ATA</description>
+    </item>
+    
+    <item>
+      <title>PowerShell - Script Encryption</title>
+      <link>https://kdbed.github.io/posts/20221010201948-powershell_script_encryption/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/20221010201948-powershell_script_encryption/</guid>
+      <description>Encrypt PowerShell Scripts Function to obfuscate code containing sensitive data:
+function Encrypt-Script($path, $destination) { $script = Get-Content $path | Out-String $secure = ConvertTo-SecureString $script -asPlainText -force $export = $secure | ConvertFrom-SecureString Set-Content $destination $export &amp;#34;Script &amp;#39;$path&amp;#39; has been encrypted as &amp;#39;$destination&amp;#39;&amp;#34; } function Execute-EncryptedScript($path) { trap { &amp;#34;Decryption failed&amp;#34;; break } $raw = Get-Content $path $secure = ConvertTo-SecureString $raw $helper = New-Object system.Management.Automation.PSCredential(&amp;#34;test&amp;#34;, $secure) $plain = $helper.GetNetworkCredential().Password Invoke-Expression $plain } From: idera</description>
     </item>
     
     <item>
@@ -488,6 +534,16 @@ sudo wfuzz -c -f out -w wordlist -u &amp;#34;http://trick.htb&amp;#34; -H &amp;#
       
       <guid>https://kdbed.github.io/posts/todo/</guid>
       <description>TODO Complete Summer Yard Work TODO Burn outstanding refuse TODO Chainsaw fallen biggies TODO Clear pricks TODO Windows and Doors TODO Schedule Professional Assessment TODO Fix Garage Door TODO Send baby ABCs to Austin TODO Basement TODO Mattress TODO Trash TODO seal bathtub TODO nicotine test TODO quit TODO bloodwork </description>
+    </item>
+    
+    <item>
+      <title>Trump - Policies and Actions</title>
+      <link>https://kdbed.github.io/posts/20221010190736-trump_policies_and_actions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/20221010190736-trump_policies_and_actions/</guid>
+      <description>An analysis of the coherence &amp;ndash; or lack thereof &amp;ndash; of Trump&amp;rsquo;s policies and politics, along with general remarks on what he did while in office.
+Changes in American Policy Many Americans will remember President Donald Trump&amp;rsquo;s presidency as a four-yearlong storm of tweets, rallies and on-air rants that ended in a mob riot and historic second impeachment. But there was more to the Trump presidency than attention-hogging political drama and conflict; often unnoticed, Trump and his administration actually did succeed in changing some of the ways Washington works.</description>
     </item>
     
     <item>
