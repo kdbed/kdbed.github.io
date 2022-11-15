@@ -1,9 +1,5 @@
 +++
-title = "Powershell"
+title = "powershell"
 author = ["svejk"]
 draft = false
 +++
-
-```powershell
-
-```

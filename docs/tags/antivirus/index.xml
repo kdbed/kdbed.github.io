@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>antivirus on Braindump</title>
+    <link>https://kdbed.github.io/tags/antivirus/</link>
+    <description>Recent content in antivirus on Braindump</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/antivirus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fileless Malware</title>
+      <link>https://kdbed.github.io/posts/fileless_malware/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/fileless_malware/</guid>
+      <description>What is Fileless Malware? Traditionally, antivirus and other endpoint security products have focused on files (executables) to detect and prevent malware. There are several advantages to this. Files can be hashed, queried in reputation services, examined by both static analysis and machine learning, and easily excluded for false detections.
+This is a problem for hackers: if the malware’s signature is detected two days after release, the attacker’s ROI (return on investment) may be significantly less than expected, or even negligible.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       f70f9db9-268a-4e16-a8cd-cb6d7636ec1b
+:END:
+#+title: PowerShell - Clipboard to Array
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+filetags: :powerShell:
+
+
+#+begin_src powershell
+(Get-Clipboard) -split '\t|\r?\n'
+#+end_src

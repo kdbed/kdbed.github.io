@@ -2,3 +2,4 @@
 :ID:       2e54e790-e92a-4d69-ad09-dceee015fea1
 :END:
 #+title: Abortion
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak

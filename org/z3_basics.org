@@ -2,4 +2,5 @@
 :ID:       f5619053-0167-4610-9ac5-483fa986426a
 :END:
 #+title: Z3 Basics
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
 #+filetags: :SMT:Z3:

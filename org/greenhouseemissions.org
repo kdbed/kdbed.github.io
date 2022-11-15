@@ -2,6 +2,7 @@
 :ID:       9d71d039-f668-4605-9633-0607fd345c05
 :END:
 #+title: Greenhouse Gas Emissions
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
 #+filetags: :emissions:climate:
 
 * Raw Numbers

@@ -2,3 +2,4 @@
 :ID:       b0fcc595-856c-42ec-96ac-b3f689b07448
 :END:
 #+title: Category Theory
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak

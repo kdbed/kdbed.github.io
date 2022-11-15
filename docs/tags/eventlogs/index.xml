@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>eventLogs on Braindump</title>
+    <link>https://kdbed.github.io/tags/eventlogs/</link>
+    <description>Recent content in eventLogs on Braindump</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/eventlogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Account Lockout - Splunk</title>
+      <link>https://kdbed.github.io/posts/account_lockout_splunk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/account_lockout_splunk/</guid>
+      <description>Monitoring Active Directory account lockouts with Splunk
+index=wineventlog Account_Name=&amp;lt;&amp;lt;accountNameHere&amp;gt;&amp;gt;&amp;gt; (EventCode=4740 OR EventCode=4625 OR EventCode=644 OR EventCode=529 OR EventCode=675 OR EventCode=676 OR EventCode=681 OR EventCode=4771 OR EventCode=4770 OR EventCode=4768 OR EventCode=4776 OR EventCode=4777 OR EventCode=4725 OR EventCode=4723 OR EventCode=4724 OR EventCode=4767 OR EventCode=4800 OR EventCode=4801) | eval Account0=mvindex(Account_Name,0) | eval Account1=mvindex(Account_Name,1) | eval Account=case(EventCode==4624,Account1, EventCode==4625,Account1, EventCode==4648,Account1, EventCode==4722,Account1, EventCode==4723,Account1, EventCode==4724,Account1, EventCode==4725,Account1, EventCode==4738,Account1, EventCode==4740,Account1, EventCode==4767,Account1, EventCode==4768,Account0, EventCode==4769,Account0, EventCode==4771,Account0, EventCode==4770,Account0, EventCode==5140,Account0, EventCode==4778,Account0, EventCode==4779,Account0, EventCode==4800,Account0, EventCode==4801,Account0) | fillnull Value=&amp;#34;-&amp;#34; Account | eval ActionBy=case(EventCode==4725,Account0, EventCode==4722,src_user, EventCode==4767,src_user, EventCode==4723,src_user, EventCode==4724,src_user, EventCode==4738,src_user, EventCode==4794,src_user) | eval Time=strftime(_time, &amp;#34;%m/%d/%y %H:%M:%S&amp;#34;) | sort -_time | eval Caller_Machine=if(Caller_Machine_Name!</description>
+    </item>
+    
+  </channel>
+</rss>

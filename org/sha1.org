@@ -2,3 +2,4 @@
 :ID:       b74d623f-efe7-4b7e-814e-7a7f2c179f13
 :END:
 #+title: sha1
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak

@@ -2,6 +2,7 @@
 :ID:       51bb8608-a523-4b5b-87c0-31df29f3e550
 :END:
 #+title: Internet Security Association and Key Management Protocol (ISAKMP)
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
 #+filetags: :protocol:KeyExchange:IPsec:securityPlus:
 
 * Internet Security Association and Key Management Protocol (ISAKMP)

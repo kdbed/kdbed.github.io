@@ -3,7 +3,7 @@
 :END:
 #+title: IdentityIQEssentialsIntroduction
 #+filetags: :introduction:essentials:
-
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
 
 * Introduction
     - Reading data: all systems from which data is read are called applications.  Identity cubes created when aggregating accounts from an authoritative application (system of record), e.g., HR system or AD.

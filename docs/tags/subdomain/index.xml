@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>subdomain on Braindump</title>
+    <link>https://kdbed.github.io/tags/subdomain/</link>
+    <description>Recent content in subdomain on Braindump</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/subdomain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Subdomain Enumeration</title>
+      <link>https://kdbed.github.io/posts/subdomainenumeration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/subdomainenumeration/</guid>
+      <description>From DNS dig +nocmd trick.htb axfr +noall +answer @trick.htb WFuzz In case the subdomain has a certain naming convention (Trick/HTB):
+sed &amp;#39;s/^/preprod-/&amp;#39; subdomains-top1million-110000.txt Then use wfuzz:
+sudo wfuzz -c -f out -w wordlist -u &amp;#34;http://trick.htb&amp;#34; -H &amp;#34;Host: FUZZ.trick.htb&amp;#34; --hw 475 </description>
+    </item>
+    
+  </channel>
+</rss>

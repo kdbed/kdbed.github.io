@@ -2,6 +2,7 @@
 :ID:       91f63959-8c6c-40be-b254-3032417e56e9
 :END:
 #+title: Active Scanning with Scapy
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
 #+filetags: :recon:scanning:scapy:pentest:
 
 * Scanning Networks with Scapy

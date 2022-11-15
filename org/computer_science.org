@@ -2,3 +2,4 @@
 :ID:       599be219-0984-420b-879b-7669722457ba
 :END:
 #+title: Computer Science
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak

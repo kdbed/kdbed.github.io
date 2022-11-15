@@ -2,3 +2,4 @@
 :ID:       dd0dbdde-6c9b-4546-ba80-e63104cd0d84
 :END:
 #+title: Nietzsche
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak

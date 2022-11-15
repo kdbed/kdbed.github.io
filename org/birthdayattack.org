@@ -2,6 +2,7 @@
 :ID:       caa8bb7d-774d-479a-a661-ae36ff5a672a
 :END:
 #+title: Birthday Attack
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
 #+filetags: :hashCollision:hashes:securityPlus:
 
 

@@ -2,6 +2,7 @@
 :ID:       454a36c9-f1be-416c-8a7b-591b50a0acc6
 :END:
 #+title: C++ and Nix
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
 #+filetags: :template:nix:cpp:
 
 

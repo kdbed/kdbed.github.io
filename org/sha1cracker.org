@@ -2,6 +2,7 @@
 :ID:       9ecc66d6-d120-4ab0-9fcd-c2550b052d8f
 :END:
 #+title: sha1Cracker
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
 #+filetags: :pentest:crack:password:rust:cryptography
 
 * Implementing a [[id:b74d623f-efe7-4b7e-814e-7a7f2c179f13][sha1]] hash cracker in Rust

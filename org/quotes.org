@@ -2,6 +2,7 @@
 :ID:       76082ed2-6ddc-4d1c-9520-be497764fe61
 :END:
 #+title: Quotes
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
 
 * Quotes
 ** Quote 1 - [[id:29d4bee9-4e25-44fa-a14c-3377f1d7d50b][Marx]]
