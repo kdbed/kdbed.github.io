@@ -3,6 +3,7 @@
 (projectile-mode -1)
 (dtrt-indent-mode -1)
 (recentf-mode -1)
+(setq doom-version "3.0.0-pre")
 
 (defun jethro/publish (file)
   (with-current-buffer (find-file-noselect file)

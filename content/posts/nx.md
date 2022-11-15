@@ -4,4 +4,4 @@ author = ["svejk"]
 draft = false
 +++
 
-[Binary Analysis]({{<relref "binary_analysis.md#" >}})
+[Binary Analysis]({{< relref "binary_analysis.md" >}})

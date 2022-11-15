@@ -1,6 +1,7 @@
 +++
 title = "XOR"
 author = ["svejk"]
+tags = ["cryptography"]
 draft = false
 +++
 

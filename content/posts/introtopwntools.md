@@ -1,10 +1,11 @@
 +++
 title = "Intro to Pwntools - TryHackMe"
 author = ["svejk"]
+tags = ["binary", "pwntools", "pwn", "tryHackMe"]
 draft = false
 +++
 
-Basics of [Binary Analysis]({{<relref "binary_analysis.md#" >}})
+Basics of [Binary Analysis]({{< relref "binary_analysis.md" >}})
 
 
 ## Intro to Pwntools {#intro-to-pwntools}
@@ -18,37 +19,18 @@ Source materials here [dizmascyberlabs
 
 Same source code, compiled with different protections in place:
 
-{{< highlight sh "linenos=table, linenostart=1" >}}
+```sh { linenos=true, linenostart=1 }
 checksec checksec/intro2pwn2
-{{< /highlight >}}
-
-```text
-[*] '/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn2'
-    Arch:     i386-32-little
-    RELRO:    Partial RELRO
-    Stack:    No canary found
-    NX:       NX disabled
-    PIE:      No PIE (0x8048000)
-    RWX:      Has RWX segments
 ```
 
-{{< highlight sh "linenos=table, linenostart=1" >}}
+```sh { linenos=true, linenostart=1 }
 checksec checksec/intro2pwn1
-{{< /highlight >}}
-
-```text
-[*] '/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn1'
-    Arch:     i386-32-little
-    RELRO:    Full RELRO
-    Stack:    Canary found
-    NX:       NX enabled
-    PIE:      PIE enabled
 ```
 
--   [RELRO]({{<relref "relro.md#" >}})  = Relocation Read-Only; makes the global offset table (GOT) read-only after the linker resolves functions to it. The GOT is important for techniques such as the ret-to-libc attack
--   [Stack Canaries]({{<relref "stack_canaries.md#" >}}) = tokens placed after a stack to detect a stack overflow. Stack canaries sit beside the stack in memory (where the program variables are stored), and if there is a stack overflow, then the canary will be corrupted. This allows the program to detect a buffer overflow and shut down.
--   [NX]({{<relref "nx.md#" >}}) = NX is short for non-executable. If this is enabled, then memory segments can be either writable or executable, but not both. This stops potential attackers from injecting their own malicious code (called shellcode) into the program, because something in a writable segment cannot be executed.  On the vulnerable binary, you may have noticed the extra line RWX that indicates that there are segments which can be read, written, and executed. [wiki](https://en.wikipedia.org/wiki/Executable%5Fspace%5Fprotection)
--   [PIE]({{<relref "pie.md#" >}}) = PIE stands for Position Independent Executable. This loads the program dependencies into random locations, so attacks that rely on memory layout are more difficult to conduct.  [redhat](https://access.redhat.com/blogs/766093/posts/1975793)
+-   [RELRO]({{< relref "relro.md" >}})  = Relocation Read-Only; makes the global offset table (GOT) read-only after the linker resolves functions to it. The GOT is important for techniques such as the ret-to-libc attack
+-   [Stack Canaries]({{< relref "stack_canaries.md" >}}) = tokens placed after a stack to detect a stack overflow. Stack canaries sit beside the stack in memory (where the program variables are stored), and if there is a stack overflow, then the canary will be corrupted. This allows the program to detect a buffer overflow and shut down.
+-   [NX]({{< relref "nx.md" >}}) = NX is short for non-executable. If this is enabled, then memory segments can be either writable or executable, but not both. This stops potential attackers from injecting their own malicious code (called shellcode) into the program, because something in a writable segment cannot be executed.  On the vulnerable binary, you may have noticed the extra line RWX that indicates that there are segments which can be read, written, and executed. [wiki](https://en.wikipedia.org/wiki/Executable_space_protection)
+-   [PIE]({{< relref "pie.md" >}}) = PIE stands for Position Independent Executable. This loads the program dependencies into random locations, so attacks that rely on memory layout are more difficult to conduct.  [redhat](https://access.redhat.com/blogs/766093/posts/1975793)
 
 Resource for properties involved in `checksec` : [siphos](https://blog.siphos.be/2011/07/high-level-explanation-on-some-binary-executable-security/)
 
@@ -63,9 +45,9 @@ You will see that the flag file and intro2pwn3 are owned by the same user, and t
 
 Taking a look at the c code:
 
-{{< highlight sh "linenos=table, linenostart=1" >}}
+```sh { linenos=true, linenostart=1 }
 cat cyclic/test_cyclic.c
-{{< /highlight >}}
+```
 
 ```text
 #include <stdio.h>
@@ -107,10 +89,6 @@ We've caused a segmentation fault, and you may observe that there is an invalid 
 
 The alphabet file can be produced with `cyclic 100`.
 
-{{< highlight sh "linenos=table, linenostart=1" >}}
+```sh { linenos=true, linenostart=1 }
 cyclic 100
-{{< /highlight >}}
-
-```text
-aaaabaaacaaadaaaeaaafaaagaaahaaaiaaajaaakaaalaaamaaanaaaoaaapaaaqaaaraaasaaataaauaaavaaawaaaxaaayaaa
 ```

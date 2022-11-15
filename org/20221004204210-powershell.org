@@ -1,9 +1,0 @@
-:PROPERTIES:
-:ID:       81224a3e-c402-48c5-aefa-9ca9533faf9a
-:END:
-#+title: Powershell
-
-
-
-#+begin_src powershell :results output
-#+end_src

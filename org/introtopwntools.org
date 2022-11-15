@@ -2,6 +2,7 @@
 :ID:       f3ea418e-4561-4db2-a7a9-c53948438a64
 :END:
 #+title: Intro to Pwntools - TryHackMe
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
 #+filetags: :binary:pwntools:pwn:tryHackMe:
 #+PROPERTY: header-args:sh :prologue "exec 2>&1" :epilogue :dir /home/kdb/Downloads/IntroToPwntools/IntroToPwntools
 

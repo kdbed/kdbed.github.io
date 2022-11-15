@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       81224a3e-c402-48c5-aefa-9ca9533faf9a
+:END:
+#+title: Powershell
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+
+
+#+begin_src powershell :results output
+#+end_src

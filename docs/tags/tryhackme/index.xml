@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tryHackMe on Braindump</title>
+    <link>https://kdbed.github.io/tags/tryhackme/</link>
+    <description>Recent content in tryHackMe on Braindump</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/tryhackme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intro to Pwntools - TryHackMe</title>
+      <link>https://kdbed.github.io/posts/introtopwntools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/introtopwntools/</guid>
+      <description>Basics of Binary Analysis
+Intro to Pwntools Source materials here dizmascyberlabs Install gdb-pwndbg-peda-gef
+Checksec Same source code, compiled with different protections in place:
+1 checksec checksec/intro2pwn2 1 checksec checksec/intro2pwn1 RELRO = Relocation Read-Only; makes the global offset table (GOT) read-only after the linker resolves functions to it. The GOT is important for techniques such as the ret-to-libc attack Stack Canaries = tokens placed after a stack to detect a stack overflow.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,126 +1,126 @@
 
 rule org2md
-  command = emacs --batch -l ~/.emacs.d/init.el -l publish.el --eval "(jethro/publish \"$in\")"
+  command = emacs --batch -l ~/.emacs.d/.local/etc/@/init.28.el -l publish.el --eval "(jethro/publish \"$in\")"
   description = org2md $in
-
-build content/posts/information_security.md: org2md org/information_security.org
-
-build content/posts/originalism.md: org2md org/originalism.org
-
-build content/posts/IdentityIQEssentialsIntroduction.md: org2md org/IdentityIQEssentialsIntroduction.org
-
-build content/posts/20221006195312-powershell_clipboard_to_array.md: org2md org/20221006195312-powershell_clipboard_to_array.org
-
-build content/posts/abortion.md: org2md org/abortion.org
-
-build content/posts/20221006200406-powershell_classes.md: org2md org/20221006200406-powershell_classes.org
-
-build content/posts/happiness.md: org2md org/happiness.org
-
-build content/posts/dnszonetransfers.md: org2md org/dnszonetransfers.org
-
-build content/posts/introtopwntools.md: org2md org/introtopwntools.org
-
-build content/posts/nx.md: org2md org/nx.org
-
-build content/posts/relro.md: org2md org/relro.org
-
-build content/posts/nietzsche.md: org2md org/nietzsche.org
-
-build content/posts/binary_analysis.md: org2md org/binary_analysis.org
-
-build content/posts/greenhouseemissions.md: org2md org/greenhouseemissions.org
-
-build content/posts/algorithms.md: org2md org/algorithms.org
-
-build content/posts/kerberoasting.md: org2md org/kerberoasting.org
-
-build content/posts/impacket.md: org2md org/impacket.org
-
-build content/posts/scapy_scanning.md: org2md org/scapy_scanning.org
-
-build content/posts/birthdayattack.md: org2md org/birthdayattack.org
-
-build content/posts/20221004204210-powershell.md: org2md org/20221004204210-powershell.org
-
-build content/posts/20221010191100-philosophy.md: org2md org/20221010191100-philosophy.org
-
-build content/posts/linpeas.md: org2md org/linpeas.org
-
-build content/posts/quotes.md: org2md org/quotes.org
-
-build content/posts/subdomainenumeration.md: org2md org/subdomainenumeration.org
-
-build content/posts/wfuzz.md: org2md org/wfuzz.org
-
-build content/posts/marx.md: org2md org/marx.org
-
-build content/posts/z3_basics.md: org2md org/z3_basics.org
-
-build content/posts/s_mime.md: org2md org/s_mime.org
-
-build content/posts/securityplus.md: org2md org/securityplus.org
-
-build content/posts/xor.md: org2md org/xor.org
-
-build content/posts/isakmp.md: org2md org/isakmp.org
-
-build content/posts/cpp_proj_nix.md: org2md org/cpp_proj_nix.org
-
-build content/posts/20221010191047-political_science.md: org2md org/20221010191047-political_science.org
-
-build content/posts/20221006200600-powershell.md: org2md org/20221006200600-powershell.org
-
-build content/posts/20221010191009-politics.md: org2md org/20221010191009-politics.org
-
-build content/posts/20220824081229-words.md: org2md org/20220824081229-words.org
-
-build content/posts/todo.md: org2md org/todo.org
-
-build content/posts/category_theory.md: org2md org/category_theory.org
-
-build content/posts/as_rep_roasting.md: org2md org/as_rep_roasting.org
-
-build content/posts/dopamine.md: org2md org/dopamine.org
-
-build content/posts/generativeeffects.md: org2md org/generativeeffects.org
-
-build content/posts/nietzsche_and_stoicism.md: org2md org/nietzsche_and_stoicism.org
-
-build content/posts/pie.md: org2md org/pie.org
-
-build content/posts/sha1cracker.md: org2md org/sha1cracker.org
-
-build content/posts/20221010211227-powershell_log_function.md: org2md org/20221010211227-powershell_log_function.org
-
-build content/posts/computer_science.md: org2md org/computer_science.org
 
 build content/posts/20221005124124-powershell_get_domain_controllers_in_forest.md: org2md org/20221005124124-powershell_get_domain_controllers_in_forest.org
 
-build content/posts/kerberos.md: org2md org/kerberos.org
-
-build content/posts/20221010201948-powershell_script_encryption.md: org2md org/20221010201948-powershell_script_encryption.org
-
-build content/posts/roevwade.md: org2md org/roevwade.org
-
 build content/posts/20221005124255-active_directory.md: org2md org/20221005124255-active_directory.org
-
-build content/posts/splunk.md: org2md org/splunk.org
-
-build content/posts/orgPythonJupyter.md: org2md org/orgPythonJupyter.org
-
-build content/posts/malware.md: org2md org/malware.org
-
-build content/posts/fileless_malware.md: org2md org/fileless_malware.org
-
-build content/posts/haskelltest.md: org2md org/haskelltest.org
-
-build content/posts/20221010190736-trump_policies_and_actions.md: org2md org/20221010190736-trump_policies_and_actions.org
-
-build content/posts/sha1.md: org2md org/sha1.org
-
-build content/posts/smtps.md: org2md org/smtps.org
 
 build content/posts/20221006193807-account_lockout_splunk.md: org2md org/20221006193807-account_lockout_splunk.org
 
+build content/posts/20221006195312-powershell_clipboard_to_array.md: org2md org/20221006195312-powershell_clipboard_to_array.org
+
+build content/posts/20221006200406-powershell_classes.md: org2md org/20221006200406-powershell_classes.org
+
+build content/posts/20221006200600-powershell.md: org2md org/20221006200600-powershell.org
+
+build content/posts/20221010190736-trump_policies_and_actions.md: org2md org/20221010190736-trump_policies_and_actions.org
+
+build content/posts/20221010191009-politics.md: org2md org/20221010191009-politics.org
+
+build content/posts/20221010191047-political_science.md: org2md org/20221010191047-political_science.org
+
+build content/posts/20221010191100-philosophy.md: org2md org/20221010191100-philosophy.org
+
+build content/posts/20221010201948-powershell_script_encryption.md: org2md org/20221010201948-powershell_script_encryption.org
+
+build content/posts/20221010211227-powershell_log_function.md: org2md org/20221010211227-powershell_log_function.org
+
+build content/posts/IdentityIQEssentialsIntroduction.md: org2md org/IdentityIQEssentialsIntroduction.org
+
+build content/posts/abortion.md: org2md org/abortion.org
+
+build content/posts/algorithms.md: org2md org/algorithms.org
+
+build content/posts/as_rep_roasting.md: org2md org/as_rep_roasting.org
+
+build content/posts/binary_analysis.md: org2md org/binary_analysis.org
+
+build content/posts/birthdayattack.md: org2md org/birthdayattack.org
+
+build content/posts/category_theory.md: org2md org/category_theory.org
+
+build content/posts/computer_science.md: org2md org/computer_science.org
+
+build content/posts/cpp_proj_nix.md: org2md org/cpp_proj_nix.org
+
+build content/posts/dnszonetransfers.md: org2md org/dnszonetransfers.org
+
+build content/posts/dopamine.md: org2md org/dopamine.org
+
+build content/posts/fileless_malware.md: org2md org/fileless_malware.org
+
+build content/posts/generativeeffects.md: org2md org/generativeeffects.org
+
+build content/posts/greenhouseemissions.md: org2md org/greenhouseemissions.org
+
+build content/posts/happiness.md: org2md org/happiness.org
+
+build content/posts/haskelltest.md: org2md org/haskelltest.org
+
+build content/posts/impacket.md: org2md org/impacket.org
+
+build content/posts/information_security.md: org2md org/information_security.org
+
+build content/posts/introtopwntools.md: org2md org/introtopwntools.org
+
+build content/posts/isakmp.md: org2md org/isakmp.org
+
+build content/posts/kerberoasting.md: org2md org/kerberoasting.org
+
+build content/posts/kerberos.md: org2md org/kerberos.org
+
+build content/posts/linpeas.md: org2md org/linpeas.org
+
+build content/posts/malware.md: org2md org/malware.org
+
+build content/posts/marx.md: org2md org/marx.org
+
+build content/posts/nietzsche.md: org2md org/nietzsche.org
+
+build content/posts/nietzsche_and_stoicism.md: org2md org/nietzsche_and_stoicism.org
+
+build content/posts/nx.md: org2md org/nx.org
+
+build content/posts/orgPythonJupyter.md: org2md org/orgPythonJupyter.org
+
+build content/posts/originalism.md: org2md org/originalism.org
+
+build content/posts/pie.md: org2md org/pie.org
+
+build content/posts/quotes.md: org2md org/quotes.org
+
+build content/posts/relro.md: org2md org/relro.org
+
+build content/posts/roevwade.md: org2md org/roevwade.org
+
+build content/posts/s_mime.md: org2md org/s_mime.org
+
+build content/posts/scapy_scanning.md: org2md org/scapy_scanning.org
+
+build content/posts/securityplus.md: org2md org/securityplus.org
+
+build content/posts/sha1.md: org2md org/sha1.org
+
+build content/posts/sha1cracker.md: org2md org/sha1cracker.org
+
+build content/posts/smtps.md: org2md org/smtps.org
+
+build content/posts/splunk.md: org2md org/splunk.org
+
 build content/posts/stack_canaries.md: org2md org/stack_canaries.org
+
+build content/posts/subdomainenumeration.md: org2md org/subdomainenumeration.org
+
+build content/posts/todo.md: org2md org/todo.org
+
+build content/posts/wfuzz.md: org2md org/wfuzz.org
+
+build content/posts/xor.md: org2md org/xor.org
+
+build content/posts/z3_basics.md: org2md org/z3_basics.org
+
+build content/posts/test.md: org2md org/test.org
+
+build content/posts/powershell.md: org2md org/powershell.org

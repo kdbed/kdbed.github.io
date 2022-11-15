@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cryptography on Braindump</title>
+    <link>https://kdbed.github.io/tags/cryptography/</link>
+    <description>Recent content in cryptography on Braindump</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/cryptography/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>XOR</title>
+      <link>https://kdbed.github.io/posts/xor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/xor/</guid>
+      <description>XOR Basics Exclusive or &amp;ndash; &amp;lsquo;XOR&amp;rsquo; &amp;ndash; is a Boolean binary operator that is true when either the first input or the second input, but not both, are true.
+XOR is a &amp;lsquo;programmable inverter&amp;rsquo;: one input bit decides whether to invert the other input bit or to just pass it through unchanged. &amp;lsquo;Inverting&amp;rsquo; bits is also called &amp;lsquo;flipping&amp;rsquo; bits.
+\(X = A \bigoplus B\)
+Properties </description>
+    </item>
+    
+  </channel>
+</rss>

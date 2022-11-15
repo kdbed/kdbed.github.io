@@ -8,132 +8,52 @@
     <loc>https://kdbed.github.io/search/</loc>
     <lastmod>2022-05-29T21:44:03+08:00</lastmod>
   </url><url>
-    <loc>https://kdbed.github.io/posts/abortion/</loc>
+    <loc>https://kdbed.github.io/posts/active_directory/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/roevwade/</loc>
+    <loc>https://kdbed.github.io/tags/activedirectory/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/20221006193807-account_lockout_splunk/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/20221005124255-active_directory/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/scapy_scanning/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/algorithms/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/as_rep_roasting/</loc>
+    <loc>https://kdbed.github.io/tags/binary/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/binary_analysis/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/birthdayattack/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/cpp_proj_nix/</loc>
-  </url><url>
     <loc>https://kdbed.github.io/categories/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/category_theory/</loc>
+    <loc>https://kdbed.github.io/tags/constitution/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/securityplus/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/computer_science/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/dnszonetransfers/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/dopamine/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/fileless_malware/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/generativeeffects/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/greenhouseemissions/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/happiness/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/haskelltest/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/identityiqessentialsintroduction/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/impacket/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/information_security/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/isakmp/</loc>
+    <loc>https://kdbed.github.io/tags/cryptography/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/introtopwntools/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/kerberoasting/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/kerberos/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/linpeas/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/malware/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/marx/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/nietzsche/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/nietzsche_and_stoicism/</loc>
+    <loc>https://kdbed.github.io/tags/law/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/nx/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/orgpythonjupyter/</loc>
-  </url><url>
     <loc>https://kdbed.github.io/posts/originalism/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/20221010191100-philosophy/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pie/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/20221010191047-political_science/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/20221010191009-politics/</loc>
-  </url><url>
     <loc>https://kdbed.github.io/posts/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/20221004204210-powershell/</loc>
+    <loc>https://kdbed.github.io/posts/powershell/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/20221006200600-powershell/</loc>
+    <loc>https://kdbed.github.io/posts/powershell_get_domain_controllers_in_forest/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/20221006200406-powershell_classes/</loc>
+    <loc>https://kdbed.github.io/tags/pwn/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/20221006195312-powershell_clipboard_to_array/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/20221005124124-powershell_get_domain_controllers_in_forest/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/20221010211227-powershell_log_function/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/20221010201948-powershell_script_encryption/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/quotes/</loc>
+    <loc>https://kdbed.github.io/tags/pwntools/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/relro/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/s_mime/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/sha1/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/sha1cracker/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/smtps/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/splunk/</loc>
-  </url><url>
     <loc>https://kdbed.github.io/posts/stack_canaries/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/subdomainenumeration/</loc>
+    <loc>https://kdbed.github.io/tags/supremecourt/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/todo/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/20221010190736-trump_policies_and_actions/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/wfuzz/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/20220824081229-words/</loc>
+    <loc>https://kdbed.github.io/tags/tryhackme/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/xor/</loc>
-  </url><url>
-    <loc>https://kdbed.github.io/posts/z3_basics/</loc>
   </url>
 </urlset>

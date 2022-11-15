@@ -2,6 +2,7 @@
 :ID:       b930f202-0c0f-4055-8863-028b447c26fc
 :END:
 #+title: XOR
+#+hugo_base_dir: /home/kdb/Documents/kdbed/kdbed.github.io.bak
 #+startup: latexpreview
 #+filetags: :cryptography:
 

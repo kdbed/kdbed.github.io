@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       eb1af46c-3b9b-4292-bfb2-5737c2264ce9
+:END:
+#+title: Active Directory
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
