@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nmap on Braindump</title>
+    <link>https://kdbed.github.io/tags/nmap/</link>
+    <description>Recent content in nmap on Braindump</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/nmap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recon - Port Scanning and nmap</title>
+      <link>https://kdbed.github.io/posts/recon_port_scanning_and_nmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/recon_port_scanning_and_nmap/</guid>
+      <description>Basic nmap scan nmap -sC -sV -oA nmap/result &amp;lt;ip&amp;gt; Flags:
+-oA &amp;lt;basename&amp;gt;: Output in the three major formats at once -sV: Probe open ports to determine service/version info -sC: default scripts </description>
+    </item>
+    
+  </channel>
+</rss>

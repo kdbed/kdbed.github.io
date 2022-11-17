@@ -454,6 +454,16 @@ Quote 2 &amp;ldquo;Meet these two here,&amp;rdquo; the man said. &amp;ldquo;Ask 
     </item>
     
     <item>
+      <title>Recon - Port Scanning and nmap</title>
+      <link>https://kdbed.github.io/posts/recon_port_scanning_and_nmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/recon_port_scanning_and_nmap/</guid>
+      <description>Basic nmap scan nmap -sC -sV -oA nmap/result &amp;lt;ip&amp;gt; Flags:
+-oA &amp;lt;basename&amp;gt;: Output in the three major formats at once -sV: Probe open ports to determine service/version info -sC: default scripts </description>
+    </item>
+    
+    <item>
       <title>RELRO</title>
       <link>https://kdbed.github.io/posts/relro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -535,6 +545,15 @@ sudo wfuzz -c -f out -w wordlist -u &amp;#34;http://trick.htb&amp;#34; -H &amp;#
       <guid>https://kdbed.github.io/posts/trump_policies_and_actions/</guid>
       <description>An analysis of the coherence &amp;ndash; or lack thereof &amp;ndash; of Trump&amp;rsquo;s policies and politics , along with general remarks on what he did while in office.
 Changes in American Policy Many Americans will remember President Donald Trump&amp;rsquo;s presidency as a four-yearlong storm of tweets, rallies and on-air rants that ended in a mob riot and historic second impeachment. But there was more to the Trump presidency than attention-hogging political drama and conflict; often unnoticed, Trump and his administration actually did succeed in changing some of the ways Washington works.</description>
+    </item>
+    
+    <item>
+      <title>Web Pentest - Browser Extensions</title>
+      <link>https://kdbed.github.io/posts/web_pentest_browser_extensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/web_pentest_browser_extensions/</guid>
+      <description>wappalyzer Wappalyzer is a browser extension that uncovers the technologies used on websites. It detects content management systems, eCommerce platforms, web servers, JavaScript frameworks, analytics tools and many more.</description>
     </item>
     
     <item>

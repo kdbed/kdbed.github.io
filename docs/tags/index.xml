@@ -223,6 +223,15 @@
     </item>
     
     <item>
+      <title>infosec</title>
+      <link>https://kdbed.github.io/tags/infosec/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/infosec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>introduction</title>
       <link>https://kdbed.github.io/tags/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -318,6 +327,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/tags/nix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nmap</title>
+      <link>https://kdbed.github.io/tags/nmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/nmap/</guid>
       <description></description>
     </item>
     

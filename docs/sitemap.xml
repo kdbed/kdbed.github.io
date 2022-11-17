@@ -104,6 +104,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/information_security/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/infosec/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/isakmp/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/introtopwntools/</loc>
@@ -143,6 +145,8 @@
     <loc>https://kdbed.github.io/posts/nietzsche_and_stoicism/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/nix/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/nmap/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/nx/</loc>
   </url><url>
@@ -202,6 +206,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/recon/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/recon_port_scanning_and_nmap/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/relro/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/rust/</loc>
@@ -249,6 +255,8 @@
     <loc>https://kdbed.github.io/posts/trump_policies_and_actions/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/tryhackme/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/web_pentest_browser_extensions/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/wfuzz/</loc>
   </url><url>
