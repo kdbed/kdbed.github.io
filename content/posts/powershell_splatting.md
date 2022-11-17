@@ -1,32 +1,32 @@
-:PROPERTIES:
-:ID:       d5c550da-598f-402a-ab45-2af3d48cbb3f
-:END:
-#+title: PowerShell - Splatting
-#+filetags: :powerShell:
++++
+title = "PowerShell - Splatting"
+author = ["svejk"]
+tags = ["powerShell"]
+draft = false
++++
 
+## Splatting in [powershell]({{< relref "powershell.md" >}}) {#splatting-in-powershell--powershell-dot-md}
 
-
-* Splatting in [[id:9aac309a-a98b-4e34-9f31-5cbeeb993311][powershell]]
 Splatting allows one to format and send arguments to cmdlets and
 functions. Typically use dash+parameter name+argument
 
-#+BEGIN_SRC powershell
+```powershell
   Copy-Item -Path "Testfile.txt" -Destination "CopiedFile.txt" -WhatIf -force -Recurse
-#+END_SRC
+```
 
-#+BEGIN_SRC powershell
+```powershell
   Copy-Item `
       -Path "Testfile.txt" `
       -Destination "CopiedFile.txt" `
       -WhatIf `
       -force `
-#+END_SRC
+```
 
-Instead you can =splat= a parameter set. First create a hashtable
+Instead you can `splat` a parameter set. First create a hashtable
 containing key/value pairs of each parameter and parameter argument.
-Then pass that set of parameters to the command with =@<hashtablename>=
+Then pass that set of parameters to the command with `@<hashtablename>`
 
-#+BEGIN_SRC powershell
+```powershell
   $Params = @{
       "Path" = "Testfile.txt"
       "Destination" = "CopiedFile.txt"
@@ -36,20 +36,20 @@ Then pass that set of parameters to the command with =@<hashtablename>=
   }
 
   Copy-Item @Params
-#+END_SRC
+```
 
-#+BEGIN_SRC powershell
+```powershell
   $Params = @{
     "Path"        = "TestFile.txt"
     "Destination" = "CopiedFile.txt"
   }
 
   Copy-Item @Params -Force -WhatIf
-#+END_SRC
+```
 
 In Powershell 7.1, you can override splatted parameters:
 
-#+BEGIN_SRC powershell
+```powershell
   $Params = @{
     "Path"        = "TestFile.txt"
     "Destination" = "CopiedFile.txt"
@@ -58,18 +58,18 @@ In Powershell 7.1, you can override splatted parameters:
   }
 
   Copy-Item @Params -WhatIf:$False
-#+END_SRC
+```
 
-For positional parameters, =splat= an array:
+For positional parameters, `splat` an array:
 
-#+BEGIN_SRC powershell
+```powershell
   $ParamArray = @(
     "TestFile.txt"
     "CopiedFile.txt"
   )
 
   Copy-Item @ParamArray
-#+END_SRC
+```
 
 Proxy Functions and Splatted Commands : these functions allow you to add
 additional parameters to the original cmdlet and then call that cmdlet
@@ -81,7 +81,7 @@ You'll find another automatic variable called $PSBoundParameters which
 contains a hashtable of all bound parameters. Notice below the
 Test-Function function that returns the $Param1 and $Param2 parameters.
 
-#+BEGIN_SRC powershell
+```powershell
   Function Test-Function {
     Param(
       $Param1,
@@ -96,9 +96,9 @@ Test-Function function that returns the $Param1 and $Param2 parameters.
   }
 
   Test-Function "test1" "test2" "test3" -Param1 "testParam" -Param2 "testParam2"
-#+END_SRC
+```
 
-#+BEGIN_EXAMPLE
+```text
   Unnamed Parameters
   test1
   test2
@@ -110,16 +110,18 @@ Test-Function function that returns the $Param1 and $Param2 parameters.
   Param1 testParam
   Param2 testParam2
 
-#+END_EXAMPLE
+```
 
-** Building a Wrapper Function using Splatted Parameters* To show how
+
+### Building a Wrapper Function using Splatted Parameters\* To show how {#building-a-wrapper-function-using-splatted-parameters-to-show-how}
+
 useful splatting can be in wrapper functions, create a custom function
 that passes unnamed parameters and named parameters to the Copy-Item
 cmdlet. With this technique, you can quickly create custom functions
 that add additional functionality but retain the same parameter set you
 would expect.
 
-#+BEGIN_SRC powershell
+```powershell
   Function Copy-CustomItem {
     Get-ChildItem
 
@@ -129,4 +131,4 @@ would expect.
   }
 
   Copy-CustomItem "TestFile.txt" "CopiedFile.txt" -force -verbose
-#+end_src
+```

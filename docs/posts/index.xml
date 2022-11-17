@@ -432,6 +432,16 @@ function Encrypt-Script($path, $destination) { $script = Get-Content $path | Out
     </item>
     
     <item>
+      <title>PowerShell - Splatting</title>
+      <link>https://kdbed.github.io/posts/powershell_splatting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/powershell_splatting/</guid>
+      <description>Splatting in powershell Splatting allows one to format and send arguments to cmdlets and functions. Typically use dash+parameter name+argument
+Copy-Item -Path &amp;#34;Testfile.txt&amp;#34; -Destination &amp;#34;CopiedFile.txt&amp;#34; -WhatIf -force -Recurse Copy-Item ` -Path &amp;#34;Testfile.txt&amp;#34; ` -Destination &amp;#34;CopiedFile.txt&amp;#34; ` -WhatIf ` -force ` Instead you can splat a parameter set. First create a hashtable containing key/value pairs of each parameter and parameter argument. Then pass that set of parameters to the command with @&amp;lt;hashtablename&amp;gt;</description>
+    </item>
+    
+    <item>
       <title>Quotes</title>
       <link>https://kdbed.github.io/posts/quotes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
