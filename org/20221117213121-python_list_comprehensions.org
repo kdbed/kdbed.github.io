@@ -110,3 +110,7 @@ List comprehensions also allow conditionals in their definitions:
 
 #+BEGIN_SRC python
 #+END_SRC
+
+
+** Reference: [[http://theautomatic.net/tutorial-on-python-list-comprehensions/
+]]
