@@ -42,9 +42,9 @@ Then pass that set of parameters to the command with <code>@&lt;hashtablename&gt
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>  <span style="color:#bb60d5">$Params</span> = @{
 </span></span><span style="display:flex;"><span>      <span style="color:#4070a0">&#34;Path&#34;</span> = <span style="color:#4070a0">&#34;Testfile.txt&#34;</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#4070a0">&#34;Destination&#34;</span> = <span style="color:#4070a0">&#34;CopiedFile.txt&#34;</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#4070a0">&#34;WhatIf&#34;</span> = <span style="color:#bb60d5">$true</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#4070a0">&#34;force&#34;</span> = <span style="color:#bb60d5">$true</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#4070a0">&#34;Recurse&#34;</span> = <span style="color:#bb60d5">$true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#4070a0">&#34;WhatIf&#34;</span> = $true
+</span></span><span style="display:flex;"><span>      <span style="color:#4070a0">&#34;force&#34;</span> = $true
+</span></span><span style="display:flex;"><span>      <span style="color:#4070a0">&#34;Recurse&#34;</span> = $true
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#007020">Copy-Item</span> <span style="color:#bb60d5">@Params</span>
@@ -58,11 +58,11 @@ Then pass that set of parameters to the command with <code>@&lt;hashtablename&gt
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>  <span style="color:#bb60d5">$Params</span> = @{
 </span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#34;Path&#34;</span>        = <span style="color:#4070a0">&#34;TestFile.txt&#34;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#34;Destination&#34;</span> = <span style="color:#4070a0">&#34;CopiedFile.txt&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#34;WhatIf&#34;</span>      = <span style="color:#bb60d5">$True</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#34;Force&#34;</span>       = <span style="color:#bb60d5">$True</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#34;WhatIf&#34;</span>      = $True
+</span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#34;Force&#34;</span>       = $True
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#007020">Copy-Item</span> <span style="color:#bb60d5">@Params</span> -WhatIf<span style="">:</span><span style="color:#bb60d5">$False</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#007020">Copy-Item</span> <span style="color:#bb60d5">@Params</span> -WhatIf:$False
 </span></span></code></pre></div><p>For positional parameters, <code>splat</code> an array:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>  <span style="color:#bb60d5">$ParamArray</span> = @(
 </span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#34;TestFile.txt&#34;</span>
@@ -78,7 +78,7 @@ contains all unnamed parameter values passed to that function.</p>
 <p>You&rsquo;ll find another automatic variable called $PSBoundParameters which
 contains a hashtable of all bound parameters. Notice below the
 Test-Function function that returns the $Param1 and $Param2 parameters.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>  <span style="color:#007020;font-weight:bold">Function</span> <span style="color:#007020">Test-Function</span> {
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>  <span style="color:#007020;font-weight:bold">Function</span><span style="color:#bbb"> </span><span style="color:#007020">Test-Function</span> {
 </span></span><span style="display:flex;"><span>    <span style="color:#007020;font-weight:bold">Param</span>(
 </span></span><span style="display:flex;"><span>      <span style="color:#bb60d5">$Param1</span>,
 </span></span><span style="display:flex;"><span>      <span style="color:#bb60d5">$Param2</span>
@@ -108,7 +108,7 @@ that passes unnamed parameters and named parameters to the Copy-Item
 cmdlet. With this technique, you can quickly create custom functions
 that add additional functionality but retain the same parameter set you
 would expect.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>  <span style="color:#007020;font-weight:bold">Function</span> <span style="color:#007020">Copy-CustomItem</span> {
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>  <span style="color:#007020;font-weight:bold">Function</span><span style="color:#bbb"> </span><span style="color:#007020">Copy-CustomItem</span> {
 </span></span><span style="display:flex;"><span>    <span style="color:#007020">Get-ChildItem</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#007020">Copy-Item</span> <span style="color:#bb60d5">@Args</span> <span style="color:#bb60d5">@PSBoundParameters</span>
@@ -121,6 +121,14 @@ would expect.</p>
       </div>
       
 
+
+   
+
+   
+
+   
+
+   
 
    
 

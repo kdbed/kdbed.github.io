@@ -28,30 +28,38 @@
       <div class="content">
         <h1>PowerShell - Log Function</h1>
         <h2 id="log-function-for-powershell--powershell-dot-md">Log Function for <a href="/posts/powershell/">powershell</a></h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">function</span> <span style="color:#007020">Write-Log</span> {
-</span></span><span style="display:flex;"><span>    [<span style="color:#007020;font-weight:bold">CmdletBinding</span>()]
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">function</span><span style="color:#bbb"> </span><span style="color:#007020">Write-Log</span> {
+</span></span><span style="display:flex;"><span>    [<span style="color:#007020">CmdletBinding</span>()]
 </span></span><span style="display:flex;"><span>    <span style="color:#007020;font-weight:bold">param</span>(
-</span></span><span style="display:flex;"><span>        [<span style="color:#007020;font-weight:bold">Parameter</span>()]
-</span></span><span style="display:flex;"><span>        [ValidateNotNullOrEmpty()]
-</span></span><span style="display:flex;"><span>        <span style="color:#60add5">[string]</span><span style="color:#bb60d5">$Message</span>,
+</span></span><span style="display:flex;"><span>        [<span style="color:#007020">Parameter</span>()]
+</span></span><span style="display:flex;"><span>        [<span style="color:#007020">ValidateNotNullOrEmpty</span>()]
+</span></span><span style="display:flex;"><span>        [<span style="color:#60add5">string</span>]<span style="color:#bb60d5">$Message</span>,
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        [<span style="color:#007020;font-weight:bold">Parameter</span>()]
-</span></span><span style="display:flex;"><span>        [ValidateNotNullOrEmpty()]
-</span></span><span style="display:flex;"><span>        [<span style="color:#007020;font-weight:bold">ValidateSet</span>(<span style="color:#4070a0">&#39;Information&#39;</span>,<span style="color:#4070a0">&#39;Warning&#39;</span>,<span style="color:#4070a0">&#39;Error&#39;</span>)]
-</span></span><span style="display:flex;"><span>        <span style="color:#60add5">[string]</span><span style="color:#bb60d5">$Severity</span> = <span style="color:#4070a0">&#39;Information&#39;</span>
+</span></span><span style="display:flex;"><span>        [<span style="color:#007020">Parameter</span>()]
+</span></span><span style="display:flex;"><span>        [<span style="color:#007020">ValidateNotNullOrEmpty</span>()]
+</span></span><span style="display:flex;"><span>        [<span style="color:#007020">ValidateSet</span>(<span style="color:#4070a0">&#39;Information&#39;</span>,<span style="color:#4070a0">&#39;Warning&#39;</span>,<span style="color:#4070a0">&#39;Error&#39;</span>)]
+</span></span><span style="display:flex;"><span>        [<span style="color:#60add5">string</span>]<span style="color:#bb60d5">$Severity</span> = <span style="color:#4070a0">&#39;Information&#39;</span>
 </span></span><span style="display:flex;"><span>    )
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#60add5">[pscustomobject]</span>@{
+</span></span><span style="display:flex;"><span>    [<span style="color:#60add5">pscustomobject</span>]@{
 </span></span><span style="display:flex;"><span>        Time = (<span style="color:#007020">Get-Date</span> <span style="color:#666">-f</span> g)
 </span></span><span style="display:flex;"><span>        Message = <span style="color:#bb60d5">$Message</span>
 </span></span><span style="display:flex;"><span>        Severity = <span style="color:#bb60d5">$Severity</span>
-</span></span><span style="display:flex;"><span>    } | <span style="color:#007020">Export-Csv</span> -Path <span style="color:#4070a0">&#34;$env:Temp\LogFile.csv&#34;</span> -Append -NoTypeInformation
+</span></span><span style="display:flex;"><span>    } | <span style="color:#007020">Export-Csv</span> -Path <span style="color:#4070a0">&#34;</span><span style="color:#bb60d5">$env:Temp</span><span style="color:#4070a0">\LogFile.csv&#34;</span> -Append -NoTypeInformation
 </span></span><span style="display:flex;"><span> }
 </span></span></code></pre></div><p>From : <a href="https://adamtheautomator.com/powershell-log-function/">ATA</a></p>
 
       </div>
       
 
+
+   
+
+   
+
+   
+
+   
 
    
 

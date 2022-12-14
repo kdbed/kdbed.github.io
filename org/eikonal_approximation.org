@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       4ee18772-d6eb-40b0-a00c-e6e0f711b9b3
+:END:
+#+title: Eikonal Approximation
+#+filetags: :scattering:quantumMechanics:
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+
+* Eikonal Approximation in [[id:124af3ba-84c1-4140-895b-aad55cdbe965][Quantum Mechanics]]
+** Introduction and Background
+ The root eikon comes from *eikenai*, a transliteration of the Greek \epsilon\iota\kappa\epsilon\nu\alpha\iota meaning 'to resemble'.  In Greek the word \epsilon\iota\kappa\omicron\nu means image -- compare 'icon' in English. The image provided by the eikonal approximation in scattering has its origin in optics, wherein one assumes (ray optics) that the size of an obstacle is large compared to the wavelength of scattered light. When diffraction is involved, one moves from the eikonal approximation (back) to Maxwell's equations.

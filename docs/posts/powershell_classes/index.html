@@ -31,25 +31,25 @@
 <h3 id="introduction">Introduction</h3>
 <p>PowerShell is an object-oriented language. When you run commands, see the output on your screen, those are objects.</p>
 <p>Skeleton of a class called <code>student</code>:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>class student {
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">class</span><span style="color:#bbb"> </span><span style="color:#007020">student </span>{
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        }
 </span></span></code></pre></div><p>Classes have properties that look like parameters that are attributes that describe that class. The example below shows a class called student with two properties; <code>FirstName</code> and <code>LastName</code>.</p>
 <p>When you define a property, you should always define a type that sets a specific <em>schema</em> for what property values can hold. In the example below, both properties are defined as strings.</p>
 <h3 id="student-class">Student Class</h3>
 <p>Class with two properties:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>class student {
-</span></span><span style="display:flex;"><span>    <span style="color:#60add5">[string]</span><span style="color:#bb60d5">$FirstName</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#60add5">[string]</span><span style="color:#bb60d5">$LastName</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">class</span><span style="color:#bbb"> </span><span style="color:#007020">student </span>{
+</span></span><span style="display:flex;"><span>    [<span style="color:#60add5">string</span>]<span style="color:#bb60d5">$FirstName</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#60add5">string</span>]<span style="color:#bb60d5">$LastName</span>
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>After you define a class, create an object from it or instantiate an object. There are multiple ways to instantiate objects from classes; one common way is to use type accelerators such as [student] which represent the class, followed by a default method that comes with every class called new().</p>
 <p>Using the type accelerator shortcut is the same as creating an object using the New-Object command.</p>
 <p>Once you&rsquo;ve created an object from that class, then assign values to properties. The example below is assigning values of <em>Tyler</em> and <em>Muir</em> for the <code>FirstName</code> and <code>LastName</code> properties.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>class student {
-</span></span><span style="display:flex;"><span>    <span style="color:#60add5">[string]</span><span style="color:#bb60d5">$FirstName</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#60add5">[string]</span><span style="color:#bb60d5">$LastName</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">class</span><span style="color:#bbb"> </span><span style="color:#007020">student </span>{
+</span></span><span style="display:flex;"><span>    [<span style="color:#60add5">string</span>]<span style="color:#bb60d5">$FirstName</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#60add5">string</span>]<span style="color:#bb60d5">$LastName</span>
 </span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#bb60d5">$student1</span> = <span style="color:#60add5">[student]</span>::new()
+</span></span><span style="display:flex;"><span><span style="color:#bb60d5">$student1</span> = [<span style="color:#60add5">student</span>]::new()
 </span></span><span style="display:flex;"><span><span style="color:#bb60d5">$student1</span>.FirstName = <span style="color:#4070a0">&#39;Tyler&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#bb60d5">$student1</span>.LastName = <span style="color:#4070a0">&#39;Muir&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#bb60d5">$student1</span> | <span style="color:#007020">Get-Member</span>
@@ -63,7 +63,7 @@
 </span></span></code></pre></div><p>Method parameters set set inside the parentheses ().</p>
 <h4 id="return-is-mandatory"><code>return</code> is mandatory</h4>
 <p>PowerShell functions will return objects by simply placing the object anywhere in the function; if a method returns an object, you must use the return construct as shown below.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#60add5">[string]</span>GetName() {
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>[<span style="color:#60add5">string</span>]GetName() {
 </span></span><span style="display:flex;"><span>	<span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#39;foo&#39;</span>
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h2 id="references">References</h2>
@@ -72,6 +72,14 @@
       </div>
       
 
+
+   
+
+   
+
+   
+
+   
 
    
 

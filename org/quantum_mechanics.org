@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       124af3ba-84c1-4140-895b-aad55cdbe965
+:END:
+#+title: Quantum Mechanics
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
