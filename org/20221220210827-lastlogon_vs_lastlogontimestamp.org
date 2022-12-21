@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       ee8c6ccf-09c9-4658-bed0-f4f20b0e30c7
+:END:
+#+title: lastLogon vs lastLogonTimestamp
+#+filetags: :kerberos:activeDirectory:
+
+
+* lastLogon vs lastLogonTimestamp
+If you ask for types of situations, then any logon event updates the lastlogontimestamp, but only some of them update lastlogon attribute.
+
+There are certain types of events that only emulate the logon without using the actual username and password that update only the lastlogon attribute.
+
+** Kerberos S4u2Self
+
+[[https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/how-lastlogontimestamp-is-updated-with-kerberos-s4u2self/ba-p/257135][How LastLogonTimeStamp is Updated with Kerberos S4u2Self]]
+[[https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-sfu/02636893-7a1f-4357-af9a-b672e3e3de13][S4U2self]]
