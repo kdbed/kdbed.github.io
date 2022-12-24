@@ -17,6 +17,17 @@ index=wineventlog Account_Name=&amp;lt;&amp;lt;accountNameHere&amp;gt;&amp;gt;&a
     </item>
     
     <item>
+      <title>lastLogon vs lastLogonTimestamp</title>
+      <link>https://kdbed.github.io/posts/lastlogon_vs_lastlogontimestamp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/lastlogon_vs_lastlogontimestamp/</guid>
+      <description>lastLogon vs lastLogonTimestamp If you ask for types of situations, then any logon event updates the lastlogontimestamp, but only some of them update lastlogon attribute.
+There are certain types of events that only emulate the logon without using the actual username and password that update only the lastlogon attribute.
+Kerberos S4u2Self How LastLogonTimeStamp is Updated with Kerberos S4u2Self S4U2self</description>
+    </item>
+    
+    <item>
       <title>PowerShell - Get Domain Controllers in Forest</title>
       <link>https://kdbed.github.io/posts/powershell_get_domain_controllers_in_forest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -24,6 +35,15 @@ index=wineventlog Account_Name=&amp;lt;&amp;lt;accountNameHere&amp;gt;&amp;gt;&a
       <guid>https://kdbed.github.io/posts/powershell_get_domain_controllers_in_forest/</guid>
       <description>To list all of the domain controllers in an Active Directory forest:
 (Get-ADForest).Domains | %{ Get-ADDomainController -Filter * -Server $_ }| Format-Table -Property Name,ComputerObjectDN,Domain,Forest,IPv4Address,OperatingSystem,OperatingSystemVersion </description>
+    </item>
+    
+    <item>
+      <title>PowerShell - Search-ADAccount</title>
+      <link>https://kdbed.github.io/posts/powershell_search_adaccount/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/powershell_search_adaccount/</guid>
+      <description>Search-ADAccount shellgeek</description>
     </item>
     
   </channel>

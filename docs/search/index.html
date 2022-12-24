@@ -342,8 +342,18 @@ window.store = {
         
         "title": "Eikonal Approximation",
         "tags": ["scattering","quantumMechanics",],
-        "content": "Eikonal Approximation in Quantum Mechanics Introduction and Background The root eikon comes from eikenai, a transliteration of the Greek εικεναι meaning \u0026rsquo;to resemble\u0026rsquo;. In Greek the word εικον means image \u0026ndash; compare \u0026lsquo;icon\u0026rsquo; in English. The image provided by the eikonal approximation in scattering has its origin in optics, wherein one assumes (ray optics) that the size of an obstacle is large compared to the wavelength of scattered light. When diffraction is involved, one moves from the eikonal approximation (back) to Maxwell\u0026rsquo;s equations.\n", 
+        "content": "Eikonal Approximation in Quantum Mechanics Introduction and Background The root eikon comes from eikenai, a transliteration of the Greek εικεναι meaning \u0026rsquo;to resemble\u0026rsquo;. In Greek the word εικον means image \u0026ndash; compare \u0026lsquo;icon\u0026rsquo; in English. The image provided by the eikonal approximation in scattering has its origin in optics, wherein one assumes (ray optics) that the size of an obstacle is large compared to the wavelength of scattered light. When diffraction is involved, one moves from the eikonal approximation (back) to Maxwell\u0026rsquo;s Equations.\nOptics and Quantum Mechanics Optics is described by Maxwell\u0026rsquo;s equations, which can be written as a wave equation with dispersion relation \\(\\omega = ck\\)\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/eikonal_approximation\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/electrodynamics\/": {
+        
+        "title": "Electrodynamics",
+        "tags": [],
+        "content": "Physics\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/electrodynamics\/"
     },
     
     
@@ -658,6 +668,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/lastlogon_vs_lastlogontimestamp\/": {
+        
+        "title": "lastLogon vs lastLogonTimestamp",
+        "tags": ["kerberos","activeDirectory",],
+        "content": "lastLogon vs lastLogonTimestamp If you ask for types of situations, then any logon event updates the lastlogontimestamp, but only some of them update lastlogon attribute.\nThere are certain types of events that only emulate the logon without using the actual username and password that update only the lastlogon attribute.\nKerberos S4u2Self How LastLogonTimeStamp is Updated with Kerberos S4u2Self S4U2self\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/lastlogon_vs_lastlogontimestamp\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/law\/": {
         
         "title": "law",
@@ -714,6 +734,16 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/marx\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/maxwell_s_equations\/": {
+        
+        "title": "Maxwell\u0027s Equations",
+        "tags": [],
+        "content": "Electrodynamics\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/maxwell_s_equations\/"
     },
     
     
@@ -788,6 +818,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/optics\/": {
+        
+        "title": "Optics",
+        "tags": [],
+        "content": "Physics\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/optics\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/org\/": {
         
         "title": "org",
@@ -854,6 +894,16 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/philosophy\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/physics\/": {
+        
+        "title": "Physics",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/posts\/physics\/"
     },
     
     
@@ -968,12 +1018,32 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/powershell_rust\/": {
+        
+        "title": "PowerShell - Rust",
+        "tags": ["rust","powershell",],
+        "content": "Basic Rust Integration with powershell $rustPgm = @\u0026#34; #[no_mangle] pub extern \u0026#34;C\u0026#34; fn add_numbers(number1: i32, number2: i32) -\u0026gt; i32 { number1 + number2 } \u0026#34;@ $rustPgm | Set-Content -Encoding UTF8 .\\lib.rs rustc .\\lib.rs --crate-type dylib --crate-name powershell_to_rust ## start another PS so dll doesn\u0026#39;t get locked powershell -command { $definition = @\u0026#34; [DllImport(\u0026#34;powershell_to_rust.dll\u0026#34;)] public static extern Int32 add_numbers(Int32 number1, Int32 number2); \u0026#34;@ $target = Add-Type -MemberDefinition $definition -Name AddNum -PassThru $ans = $target::add_numbers(3, 8) write-host $ans } ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/powershell_rust\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/powershell_script_encryption\/": {
         
         "title": "PowerShell - Script Encryption",
         "tags": ["powerShell","encryption",],
         "content": "Encrypt powershell Scripts Function to obfuscate code containing sensitive data:\nfunction Encrypt-Script($path, $destination) { $script = Get-Content $path | Out-String $secure = ConvertTo-SecureString $script -asPlainText -force $export = $secure | ConvertFrom-SecureString Set-Content $destination $export \u0026#34;Script \u0026#39;$path\u0026#39; has been encrypted as \u0026#39;$destination\u0026#39;\u0026#34; } function Execute-EncryptedScript($path) { trap { \u0026#34;Decryption failed\u0026#34;; break } $raw = Get-Content $path $secure = ConvertTo-SecureString $raw $helper = New-Object system.Management.Automation.PSCredential(\u0026#34;test\u0026#34;, $secure) $plain = $helper.GetNetworkCredential().Password Invoke-Expression $plain } From: idera\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/powershell_script_encryption\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/powershell_search_adaccount\/": {
+        
+        "title": "PowerShell - Search-ADAccount",
+        "tags": ["activeDirectory","powerShell",],
+        "content": "Search-ADAccount shellgeek\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/powershell_search_adaccount\/"
     },
     
     
@@ -1348,6 +1418,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/tags\/web\/": {
+        
+        "title": "web",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/web\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/web_pentest_browser_extensions\/": {
         
         "title": "Web Pentest - Browser Extensions",
@@ -1378,6 +1458,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/wildcard_certificate\/": {
+        
+        "title": "Wildcard Certificate",
+        "tags": ["cryptography","web",],
+        "content": "Wildcare Certificates digicert\nWhat is a SSL Wildcard Certificate?\nA SSL/TLS Wildcard certificate is a single certificate with a wildcard character (*) in the domain name field. This allows the certificate to secure multiple sub domain names (hosts) pertaining to the same base domain.\nFor example, a wildcard certificate for *.(domainname).com, could be used for www.(domainname).com, mail.(domainname).com, store.(domainname).com, in addition to any additional sub domain name in the (domainname).com.\nWhen a client checks the sub domain name in this type of certificate, it uses a shell expansion procedure to see if it matches.\nWhat is the difference between a SAN certificate and a Wildcard certificate? A Subject Alternative Name (SAN) certificate is capable of supporting multiple domains and multiple host names with domains. SANS certificates are more flexible than Wildcard certificates since they are not limited to a single domain.\nCombining the functionality of both allows you secure a much broader set of domains along with the capability to use them on any number of sub-domains.\nNote: Only non-Wildcard names can be added as SAN.\nWhen should I request a SSL Wildcard Certificate?\nA SSL/TLS Wildcard certificate should be considered an option when looking to secure a number of sub domains, such as \u0026lsquo;secure.(domainname).com\u0026rsquo;, \u0026lsquo;www.(domainname).com\u0026rsquo;, and \u0026lsquo;mail.(domainname).com\u0026rsquo; with a single certificate.\nThe format of the common name entered for the SSL/TLS Wildcard Certificate will be \u0026lsquo;*.(domainname).com\u0026rsquo;.\nHow do I add SAN? SAN is an optional feature available during your Wildcard SSL/TLS purchase, you can add up to an additional 250 SANs to a single certificate.\nNote: It is imperative that software documentation is referenced to ensure that the server on which the certificate will be installed on supports wildcard certificates.\nDo SSL/TLS Wildcard Certificates work with all servers and browsers?\nSSL/TLS Wildcard certificates work with most servers. If unsure, check with your server vendor for further assistance.\nCan I share the IP address with all the sub domain names?\nYes. As the same certificate will be used to secure all the sub domain names associated with a domain name, an IP address can be shared amongst all of the sub domain names. SSL/TLS by nature of the protocol is IP based but in this case, where the same certificate will be used by all sub domain names, a Wildcard certificate can be configured for use with name-based virtual hosts instead of IP -based virtual hosts.\nUpdating licensing is not applicable.\nTLS/SSL Wildcard Certificates: Multiple Servers\nA TLS/SSL Wildcard certificate secures all the sub domain names associated with a domain name on one server. If multiple servers are involved, the certificate and it\u0026rsquo;s corresponding private key would need to be used on the other servers.\nPlease Note: The use of one certificate on more than one device can result in increased security risks to networks and that DigiCert expressly disclaims any liability for breaches of security that result from the distribution of a single private key across multiple devices.\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/wildcard_certificate\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/windows\/": {
         
         "title": "Windows",
@@ -1392,7 +1482,7 @@ window.store = {
         
         "title": "XOR",
         "tags": ["cryptography",],
-        "content": "XOR Basics Exclusive or \u0026ndash; \u0026lsquo;XOR\u0026rsquo; \u0026ndash; is a Boolean binary operator that is true when either the first input or the second input, but not both, are true.\nXOR is a \u0026lsquo;programmable inverter\u0026rsquo;: one input bit decides whether to invert the other input bit or to just pass it through unchanged. \u0026lsquo;Inverting\u0026rsquo; bits is also called \u0026lsquo;flipping\u0026rsquo; bits.\n\\(X = A \\bigoplus B\\)\nProperties ", 
+        "content": "*XOR Basics Exclusive or \u0026ndash; \u0026lsquo;XOR\u0026rsquo; \u0026ndash; is a Boolean binary operator that is true when either the first input or the second input, but not both, are true.\nXOR is a \u0026lsquo;programmable inverter\u0026rsquo;: one input bit decides whether to invert the other input bit or to just pass it through unchanged. \u0026lsquo;Inverting\u0026rsquo; bits is also called \u0026lsquo;flipping\u0026rsquo; bits.\n\\(X = A \\bigoplus B\\)\nProperties ", 
         "url": "https:\/\/kdbed.github.io\/posts\/xor\/"
     },
     

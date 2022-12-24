@@ -28,6 +28,15 @@ When you define a property, you should always define a type that sets a specific
     </item>
     
     <item>
+      <title>PowerShell - Rust</title>
+      <link>https://kdbed.github.io/posts/powershell_rust/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/powershell_rust/</guid>
+      <description>Basic Rust Integration with powershell $rustPgm = @&amp;#34; #[no_mangle] pub extern &amp;#34;C&amp;#34; fn add_numbers(number1: i32, number2: i32) -&amp;gt; i32 { number1 + number2 } &amp;#34;@ $rustPgm | Set-Content -Encoding UTF8 .\lib.rs rustc .\lib.rs --crate-type dylib --crate-name powershell_to_rust ## start another PS so dll doesn&amp;#39;t get locked powershell -command { $definition = @&amp;#34; [DllImport(&amp;#34;powershell_to_rust.dll&amp;#34;)] public static extern Int32 add_numbers(Int32 number1, Int32 number2); &amp;#34;@ $target = Add-Type -MemberDefinition $definition -Name AddNum -PassThru $ans = $target::add_numbers(3, 8) write-host $ans } </description>
+    </item>
+    
+    <item>
       <title>PowerShell - Script Encryption</title>
       <link>https://kdbed.github.io/posts/powershell_script_encryption/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -35,6 +44,15 @@ When you define a property, you should always define a type that sets a specific
       <guid>https://kdbed.github.io/posts/powershell_script_encryption/</guid>
       <description>Encrypt powershell Scripts Function to obfuscate code containing sensitive data:
 function Encrypt-Script($path, $destination) { $script = Get-Content $path | Out-String $secure = ConvertTo-SecureString $script -asPlainText -force $export = $secure | ConvertFrom-SecureString Set-Content $destination $export &amp;#34;Script &amp;#39;$path&amp;#39; has been encrypted as &amp;#39;$destination&amp;#39;&amp;#34; } function Execute-EncryptedScript($path) { trap { &amp;#34;Decryption failed&amp;#34;; break } $raw = Get-Content $path $secure = ConvertTo-SecureString $raw $helper = New-Object system.Management.Automation.PSCredential(&amp;#34;test&amp;#34;, $secure) $plain = $helper.GetNetworkCredential().Password Invoke-Expression $plain } From: idera</description>
+    </item>
+    
+    <item>
+      <title>PowerShell - Search-ADAccount</title>
+      <link>https://kdbed.github.io/posts/powershell_search_adaccount/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/powershell_search_adaccount/</guid>
+      <description>Search-ADAccount shellgeek</description>
     </item>
     
     <item>

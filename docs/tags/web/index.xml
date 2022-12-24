@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web on Braindump</title>
+    <link>https://kdbed.github.io/tags/web/</link>
+    <description>Recent content in web on Braindump</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wildcard Certificate</title>
+      <link>https://kdbed.github.io/posts/wildcard_certificate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/wildcard_certificate/</guid>
+      <description>Wildcare Certificates digicert
+What is a SSL Wildcard Certificate?
+A SSL/TLS Wildcard certificate is a single certificate with a wildcard character (*) in the domain name field. This allows the certificate to secure multiple sub domain names (hosts) pertaining to the same base domain.
+For example, a wildcard certificate for *.(domainname).com, could be used for www.(domainname).com, mail.(domainname).com, store.(domainname).com, in addition to any additional sub domain name in the (domainname).com.
+When a client checks the sub domain name in this type of certificate, it uses a shell expansion procedure to see if it matches.</description>
+    </item>
+    
+  </channel>
+</rss>

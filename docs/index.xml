@@ -155,7 +155,16 @@ How DNS Works DNS (Domain Name System) is like an Internet phonebook.</descripti
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/eikonal_approximation/</guid>
-      <description>Eikonal Approximation in Quantum Mechanics Introduction and Background The root eikon comes from eikenai, a transliteration of the Greek εικεναι meaning &amp;rsquo;to resemble&amp;rsquo;. In Greek the word εικον means image &amp;ndash; compare &amp;lsquo;icon&amp;rsquo; in English. The image provided by the eikonal approximation in scattering has its origin in optics, wherein one assumes (ray optics) that the size of an obstacle is large compared to the wavelength of scattered light. When diffraction is involved, one moves from the eikonal approximation (back) to Maxwell&amp;rsquo;s equations.</description>
+      <description>Eikonal Approximation in Quantum Mechanics Introduction and Background The root eikon comes from eikenai, a transliteration of the Greek εικεναι meaning &amp;rsquo;to resemble&amp;rsquo;. In Greek the word εικον means image &amp;ndash; compare &amp;lsquo;icon&amp;rsquo; in English. The image provided by the eikonal approximation in scattering has its origin in optics, wherein one assumes (ray optics) that the size of an obstacle is large compared to the wavelength of scattered light. When diffraction is involved, one moves from the eikonal approximation (back) to Maxwell&amp;rsquo;s Equations.</description>
+    </item>
+    
+    <item>
+      <title>Electrodynamics</title>
+      <link>https://kdbed.github.io/posts/electrodynamics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/electrodynamics/</guid>
+      <description>Physics</description>
     </item>
     
     <item>
@@ -273,6 +282,17 @@ Checksec Same source code, compiled with different protections in place:
     </item>
     
     <item>
+      <title>lastLogon vs lastLogonTimestamp</title>
+      <link>https://kdbed.github.io/posts/lastlogon_vs_lastlogontimestamp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/lastlogon_vs_lastlogontimestamp/</guid>
+      <description>lastLogon vs lastLogonTimestamp If you ask for types of situations, then any logon event updates the lastlogontimestamp, but only some of them update lastlogon attribute.
+There are certain types of events that only emulate the logon without using the actual username and password that update only the lastlogon attribute.
+Kerberos S4u2Self How LastLogonTimeStamp is Updated with Kerberos S4u2Self S4U2self</description>
+    </item>
+    
+    <item>
       <title>linpeas</title>
       <link>https://kdbed.github.io/posts/linpeas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -298,6 +318,15 @@ Checksec Same source code, compiled with different protections in place:
       
       <guid>https://kdbed.github.io/posts/marx/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Maxwell&#39;s Equations</title>
+      <link>https://kdbed.github.io/posts/maxwell_s_equations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/maxwell_s_equations/</guid>
+      <description>Electrodynamics</description>
     </item>
     
     <item>
@@ -328,6 +357,15 @@ Checksec Same source code, compiled with different protections in place:
     </item>
     
     <item>
+      <title>Optics</title>
+      <link>https://kdbed.github.io/posts/optics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/optics/</guid>
+      <description>Physics</description>
+    </item>
+    
+    <item>
       <title>Org Mode - Python/Jupyter Example</title>
       <link>https://kdbed.github.io/posts/orgpythonjupyter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -352,6 +390,15 @@ print(&amp;#39;ello, world!&amp;#39;) Create a plot import matplotlib.pyplot as 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/philosophy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Physics</title>
+      <link>https://kdbed.github.io/posts/physics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/physics/</guid>
       <description></description>
     </item>
     
@@ -432,6 +479,15 @@ When you define a property, you should always define a type that sets a specific
     </item>
     
     <item>
+      <title>PowerShell - Rust</title>
+      <link>https://kdbed.github.io/posts/powershell_rust/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/powershell_rust/</guid>
+      <description>Basic Rust Integration with powershell $rustPgm = @&amp;#34; #[no_mangle] pub extern &amp;#34;C&amp;#34; fn add_numbers(number1: i32, number2: i32) -&amp;gt; i32 { number1 + number2 } &amp;#34;@ $rustPgm | Set-Content -Encoding UTF8 .\lib.rs rustc .\lib.rs --crate-type dylib --crate-name powershell_to_rust ## start another PS so dll doesn&amp;#39;t get locked powershell -command { $definition = @&amp;#34; [DllImport(&amp;#34;powershell_to_rust.dll&amp;#34;)] public static extern Int32 add_numbers(Int32 number1, Int32 number2); &amp;#34;@ $target = Add-Type -MemberDefinition $definition -Name AddNum -PassThru $ans = $target::add_numbers(3, 8) write-host $ans } </description>
+    </item>
+    
+    <item>
       <title>PowerShell - Script Encryption</title>
       <link>https://kdbed.github.io/posts/powershell_script_encryption/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -439,6 +495,15 @@ When you define a property, you should always define a type that sets a specific
       <guid>https://kdbed.github.io/posts/powershell_script_encryption/</guid>
       <description>Encrypt powershell Scripts Function to obfuscate code containing sensitive data:
 function Encrypt-Script($path, $destination) { $script = Get-Content $path | Out-String $secure = ConvertTo-SecureString $script -asPlainText -force $export = $secure | ConvertFrom-SecureString Set-Content $destination $export &amp;#34;Script &amp;#39;$path&amp;#39; has been encrypted as &amp;#39;$destination&amp;#39;&amp;#34; } function Execute-EncryptedScript($path) { trap { &amp;#34;Decryption failed&amp;#34;; break } $raw = Get-Content $path $secure = ConvertTo-SecureString $raw $helper = New-Object system.Management.Automation.PSCredential(&amp;#34;test&amp;#34;, $secure) $plain = $helper.GetNetworkCredential().Password Invoke-Expression $plain } From: idera</description>
+    </item>
+    
+    <item>
+      <title>PowerShell - Search-ADAccount</title>
+      <link>https://kdbed.github.io/posts/powershell_search_adaccount/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/powershell_search_adaccount/</guid>
+      <description>Search-ADAccount shellgeek</description>
     </item>
     
     <item>
@@ -606,12 +671,25 @@ wpscan --url &amp;lt;url&amp;gt; -e dbe,u,vp </description>
     </item>
     
     <item>
+      <title>Wildcard Certificate</title>
+      <link>https://kdbed.github.io/posts/wildcard_certificate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/wildcard_certificate/</guid>
+      <description>Wildcare Certificates digicert
+What is a SSL Wildcard Certificate?
+A SSL/TLS Wildcard certificate is a single certificate with a wildcard character (*) in the domain name field. This allows the certificate to secure multiple sub domain names (hosts) pertaining to the same base domain.
+For example, a wildcard certificate for *.(domainname).com, could be used for www.(domainname).com, mail.(domainname).com, store.(domainname).com, in addition to any additional sub domain name in the (domainname).com.
+When a client checks the sub domain name in this type of certificate, it uses a shell expansion procedure to see if it matches.</description>
+    </item>
+    
+    <item>
       <title>XOR</title>
       <link>https://kdbed.github.io/posts/xor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/xor/</guid>
-      <description>XOR Basics Exclusive or &amp;ndash; &amp;lsquo;XOR&amp;rsquo; &amp;ndash; is a Boolean binary operator that is true when either the first input or the second input, but not both, are true.
+      <description>*XOR Basics Exclusive or &amp;ndash; &amp;lsquo;XOR&amp;rsquo; &amp;ndash; is a Boolean binary operator that is true when either the first input or the second input, but not both, are true.
 XOR is a &amp;lsquo;programmable inverter&amp;rsquo;: one input bit decides whether to invert the other input bit or to just pass it through unchanged. &amp;lsquo;Inverting&amp;rsquo; bits is also called &amp;lsquo;flipping&amp;rsquo; bits.
 \(X = A \bigoplus B\)
 Properties </description>

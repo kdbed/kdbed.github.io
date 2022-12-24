@@ -2,7 +2,8 @@
 :ID:       46d6a8c0-67b4-4467-8785-1fcdbe483717
 :END:
 #+title: PowerShell - Rust
-
+#+filetags: :rust:powershell:
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
 
 
 * Basic Rust Integration with [[id:9aac309a-a98b-4e34-9f31-5cbeeb993311][powershell]]

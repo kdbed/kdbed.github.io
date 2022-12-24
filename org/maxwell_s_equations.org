@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       2db7bdd9-8a72-4c6b-b61d-268e63f1f7c8
+:END:
+#+title: Maxwell's Equations
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+
+[[id:c8c319c8-71ce-4c7e-b40b-320e9a75054b][Electrodynamics]]

@@ -16,5 +16,16 @@
 Use the Impacket tool GetNPUsers.py to try to get a hash for each user</description>
     </item>
     
+    <item>
+      <title>lastLogon vs lastLogonTimestamp</title>
+      <link>https://kdbed.github.io/posts/lastlogon_vs_lastlogontimestamp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/lastlogon_vs_lastlogontimestamp/</guid>
+      <description>lastLogon vs lastLogonTimestamp If you ask for types of situations, then any logon event updates the lastlogontimestamp, but only some of them update lastlogon attribute.
+There are certain types of events that only emulate the logon without using the actual username and password that update only the lastlogon attribute.
+Kerberos S4u2Self How LastLogonTimeStamp is Updated with Kerberos S4u2Self S4U2self</description>
+    </item>
+    
   </channel>
 </rss>

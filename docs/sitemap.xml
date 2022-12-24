@@ -66,6 +66,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/eikonal_approximation/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/electrodynamics/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/email/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/emissions/</loc>
@@ -128,6 +130,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/keyexchange/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/lastlogon_vs_lastlogontimestamp/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/law/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/linpeas/</loc>
@@ -139,6 +143,8 @@
     <loc>https://kdbed.github.io/posts/malware/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/marx/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/maxwell_s_equations/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/nietzsche/</loc>
   </url><url>
@@ -154,6 +160,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/objectorientedprogramming/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/optics/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/org/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/orgpythonjupyter/</loc>
@@ -167,6 +175,8 @@
     <loc>https://kdbed.github.io/tags/pentest/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/philosophy/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/physics/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pie/</loc>
   </url><url>
@@ -190,7 +200,11 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/powershell_log_function/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/powershell_rust/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/powershell_script_encryption/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/powershell_search_adaccount/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/powershell_splatting/</loc>
   </url><url>
@@ -266,11 +280,15 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/tryhackme/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/web/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/web_pentest_browser_extensions/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/web_pentest_wordpress/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/wfuzz/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/wildcard_certificate/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/windows/</loc>
   </url><url>

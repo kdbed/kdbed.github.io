@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       a7b06501-62d1-4f31-8479-e9b3b16468f0
+:END:
+#+title: Physics
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
