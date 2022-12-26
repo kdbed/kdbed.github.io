@@ -5,7 +5,7 @@ tags = ["cryptography"]
 draft = false
 +++
 
-## \*XOR {#xor}
+## XOR {#xor}
 
 
 ### Basics {#basics}

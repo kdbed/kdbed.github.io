@@ -130,6 +130,15 @@ Code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 #include &amp;l
     </item>
     
     <item>
+      <title>Cracking - PDF</title>
+      <link>https://kdbed.github.io/posts/cracking_pdf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/cracking_pdf/</guid>
+      <description>fcrackzip fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt </description>
+    </item>
+    
+    <item>
       <title>DNS Zone Transfers</title>
       <link>https://kdbed.github.io/posts/dnszonetransfers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -174,6 +183,15 @@ How DNS Works DNS (Domain Name System) is like an Internet phonebook.</descripti
       <guid>https://kdbed.github.io/posts/fileless_malware/</guid>
       <description>What is Fileless Malware? Traditionally, antivirus and other endpoint security products have focused on files (executables) to detect and prevent malware. There are several advantages to this. Files can be hashed, queried in reputation services, examined by both static analysis and machine learning, and easily excluded for false detections.
 This is a problem for hackers: if the malware’s signature is detected two days after release, the attacker’s ROI (return on investment) may be significantly less than expected, or even negligible.</description>
+    </item>
+    
+    <item>
+      <title>FTP - retrieve files with Python</title>
+      <link>https://kdbed.github.io/posts/ftp_retrieve_files_with_python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/ftp_retrieve_files_with_python/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -688,7 +706,7 @@ When a client checks the sub domain name in this type of certificate, it uses a 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/xor/</guid>
-      <description>*XOR Basics Exclusive or &amp;ndash; &amp;lsquo;XOR&amp;rsquo; &amp;ndash; is a Boolean binary operator that is true when either the first input or the second input, but not both, are true.
+      <description>XOR Basics Exclusive or &amp;ndash; &amp;lsquo;XOR&amp;rsquo; &amp;ndash; is a Boolean binary operator that is true when either the first input or the second input, but not both, are true.
 XOR is a &amp;lsquo;programmable inverter&amp;rsquo;: one input bit decides whether to invert the other input bit or to just pass it through unchanged. &amp;lsquo;Inverting&amp;rsquo; bits is also called &amp;lsquo;flipping&amp;rsquo; bits.
 \(X = A \bigoplus B\)
 Properties </description>

@@ -7,7 +7,7 @@
 #+filetags: :cryptography:
 
 
-* *XOR
+* XOR
 ** Basics
 Exclusive or -- 'XOR' -- is a Boolean binary operator that is true when either the first input or the second input, but not both, are true.
 

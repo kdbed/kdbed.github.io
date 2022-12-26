@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://kdbed.github.io/tags/cryptography/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Cracking - PDF</title>
+      <link>https://kdbed.github.io/posts/cracking_pdf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/cracking_pdf/</guid>
+      <description>fcrackzip fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt </description>
+    </item>
+    
+    <item>
       <title>sha1Cracker</title>
       <link>https://kdbed.github.io/posts/sha1cracker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -34,7 +43,7 @@ When a client checks the sub domain name in this type of certificate, it uses a 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/xor/</guid>
-      <description>*XOR Basics Exclusive or &amp;ndash; &amp;lsquo;XOR&amp;rsquo; &amp;ndash; is a Boolean binary operator that is true when either the first input or the second input, but not both, are true.
+      <description>XOR Basics Exclusive or &amp;ndash; &amp;lsquo;XOR&amp;rsquo; &amp;ndash; is a Boolean binary operator that is true when either the first input or the second input, but not both, are true.
 XOR is a &amp;lsquo;programmable inverter&amp;rsquo;: one input bit decides whether to invert the other input bit or to just pass it through unchanged. &amp;lsquo;Inverting&amp;rsquo; bits is also called &amp;lsquo;flipping&amp;rsquo; bits.
 \(X = A \bigoplus B\)
 Properties </description>

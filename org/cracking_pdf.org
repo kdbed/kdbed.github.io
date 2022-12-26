@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       ed4d0597-ebb4-4055-aad6-5ae6158ff05e
+:END:
+#+title: Cracking - PDF
+#+filetags: :pentest:cryptography:
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+
+
+
+* fcrackzip
+#+begin_src shell
+fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt
+#+end_src
