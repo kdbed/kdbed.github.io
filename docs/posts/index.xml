@@ -402,6 +402,16 @@ print(&amp;#39;ello, world!&amp;#39;) Create a plot import matplotlib.pyplot as 
     </item>
     
     <item>
+      <title>Pentest - SSH</title>
+      <link>https://kdbed.github.io/posts/pentest_ssh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentest_ssh/</guid>
+      <description>Pentesting SSH ssh-audit Install
+sudo apt install ssh-audit </description>
+    </item>
+    
+    <item>
       <title>philosophy</title>
       <link>https://kdbed.github.io/posts/philosophy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
