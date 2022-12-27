@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       458beed0-c56e-491a-933d-dff732d4dd85
+:END:
+#+title: Recon - AutoRecon
+#+filetags: :recon:pentest:
+
+
+
+* AutoRecon
+
+https://github.com/Tib3rius/AutoRecon
+
+src_sh{autorecon -vv 192.168.0.1}
