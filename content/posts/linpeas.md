@@ -5,6 +5,9 @@ tags = ["linux", "privesc", "pentest", "enumeration"]
 draft = false
 +++
 
+See carlospolop : [PEASS-ng](https://github.com/carlospolop/PEASS-ng)  [hacktricks](https://book.hacktricks.xyz/)
+
+
 ## Execution: {#execution}
 
 Run from memory and send back to attacker:

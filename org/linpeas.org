@@ -7,6 +7,9 @@
 
 
 
+See carlospolop : [[https://github.com/carlospolop/PEASS-ng][PEASS-ng]]  [[https://book.hacktricks.xyz/][hacktricks]]
+
+
 
 * Execution:
 Run from memory and send back to attacker:

