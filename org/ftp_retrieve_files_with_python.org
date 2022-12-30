@@ -1,6 +1,33 @@
 :PROPERTIES:
 :ID:       e05aa021-16df-45b9-bc40-ac94c7eddf57
 :END:
-#+title: FTP - retrieve files with Python
+#+title: Pentest - FTP 21
 #+filetags: :pentest:ftp:python:
 #+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+
+
+* Pentesting FTP - Port 21
+
+
+** Brute Force
+    src_sh{hydra -V -f -L <USERS_LIST> -P <PASSWORDS_LIST> ftp://<IP> -u -vV}
+
+** Download a file
+
+    #+begin_src sh
+    ftp <IP>
+    PASSIVE
+    BINARY
+    get <FILE>
+    #+end_src
+
+*** Download all files - Python
+
+** Upload a file
+
+    #+begin_src sh
+    ftp <IP>
+    PASSIVE
+    BINARY
+    put <FILE>
+    #+end_src

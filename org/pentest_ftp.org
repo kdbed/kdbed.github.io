@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e05aa021-16df-45b9-bc40-ac94c7eddf57
+:END:
+#+title: FTP - retrieve files with Python
+#+filetags: :pentest:ftp:python:
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
