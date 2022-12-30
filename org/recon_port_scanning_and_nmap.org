@@ -21,5 +21,12 @@ Flags:
 sudo nmap -sU -sS -sC -sV -oA <NAME>.udp <IP> -v
 #+end_src
 
+** Script categories
+src_sh{nmap --script vuln,safe,discovery -oN scan.txt target-ip}
+
+
+** List available nse scripts
+src_sh{ls -lh /usr/share/nmap/scripts/}
+
 * nmap Automator
   src_sh{nmapAutomator <IP> All}
