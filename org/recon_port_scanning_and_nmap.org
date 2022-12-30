@@ -28,5 +28,9 @@ src_sh{nmap --script vuln,safe,discovery -oN scan.txt target-ip}
 ** List available nse scripts
 src_sh{ls -lh /usr/share/nmap/scripts/}
 
+
+** nmap through socks4 proxy
+src_sh{nmap --proxies socks4://proxy-ip:1080 target-ip}
+
 * nmap Automator
   src_sh{nmapAutomator <IP> All}
