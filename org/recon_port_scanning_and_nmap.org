@@ -14,3 +14,12 @@ Flags:
     - =-oA <basename>: Output in the three major formats at once=
     - =-sV: Probe open ports to determine service/version info=
     - =-sC: default scripts=
+
+
+** UDP Scan
+#+begin_src sh
+sudo nmap -sU -sS -sC -sV -oA <NAME>.udp <IP> -v
+#+end_src
+
+* nmap Automator
+  src_sh{nmapAutomator <IP> All}
