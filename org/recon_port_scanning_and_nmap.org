@@ -32,5 +32,8 @@ src_sh{ls -lh /usr/share/nmap/scripts/}
 ** nmap through socks4 proxy
 src_sh{nmap --proxies socks4://proxy-ip:1080 target-ip}
 
+** ftp bounce scan
+src_sh{nmap -P0 -n -b username:password@target-ip target2-ip --proxies socks4://proxy-ip:1080 -vvvv}
+
 * nmap Automator
   src_sh{nmapAutomator <IP> All}
