@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       cb51a9d3-842b-4b10-ae56-2d18573b5f3e
+:END:
+#+title: Kali - Basics
