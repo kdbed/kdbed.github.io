@@ -3,7 +3,7 @@
 :END:
 #+title: Recon - AutoRecon
 #+filetags: :recon:pentest:
-
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
 
 
 * AutoRecon

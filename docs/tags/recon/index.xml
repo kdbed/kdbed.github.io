@@ -16,5 +16,14 @@
 SYN scan : A SYN scan sends a TCP SYN packet to a port and looks for a SYN/ACK packet in response. DNS scan : A DNS scan tests whether a DNS server is running on the target system.</description>
     </item>
     
+    <item>
+      <title>Recon - AutoRecon</title>
+      <link>https://kdbed.github.io/posts/recon_autorecon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/recon_autorecon/</guid>
+      <description>AutoRecon https://github.com/Tib3rius/AutoRecon</description>
+    </item>
+    
   </channel>
 </rss>

@@ -126,6 +126,10 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/jupyter/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/kali/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/kali_basics/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/kerberoasting/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/kerberoasting/</loc>
@@ -237,6 +241,8 @@
     <loc>https://kdbed.github.io/posts/quotes/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/recon/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/recon_autorecon/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/recon_port_scanning_and_nmap/</loc>
   </url><url>

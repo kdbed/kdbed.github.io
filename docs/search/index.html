@@ -648,6 +648,26 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/tags\/kali\/": {
+        
+        "title": "kali",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/kali\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/kali_basics\/": {
+        
+        "title": "Kali Linux - Basics",
+        "tags": ["linux","kali",],
+        "content": "Filesystem \u0026ndash; /bin : basic programs like ls, cd, cat \u0026ndash; /sbin : system programs like fdisk, makefs, sysctl \u0026ndash; /etc : configuration files \u0026ndash; /tmp : temporary files, typically deleted on boot \u0026ndash; /usr/bin : applications like apt, ncat, nmap \u0026ndash; /usr/share : application support and data files\nBasic Linux commands man pages Name, synopsis, description, along with options, switches, etc\nSearch by Keyword man -k '^passwd$' \u0026ndash; search by regex\nSearch using apropos search descriptions, equivalent to man -k\nFinding files which searches through directories in the $PATH environment variable for a given file name; returns the full path to the file if a match is found\nlocate quickest way; uses locate.db, database updated regularly by cron scheduler; update manually with sudo updatedb\nfind most complex and flexible; eg recursive search starting from root of filesystem, searching for any files that start with sbd: sudo find / -name sbd*; find can search by many attributes\nKali services In order to maintain a low profile, Kali prevents network services from starting by default \u0026ndash; they need to be specifically enabled\nssh sudo systemctl start ssh Verify: sudo ss -antlp | grep sshd\nTo start automatically at boot: sudo sytemctl enable ssh\nhttp http service (apache) \u0026ndash; hosting a site or a platform for downloading files to victim machine sudo systemctl start apache2\nList of all available services systemctl list-unit-files\nTools apt is the package manager for this debian-based system\napt uses \u0026ndash; apt update ; apt upgrade \u0026ndash; apt-cache search apt-cache search pure-ftpd \u0026ndash; apt show \u0026ndash; apt install\ndpkg does not require an internet connection; will not install dependencies\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/kali_basics\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/kerberoasting\/": {
         
         "title": "kerberoasting",
@@ -1204,6 +1224,16 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/tags\/recon\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/recon_autorecon\/": {
+        
+        "title": "Recon - AutoRecon",
+        "tags": ["recon","pentest",],
+        "content": "AutoRecon https://github.com/Tib3rius/AutoRecon\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/recon_autorecon\/"
     },
     
     
