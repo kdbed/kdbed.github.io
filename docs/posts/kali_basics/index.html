@@ -28,7 +28,8 @@
       <div class="content">
         <h1>Kali Linux - Basics</h1>
         <h2 id="filesystem">Filesystem</h2>
-<p>&ndash; /bin : basic programs like <code>ls</code>, <code>cd</code>, <code>cat</code>
+<p>FHS - Filesystem Hierarchy Standard - conventions used for layout of a UNIX system <a href="https://wiki.linuxfoundation.org/lsb/fhs">LinuxFoundation</a>
+&ndash; /bin : basic programs like <code>ls</code>, <code>cd</code>, <code>cat</code>
 &ndash; /sbin : system programs like <code>fdisk</code>, <code>makefs</code>, <code>sysctl</code>
 &ndash; /etc : configuration files
 &ndash; /tmp : temporary files, typically deleted on boot
@@ -36,7 +37,51 @@
 &ndash; /usr/share : application support and data files</p>
 <h2 id="basic-linux-commands">Basic Linux commands</h2>
 <h3 id="man-pages">man pages</h3>
-<p>Name, synopsis, description, along with options, switches, etc</p>
+<p>Manual content divided into sections:</p>
+<table>
+<thead>
+<tr>
+<th>Section</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>User Commands</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Programming interfaces for kernel system calls</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Programming interfaces to the C library</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Special files such as device nodes and drivers</td>
+</tr>
+<tr>
+<td>5</td>
+<td>File formats</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Games and amusements</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Miscellaneous</td>
+</tr>
+<tr>
+<td>8</td>
+<td>System administration commands</td>
+</tr>
+</tbody>
+</table>
+<p>Name, synopsis, description, along with options, parameters, switches, etc</p>
+<p><code>man cat</code></p>
 <figure><img src="/images/man.png"/>
 </figure>
 
@@ -54,6 +99,10 @@
 <p>quickest way; uses locate.db, database updated regularly by cron scheduler; update manually with <code>sudo updatedb</code></p>
 <h3 id="find">find</h3>
 <p>most complex and flexible; eg recursive search starting from root of filesystem, searching for any files that start with sbd: <code>sudo find / -name sbd*</code>; find can search by many attributes</p>
+<p>Ex: find files modified in last day and not owned by root; execute <code>ls -l</code> on them:
+<code>find / -mtime -1 -type f ! -user root -exec ls -l {} \;</code></p>
+<p>Ex: find files of a certain size and base64 decode contents
+<code>find / -size 64c -exec base64 -d {} \; 2&gt;/dev/null</code></p>
 <h2 id="kali-services">Kali services</h2>
 <p>In order to maintain a low profile, Kali prevents network services from starting by default &ndash; they need to be specifically enabled</p>
 <h3 id="ssh">ssh</h3>

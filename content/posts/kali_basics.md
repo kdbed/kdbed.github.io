@@ -7,6 +7,7 @@ draft = false
 
 ## Filesystem {#filesystem}
 
+FHS - Filesystem Hierarchy Standard - conventions used for layout of a UNIX system [LinuxFoundation](https://wiki.linuxfoundation.org/lsb/fhs)
 -- /bin : basic programs like `ls`, `cd`, `cat`
 -- /sbin : system programs like `fdisk`, `makefs`, `sysctl`
 -- /etc : configuration files
@@ -20,7 +21,22 @@ draft = false
 
 ### man pages {#man-pages}
 
-Name, synopsis, description, along with options, switches, etc
+Manual content divided into sections:
+
+| Section | Contents                                       |
+|---------|------------------------------------------------|
+| 1       | User Commands                                  |
+| 2       | Programming interfaces for kernel system calls |
+| 3       | Programming interfaces to the C library        |
+| 4       | Special files such as device nodes and drivers |
+| 5       | File formats                                   |
+| 6       | Games and amusements                           |
+| 7       | Miscellaneous                                  |
+| 8       | System administration commands                 |
+
+Name, synopsis, description, along with options, parameters, switches, etc
+
+`man cat`
 
 {{< figure src="/images/man.png" >}}
 
@@ -53,6 +69,12 @@ quickest way; uses locate.db, database updated regularly by cron scheduler; upda
 ### find {#find}
 
 most complex and flexible; eg recursive search starting from root of filesystem, searching for any files that start with sbd: `sudo find / -name sbd*`; find can search by many attributes
+
+Ex: find files modified in last day and not owned by root; execute `ls -l` on them:
+`find / -mtime -1 -type f ! -user root -exec ls -l {} \;`
+
+Ex: find files of a certain size and base64 decode contents
+`find / -size 64c -exec base64 -d {} \; 2>/dev/null`
 
 
 ## Kali services {#kali-services}
