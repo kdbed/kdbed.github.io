@@ -8,12 +8,13 @@ draft = false
 ## Filesystem {#filesystem}
 
 FHS - Filesystem Hierarchy Standard - conventions used for layout of a UNIX system [LinuxFoundation](https://wiki.linuxfoundation.org/lsb/fhs)
--- /bin : basic programs like `ls`, `cd`, `cat`
--- /sbin : system programs like `fdisk`, `makefs`, `sysctl`
--- /etc : configuration files
--- /tmp : temporary files, typically deleted on boot
--- /usr/bin : applications like `apt`, `ncat`, `nmap`
--- /usr/share : application support and data files
+
+-   /bin : basic programs like `ls`, `cd`, `cat`
+-   /sbin : system programs like `fdisk`, `makefs`, `sysctl`
+-   /etc : configuration files
+-   /tmp : temporary files, typically deleted on boot
+-   /usr/bin : applications like `apt`, `ncat`, `nmap`
+-   /usr/share : application support and data files
 
 
 ## Basic Linux commands {#basic-linux-commands}
@@ -71,9 +72,11 @@ quickest way; uses locate.db, database updated regularly by cron scheduler; upda
 most complex and flexible; eg recursive search starting from root of filesystem, searching for any files that start with sbd: `sudo find / -name sbd*`; find can search by many attributes
 
 Ex: find files modified in last day and not owned by root; execute `ls -l` on them:
+
 `find / -mtime -1 -type f ! -user root -exec ls -l {} \;`
 
 Ex: find files of a certain size and base64 decode contents
+
 `find / -size 64c -exec base64 -d {} \; 2>/dev/null`
 
 
@@ -85,7 +88,9 @@ In order to maintain a low profile, Kali prevents network services from starting
 ### ssh {#ssh}
 
 `sudo systemctl start ssh`
+
 Verify:
+
 `sudo ss -antlp | grep sshd`
 
 ![](/images/sshd.png)
@@ -95,6 +100,7 @@ To start automatically at boot: `sudo sytemctl enable ssh`
 ### http {#http}
 
 http service (apache) -- hosting a site or a platform for downloading files to victim machine
+
 `sudo systemctl start apache2`
 
 
