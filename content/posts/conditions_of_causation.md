@@ -1,11 +1,11 @@
-:PROPERTIES:
-:ID:       811284ca-b465-4bc4-9958-220a2a4d0f2f
-:END:
-#+title: Conditions of Causation
++++
+title = "Conditions of Causation"
+author = ["kdb"]
+draft = false
++++
 
+## Conditions of Causality {#conditions-of-causality}
 
-
-* Conditions of Causality
 There are four conditions of causality: logical time ordering, correlation, mechanism, and nonspuriousness. Logical time ordering refers to the idea that one variable needs to precede another variable in time for the first variable to influence the second variable. For example, throughout the world, people are protesting their governments. In some countries, governments respond with the metaphorical yawn. However, in other countries, the governments may respond with repressive tactics. The question is do the protest precede the government response? On its face, the answer is yes because why would the government respond to silence?
 
 The second condition of causality is correlation. As we explored above, correlation is a connection between two variables. Correlation is a prerequisite to establishing a causal relationship because if two variables do not move together, then it is difficult to suggest that one influences the other. Maintaining our example of public protest and government response, we often see that when people protest, the government pays attention. This is due to mainstream media coverage and social media activity of the protest. Since governments typically have responsibility for maintaining peace and security, anytime there are activities that may disrupt peace, the government will likely pay attention to what the media is covering and decide whether to respond.
@@ -16,4 +16,4 @@ The final condition of causality is non-spuriousness. Non-spuriousness means tha
 
 As you can see, from a running example of public protest and government action, establishing a causal relationship between two variables is difficult. The difficulty doesn't mean we don't work through these four conditions, both using reason and evidence, rather it represents a rigorous way to determine a causal relationship.
 
-from [[https://socialsci.libretexts.org/Bookshelves/Political_Science_and_Civics/Book%3A_Introduction_to_Political_Science_Research_Methods_(Franco_et_al.)/04%3A_Theories_Hypotheses_Variables_and_Units/4.01%3A_Correlation_and_Causation][libretexts]]
+from [libretexts](https://socialsci.libretexts.org/Bookshelves/Political_Science_and_Civics/Book%3A_Introduction_to_Political_Science_Research_Methods_(Franco_et_al.)/04%3A_Theories_Hypotheses_Variables_and_Units/4.01%3A_Correlation_and_Causation)

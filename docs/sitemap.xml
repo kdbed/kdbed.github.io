@@ -50,6 +50,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/computer_science/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/conditions_of_causation/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/constitution/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/cpp/</loc>
@@ -58,6 +60,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/cracking_pdf/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/crackmapexec/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/cryptography/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/dns/</loc>
@@ -65,6 +69,8 @@
     <loc>https://kdbed.github.io/posts/dnszonetransfers/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/dopamine/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/education/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/eikonal_approximation/</loc>
   </url><url>
@@ -186,6 +192,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/pentest/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_smb_p_139_445/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/pentest_ssh/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/philosophy/</loc>
@@ -258,6 +266,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/scattering/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/school_spending_and_educational_outcomes/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/secplus/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/securityplus/</loc>
@@ -268,9 +278,15 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/siem/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/smb/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/smbmap/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/smt/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/smtps/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/socialtheory/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/splunk/</loc>
   </url><url>

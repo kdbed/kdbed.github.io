@@ -5,19 +5,50 @@ tags = ["linux", "kali"]
 draft = false
 +++
 
+:ID:       cb51a9d3-842b-4b10-ae56-2d18573b5f3e
+
+:END:
+
+
 ## Filesystem {#filesystem}
 
 FHS - Filesystem Hierarchy Standard - conventions used for layout of a UNIX system [LinuxFoundation](https://wiki.linuxfoundation.org/lsb/fhs)
 
 -   /bin : basic programs like `ls`, `cd`, `cat`
 -   /sbin : system programs like `fdisk`, `makefs`, `sysctl`
--   /etc : configuration files
+-   /etc : configuration files bk
 -   /tmp : temporary files, typically deleted on boot
 -   /usr/bin : applications like `apt`, `ncat`, `nmap`
 -   /usr/share : application support and data files
 
 
 ## Basic Linux commands {#basic-linux-commands}
+
+
+## Finding files {#finding-files}
+
+
+### `which` {#which}
+
+searches through directories in the `$PATH` environment variable for a given file name; returns the full path to the file if a match is found
+
+
+### locate {#locate}
+
+quickest way; uses locate.db, database updated regularly by cron scheduler; update manually with `sudo updatedb`
+
+
+### find {#find}
+
+most complex and flexible; eg recursive search starting from root of filesystem, searching for any files that start with sbd: `sudo find / -name sbd*`; find can search by many attributes
+
+Ex: find files modified in last day and not owned by root; execute `ls -l` on them:
+
+`find / -mtime -1 -type f ! -user root -exec ls -l {} \;`
+
+Ex: find files of a certain size and base64 decode contents
+
+`find / -size 64c -exec base64 -d {} \; 2>/dev/null`
 
 
 ### man pages {#man-pages}
@@ -52,32 +83,6 @@ Name, synopsis, description, along with options, parameters, switches, etc
 #### Search using `apropos` {#search-using-apropos}
 
 search descriptions, equivalent to `man -k`
-
-
-## Finding files {#finding-files}
-
-
-### `which` {#which}
-
-searches through directories in the `$PATH` environment variable for a given file name; returns the full path to the file if a match is found
-
-
-### locate {#locate}
-
-quickest way; uses locate.db, database updated regularly by cron scheduler; update manually with `sudo updatedb`
-
-
-### find {#find}
-
-most complex and flexible; eg recursive search starting from root of filesystem, searching for any files that start with sbd: `sudo find / -name sbd*`; find can search by many attributes
-
-Ex: find files modified in last day and not owned by root; execute `ls -l` on them:
-
-`find / -mtime -1 -type f ! -user root -exec ls -l {} \;`
-
-Ex: find files of a certain size and base64 decode contents
-
-`find / -size 64c -exec base64 -d {} \; 2>/dev/null`
 
 
 ## Kali services {#kali-services}

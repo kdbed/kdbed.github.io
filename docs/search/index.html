@@ -268,6 +268,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/conditions_of_causation\/": {
+        
+        "title": "Conditions of Causation",
+        "tags": [],
+        "content": "Conditions of Causality There are four conditions of causality: logical time ordering, correlation, mechanism, and nonspuriousness. Logical time ordering refers to the idea that one variable needs to precede another variable in time for the first variable to influence the second variable. For example, throughout the world, people are protesting their governments. In some countries, governments respond with the metaphorical yawn. However, in other countries, the governments may respond with repressive tactics. The question is do the protest precede the government response? On its face, the answer is yes because why would the government respond to silence?\nThe second condition of causality is correlation. As we explored above, correlation is a connection between two variables. Correlation is a prerequisite to establishing a causal relationship because if two variables do not move together, then it is difficult to suggest that one influences the other. Maintaining our example of public protest and government response, we often see that when people protest, the government pays attention. This is due to mainstream media coverage and social media activity of the protest. Since governments typically have responsibility for maintaining peace and security, anytime there are activities that may disrupt peace, the government will likely pay attention to what the media is covering and decide whether to respond.\nOur third condition of causality is mechanism. A causal mechanism is an explanation for how one variable influences the other. Explanations can vary from relatively straightforward to exhaustively complex. There is utility in employing both types of explanations to describe the influence of one variable on the next variable. The reason is it may be straightforward to some while the government responds to protesters. However, underlying this interaction, there may be other actors, decisions, and actions that may shape engagement between the government and protesters. For example, the Arab Spring starting in 2010 provides a contemporary example where people throughout countries in the Middle East publicly protested for changes in their political leadership and government systems. How did these protesters come together? Some researchers point to social media, like Facebook and Twitter, which helped people collectively organize their protesting efforts. Thus, we have a mechanism that shows how protest formed, and how that initiated reaction from governments.\nThe final condition of causality is non-spuriousness. Non-spuriousness means that another variable is not having an influence. With our example of protest and government response, we must be careful to consider that other factors may influence this relationship. What else could influence a government\u0026rsquo;s response to a protest within its country? A government may be hesitant to respond with lethal force if it knows it\u0026rsquo;s being observed by an international media. An international media outlet serves as a third-party observer to the activities within a country. As the media records through video and first-hand accounts, they can begin to share that information with the rest of the world. A government that uses lethal weapons on people who are peacefully protesting could result in an outcry from the international community. Thus, are protests the only thing that is influencing the government\u0026rsquo;s response? Or is there a spurious factor, such as the international media outlet, that having the government question how it should respond?\nAs you can see, from a running example of public protest and government action, establishing a causal relationship between two variables is difficult. The difficulty doesn\u0026rsquo;t mean we don\u0026rsquo;t work through these four conditions, both using reason and evidence, rather it represents a rigorous way to determine a causal relationship.\nfrom libretexts\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/conditions_of_causation\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/constitution\/": {
         
         "title": "constitution",
@@ -308,6 +318,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/tags\/crackmapexec\/": {
+        
+        "title": "crackmapexec",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/crackmapexec\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/cryptography\/": {
         
         "title": "cryptography",
@@ -344,6 +364,16 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/dopamine\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/education\/": {
+        
+        "title": "education",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/education\/"
     },
     
     
@@ -662,7 +692,7 @@ window.store = {
         
         "title": "Kali Linux - Basics",
         "tags": ["linux","kali",],
-        "content": "Filesystem FHS - Filesystem Hierarchy Standard - conventions used for layout of a UNIX system LinuxFoundation\n/bin : basic programs like ls, cd, cat /sbin : system programs like fdisk, makefs, sysctl /etc : configuration files /tmp : temporary files, typically deleted on boot /usr/bin : applications like apt, ncat, nmap /usr/share : application support and data files Basic Linux commands man pages Manual content divided into sections:\nSection Contents 1 User Commands 2 Programming interfaces for kernel system calls 3 Programming interfaces to the C library 4 Special files such as device nodes and drivers 5 File formats 6 Games and amusements 7 Miscellaneous 8 System administration commands Name, synopsis, description, along with options, parameters, switches, etc\nman cat\nSearch by Keyword man -k '^passwd$' \u0026ndash; search by regex\nSearch using apropos search descriptions, equivalent to man -k\nFinding files which searches through directories in the $PATH environment variable for a given file name; returns the full path to the file if a match is found\nlocate quickest way; uses locate.db, database updated regularly by cron scheduler; update manually with sudo updatedb\nfind most complex and flexible; eg recursive search starting from root of filesystem, searching for any files that start with sbd: sudo find / -name sbd*; find can search by many attributes\nEx: find files modified in last day and not owned by root; execute ls -l on them:\nfind / -mtime -1 -type f ! -user root -exec ls -l {} \\;\nEx: find files of a certain size and base64 decode contents\nfind / -size 64c -exec base64 -d {} \\; 2\u0026gt;/dev/null\nKali services In order to maintain a low profile, Kali prevents network services from starting by default \u0026ndash; they need to be specifically enabled\nssh sudo systemctl start ssh\nVerify:\nsudo ss -antlp | grep sshd\nTo start automatically at boot: sudo sytemctl enable ssh\nhttp http service (apache) \u0026ndash; hosting a site or a platform for downloading files to victim machine\nsudo systemctl start apache2\nList of all available services systemctl list-unit-files\nTools apt is the package manager for this debian-based system\napt uses \u0026ndash; apt update ; apt upgrade \u0026ndash; apt-cache search apt-cache search pure-ftpd \u0026ndash; apt show \u0026ndash; apt install\ndpkg does not require an internet connection; will not install dependencies\n", 
+        "content": ":ID: cb51a9d3-842b-4b10-ae56-2d18573b5f3e\n:END:\nFilesystem FHS - Filesystem Hierarchy Standard - conventions used for layout of a UNIX system LinuxFoundation\n/bin : basic programs like ls, cd, cat /sbin : system programs like fdisk, makefs, sysctl /etc : configuration files bk /tmp : temporary files, typically deleted on boot /usr/bin : applications like apt, ncat, nmap /usr/share : application support and data files Basic Linux commands Finding files which searches through directories in the $PATH environment variable for a given file name; returns the full path to the file if a match is found\nlocate quickest way; uses locate.db, database updated regularly by cron scheduler; update manually with sudo updatedb\nfind most complex and flexible; eg recursive search starting from root of filesystem, searching for any files that start with sbd: sudo find / -name sbd*; find can search by many attributes\nEx: find files modified in last day and not owned by root; execute ls -l on them:\nfind / -mtime -1 -type f ! -user root -exec ls -l {} \\;\nEx: find files of a certain size and base64 decode contents\nfind / -size 64c -exec base64 -d {} \\; 2\u0026gt;/dev/null\nman pages Manual content divided into sections:\nSection Contents 1 User Commands 2 Programming interfaces for kernel system calls 3 Programming interfaces to the C library 4 Special files such as device nodes and drivers 5 File formats 6 Games and amusements 7 Miscellaneous 8 System administration commands Name, synopsis, description, along with options, parameters, switches, etc\nman cat\nSearch by Keyword man -k '^passwd$' \u0026ndash; search by regex\nSearch using apropos search descriptions, equivalent to man -k\nKali services In order to maintain a low profile, Kali prevents network services from starting by default \u0026ndash; they need to be specifically enabled\nssh sudo systemctl start ssh\nVerify:\nsudo ss -antlp | grep sshd\nTo start automatically at boot: sudo sytemctl enable ssh\nhttp http service (apache) \u0026ndash; hosting a site or a platform for downloading files to victim machine\nsudo systemctl start apache2\nList of all available services systemctl list-unit-files\nTools apt is the package manager for this debian-based system\napt uses \u0026ndash; apt update ; apt upgrade \u0026ndash; apt-cache search apt-cache search pure-ftpd \u0026ndash; apt show \u0026ndash; apt install\ndpkg does not require an internet connection; will not install dependencies\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/kali_basics\/"
     },
     
@@ -948,9 +978,19 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/pentest_smb_p_139_445\/": {
+        
+        "title": "Pentest - SMB p 139,445",
+        "tags": ["crackmapexec","smbmap","smb","pentest",],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_smb_p_139_445\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/pentest_ssh\/": {
         
-        "title": "Pentest - SSH",
+        "title": "Pentest - SSH p 22",
         "tags": ["network","ssh","pentest",],
         "content": "Pentesting SSH ssh-audit Install\nsudo apt install ssh-audit ", 
         "url": "https:\/\/kdbed.github.io\/posts\/pentest_ssh\/"
@@ -1308,6 +1348,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/school_spending_and_educational_outcomes\/": {
+        
+        "title": "School Spending and Educational Outcomes",
+        "tags": ["education","socialTheory",],
+        "content": "Education spending and student learning outcomes DAVID EVANS|JANUARY 17, 2019 World Bank Blog Prior findings World Bank\u0026rsquo;s World Development Report 2004 showed little correlation between spending and access to school World Development Report 2018 shows a similarly weak correlation between spending and learning outcomes Vegas and Coffin, using a different econometric specification, do find a correlation between spending and learning outcomes up to US$8,000 per student annually. Does money matter? Yes. [section copied from source]\nHistorically, most primary and secondary education was financed by local property taxes, so richer areas had better funded schools. But between 1971 and 2010, more than two dozen states had to reduce inequality in spending due to judicial decisions. This led to changes in school spending that were not related to other variables like local commitment to education that normally make it hard to parse out the link between financing and education. Using the variation in spending coming from the first wave of reforms, \u0026ldquo;a 10% increase in per pupil spending each year for all 12 years of public school leads to 0.31 more completed years of education, about 7% higher wages, and a 3.2 percentage-point reduction in the annual incidence of adult poverty. They also find that the effects are more pronounced for children from low-income families\u0026rdquo;.\nA study of more recent school finance reforms finds that \u0026ldquo;a one-time $1,000 increase in per-pupil annual spending sustained for 10 years increased test scores by between 0.12 and 0.24 standard deviations\u0026rdquo;. Another study finds that in states with strong teacher unions, school districts tended to match increases in state funding, which \u0026ldquo;led to larger increases in student achievement\u0026rdquo;. Other work looks at the impact of these financing reforms on high school graduation rates: \u0026ldquo;Seven years after reform, the highest poverty quartile in a treated state experienced an 11.5 percent to 12.1 percent increase in per-pupil spending, and a 6.8 to 11.5 percentage point increase in graduation rates\u0026rdquo;.\nBeyond school finance reforms, the Great Recession (2007 to 2009 in the United States) provides an additional natural experiment. State tax revenues fell much more suddenly than local or national revenues, so states that relied more on state revenues had a disproportionate drop in financing. Researchers found that \u0026ldquo;a 10 percent school spending cut reduced test scores by about 7.8 percent of a standard deviation\u0026rdquo;. Another study finds comparable results: \u0026ldquo;a 10 percent increase in spending improves\u0026hellip;student test scores by 0.05 to 0.09 standard deviations.\u0026rdquo;\nIn sum, out of 13 multi-state studies, Jackson finds that 12 show a positive, statistically significant relationship between education spending and student outcomes. And remember: these aren\u0026rsquo;t just correlations. These are all studies that have tried to tease out the actual impact of spending on learning or attainment.\nSee Jackson\u0026rsquo;s review for discussion around dependency on how money is spent.\nThe Relationship Between School Funding and Student Outcomes aei : Adam Tyner , 8 Oct 2019 Visible Learning \u0026ndash; Hattie Visible Learning\nFurther References C Kirabo Jackson American Economic Journal Finance reforms Learning Policy Institute \u0026ndash; report Countries outperforming Us beatty\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/school_spending_and_educational_outcomes\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/secplus\/": {
         
         "title": "secPlus",
@@ -1358,6 +1408,26 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/tags\/smb\/": {
+        
+        "title": "smb",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/smb\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/smbmap\/": {
+        
+        "title": "smbmap",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/smbmap\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/smt\/": {
         
         "title": "SMT",
@@ -1374,6 +1444,16 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/smtps\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/socialtheory\/": {
+        
+        "title": "socialTheory",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/socialtheory\/"
     },
     
     

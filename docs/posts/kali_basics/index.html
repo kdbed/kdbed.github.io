@@ -27,17 +27,30 @@
     <div class="page" data-level="1">
       <div class="content">
         <h1>Kali Linux - Basics</h1>
-        <h2 id="filesystem">Filesystem</h2>
+        <p>:ID:       cb51a9d3-842b-4b10-ae56-2d18573b5f3e</p>
+<p>:END:</p>
+<h2 id="filesystem">Filesystem</h2>
 <p>FHS - Filesystem Hierarchy Standard - conventions used for layout of a UNIX system <a href="https://wiki.linuxfoundation.org/lsb/fhs">LinuxFoundation</a></p>
 <ul>
 <li>/bin : basic programs like <code>ls</code>, <code>cd</code>, <code>cat</code></li>
 <li>/sbin : system programs like <code>fdisk</code>, <code>makefs</code>, <code>sysctl</code></li>
-<li>/etc : configuration files</li>
+<li>/etc : configuration files bk</li>
 <li>/tmp : temporary files, typically deleted on boot</li>
 <li>/usr/bin : applications like <code>apt</code>, <code>ncat</code>, <code>nmap</code></li>
 <li>/usr/share : application support and data files</li>
 </ul>
 <h2 id="basic-linux-commands">Basic Linux commands</h2>
+<h2 id="finding-files">Finding files</h2>
+<h3 id="which"><code>which</code></h3>
+<p>searches through directories in the <code>$PATH</code> environment variable for a given file name; returns the full path to the file if a match is found</p>
+<h3 id="locate">locate</h3>
+<p>quickest way; uses locate.db, database updated regularly by cron scheduler; update manually with <code>sudo updatedb</code></p>
+<h3 id="find">find</h3>
+<p>most complex and flexible; eg recursive search starting from root of filesystem, searching for any files that start with sbd: <code>sudo find / -name sbd*</code>; find can search by many attributes</p>
+<p>Ex: find files modified in last day and not owned by root; execute <code>ls -l</code> on them:</p>
+<p><code>find / -mtime -1 -type f ! -user root -exec ls -l {} \;</code></p>
+<p>Ex: find files of a certain size and base64 decode contents</p>
+<p><code>find / -size 64c -exec base64 -d {} \; 2&gt;/dev/null</code></p>
 <h3 id="man-pages">man pages</h3>
 <p>Manual content divided into sections:</p>
 <table>
@@ -94,17 +107,6 @@
 
 <h4 id="search-using-apropos">Search using <code>apropos</code></h4>
 <p>search descriptions, equivalent to <code>man -k</code></p>
-<h2 id="finding-files">Finding files</h2>
-<h3 id="which"><code>which</code></h3>
-<p>searches through directories in the <code>$PATH</code> environment variable for a given file name; returns the full path to the file if a match is found</p>
-<h3 id="locate">locate</h3>
-<p>quickest way; uses locate.db, database updated regularly by cron scheduler; update manually with <code>sudo updatedb</code></p>
-<h3 id="find">find</h3>
-<p>most complex and flexible; eg recursive search starting from root of filesystem, searching for any files that start with sbd: <code>sudo find / -name sbd*</code>; find can search by many attributes</p>
-<p>Ex: find files modified in last day and not owned by root; execute <code>ls -l</code> on them:</p>
-<p><code>find / -mtime -1 -type f ! -user root -exec ls -l {} \;</code></p>
-<p>Ex: find files of a certain size and base64 decode contents</p>
-<p><code>find / -size 64c -exec base64 -d {} \; 2&gt;/dev/null</code></p>
 <h2 id="kali-services">Kali services</h2>
 <p>In order to maintain a low profile, Kali prevents network services from starting by default &ndash; they need to be specifically enabled</p>
 <h3 id="ssh">ssh</h3>
@@ -132,6 +134,22 @@ To start automatically at boot: <code>sudo sytemctl enable ssh</code></p>
       </div>
       
 
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
 
    
 

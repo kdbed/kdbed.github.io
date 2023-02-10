@@ -130,6 +130,15 @@ Code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 #include &amp;l
     </item>
     
     <item>
+      <title>Conditions of Causation</title>
+      <link>https://kdbed.github.io/posts/conditions_of_causation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/conditions_of_causation/</guid>
+      <description>Conditions of Causality There are four conditions of causality: logical time ordering, correlation, mechanism, and nonspuriousness. Logical time ordering refers to the idea that one variable needs to precede another variable in time for the first variable to influence the second variable. For example, throughout the world, people are protesting their governments. In some countries, governments respond with the metaphorical yawn. However, in other countries, the governments may respond with repressive tactics.</description>
+    </item>
+    
+    <item>
       <title>Cracking - PDF</title>
       <link>https://kdbed.github.io/posts/cracking_pdf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -286,9 +295,10 @@ Checksec Same source code, compiled with different protections in place:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/kali_basics/</guid>
-      <description>Filesystem FHS - Filesystem Hierarchy Standard - conventions used for layout of a UNIX system LinuxFoundation
-/bin : basic programs like ls, cd, cat /sbin : system programs like fdisk, makefs, sysctl /etc : configuration files /tmp : temporary files, typically deleted on boot /usr/bin : applications like apt, ncat, nmap /usr/share : application support and data files Basic Linux commands man pages Manual content divided into sections:
-Section Contents 1 User Commands 2 Programming interfaces for kernel system calls 3 Programming interfaces to the C library 4 Special files such as device nodes and drivers 5 File formats 6 Games and amusements 7 Miscellaneous 8 System administration commands Name, synopsis, description, along with options, parameters, switches, etc</description>
+      <description>:ID: cb51a9d3-842b-4b10-ae56-2d18573b5f3e
+:END:
+Filesystem FHS - Filesystem Hierarchy Standard - conventions used for layout of a UNIX system LinuxFoundation
+/bin : basic programs like ls, cd, cat /sbin : system programs like fdisk, makefs, sysctl /etc : configuration files bk /tmp : temporary files, typically deleted on boot /usr/bin : applications like apt, ncat, nmap /usr/share : application support and data files Basic Linux commands Finding files which searches through directories in the $PATH environment variable for a given file name; returns the full path to the file if a match is found</description>
     </item>
     
     <item>
@@ -414,7 +424,16 @@ print(&amp;#39;ello, world!&amp;#39;) Create a plot import matplotlib.pyplot as 
     </item>
     
     <item>
-      <title>Pentest - SSH</title>
+      <title>Pentest - SMB p 139,445</title>
+      <link>https://kdbed.github.io/posts/pentest_smb_p_139_445/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentest_smb_p_139_445/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pentest - SSH p 22</title>
       <link>https://kdbed.github.io/posts/pentest_ssh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -622,6 +641,15 @@ Quote 2 &amp;ldquo;Meet these two here,&amp;rdquo; the man said. &amp;ldquo;Ask 
       
       <guid>https://kdbed.github.io/posts/s_mime/</guid>
       <description>S/MIME ComptTIA Security+ </description>
+    </item>
+    
+    <item>
+      <title>School Spending and Educational Outcomes</title>
+      <link>https://kdbed.github.io/posts/school_spending_and_educational_outcomes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/school_spending_and_educational_outcomes/</guid>
+      <description>Education spending and student learning outcomes DAVID EVANS|JANUARY 17, 2019 World Bank Blog Prior findings World Bank&amp;rsquo;s World Development Report 2004 showed little correlation between spending and access to school World Development Report 2018 shows a similarly weak correlation between spending and learning outcomes Vegas and Coffin, using a different econometric specification, do find a correlation between spending and learning outcomes up to US$8,000 per student annually. Does money matter? Yes.</description>
     </item>
     
     <item>

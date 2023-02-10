@@ -12,9 +12,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/kali_basics/</guid>
-      <description>Filesystem FHS - Filesystem Hierarchy Standard - conventions used for layout of a UNIX system LinuxFoundation
-/bin : basic programs like ls, cd, cat /sbin : system programs like fdisk, makefs, sysctl /etc : configuration files /tmp : temporary files, typically deleted on boot /usr/bin : applications like apt, ncat, nmap /usr/share : application support and data files Basic Linux commands man pages Manual content divided into sections:
-Section Contents 1 User Commands 2 Programming interfaces for kernel system calls 3 Programming interfaces to the C library 4 Special files such as device nodes and drivers 5 File formats 6 Games and amusements 7 Miscellaneous 8 System administration commands Name, synopsis, description, along with options, parameters, switches, etc</description>
+      <description>:ID: cb51a9d3-842b-4b10-ae56-2d18573b5f3e
+:END:
+Filesystem FHS - Filesystem Hierarchy Standard - conventions used for layout of a UNIX system LinuxFoundation
+/bin : basic programs like ls, cd, cat /sbin : system programs like fdisk, makefs, sysctl /etc : configuration files bk /tmp : temporary files, typically deleted on boot /usr/bin : applications like apt, ncat, nmap /usr/share : application support and data files Basic Linux commands Finding files which searches through directories in the $PATH environment variable for a given file name; returns the full path to the file if a match is found</description>
     </item>
     
     <item>
