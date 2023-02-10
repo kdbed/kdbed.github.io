@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       c761907f-f7ef-4aa7-adcf-e3d178feec86
+:END:
+#+title: SMB - Server Message Block
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak

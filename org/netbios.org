@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       2e735517-eea9-4a23-a83a-c99740b91756
+:END:
+#+title: NetBIOS
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak

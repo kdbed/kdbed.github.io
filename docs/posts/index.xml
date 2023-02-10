@@ -369,6 +369,15 @@ Execution: Run from memory and send back to attacker:
     </item>
     
     <item>
+      <title>NetBIOS</title>
+      <link>https://kdbed.github.io/posts/netbios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/netbios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Nietzsche</title>
       <link>https://kdbed.github.io/posts/nietzsche/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -429,7 +438,10 @@ print(&amp;#39;ello, world!&amp;#39;) Create a plot import matplotlib.pyplot as 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/pentest_smb_p_139_445/</guid>
-      <description></description>
+      <description>HackTricks
+Port 139 NetBIOS NetBIOS is Network Basic Input Output System, which is a software protocol that allows applications, PCs, and Desktops on a local area network (LAN) to communicate with network hardware and to transmit data across the network.
+Port 445 SMB - Server Message Block While Port 139 is known technically as ‘NBT over IP’, Port 445 is ‘SMB over IP’. SMB stands for ‘Server Message Blocks’.
+SMB Server Message Block (SMB) is a client-server protocol that regulates access to files and entire directories and other network resources such as printers, routers, or interfaces released for the network.</description>
     </item>
     
     <item>
@@ -668,6 +680,15 @@ Quote 2 &amp;ldquo;Meet these two here,&amp;rdquo; the man said. &amp;ldquo;Ask 
       
       <guid>https://kdbed.github.io/posts/sha1cracker/</guid>
       <description>Implementing a sha1 hash cracker in Rust use sha1::Digest; use std::{ env, error::Error, fs::File, io::{BufRead, BufReader}, }; const SHA1_HEX_STRING_LENGTH: usize = 40; fn main() -&amp;gt; Result&amp;lt;(), Box&amp;lt;dyn Error&amp;gt;&amp;gt; { let args: Vec&amp;lt;String&amp;gt; = env::args().collect(); if args.len() != 3 { println!(&amp;#34;Usage:&amp;#34;); println!(&amp;#34;sha1_cracker: &amp;lt;wordlist.txt&amp;gt; &amp;lt;sha1_hash&amp;gt;&amp;#34;); return Ok(()); } let hash_to_crack = args[2].trim(); if hash_to_crack.len() != SHA1_HEX_STRING_LENGTH { return Err(&amp;#34;sha1 hash is not valid.&amp;#34;.into()); } let wordlist_file = File::open(&amp;amp;args[1])?; let reader = BufReader::new(&amp;amp;wordlist_file); for line in reader.</description>
+    </item>
+    
+    <item>
+      <title>SMB - Server Message Block</title>
+      <link>https://kdbed.github.io/posts/smb_server_message_block/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/smb_server_message_block/</guid>
+      <description></description>
     </item>
     
     <item>
