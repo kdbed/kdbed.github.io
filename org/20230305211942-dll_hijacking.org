@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       9bf4027c-a1d8-4832-84df-faab4b9809e0
+:END:
+#+title: DLL Hijacking
+#+filetags: :privesc:exploit:windowsExploitation:
+
+
+
+* Basic Ideas
+Windows DLL hijacking occurs when a trusted or legitimate application is tricked into loading an arbitrary DLL.  Dll hijacking can be used to execute code, obtain persistence and escalate privileges, although privilege escalation is the least likely.  [[https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation/dll-hijacking][hackTricks]]
+
+** Approaches
+There are different approaches to DLL hijacking, and success will be determined by how the application is set to load its DLLs.
+
+i)
