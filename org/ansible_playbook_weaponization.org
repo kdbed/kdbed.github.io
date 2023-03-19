@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       68fb2fe5-0fdc-40d2-8715-4ef59d8076a4
+:END:
+#+title: Ansible - Playbook weaponization
+#+filetags: :pentest:
+
+
+
+https://rioasmara.com/2022/03/21/ansible-playbook-weaponization/
