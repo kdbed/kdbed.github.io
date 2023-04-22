@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       c5fb1cb5-ad77-406f-83bd-8942ff5ce957
+:END:
+#+title: Reverse Shell - Upgrade TTY
+#+filetags: :revshell:pentest:
+
+
+* Reverse Shells
+src_bash{/usr/bin/script -qc /bin/bash /dev/null}
+
+then
+
+src_bash{stty raw -echo; fg; reset}
+
+when python isn't available.
+
+
+
+
+
+[[https://www.schtech.co.uk/linux-reverse-shell-without-python/][rev shell without python]]
