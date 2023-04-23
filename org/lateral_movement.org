@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       33de7685-4c24-48e2-9ba9-c2a9d247ca3c
+:END:
+#+title: Lateral Movement
+#+filetags: :pivoting:pentest:
+#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+
+
+* Lateral Movement
+The adversary is trying to move through your environment.
+
+Lateral Movement consists of techniques that adversaries use to enter and control remote systems on a network. Following through on their primary objective often requires exploring the network to find their target and subsequently gaining access to it. Reaching their objective often involves pivoting through multiple systems and accounts to gain. Adversaries might install their own remote access tools to accomplish Lateral Movement or use legitimate credentials with native network and operating system tools, which may be stealthier.
+
+- MITRE [[https://attack.mitre.org/tactics/TA0008/][attack.mitre]]

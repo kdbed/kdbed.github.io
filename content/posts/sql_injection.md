@@ -1,18 +1,16 @@
-:PROPERTIES:
-:ID:       61eb9f35-f735-4b5f-a028-0b2fd6ced177
-:END:
-#+title: SQL Injection
-#+filetags: :sqli:pentest:
++++
+title = "SQL Injection"
+author = ["kdb"]
+tags = ["sqli", "pentest"]
+draft = false
++++
+
+## SQL Injection {#sql-injection}
 
 
+### SQLi - websocket {#sqli-websocket}
 
-
-* SQL Injection
-
-
-** SQLi - websocket
-
-[[https://rayhan0x01.github.io/ctf/2021/04/02/blind-sqli-over-websocket-automation.html][rayhan0x01 blind sql injection via websocket]]
+[rayhan0x01 blind sql injection via websocket](https://rayhan0x01.github.io/ctf/2021/04/02/blind-sqli-over-websocket-automation.html)
 
 From the above post
 
