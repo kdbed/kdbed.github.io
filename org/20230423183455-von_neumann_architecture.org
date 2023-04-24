@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       161dd0a4-ee8a-4e24-b96d-731d9f5c1871
+:END:
+#+title: von Neumann Architecture
+#+filetags: :computation:architecture:computerScience:
+
+
+* von Neumann Architecture
