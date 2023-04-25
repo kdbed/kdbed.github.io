@@ -1,6 +1,6 @@
 +++
 title = "Intro to Pwntools - TryHackMe"
-author = ["svejk"]
+author = ["kdb"]
 tags = ["binary", "pwntools", "pwn", "tryHackMe"]
 draft = false
 +++
@@ -23,8 +23,27 @@ Same source code, compiled with different protections in place:
 checksec checksec/intro2pwn2
 ```
 
+```text
+[*] '/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn2'
+    Arch:     i386-32-little
+    RELRO:    Partial RELRO
+    Stack:    No canary found
+    NX:       NX disabled
+    PIE:      No PIE (0x8048000)
+    RWX:      Has RWX segments
+```
+
 ```sh { linenos=true, linenostart=1 }
 checksec checksec/intro2pwn1
+```
+
+```text
+[*] '/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn1'
+    Arch:     i386-32-little
+    RELRO:    Full RELRO
+    Stack:    Canary found
+    NX:       NX enabled
+    PIE:      PIE enabled
 ```
 
 -   [RELRO]({{< relref "relro.md" >}})  = Relocation Read-Only; makes the global offset table (GOT) read-only after the linker resolves functions to it. The GOT is important for techniques such as the ret-to-libc attack
@@ -91,4 +110,8 @@ The alphabet file can be produced with `cyclic 100`.
 
 ```sh { linenos=true, linenostart=1 }
 cyclic 100
+```
+
+```text
+aaaabaaacaaadaaaeaaafaaagaaahaaaiaaajaaakaaalaaamaaanaaaoaaapaaaqaaaraaasaaataaauaaavaaawaaaxaaayaaa
 ```

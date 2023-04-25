@@ -99,7 +99,7 @@ We've caused a segmentation fault, and you may observe that there is an invalid 
 
 The alphabet file can be produced with ~cyclic 100~.
 
-#+begin_src sh -n :results output replace :exports both
+#+begin_src sh -n :results output verbatim replace :exports both
 cyclic 100
 #+end_src
 
