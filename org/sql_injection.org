@@ -12,6 +12,8 @@
 
 ** SQLi - websocket
 
+Enumerate web sockets: [[https://github.com/PalindromeLabs/STEWS][PalindromeLabs]]
+
 [[https://rayhan0x01.github.io/ctf/2021/04/02/blind-sqli-over-websocket-automation.html][rayhan0x01 blind sql injection via websocket]]
 
 From the above post

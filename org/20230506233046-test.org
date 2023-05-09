@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       e2aeb3dc-5f65-4506-b795-785571e8a821
+:END:
+#+title: Pentest - Generating Wordlists
+#+filetags: :wordlists:pentest:
+
+
+* Generating Wordlists
+** Username anarchy
+http://morningstarsecurity.com/research/username-anarchy
+https://github.com/urbanadventurer/username-anarchy/

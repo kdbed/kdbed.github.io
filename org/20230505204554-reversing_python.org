@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       7486a541-a598-4e87-a143-1b4c45fe98a9
+:END:
+#+title: Reversing - Python
+#+filetags: :unpacking:python:reversing:
+
+
+
+* Unpacking Python Executables
+
+[[https://www.fortinet.com/blog/threat-research/unpacking-python-executables-windows-linux][fortinet]]
+
+** extraction
+[[https://github.com/extremecoders-re/pyinstxtractor][pyinstxtractor]] - extract the contents of a PyInstaller generated executable file
+** decompile
+[[https://github.com/zrax/pycdc][pycdc]]
