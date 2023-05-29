@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       5741b471-8160-4846-8998-e5c11c8ae85b
+:END:
+#+title: HTTP/2
+
+
+
+https://portswigger.net/research/http2
+
+
+** Request smuggling
+https://lab.wallarm.com/http2smugl-http2-request-smuggling-security-testing-tool/
