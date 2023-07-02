@@ -2,7 +2,7 @@
 :ID:       81d684ca-d89a-408b-bb3f-10d8e50a60bb
 :END:
 #+title: S_MIME
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 #+filetags: :email:secPlus:
 
 

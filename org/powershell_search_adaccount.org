@@ -3,7 +3,7 @@
 :END:
 #+title: PowerShell - Search-ADAccount
 #+filetags: :activeDirectory:powerShell:
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 
 * Search-ADAccount
 

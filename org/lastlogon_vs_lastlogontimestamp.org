@@ -3,7 +3,7 @@
 :END:
 #+title: lastLogon vs lastLogonTimestamp
 #+filetags: :kerberos:activeDirectory:
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 
 * lastLogon vs lastLogonTimestamp
 If you ask for types of situations, then any logon event updates the lastlogontimestamp, but only some of them update lastlogon attribute.

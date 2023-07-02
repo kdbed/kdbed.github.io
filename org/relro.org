@@ -2,6 +2,6 @@
 :ID:       9a0b3f70-ffd4-44fd-a314-f0ad2540e4a6
 :END:
 #+title: RELRO
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 
 https://www.redhat.com/en/blog/hardening-elf-binaries-using-relocation-read-only-relro

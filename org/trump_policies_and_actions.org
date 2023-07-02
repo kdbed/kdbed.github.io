@@ -2,7 +2,7 @@
 :ID:       304b84f8-6a1d-4535-9a76-c5480a606de8
 :END:
 #+title: Trump - Policies and Actions
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 #+filetags: :politics:trump:
 
 An analysis of the coherence -- or lack thereof -- of Trump's policies and [[id:bba56906-b7ec-43f4-8ce5-f372017f4339][politics]] , along with general remarks on what he did while in office.

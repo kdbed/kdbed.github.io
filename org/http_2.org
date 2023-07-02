@@ -2,6 +2,7 @@
 :ID:       5741b471-8160-4846-8998-e5c11c8ae85b
 :END:
 #+title: HTTP/2
+#+hugo_base_dir:../
 
 
 

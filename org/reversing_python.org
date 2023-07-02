@@ -3,6 +3,7 @@
 :END:
 #+title: Reversing - Python
 #+filetags: :unpacking:python:reversing:
+#+hugo_base_dir:../
 
 
 

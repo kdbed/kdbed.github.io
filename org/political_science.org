@@ -2,7 +2,7 @@
 :ID:       4e3a204d-ef71-41a3-8f80-f576868a792b
 :END:
 #+title: Political Science
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 
 
 [[id:8476feaf-33aa-4e71-a0f8-15f390407ddf][philosophy]]

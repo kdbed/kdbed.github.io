@@ -3,6 +3,7 @@
 :END:
 #+title: Ansible - Playbook weaponization
 #+filetags: :pentest:
+#+hugo_base_dir:../
 
 
 

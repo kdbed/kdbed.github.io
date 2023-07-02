@@ -2,7 +2,7 @@
 :ID:       a3c1aea3-62c8-4414-b957-6339df6619cf
 :END:
 #+title: PowerShell - Classes
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 #+filetags: :objectOrientedProgramming:powerShell:
 
 

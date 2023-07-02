@@ -2,7 +2,7 @@
 :ID:       5394fe36-2ff8-4a18-b43c-78e838b9c35f
 :END:
 #+title: DNS Zone Transfers
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 #+filetags: :securityPlus:DNS:
 
 

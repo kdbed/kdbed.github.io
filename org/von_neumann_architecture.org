@@ -3,6 +3,9 @@
 :END:
 #+title: von Neumann Architecture
 #+filetags: :computation:architecture:computerScience:
+#+hugo_base_dir:../
+
+
 
 
 * von Neumann Architecture

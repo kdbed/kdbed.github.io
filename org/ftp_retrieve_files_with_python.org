@@ -3,7 +3,7 @@
 :END:
 #+title: Pentest - FTP 21
 #+filetags: :pentest:ftp:python:
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 
 
 * Pentesting FTP - Port 21

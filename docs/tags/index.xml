@@ -34,11 +34,38 @@
     </item>
     
     <item>
+      <title>architecture</title>
+      <link>https://kdbed.github.io/tags/architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>auth</title>
+      <link>https://kdbed.github.io/tags/auth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/auth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>binary</title>
       <link>https://kdbed.github.io/tags/binary/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/tags/binary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>browser</title>
+      <link>https://kdbed.github.io/tags/browser/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/browser/</guid>
       <description></description>
     </item>
     
@@ -75,6 +102,24 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/tags/compositionality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>computation</title>
+      <link>https://kdbed.github.io/tags/computation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/computation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>computerScience</title>
+      <link>https://kdbed.github.io/tags/computerscience/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/computerscience/</guid>
       <description></description>
     </item>
     
@@ -538,6 +583,15 @@
     </item>
     
     <item>
+      <title>reversing</title>
+      <link>https://kdbed.github.io/tags/reversing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/reversing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>revshell</title>
       <link>https://kdbed.github.io/tags/revshell/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -718,6 +772,15 @@
     </item>
     
     <item>
+      <title>tools</title>
+      <link>https://kdbed.github.io/tags/tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>trump</title>
       <link>https://kdbed.github.io/tags/trump/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -732,6 +795,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/tags/tryhackme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unpacking</title>
+      <link>https://kdbed.github.io/tags/unpacking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/unpacking/</guid>
       <description></description>
     </item>
     
@@ -759,6 +831,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/tags/windowsexploitation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wordlists</title>
+      <link>https://kdbed.github.io/tags/wordlists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/wordlists/</guid>
       <description></description>
     </item>
     

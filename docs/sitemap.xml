@@ -28,15 +28,23 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/algorithms/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/ansible_playbook_weaponization/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/antivirus/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/architecture/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/as_rep_roasting/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/auth/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/binary/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/binary_analysis/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/birthdayattack/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/browser/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/cpp_proj_nix/</loc>
   </url><url>
@@ -54,7 +62,11 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/securityplus/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/computation/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/computer_science/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/computerscience/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/conditions_of_causation/</loc>
   </url><url>
@@ -121,6 +133,8 @@
     <loc>https://kdbed.github.io/tags/haskell/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/haskelltest/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/http_2/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/identityiqessentialsintroduction/</loc>
   </url><url>
@@ -206,17 +220,25 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/pentest/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_active_directory/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/pentest_active_directory_dcsync/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_active_directory_sid_history_injection/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_active_directory_skeleton_key/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_generatingwordlists/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_python/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/pentest_smb_p_139_445/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_sql/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_ssh/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_stealing_chrome_cookies/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/philosophy/</loc>
   </url><url>
@@ -282,6 +304,10 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/reverse_shell_upgrade_tty/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/reversing/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/reversing_python/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/revshell/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/rust/</loc>
@@ -344,15 +370,23 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/template/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/tools/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/trump/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/trump_policies_and_actions/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/tryhackme/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/unpacking/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/von_neumann_architecture/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/web/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/web_pentest_browser_extensions/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/web_pentest_tools/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/web_pentest_wordpress/</loc>
   </url><url>
@@ -363,6 +397,10 @@
     <loc>https://kdbed.github.io/tags/windows/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/windowsexploitation/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/wordlists/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/x11_authorization/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/xor/</loc>
   </url><url>

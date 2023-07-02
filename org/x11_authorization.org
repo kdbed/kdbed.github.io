@@ -3,6 +3,7 @@
 :END:
 #+title: X11 Authorization
 #+filetags: :auth:linux:
+#+hugo_base_dir:../
 
 
 * X11 Authorization

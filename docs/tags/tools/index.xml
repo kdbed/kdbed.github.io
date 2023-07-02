@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tools on Braindump</title>
+    <link>https://kdbed.github.io/tags/tools/</link>
+    <description>Recent content in tools on Braindump</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web Pentest - Tools</title>
+      <link>https://kdbed.github.io/posts/web_pentest_tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/web_pentest_tools/</guid>
+      <description>Web Pentest Tools web brutator https://github.com/koutto/web-brutator https://blog.zufan.me/Web-Brutator/
+yupysubdo https://github.com/0xYP/yupysubdo subdomain finder</description>
+    </item>
+    
+  </channel>
+</rss>

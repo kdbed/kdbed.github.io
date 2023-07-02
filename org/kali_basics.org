@@ -2,7 +2,7 @@
 :END:
 #+title: Kali Linux - Basics
 #+filetags: :linux:kali:
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 
 * Filesystem
 FHS - Filesystem Hierarchy Standard - conventions used for layout of a UNIX system [[https://wiki.linuxfoundation.org/lsb/fhs][LinuxFoundation]]

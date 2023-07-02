@@ -3,7 +3,7 @@
 :END:
 #+title: Account Lockout - Splunk
 #+filetags: :SIEM:eventLogs:activeDirectory:splunk:
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 
 Monitoring [[id:eb1af46c-3b9b-4292-bfb2-5737c2264ce9][Active Directory]] account lockouts with [[id:b4a4659e-de34-4490-bcc2-a2c5568ca684][Splunk]]
 

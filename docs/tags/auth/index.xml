@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>auth on Braindump</title>
+    <link>https://kdbed.github.io/tags/auth/</link>
+    <description>Recent content in auth on Braindump</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/auth/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>X11 Authorization</title>
+      <link>https://kdbed.github.io/posts/x11_authorization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/x11_authorization/</guid>
+      <description>X11 Authorization https://stackoverflow.com/questions/37157097/how-does-x11-authorization-work-mit-magic-cookie/37367518#37367518
+Well, first of all there is a file ~/.Xauthority on the machine. Notice that (usually on machine with GUI) wrong permissions of this file, can cause a login screen loop&amp;hellip; (took me hours to understand that).
+As you mentioned there are 5 mechanisms:
+Host access: the server has host access list (if a network address exists in this list, the connection is permitted). the list is managed using xhost command.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,4 +2,4 @@
 :ID:       bba56906-b7ec-43f4-8ce5-f372017f4339
 :END:
 #+title: politics
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../

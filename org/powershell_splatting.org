@@ -2,7 +2,7 @@
 :ID:       d5c550da-598f-402a-ab45-2af3d48cbb3f
 :END:
 #+title: PowerShell - Splatting
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 #+filetags: :powerShell:
 
 

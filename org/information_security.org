@@ -2,6 +2,6 @@
 :ID:       6efb1dca-ad6e-4f1e-bc62-7107cf3588dd
 :END:
 #+title: Information Security
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 
 [[id:599be219-0984-420b-879b-7669722457ba][Computer Science]]

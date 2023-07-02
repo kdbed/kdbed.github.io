@@ -2,7 +2,7 @@
 :ID:       cc939e8e-19ed-4491-bb1a-d4c68eb440f4
 :END:
 #+title: Python - List Comprehensions
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 #+filetags: :python:
 
 

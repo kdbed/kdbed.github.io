@@ -84,6 +84,15 @@ SYN scan : A SYN scan sends a TCP SYN packet to a port and looks for a SYN/ACK p
     </item>
     
     <item>
+      <title>Ansible - Playbook weaponization</title>
+      <link>https://kdbed.github.io/posts/ansible_playbook_weaponization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/ansible_playbook_weaponization/</guid>
+      <description>https://rioasmara.com/2022/03/21/ansible-playbook-weaponization/</description>
+    </item>
+    
+    <item>
       <title>AS-REP Roasting</title>
       <link>https://kdbed.github.io/posts/as_rep_roasting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -270,6 +279,16 @@ More Than the Sum of Their Parts </description>
       
       <guid>https://kdbed.github.io/posts/haskelltest/</guid>
       <description>Map import Control.Monad :{ map (\x -&amp;gt; x*x + x + 1) [1..10] :} [3,7,13,21,31,43,57,73,91,111] </description>
+    </item>
+    
+    <item>
+      <title>HTTP/2</title>
+      <link>https://kdbed.github.io/posts/http_2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/http_2/</guid>
+      <description>https://portswigger.net/research/http2
+Request smuggling https://lab.wallarm.com/http2smugl-http2-request-smuggling-security-testing-tool/</description>
     </item>
     
     <item>
@@ -474,6 +493,15 @@ print(&amp;#39;ello, world!&amp;#39;) Create a plot import matplotlib.pyplot as 
     </item>
     
     <item>
+      <title>Pentest - Active Directory</title>
+      <link>https://kdbed.github.io/posts/pentest_active_directory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentest_active_directory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Pentest - Active Directory - DCSync</title>
       <link>https://kdbed.github.io/posts/pentest_active_directory_dcsync/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -501,6 +529,24 @@ MITRE</description>
       <guid>https://kdbed.github.io/posts/pentest_active_directory_skeleton_key/</guid>
       <description>hacktricks
 netwrix</description>
+    </item>
+    
+    <item>
+      <title>Pentest - Generating Wordlists</title>
+      <link>https://kdbed.github.io/posts/pentest_generatingwordlists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentest_generatingwordlists/</guid>
+      <description>Generating Wordlists Username anarchy http://morningstarsecurity.com/research/username-anarchy https://github.com/urbanadventurer/username-anarchy/</description>
+    </item>
+    
+    <item>
+      <title>Pentest - Python</title>
+      <link>https://kdbed.github.io/posts/pentest_python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentest_python/</guid>
+      <description>Vulnerability in str.format() in Python https://www.geeksforgeeks.org/vulnerability-in-str-format-in-python/</description>
     </item>
     
     <item>
@@ -534,6 +580,17 @@ capture NTLM hashes: SQL&amp;gt; exec master.sys.xp_dirtree &amp;quot;\\10.10.16
       <guid>https://kdbed.github.io/posts/pentest_ssh/</guid>
       <description>Pentesting SSH ssh-audit Install
 sudo apt install ssh-audit </description>
+    </item>
+    
+    <item>
+      <title>Pentest - Stealing Chrome Cookies</title>
+      <link>https://kdbed.github.io/posts/pentest_stealing_chrome_cookies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentest_stealing_chrome_cookies/</guid>
+      <description>Stealing Chrome Cookies source: mango.pdf.zone
+Using Chrome&amp;rsquo;s remote debugging protocol to steal cookies. github - defaultnamehere
+requires rce on victim&amp;rsquo;s machine </description>
     </item>
     
     <item>
@@ -740,6 +797,17 @@ rev shell without python</description>
     </item>
     
     <item>
+      <title>Reversing - Python</title>
+      <link>https://kdbed.github.io/posts/reversing_python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/reversing_python/</guid>
+      <description>Unpacking Python Executables fortinet
+extraction pyinstxtractor - extract the contents of a PyInstaller generated executable file
+decompile pycdc</description>
+    </item>
+    
+    <item>
       <title>S_MIME</title>
       <link>https://kdbed.github.io/posts/s_mime/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -844,12 +912,31 @@ Changes in American Policy Many Americans will remember President Donald Trump&a
     </item>
     
     <item>
+      <title>von Neumann Architecture</title>
+      <link>https://kdbed.github.io/posts/von_neumann_architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/von_neumann_architecture/</guid>
+      <description>von Neumann Architecture </description>
+    </item>
+    
+    <item>
       <title>Web Pentest - Browser Extensions</title>
       <link>https://kdbed.github.io/posts/web_pentest_browser_extensions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/web_pentest_browser_extensions/</guid>
       <description>wappalyzer Wappalyzer is a browser extension that uncovers the technologies used on websites. It detects content management systems, eCommerce platforms, web servers, JavaScript frameworks, analytics tools and many more.</description>
+    </item>
+    
+    <item>
+      <title>Web Pentest - Tools</title>
+      <link>https://kdbed.github.io/posts/web_pentest_tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/web_pentest_tools/</guid>
+      <description>Web Pentest Tools web brutator https://github.com/koutto/web-brutator https://blog.zufan.me/Web-Brutator/
+yupysubdo https://github.com/0xYP/yupysubdo subdomain finder</description>
     </item>
     
     <item>
@@ -882,6 +969,18 @@ What is a SSL Wildcard Certificate?
 A SSL/TLS Wildcard certificate is a single certificate with a wildcard character (*) in the domain name field. This allows the certificate to secure multiple sub domain names (hosts) pertaining to the same base domain.
 For example, a wildcard certificate for *.(domainname).com, could be used for www.(domainname).com, mail.(domainname).com, store.(domainname).com, in addition to any additional sub domain name in the (domainname).com.
 When a client checks the sub domain name in this type of certificate, it uses a shell expansion procedure to see if it matches.</description>
+    </item>
+    
+    <item>
+      <title>X11 Authorization</title>
+      <link>https://kdbed.github.io/posts/x11_authorization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/x11_authorization/</guid>
+      <description>X11 Authorization https://stackoverflow.com/questions/37157097/how-does-x11-authorization-work-mit-magic-cookie/37367518#37367518
+Well, first of all there is a file ~/.Xauthority on the machine. Notice that (usually on machine with GUI) wrong permissions of this file, can cause a login screen loop&amp;hellip; (took me hours to understand that).
+As you mentioned there are 5 mechanisms:
+Host access: the server has host access list (if a network address exists in this list, the connection is permitted). the list is managed using xhost command.</description>
     </item>
     
     <item>

@@ -2,4 +2,4 @@
 :ID:       de83bbe7-5309-4d54-8491-a45b36742315
 :END:
 #+title: Algorithms
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../

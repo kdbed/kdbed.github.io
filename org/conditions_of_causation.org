@@ -2,7 +2,7 @@
 :ID:       811284ca-b465-4bc4-9958-220a2a4d0f2f
 :END:
 #+title: Conditions of Causation
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 
 
 * Conditions of Causality

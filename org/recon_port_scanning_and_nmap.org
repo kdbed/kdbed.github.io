@@ -3,7 +3,7 @@
 :END:
 #+title: Recon - Port Scanning and nmap
 #+filetags: :infosec:nmap:pentest:
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 
 
 * Basic nmap scan

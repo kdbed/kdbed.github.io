@@ -2,7 +2,7 @@
 :ID:       acdc67cd-43a2-4060-b54a-cb80a48050b8
 :END:
 #+title: Haskell - Org Test
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 #+filetags: :org:haskell:org-roam:example:
 
 

@@ -2,7 +2,7 @@
 :ID:       33dff0d7-d2b6-4410-9334-e3b63aae2455
 :END:
 #+title: linpeas
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 #+filetags: :linux:privesc:pentest:enumeration:
 
 

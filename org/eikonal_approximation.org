@@ -3,7 +3,7 @@
 :END:
 #+title: Eikonal Approximation
 #+filetags: :scattering:quantumMechanics:
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 
 * Eikonal Approximation in [[id:124af3ba-84c1-4140-895b-aad55cdbe965][Quantum Mechanics]]
 ** Introduction and Background

@@ -2,7 +2,7 @@
 :ID:       f6604f23-26b0-4da6-9c3d-f240b929526a
 :END:
 #+title: AS-REP Roasting
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 #+filetags: :impacket:pentest:kerberoasting:kerberos:Windows:
 
 

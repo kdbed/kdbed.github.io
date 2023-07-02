@@ -3,7 +3,7 @@
 :END:
 #+title: Reverse Shell - Upgrade TTY
 #+filetags: :revshell:pentest:
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 
 * Reverse Shells
 src_bash{/usr/bin/script -qc /bin/bash /dev/null}

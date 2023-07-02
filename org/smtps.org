@@ -2,4 +2,4 @@
 :ID:       6e604671-f790-472b-b500-bc0adabf91f5
 :END:
 #+title: SMTPS
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../

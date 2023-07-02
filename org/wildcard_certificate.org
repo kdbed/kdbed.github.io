@@ -3,7 +3,7 @@
 :END:
 #+title: Wildcard Certificate
 #+filetags: :cryptography:web:
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 
 * Wildcare Certificates
 

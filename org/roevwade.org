@@ -2,7 +2,7 @@
 :ID:       f8ea8d3c-b199-4bed-8fdb-a6632e46914e
 :END:
 #+title: Abortion and the Supreme Court: Roe V Wade, Dobbs V Jackson, etc
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 #+filetags: :abortion:supremeCourt:constitution:
 
 

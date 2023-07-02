@@ -2,6 +2,6 @@
 :ID:       e689e1d1-419a-41a7-b3a2-ec0bfd3de3c7
 :END:
 #+title: PIE
-#+hugo_base_dir:/home/kdb/Documents/kdbed/kdbed.github.io.bak
+#+hugo_base_dir:../
 
 [[id:228f3ab7-9d49-4a9d-9075-cb4a9b421eac][Binary Analysis]]
