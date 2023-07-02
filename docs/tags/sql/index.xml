@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://kdbed.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>1433 - Pentesting MSSQL - Microsoft SQL Server</title>
+      <link>https://kdbed.github.io/posts/pentesting_mssql_microsoft_sql_server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentesting_mssql_microsoft_sql_server/</guid>
+      <description>hacktricks</description>
+    </item>
+    
+    <item>
       <title>Pentest - SQL</title>
       <link>https://kdbed.github.io/posts/pentest_sql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

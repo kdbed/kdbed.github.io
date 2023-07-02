@@ -52,6 +52,15 @@
     </item>
     
     <item>
+      <title>cert</title>
+      <link>https://kdbed.github.io/tags/cert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/cert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>climate</title>
       <link>https://kdbed.github.io/tags/climate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -201,6 +210,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/tags/example/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>exploit</title>
+      <link>https://kdbed.github.io/tags/exploit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/exploit/</guid>
       <description></description>
     </item>
     
@@ -430,6 +448,15 @@
     </item>
     
     <item>
+      <title>pivoting</title>
+      <link>https://kdbed.github.io/tags/pivoting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/pivoting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>politics</title>
       <link>https://kdbed.github.io/tags/politics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -507,6 +534,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/tags/recon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>revshell</title>
+      <link>https://kdbed.github.io/tags/revshell/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/revshell/</guid>
       <description></description>
     </item>
     
@@ -628,6 +664,15 @@
     </item>
     
     <item>
+      <title>sqli</title>
+      <link>https://kdbed.github.io/tags/sqli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/sqli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ssh</title>
       <link>https://kdbed.github.io/tags/ssh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -705,6 +750,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>windowsExploitation</title>
+      <link>https://kdbed.github.io/tags/windowsexploitation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/windowsexploitation/</guid>
       <description></description>
     </item>
     

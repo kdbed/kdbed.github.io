@@ -7,6 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://kdbed.github.io/tags/activedirectory/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>#&#43;title: Pentest - Active Directory - Certificate Services</title>
+      <link>https://kdbed.github.io/posts/active_directory_certificate_services_pentest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/active_directory_certificate_services_pentest/</guid>
+      <description>Active Directory Certificate Services social.technet.microsoft.com
+Active Directory Certificate Services (AD CS) is an Active Directory server role which allows users to build PKI (Public Key Infrastructure). This can provide practical solutions for VPN access, SSL/TLS certificates and smart card logons, amongst other similar ubiquitous technologies you are likely to encounter on a daily basis. medium - shaun whorton
+Abusing misconfigured certificate templates Use Certify.exe to enumerate Certificate Services GhostPack/Certify
+PS C:\ &amp;gt; .</description>
+    </item>
+    
+    <item>
       <title>Account Lockout - Splunk</title>
       <link>https://kdbed.github.io/posts/account_lockout_splunk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -25,6 +37,27 @@ index=wineventlog Account_Name=&amp;lt;&amp;lt;accountNameHere&amp;gt;&amp;gt;&a
       <description>lastLogon vs lastLogonTimestamp If you ask for types of situations, then any logon event updates the lastlogontimestamp, but only some of them update lastlogon attribute.
 There are certain types of events that only emulate the logon without using the actual username and password that update only the lastlogon attribute.
 Kerberos S4u2Self How LastLogonTimeStamp is Updated with Kerberos S4u2Self S4U2self</description>
+    </item>
+    
+    <item>
+      <title>Pentest - Active Directory - SID-History Injection</title>
+      <link>https://kdbed.github.io/posts/pentest_active_directory_sid_history_injection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentest_active_directory_sid_history_injection/</guid>
+      <description>SentinelOne
+ADSecurity
+MITRE</description>
+    </item>
+    
+    <item>
+      <title>Pentest - Active Directory - Skeleton Key</title>
+      <link>https://kdbed.github.io/posts/pentest_active_directory_skeleton_key/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentest_active_directory_skeleton_key/</guid>
+      <description>hacktricks
+netwrix</description>
     </item>
     
     <item>

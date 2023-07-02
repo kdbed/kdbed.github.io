@@ -8,6 +8,27 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 29 May 2022 21:44:03 +0800</lastBuildDate><atom:link href="https://kdbed.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>#&#43;title: Pentest - Active Directory - Certificate Services</title>
+      <link>https://kdbed.github.io/posts/active_directory_certificate_services_pentest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/active_directory_certificate_services_pentest/</guid>
+      <description>Active Directory Certificate Services social.technet.microsoft.com
+Active Directory Certificate Services (AD CS) is an Active Directory server role which allows users to build PKI (Public Key Infrastructure). This can provide practical solutions for VPN access, SSL/TLS certificates and smart card logons, amongst other similar ubiquitous technologies you are likely to encounter on a daily basis. medium - shaun whorton
+Abusing misconfigured certificate templates Use Certify.exe to enumerate Certificate Services GhostPack/Certify
+PS C:\ &amp;gt; .</description>
+    </item>
+    
+    <item>
+      <title>1433 - Pentesting MSSQL - Microsoft SQL Server</title>
+      <link>https://kdbed.github.io/posts/pentesting_mssql_microsoft_sql_server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentesting_mssql_microsoft_sql_server/</guid>
+      <description>hacktricks</description>
+    </item>
+    
+    <item>
       <title>Abortion</title>
       <link>https://kdbed.github.io/posts/abortion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -149,6 +170,16 @@ Code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 #include &amp;l
     </item>
     
     <item>
+      <title>DLL Hijacking</title>
+      <link>https://kdbed.github.io/posts/dll_hijacking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/dll_hijacking/</guid>
+      <description>Basic Ideas Windows DLL hijacking occurs when a trusted or legitimate application is tricked into loading an arbitrary DLL. Dll hijacking can be used to execute code, obtain persistence and escalate privileges, although privilege escalation is the least likely. hackTricks
+Approaches There are different approaches to DLL hijacking, and success will be determined by how the application is set to load its DLLs.</description>
+    </item>
+    
+    <item>
       <title>DNS Zone Transfers</title>
       <link>https://kdbed.github.io/posts/dnszonetransfers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -287,7 +318,7 @@ More Than the Sum of Their Parts </description>
       <description>Basics of Binary Analysis
 Intro to Pwntools Source materials here dizmascyberlabs Install gdb-pwndbg-peda-gef
 Checksec Same source code, compiled with different protections in place:
-1 checksec checksec/intro2pwn2 1 checksec checksec/intro2pwn1 RELRO = Relocation Read-Only; makes the global offset table (GOT) read-only after the linker resolves functions to it. The GOT is important for techniques such as the ret-to-libc attack Stack Canaries = tokens placed after a stack to detect a stack overflow.</description>
+1 checksec checksec/intro2pwn2 [*] &amp;#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn2&amp;#39; Arch: i386-32-little RELRO: Partial RELRO Stack: No canary found NX: NX disabled PIE: No PIE (0x8048000) RWX: Has RWX segments 1 checksec checksec/intro2pwn1 [*] &amp;#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn1&amp;#39; Arch: i386-32-little RELRO: Full RELRO Stack: Canary found NX: NX enabled PIE: PIE enabled RELRO = Relocation Read-Only; makes the global offset table (GOT) read-only after the linker resolves functions to it.</description>
     </item>
     
     <item>
@@ -329,6 +360,16 @@ Filesystem FHS - Filesystem Hierarchy Standard - conventions used for layout of 
       <description>lastLogon vs lastLogonTimestamp If you ask for types of situations, then any logon event updates the lastlogontimestamp, but only some of them update lastlogon attribute.
 There are certain types of events that only emulate the logon without using the actual username and password that update only the lastlogon attribute.
 Kerberos S4u2Self How LastLogonTimeStamp is Updated with Kerberos S4u2Self S4U2self</description>
+    </item>
+    
+    <item>
+      <title>Lateral Movement</title>
+      <link>https://kdbed.github.io/posts/lateral_movement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/lateral_movement/</guid>
+      <description>Lateral Movement The adversary is trying to move through your environment.
+Lateral Movement consists of techniques that adversaries use to enter and control remote systems on a network. Following through on their primary objective often requires exploring the network to find their target and subsequently gaining access to it. Reaching their objective often involves pivoting through multiple systems and accounts to gain. Adversaries might install their own remote access tools to accomplish Lateral Movement or use legitimate credentials with native network and operating system tools, which may be stealthier.</description>
     </item>
     
     <item>
@@ -431,6 +472,36 @@ print(&amp;#39;ello, world!&amp;#39;) Create a plot import matplotlib.pyplot as 
       
       <guid>https://kdbed.github.io/posts/originalism/</guid>
       <description>Originalism, the theory that the Constitution should be interpreted according to the meaning or intent of the drafters, has great appeal to Americans. At one time closely associated with the conservative movement, originalism is now commonly held as an important, if not the exclusive, device for interpreting the Constitution. This has not been our historic practice. Over thirty years ago, Munzer and Nickel (1977, 1029) wrote that “one does not have to dig very deeply into the literature of American constitutional law to suspect that many constitutional provisions do not mean today what their framers thought they meant.</description>
+    </item>
+    
+    <item>
+      <title>Pentest - Active Directory - DCSync</title>
+      <link>https://kdbed.github.io/posts/pentest_active_directory_dcsync/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentest_active_directory_dcsync/</guid>
+      <description>hacktricks - DCSync</description>
+    </item>
+    
+    <item>
+      <title>Pentest - Active Directory - SID-History Injection</title>
+      <link>https://kdbed.github.io/posts/pentest_active_directory_sid_history_injection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentest_active_directory_sid_history_injection/</guid>
+      <description>SentinelOne
+ADSecurity
+MITRE</description>
+    </item>
+    
+    <item>
+      <title>Pentest - Active Directory - Skeleton Key</title>
+      <link>https://kdbed.github.io/posts/pentest_active_directory_skeleton_key/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentest_active_directory_skeleton_key/</guid>
+      <description>hacktricks
+netwrix</description>
     </item>
     
     <item>
@@ -659,6 +730,17 @@ Quote 2 &amp;ldquo;Meet these two here,&amp;rdquo; the man said. &amp;ldquo;Ask 
     </item>
     
     <item>
+      <title>Reverse Shell - Upgrade TTY</title>
+      <link>https://kdbed.github.io/posts/reverse_shell_upgrade_tty/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/reverse_shell_upgrade_tty/</guid>
+      <description>Reverse Shells then
+when python isn&amp;rsquo;t available.
+rev shell without python</description>
+    </item>
+    
+    <item>
       <title>S_MIME</title>
       <link>https://kdbed.github.io/posts/s_mime/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -719,6 +801,17 @@ Quote 2 &amp;ldquo;Meet these two here,&amp;rdquo; the man said. &amp;ldquo;Ask 
       
       <guid>https://kdbed.github.io/posts/splunk/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>SQL Injection</title>
+      <link>https://kdbed.github.io/posts/sql_injection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/sql_injection/</guid>
+      <description>SQL Injection SQLi - websocket rayhan0x01 blind sql injection via websocket
+From the above post
+&amp;ldquo;If you didn&amp;rsquo;t know, the main difference between HTTP and WebSocket is that HTTP is built on a request-response model whereas WebSocket is like a Socket connection where both client and server can send data anytime asynchronously. So you can&amp;rsquo;t repeat the requests made in WebSocket as you would normally do for HTTP Requests in BurpSuite.</description>
     </item>
     
     <item>

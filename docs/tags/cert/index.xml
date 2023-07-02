@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cert on Braindump</title>
+    <link>https://kdbed.github.io/tags/cert/</link>
+    <description>Recent content in cert on Braindump</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/cert/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>#&#43;title: Pentest - Active Directory - Certificate Services</title>
+      <link>https://kdbed.github.io/posts/active_directory_certificate_services_pentest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/active_directory_certificate_services_pentest/</guid>
+      <description>Active Directory Certificate Services social.technet.microsoft.com
+Active Directory Certificate Services (AD CS) is an Active Directory server role which allows users to build PKI (Public Key Infrastructure). This can provide practical solutions for VPN access, SSL/TLS certificates and smart card logons, amongst other similar ubiquitous technologies you are likely to encounter on a daily basis. medium - shaun whorton
+Abusing misconfigured certificate templates Use Certify.exe to enumerate Certificate Services GhostPack/Certify
+PS C:\ &amp;gt; .</description>
+    </item>
+    
+  </channel>
+</rss>
