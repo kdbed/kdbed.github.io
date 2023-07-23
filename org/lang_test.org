@@ -1,0 +1,41 @@
+:PROPERTIES:
+:ID:       80690da6-d65a-418b-945e-5a5b01e20476
+:END:
+#+title: Lang - Test
+#+hugo_base_dir:../
+
+
+
+#+BEGIN_SRC rustic :crates '((regex . 0.2)) :output results
+
+  extern crate regex;
+
+  use regex::Regex;
+
+  fn main() {
+      let re = Regex::new(r"^\d{4}-\d{2}-\d{2}$").unwrap();
+      println!("test");
+      assert!(re.is_match("2014-01-01"));
+}
+#+END_SRC
+
+#+RESULTS:
+: test
+
+#+begin_src cpp -n :exports both :results output verbatim
+#include <iostream>
+int main(){
+    std::cout<<"Hello, World.\n";
+    return 0;
+}
+#+end_src
+
+#+RESULTS:
+: Hello, World.
+
+
+#+begin_src csharp -n :exports both :results output verbatim
+Console.WriteLine("Hello World!");
+#+end_src
+
+#+RESULTS:

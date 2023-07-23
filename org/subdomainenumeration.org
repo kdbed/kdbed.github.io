@@ -3,14 +3,13 @@
 :END:
 #+title: Subdomain Enumeration
 #+filetags: :subdomain:enumeration:pentest:
+#+hugo_base_dir:../
 
 
 * From DNS
 #+begin_src shell
 dig +nocmd trick.htb axfr +noall +answer @trick.htb
 #+end_src
-
-
 * WFuzz
 In case the subdomain has a certain naming convention (Trick/HTB):
 #+begin_src shell
