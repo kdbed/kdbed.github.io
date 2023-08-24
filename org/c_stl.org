@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       652a79d0-d4ad-40b1-bf97-d23f6bc7b4f6
+:END:
+#+title: C++ - STL
+#+hugo_base_dir:../

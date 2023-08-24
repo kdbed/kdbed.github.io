@@ -35,7 +35,18 @@ int main(){
 
 
 #+begin_src csharp -n :exports both :results output verbatim
-Console.WriteLine("Hello World!");
+
+// Hello World! program
+namespace HelloWorld
+{
+    class Hello {
+        static void Main(string[] args)
+        {
+            System.Console.WriteLine("Hello World!");
+        }
+    }
+}
 #+end_src
 
 #+RESULTS:
+: Hello World!

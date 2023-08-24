@@ -30,5 +30,19 @@ Hello, World.
 ```
 
 ```csharp { linenos=true, linenostart=1 }
-Console.WriteLine("Hello World!");
+
+// Hello World! program
+namespace HelloWorld
+{
+    class Hello {
+        static void Main(string[] args)
+        {
+            System.Console.WriteLine("Hello World!");
+        }
+    }
+}
+```
+
+```text
+Hello World!
 ```

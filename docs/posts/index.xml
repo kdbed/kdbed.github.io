@@ -121,6 +121,15 @@ Use the Impacket tool GetNPUsers.py to try to get a hash for each user</descript
     </item>
     
     <item>
+      <title>C&#43;&#43; - STL</title>
+      <link>https://kdbed.github.io/posts/c_stl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/c_stl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>C&#43;&#43; and Nix</title>
       <link>https://kdbed.github.io/posts/cpp_proj_nix/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -370,6 +379,24 @@ Filesystem FHS - Filesystem Hierarchy Standard - conventions used for layout of 
     </item>
     
     <item>
+      <title>Lang - Test</title>
+      <link>https://kdbed.github.io/posts/lang_test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/lang_test/</guid>
+      <description> extern crate regex; use regex::Regex; fn main() { let re = Regex::new(r&amp;#34;^\d{4}-\d{2}-\d{2}$&amp;#34;).unwrap(); println!(&amp;#34;test&amp;#34;); assert!(re.is_match(&amp;#34;2014-01-01&amp;#34;)); } 1 2 3 4 5 #include &amp;lt;iostream&amp;gt; int main(){ std::cout&amp;lt;&amp;lt;&amp;#34;Hello, World.\n&amp;#34;; return 0; } Hello, World. 1 2 3 4 5 6 7 8 9 10 11 // Hello World! program namespace HelloWorld { class Hello { static void Main(string[] args) { System.Console.WriteLine(&amp;#34;Hello World!&amp;#34;); } } } Hello World! </description>
+    </item>
+    
+    <item>
+      <title>Lang - Test</title>
+      <link>https://kdbed.github.io/posts/rust_test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/rust_test/</guid>
+      <description> extern crate regex; use regex::Regex; fn main() { let re = Regex::new(r&amp;#34;^\d{4}-\d{2}-\d{2}$&amp;#34;).unwrap(); println!(&amp;#34;test&amp;#34;); assert!(re.is_match(&amp;#34;2014-01-01&amp;#34;)); } 1 2 3 4 5 #include &amp;lt;iostream&amp;gt; int main(){ std::cout&amp;lt;&amp;lt;&amp;#34;Hello, World.\n&amp;#34;; return 0; } Hello, World. </description>
+    </item>
+    
+    <item>
       <title>lastLogon vs lastLogonTimestamp</title>
       <link>https://kdbed.github.io/posts/lastlogon_vs_lastlogontimestamp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -538,6 +565,15 @@ netwrix</description>
       
       <guid>https://kdbed.github.io/posts/pentest_generatingwordlists/</guid>
       <description>Generating Wordlists Username anarchy http://morningstarsecurity.com/research/username-anarchy https://github.com/urbanadventurer/username-anarchy/</description>
+    </item>
+    
+    <item>
+      <title>Pentest - Passive Information Gathering</title>
+      <link>https://kdbed.github.io/posts/pentest_passive_information_gathering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentest_passive_information_gathering/</guid>
+      <description></description>
     </item>
     
     <item>

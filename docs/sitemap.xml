@@ -46,6 +46,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/browser/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/c_stl/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/cpp_proj_nix/</loc>
   </url><url>
     <loc>https://kdbed.github.io/categories/</loc>
@@ -170,6 +172,10 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/keyexchange/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/lang_test/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/rust_test/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/lastlogon_vs_lastlogontimestamp/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/lateral_movement/</loc>
@@ -229,6 +235,8 @@
     <loc>https://kdbed.github.io/posts/pentest_active_directory_skeleton_key/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_generatingwordlists/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_passive_information_gathering/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_python/</loc>
   </url><url>
