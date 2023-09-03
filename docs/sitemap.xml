@@ -60,6 +60,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/climate/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/cmdlet/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/compositionality/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/securityplus/</loc>
@@ -83,6 +85,8 @@
     <loc>https://kdbed.github.io/tags/crackmapexec/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/cryptography/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/csharp/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/dll_hijacking/</loc>
   </url><url>
@@ -272,6 +276,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/powershell_clipboard_to_array/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/powershell_custom_execution_timer/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/powershell_get_domain_controllers_in_forest/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/powershell_log_function/</loc>
@@ -283,6 +289,8 @@
     <loc>https://kdbed.github.io/posts/powershell_search_adaccount/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/powershell_splatting/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/powershell_writing_cmdlets_in_c/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/privesc/</loc>
   </url><url>
@@ -403,6 +411,8 @@
     <loc>https://kdbed.github.io/posts/wildcard_certificate/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/windows/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/windows_cached_credentials_as_system/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/windowsexploitation/</loc>
   </url><url>

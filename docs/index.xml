@@ -706,6 +706,16 @@ When you define a property, you should always define a type that sets a specific
     </item>
     
     <item>
+      <title>PowerShell - Custom Execution Timer</title>
+      <link>https://kdbed.github.io/posts/powershell_custom_execution_timer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/powershell_custom_execution_timer/</guid>
+      <description>Custom Execution Timer source: devblogs
+function Measure-CommandEx { [CmdletBinding()] param ( [Parameter(Mandatory, Position = 0)] [scriptblock]$Expression, [Parameter(ValueFromPipeline)] [psobject[]]$InputObject ) Begin { $stopWatch = New-Object -TypeName &amp;#39;System.Diagnostics.Stopwatch&amp;#39; &amp;lt;# We need to define result as a list because the way objects are passed to the pipeline. If you pass a collection of objects, the pipeline sends them one by one, and the result is always overridden by the last item. #&amp;gt; [System.Collections.Generic.List[PSObject]]$result = @() } Process { if ($InputObject) { # Starting the stopwatch.</description>
+    </item>
+    
+    <item>
       <title>PowerShell - Get Domain Controllers in Forest</title>
       <link>https://kdbed.github.io/posts/powershell_get_domain_controllers_in_forest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -760,6 +770,18 @@ function Encrypt-Script($path, $destination) { $script = Get-Content $path | Out
       <guid>https://kdbed.github.io/posts/powershell_splatting/</guid>
       <description>Splatting in powershell Splatting allows one to format and send arguments to cmdlets and functions. Typically use dash+parameter name+argument
 Copy-Item -Path &amp;#34;Testfile.txt&amp;#34; -Destination &amp;#34;CopiedFile.txt&amp;#34; -WhatIf -force -Recurse Copy-Item ` -Path &amp;#34;Testfile.txt&amp;#34; ` -Destination &amp;#34;CopiedFile.txt&amp;#34; ` -WhatIf ` -force ` Instead you can splat a parameter set. First create a hashtable containing key/value pairs of each parameter and parameter argument. Then pass that set of parameters to the command with @&amp;lt;hashtablename&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>PowerShell - Writing cmdlets in C#</title>
+      <link>https://kdbed.github.io/posts/powershell_writing_cmdlets_in_c/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/powershell_writing_cmdlets_in_c/</guid>
+      <description>Writing powershell cmdlets in C# source: dotnetninja
+Overview create a new class that derives from one of two base classes (Cmdlet or PsCmdlet), add properties to the class to accept your parameters, override one or more methods in the base class to provide your functionality, and decorate the class and properties with a few attributes.
+cmdlet name all defined in constants in the C# reference library
+VerbsCommon: Add, Clear, Close, Copy, Enter, Exit, Find, Format, Get, Hide, Join, Lock, Move, New, Open, Optimize, Pop, Push, Redo, Remove, Rename, Reset, Resize, Search, Select, Set, Show, Skip, Split, Step, Switch, Undo, Unlock, Watch</description>
     </item>
     
     <item>
@@ -1006,6 +1028,20 @@ What is a SSL Wildcard Certificate?
 A SSL/TLS Wildcard certificate is a single certificate with a wildcard character (*) in the domain name field. This allows the certificate to secure multiple sub domain names (hosts) pertaining to the same base domain.
 For example, a wildcard certificate for *.(domainname).com, could be used for www.(domainname).com, mail.(domainname).com, store.(domainname).com, in addition to any additional sub domain name in the (domainname).com.
 When a client checks the sub domain name in this type of certificate, it uses a shell expansion procedure to see if it matches.</description>
+    </item>
+    
+    <item>
+      <title>Windows - Cached Credentials as SYSTEM</title>
+      <link>https://kdbed.github.io/posts/windows_cached_credentials_as_system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/windows_cached_credentials_as_system/</guid>
+      <description>Credentials cached as SYSTEM Cached Passwords - SYSTEM
+There are passwords that can be stored in the SYSTEM context that can&amp;rsquo;t be seen in the normal Credential Manager view.
+Download PsExec.exe from Technet and copy it to C:\Windows\System32.
+From a command prompt run: .
+From the new DOS window run:
+Remove any items that appear in the list of Stored User Names and Passwords. Restart the computer.</description>
     </item>
     
     <item>
