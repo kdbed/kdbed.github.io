@@ -705,6 +705,15 @@ When you define a property, you should always define a type that sets a specific
     </item>
     
     <item>
+      <title>PowerShell - Common Members of two groups</title>
+      <link>https://kdbed.github.io/posts/powershell_common_members_of_two_groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/powershell_common_members_of_two_groups/</guid>
+      <description>Get members in common for 2 groups in AD Function Get-ADGroupMembersInBothGroups { Param ( [Parameter(Mandatory=$true)] [string]$Group1, [Parameter(Mandatory=$true)] [string]$Group2 ) $Group1Members = Get-ADGroup -Identity $Group1 -properties members |select -expand members $Group2Members = Get-ADGroup -Identity $Group2 -properties members|select -expand members $match = $Group1Members | Where-Object {$Group2Members -contains $_} write-host $match } </description>
+    </item>
+    
+    <item>
       <title>PowerShell - Custom Execution Timer</title>
       <link>https://kdbed.github.io/posts/powershell_custom_execution_timer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
