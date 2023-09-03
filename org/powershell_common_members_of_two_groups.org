@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       263441a8-c800-48c1-803b-19abe0b58ceb
+:END:
+#+title: PowerShell - Common Members of two groups
+#+hugo_base_dir:../
+
+
+* Get members in common for 2 groups in AD
+#+begin_src sh
+Function Get-ADGroupMembersInBothGroups {
+    Param (
+        [Parameter(Mandatory=$true)]
+        [string]$Group1,
+        [Parameter(Mandatory=$true)]
+        [string]$Group2
+    )
+    $Group1Members = Get-ADGroup -Identity $Group1 -properties members |select -expand members
+    $Group2Members = Get-ADGroup -Identity $Group2 -properties members|select -expand members
+    $match = $Group1Members | Where-Object {$Group2Members -contains $_}
+    write-host $match
+}
+#+end_src
