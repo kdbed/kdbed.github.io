@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       f749bc23-eaec-4cc6-a22f-64dd48a026cf
+:END:
+#+title: PowerShell - Regex - string between two strings
+#+hugo_base_dir:../
+
+
+* Regex - string between two strings
+#+begin_src shell -n
+function GetStringBetweenTwoStrings($firstString, $secondString, $importPath){
+
+    #Get content from file
+    $file = gc -raw $importPath
+
+    #Regex pattern to compare two strings
+    $pattern = '$firstString(.*?)$secondString'
+
+    #Perform the opperation
+    $result = [regex]::Match($file,$pattern).Groups[1].Value
+
+    #Return result
+    write-host $result
+
+}
+#+end_src
