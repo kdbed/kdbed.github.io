@@ -130,6 +130,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/greenhouseemissions/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/grpc/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/happiness/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/hashcollision/</loc>
@@ -157,6 +159,8 @@
     <loc>https://kdbed.github.io/posts/introtopwntools/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/introduction/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/ip_time_to_live_ttl/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/ipsec/</loc>
   </url><url>
@@ -226,6 +230,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/originalism/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/os_identification_ping/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/password/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/pentest/</loc>
@@ -239,6 +245,8 @@
     <loc>https://kdbed.github.io/posts/pentest_active_directory_skeleton_key/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_generatingwordlists/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_grpc_port_50051/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_passive_information_gathering/</loc>
   </url><url>

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       b594334c-ed1b-413a-8008-a1761826ba6c
+:END:
+#+title: IP Time to Live (TTL)
+#+hugo_base_dir:../
+
+
+[[https://packetpushers.net/ip-time-to-live-and-hop-limit-basics/][packetpushers]]

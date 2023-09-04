@@ -349,6 +349,15 @@ Checksec Same source code, compiled with different protections in place:
     </item>
     
     <item>
+      <title>IP Time to Live (TTL)</title>
+      <link>https://kdbed.github.io/posts/ip_time_to_live_ttl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/ip_time_to_live_ttl/</guid>
+      <description>packetpushers</description>
+    </item>
+    
+    <item>
       <title>Kali Linux - Basics</title>
       <link>https://kdbed.github.io/posts/kali_basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -520,6 +529,15 @@ print(&amp;#39;ello, world!&amp;#39;) Create a plot import matplotlib.pyplot as 
     </item>
     
     <item>
+      <title>OS Identification - Ping</title>
+      <link>https://kdbed.github.io/posts/os_identification_ping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/os_identification_ping/</guid>
+      <description>IP Time to Live (TTL) on the ICMP packets The default TTL on windows is 128, which gets decremented by one at the router between the host and the box to 127. On the other hand the default for Linux is typically 64, so I would expect to see 63 for a Linux host.</description>
+    </item>
+    
+    <item>
       <title>Pentest - Active Directory</title>
       <link>https://kdbed.github.io/posts/pentest_active_directory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -565,6 +583,16 @@ netwrix</description>
       
       <guid>https://kdbed.github.io/posts/pentest_generatingwordlists/</guid>
       <description>Generating Wordlists Username anarchy http://morningstarsecurity.com/research/username-anarchy https://github.com/urbanadventurer/username-anarchy/</description>
+    </item>
+    
+    <item>
+      <title>Pentest - gRPC Port 50051</title>
+      <link>https://kdbed.github.io/posts/pentest_grpc_port_50051/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentest_grpc_port_50051/</guid>
+      <description>gRPC gRPC (short for Google Remote Procedure Call) is a modern open-source framework developed by Google for creating high-performance, language-agnostic remote procedure call (RPC) systems. It enables communication and interaction between different applications or services running on different platforms and written in different programming languages.
+On Linux, gRPC provides a mechanism for building distributed systems by allowing services to communicate with each other efficiently and securely over a network. It utilizes HTTP/2 protocol as its transport layer and supports different serialization formats like Protocol Buffers (protobuf) for efficient data exchange.</description>
     </item>
     
     <item>
@@ -748,7 +776,7 @@ function Measure-CommandEx { [CmdletBinding()] param ( [Parameter(Mandatory, Pos
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/powershell_regex_string_between_two_strings/</guid>
-      <description>Regex - string between two strings 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 function GetStringBetweenTwoStrings($firstString, $secondString, $importPath){ #Get content from file $file = gc -raw $importPath #Regex pattern to compare two strings $pattern = &amp;#39;$firstString(.*?)$secondString&amp;#39; #Perform the opperation $result = [regex]::Match($file,$pattern).Groups[1].Value #Return result write-host $result } </description>
+      <description>Regex - string between two strings 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 function GetStringBetweenTwoStrings($firstString, $secondString, $importPath){ #Get content from file $file = gc -raw $importPath #Regex pattern to compare two strings $pattern = &amp;#39;$firstString(.*?)$secondString&amp;#39; #Perform the opperation $result = [regex]::Match($file,$pattern).Groups.Value #Return result write-host $result } </description>
     </item>
     
     <item>

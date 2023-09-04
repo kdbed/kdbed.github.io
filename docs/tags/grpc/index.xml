@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>grpc on Braindump</title>
+    <link>https://kdbed.github.io/tags/grpc/</link>
+    <description>Recent content in grpc on Braindump</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/grpc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pentest - gRPC Port 50051</title>
+      <link>https://kdbed.github.io/posts/pentest_grpc_port_50051/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentest_grpc_port_50051/</guid>
+      <description>gRPC gRPC (short for Google Remote Procedure Call) is a modern open-source framework developed by Google for creating high-performance, language-agnostic remote procedure call (RPC) systems. It enables communication and interaction between different applications or services running on different platforms and written in different programming languages.
+On Linux, gRPC provides a mechanism for building distributed systems by allowing services to communicate with each other efficiently and securely over a network. It utilizes HTTP/2 protocol as its transport layer and supports different serialization formats like Protocol Buffers (protobuf) for efficient data exchange.</description>
+    </item>
+    
+  </channel>
+</rss>

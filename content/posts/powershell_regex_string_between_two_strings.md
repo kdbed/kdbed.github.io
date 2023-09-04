@@ -16,7 +16,7 @@ function GetStringBetweenTwoStrings($firstString, $secondString, $importPath){
     $pattern = '$firstString(.*?)$secondString'
 
     #Perform the opperation
-    $result = [regex]::Match($file,$pattern).Groups[1].Value
+    $result = [regex]::Match($file,$pattern).Groups.Value
 
     #Return result
     write-host $result
