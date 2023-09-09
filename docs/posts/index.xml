@@ -393,7 +393,7 @@ Filesystem FHS - Filesystem Hierarchy Standard - conventions used for layout of 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/lang_test/</guid>
-      <description> extern crate regex; use regex::Regex; fn main() { let re = Regex::new(r&amp;#34;^\d{4}-\d{2}-\d{2}$&amp;#34;).unwrap(); println!(&amp;#34;test&amp;#34;); assert!(re.is_match(&amp;#34;2014-01-01&amp;#34;)); } 1 2 3 4 5 #include &amp;lt;iostream&amp;gt; int main(){ std::cout&amp;lt;&amp;lt;&amp;#34;Hello, World.\n&amp;#34;; return 0; } Hello, World. 1 2 3 4 5 6 7 8 9 10 11 // Hello World! program namespace HelloWorld { class Hello { static void Main(string[] args) { System.Console.WriteLine(&amp;#34;Hello World!&amp;#34;); } } } Hello World! </description>
+      <description>extern crate primal; use primal::Sieve; fn num_divisors(n: usize, primes: &amp;amp;Sieve) -&amp;gt; Option&amp;lt;usize&amp;gt; { match primes.factor(n) { Ok(factors) =&amp;gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))), Err(_) =&amp;gt; None, } } fn main() { println!(&amp;#34;24 days of Rust - primal (day 2)&amp;#34;); let sieve = Sieve::new(10000); let suspect = 5273; println!(&amp;#34;{} is prime: {}&amp;#34;, suspect, sieve.is_prime(suspect)); let not_a_prime = 1024; println!(&amp;#34;{} is prime: {}&amp;#34;, not_a_prime, sieve.is_prime(not_a_prime)); let n = 1000; match sieve.</description>
     </item>
     
     <item>
@@ -534,7 +534,7 @@ print(&amp;#39;ello, world!&amp;#39;) Create a plot import matplotlib.pyplot as 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/os_identification_ping/</guid>
-      <description>IP Time to Live (TTL) on the ICMP packets The default TTL on windows is 128, which gets decremented by one at the router between the host and the box to 127. On the other hand the default for Linux is typically 64, so I would expect to see 63 for a Linux host.</description>
+      <description>IP Time to Live (TTL) on the ICMP packets The default TTL on windows is 128, which gets decremented by one at the router between the host and the box to 127. On the other hand the default for Linux is typically 64, so expect to see 63 for a Linux host.</description>
     </item>
     
     <item>
@@ -877,7 +877,7 @@ Quote 2 &amp;ldquo;Meet these two here,&amp;rdquo; the man said. &amp;ldquo;Ask 
       
       <guid>https://kdbed.github.io/posts/recon_port_scanning_and_nmap/</guid>
       <description>Basic nmap scan nmap -sC -sV -oA nmap/result &amp;lt;ip&amp;gt; Flags:
--oA &amp;lt;basename&amp;gt;: Output in the three major formats at once -sV: Probe open ports to determine service/version info -sC: default scripts </description>
+-oA &amp;lt;basename&amp;gt;: Output in the three major formats at once -sV: Probe open ports to determine service/version info -sC: default scripts UDP Scan sudo nmap -sU -sS -sC -sV -oA &amp;lt;NAME&amp;gt;.udp &amp;lt;IP&amp;gt; -v Script categories List available nse scripts nmap through socks4 proxy ftp bounce scan format ports=$(nmap -p- -Pn --min-rate=1000 -T4 10.10.11.205 | grep &amp;#39;^[0-9]&amp;#39; | cut -d &amp;#39;/&amp;#39; -f 1 | tr &amp;#39;\n&amp;#39; &amp;#39;,&amp;#39; | sed s/,$//) nmap -p$ports -Pn -sC -sV 10.</description>
     </item>
     
     <item>

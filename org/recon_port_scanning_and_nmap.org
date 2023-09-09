@@ -35,5 +35,10 @@ src_sh{nmap --proxies socks4://proxy-ip:1080 target-ip}
 ** ftp bounce scan
 src_sh{nmap -P0 -n -b username:password@target-ip target2-ip --proxies socks4://proxy-ip:1080 -vvvv}
 
+** format
+#+begin_src sh
+ports=$(nmap -p- -Pn --min-rate=1000 -T4 10.10.11.205 | grep '^[0-9]' | cut -d '/' -f 1 | tr '\n' ',' | sed s/,$//)
+nmap -p$ports -Pn -sC -sV 10.10.11.205
+#+end_src
 * nmap Automator
   src_sh{nmapAutomator <IP> All}

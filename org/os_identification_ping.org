@@ -6,6 +6,6 @@
 
 
 * [[id:b594334c-ed1b-413a-8008-a1761826ba6c][IP Time to Live (TTL)]] on the ICMP packets
-The default TTL on windows is 128, which gets decremented by one at the router between the host and the box to 127. On the other hand the default for Linux is typically 64, so I would expect to see 63 for a Linux host.
+The default TTL on windows is 128, which gets decremented by one at the router between the host and the box to 127. On the other hand the default for Linux is typically 64, so expect to see 63 for a Linux host.
 
 [[../static/images/icmp.png]]

