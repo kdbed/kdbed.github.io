@@ -1,0 +1,31 @@
++++
+title = "Org Mode - Python/Jupyter Example"
+author = ["svejk"]
+tags = ["example", "jupyter", "python", "org-roam", "org"]
+draft = false
++++
+
+## Create a Session {#create-a-session}
+
+Initialize server with org-babel-exp-src-block.  Afterwards, 'Enter' in the sourceblock will execute.
+
+```python
+print('ello, world!')
+```
+
+
+### Create a plot {#create-a-plot}
+
+```python
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+ax.plot([1, 2, 3, 4], [1, 4, 2, 3])
+pass
+```
+
+
+## Ocaml {#ocaml}
+
+```ocaml
+print_string "Hello world!\n"
+```
