@@ -6,6 +6,7 @@
 #+hugo_base_dir:../
 
 
+
 * Basic nmap scan
 #+begin_src sh
 nmap -sC -sV -oA nmap/result <ip>
