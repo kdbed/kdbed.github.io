@@ -265,6 +265,15 @@ More Than the Sum of Their Parts </description>
     </item>
     
     <item>
+      <title>Golden Ticket</title>
+      <link>https://kdbed.github.io/posts/golden_ticket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/golden_ticket/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Greenhouse Gas Emissions</title>
       <link>https://kdbed.github.io/posts/greenhouseemissions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -386,6 +395,15 @@ Filesystem FHS - Filesystem Hierarchy Standard - conventions used for layout of 
       
       <guid>https://kdbed.github.io/posts/kerberos/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Kerbrute Enumeration</title>
+      <link>https://kdbed.github.io/posts/kerbrute_enumeration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/kerbrute_enumeration/</guid>
+      <description>Kerbrute Enumeration </description>
     </item>
     
     <item>
@@ -539,12 +557,24 @@ print(&amp;#39;ello, world!&amp;#39;) Create a plot import matplotlib.pyplot as 
     </item>
     
     <item>
+      <title>Pass the Ticket (PtT) Attack</title>
+      <link>https://kdbed.github.io/posts/pass_the_ticket_ptt_attack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pass_the_ticket_ptt_attack/</guid>
+      <description>Pass the Ticket </description>
+    </item>
+    
+    <item>
       <title>Pentest - Active Directory</title>
       <link>https://kdbed.github.io/posts/pentest_active_directory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/pentest_active_directory/</guid>
-      <description></description>
+      <description>Active Directory attacks and enumeration Kerbrute Enumeration Privileges: No domain access required
+Pass the Ticket (PtT) Attack Privileges: Domain user access
+Kerberoasting Privileges: Access as any user
+AS-REP Roasting Privileges: Access as any user **</description>
     </item>
     
     <item>
@@ -878,7 +908,8 @@ Quote 2 &amp;ldquo;Meet these two here,&amp;rdquo; the man said. &amp;ldquo;Ask 
       
       <guid>https://kdbed.github.io/posts/recon_port_scanning_and_nmap/</guid>
       <description>Basic nmap scan nmap -sC -sV -oA nmap/result &amp;lt;ip&amp;gt; Flags:
--oA &amp;lt;basename&amp;gt;: Output in the three major formats at once -sV: Probe open ports to determine service/version info -sC: default scripts UDP Scan sudo nmap -sU -sS -sC -sV -oA &amp;lt;NAME&amp;gt;.udp &amp;lt;IP&amp;gt; -v Script categories List available nse scripts nmap through socks4 proxy ftp bounce scan format ports=$(nmap -p- -Pn --min-rate=1000 -T4 10.10.11.205 | grep &amp;#39;^[0-9]&amp;#39; | cut -d &amp;#39;/&amp;#39; -f 1 | tr &amp;#39;\n&amp;#39; &amp;#39;,&amp;#39; | sed s/,$//) nmap -p$ports -Pn -sC -sV 10.</description>
+-oA &amp;lt;basename&amp;gt;: Output in the three major formats at once -sV: Probe open ports to determine service/version info -sC: default scripts Full TCP:
+nmap -sV -sC -p- -o nmap.out -vvv $RHOST UDP Scan sudo nmap -sU -sS -sC -sV -oA &amp;lt;NAME&amp;gt;.udp &amp;lt;IP&amp;gt; -v nmap -sU --top-ports 20 -o nmap-udp.out -vvv $RHOST Script categories nmap --script vuln,safe,discovery -oN scan.txt target-ip List available nse scripts ls -lh /usr/share/nmap/scripts/ nmap through socks4 proxy nmap --proxies socks4://proxy-ip:1080 target-ip ftp bounce scan nmap -P0 -n -b username:password@target-ip target2-ip --proxies socks4://proxy-ip:1080 -vvv format ports=$(nmap -p- -Pn --min-rate=1000 -T4 10.</description>
     </item>
     
     <item>

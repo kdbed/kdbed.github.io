@@ -17,6 +17,12 @@ Flags:
 -   `-sV: Probe open ports to determine service/version info`
 -   `-sC: default scripts`
 
+Full TCP:
+
+```sh
+nmap -sV -sC -p- -o nmap.out -vvv $RHOST
+```
+
 
 ### UDP Scan {#udp-scan}
 
@@ -24,17 +30,37 @@ Flags:
 sudo nmap -sU -sS -sC -sV -oA <NAME>.udp <IP> -v
 ```
 
+```sh
+nmap -sU --top-ports 20 -o nmap-udp.out -vvv $RHOST
+```
+
 
 ### Script categories {#script-categories}
+
+```sh
+nmap --script vuln,safe,discovery -oN scan.txt target-ip
+```
 
 
 ### List available nse scripts {#list-available-nse-scripts}
 
+```sh
+ls -lh /usr/share/nmap/scripts/
+```
+
 
 ### nmap through socks4 proxy {#nmap-through-socks4-proxy}
 
+```sh
+nmap --proxies socks4://proxy-ip:1080 target-ip
+```
+
 
 ### ftp bounce scan {#ftp-bounce-scan}
+
+```sh
+nmap -P0 -n -b username:password@target-ip target2-ip --proxies socks4://proxy-ip:1080 -vvv
+```
 
 
 ### format {#format}
@@ -46,3 +72,7 @@ nmap -p$ports -Pn -sC -sV 10.10.11.205
 
 
 ## nmap Automator {#nmap-automator}
+
+```sh
+nmapAutomator <IP> All
+```

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       765f95f9-1043-4e3a-8145-4e7d49834e32
+:END:
+#+title: Golden Ticket
+#+hugo_base_dir:../

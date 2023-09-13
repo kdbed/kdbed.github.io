@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       22973ab0-77bb-4b77-8d4c-d52aa41e57a3
+:END:
+#+title: Pass the Ticket (PtT) Attack
+#+hugo_base_dir:../
+
+
+* Pass the Ticket

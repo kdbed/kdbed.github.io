@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       302b147c-f615-4e92-b84c-b81d182dab10
+:END:
+#+title: Silver Ticket
+#+hugo_base_dir:../

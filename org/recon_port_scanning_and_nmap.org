@@ -17,29 +17,44 @@ Flags:
     - =-sC: default scripts=
 
 
+Full TCP:
+#+begin_src sh
+nmap -sV -sC -p- -o nmap.out -vvv $RHOST
+#+end_src
+
 ** UDP Scan
 #+begin_src sh
 sudo nmap -sU -sS -sC -sV -oA <NAME>.udp <IP> -v
 #+end_src
 
+#+begin_src sh
+nmap -sU --top-ports 20 -o nmap-udp.out -vvv $RHOST
+#+end_src
 ** Script categories
-src_sh{nmap --script vuln,safe,discovery -oN scan.txt target-ip}
-
+#+begin_src sh
+nmap --script vuln,safe,discovery -oN scan.txt target-ip
+#+end_src
 
 ** List available nse scripts
-src_sh{ls -lh /usr/share/nmap/scripts/}
-
+#+begin_src sh
+ls -lh /usr/share/nmap/scripts/
+#+end_src
 
 ** nmap through socks4 proxy
-src_sh{nmap --proxies socks4://proxy-ip:1080 target-ip}
-
+#+begin_src sh
+nmap --proxies socks4://proxy-ip:1080 target-ip
+#+end_src
 ** ftp bounce scan
-src_sh{nmap -P0 -n -b username:password@target-ip target2-ip --proxies socks4://proxy-ip:1080 -vvvv}
-
+#+begin_src sh
+nmap -P0 -n -b username:password@target-ip target2-ip --proxies socks4://proxy-ip:1080 -vvv
+#+end_src
 ** format
 #+begin_src sh
 ports=$(nmap -p- -Pn --min-rate=1000 -T4 10.10.11.205 | grep '^[0-9]' | cut -d '/' -f 1 | tr '\n' ',' | sed s/,$//)
 nmap -p$ports -Pn -sC -sV 10.10.11.205
 #+end_src
 * nmap Automator
-  src_sh{nmapAutomator <IP> All}
+
+#+begin_src sh
+nmapAutomator <IP> All
+#+end_src

@@ -35,20 +35,36 @@
 <li><code>-sV: Probe open ports to determine service/version info</code></li>
 <li><code>-sC: default scripts</code></li>
 </ul>
-<h3 id="udp-scan">UDP Scan</h3>
+<p>Full TCP:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>nmap -sV -sC -p- -o nmap.out -vvv <span style="color:#bb60d5">$RHOST</span>
+</span></span></code></pre></div><h3 id="udp-scan">UDP Scan</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo nmap -sU -sS -sC -sV -oA &lt;NAME&gt;.udp &lt;IP&gt; -v
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>nmap -sU --top-ports <span style="color:#40a070">20</span> -o nmap-udp.out -vvv <span style="color:#bb60d5">$RHOST</span>
 </span></span></code></pre></div><h3 id="script-categories">Script categories</h3>
-<h3 id="list-available-nse-scripts">List available nse scripts</h3>
-<h3 id="nmap-through-socks4-proxy">nmap through socks4 proxy</h3>
-<h3 id="ftp-bounce-scan">ftp bounce scan</h3>
-<h3 id="format">format</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>nmap --script vuln,safe,discovery -oN scan.txt target-ip
+</span></span></code></pre></div><h3 id="list-available-nse-scripts">List available nse scripts</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ls -lh /usr/share/nmap/scripts/
+</span></span></code></pre></div><h3 id="nmap-through-socks4-proxy">nmap through socks4 proxy</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>nmap --proxies socks4://proxy-ip:1080 target-ip
+</span></span></code></pre></div><h3 id="ftp-bounce-scan">ftp bounce scan</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>nmap -P0 -n -b username:password@target-ip target2-ip --proxies socks4://proxy-ip:1080 -vvv
+</span></span></code></pre></div><h3 id="format">format</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#bb60d5">ports</span><span style="color:#666">=</span><span style="color:#007020;font-weight:bold">$(</span>nmap -p- -Pn --min-rate<span style="color:#666">=</span><span style="color:#40a070">1000</span> -T4 10.10.11.205 | grep <span style="color:#4070a0">&#39;^[0-9]&#39;</span> | cut -d <span style="color:#4070a0">&#39;/&#39;</span> -f <span style="color:#40a070">1</span> | tr <span style="color:#4070a0">&#39;\n&#39;</span> <span style="color:#4070a0">&#39;,&#39;</span> | sed s/,$//<span style="color:#007020;font-weight:bold">)</span>
 </span></span><span style="display:flex;"><span>nmap -p<span style="color:#bb60d5">$ports</span> -Pn -sC -sV 10.10.11.205
 </span></span></code></pre></div><h2 id="nmap-automator">nmap Automator</h2>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>nmapAutomator &lt;IP&gt; All
+</span></span></code></pre></div>
       </div>
       
 
+
+   
+
+   
+
+   
+
+   
 
    
 
