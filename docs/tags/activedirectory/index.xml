@@ -71,6 +71,15 @@ netwrix</description>
     </item>
     
     <item>
+      <title>PowerShell - Lengh limits AD attributes</title>
+      <link>https://kdbed.github.io/posts/powershell_lengh_limits_ad_attributes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/powershell_lengh_limits_ad_attributes/</guid>
+      <description>Determine character limits on AD attributes 1 2 dsquery * cn=Schema,cn=Configuration,dc=contoso,dc=com -filter &amp;#34;(LDAPDisplayName=department)&amp;#34; -attr rangeUpper dsquery * cn=Schema,cn=Configuration,dc=contoso,dc=com -filter &amp;#34;(LDAPDisplayName=department)&amp;#34; -attr rangeUpper </description>
+    </item>
+    
+    <item>
       <title>PowerShell - Search-ADAccount</title>
       <link>https://kdbed.github.io/posts/powershell_search_adaccount/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

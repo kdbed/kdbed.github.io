@@ -1,0 +1,44 @@
+:PROPERTIES:
+:ID:       9648d9c9-0bc9-4752-9519-2a729f12b520
+:END:
+#+title: PowerShell - Convert from Unix Time
+#+filetags: :powershell:
+#+hugo_base_dir:../
+
+* Function to convert from Unix timestamps
+#+begin_src shell -n
+function ConvertFrom-UnixTime {
+    [CmdletBinding(DefaultParameterSetName = "Seconds")]
+    param (
+        [Parameter(Position = 0,
+            ValueFromPipeline = $true,
+            Mandatory = $true,
+            ParameterSetName = "Seconds")]
+        [int]
+        $Seconds,
+
+        [Parameter(Position = 0,
+            ValueFromPipeline = $true,
+            Mandatory = $true, ParameterSetName = "Miliseconds")]
+        [bigint]
+        $Miliseconds
+    )
+    Begin {
+        $date = (Get-Date "1970-01-01 00:00:00.000Z")
+    }
+    Process {
+        switch ($PSCmdlet.ParameterSetName) {
+            "Miliseconds" {
+                $date = $date.AddMilliseconds($Miliseconds)
+            }
+            Default {
+                $date = $date.AddSeconds($Seconds);
+                            }
+        }
+    }
+    End {
+        $date
+    }
+}
+ConvertFrom-UnixTime '1681230017000'
+#+end_src

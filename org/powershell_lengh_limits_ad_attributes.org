@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       02dd6590-75a2-47fd-85ac-029a970762ab
+:END:
+#+title: PowerShell - Lengh limits AD attributes
+#+filetags: :activedirectory:powershell:
+#+hugo_base_dir:../
+
+
+* Determine character limits on AD attributes
+#+begin_src shell -n
+dsquery * cn=Schema,cn=Configuration,dc=contoso,dc=com -filter "(LDAPDisplayName=department)" -attr rangeUpper
+dsquery * cn=Schema,cn=Configuration,dc=contoso,dc=com -filter "(LDAPDisplayName=department)" -attr rangeUpper
+#+end_src

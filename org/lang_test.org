@@ -123,3 +123,19 @@ add_1 5
 
 #+RESULTS:
 : 6
+
+*** map
+#+begin_src haskell :exports both :post org-babel-haskell-formatter(*this*)
+:{
+-- a very verbose way to sum a sequence of numbers:
+sumInts :: Int -> Int -> Int
+sumInts a b =
+    if a == b
+        then b
+        else (+ a) $ (sumInts (a + 1) b)
+:}
+map (\[a,b] -> sumInts a b) [[0, 1] , [1, 3], [1,5], [2,10]]
+#+end_src
+
+#+RESULTS:
+: (1 6 15 54)
