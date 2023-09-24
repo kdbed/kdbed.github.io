@@ -411,7 +411,7 @@ Filesystem FHS - Filesystem Hierarchy Standard - conventions used for layout of 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/lang_test/</guid>
-      <description>extern crate primal; use primal::Sieve; fn num_divisors(n: usize, primes: &amp;amp;Sieve) -&amp;gt; Option&amp;lt;usize&amp;gt; { match primes.factor(n) { Ok(factors) =&amp;gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))), Err(_) =&amp;gt; None, } } fn main() { println!(&amp;#34;24 days of Rust - primal (day 2)&amp;#34;); let sieve = Sieve::new(10000); let suspect = 5273; println!(&amp;#34;{} is prime: {}&amp;#34;, suspect, sieve.is_prime(suspect)); let not_a_prime = 1024; println!(&amp;#34;{} is prime: {}&amp;#34;, not_a_prime, sieve.is_prime(not_a_prime)); let n = 1000; match sieve.</description>
+      <description>Language tests in org Rust extern crate primal; use primal::Sieve; fn num_divisors(n: usize, primes: &amp;amp;Sieve) -&amp;gt; Option&amp;lt;usize&amp;gt; { match primes.factor(n) { Ok(factors) =&amp;gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))), Err(_) =&amp;gt; None, } } fn main() { println!(&amp;#34;24 days of Rust - primal (day 2)&amp;#34;); let sieve = Sieve::new(10000); let suspect = 5273; println!(&amp;#34;{} is prime: {}&amp;#34;, suspect, sieve.is_prime(suspect)); let not_a_prime = 1024; println!(&amp;#34;{} is prime: {}&amp;#34;, not_a_prime, sieve.</description>
     </item>
     
     <item>
@@ -845,6 +845,15 @@ function Encrypt-Script($path, $destination) { $script = Get-Content $path | Out
       <guid>https://kdbed.github.io/posts/powershell_splatting/</guid>
       <description>Splatting in powershell Splatting allows one to format and send arguments to cmdlets and functions. Typically use dash+parameter name+argument
 Copy-Item -Path &amp;#34;Testfile.txt&amp;#34; -Destination &amp;#34;CopiedFile.txt&amp;#34; -WhatIf -force -Recurse Copy-Item ` -Path &amp;#34;Testfile.txt&amp;#34; ` -Destination &amp;#34;CopiedFile.txt&amp;#34; ` -WhatIf ` -force ` Instead you can splat a parameter set. First create a hashtable containing key/value pairs of each parameter and parameter argument. Then pass that set of parameters to the command with @&amp;lt;hashtablename&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>PowerShell - Test Credentials</title>
+      <link>https://kdbed.github.io/posts/powershell_test_credentials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/powershell_test_credentials/</guid>
+      <description>Testing credentials 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 function Test-Cred { [CmdletBinding()] [OutputType([String])] Param ( [Parameter( Mandatory = $false, ValueFromPipeLine = $true, ValueFromPipelineByPropertyName = $true )] [Alias( &amp;#39;PSCredential&amp;#39; )] [ValidateNotNull()] [System.</description>
     </item>
     
     <item>

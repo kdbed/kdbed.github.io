@@ -4,6 +4,11 @@ author = ["svejk"]
 draft = false
 +++
 
+## Language tests in org {#language-tests-in-org}
+
+
+### Rust {#rust}
+
 ```rustic
 extern crate primal;
 
@@ -33,6 +38,44 @@ fn main() {
 }
 ```
 
+
+### C++ {#c-plus-plus}
+
+```cpp { linenos=true, linenostart=1 }
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(void){
+    int niter=10; //Specify the number of samples.
+    srand((unsigned)time(NULL)); //Set the seed of random number generator.
+    int n_in=0; //Initialize the counter.
+/*************/
+/* Main loop */
+/*************/
+    for(int iter=1;iter<niter+1;iter++){
+        double x = (double)rand()/RAND_MAX;
+        double y = (double)rand()/RAND_MAX;
+        //Generate random numbers x,y in [0,1].
+        if(x*x+y*y < 1e0) //If xˆ2+yˆ2<1....
+            n_in=n_in+1; //Add 1 to n_in.
+        printf("%d %.10f\n",iter,(double)n_in/iter);}
+}
+```
+
+```text
+1 1.0000000000
+2 1.0000000000
+3 0.6666666667
+4 0.5000000000
+5 0.4000000000
+6 0.5000000000
+7 0.5714285714
+8 0.6250000000
+9 0.6666666667
+10 0.7000000000
+```
+
 ```cpp { linenos=true, linenostart=1 }
 #include <iostream>
 int main(){
@@ -44,6 +87,9 @@ int main(){
 ```text
 Hello, World.
 ```
+
+
+### C# {#c}
 
 ```csharp { linenos=true, linenostart=1 }
 
@@ -61,4 +107,18 @@ namespace HelloWorld
 
 ```text
 Hello World!
+```
+
+
+### Haskell {#haskell}
+
+```haskell
+add_1 : Nat -> Nat
+add_1 x = x + 1
+
+add_1 5
+```
+
+```text
+ghci> ghci> 6
 ```

@@ -5,7 +5,8 @@
 #+hugo_base_dir:../
 
 
-
+* Language tests in org
+** Rust
 #+BEGIN_SRC rustic :crates '((regex . 0.2)(primal . 0.3.2)) :output results
 extern crate primal;
 
@@ -42,6 +43,45 @@ fn main() {
 : 1000th prime is 7919
 : Ok([(2, 1), (3, 2), (5, 1), (29, 1)])
 : Some(24)
+** C++
+#+begin_src cpp -n :exports both :results output verbatim
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(void){
+    int niter=10; //Specify the number of samples.
+    srand((unsigned)time(NULL)); //Set the seed of random number generator.
+    int n_in=0; //Initialize the counter.
+/*************/
+/* Main loop */
+/*************/
+    for(int iter=1;iter<niter+1;iter++){
+        double x = (double)rand()/RAND_MAX;
+        double y = (double)rand()/RAND_MAX;
+        //Generate random numbers x,y in [0,1].
+        if(x*x+y*y < 1e0) //If xˆ2+yˆ2<1....
+            n_in=n_in+1; //Add 1 to n_in.
+        printf("%d %.10f\n",iter,(double)n_in/iter);}
+}
+#+end_src
+
+#+RESULTS:
+#+begin_example
+1 1.0000000000
+2 1.0000000000
+3 1.0000000000
+4 1.0000000000
+5 1.0000000000
+6 1.0000000000
+7 1.0000000000
+8 1.0000000000
+9 1.0000000000
+10 1.0000000000
+#+end_example
+
+
+
 
 #+begin_src cpp -n :exports both :results output verbatim
 #include <iostream>
@@ -53,7 +93,7 @@ int main(){
 
 #+RESULTS:
 : Hello, World.
-
+** C#
 
 #+begin_src csharp -n :exports both :results output verbatim
 
@@ -71,3 +111,15 @@ namespace HelloWorld
 
 #+RESULTS:
 : Hello World!
+
+
+** Haskell
+#+begin_src haskell :exports both
+add_1 : Nat -> Nat
+add_1 x = x + 1
+
+add_1 5
+#+end_src
+
+#+RESULTS:
+: 6

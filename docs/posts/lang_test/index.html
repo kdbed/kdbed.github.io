@@ -27,7 +27,9 @@
     <div class="page" data-level="1">
       <div class="content">
         <h1>Lang - Test</h1>
-        <pre tabindex="0"><code class="language-rustic" data-lang="rustic">extern crate primal;
+        <h2 id="language-tests-in-org">Language tests in org</h2>
+<h3 id="rust">Rust</h3>
+<pre tabindex="0"><code class="language-rustic" data-lang="rustic">extern crate primal;
 
 use primal::Sieve;
 
@@ -53,7 +55,62 @@ fn main() {
     println!(&#34;{:?}&#34;, sieve.factor(2610));
     println!(&#34;{:?}&#34;, num_divisors(2610, &amp;sieve));
 }
-</code></pre><div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+</code></pre><h3 id="c-plus-plus">C++</h3>
+<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#007020">#include</span> <span style="color:#007020">&lt;stdio.h&gt;</span><span style="color:#007020">
+</span></span></span><span style="display:flex;"><span><span style="color:#007020">#include</span> <span style="color:#007020">&lt;stdlib.h&gt;</span><span style="color:#007020">
+</span></span></span><span style="display:flex;"><span><span style="color:#007020">#include</span> <span style="color:#007020">&lt;time.h&gt;</span><span style="color:#007020">
+</span></span></span><span style="display:flex;"><span><span style="color:#007020"></span>
+</span></span><span style="display:flex;"><span><span style="color:#902000">int</span> <span style="color:#06287e">main</span>(<span style="color:#902000">void</span>){
+</span></span><span style="display:flex;"><span>    <span style="color:#902000">int</span> niter<span style="color:#666">=</span><span style="color:#40a070">10</span>; <span style="color:#60a0b0;font-style:italic">//Specify the number of samples.
+</span></span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"></span>    srand((<span style="color:#902000">unsigned</span>)time(<span style="color:#007020">NULL</span>)); <span style="color:#60a0b0;font-style:italic">//Set the seed of random number generator.
+</span></span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"></span>    <span style="color:#902000">int</span> n_in<span style="color:#666">=</span><span style="color:#40a070">0</span>; <span style="color:#60a0b0;font-style:italic">//Initialize the counter.
+</span></span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"></span><span style="color:#60a0b0;font-style:italic">/*************/</span>
+</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">/* Main loop */</span>
+</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">/*************/</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#007020;font-weight:bold">for</span>(<span style="color:#902000">int</span> iter<span style="color:#666">=</span><span style="color:#40a070">1</span>;iter<span style="color:#666">&lt;</span>niter<span style="color:#666">+</span><span style="color:#40a070">1</span>;iter<span style="color:#666">++</span>){
+</span></span><span style="display:flex;"><span>        <span style="color:#902000">double</span> x <span style="color:#666">=</span> (<span style="color:#902000">double</span>)rand()<span style="color:#666">/</span>RAND_MAX;
+</span></span><span style="display:flex;"><span>        <span style="color:#902000">double</span> y <span style="color:#666">=</span> (<span style="color:#902000">double</span>)rand()<span style="color:#666">/</span>RAND_MAX;
+</span></span><span style="display:flex;"><span>        <span style="color:#60a0b0;font-style:italic">//Generate random numbers x,y in [0,1].
+</span></span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"></span>        <span style="color:#007020;font-weight:bold">if</span>(x<span style="color:#666">*</span>x<span style="color:#666">+</span>y<span style="color:#666">*</span>y <span style="color:#666">&lt;</span> <span style="color:#40a070">1e0</span>) <span style="color:#60a0b0;font-style:italic">//If xˆ2+yˆ2&lt;1....
+</span></span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"></span>            n_in<span style="color:#666">=</span>n_in<span style="color:#666">+</span><span style="color:#40a070">1</span>; <span style="color:#60a0b0;font-style:italic">//Add 1 to n_in.
+</span></span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"></span>        printf(<span style="color:#4070a0">&#34;%d %.10f</span><span style="color:#4070a0;font-weight:bold">\n</span><span style="color:#4070a0">&#34;</span>,iter,(<span style="color:#902000">double</span>)n_in<span style="color:#666">/</span>iter);}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>1 1.0000000000
+</span></span><span style="display:flex;"><span>2 1.0000000000
+</span></span><span style="display:flex;"><span>3 0.6666666667
+</span></span><span style="display:flex;"><span>4 0.5000000000
+</span></span><span style="display:flex;"><span>5 0.4000000000
+</span></span><span style="display:flex;"><span>6 0.5000000000
+</span></span><span style="display:flex;"><span>7 0.5714285714
+</span></span><span style="display:flex;"><span>8 0.6250000000
+</span></span><span style="display:flex;"><span>9 0.6666666667
+</span></span><span style="display:flex;"><span>10 0.7000000000
+</span></span></code></pre></div><div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
@@ -70,7 +127,8 @@ fn main() {
 </span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Hello, World.
-</span></span></code></pre></div><div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+</span></span></code></pre></div><h3 id="c">C#</h3>
+<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
@@ -99,10 +157,18 @@ fn main() {
 </span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Hello World!
+</span></span></code></pre></div><h3 id="haskell">Haskell</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-haskell" data-lang="haskell"><span style="display:flex;"><span><span style="color:#06287e">add_1</span> <span style="color:#902000">:</span> <span style="color:#902000">Nat</span> <span style="color:#007020;font-weight:bold">-&gt;</span> <span style="color:#902000">Nat</span>
+</span></span><span style="display:flex;"><span><span style="color:#06287e">add_1</span> x <span style="color:#007020;font-weight:bold">=</span> x <span style="color:#666">+</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#06287e">add_1</span> <span style="color:#40a070">5</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ghci&gt; ghci&gt; 6
 </span></span></code></pre></div>
       </div>
       
 
+
+   
 
    
 
