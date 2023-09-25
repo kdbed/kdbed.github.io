@@ -578,10 +578,14 @@ print(&amp;#39;ello, world!&amp;#39;) Create a plot import matplotlib.pyplot as 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/pentest_active_directory/</guid>
-      <description>Active Directory attacks and enumeration Kerbrute Enumeration Privileges: No domain access required
+      <description>Active Directory attacks and enumeration Bloodhound Kerbrute Enumeration Privileges: No domain access required
 Pass the Ticket (PtT) Attack Privileges: Domain user access
 Kerberoasting Privileges: Access as any user
-AS-REP Roasting Privileges: Access as any user **</description>
+AS-REP Roasting Privileges: Access as any user
+Golden Ticket Privileges: Full domain compromise (domain admin)
+Silver Ticket Privileges: Service hash
+Pentest - Active Directory - Skeleton Key Privileges: Full domain compromise (domain admin)
+References dw3113r </description>
     </item>
     
     <item>
