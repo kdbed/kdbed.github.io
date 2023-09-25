@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       9e3ca3cd-c156-4687-b859-7b4f8cad5dce
+:END:
+#+title: Cracking - Ansible
+#+filetags: :pentest:cracking:ansible:
+#+hugo_base_dir:../
+
+
+* Cracking [[id:ff769eaa-4e1e-48d1-b4b6-ee466a9bb2d5][Ansible]] vaults
+Find Ansible vault -- encrypted creds
+#+begin_src sh
+$ANSIBLE_VAULT;1.1;AES256
+          32666534386435366537653136663731633138616264323230383566333966346662313161326239
+          6134353663663462373265633832356663356239383039640a346431373431666433343434366139
+          35653634376333666234613466396534343030656165396464323564373334616262613439343033
+          6334326263326364380a653034313733326639323433626130343834663538326439636232306531
+          3438
+#+end_src
+
+Convert to correct form for john
+#+begin_src sh
+/usr/share/john/ansible2john.py pwm_ansible_admin.yml > out.yml
+#+end_src
+
+Then crack with john --

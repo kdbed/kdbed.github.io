@@ -7,18 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://kdbed.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>#&#43;title: Pentest - Active Directory - Certificate Services</title>
-      <link>https://kdbed.github.io/posts/active_directory_certificate_services_pentest/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/active_directory_certificate_services_pentest/</guid>
-      <description>Active Directory Certificate Services social.technet.microsoft.com
-Active Directory Certificate Services (AD CS) is an Active Directory server role which allows users to build PKI (Public Key Infrastructure). This can provide practical solutions for VPN access, SSL/TLS certificates and smart card logons, amongst other similar ubiquitous technologies you are likely to encounter on a daily basis. medium - shaun whorton
-Abusing misconfigured certificate templates Use Certify.exe to enumerate Certificate Services GhostPack/Certify
-PS C:\ &amp;gt; .</description>
-    </item>
-    
-    <item>
       <title>1433 - Pentesting MSSQL - Microsoft SQL Server</title>
       <link>https://kdbed.github.io/posts/pentesting_mssql_microsoft_sql_server/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -121,6 +109,15 @@ Use the Impacket tool GetNPUsers.py to try to get a hash for each user</descript
     </item>
     
     <item>
+      <title>Bloodhound</title>
+      <link>https://kdbed.github.io/posts/bloodhound/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/bloodhound/</guid>
+      <description>Bloodhound bloodhound-python bloodhound-python -u &amp;#39;&amp;lt;user&amp;gt;&amp;#39; -p &amp;#39;&amp;lt;pw&amp;gt;&amp;#39; --dns-tcp -ns &amp;lt;ip&amp;gt; -d &amp;lt;domain&amp;gt; -c all root@kali:~# bloodhound-python -h usage: bloodhound-python [-h] [-c COLLECTIONMETHOD] [-d DOMAIN] [-v] [-u USERNAME] [-p PASSWORD] [-k] [--hashes HASHES] [-no-pass] [-aesKey hex key] [--auth-method {auto,ntlm,kerberos}] [-ns NAMESERVER] [--dns-tcp] [--dns-timeout DNS_TIMEOUT] [-dc HOST] [-gc HOST] [-w WORKERS] [--exclude-dcs] [--disable-pooling] [--disable-autogc] [--zip] [--computerfile COMPUTERFILE] [--cachefile CACHEFILE] Python based ingestor for BloodHound For help or reporting issues, visit https://github.com/Fox-IT/BloodHound.py options: -h, --help show this help message and exit -c COLLECTIONMETHOD, --collectionmethod COLLECTIONMETHOD Which information to collect.</description>
+    </item>
+    
+    <item>
       <title>C&#43;&#43; - STL</title>
       <link>https://kdbed.github.io/posts/c_stl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -175,6 +172,17 @@ Code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 #include &amp;l
       
       <guid>https://kdbed.github.io/posts/conditions_of_causation/</guid>
       <description>Conditions of Causality There are four conditions of causality: logical time ordering, correlation, mechanism, and nonspuriousness. Logical time ordering refers to the idea that one variable needs to precede another variable in time for the first variable to influence the second variable. For example, throughout the world, people are protesting their governments. In some countries, governments respond with the metaphorical yawn. However, in other countries, the governments may respond with repressive tactics.</description>
+    </item>
+    
+    <item>
+      <title>Cracking - Ansible</title>
+      <link>https://kdbed.github.io/posts/cracking_ansible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/cracking_ansible/</guid>
+      <description>Cracking Ansible vaults Find Ansible vault &amp;ndash; encrypted creds
+$ANSIBLE_VAULT;1.1;AES256 32666534386435366537653136663731633138616264323230383566333966346662313161326239 6134353663663462373265633832356663356239383039640a346431373431666433343434366139 35653634376333666234613466396534343030656165396464323564373334616262613439343033 6334326263326364380a653034313733326639323433626130343834663538326439636232306531 3438 Convert to correct form for john
+/usr/share/john/ansible2john.py pwm_ansible_admin.yml &amp;gt; out.yml Then crack with john &amp;ndash;</description>
     </item>
     
     <item>
@@ -574,6 +582,18 @@ print(&amp;#39;ello, world!&amp;#39;) Create a plot import matplotlib.pyplot as 
 Pass the Ticket (PtT) Attack Privileges: Domain user access
 Kerberoasting Privileges: Access as any user
 AS-REP Roasting Privileges: Access as any user **</description>
+    </item>
+    
+    <item>
+      <title>Pentest - Active Directory - Certificate Services</title>
+      <link>https://kdbed.github.io/posts/active_directory_certificate_services_pentest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/active_directory_certificate_services_pentest/</guid>
+      <description>Active Directory Certificate Services social.technet.microsoft.com
+Active Directory Certificate Services (AD CS) is an Active Directory server role which allows users to build PKI (Public Key Infrastructure). This can provide practical solutions for VPN access, SSL/TLS certificates and smart card logons, amongst other similar ubiquitous technologies you are likely to encounter on a daily basis. medium - shaun whorton
+Abusing misconfigured certificate templates Use Certify.exe to enumerate Certificate Services GhostPack/Certify
+PS C:\ &amp;gt; .</description>
     </item>
     
     <item>

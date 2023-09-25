@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       ff769eaa-4e1e-48d1-b4b6-ee466a9bb2d5
+:END:
+#+title: Ansible
+#+hugo_base_dir:../

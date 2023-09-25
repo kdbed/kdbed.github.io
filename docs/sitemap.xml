@@ -8,8 +8,6 @@
     <loc>https://kdbed.github.io/search/</loc>
     <lastmod>2022-05-29T21:44:03+08:00</lastmod>
   </url><url>
-    <loc>https://kdbed.github.io/posts/active_directory_certificate_services_pentest/</loc>
-  </url><url>
     <loc>https://kdbed.github.io/posts/pentesting_mssql_microsoft_sql_server/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/abortion/</loc>
@@ -30,6 +28,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/algorithms/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/ansible/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/ansible_playbook_weaponization/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/antivirus/</loc>
@@ -45,6 +45,10 @@
     <loc>https://kdbed.github.io/posts/binary_analysis/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/birthdayattack/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/bloodhound/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/bloodhound/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/browser/</loc>
   </url><url>
@@ -81,6 +85,10 @@
     <loc>https://kdbed.github.io/tags/cpp/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/crack/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/cracking/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/cracking_ansible/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/cracking_pdf/</loc>
   </url><url>
@@ -245,6 +253,8 @@
     <loc>https://kdbed.github.io/tags/pentest/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_active_directory/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/active_directory_certificate_services_pentest/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_active_directory_dcsync/</loc>
   </url><url>
