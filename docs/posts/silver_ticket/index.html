@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><title>PowerShell - Script Encryption</title>
+<html><title>Silver Ticket</title>
 
 
 <meta charset="utf-8">
@@ -26,28 +26,8 @@
   <div class="grid">
     <div class="page" data-level="1">
       <div class="content">
-        <h1>PowerShell - Script Encryption</h1>
-        <h2 id="encrypt-powershell--powershell-dot-md--scripts">Encrypt <a href="/posts/powershell/">powershell</a> Scripts</h2>
-<p>Function to obfuscate code containing sensitive data:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">function</span><span style="color:#bbb"> </span><span style="color:#007020">Encrypt-Script($path</span>, <span style="color:#bb60d5">$destination</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#bb60d5">$script</span> = <span style="color:#007020">Get-Content</span> <span style="color:#bb60d5">$path</span> | <span style="color:#007020">Out-String</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#bb60d5">$secure</span> = <span style="color:#007020">ConvertTo-SecureString</span> <span style="color:#bb60d5">$script</span> -asPlainText -force
-</span></span><span style="display:flex;"><span>    <span style="color:#bb60d5">$export</span> = <span style="color:#bb60d5">$secure</span> | <span style="color:#007020">ConvertFrom-SecureString</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#007020">Set-Content</span> <span style="color:#bb60d5">$destination</span> <span style="color:#bb60d5">$export</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#34;Script &#39;</span><span style="color:#bb60d5">$path</span><span style="color:#4070a0">&#39; has been encrypted as &#39;</span><span style="color:#bb60d5">$destination</span><span style="color:#4070a0">&#39;&#34;</span>
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">function</span><span style="color:#bbb"> </span><span style="color:#007020">Execute-EncryptedScript($path</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#007020;font-weight:bold">trap</span> { <span style="color:#4070a0">&#34;Decryption failed&#34;</span>; <span style="color:#007020;font-weight:bold">break</span> }
-</span></span><span style="display:flex;"><span>    <span style="color:#bb60d5">$raw</span> = <span style="color:#007020">Get-Content</span> <span style="color:#bb60d5">$path</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#bb60d5">$secure</span> = <span style="color:#007020">ConvertTo-SecureString</span> <span style="color:#bb60d5">$raw</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#bb60d5">$helper</span> = <span style="color:#007020">New-Object</span> system.Management.Automation.PSCredential(<span style="color:#4070a0">&#34;test&#34;</span>, <span style="color:#bb60d5">$secure</span>)
-</span></span><span style="display:flex;"><span>    <span style="color:#bb60d5">$plain</span> = <span style="color:#bb60d5">$helper</span>.GetNetworkCredential().Password
-</span></span><span style="display:flex;"><span>    <span style="color:#007020">Invoke-Expression</span> <span style="color:#bb60d5">$plain</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>From: <a href="https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/encrypting-powershell-scripts#">idera</a></p>
-
+        <h1>Silver Ticket</h1>
+        
       </div>
       
 
@@ -301,6 +281,8 @@
    
 
    
+      
+   
 
    
 
@@ -511,8 +493,19 @@
    
 
    
+
 
 
+  <div class="bl-section">
+    <h4>Links to this note</h4>
+    <div class="backlinks">
+      <ul>
+       
+          <li><a href="/posts/pentest_active_directory/">Pentest - Active Directory</a></li>
+       
+     </ul>
+    </div>
+  </div>
 
 
       </div>
