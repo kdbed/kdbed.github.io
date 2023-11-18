@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1433f75f-4c04-4c6e-a1ef-70d88bc5a010
+:END:
+#+title: Master Boot Record (MBR)
+#+filetags: :operatingSystem:
+#+hugo_base_dir:../

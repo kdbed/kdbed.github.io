@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       221c557a-9be6-42aa-ba78-9bacd4871c7c
+:END:
+#+title: Home Lab
+#+filetags: :pentest:
+#+hugo_base_dir:../
+
+
+* Home Lab Resources
+** [[https://mayfly277.github.io/posts/GOADv2/][mayfly - GOADv2]]
+** [[https://github.com/clong/DetectionLab][DetectionLab]]
+** [[https://unicornsec.com/home/siem-home-lab-series-part-1][unicornsec]]

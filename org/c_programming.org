@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       ea171d8e-72bc-4f97-954a-1846de571661
+:END:
+#+title: C Programming
+#+filetags: :programming:examples:
+#+hugo_base_dir:../
+
+
+* C Programming
+** Basics
+*** Code Analysis
+- clang-tidy static code analysis tool - [[https://clang.llvm.org/extra/clang-tidy/checks/list.html][clang-tidy checks]]
+- Security standards : SEI CERT C Coding Standard : [[https://wiki.sei.cmu.edu/confluence/display/c]]
+- Secure Coding in C and C++, 2/e by Robert Seacord

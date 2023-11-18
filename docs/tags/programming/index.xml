@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming on Braindump</title>
+    <link>https://kdbed.github.io/tags/programming/</link>
+    <description>Recent content in programming on Braindump</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C Programming</title>
+      <link>https://kdbed.github.io/posts/c_programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/c_programming/</guid>
+      <description>C Programming Basics Code Analysis clang-tidy static code analysis tool - clang-tidy checks Security standards : SEI CERT C Coding Standard : https://wiki.sei.cmu.edu/confluence/display/c Secure Coding in C and C++, 2/e by Robert Seacord </description>
+    </item>
+    
+  </channel>
+</rss>

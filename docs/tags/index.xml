@@ -313,6 +313,15 @@
     </item>
     
     <item>
+      <title>examples</title>
+      <link>https://kdbed.github.io/tags/examples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/examples/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>exploit</title>
       <link>https://kdbed.github.io/tags/exploit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -588,6 +597,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/tags/privesc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://kdbed.github.io/tags/programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/programming/</guid>
       <description></description>
     </item>
     

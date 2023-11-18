@@ -119,6 +119,15 @@ Use the Impacket tool GetNPUsers.py to try to get a hash for each user</descript
     </item>
     
     <item>
+      <title>C Programming</title>
+      <link>https://kdbed.github.io/posts/c_programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/c_programming/</guid>
+      <description>C Programming Basics Code Analysis clang-tidy static code analysis tool - clang-tidy checks Security standards : SEI CERT C Coding Standard : https://wiki.sei.cmu.edu/confluence/display/c Secure Coding in C and C++, 2/e by Robert Seacord </description>
+    </item>
+    
+    <item>
       <title>C&#43;&#43; - STL</title>
       <link>https://kdbed.github.io/posts/c_stl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
