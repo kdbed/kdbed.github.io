@@ -1,10 +1,14 @@
 :PROPERTIES:
 :ID:       d6ffa79f-f55e-4b01-97b8-29a6185f5bbc
 :END:
-#+title: Kerbrute Enumeration
-#+filetags: :enumeration:AD:pentest:
+#+title: Kerbrute
+#+filetags: :passwordAttack:AD:pentest:
 #+hugo_base_dir:../
 
 
-* Kerbrute Enumeration
- -
+* Kerbrute
+ - based on obtaining a TGT. For example, using kinit on a Linux system, we can obtain and cache a Kerberos TGT. We'll need to provide a username and password to do this. If the credentials are valid, we'll obtain a TGT. The advantage of this technique is that it only uses two UDP frames to determine whether the password is valid, as it sends only an AS-REQ and examines the response.
+
+#+begin_src shell -n
+.\kerbrute_windows_amd64.exe passwordspray -d domain.com .\usernames.txt "Password123!"
+#+end_src

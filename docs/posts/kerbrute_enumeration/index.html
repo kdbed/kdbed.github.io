@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><title>Kerbrute Enumeration</title>
+<html><title>Kerbrute</title>
 
 
 <meta charset="utf-8">
@@ -26,12 +26,21 @@
   <div class="grid">
     <div class="page" data-level="1">
       <div class="content">
-        <h1>Kerbrute Enumeration</h1>
-        <h2 id="kerbrute-enumeration">Kerbrute Enumeration</h2>
+        <h1>Kerbrute</h1>
+        <h2 id="kerbrute">Kerbrute</h2>
 <ul>
-<li></li>
+<li>based on obtaining a TGT. For example, using kinit on a Linux system, we can obtain and cache a Kerberos TGT. We&rsquo;ll need to provide a username and password to do this. If the credentials are valid, we&rsquo;ll obtain a TGT. The advantage of this technique is that it only uses two UDP frames to determine whether the password is valid, as it sends only an AS-REQ and examines the response.</li>
 </ul>
-
+<!--listend-->
+<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>.<span style="color:#4070a0;font-weight:bold">\k</span>erbrute_windows_amd64.exe passwordspray -d domain.com .<span style="color:#4070a0;font-weight:bold">\u</span>sernames.txt <span style="color:#4070a0">&#34;Password123!&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
       </div>
       
 
@@ -293,7 +302,41 @@
    
 
    
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
       
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
    
 
    

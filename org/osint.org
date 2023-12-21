@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       67d4605e-1ce9-4d92-9c7c-26264cd08bdc
+:END:
+#+title: OSINT
+#+hugo_base_dir:../

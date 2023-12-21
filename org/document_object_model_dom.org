@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       7f4c9e29-a5f5-4df3-bad4-a38ad162f68b
+:END:
+#+title: Document Object Model (DOM)
+#+hugo_base_dir:../
+
+
+* Document Object Model (DOM)

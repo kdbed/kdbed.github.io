@@ -214,6 +214,17 @@ Approaches There are different approaches to DLL hijacking, and success will be 
     </item>
     
     <item>
+      <title>DNS - Basics</title>
+      <link>https://kdbed.github.io/posts/dns_basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/dns_basics/</guid>
+      <description>Domain Name System (DNS) The Domain Name System (DNS) is a distributed database responsible for translating domain names into IP addresses. It&amp;rsquo;s composed of a hierarchical structure that is divided into several zones, starting with the top-level root zone.
+Each domain can use different types of DNS records. Some of the most common types of DNS records include:
+NS: Nameserver records contain the name of the authoritative servers hosting the DNS records for a domain.</description>
+    </item>
+    
+    <item>
       <title>DNS Zone Transfers</title>
       <link>https://kdbed.github.io/posts/dnszonetransfers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -221,6 +232,15 @@ Approaches There are different approaches to DLL hijacking, and success will be 
       <guid>https://kdbed.github.io/posts/dnszonetransfers/</guid>
       <description>DNS Zone Transfers DNS zone transfers using the AXFR protocol are the simplest mechanism to replicate DNS records across DNS servers. To avoid the need to edit information on multiple DNS servers, you can edit information on one server and use AXFR to copy information to other servers. However, if you do not protect your servers, malicious parties may use AXFR to get information about all your hosts.
 How DNS Works DNS (Domain Name System) is like an Internet phonebook.</description>
+    </item>
+    
+    <item>
+      <title>Document Object Model (DOM)</title>
+      <link>https://kdbed.github.io/posts/document_object_model_dom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/document_object_model_dom/</guid>
+      <description>Document Object Model (DOM) </description>
     </item>
     
     <item>
@@ -287,6 +307,15 @@ More Than the Sum of Their Parts </description>
       
       <guid>https://kdbed.github.io/posts/golden_ticket/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Google Hacking</title>
+      <link>https://kdbed.github.io/posts/google_hacking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/google_hacking/</guid>
+      <description>Operators ahrefs </description>
     </item>
     
     <item>
@@ -414,12 +443,21 @@ Filesystem FHS - Filesystem Hierarchy Standard - conventions used for layout of 
     </item>
     
     <item>
-      <title>Kerbrute Enumeration</title>
+      <title>Kerberos Authentication</title>
+      <link>https://kdbed.github.io/posts/kerberos_authentication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/kerberos_authentication/</guid>
+      <description>*</description>
+    </item>
+    
+    <item>
+      <title>Kerbrute</title>
       <link>https://kdbed.github.io/posts/kerbrute_enumeration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/kerbrute_enumeration/</guid>
-      <description>Kerbrute Enumeration </description>
+      <description>Kerbrute based on obtaining a TGT. For example, using kinit on a Linux system, we can obtain and cache a Kerberos TGT. We&amp;rsquo;ll need to provide a username and password to do this. If the credentials are valid, we&amp;rsquo;ll obtain a TGT. The advantage of this technique is that it only uses two UDP frames to determine whether the password is valid, as it sends only an AS-REQ and examines the response.</description>
     </item>
     
     <item>
@@ -509,6 +547,15 @@ Execution: Run from memory and send back to attacker:
     </item>
     
     <item>
+      <title>Mimikatz</title>
+      <link>https://kdbed.github.io/posts/mimikatz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/mimikatz/</guid>
+      <description>**</description>
+    </item>
+    
+    <item>
       <title>NetBIOS</title>
       <link>https://kdbed.github.io/posts/netbios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -533,6 +580,15 @@ Execution: Run from memory and send back to attacker:
       
       <guid>https://kdbed.github.io/posts/nietzsche_and_stoicism/</guid>
       <description>Nietzsche and Stoicism Resolution of contradictions After describing the Stoics’ essential psychological characteristics, Nietzsche advances two obscure but critical remarks. First, he questions whether the Stoics’ attainment of their ethical ideal is significant on the grounds that the decision to adopt Stoic therapy is determined in advance by one’s character. Second, he rebukes the Stoics for underestimating the worth of pain and passion, and for the fatalistic acceptance of life that their therapy produces.</description>
+    </item>
+    
+    <item>
+      <title>NTLM Authentication</title>
+      <link>https://kdbed.github.io/posts/ntlm_authentication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/ntlm_authentication/</guid>
+      <description>NTLM Authentication Process I enter my username and password on my local computer. My computer runs the password I typed through the standard hashing algorithm used by both client machines like mine and the domain controllers (DCs) that provide authentication and authorization services. That gives it my password hash, which it will use in Step 5. My machine sends the nearest DC a logon request, which includes my username. The DC sends back a random number, which is known as a logon challenge.</description>
     </item>
     
     <item>
@@ -582,6 +638,15 @@ print(&amp;#39;ello, world!&amp;#39;) Create a plot import matplotlib.pyplot as 
     </item>
     
     <item>
+      <title>OSINT</title>
+      <link>https://kdbed.github.io/posts/osint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/osint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Pass the Ticket (PtT) Attack</title>
       <link>https://kdbed.github.io/posts/pass_the_ticket_ptt_attack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -596,14 +661,11 @@ print(&amp;#39;ello, world!&amp;#39;) Create a plot import matplotlib.pyplot as 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/pentest_active_directory/</guid>
-      <description>Active Directory attacks and enumeration Bloodhound Kerbrute Enumeration Privileges: No domain access required
-Pass the Ticket (PtT) Attack Privileges: Domain user access
-Kerberoasting Privileges: Access as any user
-AS-REP Roasting Privileges: Access as any user
-Golden Ticket Privileges: Full domain compromise (domain admin)
-Silver Ticket Privileges: Service hash
-Pentest - Active Directory - Skeleton Key Privileges: Full domain compromise (domain admin)
-References dw3113r </description>
+      <description>Active Directory Enumeration Legacy Windows Tools Use net.exe to gather user information
+1 net user /domain A more detailed view of specific users in the output above:
+1 net user &amp;lt;username&amp;gt; /domain Enumerate groups:
+1 net group /domain Specifying a group:
+1 net group &amp;lt;groupname&amp;gt; /domain PowerShell and .NET When RSAT tools aren&amp;rsquo;t available, we can use an Active Directory Services Interface ADSI (a set of interfaces built on COM as an LDAP provider.</description>
     </item>
     
     <item>
@@ -649,6 +711,36 @@ netwrix</description>
     </item>
     
     <item>
+      <title>Pentest - Active Information Gathering</title>
+      <link>https://kdbed.github.io/posts/pentest_active_information_gathering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentest_active_information_gathering/</guid>
+      <description>Active Information Gathering DNS DNS - Basics DNS Enumeration - Basics DNS forward lookup brute-forcing to determine additional IPs belonging to a domain:
+1 for ip in $(cat list.txt); do host $ip.domain.com; done Comprehensive lists available at SecLists. Based on IPs determined from the above, we can perform reverse lookups by scanning an associated range:
+1 for ip in $(seq 200 254); do host xxx.xxx.xxx.$ip; done | grep -v &amp;#34;not found&amp;#34; dnsrecon dnsenum2 nslookup TCP/UDP Port Scanning Simple port scan with Netcat:</description>
+    </item>
+    
+    <item>
+      <title>Pentest - Antivirus Evasion</title>
+      <link>https://kdbed.github.io/posts/pentest_antivirus_evasion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentest_antivirus_evasion/</guid>
+      <description>Antivirus Evasion YARA </description>
+    </item>
+    
+    <item>
+      <title>Pentest - Exploits</title>
+      <link>https://kdbed.github.io/posts/pentest_exploits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentest_exploits/</guid>
+      <description>Publicly Available Exploits Exploit-DB packet storm GitHub Offsec SearchSploit Update exploitdb on kali:
+1 sudo apt update &amp;amp;&amp;amp; sudo apt install exploitdb NMap - NSE Scripts are located by default in: /usr/share/nmap/scripts</description>
+    </item>
+    
+    <item>
       <title>Pentest - Generating Wordlists</title>
       <link>https://kdbed.github.io/posts/pentest_generatingwordlists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -673,7 +765,7 @@ On Linux, gRPC provides a mechanism for building distributed systems by allowing
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/pentest_passive_information_gathering/</guid>
-      <description></description>
+      <description>Passive Information Gathering Also known as open-source intelligence OSINT &amp;ndash; the process of collecting freely-available information about a target, often with no direct interaction/contact with target assets. In a strict interpretation, there&amp;rsquo;s zero interaction with the target, eg all information is obtained through a third party. More loosely, passive information gathering allows for interaction with the target, but only as a normal user, eg registering for an account on the corporate website.</description>
     </item>
     
     <item>
@@ -970,14 +1062,14 @@ Quote 2 &amp;ldquo;Meet these two here,&amp;rdquo; the man said. &amp;ldquo;Ask 
     </item>
     
     <item>
-      <title>Recon - Port Scanning and nmap</title>
+      <title>Recon - Port Scanning and Nmap</title>
       <link>https://kdbed.github.io/posts/recon_port_scanning_and_nmap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/recon_port_scanning_and_nmap/</guid>
-      <description>Basic nmap scan nmap -sC -sV -oA nmap/result &amp;lt;ip&amp;gt; Flags:
--oA &amp;lt;basename&amp;gt;: Output in the three major formats at once -sV: Probe open ports to determine service/version info -sC: default scripts Full TCP:
-nmap -sV -sC -p- -o nmap.out -vvv $RHOST UDP Scan sudo nmap -sU -sS -sC -sV -oA &amp;lt;NAME&amp;gt;.udp &amp;lt;IP&amp;gt; -v nmap -sU --top-ports 20 -o nmap-udp.out -vvv $RHOST Script categories nmap --script vuln,safe,discovery -oN scan.txt target-ip List available nse scripts ls -lh /usr/share/nmap/scripts/ nmap through socks4 proxy nmap --proxies socks4://proxy-ip:1080 target-ip ftp bounce scan nmap -P0 -n -b username:password@target-ip target2-ip --proxies socks4://proxy-ip:1080 -vvv format ports=$(nmap -p- -Pn --min-rate=1000 -T4 10.</description>
+      <description>Nmap scanning SYN (stealth) scan TCP handshake not completed (ACK not sent)
+1 nmap -sS &amp;lt;ip&amp;gt; Because the three-way handshake is never completed, the information is not passed to the application layer and as a result, will not appear in any application logs. A SYN scan is also faster and more efficient because fewer packets are sent and received.
+TCP Connect Scan 1 nmap -sT &amp;lt;ip&amp;gt; TCP SYN Scan and UDP Scan 1 nmap -sU -sS 192.</description>
     </item>
     
     <item>
@@ -1075,6 +1167,16 @@ decompile pycdc</description>
     </item>
     
     <item>
+      <title>SNMP</title>
+      <link>https://kdbed.github.io/posts/snmp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/snmp/</guid>
+      <description>SNMP The SNMP Management Information Base (MIB) is a database containing information usually related to network management. The database is organized like a tree, with branches that represent different organizations or network functions. The leaves of the tree (or final endpoints) correspond to specific variable values that can then be accessed and probed by an external user.
+Enumeration Nmap: sudo nmap -sU --open -p 161 192.168.50.1-254 -oG open-snmp.txt onesixtyone snmpcheck </description>
+    </item>
+    
+    <item>
       <title>Splunk</title>
       <link>https://kdbed.github.io/posts/splunk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1140,6 +1242,26 @@ Changes in American Policy Many Americans will remember President Donald Trump&a
       
       <guid>https://kdbed.github.io/posts/web_pentest_browser_extensions/</guid>
       <description>wappalyzer Wappalyzer is a browser extension that uncovers the technologies used on websites. It detects content management systems, eCommerce platforms, web servers, JavaScript frameworks, analytics tools and many more.</description>
+    </item>
+    
+    <item>
+      <title>Web Pentest - Cross-Site Scripting</title>
+      <link>https://kdbed.github.io/posts/web_pentest_cross_site_scripting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/web_pentest_cross_site_scripting/</guid>
+      <description>Cross-Site Scripting Stored XSS Stored (persistent) XSS attacks - the exploit payload is stored by a server &amp;ndash; in a DB or cached. The web app then fetches the payload and displays it to the vulnerable page&amp;rsquo;s visitors. Stored XSS vulnerabilities occur most often in forum software, eg in comment sections or in product reviews.
+Reflected XSS Reflected XSS attacks usually include the payload in a crafted request or link. The web app takes the input and places it into the page content.</description>
+    </item>
+    
+    <item>
+      <title>Web Pentest - Enumeration</title>
+      <link>https://kdbed.github.io/posts/web_pentest_enumeration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/web_pentest_enumeration/</guid>
+      <description>Web Application Enumeration Nmap 1 nmap -p80 --script=http-enum 192.168.1.2 Wappalyzer Determine technologies used &amp;ndash; see Browser Extensions
+Directory Bruce Force Gobuster 1 gobuster dir -u 192.168.2.1 -w /usr/share/wordlists/dirb/common.txt -t 5 wfuzz Subdomain Enumeration dirb </description>
     </item>
     
     <item>

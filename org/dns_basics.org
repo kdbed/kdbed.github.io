@@ -1,0 +1,52 @@
+:PROPERTIES:
+:ID:       be9764f9-4ad6-412e-b660-e08491f08879
+:END:
+#+title: DNS - Basics
+#+hugo_base_dir:../
+
+
+
+* Domain Name System (DNS)
+The /Domain Name System/ (DNS) is a distributed database responsible for translating domain names into IP addresses. It's composed of a hierarchical structure that is divided into several zones, starting with the top-level root zone.
+
+Each domain can use different types of DNS records. Some of the most common types of DNS records include:
+
+- *NS*: Nameserver records contain the name of the authoritative servers hosting the DNS records for a domain.
+- *A*: Also known as a host record, the "a record" contains the IPv4 address of a hostname
+- *AAAA*: Also known as a quad A host record, the "aaaa record" contains the IPv6 address of a hostname
+- *MX*: Mail Exchange records contain the names of the servers responsible for handling email for the domain. A domain can contain multiple MX records.
+- *PTR*: Pointer Records are used in reverse lookup zones and can find the records associated with an IP address.
+- *CNAME*: Canonical Name Records are used to create aliases for other host records.
+- *TXT*: Text records can contain any arbitrary data and be used for various purposes, such as domain ownership verification.
+
+
+We can use the =host= command to find IP addresses (default search for A records):
+#+begin_src shell -n :exports both :results output verbatim
+host google.com
+#+end_src
+
+#+RESULTS:
+: google.com has address 142.250.190.78
+: google.com has IPv6 address 2607:f8b0:4009:809::200e
+: google.com mail is handled by 10 smtp.google.com.
+
+The =-t= option can be used to search for other records:
+#+begin_src shell -n :exports both :results output verbatim
+host -t txt google.com
+#+end_src
+
+#+RESULTS:
+#+begin_example
+google.com descriptive text "apple-domain-verification=30afIBcvSuDV2PLX"
+google.com descriptive text "facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95"
+google.com descriptive text "docusign=1b0a6754-49b1-4db5-8540-d2c12664b289"
+google.com descriptive text "globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8="
+google.com descriptive text "onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef"
+google.com descriptive text "MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB"
+google.com descriptive text "v=spf1 include:_spf.google.com ~all"
+google.com descriptive text "webexdomainverification.8YX6G=6e6922db-e3e6-4a36-904e-a805c28087fa"
+google.com descriptive text "google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o"
+google.com descriptive text "atlassian-domain-verification=5YjTmWmjI92ewqkx2oXmBaD60Td9zWon9r6eakvHX6B77zzkFQto8PQ9QsKnbf4I"
+google.com descriptive text "google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ"
+google.com descriptive text "docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e"
+#+end_example

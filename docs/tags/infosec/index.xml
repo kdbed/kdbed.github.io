@@ -7,14 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://kdbed.github.io/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Recon - Port Scanning and nmap</title>
+      <title>Recon - Port Scanning and Nmap</title>
       <link>https://kdbed.github.io/posts/recon_port_scanning_and_nmap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/recon_port_scanning_and_nmap/</guid>
-      <description>Basic nmap scan nmap -sC -sV -oA nmap/result &amp;lt;ip&amp;gt; Flags:
--oA &amp;lt;basename&amp;gt;: Output in the three major formats at once -sV: Probe open ports to determine service/version info -sC: default scripts Full TCP:
-nmap -sV -sC -p- -o nmap.out -vvv $RHOST UDP Scan sudo nmap -sU -sS -sC -sV -oA &amp;lt;NAME&amp;gt;.udp &amp;lt;IP&amp;gt; -v nmap -sU --top-ports 20 -o nmap-udp.out -vvv $RHOST Script categories nmap --script vuln,safe,discovery -oN scan.txt target-ip List available nse scripts ls -lh /usr/share/nmap/scripts/ nmap through socks4 proxy nmap --proxies socks4://proxy-ip:1080 target-ip ftp bounce scan nmap -P0 -n -b username:password@target-ip target2-ip --proxies socks4://proxy-ip:1080 -vvv format ports=$(nmap -p- -Pn --min-rate=1000 -T4 10.</description>
+      <description>Nmap scanning SYN (stealth) scan TCP handshake not completed (ACK not sent)
+1 nmap -sS &amp;lt;ip&amp;gt; Because the three-way handshake is never completed, the information is not passed to the application layer and as a result, will not appear in any application logs. A SYN scan is also faster and more efficient because fewer packets are sent and received.
+TCP Connect Scan 1 nmap -sT &amp;lt;ip&amp;gt; TCP SYN Scan and UDP Scan 1 nmap -sU -sS 192.</description>
     </item>
     
     <item>

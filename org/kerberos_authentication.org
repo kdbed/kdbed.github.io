@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       8f260d6f-e943-4811-8f2a-0e75c89a0dcc
+:END:
+#+title: Kerberos Authentication
+#+hugo_base_dir:../
+
+
+*

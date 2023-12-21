@@ -340,6 +340,15 @@
     </item>
     
     <item>
+      <title>google</title>
+      <link>https://kdbed.github.io/tags/google/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/google/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>grpc</title>
       <link>https://kdbed.github.io/tags/grpc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -556,11 +565,38 @@
     </item>
     
     <item>
+      <title>osint</title>
+      <link>https://kdbed.github.io/tags/osint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/osint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>p200</title>
+      <link>https://kdbed.github.io/tags/p200/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/p200/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>password</title>
       <link>https://kdbed.github.io/tags/password/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/tags/password/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>passwordAttack</title>
+      <link>https://kdbed.github.io/tags/passwordattack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/tags/passwordattack/</guid>
       <description></description>
     </item>
     

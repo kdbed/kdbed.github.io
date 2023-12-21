@@ -538,12 +538,32 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/dns_basics\/": {
+        
+        "title": "DNS - Basics",
+        "tags": [],
+        "content": "Domain Name System (DNS) The Domain Name System (DNS) is a distributed database responsible for translating domain names into IP addresses. It\u0026rsquo;s composed of a hierarchical structure that is divided into several zones, starting with the top-level root zone.\nEach domain can use different types of DNS records. Some of the most common types of DNS records include:\nNS: Nameserver records contain the name of the authoritative servers hosting the DNS records for a domain. A: Also known as a host record, the \u0026ldquo;a record\u0026rdquo; contains the IPv4 address of a hostname AAAA: Also known as a quad A host record, the \u0026ldquo;aaaa record\u0026rdquo; contains the IPv6 address of a hostname MX: Mail Exchange records contain the names of the servers responsible for handling email for the domain. A domain can contain multiple MX records. PTR: Pointer Records are used in reverse lookup zones and can find the records associated with an IP address. CNAME: Canonical Name Records are used to create aliases for other host records. TXT: Text records can contain any arbitrary data and be used for various purposes, such as domain ownership verification. We can use the host command to find IP addresses (default search for A records):\n1 host google.com google.com has address 172.217.4.206 google.com has IPv6 address 2607:f8b0:4009:81c::200e google.com mail is handled by 10 smtp.google.com. The -t option can be used to search for other records:\n1 host -t txt google.com google.com descriptive text \u0026#34;apple-domain-verification=30afIBcvSuDV2PLX\u0026#34; google.com descriptive text \u0026#34;facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\u0026#34; google.com descriptive text \u0026#34;docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\u0026#34; google.com descriptive text \u0026#34;globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\u0026#34; google.com descriptive text \u0026#34;onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\u0026#34; google.com descriptive text \u0026#34;MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\u0026#34; google.com descriptive text \u0026#34;v=spf1 include:_spf.google.com ~all\u0026#34; google.com descriptive text \u0026#34;webexdomainverification.8YX6G=6e6922db-e3e6-4a36-904e-a805c28087fa\u0026#34; google.com descriptive text \u0026#34;google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\u0026#34; google.com descriptive text \u0026#34;atlassian-domain-verification=5YjTmWmjI92ewqkx2oXmBaD60Td9zWon9r6eakvHX6B77zzkFQto8PQ9QsKnbf4I\u0026#34; google.com descriptive text \u0026#34;google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\u0026#34; google.com descriptive text \u0026#34;docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\u0026#34; ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/dns_basics\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/dnszonetransfers\/": {
         
         "title": "DNS Zone Transfers",
         "tags": ["securityPlus","DNS",],
         "content": "DNS Zone Transfers DNS zone transfers using the AXFR protocol are the simplest mechanism to replicate DNS records across DNS servers. To avoid the need to edit information on multiple DNS servers, you can edit information on one server and use AXFR to copy information to other servers. However, if you do not protect your servers, malicious parties may use AXFR to get information about all your hosts.\nHow DNS Works DNS (Domain Name System) is like an Internet phonebook. It is responsible for resolving human-readable hostnames into machine-readable IP addresses. The system includes authoritative DNS servers that provide information and DNS caches that store that information temporarily for client lookups. A typical DNS query is very simple: a client provides a human-readable hostname and in response receives an IP address. However, the system assumes that the querying client knows the hostname.\nDNS servers host zones. A DNS zone is a portion of the domain name space that is served by a DNS server. For example, example.com with all its subdomains may be a zone. However, second.example.com may also be a separate zone.\nWhy DNS Zone Transfer is Needed DNS is a critical service. If a DNS server for a zone is not working and cached information has expired, the domain is inaccessible to all services (web, mail, and more). Therefore, each zone should have at least two DNS servers. For more critical zones, there may be even more.\nHowever, a zone may be large and may require frequent changes. If you manually edit zone data on each server separately, it takes a lot of time and there is a a lot of potential for a mistake. This is why DNS zone transfer is needed.\nYou can use different mechanisms for DNS zone transfer but the simplest one is AXFR (technically speaking, AXFR refers to the protocol used during a DNS zone transfer). It is a client-initiated request. Therefore, you can edit information on the primary DNS server and then use AXFR from the secondary DNS server to download the entire zone.\nHow to Initiate a DNS Zone Transfer Initiating an AXFR zone-transfer request from a secondary server is as simple as using the following dig commands, where zonetransfer.me is the domain that we want to initiate a zone transfer for. First, we need to get the list of DNS servers for the domain:\ndig +short ns zonetransfer.me Now, we can initiate an AXFR request to get a copy of the zone from the primary server:\ndig axfr zonetransfer.me @nsztm1.digi.ninja ; \u0026lt;\u0026lt;\u0026gt;\u0026gt; DiG 9.16.24 \u0026lt;\u0026lt;\u0026gt;\u0026gt; axfr zonetransfer.me @nsztm1.digi.ninja ;; global options: +cmd zonetransfer.me.\t7200\tIN\tSOA\tnsztm1.digi.ninja. robin.digi.ninja. 2019100801 172800 900 1209600 3600 zonetransfer.me.\t300\tIN\tHINFO\t\u0026#34;Casio fx-700G\u0026#34; \u0026#34;Windows XP\u0026#34; zonetransfer.me.\t301\tIN\tTXT\t\u0026#34;google-site-verification=tyP28J7JAUHA9fw2sHXMgcCC0I6XBmmoVi04VlMewxA\u0026#34; zonetransfer.me.\t7200\tIN\tMX\t0 ASPMX.L.GOOGLE.COM. zonetransfer.me.\t7200\tIN\tMX\t10 ALT1.ASPMX.L.GOOGLE.COM. zonetransfer.me.\t7200\tIN\tMX\t10 ALT2.ASPMX.L.GOOGLE.COM. zonetransfer.me.\t7200\tIN\tMX\t20 ASPMX2.GOOGLEMAIL.COM. zonetransfer.me.\t7200\tIN\tMX\t20 ASPMX3.GOOGLEMAIL.COM. zonetransfer.me.\t7200\tIN\tMX\t20 ASPMX4.GOOGLEMAIL.COM. zonetransfer.me.\t7200\tIN\tMX\t20 ASPMX5.GOOGLEMAIL.COM. zonetransfer.me.\t7200\tIN\tA\t5.196.105.14 zonetransfer.me.\t7200\tIN\tNS\tnsztm1.digi.ninja. zonetransfer.me.\t7200\tIN\tNS\tnsztm2.digi.ninja. _acme-challenge.zonetransfer.me. 301 IN\tTXT\t\u0026#34;6Oa05hbUJ9xSsvYy7pApQvwCUSSGgxvrbdizjePEsZI\u0026#34; _sip._tcp.zonetransfer.me. 14000 IN\tSRV\t0 0 5060 www.zonetransfer.me. 14.105.196.5.IN-ADDR.ARPA.zonetransfer.me. 7200\tIN PTR www.zonetransfer.me. asfdbauthdns.zonetransfer.me. 7900 IN\tAFSDB\t1 asfdbbox.zonetransfer.me. asfdbbox.zonetransfer.me. 7200\tIN\tA\t127.0.0.1 asfdbvolume.zonetransfer.me. 7800 IN\tAFSDB\t1 asfdbbox.zonetransfer.me. canberra-office.zonetransfer.me. 7200 IN A\t202.14.81.230 cmdexec.zonetransfer.me. 300\tIN\tTXT\t\u0026#34;; ls\u0026#34; contact.zonetransfer.me. 2592000 IN\tTXT\t\u0026#34;Remember to call or email Pippa on +44 123 4567890 or pippa@zonetransfer.me when making DNS changes\u0026#34; dc-office.zonetransfer.me. 7200\tIN\tA\t143.228.181.132 deadbeef.zonetransfer.me. 7201\tIN\tAAAA\tdead:beaf:: dr.zonetransfer.me.\t300\tIN\tLOC\t53 20 56.558 N 1 38 33.526 W 0.00m 1m 10000m 10m DZC.zonetransfer.me.\t7200\tIN\tTXT\t\u0026#34;AbCdEfG\u0026#34; email.zonetransfer.me.\t2222\tIN\tNAPTR\t1 1 \u0026#34;P\u0026#34; \u0026#34;E2U+email\u0026#34; \u0026#34;\u0026#34; email.zonetransfer.me.zonetransfer.me. email.zonetransfer.me.\t7200\tIN\tA\t74.125.206.26 Hello.zonetransfer.me.\t7200\tIN\tTXT\t\u0026#34;Hi to Josh and all his class\u0026#34; home.zonetransfer.me.\t7200\tIN\tA\t127.0.0.1 Info.zonetransfer.me.\t7200\tIN\tTXT\t\u0026#34;ZoneTransfer.me service provided by Robin Wood - robin@digi.ninja. See http://digi.ninja/projects/zonetransferme.php for more information.\u0026#34; internal.zonetransfer.me. 300\tIN\tNS\tintns1.zonetransfer.me. internal.zonetransfer.me. 300\tIN\tNS\tintns2.zonetransfer.me. intns1.zonetransfer.me.\t300\tIN\tA\t81.4.108.41 intns2.zonetransfer.me.\t300\tIN\tA\t167.88.42.94 office.zonetransfer.me.\t7200\tIN\tA\t4.23.39.254 ipv6actnow.org.zonetransfer.me.\t7200 IN\tAAAA\t2001:67c:2e8:11::c100:1332 owa.zonetransfer.me.\t7200\tIN\tA\t207.46.197.32 robinwood.zonetransfer.me. 302\tIN\tTXT\t\u0026#34;Robin Wood\u0026#34; rp.zonetransfer.me.\t321\tIN\tRP\trobin.zonetransfer.me. robinwood.zonetransfer.me. sip.zonetransfer.me.\t3333\tIN\tNAPTR\t2 3 \u0026#34;P\u0026#34; \u0026#34;E2U+sip\u0026#34; \u0026#34;!^.*$!sip:customer-service@zonetransfer.me!\u0026#34; . sqli.zonetransfer.me.\t300\tIN\tTXT\t\u0026#34;\u0026#39; or 1=1 --\u0026#34; sshock.zonetransfer.me.\t7200\tIN\tTXT\t\u0026#34;() { :]}; echo ShellShocked\u0026#34; staging.zonetransfer.me. 7200\tIN\tCNAME\twww.sydneyoperahouse.com. alltcpportsopen.firewall.test.zonetransfer.me. 301 IN A\t127.0.0.1 testing.zonetransfer.me. 301\tIN\tCNAME\twww.zonetransfer.me. vpn.zonetransfer.me.\t4000\tIN\tA\t174.36.59.154 www.zonetransfer.me.\t7200\tIN\tA\t5.196.105.14 xss.zonetransfer.me.\t300\tIN\tTXT\t\u0026#34;\u0026#39;\u0026gt;\u0026lt;script\u0026gt;alert(\u0026#39;Boo\u0026#39;)\u0026lt;/script\u0026gt;\u0026#34; zonetransfer.me.\t7200\tIN\tSOA\tnsztm1.digi.ninja. robin.digi.ninja. 2019100801 172800 900 1209600 3600 ;; Query time: 120 msec ;; SERVER: 81.4.108.41#53(81.4.108.41) ;; WHEN: Sat Feb 05 21:45:59 EST 2022 ;; XFR size: 50 records (messages 1, bytes 1994) AXFR Vulnerability and Prevention AXFR offers no authentication, so any client can ask a DNS server for a copy of the entire zone. This means that unless some kind of protection is introduced, an attacker can get a list of all hosts for a domain, which gives them a lot of potential attack vectors.\nIn order to prevent this vulnerability from occurring, the DNS server should be configured to only allow zone transfers from trusted IP addresses. The following is an example of how this can be accomplished in the BIND DNS server.\n# /etc/named.conf acl trusted-nameservers { 192.168.0.10; //ns2 192.168.1.20; //ns3 }; zone zonetransfer.me { type master; file \u0026#34;zones/zonetransfer.me\u0026#34;; allow-transfer { trusted-nameservers; }; }; Additionally, it’s also recommended to use transaction signatures (TSIG) for zone transfers to prevent IP spoofing attempts.\nComptTIA Security+ Acunetix ", 
         "url": "https:\/\/kdbed.github.io\/posts\/dnszonetransfers\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/document_object_model_dom\/": {
+        
+        "title": "Document Object Model (DOM)",
+        "tags": [],
+        "content": "Document Object Model (DOM) ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/document_object_model_dom\/"
     },
     
     
@@ -734,6 +754,26 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/golden_ticket\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/google\/": {
+        
+        "title": "google",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/google\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/google_hacking\/": {
+        
+        "title": "Google Hacking",
+        "tags": ["osint","google","pentest",],
+        "content": "Operators ahrefs ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/google_hacking\/"
     },
     
     
@@ -988,11 +1028,21 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/kerberos_authentication\/": {
+        
+        "title": "Kerberos Authentication",
+        "tags": [],
+        "content": "*\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/kerberos_authentication\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/kerbrute_enumeration\/": {
         
-        "title": "Kerbrute Enumeration",
-        "tags": ["enumeration","AD","pentest",],
-        "content": "Kerbrute Enumeration ", 
+        "title": "Kerbrute",
+        "tags": ["passwordAttack","AD","pentest",],
+        "content": "Kerbrute based on obtaining a TGT. For example, using kinit on a Linux system, we can obtain and cache a Kerberos TGT. We\u0026rsquo;ll need to provide a username and password to do this. If the credentials are valid, we\u0026rsquo;ll obtain a TGT. The advantage of this technique is that it only uses two UDP frames to determine whether the password is valid, as it sends only an AS-REQ and examines the response. 1 .\\kerbrute_windows_amd64.exe passwordspray -d domain.com .\\usernames.txt \u0026#34;Password123!\u0026#34; ", 
         "url": "https:\/\/kdbed.github.io\/posts\/kerbrute_enumeration\/"
     },
     
@@ -1128,6 +1178,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/mimikatz\/": {
+        
+        "title": "Mimikatz",
+        "tags": [],
+        "content": "**\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/mimikatz\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/netbios\/": {
         
         "title": "NetBIOS",
@@ -1194,6 +1254,16 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/tags\/nmap\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/ntlm_authentication\/": {
+        
+        "title": "NTLM Authentication",
+        "tags": ["activeDirectory",],
+        "content": "NTLM Authentication Process I enter my username and password on my local computer. My computer runs the password I typed through the standard hashing algorithm used by both client machines like mine and the domain controllers (DCs) that provide authentication and authorization services. That gives it my password hash, which it will use in Step 5. My machine sends the nearest DC a logon request, which includes my username. The DC sends back a random number, which is known as a logon challenge. My computer encrypts the logon challenge using the hash of my password and sends the result (response) back. (Now you know why NTLM is called a challenge-response authentication protocol.) To see whether I provided the correct password, the DC encrypts the logon challenge using the hash of the password that it has on record associated with the username that came in the logon request — which was created using the same hashing algorithm as my client machine is using. The DC compares the result it gets with the response my computer sent. Since both the DC and my client machine are using the same hashing algorithm and the same encryption process, if the results match, that proves I entered the correct password. In that case, I’m authenticated. Note that during this NTLM authentication process, neither my password or its hash ever got sent across the network. For further security, all of these communications are encrypted using a shared secret key, which is my computer’s domain password.\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/ntlm_authentication\/"
     },
     
     
@@ -1288,6 +1358,36 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/tags\/osint\/": {
+        
+        "title": "osint",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/osint\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/osint\/": {
+        
+        "title": "OSINT",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/posts\/osint\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/p200\/": {
+        
+        "title": "p200",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/p200\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/pass_the_ticket_ptt_attack\/": {
         
         "title": "Pass the Ticket (PtT) Attack",
@@ -1308,6 +1408,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/tags\/passwordattack\/": {
+        
+        "title": "passwordAttack",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/passwordattack\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/pentest\/": {
         
         "title": "pentest",
@@ -1321,8 +1431,8 @@ window.store = {
     "https:\/\/kdbed.github.io\/posts\/pentest_active_directory\/": {
         
         "title": "Pentest - Active Directory",
-        "tags": [],
-        "content": "Active Directory attacks and enumeration Bloodhound Kerbrute Enumeration Privileges: No domain access required\nPass the Ticket (PtT) Attack Privileges: Domain user access\nKerberoasting Privileges: Access as any user\nAS-REP Roasting Privileges: Access as any user\nGolden Ticket Privileges: Full domain compromise (domain admin)\nSilver Ticket Privileges: Service hash\nPentest - Active Directory - Skeleton Key Privileges: Full domain compromise (domain admin)\nReferences dw3113r ", 
+        "tags": ["p200","activeDirectory","pentest",],
+        "content": "Active Directory Enumeration Legacy Windows Tools Use net.exe to gather user information\n1 net user /domain A more detailed view of specific users in the output above:\n1 net user \u0026lt;username\u0026gt; /domain Enumerate groups:\n1 net group /domain Specifying a group:\n1 net group \u0026lt;groupname\u0026gt; /domain PowerShell and .NET When RSAT tools aren\u0026rsquo;t available, we can use an Active Directory Services Interface ADSI (a set of interfaces built on COM as an LDAP provider. The LDAP ADsPath we need to consider to interact with the AD service is based on the following recipe:\n1 LDAP://HostName[:PortNumber][/DistinguishedName] We could use the domain as the hostname, but this could potentially resolve to any of the DCs on the domain. To obtain the most accurate information, we\u0026rsquo;ll look for the primary domain controller (PDC), which is the one holding the PdcRoleOwner attribute.\nLooking to .NET, we have the namespace System.DirectoryServices.ActiveDirectory, and specifically the Domain Class therein. A method of interest is the following:\n1 [System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain() which will provide the PdcRoleOwner property, among others. We can use ADSI directly in PowerShell to retrieve the DN. We\u0026rsquo;ll use two single quotes to indicate that the search starts at the top of the AD hierarchy.\n1 ([adsi]\u0026#39;\u0026#39;).distinguishedName Putting it together, we can obtain the LDAP string:\n1 2 3 4 $PDC = [System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain().PdcRoleOwner.Name $DN = ([adsi]\u0026#39;\u0026#39;).distinguishedName $LDAP = \u0026#34;LDAP://$PDC/$DN\u0026#34; $LDAP In order to gather information, utilize two other classes in the System.DirectoryServices namespace: DirectoryEntry and DirectorySearcher. We\u0026rsquo;ll pass the LDAP path to DirectoryEntry in order to start the search at the top of the directory heirarchy. To perform queries with DirectorySearcher, we\u0026rsquo;ll pass the DirectoryEntry object as the SearchRoot.\n1 2 3 4 $direntry = New-Object System.DirectoryServices.DirectoryEntry($LDAP) $dirsearcher = New-Object System.DirectoryServices.DirectorySearcher($direntry) $dirsearcher.filter=\u0026#34;samAccountType=805306368\u0026#34; $dirsearcher.FindAll() where we\u0026rsquo;ve added the samAccountType for users. Iterate through the user properties and print:\n1 2 3 4 5 6 7 8 9 Foreach($obj in $result) { Foreach($prop in $obj.Properties) { $prop } Write-Host \u0026#34;-------------------------------\u0026#34; } Wrap all of the above into a function:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 function LDAPSearch { param ( [string]$LDAPQuery ) $PDC = [System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain().PdcRoleOwner.Name $DistinguishedName = ([adsi]\u0026#39;\u0026#39;).distinguishedName $DirectoryEntry = New-Object System.DirectoryServices.DirectoryEntry(\u0026#34;LDAP://$PDC/$DistinguishedName\u0026#34;) $DirectorySearcher = New-Object System.DirectoryServices.DirectorySearcher($DirectoryEntry, $LDAPQuery) return $DirectorySearcher.FindAll() } We can import and run LDAPSearch -LDAPQuery \u0026quot;(samAccountType=805306368)\u0026quot;, or LDAPSearch -LDAPQuery \u0026quot;(objectclass=group)\u0026quot;\nPermissions and Sessions PowerView: Find-LocalAdminAccess Determine if the current user has admin access on any domain machines. Relies on OpenServiceW function, which will connect to the Service Control Manager (SCM) on the target machines.\nPowerView: Get-NetSession Determine which users are logged into which machines. It utilizes two Windows APIs: NetWkstaUserEnum and NetSessionEnum. First requires admin privs, the second does not.\nSysInternals: PSLoggedon Service Accounts PowerView: Get-NetUser -SPN | select samaccountname,serviceprincipalname Enumerate Service Principal Names (SPNs)\nObject Permissions PowerView: Get-ObjectAcl Check the ActiveDirectoryRights and SecurityIdentifier attributes Dealing with SIDs: Convert-SidToName Bloodhound Active Directory Authentication NTLM Authentication Kerberos Authentication Cached AD Credentials Mimikatz Attacking Active Directory Kerbrute Enumeration Privileges: No domain access required\nPass the Ticket (PtT) Attack Privileges: Domain user access\nKerberoasting Privileges: Access as any user\nAS-REP Roasting Privileges: Access as any user\nGolden Ticket Privileges: Full domain compromise (domain admin)\nSilver Ticket Privileges: Service hash\nPentest - Active Directory - Skeleton Key Privileges: Full domain compromise (domain admin)\nReferences dw3113r ", 
         "url": "https:\/\/kdbed.github.io\/posts\/pentest_active_directory\/"
     },
     
@@ -1368,6 +1478,36 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/pentest_active_information_gathering\/": {
+        
+        "title": "Pentest - Active Information Gathering",
+        "tags": ["p200","enumeration","pentest",],
+        "content": "Active Information Gathering DNS DNS - Basics DNS Enumeration - Basics DNS forward lookup brute-forcing to determine additional IPs belonging to a domain:\n1 for ip in $(cat list.txt); do host $ip.domain.com; done Comprehensive lists available at SecLists. Based on IPs determined from the above, we can perform reverse lookups by scanning an associated range:\n1 for ip in $(seq 200 254); do host xxx.xxx.xxx.$ip; done | grep -v \u0026#34;not found\u0026#34; dnsrecon dnsenum2 nslookup TCP/UDP Port Scanning Simple port scan with Netcat:\n1 nc -nvv -w 1 -z 192.168.1.2 3000-4000 where -w is timeout in seconds and -z specifies zero-I/O mode. TCP scans use the 3-way handshake to detect open ports. UDP is stateless, so open port detection involves a different mechanism. Using Netcat:\n1 nc -nv -u -z -w 1 192.168.1.2 120-123 Here, if the destination UDP port is closed, the target should respond with an ICMP port unreachable. UDP scanning is often unreliable, as firewalls and routers may drop ICMP packets. This can lead to false positives and ports showing as open when they are, in fact, closed.\nRecon - Port Scanning and nmap Living off the Land Windows: lolbas Linux: gtfobins Drivers: loldrivers ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_active_information_gathering\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/pentest_antivirus_evasion\/": {
+        
+        "title": "Pentest - Antivirus Evasion",
+        "tags": [],
+        "content": "Antivirus Evasion YARA ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_antivirus_evasion\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/pentest_exploits\/": {
+        
+        "title": "Pentest - Exploits",
+        "tags": [],
+        "content": "Publicly Available Exploits Exploit-DB packet storm GitHub Offsec SearchSploit Update exploitdb on kali:\n1 sudo apt update \u0026amp;\u0026amp; sudo apt install exploitdb NMap - NSE Scripts are located by default in: /usr/share/nmap/scripts\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_exploits\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/pentest_generatingwordlists\/": {
         
         "title": "Pentest - Generating Wordlists",
@@ -1391,8 +1531,8 @@ window.store = {
     "https:\/\/kdbed.github.io\/posts\/pentest_passive_information_gathering\/": {
         
         "title": "Pentest - Passive Information Gathering",
-        "tags": [],
-        "content": "", 
+        "tags": ["p200","pentest",],
+        "content": "Passive Information Gathering Also known as open-source intelligence OSINT \u0026ndash; the process of collecting freely-available information about a target, often with no direct interaction/contact with target assets. In a strict interpretation, there\u0026rsquo;s zero interaction with the target, eg all information is obtained through a third party. More loosely, passive information gathering allows for interaction with the target, but only as a normal user, eg registering for an account on the corporate website. The goal here is to clarify or expand the attack surface and to supplement other penetration testing steps.\nWhois The name server and registrar of a domain can be determined by the whois utility. Registrar\u0026rsquo;s typically charge a fee for private registration, so the information is typically public. The Internet Corporation for Assigned Names and Numbers (ICANN) regulates domain name registration and ownership, but the records are held by different companies known as registries.\n1 whois cnn.com Google Hacking Popularized by Johnny Long in 2001. Google can be a hacker\u0026rsquo;s tool to uncover information and discover vulnerabilities, especially when used in conjunction with clever search strings and operators.\nsite : limit results to a single domain filetype : limit results to a particular filetype, eg filetype:txt. Same as ext. Another example: we can try to determine programming languages used with, eg, ext:py - : subtraction operator to filter results from the search, eg, to look for non-html pages: -filetype:html intitle Google Hacking Database DorkSearch\nNetcraft An internet service that can provide information about which technologies are running on a given website and finding which other hosts share the same IP netblock. https://searchdns.netcraft.com\nOpen-Source Code eg GitHub, GitHub Gist, GitLab, SourceForge determine programming languages and frameworks; sensitive data accidentally committed GitHub: operators in search, eg owner:\u0026lt;owner search\u0026gt; path:\u0026lt;search in file name\u0026gt; Gitrob: https://github.com/michenriksen/gitrob Gitleaks: https://github.com/zricethezav/gitleaks Shodan search for internet-connected devices Security Headers https://securityheaders.com/ https://www.ssllabs.com/ssltest/ ", 
         "url": "https:\/\/kdbed.github.io\/posts\/pentest_passive_information_gathering\/"
     },
     
@@ -1820,9 +1960,9 @@ window.store = {
     
     "https:\/\/kdbed.github.io\/posts\/recon_port_scanning_and_nmap\/": {
         
-        "title": "Recon - Port Scanning and nmap",
+        "title": "Recon - Port Scanning and Nmap",
         "tags": ["infosec","nmap","pentest",],
-        "content": "Basic nmap scan nmap -sC -sV -oA nmap/result \u0026lt;ip\u0026gt; Flags:\n-oA \u0026lt;basename\u0026gt;: Output in the three major formats at once -sV: Probe open ports to determine service/version info -sC: default scripts Full TCP:\nnmap -sV -sC -p- -o nmap.out -vvv $RHOST UDP Scan sudo nmap -sU -sS -sC -sV -oA \u0026lt;NAME\u0026gt;.udp \u0026lt;IP\u0026gt; -v nmap -sU --top-ports 20 -o nmap-udp.out -vvv $RHOST Script categories nmap --script vuln,safe,discovery -oN scan.txt target-ip List available nse scripts ls -lh /usr/share/nmap/scripts/ nmap through socks4 proxy nmap --proxies socks4://proxy-ip:1080 target-ip ftp bounce scan nmap -P0 -n -b username:password@target-ip target2-ip --proxies socks4://proxy-ip:1080 -vvv format ports=$(nmap -p- -Pn --min-rate=1000 -T4 10.10.11.205 | grep \u0026#39;^[0-9]\u0026#39; | cut -d \u0026#39;/\u0026#39; -f 1 | tr \u0026#39;\\n\u0026#39; \u0026#39;,\u0026#39; | sed s/,$//) nmap -p$ports -Pn -sC -sV 10.10.11.205 nmap Automator nmapAutomator \u0026lt;IP\u0026gt; All ", 
+        "content": "Nmap scanning SYN (stealth) scan TCP handshake not completed (ACK not sent)\n1 nmap -sS \u0026lt;ip\u0026gt; Because the three-way handshake is never completed, the information is not passed to the application layer and as a result, will not appear in any application logs. A SYN scan is also faster and more efficient because fewer packets are sent and received.\nTCP Connect Scan 1 nmap -sT \u0026lt;ip\u0026gt; TCP SYN Scan and UDP Scan 1 nmap -sU -sS 192.168.2.1 Ping sweep with greppable output 1 2 nmap -v -sn 192.168.100.1-253 -oG sweep.txt grep Up sweep.txt | cut -d \u0026#34; \u0026#34; -f 2 \u0026ndash;top-ports=10 Option defined in /usr/share/nmap/nmap-services\nOther scans nmap -sC -sV -oA nmap/result \u0026lt;ip\u0026gt; Flags:\n-oA \u0026lt;basename\u0026gt;: Output in the three major formats at once -sV: Probe open ports to determine service/version info -sC: default scripts Full TCP:\nnmap -sV -sC -p- -o nmap.out -vvv $RHOST UDP Scan sudo nmap -sU -sS -sC -sV -oA \u0026lt;NAME\u0026gt;.udp \u0026lt;IP\u0026gt; -v nmap -sU --top-ports 20 -o nmap-udp.out -vvv $RHOST Script categories nmap --script vuln,safe,discovery -oN scan.txt target-ip List available nse scripts ls -lh /usr/share/nmap/scripts/ nmap through socks4 proxy nmap --proxies socks4://proxy-ip:1080 target-ip ftp bounce scan nmap -P0 -n -b username:password@target-ip target2-ip --proxies socks4://proxy-ip:1080 -vvv format ports=$(nmap -p- -Pn --min-rate=1000 -T4 10.10.11.205 | grep \u0026#39;^[0-9]\u0026#39; | cut -d \u0026#39;/\u0026#39; -f 1 | tr \u0026#39;\\n\u0026#39; \u0026#39;,\u0026#39; | sed s/,$//) nmap -p$ports -Pn -sC -sV 10.10.11.205 nmap Automator nmapAutomator \u0026lt;IP\u0026gt; All Windows 1 1..1024 | % {echo ((New-Object Net.Sockets.TcpClient).Connect(\u0026#34;192.168.2.1\u0026#34;, $_)) \u0026#34;TCP port $_ is open\u0026#34;} 2\u0026gt;$null ", 
         "url": "https:\/\/kdbed.github.io\/posts\/recon_port_scanning_and_nmap\/"
     },
     
@@ -2048,6 +2188,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/snmp\/": {
+        
+        "title": "SNMP",
+        "tags": [],
+        "content": "SNMP The SNMP Management Information Base (MIB) is a database containing information usually related to network management. The database is organized like a tree, with branches that represent different organizations or network functions. The leaves of the tree (or final endpoints) correspond to specific variable values that can then be accessed and probed by an external user.\nEnumeration Nmap: sudo nmap -sU --open -p 161 192.168.50.1-254 -oG open-snmp.txt onesixtyone snmpcheck ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/snmp\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/socialtheory\/": {
         
         "title": "socialTheory",
@@ -2264,6 +2414,26 @@ window.store = {
         "tags": [],
         "content": "wappalyzer Wappalyzer is a browser extension that uncovers the technologies used on websites. It detects content management systems, eCommerce platforms, web servers, JavaScript frameworks, analytics tools and many more.\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/web_pentest_browser_extensions\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/web_pentest_cross_site_scripting\/": {
+        
+        "title": "Web Pentest - Cross-Site Scripting",
+        "tags": [],
+        "content": "Cross-Site Scripting Stored XSS Stored (persistent) XSS attacks - the exploit payload is stored by a server \u0026ndash; in a DB or cached. The web app then fetches the payload and displays it to the vulnerable page\u0026rsquo;s visitors. Stored XSS vulnerabilities occur most often in forum software, eg in comment sections or in product reviews.\nReflected XSS Reflected XSS attacks usually include the payload in a crafted request or link. The web app takes the input and places it into the page content. Stored XSS affects all users; reflected XSS only attacks the person submitting the request or visiting the link. Reflected XSS vulnerabilities occur in search fields and results, as well as anywhere user input is included in error messages.\nDOM-Based XSS Stored and Reflected XSS can manifest as client- (browser) or server-side; they can also be DOM-based.\nDOM-based XSS takes place solely within the page\u0026rsquo;s Document Object Model (DOM). Browsers parse a page\u0026rsquo;s HTML content and then generate an internal DOM representation; DOM-based XSS occurs when a page\u0026rsquo;s DOM is modified with user-controlled values. DOM-based XSS can be stored or reflected. XSS attacks occur when a browser parses the page\u0026rsquo;s content and inserted JavaScript is executed.\nImpacts of XSS include session hijacking, forced redirection to malicious pages, execution of local applications as that user, or even trojanized web applications.\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/web_pentest_cross_site_scripting\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/web_pentest_enumeration\/": {
+        
+        "title": "Web Pentest - Enumeration",
+        "tags": ["pentest","web",],
+        "content": "Web Application Enumeration Nmap 1 nmap -p80 --script=http-enum 192.168.1.2 Wappalyzer Determine technologies used \u0026ndash; see Browser Extensions\nDirectory Bruce Force Gobuster 1 gobuster dir -u 192.168.2.1 -w /usr/share/wordlists/dirb/common.txt -t 5 wfuzz Subdomain Enumeration dirb ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/web_pentest_enumeration\/"
     },
     
     

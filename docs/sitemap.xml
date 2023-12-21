@@ -104,7 +104,11 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/dns/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/dns_basics/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/dnszonetransfers/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/document_object_model_dom/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/dopamine/</loc>
   </url><url>
@@ -143,6 +147,10 @@
     <loc>https://kdbed.github.io/posts/generativeeffects/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/golden_ticket/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/google/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/google_hacking/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/greenhouseemissions/</loc>
   </url><url>
@@ -194,6 +202,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/kerberos/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/kerberos_authentication/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/kerbrute_enumeration/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/keyexchange/</loc>
@@ -222,6 +232,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/maxwell_s_equations/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/mimikatz/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/netbios/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/network/</loc>
@@ -235,6 +247,8 @@
     <loc>https://kdbed.github.io/tags/nix/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/nmap/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/ntlm_authentication/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/nx/</loc>
   </url><url>
@@ -254,9 +268,17 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/os_identification_ping/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/osint/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/osint/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/p200/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/pass_the_ticket_ptt_attack/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/password/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/passwordattack/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/pentest/</loc>
   </url><url>
@@ -269,6 +291,12 @@
     <loc>https://kdbed.github.io/posts/pentest_active_directory_sid_history_injection/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_active_directory_skeleton_key/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_active_information_gathering/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_antivirus_evasion/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_exploits/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_generatingwordlists/</loc>
   </url><url>
@@ -406,6 +434,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/smtps/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/snmp/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/socialtheory/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/splunk/</loc>
@@ -449,6 +479,10 @@
     <loc>https://kdbed.github.io/tags/web/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/web_pentest_browser_extensions/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/web_pentest_cross_site_scripting/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/web_pentest_enumeration/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/web_pentest_tools/</loc>
   </url><url>

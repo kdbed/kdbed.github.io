@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>p200 on Braindump</title>
+    <link>https://kdbed.github.io/tags/p200/</link>
+    <description>Recent content in p200 on Braindump</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/p200/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pentest - Active Directory</title>
+      <link>https://kdbed.github.io/posts/pentest_active_directory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentest_active_directory/</guid>
+      <description>Active Directory Enumeration Legacy Windows Tools Use net.exe to gather user information
+1 net user /domain A more detailed view of specific users in the output above:
+1 net user &amp;lt;username&amp;gt; /domain Enumerate groups:
+1 net group /domain Specifying a group:
+1 net group &amp;lt;groupname&amp;gt; /domain PowerShell and .NET When RSAT tools aren&amp;rsquo;t available, we can use an Active Directory Services Interface ADSI (a set of interfaces built on COM as an LDAP provider.</description>
+    </item>
+    
+    <item>
+      <title>Pentest - Active Information Gathering</title>
+      <link>https://kdbed.github.io/posts/pentest_active_information_gathering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentest_active_information_gathering/</guid>
+      <description>Active Information Gathering DNS DNS - Basics DNS Enumeration - Basics DNS forward lookup brute-forcing to determine additional IPs belonging to a domain:
+1 for ip in $(cat list.txt); do host $ip.domain.com; done Comprehensive lists available at SecLists. Based on IPs determined from the above, we can perform reverse lookups by scanning an associated range:
+1 for ip in $(seq 200 254); do host xxx.xxx.xxx.$ip; done | grep -v &amp;#34;not found&amp;#34; dnsrecon dnsenum2 nslookup TCP/UDP Port Scanning Simple port scan with Netcat:</description>
+    </item>
+    
+    <item>
+      <title>Pentest - Passive Information Gathering</title>
+      <link>https://kdbed.github.io/posts/pentest_passive_information_gathering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentest_passive_information_gathering/</guid>
+      <description>Passive Information Gathering Also known as open-source intelligence OSINT &amp;ndash; the process of collecting freely-available information about a target, often with no direct interaction/contact with target assets. In a strict interpretation, there&amp;rsquo;s zero interaction with the target, eg all information is obtained through a third party. More loosely, passive information gathering allows for interaction with the target, but only as a normal user, eg registering for an account on the corporate website.</description>
+    </item>
+    
+  </channel>
+</rss>

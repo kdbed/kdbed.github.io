@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       8254bd00-f4b8-4820-bb59-595c62377144
+:END:
+#+title: Google Hacking
+#+filetags: :osint:google:pentest:
+#+hugo_base_dir:../
+
+
+* Operators
+- [[https://ahrefs.com/blog/google-advanced-search-operators/][ahrefs]]

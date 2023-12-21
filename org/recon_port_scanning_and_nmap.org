@@ -1,13 +1,35 @@
 :PROPERTIES:
 :ID:       f2fd2ce6-ba91-4772-9ce3-0ee7b045c222
 :END:
-#+title: Recon - Port Scanning and nmap
+#+title: Recon - Port Scanning and Nmap
 #+filetags: :infosec:nmap:pentest:
 #+hugo_base_dir:../
 
 
 
-* Basic nmap scan
+* Nmap scanning
+** SYN (stealth) scan
+TCP handshake not completed (ACK not sent)
+#+begin_src shell -n
+nmap -sS <ip>
+#+end_src
+Because the three-way handshake is never completed, the information is not passed to the application layer and as a result, will not appear in any application logs. A SYN scan is also faster and more efficient because fewer packets are sent and received.
+** TCP Connect Scan
+#+begin_src shell -n
+nmap -sT <ip>
+#+end_src
+** TCP SYN Scan and UDP Scan
+#+begin_src shell -n
+nmap -sU -sS 192.168.2.1
+#+end_src
+** Ping sweep with greppable output
+#+begin_src shell -n
+nmap -v -sn 192.168.100.1-253 -oG sweep.txt
+grep Up sweep.txt | cut -d " " -f 2
+#+end_src
+** --top-ports=10
+Option defined in =/usr/share/nmap/nmap-services=
+** Other scans
 #+begin_src sh
 nmap -sC -sV -oA nmap/result <ip>
 #+end_src
@@ -57,4 +79,8 @@ nmap -p$ports -Pn -sC -sV 10.10.11.205
 
 #+begin_src sh
 nmapAutomator <IP> All
+#+end_src
+* Windows
+#+begin_src shell -n
+1..1024 | % {echo ((New-Object Net.Sockets.TcpClient).Connect("192.168.2.1", $_)) "TCP port $_ is open"} 2>$null
 #+end_src
