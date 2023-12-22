@@ -20,3 +20,12 @@ Then use [[id:db68d989-7170-41cd-9d19-fedba535cb75][wfuzz]]:
 #+begin_src shell
 sudo wfuzz -c -f out -w wordlist -u "http://trick.htb" -H "Host: FUZZ.trick.htb"  --hw 475
 #+end_src
+* gobuster
+** DNS
+#+begin_src shell -n
+gobuster dns -d domain.com -w $wordlists/subdomains-top1million-110000.txt -t 20
+#+end_src
+** vhost
+#+begin_src shell -n
+gobuster vhost -u domain.com -w <wordlist>
+#+end_src

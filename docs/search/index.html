@@ -2302,7 +2302,7 @@ window.store = {
         
         "title": "Subdomain Enumeration",
         "tags": ["subdomain","enumeration","pentest",],
-        "content": "From DNS dig +nocmd trick.htb axfr +noall +answer @trick.htb WFuzz In case the subdomain has a certain naming convention (Trick/HTB):\nsed \u0026#39;s/^/preprod-/\u0026#39; subdomains-top1million-110000.txt Then use wfuzz:\nsudo wfuzz -c -f out -w wordlist -u \u0026#34;http://trick.htb\u0026#34; -H \u0026#34;Host: FUZZ.trick.htb\u0026#34; --hw 475 ", 
+        "content": "From DNS dig +nocmd trick.htb axfr +noall +answer @trick.htb WFuzz In case the subdomain has a certain naming convention (Trick/HTB):\nsed \u0026#39;s/^/preprod-/\u0026#39; subdomains-top1million-110000.txt Then use wfuzz:\nsudo wfuzz -c -f out -w wordlist -u \u0026#34;http://trick.htb\u0026#34; -H \u0026#34;Host: FUZZ.trick.htb\u0026#34; --hw 475 gobuster DNS 1 gobuster dns -d domain.com -w $wordlists/subdomains-top1million-110000.txt -t 20 vhost 1 gobuster vhost -u domain.com -w \u0026lt;wordlist\u0026gt; ", 
         "url": "https:\/\/kdbed.github.io\/posts\/subdomainenumeration\/"
     },
     
@@ -2434,6 +2434,16 @@ window.store = {
         "tags": ["pentest","web",],
         "content": "Web Application Enumeration Nmap 1 nmap -p80 --script=http-enum 192.168.1.2 Wappalyzer Determine technologies used \u0026ndash; see Browser Extensions\nDirectory Bruce Force Gobuster 1 gobuster dir -u 192.168.2.1 -w /usr/share/wordlists/dirb/common.txt -t 5 wfuzz Subdomain Enumeration dirb ", 
         "url": "https:\/\/kdbed.github.io\/posts\/web_pentest_enumeration\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/web_pentest_spring\/": {
+        
+        "title": "Web Pentest - Spring",
+        "tags": [],
+        "content": "https://0xn3va.gitbook.io/cheat-sheets/framework/spring/spring-boot-actuators https://exploit-notes.hdks.org/exploit/web/framework/java/spring-pentesting/\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/web_pentest_spring\/"
     },
     
     

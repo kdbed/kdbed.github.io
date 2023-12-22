@@ -34,7 +34,26 @@
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sed <span style="color:#4070a0">&#39;s/^/preprod-/&#39;</span> subdomains-top1million-110000.txt
 </span></span></code></pre></div><p>Then use <a href="/posts/wfuzz/">wfuzz</a>:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo wfuzz -c -f out -w wordlist -u <span style="color:#4070a0">&#34;http://trick.htb&#34;</span> -H <span style="color:#4070a0">&#34;Host: FUZZ.trick.htb&#34;</span>  --hw <span style="color:#40a070">475</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><h2 id="gobuster">gobuster</h2>
+<h3 id="dns">DNS</h3>
+<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>gobuster dns -d domain.com -w <span style="color:#bb60d5">$wordlists</span>/subdomains-top1million-110000.txt -t <span style="color:#40a070">20</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="vhost">vhost</h3>
+<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>gobuster vhost -u domain.com -w &lt;wordlist&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
       </div>
       
 
@@ -519,6 +538,8 @@
 
    
       
+   
+
    
 
    
