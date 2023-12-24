@@ -1,10 +1,14 @@
 :PROPERTIES:
-:ID:       b930f202-0c0f-4055-8863-028b447c26fc
+:ID:       65fb9663-9062-4426-b04d-55bb9cf3e99c
 :END:
-#+title: XOR
-#+hugo_base_dir: ../
-#+startup: latexpreview
-#+filetags: :cryptography:
+#+title: XOR                                                         #cryptography
+#+hugo_base_dir:../
+#+STARTUP: latexpreview
+
+
+
+
+
 
 
 * XOR
@@ -30,3 +34,8 @@ Inputs and outputs above are named as if XOR were being used as an encryption op
 - 10 ^ 2 = (1010) ^ (0010) = (1000) = 8
 
 ** Properties
+
+
+$$
+\frac{1}{2} \int f(x) dx \nabla^2\phi(x)
+$$

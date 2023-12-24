@@ -8,15 +8,6 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 29 May 2022 21:44:03 +0800</lastBuildDate><atom:link href="https://kdbed.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>1433 - Pentesting MSSQL - Microsoft SQL Server</title>
-      <link>https://kdbed.github.io/posts/pentesting_mssql_microsoft_sql_server/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/pentesting_mssql_microsoft_sql_server/</guid>
-      <description>hacktricks</description>
-    </item>
-    
-    <item>
       <title>Abortion</title>
       <link>https://kdbed.github.io/posts/abortion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -431,7 +422,7 @@ Filesystem FHS - Filesystem Hierarchy Standard - conventions used for layout of 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/kerberoasting/</guid>
-      <description></description>
+      <description>*</description>
     </item>
     
     <item>
@@ -728,7 +719,7 @@ netwrix</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/pentest_antivirus_evasion/</guid>
-      <description>Antivirus Evasion YARA </description>
+      <description>Antivirus Evasion YARA Backdooring shellter</description>
     </item>
     
     <item>
@@ -758,6 +749,15 @@ netwrix</description>
       <guid>https://kdbed.github.io/posts/pentest_grpc_port_50051/</guid>
       <description>gRPC gRPC (short for Google Remote Procedure Call) is a modern open-source framework developed by Google for creating high-performance, language-agnostic remote procedure call (RPC) systems. It enables communication and interaction between different applications or services running on different platforms and written in different programming languages.
 On Linux, gRPC provides a mechanism for building distributed systems by allowing services to communicate with each other efficiently and securely over a network. It utilizes HTTP/2 protocol as its transport layer and supports different serialization formats like Protocol Buffers (protobuf) for efficient data exchange.</description>
+    </item>
+    
+    <item>
+      <title>Pentest - MSSQL - Microsoft SQL Server p 1433</title>
+      <link>https://kdbed.github.io/posts/pentesting_mssql_microsoft_sql_server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentesting_mssql_microsoft_sql_server/</guid>
+      <description>Pentest Microsoft SQL Server Enumeration 1 nmap --script ms-sql-info,ms-sql-empty-password,ms-sql-xp-cmdshell,ms-sql-config,ms-sql-ntlm-info,ms-sql-tables,ms-sql-hasdbaccess,ms-sql-dac,ms-sql-dump-hashes --script-args mssql.instance-port=1433,mssql.username=sa,mssql.password=,mssql.instance-name=MSSQLSERVER -sV -p 1433 &amp;lt;IP&amp;gt; Test credentials 1 crackmapexec mssql &amp;lt;host&amp;gt; -u users.txt -p passwords.txt Establish connection impacket-mssqlclient -dc-ip &amp;lt;ip&amp;gt; -windows-auth domain/username:password@host List DBs 1 SELECT name FROM master..sysdatabases; Check permissions 1 2 3 4 Use master; EXEC sp_helprotect &amp;#39;xp_dirtree&amp;#39;; EXEC sp_helprotect &amp;#39;xp_subdirs&amp;#39;; EXEC sp_helprotect &amp;#39;xp_fileexist&amp;#39;; xp_dirtree 1 EXEC xp_dirtree &amp;#39;C:\inetpub\wwwroot&amp;#39;, 1, 1; hacktricks</description>
     </item>
     
     <item>
@@ -1094,6 +1094,15 @@ rev shell without python</description>
     </item>
     
     <item>
+      <title>Reversing - Java</title>
+      <link>https://kdbed.github.io/posts/reversing_java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/reversing_java/</guid>
+      <description>JAR Decompiler JD-GUI</description>
+    </item>
+    
+    <item>
       <title>Reversing - Python</title>
       <link>https://kdbed.github.io/posts/reversing_python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1343,15 +1352,15 @@ Host access: the server has host access list (if a network address exists in thi
     </item>
     
     <item>
-      <title>XOR</title>
-      <link>https://kdbed.github.io/posts/xor/</link>
+      <title>XOR                                                         #cryptography</title>
+      <link>https://kdbed.github.io/posts/xor_cryptography/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kdbed.github.io/posts/xor/</guid>
-      <description>XOR Basics Exclusive or &amp;ndash; &amp;lsquo;XOR&amp;rsquo; &amp;ndash; is a Boolean binary operator that is true when either the first input or the second input, but not both, are true.
+      <guid>https://kdbed.github.io/posts/xor_cryptography/</guid>
+      <description>XOR Basics crypto101
+Exclusive or &amp;ndash; &amp;lsquo;XOR&amp;rsquo; &amp;ndash; is a Boolean binary operator that is true when either the first input or the second input, but not both, are true.
 XOR is a &amp;lsquo;programmable inverter&amp;rsquo;: one input bit decides whether to invert the other input bit or to just pass it through unchanged. &amp;lsquo;Inverting&amp;rsquo; bits is also called &amp;lsquo;flipping&amp;rsquo; bits.
-\(X = A \bigoplus B\)
-Properties </description>
+Inputs and outputs above are named as if XOR were being used as an encryption operation, with plaintext bit, key bit, ciphertext bit.</description>
     </item>
     
     <item>

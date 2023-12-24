@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       886080d7-f01b-43f4-870d-d40919a88cf1
+:END:
+#+title: Reversing - Java
+#+hugo_base_dir:../
+
+
+* JAR Decompiler
+[[https://java-decompiler.github.io/][JD-GUI]]

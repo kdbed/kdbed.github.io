@@ -8,8 +8,6 @@
     <loc>https://kdbed.github.io/search/</loc>
     <lastmod>2022-05-29T21:44:03+08:00</lastmod>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentesting_mssql_microsoft_sql_server/</loc>
-  </url><url>
     <loc>https://kdbed.github.io/tags/abortion/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/abortion/</loc>
@@ -302,6 +300,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_grpc_port_50051/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/pentesting_mssql_microsoft_sql_server/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/pentest_passive_information_gathering/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_python/</loc>
@@ -395,6 +395,8 @@
     <loc>https://kdbed.github.io/posts/reverse_shell_upgrade_tty/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/reversing/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/reversing_java/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/reversing_python/</loc>
   </url><url>
@@ -504,7 +506,7 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/x11_authorization/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/xor/</loc>
+    <loc>https://kdbed.github.io/posts/xor_cryptography/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/z3/</loc>
   </url><url>

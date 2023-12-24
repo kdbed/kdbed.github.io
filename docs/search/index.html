@@ -58,16 +58,6 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/posts\/pentesting_mssql_microsoft_sql_server\/": {
-        
-        "title": "1433 - Pentesting MSSQL - Microsoft SQL Server",
-        "tags": ["sql","pentest",],
-        "content": "hacktricks\n", 
-        "url": "https:\/\/kdbed.github.io\/posts\/pentesting_mssql_microsoft_sql_server\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/tags\/abortion\/": {
         
         "title": "abortion",
@@ -1002,7 +992,7 @@ window.store = {
         
         "title": "Kerberoasting",
         "tags": [],
-        "content": "", 
+        "content": "*\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/kerberoasting\/"
     },
     
@@ -1492,7 +1482,7 @@ window.store = {
         
         "title": "Pentest - Antivirus Evasion",
         "tags": [],
-        "content": "Antivirus Evasion YARA ", 
+        "content": "Antivirus Evasion YARA Backdooring shellter\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/pentest_antivirus_evasion\/"
     },
     
@@ -1528,6 +1518,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/pentesting_mssql_microsoft_sql_server\/": {
+        
+        "title": "Pentest - MSSQL - Microsoft SQL Server p 1433",
+        "tags": ["sql","pentest",],
+        "content": "Pentest Microsoft SQL Server Enumeration 1 nmap --script ms-sql-info,ms-sql-empty-password,ms-sql-xp-cmdshell,ms-sql-config,ms-sql-ntlm-info,ms-sql-tables,ms-sql-hasdbaccess,ms-sql-dac,ms-sql-dump-hashes --script-args mssql.instance-port=1433,mssql.username=sa,mssql.password=,mssql.instance-name=MSSQLSERVER -sV -p 1433 \u0026lt;IP\u0026gt; Test credentials 1 crackmapexec mssql \u0026lt;host\u0026gt; -u users.txt -p passwords.txt Establish connection impacket-mssqlclient -dc-ip \u0026lt;ip\u0026gt; -windows-auth domain/username:password@host List DBs 1 SELECT name FROM master..sysdatabases; Check permissions 1 2 3 4 Use master; EXEC sp_helprotect \u0026#39;xp_dirtree\u0026#39;; EXEC sp_helprotect \u0026#39;xp_subdirs\u0026#39;; EXEC sp_helprotect \u0026#39;xp_fileexist\u0026#39;; xp_dirtree 1 EXEC xp_dirtree \u0026#39;C:\\inetpub\\wwwroot\u0026#39;, 1, 1; hacktricks\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentesting_mssql_microsoft_sql_server\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/pentest_passive_information_gathering\/": {
         
         "title": "Pentest - Passive Information Gathering",
@@ -1552,7 +1552,7 @@ window.store = {
         
         "title": "Pentest - SMB p 139,445",
         "tags": ["crackmapexec","smbmap","smb","pentest",],
-        "content": "HackTricks\nPort 139 NetBIOS NetBIOS is Network Basic Input Output System, which is a software protocol that allows applications, PCs, and Desktops on a local area network (LAN) to communicate with network hardware and to transmit data across the network.\nPort 445 SMB - Server Message Block While Port 139 is known technically as ‘NBT over IP’, Port 445 is ‘SMB over IP’. SMB stands for ‘Server Message Blocks’.\nSMB Server Message Block (SMB) is a client-server protocol that regulates access to files and entire directories and other network resources such as printers, routers, or interfaces released for the network.\nServer Enumeration Search for hosts:\n1 nbtscan -r 192.168.1.1/24 SMB information 1 2 3 4 5 6 7 enum4linux -a [-u \u0026#34;\u0026lt;username\u0026gt;\u0026#34; -p \u0026#34;\u0026lt;passwd\u0026gt;\u0026#34;] \u0026lt;IP\u0026gt; enum4linux-ng -A [-u \u0026#34;\u0026lt;username\u0026gt;\u0026#34; -p \u0026#34;\u0026lt;passwd\u0026gt;\u0026#34;] \u0026lt;IP\u0026gt; # connect to rpc rpcclient -U \u0026#34;\u0026#34; -N \u0026lt;IP\u0026gt; #No creds rpcclient //machine.htb -U domain.local/USERNAME%754d87d42adabcca32bdb34a876cbffb --pw-nt-hash rpcclient -U \u0026#34;username%passwd\u0026#34; \u0026lt;IP\u0026gt; #With creds smbclient -L ////10.10.10.10/// smbclient //10.10.10.10/Public See also impacket: samrdump, rpcdump\nUsers, Groups 1 2 3 4 5 6 7 8 9 10 11 crackmapexec smb 10.10.10.10 --users [-u \u0026lt;username\u0026gt; -p \u0026lt;password\u0026gt;] crackmapexec smb 10.10.10.10 --groups [-u \u0026lt;username\u0026gt; -p \u0026lt;password\u0026gt;] crackmapexec smb 10.10.10.10 --groups --loggedon-users [-u \u0026lt;username\u0026gt; -p \u0026lt;password\u0026gt;] crackmapexec smb 10.10.10.10 -u usernames.txt -p ‘’ --continue-on-success ldapsearch -x -b \u0026#34;DC=DOMAIN_NAME,DC=LOCAL\u0026#34; -s sub \u0026#34;(\u0026amp;(objectclass=user))\u0026#34; -h 10.10.10.10 | grep -i samaccountname: | cut -f 2 -d \u0026#34; \u0026#34; rpcclient -U \u0026#34;\u0026#34; -N 10.10.10.10 enumdomusers enumdomgroups Anonymous logon crackmapexec smb \u0026lt;host\u0026gt; -u \u0026#39;a\u0026#39; -p \u0026#39;\u0026#39; --shares List files crackmapexec smb \u0026lt;host\u0026gt; -u \u0026#39;a\u0026#39; -p \u0026#39;\u0026#39; -M spider_plus Download files crackmapexec smb \u0026lt;host\u0026gt; -u \u0026#39;a\u0026#39; -p \u0026#39;\u0026#39; -M spider_plus -o READ_ONLY=false EXCLUDE_DIR=IPC$ ", 
+        "content": "HackTricks\nPort 139 NetBIOS NetBIOS is Network Basic Input Output System, which is a software protocol that allows applications, PCs, and Desktops on a local area network (LAN) to communicate with network hardware and to transmit data across the network.\nPort 445 SMB - Server Message Block While Port 139 is known technically as ‘NBT over IP’, Port 445 is ‘SMB over IP’. SMB stands for ‘Server Message Blocks’.\nSMB Server Message Block (SMB) is a client-server protocol that regulates access to files and entire directories and other network resources such as printers, routers, or interfaces released for the network.\nServer Enumeration Search for hosts:\n1 nbtscan -r 192.168.1.1/24 SMB information 1 2 3 4 5 6 7 enum4linux -a [-u \u0026#34;\u0026lt;username\u0026gt;\u0026#34; -p \u0026#34;\u0026lt;passwd\u0026gt;\u0026#34;] \u0026lt;IP\u0026gt; enum4linux-ng -A [-u \u0026#34;\u0026lt;username\u0026gt;\u0026#34; -p \u0026#34;\u0026lt;passwd\u0026gt;\u0026#34;] \u0026lt;IP\u0026gt; # connect to rpc rpcclient -U \u0026#34;\u0026#34; -N \u0026lt;IP\u0026gt; #No creds rpcclient //machine.htb -U domain.local/USERNAME%754d87d42adabcca32bdb34a876cbffb --pw-nt-hash rpcclient -U \u0026#34;username%passwd\u0026#34; \u0026lt;IP\u0026gt; #With creds smbclient //10.10.10.10/Public -u \u0026#39;anonymous\u0026#39; -N See also impacket: samrdump, rpcdump\nUsers, Groups 1 2 3 4 5 6 7 8 9 10 11 crackmapexec smb 10.10.10.10 --users [-u \u0026lt;username\u0026gt; -p \u0026lt;password\u0026gt;] crackmapexec smb 10.10.10.10 --groups [-u \u0026lt;username\u0026gt; -p \u0026lt;password\u0026gt;] crackmapexec smb 10.10.10.10 --groups --loggedon-users [-u \u0026lt;username\u0026gt; -p \u0026lt;password\u0026gt;] crackmapexec smb 10.10.10.10 -u usernames.txt -p ‘’ --continue-on-success ldapsearch -x -b \u0026#34;DC=DOMAIN_NAME,DC=LOCAL\u0026#34; -s sub \u0026#34;(\u0026amp;(objectclass=user))\u0026#34; -h 10.10.10.10 | grep -i samaccountname: | cut -f 2 -d \u0026#34; \u0026#34; rpcclient -U \u0026#34;\u0026#34; -N 10.10.10.10 enumdomusers enumdomgroups Anonymous logon crackmapexec smb \u0026lt;host\u0026gt; -u \u0026#39;a\u0026#39; -p \u0026#39;\u0026#39; --shares List files crackmapexec smb \u0026lt;host\u0026gt; -u \u0026#39;a\u0026#39; -p \u0026#39;\u0026#39; -M spider_plus Download files crackmapexec smb \u0026lt;host\u0026gt; -u \u0026#39;a\u0026#39; -p \u0026#39;\u0026#39; -M spider_plus -o READ_ONLY=false EXCLUDE_DIR=IPC$ IPC$ Share With an anonymous null session you can access the IPC$ share and interact with services exposed via named pipes. The enum4linux utility within Kali Linux is particularly useful; with it, you can obtain the following:\nOperating system information Details of the parent domain A list of local users and groups Details of available SMB shares The effective system security policy RID cycling with crackmapexec\n1 crackmapexec smb \u0026lt;ip\u0026gt; -u \u0026#39;a\u0026#39; -p \u0026#39;\u0026#39; -d \u0026lt;domain\u0026gt; --rid-brute |grep User then, eg, check for UF_DONT_REQUIRE_PREAUTH and AS-REP Roasting. Then attempt crackmapexec with smb and username password combinations. Passwords from list (eg rockyou), customized list, usernames as passwords (backwards and forwards, case change, etc).\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/pentest_smb_p_139_445\/"
     },
     
@@ -1994,6 +1994,16 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/tags\/reversing\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/reversing_java\/": {
+        
+        "title": "Reversing - Java",
+        "tags": [],
+        "content": "JAR Decompiler JD-GUI\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/reversing_java\/"
     },
     
     
@@ -2538,12 +2548,12 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/posts\/xor\/": {
+    "https:\/\/kdbed.github.io\/posts\/xor_cryptography\/": {
         
-        "title": "XOR",
-        "tags": ["cryptography",],
-        "content": "XOR Basics Exclusive or \u0026ndash; \u0026lsquo;XOR\u0026rsquo; \u0026ndash; is a Boolean binary operator that is true when either the first input or the second input, but not both, are true.\nXOR is a \u0026lsquo;programmable inverter\u0026rsquo;: one input bit decides whether to invert the other input bit or to just pass it through unchanged. \u0026lsquo;Inverting\u0026rsquo; bits is also called \u0026lsquo;flipping\u0026rsquo; bits.\n\\(X = A \\bigoplus B\\)\nProperties ", 
-        "url": "https:\/\/kdbed.github.io\/posts\/xor\/"
+        "title": "XOR                                                         #cryptography",
+        "tags": [],
+        "content": "XOR Basics crypto101\nExclusive or \u0026ndash; \u0026lsquo;XOR\u0026rsquo; \u0026ndash; is a Boolean binary operator that is true when either the first input or the second input, but not both, are true.\nXOR is a \u0026lsquo;programmable inverter\u0026rsquo;: one input bit decides whether to invert the other input bit or to just pass it through unchanged. \u0026lsquo;Inverting\u0026rsquo; bits is also called \u0026lsquo;flipping\u0026rsquo; bits.\nInputs and outputs above are named as if XOR were being used as an encryption operation, with plaintext bit, key bit, ciphertext bit. The operator is written as \\(\\bigoplus\\) or caret ^.\nTruth table 0 ^ 0 = 0 0 ^ 1 = 1 1 ^ 0 = 1 1 ^ 1 = 0 Examples 5 ^ 3 = (101) ^ (011) = (110) = 6 10 ^ 2 = (1010) ^ (0010) = (1000) = 8 Properties \\[ \\frac{1}{2} \\int f(x) dx \\nabla^2\\phi(x) \\]\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/xor_cryptography\/"
     },
     
     
