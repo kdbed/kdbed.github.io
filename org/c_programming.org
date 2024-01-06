@@ -4,8 +4,6 @@
 #+title: C Programming
 #+filetags: :programming:examples:
 #+hugo_base_dir:../
-
-
 * C Programming
 ** Basics
 *** Code Analysis

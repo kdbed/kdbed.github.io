@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       ad3c5925-a485-4078-93e3-43d5e4a14d0a
+:END:
+#+hugo_base_dir:../
+#+filetags: :programming:examples:
+#+title: C++ Programming
+
+
+* C++ Programming
+** Hello world
+#+begin_src cpp -n :results output verbatim
+#include <iostream>
+
+int main(){
+    std::cout << "Hello, world." << std::endl;
+}
+#+end_src
+
+#+RESULTS:
+: Hello, world.

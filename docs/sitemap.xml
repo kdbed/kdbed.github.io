@@ -56,6 +56,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/cpp_proj_nix/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/cpp_programming/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/categories/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/category_theory/</loc>
@@ -314,6 +316,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_stealing_chrome_cookies/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_windows_privilege_escalation/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/philosophy/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/physics/</loc>
@@ -366,6 +370,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/privesc/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/privilegeescalation/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/programming/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/protocol/</loc>
@@ -417,6 +423,8 @@
     <loc>https://kdbed.github.io/tags/secplus/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/securityplus/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/serviceaccounts/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/sha1/</loc>
   </url><url>
@@ -485,6 +493,8 @@
     <loc>https://kdbed.github.io/posts/web_pentest_cross_site_scripting/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/web_pentest_enumeration/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/web_pentest_file_upload/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/web_pentest_spring/</loc>
   </url><url>

@@ -140,6 +140,15 @@ Code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 #include &amp;l
     </item>
     
     <item>
+      <title>C&#43;&#43; Programming</title>
+      <link>https://kdbed.github.io/posts/cpp_programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/cpp_programming/</guid>
+      <description>C++ Programming Hello world 1 2 3 4 5 #include &amp;lt;iostream&amp;gt; int main(){ std::cout &amp;lt;&amp;lt; &amp;#34;Hello, world.&amp;#34; &amp;lt;&amp;lt; std::endl; } </description>
+    </item>
+    
+    <item>
       <title>Category Theory</title>
       <link>https://kdbed.github.io/posts/category_theory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -823,6 +832,16 @@ requires rce on victim&amp;rsquo;s machine </description>
     </item>
     
     <item>
+      <title>Pentest - Windows Privilege Escalation</title>
+      <link>https://kdbed.github.io/posts/pentest_windows_privilege_escalation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/pentest_windows_privilege_escalation/</guid>
+      <description>From Service to SYSTEM Service Account Privileges Services can be run such that they don&amp;rsquo;t maintain the privs of NT AUTHORITY\LOCAL SERVICE account, eg with the -k LocalServiceAndNoImpersonation option.
+The task scheduler can be used to restore default privs: FullPowers itm4n. After executing FullPowers:</description>
+    </item>
+    
+    <item>
       <title>philosophy</title>
       <link>https://kdbed.github.io/posts/philosophy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1272,6 +1291,15 @@ Reflected XSS Reflected XSS attacks usually include the payload in a crafted req
       <guid>https://kdbed.github.io/posts/web_pentest_enumeration/</guid>
       <description>Web Application Enumeration Nmap 1 nmap -p80 --script=http-enum 192.168.1.2 Wappalyzer Determine technologies used &amp;ndash; see Browser Extensions
 Directory Bruce Force Gobuster 1 gobuster dir -u 192.168.2.1 -w /usr/share/wordlists/dirb/common.txt -t 5 wfuzz Subdomain Enumeration dirb </description>
+    </item>
+    
+    <item>
+      <title>Web Pentest - File Upload</title>
+      <link>https://kdbed.github.io/posts/web_pentest_file_upload/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/web_pentest_file_upload/</guid>
+      <description>File Upload Vulnerabilities Checklist from onsecurity Are filenames reflected back on the page? If so, are they HTML Entity encoded (XSS via file names)? Does it accept .zip files? Try a ZipSlip If it processes an image, check for Image Tragick (CVE-2016-3714) Can you bypass file type restrictions by changing the content-type value? Can you bypass file type restrictions by forging valid magic bytes? Can you upload a file with a less-common extension (such as .</description>
     </item>
     
     <item>

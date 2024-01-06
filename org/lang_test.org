@@ -2,6 +2,7 @@
 :ID:       80690da6-d65a-418b-945e-5a5b01e20476
 :END:
 #+title: Lang - Test
+#+filetags: :programming:examples:
 #+hugo_base_dir:../
 
 

@@ -298,6 +298,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/cpp_programming\/": {
+        
+        "title": "C\u002b\u002b Programming",
+        "tags": ["programming","examples",],
+        "content": "C++ Programming Hello world 1 2 3 4 5 #include \u0026lt;iostream\u0026gt; int main(){ std::cout \u0026lt;\u0026lt; \u0026#34;Hello, world.\u0026#34; \u0026lt;\u0026lt; std::endl; } ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/cpp_programming\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/categories\/": {
         
         "title": "Categories",
@@ -1051,8 +1061,8 @@ window.store = {
     "https:\/\/kdbed.github.io\/posts\/lang_test\/": {
         
         "title": "Lang - Test",
-        "tags": [],
-        "content": "Language tests in org Rust extern crate primal; use primal::Sieve; fn num_divisors(n: usize, primes: \u0026amp;Sieve) -\u0026gt; Option\u0026lt;usize\u0026gt; { match primes.factor(n) { Ok(factors) =\u0026gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))), Err(_) =\u0026gt; None, } } fn main() { println!(\u0026#34;24 days of Rust - primal (day 2)\u0026#34;); let sieve = Sieve::new(10000); let suspect = 5273; println!(\u0026#34;{} is prime: {}\u0026#34;, suspect, sieve.is_prime(suspect)); let not_a_prime = 1024; println!(\u0026#34;{} is prime: {}\u0026#34;, not_a_prime, sieve.is_prime(not_a_prime)); let n = 1000; match sieve.primes_from(0).nth(n - 1) { Some(number) =\u0026gt; println!(\u0026#34;{}th prime is {}\u0026#34;, n, number), None =\u0026gt; println!(\u0026#34;I don\u0026#39;t know anything about {}th prime.\u0026#34;, n), } println!(\u0026#34;{:?}\u0026#34;, sieve.factor(2610)); println!(\u0026#34;{:?}\u0026#34;, num_divisors(2610, \u0026amp;sieve)); } C++ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 #include \u0026lt;stdio.h\u0026gt; #include \u0026lt;stdlib.h\u0026gt; #include \u0026lt;time.h\u0026gt; int main(void){ int niter=10; //Specify the number of samples. srand((unsigned)time(NULL)); //Set the seed of random number generator. int n_in=0; //Initialize the counter. /*************/ /* Main loop */ /*************/ for(int iter=1;iter\u0026lt;niter+1;iter++){ double x = (double)rand()/RAND_MAX; double y = (double)rand()/RAND_MAX; //Generate random numbers x,y in [0,1]. if(x*x+y*y \u0026lt; 1e0) //If xˆ2+yˆ2\u0026lt;1.... n_in=n_in+1; //Add 1 to n_in. printf(\u0026#34;%d %.10f\\n\u0026#34;,iter,(double)n_in/iter);} } 1 1.0000000000 2 0.5000000000 3 0.6666666667 4 0.7500000000 5 0.8000000000 6 0.8333333333 7 0.7142857143 8 0.7500000000 9 0.7777777778 10 0.8000000000 1 2 3 4 5 #include \u0026lt;iostream\u0026gt; int main(){ std::cout\u0026lt;\u0026lt;\u0026#34;Hello, World.\\n\u0026#34;; return 0; } Hello, World. C# 1 2 3 4 5 6 7 8 9 10 11 // Hello World! program namespace HelloWorld { class Hello { static void Main(string[] args) { System.Console.WriteLine(\u0026#34;Hello World!\u0026#34;); } } } Hello World! Haskell add_1 : Nat -\u0026gt; Nat add_1 x = x + 1 add_1 5 ghci\u0026gt; ghci\u0026gt; 6 map :{ -- a very verbose way to sum a sequence of numbers: sumInts :: Int -\u0026gt; Int -\u0026gt; Int sumInts a b = if a == b then b else (+ a) $ (sumInts (a + 1) b) :} map (\\[a,b] -\u0026gt; sumInts a b) [[0, 1] , [1, 3], [1,5], [2,10]] [1 (, 6) (, 15) (, 54)] ", 
+        "tags": ["programming","examples",],
+        "content": "Language tests in org Rust extern crate primal; use primal::Sieve; fn num_divisors(n: usize, primes: \u0026amp;Sieve) -\u0026gt; Option\u0026lt;usize\u0026gt; { match primes.factor(n) { Ok(factors) =\u0026gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))), Err(_) =\u0026gt; None, } } fn main() { println!(\u0026#34;24 days of Rust - primal (day 2)\u0026#34;); let sieve = Sieve::new(10000); let suspect = 5273; println!(\u0026#34;{} is prime: {}\u0026#34;, suspect, sieve.is_prime(suspect)); let not_a_prime = 1024; println!(\u0026#34;{} is prime: {}\u0026#34;, not_a_prime, sieve.is_prime(not_a_prime)); let n = 1000; match sieve.primes_from(0).nth(n - 1) { Some(number) =\u0026gt; println!(\u0026#34;{}th prime is {}\u0026#34;, n, number), None =\u0026gt; println!(\u0026#34;I don\u0026#39;t know anything about {}th prime.\u0026#34;, n), } println!(\u0026#34;{:?}\u0026#34;, sieve.factor(2610)); println!(\u0026#34;{:?}\u0026#34;, num_divisors(2610, \u0026amp;sieve)); } C++ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 #include \u0026lt;stdio.h\u0026gt; #include \u0026lt;stdlib.h\u0026gt; #include \u0026lt;time.h\u0026gt; int main(void){ int niter=10; //Specify the number of samples. srand((unsigned)time(NULL)); //Set the seed of random number generator. int n_in=0; //Initialize the counter. /*************/ /* Main loop */ /*************/ for(int iter=1;iter\u0026lt;niter+1;iter++){ double x = (double)rand()/RAND_MAX; double y = (double)rand()/RAND_MAX; //Generate random numbers x,y in [0,1]. if(x*x+y*y \u0026lt; 1e0) //If xˆ2+yˆ2\u0026lt;1.... n_in=n_in+1; //Add 1 to n_in. printf(\u0026#34;%d %.10f\\n\u0026#34;,iter,(double)n_in/iter);} } 1 1.0000000000 2 1.0000000000 3 1.0000000000 4 1.0000000000 5 1.0000000000 6 1.0000000000 7 0.8571428571 8 0.8750000000 9 0.7777777778 10 0.7000000000 1 2 3 4 5 #include \u0026lt;iostream\u0026gt; int main(){ std::cout\u0026lt;\u0026lt;\u0026#34;Hello, World.\\n\u0026#34;; return 0; } Hello, World. C# 1 2 3 4 5 6 7 8 9 10 11 // Hello World! program namespace HelloWorld { class Hello { static void Main(string[] args) { System.Console.WriteLine(\u0026#34;Hello World!\u0026#34;); } } } Hello World! Haskell add_1 : Nat -\u0026gt; Nat add_1 x = x + 1 add_1 5 ghci\u0026gt; 6 map :{ -- a very verbose way to sum a sequence of numbers: sumInts :: Int -\u0026gt; Int -\u0026gt; Int sumInts a b = if a == b then b else (+ a) $ (sumInts (a + 1) b) :} map (\\[a,b] -\u0026gt; sumInts a b) [[0, 1] , [1, 3], [1,5], [2,10]] (1 6 15 54) ", 
         "url": "https:\/\/kdbed.github.io\/posts\/lang_test\/"
     },
     
@@ -1588,6 +1598,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/pentest_windows_privilege_escalation\/": {
+        
+        "title": "Pentest - Windows Privilege Escalation",
+        "tags": ["serviceAccounts","privEsc","privilegeEscalation","windows",],
+        "content": "From Service to SYSTEM Service Account Privileges Services can be run such that they don\u0026rsquo;t maintain the privs of NT AUTHORITY\\LOCAL SERVICE account, eg with the -k LocalServiceAndNoImpersonation option.\nThe task scheduler can be used to restore default privs: FullPowers itm4n. After executing FullPowers:\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_windows_privilege_escalation\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/philosophy\/": {
         
         "title": "philosophy",
@@ -1848,6 +1868,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/tags\/privilegeescalation\/": {
+        
+        "title": "privilegeEscalation",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/privilegeescalation\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/programming\/": {
         
         "title": "programming",
@@ -2104,6 +2134,16 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/tags\/securityplus\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/serviceaccounts\/": {
+        
+        "title": "serviceAccounts",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/serviceaccounts\/"
     },
     
     
@@ -2444,6 +2484,16 @@ window.store = {
         "tags": ["pentest","web",],
         "content": "Web Application Enumeration Nmap 1 nmap -p80 --script=http-enum 192.168.1.2 Wappalyzer Determine technologies used \u0026ndash; see Browser Extensions\nDirectory Bruce Force Gobuster 1 gobuster dir -u 192.168.2.1 -w /usr/share/wordlists/dirb/common.txt -t 5 wfuzz Subdomain Enumeration dirb ", 
         "url": "https:\/\/kdbed.github.io\/posts\/web_pentest_enumeration\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/web_pentest_file_upload\/": {
+        
+        "title": "Web Pentest - File Upload",
+        "tags": ["web","pentest",],
+        "content": "File Upload Vulnerabilities Checklist from onsecurity Are filenames reflected back on the page? If so, are they HTML Entity encoded (XSS via file names)? Does it accept .zip files? Try a ZipSlip If it processes an image, check for Image Tragick (CVE-2016-3714) Can you bypass file type restrictions by changing the content-type value? Can you bypass file type restrictions by forging valid magic bytes? Can you upload a file with a less-common extension (such as .phtml)? Try playing with the filename in the request, a potential vector for traversal or SQL injection. Check for the acceptance of double extensions on uploaded files. Test for null-byte injection. Is the server windows? Try adding a trailing . to bypass extension blacklists, this dot will be removed automatically by the OS. Can you upload an SVG for XSS? If supported by the webserver, can you upload .htaccess files? Does the backend process the image with the PHP GD library? Is the app vulnerable to the infamous ffmpeg exploit? Can custom polyglots be developed to bypass specific filters? Does the app pass the file name to some sort of system function? If so, can you achieve RCE via code injection within the file name? Does the application run the uploaded file through exiftool? If so, can you get RCE via the djvu exploit? Can you bypass extension filters by using varied capitalization? ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/web_pentest_file_upload\/"
     },
     
     
