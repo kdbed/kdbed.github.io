@@ -35,56 +35,56 @@
 </ul>
 <p><code>Scapy</code> makes it easy to create and send custom packets over the network and to sniff network traffic for responses.</p>
 <h2 id="port-scan">Port Scan</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#007020;font-weight:bold">from</span> <span style="color:#0e84b5;font-weight:bold">scapy.all</span> <span style="color:#007020;font-weight:bold">import</span> <span style="color:#666">*</span>
-<span style="color:#007020;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">ipaddress</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> scapy.all <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+<span style="color:#f92672">import</span> ipaddress
 
-ports <span style="color:#666">=</span> [<span style="color:#40a070">25</span>,<span style="color:#40a070">80</span>,<span style="color:#40a070">53</span>,<span style="color:#40a070">443</span>,<span style="color:#40a070">445</span>,<span style="color:#40a070">3306</span>,<span style="color:#40a070">8080</span>,<span style="color:#40a070">8443</span>]
+ports <span style="color:#f92672">=</span> [<span style="color:#ae81ff">25</span>,<span style="color:#ae81ff">80</span>,<span style="color:#ae81ff">53</span>,<span style="color:#ae81ff">443</span>,<span style="color:#ae81ff">445</span>,<span style="color:#ae81ff">3306</span>,<span style="color:#ae81ff">8080</span>,<span style="color:#ae81ff">8443</span>]
 
-<span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">SynScan</span>(host):
-    ans,unans <span style="color:#666">=</span> sr(IP(dst<span style="color:#666">=</span>host) <span style="color:#666">/</span>
-                   TCP(sport<span style="color:#666">=</span><span style="color:#40a070">33333</span>, dport<span style="color:#666">=</span>ports, flags<span style="color:#666">=</span><span style="color:#4070a0">&#34;S&#34;</span>)
-                   ,timeout<span style="color:#666">=</span><span style="color:#40a070">2</span>,verbose<span style="color:#666">=</span><span style="color:#40a070">0</span>)
-    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Open ports at </span><span style="color:#70a0d0;font-style:italic">%s</span><span style="color:#4070a0">:&#34;</span> <span style="color:#666">%</span> host)
-    <span style="color:#007020;font-weight:bold">for</span> (s,r,) <span style="color:#007020;font-weight:bold">in</span> ans:
-        <span style="color:#007020;font-weight:bold">if</span> s[TCP]<span style="color:#666">.</span>dport <span style="color:#666">==</span> r[TCP]<span style="color:#666">.</span>sport <span style="color:#007020;font-weight:bold">and</span> r[TCP]<span style="color:#666">.</span>flags <span style="color:#666">==</span> <span style="color:#4070a0">&#34;SA&#34;</span>:
-            <span style="color:#007020">print</span>(s[TCP]<span style="color:#666">.</span>dport)
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">SynScan</span>(host):
+    ans,unans <span style="color:#f92672">=</span> sr(IP(dst<span style="color:#f92672">=</span>host) <span style="color:#f92672">/</span>
+                   TCP(sport<span style="color:#f92672">=</span><span style="color:#ae81ff">33333</span>, dport<span style="color:#f92672">=</span>ports, flags<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;S&#34;</span>)
+                   ,timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>,verbose<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+    print(<span style="color:#e6db74">&#34;Open ports at </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">:&#34;</span> <span style="color:#f92672">%</span> host)
+    <span style="color:#66d9ef">for</span> (s,r,) <span style="color:#f92672">in</span> ans:
+        <span style="color:#66d9ef">if</span> s[TCP]<span style="color:#f92672">.</span>dport <span style="color:#f92672">==</span> r[TCP]<span style="color:#f92672">.</span>sport <span style="color:#f92672">and</span> r[TCP]<span style="color:#f92672">.</span>flags <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;SA&#34;</span>:
+            print(s[TCP]<span style="color:#f92672">.</span>dport)
 
-<span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">DNSScan</span>(host):
-    ans,unans  <span style="color:#666">=</span> sr(IP(dst<span style="color:#666">=</span>host) <span style="color:#666">/</span>
-                    UDP(dport<span style="color:#666">=</span><span style="color:#40a070">53</span>) <span style="color:#666">/</span>
-                    DNS(rd<span style="color:#666">=</span><span style="color:#40a070">1</span>,qd<span style="color:#666">=</span>DNSQR(qname<span style="color:#666">=</span><span style="color:#4070a0">&#34;google.com&#34;</span>))
-                    ,timeout<span style="color:#666">=</span><span style="color:#40a070">2</span>,verbose<span style="color:#666">=</span><span style="color:#40a070">0</span>)
-    <span style="color:#007020;font-weight:bold">if</span> ans <span style="color:#007020;font-weight:bold">and</span> ans[UDP]:
-        <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;DNS Server at </span><span style="color:#70a0d0;font-style:italic">%s</span><span style="color:#4070a0">&#34;</span> <span style="color:#666">%</span> host)
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">DNSScan</span>(host):
+    ans,unans  <span style="color:#f92672">=</span> sr(IP(dst<span style="color:#f92672">=</span>host) <span style="color:#f92672">/</span>
+                    UDP(dport<span style="color:#f92672">=</span><span style="color:#ae81ff">53</span>) <span style="color:#f92672">/</span>
+                    DNS(rd<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,qd<span style="color:#f92672">=</span>DNSQR(qname<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;google.com&#34;</span>))
+                    ,timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>,verbose<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+    <span style="color:#66d9ef">if</span> ans <span style="color:#f92672">and</span> ans[UDP]:
+        print(<span style="color:#e6db74">&#34;DNS Server at </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> host)
 
-host <span style="color:#666">=</span> <span style="color:#007020">input</span>(<span style="color:#4070a0">&#34;Enter IP Address: &#34;</span>)
-<span style="color:#007020;font-weight:bold">try</span>:
-    ipaddress<span style="color:#666">.</span>ip_address(host)
-<span style="color:#007020;font-weight:bold">except</span>:
-    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Invalid address&#34;</span>)
-    exit(<span style="color:#666">-</span><span style="color:#40a070">1</span>)
+host <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter IP Address: &#34;</span>)
+<span style="color:#66d9ef">try</span>:
+    ipaddress<span style="color:#f92672">.</span>ip_address(host)
+<span style="color:#66d9ef">except</span>:
+    print(<span style="color:#e6db74">&#34;Invalid address&#34;</span>)
+    exit(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)
 
 SynScan(host)
 DNSScan(host)
 </code></pre></div><h3 id="syn-scan">SYN Scan</h3>
 <p><a id="code-snippet--synscanner"></a></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">SynScan</span>(host):
-    ans,unans <span style="color:#666">=</span> sr(IP(dst<span style="color:#666">=</span>host) <span style="color:#666">/</span>
-                   TCP(sport<span style="color:#666">=</span><span style="color:#40a070">33333</span>, dport<span style="color:#666">=</span>ports, flags<span style="color:#666">=</span><span style="color:#4070a0">&#34;S&#34;</span>)
-                   ,timeout<span style="color:#666">=</span><span style="color:#40a070">2</span>,verbose<span style="color:#666">=</span><span style="color:#40a070">0</span>)
-    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Open ports at </span><span style="color:#70a0d0;font-style:italic">%s</span><span style="color:#4070a0">:&#34;</span> <span style="color:#666">%</span> host)
-    <span style="color:#007020;font-weight:bold">for</span> (s,r,) <span style="color:#007020;font-weight:bold">in</span> ans:
-        <span style="color:#007020;font-weight:bold">if</span> s[TCP]<span style="color:#666">.</span>dport <span style="color:#666">==</span> r[TCP]<span style="color:#666">.</span>sport <span style="color:#007020;font-weight:bold">and</span> r[TCP]<span style="color:#666">.</span>flags <span style="color:#666">==</span> <span style="color:#4070a0">&#34;SA&#34;</span>:
-            <span style="color:#007020">print</span>(s[TCP]<span style="color:#666">.</span>dport)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">SynScan</span>(host):
+    ans,unans <span style="color:#f92672">=</span> sr(IP(dst<span style="color:#f92672">=</span>host) <span style="color:#f92672">/</span>
+                   TCP(sport<span style="color:#f92672">=</span><span style="color:#ae81ff">33333</span>, dport<span style="color:#f92672">=</span>ports, flags<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;S&#34;</span>)
+                   ,timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>,verbose<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+    print(<span style="color:#e6db74">&#34;Open ports at </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">:&#34;</span> <span style="color:#f92672">%</span> host)
+    <span style="color:#66d9ef">for</span> (s,r,) <span style="color:#f92672">in</span> ans:
+        <span style="color:#66d9ef">if</span> s[TCP]<span style="color:#f92672">.</span>dport <span style="color:#f92672">==</span> r[TCP]<span style="color:#f92672">.</span>sport <span style="color:#f92672">and</span> r[TCP]<span style="color:#f92672">.</span>flags <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;SA&#34;</span>:
+            print(s[TCP]<span style="color:#f92672">.</span>dport)
 </code></pre></div><h3 id="dns-scan">DNS Scan</h3>
 <p><a id="code-snippet--dnsscanner"></a></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">DNSScan</span>(host):
-    ans,unans  <span style="color:#666">=</span> sr(IP(dst<span style="color:#666">=</span>host) <span style="color:#666">/</span>
-                    UDP(dport<span style="color:#666">=</span><span style="color:#40a070">53</span>) <span style="color:#666">/</span>
-                    DNS(rd<span style="color:#666">=</span><span style="color:#40a070">1</span>,qd<span style="color:#666">=</span>DNSQR(qname<span style="color:#666">=</span><span style="color:#4070a0">&#34;google.com&#34;</span>))
-                    ,timeout<span style="color:#666">=</span><span style="color:#40a070">2</span>,verbose<span style="color:#666">=</span><span style="color:#40a070">0</span>)
-    <span style="color:#007020;font-weight:bold">if</span> ans <span style="color:#007020;font-weight:bold">and</span> ans[UDP]:
-        <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;DNS Server at </span><span style="color:#70a0d0;font-style:italic">%s</span><span style="color:#4070a0">&#34;</span> <span style="color:#666">%</span> host)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">DNSScan</span>(host):
+    ans,unans  <span style="color:#f92672">=</span> sr(IP(dst<span style="color:#f92672">=</span>host) <span style="color:#f92672">/</span>
+                    UDP(dport<span style="color:#f92672">=</span><span style="color:#ae81ff">53</span>) <span style="color:#f92672">/</span>
+                    DNS(rd<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,qd<span style="color:#f92672">=</span>DNSQR(qname<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;google.com&#34;</span>))
+                    ,timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>,verbose<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+    <span style="color:#66d9ef">if</span> ans <span style="color:#f92672">and</span> ans[UDP]:
+        print(<span style="color:#e6db74">&#34;DNS Server at </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> host)
 </code></pre></div><h2 id="source">Source</h2>
 <p><strong>Python for Cybersecurity</strong> - Howard E Poston</p>
 

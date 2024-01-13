@@ -28,90 +28,90 @@
       <div class="content">
         <h1>sha1Cracker</h1>
         <h2 id="implementing-a-sha1--sha1-dot-md--hash-cracker-in-rust">Implementing a <a href="/posts/sha1/">sha1</a> hash cracker in Rust</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#bbb">
-</span><span style="color:#bbb"></span><span style="color:#007020;font-weight:bold">use</span><span style="color:#bbb"> </span>sha1::Digest;<span style="color:#bbb">
-</span><span style="color:#bbb"></span><span style="color:#007020;font-weight:bold">use</span><span style="color:#bbb"> </span>std::{<span style="color:#bbb">
-</span><span style="color:#bbb">    </span>env,<span style="color:#bbb">
-</span><span style="color:#bbb">    </span>error::Error,<span style="color:#bbb">
-</span><span style="color:#bbb">    </span>fs::File,<span style="color:#bbb">
-</span><span style="color:#bbb">    </span>io::{BufRead,<span style="color:#bbb"> </span>BufReader},<span style="color:#bbb">
-</span><span style="color:#bbb"></span>};<span style="color:#bbb">
-</span><span style="color:#bbb">
-</span><span style="color:#bbb"></span><span style="color:#007020;font-weight:bold">const</span><span style="color:#bbb"> </span>SHA1_HEX_STRING_LENGTH: <span style="color:#902000">usize</span> <span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#40a070">40</span>;<span style="color:#bbb">
-</span><span style="color:#bbb">
-</span><span style="color:#bbb"></span><span style="color:#007020;font-weight:bold">fn</span> <span style="color:#06287e">main</span>()<span style="color:#bbb"> </span>-&gt; <span style="color:#007020">Result</span><span style="color:#666">&lt;</span>(),<span style="color:#bbb"> </span><span style="color:#007020">Box</span><span style="color:#666">&lt;</span><span style="color:#007020;font-weight:bold">dyn</span><span style="color:#bbb"> </span>Error<span style="color:#666">&gt;&gt;</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span><span style="color:#bbb">
-</span><span style="color:#bbb">    </span><span style="color:#007020;font-weight:bold">let</span><span style="color:#bbb"> </span>args: <span style="color:#007020">Vec</span><span style="color:#666">&lt;</span><span style="color:#007020">String</span><span style="color:#666">&gt;</span><span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>env::args().collect();<span style="color:#bbb">
-</span><span style="color:#bbb">
-</span><span style="color:#bbb">    </span><span style="color:#007020;font-weight:bold">if</span><span style="color:#bbb"> </span>args.len()<span style="color:#bbb"> </span><span style="color:#666">!=</span><span style="color:#bbb"> </span><span style="color:#40a070">3</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span><span style="color:#bbb">        </span>println!(<span style="color:#4070a0">&#34;Usage:&#34;</span>);<span style="color:#bbb">
-</span><span style="color:#bbb">        </span>println!(<span style="color:#4070a0">&#34;sha1_cracker: &lt;wordlist.txt&gt; &lt;sha1_hash&gt;&#34;</span>);<span style="color:#bbb">
-</span><span style="color:#bbb">        </span><span style="color:#007020;font-weight:bold">return</span><span style="color:#bbb"> </span><span style="color:#007020">Ok</span>(());<span style="color:#bbb">
-</span><span style="color:#bbb">    </span>}<span style="color:#bbb">
-</span><span style="color:#bbb">
-</span><span style="color:#bbb">    </span><span style="color:#007020;font-weight:bold">let</span><span style="color:#bbb"> </span>hash_to_crack<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>args[<span style="color:#40a070">2</span>].trim();<span style="color:#bbb">
-</span><span style="color:#bbb">    </span><span style="color:#007020;font-weight:bold">if</span><span style="color:#bbb"> </span>hash_to_crack.len()<span style="color:#bbb"> </span><span style="color:#666">!=</span><span style="color:#bbb"> </span>SHA1_HEX_STRING_LENGTH<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span><span style="color:#bbb">        </span><span style="color:#007020;font-weight:bold">return</span><span style="color:#bbb"> </span><span style="color:#007020">Err</span>(<span style="color:#4070a0">&#34;sha1 hash is not valid.&#34;</span>.into());<span style="color:#bbb">
-</span><span style="color:#bbb">    </span>}<span style="color:#bbb">
-</span><span style="color:#bbb">
-</span><span style="color:#bbb">    </span><span style="color:#007020;font-weight:bold">let</span><span style="color:#bbb"> </span>wordlist_file<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>File::open(<span style="color:#666">&amp;</span>args[<span style="color:#40a070">1</span>])<span style="color:#666">?</span>;<span style="color:#bbb">
-</span><span style="color:#bbb">    </span><span style="color:#007020;font-weight:bold">let</span><span style="color:#bbb"> </span>reader<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>BufReader::new(<span style="color:#666">&amp;</span>wordlist_file);<span style="color:#bbb">
-</span><span style="color:#bbb">
-</span><span style="color:#bbb">    </span><span style="color:#007020;font-weight:bold">for</span><span style="color:#bbb"> </span>line<span style="color:#bbb"> </span><span style="color:#007020;font-weight:bold">in</span><span style="color:#bbb"> </span>reader.lines()<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span><span style="color:#bbb">        </span><span style="color:#007020;font-weight:bold">let</span><span style="color:#bbb"> </span>line<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>line<span style="color:#666">?</span>;<span style="color:#bbb">
-</span><span style="color:#bbb">        </span><span style="color:#007020;font-weight:bold">let</span><span style="color:#bbb"> </span>common_password<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>line.trim();<span style="color:#bbb">
-</span><span style="color:#bbb">        </span><span style="color:#007020;font-weight:bold">if</span><span style="color:#bbb"> </span>hash_to_crack<span style="color:#bbb"> </span><span style="color:#666">==</span><span style="color:#bbb"> </span><span style="color:#666">&amp;</span>hex::encode(sha1::Sha1::digest(common_password.as_bytes()))<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span><span style="color:#bbb">            </span>println!(<span style="color:#4070a0">&#34;Password found: {}&#34;</span>,<span style="color:#bbb"> </span><span style="color:#666">&amp;</span>common_password);<span style="color:#bbb">
-</span><span style="color:#bbb">            </span><span style="color:#007020;font-weight:bold">return</span><span style="color:#bbb"> </span><span style="color:#007020">Ok</span>(());<span style="color:#bbb">
-</span><span style="color:#bbb">        </span>}<span style="color:#bbb">
-</span><span style="color:#bbb">    </span>}<span style="color:#bbb">
-</span><span style="color:#bbb">
-</span><span style="color:#bbb">    </span>println!(<span style="color:#4070a0">&#34;password not found in wordlist.&#34;</span>);<span style="color:#bbb">
-</span><span style="color:#bbb">
-</span><span style="color:#bbb">    </span><span style="color:#007020">Ok</span>(())<span style="color:#bbb">
-</span><span style="color:#bbb">
-</span><span style="color:#bbb"></span>}<span style="color:#bbb">
-</span><span style="color:#bbb">
-</span></code></pre></div><h3 id="imports">Imports</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">
+<span style="color:#66d9ef">use</span> sha1::Digest;
+<span style="color:#66d9ef">use</span> std::{
+    env,
+    error::Error,
+    fs::File,
+    io::{BufRead, BufReader},
+};
+
+<span style="color:#66d9ef">const</span> SHA1_HEX_STRING_LENGTH: <span style="color:#66d9ef">usize</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">40</span>;
+
+<span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() -&gt; Result<span style="color:#f92672">&lt;</span>(), Box<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">dyn</span> Error<span style="color:#f92672">&gt;&gt;</span> {
+
+    <span style="color:#66d9ef">let</span> args: Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> <span style="color:#f92672">=</span> env::args().collect();
+
+    <span style="color:#66d9ef">if</span> args.len() <span style="color:#f92672">!=</span> <span style="color:#ae81ff">3</span> {
+        println!(<span style="color:#e6db74">&#34;Usage:&#34;</span>);
+        println!(<span style="color:#e6db74">&#34;sha1_cracker: &lt;wordlist.txt&gt; &lt;sha1_hash&gt;&#34;</span>);
+        <span style="color:#66d9ef">return</span> Ok(());
+    }
+
+    <span style="color:#66d9ef">let</span> hash_to_crack <span style="color:#f92672">=</span> args[<span style="color:#ae81ff">2</span>].trim();
+    <span style="color:#66d9ef">if</span> hash_to_crack.len() <span style="color:#f92672">!=</span> SHA1_HEX_STRING_LENGTH {
+        <span style="color:#66d9ef">return</span> Err(<span style="color:#e6db74">&#34;sha1 hash is not valid.&#34;</span>.into());
+    }
+
+    <span style="color:#66d9ef">let</span> wordlist_file <span style="color:#f92672">=</span> File::open(<span style="color:#f92672">&amp;</span>args[<span style="color:#ae81ff">1</span>])<span style="color:#f92672">?</span>;
+    <span style="color:#66d9ef">let</span> reader <span style="color:#f92672">=</span> BufReader::new(<span style="color:#f92672">&amp;</span>wordlist_file);
+
+    <span style="color:#66d9ef">for</span> line <span style="color:#66d9ef">in</span> reader.lines() {
+        <span style="color:#66d9ef">let</span> line <span style="color:#f92672">=</span> line<span style="color:#f92672">?</span>;
+        <span style="color:#66d9ef">let</span> common_password <span style="color:#f92672">=</span> line.trim();
+        <span style="color:#66d9ef">if</span> hash_to_crack <span style="color:#f92672">==</span> <span style="color:#f92672">&amp;</span>hex::encode(sha1::Sha1::digest(common_password.as_bytes())) {
+            println!(<span style="color:#e6db74">&#34;Password found: {}&#34;</span>, <span style="color:#f92672">&amp;</span>common_password);
+            <span style="color:#66d9ef">return</span> Ok(());
+        }
+    }
+
+    println!(<span style="color:#e6db74">&#34;password not found in wordlist.&#34;</span>);
+
+    Ok(())
+
+}
+
+</code></pre></div><h3 id="imports">Imports</h3>
 <p><a id="code-snippet--imports"></a></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#007020;font-weight:bold">use</span><span style="color:#bbb"> </span>sha1::Digest;<span style="color:#bbb">
-</span><span style="color:#bbb"></span><span style="color:#007020;font-weight:bold">use</span><span style="color:#bbb"> </span>std::{<span style="color:#bbb">
-</span><span style="color:#bbb">    </span>env,<span style="color:#bbb">
-</span><span style="color:#bbb">    </span>error::Error,<span style="color:#bbb">
-</span><span style="color:#bbb">    </span>fs::File,<span style="color:#bbb">
-</span><span style="color:#bbb">    </span>io::{BufRead,<span style="color:#bbb"> </span>BufReader},<span style="color:#bbb">
-</span><span style="color:#bbb"></span>};<span style="color:#bbb">
-</span><span style="color:#bbb">
-</span><span style="color:#bbb"></span><span style="color:#007020;font-weight:bold">const</span><span style="color:#bbb"> </span>SHA1_HEX_STRING_LENGTH: <span style="color:#902000">usize</span> <span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#40a070">40</span>;<span style="color:#bbb">
-</span></code></pre></div><h3 id="inputs">Inputs</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> sha1::Digest;
+<span style="color:#66d9ef">use</span> std::{
+    env,
+    error::Error,
+    fs::File,
+    io::{BufRead, BufReader},
+};
+
+<span style="color:#66d9ef">const</span> SHA1_HEX_STRING_LENGTH: <span style="color:#66d9ef">usize</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">40</span>;
+</code></pre></div><h3 id="inputs">Inputs</h3>
 <p><a id="code-snippet--inputs"></a></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#007020;font-weight:bold">let</span><span style="color:#bbb"> </span>args: <span style="color:#007020">Vec</span><span style="color:#666">&lt;</span><span style="color:#007020">String</span><span style="color:#666">&gt;</span><span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>env::args().collect();<span style="color:#bbb">
-</span><span style="color:#bbb">
-</span><span style="color:#bbb"></span><span style="color:#007020;font-weight:bold">if</span><span style="color:#bbb"> </span>args.len()<span style="color:#bbb"> </span><span style="color:#666">!=</span><span style="color:#bbb"> </span><span style="color:#40a070">3</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span><span style="color:#bbb">    </span>println!(<span style="color:#4070a0">&#34;Usage:&#34;</span>);<span style="color:#bbb">
-</span><span style="color:#bbb">    </span>println!(<span style="color:#4070a0">&#34;sha1_cracker: &lt;wordlist.txt&gt; &lt;sha1_hash&gt;&#34;</span>);<span style="color:#bbb">
-</span><span style="color:#bbb">    </span><span style="color:#007020;font-weight:bold">return</span><span style="color:#bbb"> </span><span style="color:#007020">Ok</span>(());<span style="color:#bbb">
-</span><span style="color:#bbb"></span>}<span style="color:#bbb">
-</span><span style="color:#bbb">
-</span><span style="color:#bbb"></span><span style="color:#007020;font-weight:bold">let</span><span style="color:#bbb"> </span>hash_to_crack<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>args[<span style="color:#40a070">2</span>].trim();<span style="color:#bbb">
-</span><span style="color:#bbb"></span><span style="color:#007020;font-weight:bold">if</span><span style="color:#bbb"> </span>hash_to_crack.len()<span style="color:#bbb"> </span><span style="color:#666">!=</span><span style="color:#bbb"> </span>SHA1_HEX_STRING_LENGTH<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span><span style="color:#bbb">    </span><span style="color:#007020;font-weight:bold">return</span><span style="color:#bbb"> </span><span style="color:#007020">Err</span>(<span style="color:#4070a0">&#34;sha1 hash is not valid.&#34;</span>.into());<span style="color:#bbb">
-</span><span style="color:#bbb"></span>}<span style="color:#bbb">
-</span></code></pre></div><h3 id="read-file">Read File</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">let</span> args: Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> <span style="color:#f92672">=</span> env::args().collect();
+
+<span style="color:#66d9ef">if</span> args.len() <span style="color:#f92672">!=</span> <span style="color:#ae81ff">3</span> {
+    println!(<span style="color:#e6db74">&#34;Usage:&#34;</span>);
+    println!(<span style="color:#e6db74">&#34;sha1_cracker: &lt;wordlist.txt&gt; &lt;sha1_hash&gt;&#34;</span>);
+    <span style="color:#66d9ef">return</span> Ok(());
+}
+
+<span style="color:#66d9ef">let</span> hash_to_crack <span style="color:#f92672">=</span> args[<span style="color:#ae81ff">2</span>].trim();
+<span style="color:#66d9ef">if</span> hash_to_crack.len() <span style="color:#f92672">!=</span> SHA1_HEX_STRING_LENGTH {
+    <span style="color:#66d9ef">return</span> Err(<span style="color:#e6db74">&#34;sha1 hash is not valid.&#34;</span>.into());
+}
+</code></pre></div><h3 id="read-file">Read File</h3>
 <p><a id="code-snippet--readFile"></a></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#007020;font-weight:bold">let</span><span style="color:#bbb"> </span>wordlist_file<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>File::open(<span style="color:#666">&amp;</span>args[<span style="color:#40a070">1</span>])<span style="color:#666">?</span>;<span style="color:#bbb">
-</span><span style="color:#bbb"></span><span style="color:#007020;font-weight:bold">let</span><span style="color:#bbb"> </span>reader<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>BufReader::new(<span style="color:#666">&amp;</span>wordlist_file);<span style="color:#bbb">
-</span></code></pre></div><h3 id="check-pass">Check Pass</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">let</span> wordlist_file <span style="color:#f92672">=</span> File::open(<span style="color:#f92672">&amp;</span>args[<span style="color:#ae81ff">1</span>])<span style="color:#f92672">?</span>;
+<span style="color:#66d9ef">let</span> reader <span style="color:#f92672">=</span> BufReader::new(<span style="color:#f92672">&amp;</span>wordlist_file);
+</code></pre></div><h3 id="check-pass">Check Pass</h3>
 <p><a id="code-snippet--checkPass"></a></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#007020;font-weight:bold">for</span><span style="color:#bbb"> </span>line<span style="color:#bbb"> </span><span style="color:#007020;font-weight:bold">in</span><span style="color:#bbb"> </span>reader.lines()<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span><span style="color:#bbb">    </span><span style="color:#007020;font-weight:bold">let</span><span style="color:#bbb"> </span>line<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>line<span style="color:#666">?</span>;<span style="color:#bbb">
-</span><span style="color:#bbb">    </span><span style="color:#007020;font-weight:bold">let</span><span style="color:#bbb"> </span>common_password<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>line.trim();<span style="color:#bbb">
-</span><span style="color:#bbb">    </span><span style="color:#007020;font-weight:bold">if</span><span style="color:#bbb"> </span>hash_to_crack<span style="color:#bbb"> </span><span style="color:#666">==</span><span style="color:#bbb"> </span><span style="color:#666">&amp;</span>hex::encode(sha1::Sha1::digest(common_password.as_bytes()))<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span><span style="color:#bbb">        </span>println!(<span style="color:#4070a0">&#34;Password found: {}&#34;</span>,<span style="color:#bbb"> </span><span style="color:#666">&amp;</span>common_password);<span style="color:#bbb">
-</span><span style="color:#bbb">        </span><span style="color:#007020;font-weight:bold">return</span><span style="color:#bbb"> </span><span style="color:#007020">Ok</span>(());<span style="color:#bbb">
-</span><span style="color:#bbb">    </span>}<span style="color:#bbb">
-</span><span style="color:#bbb"></span>}<span style="color:#bbb">
-</span></code></pre></div><h2 id="bibliography">Bibliography</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">for</span> line <span style="color:#66d9ef">in</span> reader.lines() {
+    <span style="color:#66d9ef">let</span> line <span style="color:#f92672">=</span> line<span style="color:#f92672">?</span>;
+    <span style="color:#66d9ef">let</span> common_password <span style="color:#f92672">=</span> line.trim();
+    <span style="color:#66d9ef">if</span> hash_to_crack <span style="color:#f92672">==</span> <span style="color:#f92672">&amp;</span>hex::encode(sha1::Sha1::digest(common_password.as_bytes())) {
+        println!(<span style="color:#e6db74">&#34;Password found: {}&#34;</span>, <span style="color:#f92672">&amp;</span>common_password);
+        <span style="color:#66d9ef">return</span> Ok(());
+    }
+}
+</code></pre></div><h2 id="bibliography">Bibliography</h2>
 <p>Black Hat Rust</p>
 
       </div>

@@ -29,14 +29,14 @@
         <h1>Cracking - Ansible</h1>
         <h2 id="cracking-ansible--ansible-dot-md--vaults">Cracking <a href="/tags/ansible/">Ansible</a> vaults</h2>
 <p>Find Ansible vault &ndash; encrypted creds</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#bb60d5">$ANSIBLE_VAULT</span>;1.1;AES256
-          <span style="color:#40a070">32666534386435366537653136663731633138616264323230383566333966346662313161326239</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ANSIBLE_VAULT;1.1;AES256
+          <span style="color:#ae81ff">32666534386435366537653136663731633138616264323230383566333966346662313161326239</span>
           6134353663663462373265633832356663356239383039640a346431373431666433343434366139
-          <span style="color:#40a070">35653634376333666234613466396534343030656165396464323564373334616262613439343033</span>
+          <span style="color:#ae81ff">35653634376333666234613466396534343030656165396464323564373334616262613439343033</span>
           6334326263326364380a653034313733326639323433626130343834663538326439636232306531
-          <span style="color:#40a070">3438</span>
+          <span style="color:#ae81ff">3438</span>
 </code></pre></div><p>Convert to correct form for john</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">/usr/share/john/ansible2john.py pwm_ansible_admin.yml &gt; out.yml
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">/usr/share/john/ansible2john.py pwm_ansible_admin.yml &gt; out.yml
 </code></pre></div><p>Then crack with john &ndash;</p>
 
       </div>

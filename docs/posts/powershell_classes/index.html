@@ -31,40 +31,40 @@
 <h3 id="introduction">Introduction</h3>
 <p>PowerShell is an object-oriented language. When you run commands, see the output on your screen, those are objects.</p>
 <p>Skeleton of a class called <code>student</code>:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">class student {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">class student {
 
         }
 </code></pre></div><p>Classes have properties that look like parameters that are attributes that describe that class. The example below shows a class called student with two properties; <code>FirstName</code> and <code>LastName</code>.</p>
 <p>When you define a property, you should always define a type that sets a specific <em>schema</em> for what property values can hold. In the example below, both properties are defined as strings.</p>
 <h3 id="student-class">Student Class</h3>
 <p>Class with two properties:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">class student {
-    <span style="color:#60add5">[string]</span><span style="color:#bb60d5">$FirstName</span>
-    <span style="color:#60add5">[string]</span><span style="color:#bb60d5">$LastName</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">class student {
+    <span style="color:#66d9ef">[string]</span>$FirstName
+    <span style="color:#66d9ef">[string]</span>$LastName
 }
 </code></pre></div><p>After you define a class, create an object from it or instantiate an object. There are multiple ways to instantiate objects from classes; one common way is to use type accelerators such as [student] which represent the class, followed by a default method that comes with every class called new().</p>
 <p>Using the type accelerator shortcut is the same as creating an object using the New-Object command.</p>
 <p>Once you&rsquo;ve created an object from that class, then assign values to properties. The example below is assigning values of <em>Tyler</em> and <em>Muir</em> for the <code>FirstName</code> and <code>LastName</code> properties.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">class student {
-    <span style="color:#60add5">[string]</span><span style="color:#bb60d5">$FirstName</span>
-    <span style="color:#60add5">[string]</span><span style="color:#bb60d5">$LastName</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">class student {
+    <span style="color:#66d9ef">[string]</span>$FirstName
+    <span style="color:#66d9ef">[string]</span>$LastName
 }
-<span style="color:#bb60d5">$student1</span> = <span style="color:#60add5">[student]</span>::new()
-<span style="color:#bb60d5">$student1</span>.FirstName = <span style="color:#4070a0">&#39;Tyler&#39;</span>
-<span style="color:#bb60d5">$student1</span>.LastName = <span style="color:#4070a0">&#39;Muir&#39;</span>
-<span style="color:#bb60d5">$student1</span> | <span style="color:#007020">Get-Member</span>
-<span style="color:#bb60d5">$student1</span> | <span style="color:#007020">Write-Output</span>
+$student1 = <span style="color:#66d9ef">[student]</span>::new()
+$student1.FirstName = <span style="color:#e6db74">&#39;Tyler&#39;</span>
+$student1.LastName = <span style="color:#e6db74">&#39;Muir&#39;</span>
+$student1 | Get-Member
+$student1 | Write-Output
 </code></pre></div><p>Notice that Get-Member returns four methods and two properties. The properties probably look familiar, but the methods sure don&rsquo;t. PowerShell adds certain methods by default, but you can add your own methods or even modify the default methods.</p>
 <h3 id="methods">Methods</h3>
 <p>Defining methods with a <em>scriptblock</em></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">[&lt;output type&gt;]&lt;name&gt;() {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">[&lt;output type&gt;]&lt;name&gt;() {
 	&lt;code that runs when the method is executed&gt;
 }
 </code></pre></div><p>Method parameters set set inside the parentheses ().</p>
 <h4 id="return-is-mandatory"><code>return</code> is mandatory</h4>
 <p>PowerShell functions will return objects by simply placing the object anywhere in the function; if a method returns an object, you must use the return construct as shown below.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#60add5">[string]</span>GetName() {
-	<span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#39;foo&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#66d9ef">[string]</span>GetName() {
+	<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;foo&#39;</span>
 }
 </code></pre></div><h2 id="references">References</h2>
 <p>Taken from: <a href="https://adamtheautomator.com/powershell-classes/">ATA</a></p>

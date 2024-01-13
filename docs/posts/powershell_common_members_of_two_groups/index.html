@@ -28,18 +28,18 @@
       <div class="content">
         <h1>PowerShell - Common Members of two groups</h1>
         <h2 id="get-members-in-common-for-2-groups-in-ad">Get members in common for 2 groups in AD</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">Function Get-ADGroupMembersInBothGroups <span style="color:#666">{</span>
-    Param <span style="color:#666">(</span>
-        <span style="color:#666">[</span>Parameter<span style="color:#666">(</span><span style="color:#bb60d5">Mandatory</span><span style="color:#666">=</span><span style="color:#bb60d5">$true</span><span style="color:#666">)]</span>
-        <span style="color:#666">[</span>string<span style="color:#666">]</span><span style="color:#bb60d5">$Group1</span>,
-        <span style="color:#666">[</span>Parameter<span style="color:#666">(</span><span style="color:#bb60d5">Mandatory</span><span style="color:#666">=</span><span style="color:#bb60d5">$true</span><span style="color:#666">)]</span>
-        <span style="color:#666">[</span>string<span style="color:#666">]</span><span style="color:#bb60d5">$Group2</span>
-    <span style="color:#666">)</span>
-    <span style="color:#bb60d5">$Group1Members</span> <span style="color:#666">=</span> Get-ADGroup -Identity <span style="color:#bb60d5">$Group1</span> -properties members |<span style="color:#007020;font-weight:bold">select</span> -expand members
-    <span style="color:#bb60d5">$Group2Members</span> <span style="color:#666">=</span> Get-ADGroup -Identity <span style="color:#bb60d5">$Group2</span> -properties members|<span style="color:#007020;font-weight:bold">select</span> -expand members
-    <span style="color:#bb60d5">$match</span> <span style="color:#666">=</span> <span style="color:#bb60d5">$Group1Members</span> | Where-Object <span style="color:#666">{</span><span style="color:#bb60d5">$Group2Members</span> -contains <span style="color:#bb60d5">$_</span><span style="color:#666">}</span>
-    write-host <span style="color:#bb60d5">$match</span>
-<span style="color:#666">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">Function Get-ADGroupMembersInBothGroups <span style="color:#f92672">{</span>
+    Param <span style="color:#f92672">(</span>
+        <span style="color:#f92672">[</span>Parameter<span style="color:#f92672">(</span>Mandatory<span style="color:#f92672">=</span>$true<span style="color:#f92672">)]</span>
+        <span style="color:#f92672">[</span>string<span style="color:#f92672">]</span>$Group1,
+        <span style="color:#f92672">[</span>Parameter<span style="color:#f92672">(</span>Mandatory<span style="color:#f92672">=</span>$true<span style="color:#f92672">)]</span>
+        <span style="color:#f92672">[</span>string<span style="color:#f92672">]</span>$Group2
+    <span style="color:#f92672">)</span>
+    $Group1Members <span style="color:#f92672">=</span> Get-ADGroup -Identity $Group1 -properties members |<span style="color:#66d9ef">select</span> -expand members
+    $Group2Members <span style="color:#f92672">=</span> Get-ADGroup -Identity $Group2 -properties members|<span style="color:#66d9ef">select</span> -expand members
+    $match <span style="color:#f92672">=</span> $Group1Members | Where-Object <span style="color:#f92672">{</span>$Group2Members -contains $_<span style="color:#f92672">}</span>
+    write-host $match
+<span style="color:#f92672">}</span>
 </code></pre></div>
       </div>
       

@@ -38,78 +38,78 @@
 <p>You can use different mechanisms for DNS zone transfer but the simplest one is AXFR (technically speaking, AXFR refers to the protocol used during a DNS zone transfer). It is a client-initiated request. Therefore, you can edit information on the primary DNS server and then use AXFR from the secondary DNS server to download the entire zone.</p>
 <h3 id="how-to-initiate-a-dns-zone-transfer">How to Initiate a DNS Zone Transfer</h3>
 <p>Initiating an AXFR zone-transfer request from a secondary server is as simple as using the following dig commands, where zonetransfer.me is the domain that we want to initiate a zone transfer for. First, we need to get the list of DNS servers for the domain:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">dig +short ns zonetransfer.me
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">dig +short ns zonetransfer.me
 </code></pre></div><p>Now, we can initiate an AXFR request to get a copy of the zone from the primary server:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">dig axfr zonetransfer.me @nsztm1.digi.ninja
-</code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">; &lt;&lt;&gt;&gt; DiG 9.16.24 &lt;&lt;&gt;&gt; axfr zonetransfer.me @nsztm1.digi.ninja
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">dig axfr zonetransfer.me @nsztm1.digi.ninja
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">; &lt;&lt;&gt;&gt; DiG 9.16.24 &lt;&lt;&gt;&gt; axfr zonetransfer.me @nsztm1.digi.ninja
 ;; global options: +cmd
-zonetransfer.me.	7200	IN	SOA	nsztm1.digi.ninja. robin.digi.ninja. <span style="color:#40a070">2019100801</span> <span style="color:#40a070">172800</span> <span style="color:#40a070">900</span> <span style="color:#40a070">1209600</span> <span style="color:#40a070">3600</span>
-zonetransfer.me.	300	IN	HINFO	<span style="color:#4070a0">&#34;Casio fx-700G&#34;</span> <span style="color:#4070a0">&#34;Windows XP&#34;</span>
-zonetransfer.me.	301	IN	TXT	<span style="color:#4070a0">&#34;google-site-verification=tyP28J7JAUHA9fw2sHXMgcCC0I6XBmmoVi04VlMewxA&#34;</span>
-zonetransfer.me.	7200	IN	MX	<span style="color:#40a070">0</span> ASPMX.L.GOOGLE.COM.
-zonetransfer.me.	7200	IN	MX	<span style="color:#40a070">10</span> ALT1.ASPMX.L.GOOGLE.COM.
-zonetransfer.me.	7200	IN	MX	<span style="color:#40a070">10</span> ALT2.ASPMX.L.GOOGLE.COM.
-zonetransfer.me.	7200	IN	MX	<span style="color:#40a070">20</span> ASPMX2.GOOGLEMAIL.COM.
-zonetransfer.me.	7200	IN	MX	<span style="color:#40a070">20</span> ASPMX3.GOOGLEMAIL.COM.
-zonetransfer.me.	7200	IN	MX	<span style="color:#40a070">20</span> ASPMX4.GOOGLEMAIL.COM.
-zonetransfer.me.	7200	IN	MX	<span style="color:#40a070">20</span> ASPMX5.GOOGLEMAIL.COM.
+zonetransfer.me.	7200	IN	SOA	nsztm1.digi.ninja. robin.digi.ninja. <span style="color:#ae81ff">2019100801</span> <span style="color:#ae81ff">172800</span> <span style="color:#ae81ff">900</span> <span style="color:#ae81ff">1209600</span> <span style="color:#ae81ff">3600</span>
+zonetransfer.me.	300	IN	HINFO	<span style="color:#e6db74">&#34;Casio fx-700G&#34;</span> <span style="color:#e6db74">&#34;Windows XP&#34;</span>
+zonetransfer.me.	301	IN	TXT	<span style="color:#e6db74">&#34;google-site-verification=tyP28J7JAUHA9fw2sHXMgcCC0I6XBmmoVi04VlMewxA&#34;</span>
+zonetransfer.me.	7200	IN	MX	<span style="color:#ae81ff">0</span> ASPMX.L.GOOGLE.COM.
+zonetransfer.me.	7200	IN	MX	<span style="color:#ae81ff">10</span> ALT1.ASPMX.L.GOOGLE.COM.
+zonetransfer.me.	7200	IN	MX	<span style="color:#ae81ff">10</span> ALT2.ASPMX.L.GOOGLE.COM.
+zonetransfer.me.	7200	IN	MX	<span style="color:#ae81ff">20</span> ASPMX2.GOOGLEMAIL.COM.
+zonetransfer.me.	7200	IN	MX	<span style="color:#ae81ff">20</span> ASPMX3.GOOGLEMAIL.COM.
+zonetransfer.me.	7200	IN	MX	<span style="color:#ae81ff">20</span> ASPMX4.GOOGLEMAIL.COM.
+zonetransfer.me.	7200	IN	MX	<span style="color:#ae81ff">20</span> ASPMX5.GOOGLEMAIL.COM.
 zonetransfer.me.	7200	IN	A	5.196.105.14
 zonetransfer.me.	7200	IN	NS	nsztm1.digi.ninja.
 zonetransfer.me.	7200	IN	NS	nsztm2.digi.ninja.
-_acme-challenge.zonetransfer.me. <span style="color:#40a070">301</span> IN	TXT	<span style="color:#4070a0">&#34;6Oa05hbUJ9xSsvYy7pApQvwCUSSGgxvrbdizjePEsZI&#34;</span>
-_sip._tcp.zonetransfer.me. <span style="color:#40a070">14000</span> IN	SRV	<span style="color:#40a070">0</span> <span style="color:#40a070">0</span> <span style="color:#40a070">5060</span> www.zonetransfer.me.
+_acme-challenge.zonetransfer.me. <span style="color:#ae81ff">301</span> IN	TXT	<span style="color:#e6db74">&#34;6Oa05hbUJ9xSsvYy7pApQvwCUSSGgxvrbdizjePEsZI&#34;</span>
+_sip._tcp.zonetransfer.me. <span style="color:#ae81ff">14000</span> IN	SRV	<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">5060</span> www.zonetransfer.me.
 14.105.196.5.IN-ADDR.ARPA.zonetransfer.me. 7200	IN PTR www.zonetransfer.me.
-asfdbauthdns.zonetransfer.me. <span style="color:#40a070">7900</span> IN	AFSDB	<span style="color:#40a070">1</span> asfdbbox.zonetransfer.me.
+asfdbauthdns.zonetransfer.me. <span style="color:#ae81ff">7900</span> IN	AFSDB	<span style="color:#ae81ff">1</span> asfdbbox.zonetransfer.me.
 asfdbbox.zonetransfer.me. 7200	IN	A	127.0.0.1
-asfdbvolume.zonetransfer.me. <span style="color:#40a070">7800</span> IN	AFSDB	<span style="color:#40a070">1</span> asfdbbox.zonetransfer.me.
-canberra-office.zonetransfer.me. <span style="color:#40a070">7200</span> IN A	202.14.81.230
-cmdexec.zonetransfer.me. 300	IN	TXT	<span style="color:#4070a0">&#34;; ls&#34;</span>
-contact.zonetransfer.me. <span style="color:#40a070">2592000</span> IN	TXT	<span style="color:#4070a0">&#34;Remember to call or email Pippa on +44 123 4567890 or pippa@zonetransfer.me when making DNS changes&#34;</span>
+asfdbvolume.zonetransfer.me. <span style="color:#ae81ff">7800</span> IN	AFSDB	<span style="color:#ae81ff">1</span> asfdbbox.zonetransfer.me.
+canberra-office.zonetransfer.me. <span style="color:#ae81ff">7200</span> IN A	202.14.81.230
+cmdexec.zonetransfer.me. 300	IN	TXT	<span style="color:#e6db74">&#34;; ls&#34;</span>
+contact.zonetransfer.me. <span style="color:#ae81ff">2592000</span> IN	TXT	<span style="color:#e6db74">&#34;Remember to call or email Pippa on +44 123 4567890 or pippa@zonetransfer.me when making DNS changes&#34;</span>
 dc-office.zonetransfer.me. 7200	IN	A	143.228.181.132
 deadbeef.zonetransfer.me. 7201	IN	AAAA	dead:beaf::
-dr.zonetransfer.me.	300	IN	LOC	<span style="color:#40a070">53</span> <span style="color:#40a070">20</span> 56.558 N <span style="color:#40a070">1</span> <span style="color:#40a070">38</span> 33.526 W 0.00m 1m 10000m 10m
-DZC.zonetransfer.me.	7200	IN	TXT	<span style="color:#4070a0">&#34;AbCdEfG&#34;</span>
-email.zonetransfer.me.	2222	IN	NAPTR	<span style="color:#40a070">1</span> <span style="color:#40a070">1</span> <span style="color:#4070a0">&#34;P&#34;</span> <span style="color:#4070a0">&#34;E2U+email&#34;</span> <span style="color:#4070a0">&#34;&#34;</span> email.zonetransfer.me.zonetransfer.me.
+dr.zonetransfer.me.	300	IN	LOC	<span style="color:#ae81ff">53</span> <span style="color:#ae81ff">20</span> 56.558 N <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">38</span> 33.526 W 0.00m 1m 10000m 10m
+DZC.zonetransfer.me.	7200	IN	TXT	<span style="color:#e6db74">&#34;AbCdEfG&#34;</span>
+email.zonetransfer.me.	2222	IN	NAPTR	<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">1</span> <span style="color:#e6db74">&#34;P&#34;</span> <span style="color:#e6db74">&#34;E2U+email&#34;</span> <span style="color:#e6db74">&#34;&#34;</span> email.zonetransfer.me.zonetransfer.me.
 email.zonetransfer.me.	7200	IN	A	74.125.206.26
-Hello.zonetransfer.me.	7200	IN	TXT	<span style="color:#4070a0">&#34;Hi to Josh and all his class&#34;</span>
+Hello.zonetransfer.me.	7200	IN	TXT	<span style="color:#e6db74">&#34;Hi to Josh and all his class&#34;</span>
 home.zonetransfer.me.	7200	IN	A	127.0.0.1
-Info.zonetransfer.me.	7200	IN	TXT	<span style="color:#4070a0">&#34;ZoneTransfer.me service provided by Robin Wood - robin@digi.ninja. See http://digi.ninja/projects/zonetransferme.php for more information.&#34;</span>
+Info.zonetransfer.me.	7200	IN	TXT	<span style="color:#e6db74">&#34;ZoneTransfer.me service provided by Robin Wood - robin@digi.ninja. See http://digi.ninja/projects/zonetransferme.php for more information.&#34;</span>
 internal.zonetransfer.me. 300	IN	NS	intns1.zonetransfer.me.
 internal.zonetransfer.me. 300	IN	NS	intns2.zonetransfer.me.
 intns1.zonetransfer.me.	300	IN	A	81.4.108.41
 intns2.zonetransfer.me.	300	IN	A	167.88.42.94
 office.zonetransfer.me.	7200	IN	A	4.23.39.254
-ipv6actnow.org.zonetransfer.me.	<span style="color:#40a070">7200</span> IN	AAAA	2001:67c:2e8:11::c100:1332
+ipv6actnow.org.zonetransfer.me.	<span style="color:#ae81ff">7200</span> IN	AAAA	2001:67c:2e8:11::c100:1332
 owa.zonetransfer.me.	7200	IN	A	207.46.197.32
-robinwood.zonetransfer.me. 302	IN	TXT	<span style="color:#4070a0">&#34;Robin Wood&#34;</span>
+robinwood.zonetransfer.me. 302	IN	TXT	<span style="color:#e6db74">&#34;Robin Wood&#34;</span>
 rp.zonetransfer.me.	321	IN	RP	robin.zonetransfer.me. robinwood.zonetransfer.me.
-sip.zonetransfer.me.	3333	IN	NAPTR	<span style="color:#40a070">2</span> <span style="color:#40a070">3</span> <span style="color:#4070a0">&#34;P&#34;</span> <span style="color:#4070a0">&#34;E2U+sip&#34;</span> <span style="color:#4070a0">&#34;!^.*</span><span style="color:#bb60d5">$!</span><span style="color:#4070a0">sip:customer-service@zonetransfer.me!&#34;</span> .
-sqli.zonetransfer.me.	300	IN	TXT	<span style="color:#4070a0">&#34;&#39; or 1=1 --&#34;</span>
-sshock.zonetransfer.me.	7200	IN	TXT	<span style="color:#4070a0">&#34;() { :]}; echo ShellShocked&#34;</span>
+sip.zonetransfer.me.	3333	IN	NAPTR	<span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span> <span style="color:#e6db74">&#34;P&#34;</span> <span style="color:#e6db74">&#34;E2U+sip&#34;</span> <span style="color:#e6db74">&#34;!^.*</span>$!<span style="color:#e6db74">sip:customer-service@zonetransfer.me!&#34;</span> .
+sqli.zonetransfer.me.	300	IN	TXT	<span style="color:#e6db74">&#34;&#39; or 1=1 --&#34;</span>
+sshock.zonetransfer.me.	7200	IN	TXT	<span style="color:#e6db74">&#34;() { :]}; echo ShellShocked&#34;</span>
 staging.zonetransfer.me. 7200	IN	CNAME	www.sydneyoperahouse.com.
-alltcpportsopen.firewall.test.zonetransfer.me. <span style="color:#40a070">301</span> IN A	127.0.0.1
+alltcpportsopen.firewall.test.zonetransfer.me. <span style="color:#ae81ff">301</span> IN A	127.0.0.1
 testing.zonetransfer.me. 301	IN	CNAME	www.zonetransfer.me.
 vpn.zonetransfer.me.	4000	IN	A	174.36.59.154
 www.zonetransfer.me.	7200	IN	A	5.196.105.14
-xss.zonetransfer.me.	300	IN	TXT	<span style="color:#4070a0">&#34;&#39;&gt;&lt;script&gt;alert(&#39;Boo&#39;)&lt;/script&gt;&#34;</span>
-zonetransfer.me.	7200	IN	SOA	nsztm1.digi.ninja. robin.digi.ninja. <span style="color:#40a070">2019100801</span> <span style="color:#40a070">172800</span> <span style="color:#40a070">900</span> <span style="color:#40a070">1209600</span> <span style="color:#40a070">3600</span>
-;; Query time: <span style="color:#40a070">120</span> msec
-;; SERVER: 81.4.108.41#53<span style="color:#666">(</span>81.4.108.41<span style="color:#666">)</span>
-;; WHEN: Sat Feb <span style="color:#40a070">05</span> 21:45:59 EST <span style="color:#40a070">2022</span>
-;; XFR size: <span style="color:#40a070">50</span> records <span style="color:#666">(</span>messages 1, bytes 1994<span style="color:#666">)</span>
+xss.zonetransfer.me.	300	IN	TXT	<span style="color:#e6db74">&#34;&#39;&gt;&lt;script&gt;alert(&#39;Boo&#39;)&lt;/script&gt;&#34;</span>
+zonetransfer.me.	7200	IN	SOA	nsztm1.digi.ninja. robin.digi.ninja. <span style="color:#ae81ff">2019100801</span> <span style="color:#ae81ff">172800</span> <span style="color:#ae81ff">900</span> <span style="color:#ae81ff">1209600</span> <span style="color:#ae81ff">3600</span>
+;; Query time: <span style="color:#ae81ff">120</span> msec
+;; SERVER: 81.4.108.41#53<span style="color:#f92672">(</span>81.4.108.41<span style="color:#f92672">)</span>
+;; WHEN: Sat Feb <span style="color:#ae81ff">05</span> 21:45:59 EST <span style="color:#ae81ff">2022</span>
+;; XFR size: <span style="color:#ae81ff">50</span> records <span style="color:#f92672">(</span>messages 1, bytes 1994<span style="color:#f92672">)</span>
 </code></pre></div><h3 id="axfr-vulnerability-and-prevention">AXFR Vulnerability and Prevention</h3>
 <p>AXFR offers no authentication, so any client can ask a DNS server for a copy of the entire zone. This means that unless some kind of protection is introduced, an attacker can get a list of all hosts for a domain, which gives them a lot of potential attack vectors.</p>
 <p>In order to prevent this vulnerability from occurring, the DNS server should be configured to only allow zone transfers from trusted IP addresses. The following is an example of how this can be accomplished in the BIND DNS server.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#60a0b0;font-style:italic"># /etc/named.conf</span>
-acl trusted-nameservers <span style="color:#666">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># /etc/named.conf</span>
+acl trusted-nameservers <span style="color:#f92672">{</span>
   192.168.0.10; //ns2
   192.168.1.20; //ns3
-<span style="color:#666">}</span>;
-zone zonetransfer.me <span style="color:#666">{</span>
-  <span style="color:#007020">type</span> master;
-  file <span style="color:#4070a0">&#34;zones/zonetransfer.me&#34;</span>;
-  allow-transfer <span style="color:#666">{</span> trusted-nameservers; <span style="color:#666">}</span>;
-<span style="color:#666">}</span>;
+<span style="color:#f92672">}</span>;
+zone zonetransfer.me <span style="color:#f92672">{</span>
+  type master;
+  file <span style="color:#e6db74">&#34;zones/zonetransfer.me&#34;</span>;
+  allow-transfer <span style="color:#f92672">{</span> trusted-nameservers; <span style="color:#f92672">}</span>;
+<span style="color:#f92672">}</span>;
 </code></pre></div><p>Additionally, it’s also recommended to use transaction signatures (TSIG) for zone transfers to prevent IP spoofing attempts.</p>
 <h2 id="compttia-security-plus--securityplus-dot-md"><a href="/posts/securityplus/">ComptTIA Security+</a></h2>
 <ul>

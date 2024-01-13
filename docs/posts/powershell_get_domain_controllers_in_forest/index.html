@@ -28,7 +28,7 @@
       <div class="content">
         <h1>PowerShell - Get Domain Controllers in Forest</h1>
         <p>To list all of the domain controllers in an <a href="/posts/active_directory/">Active Directory</a> forest:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">(<span style="color:#007020">Get-ADForest</span>).Domains | %{ <span style="color:#007020">Get-ADDomainController</span> -Filter * -Server <span style="color:#bb60d5">$_</span> }| <span style="color:#007020">Format-Table</span> -Property Name,ComputerObjectDN,Domain,Forest,IPv4Address,OperatingSystem,OperatingSystemVersion
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">(Get-ADForest).Domains | %{ Get-ADDomainController -Filter * -Server $_ }| Format-Table -Property Name,ComputerObjectDN,Domain,Forest,IPv4Address,OperatingSystem,OperatingSystemVersion
 </code></pre></div>
       </div>
       

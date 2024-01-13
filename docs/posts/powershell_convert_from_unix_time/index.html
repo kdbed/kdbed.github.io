@@ -28,9 +28,9 @@
       <div class="content">
         <h1>PowerShell - Convert from Unix Time</h1>
         <h2 id="function-to-convert-from-unix-timestamps">Function to convert from Unix timestamps</h2>
-<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
@@ -66,40 +66,40 @@
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#007020;font-weight:bold">function</span> ConvertFrom-UnixTime <span style="color:#666">{</span>
-    <span style="color:#666">[</span>CmdletBinding<span style="color:#666">(</span><span style="color:#bb60d5">DefaultParameterSetName</span> <span style="color:#666">=</span> <span style="color:#4070a0">&#34;Seconds&#34;</span><span style="color:#666">)]</span>
-    param <span style="color:#666">(</span>
-        <span style="color:#666">[</span>Parameter<span style="color:#666">(</span><span style="color:#bb60d5">Position</span> <span style="color:#666">=</span> 0,
-            <span style="color:#bb60d5">ValueFromPipeline</span> <span style="color:#666">=</span> <span style="color:#bb60d5">$true</span>,
-            <span style="color:#bb60d5">Mandatory</span> <span style="color:#666">=</span> <span style="color:#bb60d5">$true</span>,
-            <span style="color:#bb60d5">ParameterSetName</span> <span style="color:#666">=</span> <span style="color:#4070a0">&#34;Seconds&#34;</span><span style="color:#666">)]</span>
-        <span style="color:#666">[</span>int<span style="color:#666">]</span>
-        <span style="color:#bb60d5">$Seconds</span>,
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#66d9ef">function</span> ConvertFrom-UnixTime <span style="color:#f92672">{</span>
+    <span style="color:#f92672">[</span>CmdletBinding<span style="color:#f92672">(</span>DefaultParameterSetName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Seconds&#34;</span><span style="color:#f92672">)]</span>
+    param <span style="color:#f92672">(</span>
+        <span style="color:#f92672">[</span>Parameter<span style="color:#f92672">(</span>Position <span style="color:#f92672">=</span> 0,
+            ValueFromPipeline <span style="color:#f92672">=</span> $true,
+            Mandatory <span style="color:#f92672">=</span> $true,
+            ParameterSetName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Seconds&#34;</span><span style="color:#f92672">)]</span>
+        <span style="color:#f92672">[</span>int<span style="color:#f92672">]</span>
+        $Seconds,
 
-        <span style="color:#666">[</span>Parameter<span style="color:#666">(</span><span style="color:#bb60d5">Position</span> <span style="color:#666">=</span> 0,
-            <span style="color:#bb60d5">ValueFromPipeline</span> <span style="color:#666">=</span> <span style="color:#bb60d5">$true</span>,
-            <span style="color:#bb60d5">Mandatory</span> <span style="color:#666">=</span> <span style="color:#bb60d5">$true</span>, <span style="color:#bb60d5">ParameterSetName</span> <span style="color:#666">=</span> <span style="color:#4070a0">&#34;Miliseconds&#34;</span><span style="color:#666">)]</span>
-        <span style="color:#666">[</span>bigint<span style="color:#666">]</span>
-        <span style="color:#bb60d5">$Miliseconds</span>
-    <span style="color:#666">)</span>
-    Begin <span style="color:#666">{</span>
-        <span style="color:#bb60d5">$date</span> <span style="color:#666">=</span> <span style="color:#666">(</span>Get-Date <span style="color:#4070a0">&#34;1970-01-01 00:00:00.000Z&#34;</span><span style="color:#666">)</span>
-    <span style="color:#666">}</span>
-    Process <span style="color:#666">{</span>
-        switch <span style="color:#666">(</span><span style="color:#bb60d5">$PSCmdlet</span>.ParameterSetName<span style="color:#666">)</span> <span style="color:#666">{</span>
-            <span style="color:#4070a0">&#34;Miliseconds&#34;</span> <span style="color:#666">{</span>
-                <span style="color:#bb60d5">$date</span> <span style="color:#666">=</span> <span style="color:#bb60d5">$date</span>.AddMilliseconds<span style="color:#666">(</span><span style="color:#bb60d5">$Miliseconds</span><span style="color:#666">)</span>
-            <span style="color:#666">}</span>
-            Default <span style="color:#666">{</span>
-                <span style="color:#bb60d5">$date</span> <span style="color:#666">=</span> <span style="color:#bb60d5">$date</span>.AddSeconds<span style="color:#666">(</span><span style="color:#bb60d5">$Seconds</span><span style="color:#666">)</span>;
-                            <span style="color:#666">}</span>
-        <span style="color:#666">}</span>
-    <span style="color:#666">}</span>
-    End <span style="color:#666">{</span>
-        <span style="color:#bb60d5">$date</span>
-    <span style="color:#666">}</span>
-<span style="color:#666">}</span>
-ConvertFrom-UnixTime <span style="color:#4070a0">&#39;1681230017000&#39;</span>
+        <span style="color:#f92672">[</span>Parameter<span style="color:#f92672">(</span>Position <span style="color:#f92672">=</span> 0,
+            ValueFromPipeline <span style="color:#f92672">=</span> $true,
+            Mandatory <span style="color:#f92672">=</span> $true, ParameterSetName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Miliseconds&#34;</span><span style="color:#f92672">)]</span>
+        <span style="color:#f92672">[</span>bigint<span style="color:#f92672">]</span>
+        $Miliseconds
+    <span style="color:#f92672">)</span>
+    Begin <span style="color:#f92672">{</span>
+        $date <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>Get-Date <span style="color:#e6db74">&#34;1970-01-01 00:00:00.000Z&#34;</span><span style="color:#f92672">)</span>
+    <span style="color:#f92672">}</span>
+    Process <span style="color:#f92672">{</span>
+        switch <span style="color:#f92672">(</span>$PSCmdlet.ParameterSetName<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#e6db74">&#34;Miliseconds&#34;</span> <span style="color:#f92672">{</span>
+                $date <span style="color:#f92672">=</span> $date.AddMilliseconds<span style="color:#f92672">(</span>$Miliseconds<span style="color:#f92672">)</span>
+            <span style="color:#f92672">}</span>
+            Default <span style="color:#f92672">{</span>
+                $date <span style="color:#f92672">=</span> $date.AddSeconds<span style="color:#f92672">(</span>$Seconds<span style="color:#f92672">)</span>;
+                            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+    End <span style="color:#f92672">{</span>
+        $date
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+ConvertFrom-UnixTime <span style="color:#e6db74">&#39;1681230017000&#39;</span>
 </code></pre></td></tr></table>
 </div>
 </div>

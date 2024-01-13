@@ -29,7 +29,7 @@
         <h1>Lang - Test</h1>
         <h2 id="language-tests-in-org">Language tests in org</h2>
 <h3 id="rust">Rust</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">extern crate primal;
+<pre tabindex="0"><code class="language-rustic" data-lang="rustic">extern crate primal;
 
 use primal::Sieve;
 
@@ -41,24 +41,24 @@ fn num_divisors(n: usize, primes: &amp;Sieve) -&gt; Option&lt;usize&gt; {
 }
 
 fn main() {
-    println!(&#34;24 days of Rust - primal (day 2)&#34;);
+    println!(&quot;24 days of Rust - primal (day 2)&quot;);
     let sieve = Sieve::new(10000);
     let suspect = 5273;
-    println!(&#34;{} is prime: {}&#34;, suspect, sieve.is_prime(suspect));
+    println!(&quot;{} is prime: {}&quot;, suspect, sieve.is_prime(suspect));
     let not_a_prime = 1024;
-    println!(&#34;{} is prime: {}&#34;, not_a_prime, sieve.is_prime(not_a_prime));
+    println!(&quot;{} is prime: {}&quot;, not_a_prime, sieve.is_prime(not_a_prime));
     let n = 1000;
     match sieve.primes_from(0).nth(n - 1) {
-        Some(number) =&gt; println!(&#34;{}th prime is {}&#34;, n, number),
-        None =&gt; println!(&#34;I don&#39;t know anything about {}th prime.&#34;, n),
+        Some(number) =&gt; println!(&quot;{}th prime is {}&quot;, n, number),
+        None =&gt; println!(&quot;I don't know anything about {}th prime.&quot;, n),
     }
-    println!(&#34;{:?}&#34;, sieve.factor(2610));
-    println!(&#34;{:?}&#34;, num_divisors(2610, &amp;sieve));
+    println!(&quot;{:?}&quot;, sieve.factor(2610));
+    println!(&quot;{:?}&quot;, num_divisors(2610, &amp;sieve));
 }
-</code></pre></div><h3 id="c-plus-plus">C++</h3>
-<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+</code></pre><h3 id="c-plus-plus">C++</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
@@ -79,28 +79,28 @@ fn main() {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#007020">#include</span> <span style="color:#007020">&lt;stdio.h&gt;</span><span style="color:#007020">
-</span><span style="color:#007020">#include</span> <span style="color:#007020">&lt;stdlib.h&gt;</span><span style="color:#007020">
-</span><span style="color:#007020">#include</span> <span style="color:#007020">&lt;time.h&gt;</span><span style="color:#007020">
-</span><span style="color:#007020"></span>
-<span style="color:#902000">int</span> <span style="color:#06287e">main</span>(<span style="color:#902000">void</span>){
-    <span style="color:#902000">int</span> niter<span style="color:#666">=</span><span style="color:#40a070">10</span>; <span style="color:#60a0b0;font-style:italic">//Specify the number of samples.
-</span><span style="color:#60a0b0;font-style:italic"></span>    srand((<span style="color:#902000">unsigned</span>)time(<span style="color:#007020">NULL</span>)); <span style="color:#60a0b0;font-style:italic">//Set the seed of random number generator.
-</span><span style="color:#60a0b0;font-style:italic"></span>    <span style="color:#902000">int</span> n_in<span style="color:#666">=</span><span style="color:#40a070">0</span>; <span style="color:#60a0b0;font-style:italic">//Initialize the counter.
-</span><span style="color:#60a0b0;font-style:italic"></span><span style="color:#60a0b0;font-style:italic">/*************/</span>
-<span style="color:#60a0b0;font-style:italic">/* Main loop */</span>
-<span style="color:#60a0b0;font-style:italic">/*************/</span>
-    <span style="color:#007020;font-weight:bold">for</span>(<span style="color:#902000">int</span> iter<span style="color:#666">=</span><span style="color:#40a070">1</span>;iter<span style="color:#666">&lt;</span>niter<span style="color:#666">+</span><span style="color:#40a070">1</span>;iter<span style="color:#666">++</span>){
-        <span style="color:#902000">double</span> x <span style="color:#666">=</span> (<span style="color:#902000">double</span>)rand()<span style="color:#666">/</span>RAND_MAX;
-        <span style="color:#902000">double</span> y <span style="color:#666">=</span> (<span style="color:#902000">double</span>)rand()<span style="color:#666">/</span>RAND_MAX;
-        <span style="color:#60a0b0;font-style:italic">//Generate random numbers x,y in [0,1].
-</span><span style="color:#60a0b0;font-style:italic"></span>        <span style="color:#007020;font-weight:bold">if</span>(x<span style="color:#666">*</span>x<span style="color:#666">+</span>y<span style="color:#666">*</span>y <span style="color:#666">&lt;</span> <span style="color:#40a070">1e0</span>) <span style="color:#60a0b0;font-style:italic">//If xˆ2+yˆ2&lt;1....
-</span><span style="color:#60a0b0;font-style:italic"></span>            n_in<span style="color:#666">=</span>n_in<span style="color:#666">+</span><span style="color:#40a070">1</span>; <span style="color:#60a0b0;font-style:italic">//Add 1 to n_in.
-</span><span style="color:#60a0b0;font-style:italic"></span>        printf(<span style="color:#4070a0">&#34;%d %.10f</span><span style="color:#4070a0;font-weight:bold">\n</span><span style="color:#4070a0">&#34;</span>,iter,(<span style="color:#902000">double</span>)n_in<span style="color:#666">/</span>iter);}
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdlib.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;time.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(<span style="color:#66d9ef">void</span>){
+    <span style="color:#66d9ef">int</span> niter<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>; <span style="color:#75715e">//Specify the number of samples.
+</span><span style="color:#75715e"></span>    srand((<span style="color:#66d9ef">unsigned</span>)time(NULL)); <span style="color:#75715e">//Set the seed of random number generator.
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> n_in<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; <span style="color:#75715e">//Initialize the counter.
+</span><span style="color:#75715e"></span><span style="color:#75715e">/*************/</span>
+<span style="color:#75715e">/* Main loop */</span>
+<span style="color:#75715e">/*************/</span>
+    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> iter<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>;iter<span style="color:#f92672">&lt;</span>niter<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>;iter<span style="color:#f92672">++</span>){
+        <span style="color:#66d9ef">double</span> x <span style="color:#f92672">=</span> (<span style="color:#66d9ef">double</span>)rand()<span style="color:#f92672">/</span>RAND_MAX;
+        <span style="color:#66d9ef">double</span> y <span style="color:#f92672">=</span> (<span style="color:#66d9ef">double</span>)rand()<span style="color:#f92672">/</span>RAND_MAX;
+        <span style="color:#75715e">//Generate random numbers x,y in [0,1].
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span>(x<span style="color:#f92672">*</span>x<span style="color:#f92672">+</span>y<span style="color:#f92672">*</span>y <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">1e0</span>) <span style="color:#75715e">//If xˆ2+yˆ2&lt;1....
+</span><span style="color:#75715e"></span>            n_in<span style="color:#f92672">=</span>n_in<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>; <span style="color:#75715e">//Add 1 to n_in.
+</span><span style="color:#75715e"></span>        printf(<span style="color:#e6db74">&#34;%d %.10f</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,iter,(<span style="color:#66d9ef">double</span>)n_in<span style="color:#f92672">/</span>iter);}
 }
 </code></pre></td></tr></table>
 </div>
-</div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">1 1.0000000000
+</div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">1 1.0000000000
 2 1.0000000000
 3 1.0000000000
 4 1.0000000000
@@ -110,27 +110,27 @@ fn main() {
 8 0.8750000000
 9 0.7777777778
 10 0.7000000000
-</code></pre></div><div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+</code></pre></div><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#007020">#include</span> <span style="color:#007020">&lt;iostream&gt;</span><span style="color:#007020">
-</span><span style="color:#007020"></span><span style="color:#902000">int</span> <span style="color:#06287e">main</span>(){
-    std<span style="color:#666">::</span>cout<span style="color:#666">&lt;&lt;</span><span style="color:#4070a0">&#34;Hello, World.</span><span style="color:#4070a0;font-weight:bold">\n</span><span style="color:#4070a0">&#34;</span>;
-    <span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">0</span>;
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+    std<span style="color:#f92672">::</span>cout<span style="color:#f92672">&lt;&lt;</span><span style="color:#e6db74">&#34;Hello, World.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>;
+    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
 }
 </code></pre></td></tr></table>
 </div>
-</div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Hello, World.
+</div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Hello, World.
 </code></pre></div><h3 id="c">C#</h3>
-<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
@@ -143,37 +143,37 @@ fn main() {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">
-<span style="color:#60a0b0;font-style:italic">// Hello World! program
-</span><span style="color:#60a0b0;font-style:italic"></span><span style="color:#007020;font-weight:bold">namespace</span> <span style="color:#0e84b5;font-weight:bold">HelloWorld</span>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">
+<span style="color:#75715e">// Hello World! program
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">namespace</span> HelloWorld
 {
-    <span style="color:#007020;font-weight:bold">class</span> <span style="color:#0e84b5;font-weight:bold">Hello</span> {
-        <span style="color:#007020;font-weight:bold">static</span> <span style="color:#007020;font-weight:bold">void</span> Main(<span style="color:#902000">string</span>[] args)
+    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Hello</span> {
+        <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> Main(<span style="color:#66d9ef">string</span>[] args)
         {
-            System.Console.WriteLine(<span style="color:#4070a0">&#34;Hello World!&#34;</span>);
+            System.Console.WriteLine(<span style="color:#e6db74">&#34;Hello World!&#34;</span>);
         }
     }
 }
 </code></pre></td></tr></table>
 </div>
-</div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Hello World!
+</div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Hello World!
 </code></pre></div><h3 id="haskell">Haskell</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#06287e">add_1</span> <span style="color:#902000">:</span> <span style="color:#902000">Nat</span> <span style="color:#007020;font-weight:bold">-&gt;</span> <span style="color:#902000">Nat</span>
-<span style="color:#06287e">add_1</span> x <span style="color:#007020;font-weight:bold">=</span> x <span style="color:#666">+</span> <span style="color:#40a070">1</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#a6e22e">add_1</span> <span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Nat</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Nat</span>
+<span style="color:#a6e22e">add_1</span> x <span style="color:#f92672">=</span> x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
 
-<span style="color:#06287e">add_1</span> <span style="color:#40a070">5</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">ghci&gt; 6
+<span style="color:#a6e22e">add_1</span> <span style="color:#ae81ff">5</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">ghci&gt; 6
 </code></pre></div><h4 id="map">map</h4>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#902000">:</span>{
-<span style="color:#60a0b0;font-style:italic">-- a very verbose way to sum a sequence of numbers:</span>
-<span style="color:#06287e">sumInts</span> <span style="color:#007020;font-weight:bold">::</span> <span style="color:#902000">Int</span> <span style="color:#007020;font-weight:bold">-&gt;</span> <span style="color:#902000">Int</span> <span style="color:#007020;font-weight:bold">-&gt;</span> <span style="color:#902000">Int</span>
-<span style="color:#06287e">sumInts</span> a b <span style="color:#007020;font-weight:bold">=</span>
-    <span style="color:#007020;font-weight:bold">if</span> a <span style="color:#666">==</span> b
-        <span style="color:#007020;font-weight:bold">then</span> b
-        <span style="color:#007020;font-weight:bold">else</span> (<span style="color:#666">+</span> a) <span style="color:#666">$</span> (sumInts (a <span style="color:#666">+</span> <span style="color:#40a070">1</span>) b)
-<span style="color:#902000">:</span>}
-<span style="color:#06287e">map</span> (<span style="color:#06287e">\</span>[a,b] <span style="color:#007020;font-weight:bold">-&gt;</span> sumInts a b) [[<span style="color:#40a070">0</span>, <span style="color:#40a070">1</span>] , [<span style="color:#40a070">1</span>, <span style="color:#40a070">3</span>], [<span style="color:#40a070">1</span>,<span style="color:#40a070">5</span>], [<span style="color:#40a070">2</span>,<span style="color:#40a070">10</span>]]
-</code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">(1 6 15 54)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#66d9ef">:</span>{
+<span style="color:#75715e">-- a very verbose way to sum a sequence of numbers:</span>
+<span style="color:#a6e22e">sumInts</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">Int</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Int</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Int</span>
+<span style="color:#a6e22e">sumInts</span> a b <span style="color:#f92672">=</span>
+    <span style="color:#66d9ef">if</span> a <span style="color:#f92672">==</span> b
+        <span style="color:#66d9ef">then</span> b
+        <span style="color:#66d9ef">else</span> (<span style="color:#f92672">+</span> a) <span style="color:#f92672">$</span> (sumInts (a <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) b)
+<span style="color:#66d9ef">:</span>}
+<span style="color:#a6e22e">map</span> (<span style="color:#a6e22e">\</span>[a,b] <span style="color:#f92672">-&gt;</span> sumInts a b) [[<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>] , [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">3</span>], [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">5</span>], [<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">10</span>]]
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">(1 6 15 54)
 </code></pre></div>
       </div>
       

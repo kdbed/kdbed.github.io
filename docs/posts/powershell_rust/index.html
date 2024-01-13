@@ -28,26 +28,26 @@
       <div class="content">
         <h1>PowerShell - Rust</h1>
         <h2 id="basic-rust-integration-with-powershell--powershell-dot-md">Basic Rust Integration with <a href="/posts/powershell/">powershell</a></h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#bb60d5">$rustPgm</span> = <span style="color:#4070a0">@&#34;
-</span><span style="color:#4070a0">#[no_mangle]
-</span><span style="color:#4070a0">pub extern &#34;C&#34; fn add_numbers(number1: i32, number2: i32) -&gt; i32 {
-</span><span style="color:#4070a0">    number1 + number2
-</span><span style="color:#4070a0">}
-</span><span style="color:#4070a0">&#34;@</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">$rustPgm = <span style="color:#e6db74">@&#34;
+</span><span style="color:#e6db74">#[no_mangle]
+</span><span style="color:#e6db74">pub extern &#34;C&#34; fn add_numbers(number1: i32, number2: i32) -&gt; i32 {
+</span><span style="color:#e6db74">    number1 + number2
+</span><span style="color:#e6db74">}
+</span><span style="color:#e6db74">&#34;@</span>
 
-<span style="color:#bb60d5">$rustPgm</span> | <span style="color:#007020">Set-Content</span> -Encoding UTF8 .\lib.rs
+$rustPgm | Set-Content -Encoding UTF8 .\lib.rs
 rustc .\lib.rs --crate-type dylib --crate-name powershell_to_rust
 
-<span style="color:#60a0b0;font-style:italic">## start another PS so dll doesn&#39;t get locked</span>
+<span style="color:#75715e">## start another PS so dll doesn&#39;t get locked</span>
 powershell -command {
-    <span style="color:#bb60d5">$definition</span> = <span style="color:#4070a0">@&#34;
-</span><span style="color:#4070a0">[DllImport(&#34;powershell_to_rust.dll&#34;)]
-</span><span style="color:#4070a0">public static extern Int32 add_numbers(Int32 number1, Int32 number2);
-</span><span style="color:#4070a0">&#34;@</span>
+    $definition = <span style="color:#e6db74">@&#34;
+</span><span style="color:#e6db74">[DllImport(&#34;powershell_to_rust.dll&#34;)]
+</span><span style="color:#e6db74">public static extern Int32 add_numbers(Int32 number1, Int32 number2);
+</span><span style="color:#e6db74">&#34;@</span>
 
-    <span style="color:#bb60d5">$target</span> = <span style="color:#007020">Add-Type</span> -MemberDefinition <span style="color:#bb60d5">$definition</span> -Name AddNum -PassThru
-    <span style="color:#bb60d5">$ans</span> = <span style="color:#bb60d5">$target</span>::add_numbers(3, 8)
-    <span style="color:#007020">write-host</span> <span style="color:#bb60d5">$ans</span>
+    $target = Add-Type -MemberDefinition $definition -Name AddNum -PassThru
+    $ans = $target::add_numbers(3, 8)
+    write-host $ans
 }
 </code></pre></div>
       </div>

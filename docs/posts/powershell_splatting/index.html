@@ -30,46 +30,46 @@
         <h2 id="splatting-in-powershell--powershell-dot-md">Splatting in <a href="/posts/powershell/">powershell</a></h2>
 <p>Splatting allows one to format and send arguments to cmdlets and
 functions. Typically use dash+parameter name+argument</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">  <span style="color:#007020">Copy-Item</span> -Path <span style="color:#4070a0">&#34;Testfile.txt&#34;</span> -Destination <span style="color:#4070a0">&#34;CopiedFile.txt&#34;</span> -WhatIf -force -Recurse
-</code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">  <span style="color:#007020">Copy-Item</span> `
-      -Path <span style="color:#4070a0">&#34;Testfile.txt&#34;</span> `
-      -Destination <span style="color:#4070a0">&#34;CopiedFile.txt&#34;</span> `
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">  Copy-Item -Path <span style="color:#e6db74">&#34;Testfile.txt&#34;</span> -Destination <span style="color:#e6db74">&#34;CopiedFile.txt&#34;</span> -WhatIf -force -Recurse
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">  Copy-Item `
+      -Path <span style="color:#e6db74">&#34;Testfile.txt&#34;</span> `
+      -Destination <span style="color:#e6db74">&#34;CopiedFile.txt&#34;</span> `
       -WhatIf `
       -force `
 </code></pre></div><p>Instead you can <code>splat</code> a parameter set. First create a hashtable
 containing key/value pairs of each parameter and parameter argument.
 Then pass that set of parameters to the command with <code>@&lt;hashtablename&gt;</code></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">  <span style="color:#bb60d5">$Params</span> = @{
-      <span style="color:#4070a0">&#34;Path&#34;</span> = <span style="color:#4070a0">&#34;Testfile.txt&#34;</span>
-      <span style="color:#4070a0">&#34;Destination&#34;</span> = <span style="color:#4070a0">&#34;CopiedFile.txt&#34;</span>
-      <span style="color:#4070a0">&#34;WhatIf&#34;</span> = <span style="color:#bb60d5">$true</span>
-      <span style="color:#4070a0">&#34;force&#34;</span> = <span style="color:#bb60d5">$true</span>
-      <span style="color:#4070a0">&#34;Recurse&#34;</span> = <span style="color:#bb60d5">$true</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">  $Params = @{
+      <span style="color:#e6db74">&#34;Path&#34;</span> = <span style="color:#e6db74">&#34;Testfile.txt&#34;</span>
+      <span style="color:#e6db74">&#34;Destination&#34;</span> = <span style="color:#e6db74">&#34;CopiedFile.txt&#34;</span>
+      <span style="color:#e6db74">&#34;WhatIf&#34;</span> = $true
+      <span style="color:#e6db74">&#34;force&#34;</span> = $true
+      <span style="color:#e6db74">&#34;Recurse&#34;</span> = $true
   }
 
-  <span style="color:#007020">Copy-Item</span> <span style="color:#bb60d5">@Params</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">  <span style="color:#bb60d5">$Params</span> = @{
-    <span style="color:#4070a0">&#34;Path&#34;</span>        = <span style="color:#4070a0">&#34;TestFile.txt&#34;</span>
-    <span style="color:#4070a0">&#34;Destination&#34;</span> = <span style="color:#4070a0">&#34;CopiedFile.txt&#34;</span>
+  Copy-Item @Params
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">  $Params = @{
+    <span style="color:#e6db74">&#34;Path&#34;</span>        = <span style="color:#e6db74">&#34;TestFile.txt&#34;</span>
+    <span style="color:#e6db74">&#34;Destination&#34;</span> = <span style="color:#e6db74">&#34;CopiedFile.txt&#34;</span>
   }
 
-  <span style="color:#007020">Copy-Item</span> <span style="color:#bb60d5">@Params</span> -Force -WhatIf
+  Copy-Item @Params -Force -WhatIf
 </code></pre></div><p>In Powershell 7.1, you can override splatted parameters:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">  <span style="color:#bb60d5">$Params</span> = @{
-    <span style="color:#4070a0">&#34;Path&#34;</span>        = <span style="color:#4070a0">&#34;TestFile.txt&#34;</span>
-    <span style="color:#4070a0">&#34;Destination&#34;</span> = <span style="color:#4070a0">&#34;CopiedFile.txt&#34;</span>
-    <span style="color:#4070a0">&#34;WhatIf&#34;</span>      = <span style="color:#bb60d5">$True</span>
-    <span style="color:#4070a0">&#34;Force&#34;</span>       = <span style="color:#bb60d5">$True</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">  $Params = @{
+    <span style="color:#e6db74">&#34;Path&#34;</span>        = <span style="color:#e6db74">&#34;TestFile.txt&#34;</span>
+    <span style="color:#e6db74">&#34;Destination&#34;</span> = <span style="color:#e6db74">&#34;CopiedFile.txt&#34;</span>
+    <span style="color:#e6db74">&#34;WhatIf&#34;</span>      = $True
+    <span style="color:#e6db74">&#34;Force&#34;</span>       = $True
   }
 
-  <span style="color:#007020">Copy-Item</span> <span style="color:#bb60d5">@Params</span> -WhatIf<span style="">:</span><span style="color:#bb60d5">$False</span>
+  Copy-Item @Params -WhatIf<span style="color:#960050;background-color:#1e0010">:</span>$False
 </code></pre></div><p>For positional parameters, <code>splat</code> an array:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">  <span style="color:#bb60d5">$ParamArray</span> = @(
-    <span style="color:#4070a0">&#34;TestFile.txt&#34;</span>
-    <span style="color:#4070a0">&#34;CopiedFile.txt&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">  $ParamArray = @(
+    <span style="color:#e6db74">&#34;TestFile.txt&#34;</span>
+    <span style="color:#e6db74">&#34;CopiedFile.txt&#34;</span>
   )
 
-  <span style="color:#007020">Copy-Item</span> <span style="color:#bb60d5">@ParamArray</span>
+  Copy-Item @ParamArray
 </code></pre></div><p>Proxy Functions and Splatted Commands : these functions allow you to add
 additional parameters to the original cmdlet and then call that cmdlet
 with the new parameters. When you run a function in PowerShell,
@@ -78,21 +78,21 @@ contains all unnamed parameter values passed to that function.</p>
 <p>You&rsquo;ll find another automatic variable called $PSBoundParameters which
 contains a hashtable of all bound parameters. Notice below the
 Test-Function function that returns the $Param1 and $Param2 parameters.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">  <span style="color:#007020;font-weight:bold">Function</span> <span style="color:#007020">Test-Function</span> {
-    <span style="color:#007020;font-weight:bold">Param</span>(
-      <span style="color:#bb60d5">$Param1</span>,
-      <span style="color:#bb60d5">$Param2</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">  <span style="color:#66d9ef">Function</span> Test-Function {
+    <span style="color:#66d9ef">Param</span>(
+      $Param1,
+      $Param2
 
       )
-    <span style="color:#007020">Write-Host</span> <span style="color:#4070a0">&#34;Unnamed Parameters&#34;</span> -ForegroundColor <span style="color:#4070a0">&#39;Green&#39;</span>
-    <span style="color:#bb60d5">$Args</span>
+    Write-Host <span style="color:#e6db74">&#34;Unnamed Parameters&#34;</span> -ForegroundColor <span style="color:#e6db74">&#39;Green&#39;</span>
+    $Args
 
-    <span style="color:#007020">Write-Host</span> <span style="color:#4070a0">&#34;Bound Parameters&#34;</span> -ForegroundColor <span style="color:#4070a0">&#39;Green&#39;</span>
-    <span style="color:#bb60d5">$PSBoundParameters</span>
+    Write-Host <span style="color:#e6db74">&#34;Bound Parameters&#34;</span> -ForegroundColor <span style="color:#e6db74">&#39;Green&#39;</span>
+    $PSBoundParameters
   }
 
-  <span style="color:#007020">Test-Function</span> <span style="color:#4070a0">&#34;test1&#34;</span> <span style="color:#4070a0">&#34;test2&#34;</span> <span style="color:#4070a0">&#34;test3&#34;</span> -Param1 <span style="color:#4070a0">&#34;testParam&#34;</span> -Param2 <span style="color:#4070a0">&#34;testParam2&#34;</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">  Unnamed Parameters
+  Test-Function <span style="color:#e6db74">&#34;test1&#34;</span> <span style="color:#e6db74">&#34;test2&#34;</span> <span style="color:#e6db74">&#34;test3&#34;</span> -Param1 <span style="color:#e6db74">&#34;testParam&#34;</span> -Param2 <span style="color:#e6db74">&#34;testParam2&#34;</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">  Unnamed Parameters
   test1
   test2
   test3
@@ -109,15 +109,15 @@ that passes unnamed parameters and named parameters to the Copy-Item
 cmdlet. With this technique, you can quickly create custom functions
 that add additional functionality but retain the same parameter set you
 would expect.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">  <span style="color:#007020;font-weight:bold">Function</span> <span style="color:#007020">Copy-CustomItem</span> {
-    <span style="color:#007020">Get-ChildItem</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">  <span style="color:#66d9ef">Function</span> Copy-CustomItem {
+    Get-ChildItem
 
-    <span style="color:#007020">Copy-Item</span> <span style="color:#bb60d5">@Args</span> <span style="color:#bb60d5">@PSBoundParameters</span>
+    Copy-Item @Args @PSBoundParameters
 
-    <span style="color:#007020">Get-ChildItem</span>
+    Get-ChildItem
   }
 
-  <span style="color:#007020">Copy-CustomItem</span> <span style="color:#4070a0">&#34;TestFile.txt&#34;</span> <span style="color:#4070a0">&#34;CopiedFile.txt&#34;</span> -force -verbose
+  Copy-CustomItem <span style="color:#e6db74">&#34;TestFile.txt&#34;</span> <span style="color:#e6db74">&#34;CopiedFile.txt&#34;</span> -force -verbose
 </code></pre></div>
       </div>
       

@@ -29,7 +29,7 @@
         <h1>PowerShell - Custom Execution Timer</h1>
         <h2 id="custom-execution-timer">Custom Execution Timer</h2>
 <p>source: <a href="https://devblogs.microsoft.com/powershell-community/measuring-script-execution-time/#:~:text=PowerShell%20has%20a%20built%2Din,passed%20to%20the%20script%20block.">devblogs</a></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">function Measure-CommandEx {
+<pre tabindex="0"><code class="language-pwsh" data-lang="pwsh">function Measure-CommandEx {
 
     [CmdletBinding()]
     param (
@@ -41,7 +41,7 @@
     )
 
     Begin {
-        $stopWatch = New-Object -TypeName &#39;System.Diagnostics.Stopwatch&#39;
+        $stopWatch = New-Object -TypeName 'System.Diagnostics.Stopwatch'
 
         &lt;#
             We need to define result as a list because the way objects
@@ -58,8 +58,8 @@
             # Starting the stopwatch.
             $stopWatch.Start()
 
-            # Creating the &#39;$_&#39; variable.
-            $dollarUn = New-Object -TypeName psvariable -ArgumentList @(&#39;_&#39;, $InputObject)
+            # Creating the '$_' variable.
+            $dollarUn = New-Object -TypeName psvariable -ArgumentList @('_', $InputObject)
 
             &lt;#
                 Overload is:
@@ -87,7 +87,7 @@
         }
     }
 }
-</code></pre></div>
+</code></pre>
       </div>
       
 

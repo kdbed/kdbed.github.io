@@ -29,29 +29,29 @@
         <h1>Bloodhound</h1>
         <h2 id="bloodhound">Bloodhound</h2>
 <h3 id="bloodhound-python">bloodhound-python</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">bloodhound-python -u <span style="color:#4070a0">&#39;&lt;user&gt;&#39;</span> -p <span style="color:#4070a0">&#39;&lt;pw&gt;&#39;</span> --dns-tcp  -ns &lt;ip&gt; -d &lt;domain&gt; -c all
-</code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">root@kali:~# bloodhound-python -h
-usage: bloodhound-python <span style="color:#666">[</span>-h<span style="color:#666">]</span> <span style="color:#666">[</span>-c COLLECTIONMETHOD<span style="color:#666">]</span> <span style="color:#666">[</span>-d DOMAIN<span style="color:#666">]</span> <span style="color:#666">[</span>-v<span style="color:#666">]</span>
-                         <span style="color:#666">[</span>-u USERNAME<span style="color:#666">]</span> <span style="color:#666">[</span>-p PASSWORD<span style="color:#666">]</span> <span style="color:#666">[</span>-k<span style="color:#666">]</span> <span style="color:#666">[</span>--hashes HASHES<span style="color:#666">]</span>
-                         <span style="color:#666">[</span>-no-pass<span style="color:#666">]</span> <span style="color:#666">[</span>-aesKey hex key<span style="color:#666">]</span>
-                         <span style="color:#666">[</span>--auth-method <span style="color:#666">{</span>auto,ntlm,kerberos<span style="color:#666">}]</span> <span style="color:#666">[</span>-ns NAMESERVER<span style="color:#666">]</span>
-                         <span style="color:#666">[</span>--dns-tcp<span style="color:#666">]</span> <span style="color:#666">[</span>--dns-timeout DNS_TIMEOUT<span style="color:#666">]</span> <span style="color:#666">[</span>-dc HOST<span style="color:#666">]</span>
-                         <span style="color:#666">[</span>-gc HOST<span style="color:#666">]</span> <span style="color:#666">[</span>-w WORKERS<span style="color:#666">]</span> <span style="color:#666">[</span>--exclude-dcs<span style="color:#666">]</span>
-                         <span style="color:#666">[</span>--disable-pooling<span style="color:#666">]</span> <span style="color:#666">[</span>--disable-autogc<span style="color:#666">]</span> <span style="color:#666">[</span>--zip<span style="color:#666">]</span>
-                         <span style="color:#666">[</span>--computerfile COMPUTERFILE<span style="color:#666">]</span> <span style="color:#666">[</span>--cachefile CACHEFILE<span style="color:#666">]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">bloodhound-python -u <span style="color:#e6db74">&#39;&lt;user&gt;&#39;</span> -p <span style="color:#e6db74">&#39;&lt;pw&gt;&#39;</span> --dns-tcp  -ns &lt;ip&gt; -d &lt;domain&gt; -c all
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">root@kali:~# bloodhound-python -h
+usage: bloodhound-python <span style="color:#f92672">[</span>-h<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-c COLLECTIONMETHOD<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-d DOMAIN<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-v<span style="color:#f92672">]</span>
+                         <span style="color:#f92672">[</span>-u USERNAME<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-p PASSWORD<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-k<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--hashes HASHES<span style="color:#f92672">]</span>
+                         <span style="color:#f92672">[</span>-no-pass<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-aesKey hex key<span style="color:#f92672">]</span>
+                         <span style="color:#f92672">[</span>--auth-method <span style="color:#f92672">{</span>auto,ntlm,kerberos<span style="color:#f92672">}]</span> <span style="color:#f92672">[</span>-ns NAMESERVER<span style="color:#f92672">]</span>
+                         <span style="color:#f92672">[</span>--dns-tcp<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--dns-timeout DNS_TIMEOUT<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-dc HOST<span style="color:#f92672">]</span>
+                         <span style="color:#f92672">[</span>-gc HOST<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-w WORKERS<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--exclude-dcs<span style="color:#f92672">]</span>
+                         <span style="color:#f92672">[</span>--disable-pooling<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--disable-autogc<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--zip<span style="color:#f92672">]</span>
+                         <span style="color:#f92672">[</span>--computerfile COMPUTERFILE<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--cachefile CACHEFILE<span style="color:#f92672">]</span>
 
-Python based ingestor <span style="color:#007020;font-weight:bold">for</span> BloodHound
-For <span style="color:#007020">help</span> or reporting issues, visit https://github.com/Fox-IT/BloodHound.py
+Python based ingestor <span style="color:#66d9ef">for</span> BloodHound
+For help or reporting issues, visit https://github.com/Fox-IT/BloodHound.py
 
 options:
-  -h, --help            show this <span style="color:#007020">help</span> message and <span style="color:#007020">exit</span>
+  -h, --help            show this help message and exit
   -c COLLECTIONMETHOD, --collectionmethod COLLECTIONMETHOD
                         Which information to collect. Supported: Group,
-                        LocalAdmin, Session, Trusts, Default <span style="color:#666">(</span>all previous<span style="color:#666">)</span>,
-                        DCOnly <span style="color:#666">(</span>no computer connections<span style="color:#666">)</span>, DCOM, RDP,PSRemote,
-                        LoggedOn, Container, ObjectProps, ACL, All <span style="color:#666">(</span>all except
-                        LoggedOn<span style="color:#666">)</span>. You can specify more than one by separating
-                        them with a comma. <span style="color:#666">(</span>default: Default<span style="color:#666">)</span>
+                        LocalAdmin, Session, Trusts, Default <span style="color:#f92672">(</span>all previous<span style="color:#f92672">)</span>,
+                        DCOnly <span style="color:#f92672">(</span>no computer connections<span style="color:#f92672">)</span>, DCOM, RDP,PSRemote,
+                        LoggedOn, Container, ObjectProps, ACL, All <span style="color:#f92672">(</span>all except
+                        LoggedOn<span style="color:#f92672">)</span>. You can specify more than one by separating
+                        them with a comma. <span style="color:#f92672">(</span>default: Default<span style="color:#f92672">)</span>
   -d DOMAIN, --domain DOMAIN
                         Domain to query.
   -v                    Enable verbose output
@@ -59,46 +59,46 @@ options:
 authentication options:
   Specify one or more authentication options.
   By default Kerberos authentication is used and NTLM is used as fallback.
-  Kerberos tickets are automatically requested <span style="color:#007020;font-weight:bold">if</span> a password or hashes are specified.
+  Kerberos tickets are automatically requested <span style="color:#66d9ef">if</span> a password or hashes are specified.
 
   -u USERNAME, --username USERNAME
-                        Username. Format: username<span style="color:#666">[</span>@domain<span style="color:#666">]</span>; If the domain is
+                        Username. Format: username<span style="color:#f92672">[</span>@domain<span style="color:#f92672">]</span>; If the domain is
                         unspecified, the current domain is used.
   -p PASSWORD, --password PASSWORD
                         Password
   -k, --kerberos        Use kerberos
   --hashes HASHES       LM:NLTM hashes
-  -no-pass              don<span style="color:#4070a0">&#39;t ask for password (useful for -k)
-</span><span style="color:#4070a0">  -aesKey hex key       AES key to use for Kerberos Authentication (128 or 256
-</span><span style="color:#4070a0">                        bits)
-</span><span style="color:#4070a0">  --auth-method {auto,ntlm,kerberos}
-</span><span style="color:#4070a0">                        Authentication methods. Force Kerberos or NTLM only or
-</span><span style="color:#4070a0">                        use auto for Kerberos with NTLM fallback
-</span><span style="color:#4070a0">
-</span><span style="color:#4070a0">collection options:
-</span><span style="color:#4070a0">  -ns NAMESERVER, --nameserver NAMESERVER
-</span><span style="color:#4070a0">                        Alternative name server to use for queries
-</span><span style="color:#4070a0">  --dns-tcp             Use TCP instead of UDP for DNS queries
-</span><span style="color:#4070a0">  --dns-timeout DNS_TIMEOUT
-</span><span style="color:#4070a0">                        DNS query timeout in seconds (default: 3)
-</span><span style="color:#4070a0">  -dc HOST, --domain-controller HOST
-</span><span style="color:#4070a0">                        Override which DC to query (hostname)
-</span><span style="color:#4070a0">  -gc HOST, --global-catalog HOST
-</span><span style="color:#4070a0">                        Override which GC to query (hostname)
-</span><span style="color:#4070a0">  -w WORKERS, --workers WORKERS
-</span><span style="color:#4070a0">                        Number of workers for computer enumeration (default:
-</span><span style="color:#4070a0">                        10)
-</span><span style="color:#4070a0">  --exclude-dcs         Skip DCs during computer enumeration
-</span><span style="color:#4070a0">  --disable-pooling     Don&#39;</span>t use subprocesses <span style="color:#007020;font-weight:bold">for</span> ACL parsing <span style="color:#666">(</span>only <span style="color:#007020;font-weight:bold">for</span>
-                        debugging purposes<span style="color:#666">)</span>
-  --disable-autogc      Don<span style="">&#39;</span>t automatically <span style="color:#007020;font-weight:bold">select</span> a Global Catalog <span style="color:#666">(</span>use only
-                        <span style="color:#007020;font-weight:bold">if</span> it gives errors<span style="color:#666">)</span>
+  -no-pass              don<span style="color:#e6db74">&#39;t ask for password (useful for -k)
+</span><span style="color:#e6db74">  -aesKey hex key       AES key to use for Kerberos Authentication (128 or 256
+</span><span style="color:#e6db74">                        bits)
+</span><span style="color:#e6db74">  --auth-method {auto,ntlm,kerberos}
+</span><span style="color:#e6db74">                        Authentication methods. Force Kerberos or NTLM only or
+</span><span style="color:#e6db74">                        use auto for Kerberos with NTLM fallback
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">collection options:
+</span><span style="color:#e6db74">  -ns NAMESERVER, --nameserver NAMESERVER
+</span><span style="color:#e6db74">                        Alternative name server to use for queries
+</span><span style="color:#e6db74">  --dns-tcp             Use TCP instead of UDP for DNS queries
+</span><span style="color:#e6db74">  --dns-timeout DNS_TIMEOUT
+</span><span style="color:#e6db74">                        DNS query timeout in seconds (default: 3)
+</span><span style="color:#e6db74">  -dc HOST, --domain-controller HOST
+</span><span style="color:#e6db74">                        Override which DC to query (hostname)
+</span><span style="color:#e6db74">  -gc HOST, --global-catalog HOST
+</span><span style="color:#e6db74">                        Override which GC to query (hostname)
+</span><span style="color:#e6db74">  -w WORKERS, --workers WORKERS
+</span><span style="color:#e6db74">                        Number of workers for computer enumeration (default:
+</span><span style="color:#e6db74">                        10)
+</span><span style="color:#e6db74">  --exclude-dcs         Skip DCs during computer enumeration
+</span><span style="color:#e6db74">  --disable-pooling     Don&#39;</span>t use subprocesses <span style="color:#66d9ef">for</span> ACL parsing <span style="color:#f92672">(</span>only <span style="color:#66d9ef">for</span>
+                        debugging purposes<span style="color:#f92672">)</span>
+  --disable-autogc      Don<span style="color:#960050;background-color:#1e0010">&#39;</span>t automatically <span style="color:#66d9ef">select</span> a Global Catalog <span style="color:#f92672">(</span>use only
+                        <span style="color:#66d9ef">if</span> it gives errors<span style="color:#f92672">)</span>
   --zip                 Compress the JSON output files into a zip archive
   --computerfile COMPUTERFILE
-                        File containing computer FQDNs to use as allowlist <span style="color:#007020;font-weight:bold">for</span>
+                        File containing computer FQDNs to use as allowlist <span style="color:#66d9ef">for</span>
                         any computer based methods
   --cachefile CACHEFILE
-                        Cache file <span style="color:#666">(</span>experimental<span style="color:#666">)</span>
+                        Cache file <span style="color:#f92672">(</span>experimental<span style="color:#f92672">)</span>
 </code></pre></div>
       </div>
       

@@ -38,9 +38,9 @@
 </ul>
 <p>The program does nothing more than printing what compiler it was built with and which versions of boost and poco it is linked against.</p>
 <h3 id="code">Code</h3>
-<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
@@ -65,28 +65,28 @@
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#007020">#include</span> <span style="color:#007020">&lt;boost/lexical_cast.hpp&gt;</span><span style="color:#007020">
-</span><span style="color:#007020">#include</span> <span style="color:#007020">&lt;Poco/Environment.h&gt;</span><span style="color:#007020">
-</span><span style="color:#007020">#include</span> <span style="color:#007020">&lt;iostream&gt;</span><span style="color:#007020">
-</span><span style="color:#007020"></span>
-<span style="color:#007020">#if defined(__clang__)
-</span><span style="color:#007020">#define CC &#34;clang++&#34;
-</span><span style="color:#007020">#elif defined (__GNUC__)
-</span><span style="color:#007020">#define CC &#34;g++&#34;
-</span><span style="color:#007020">#else
-</span><span style="color:#007020">#define CC &#34;&lt;unknown compiler&gt;&#34;
-</span><span style="color:#007020">#endif
-</span><span style="color:#007020"></span>
-<span style="color:#902000">int</span> <span style="color:#06287e">main</span>() {
-  std<span style="color:#666">::</span>cout <span style="color:#666">&lt;&lt;</span> <span style="color:#4070a0">&#34;Hello World!</span><span style="color:#4070a0;font-weight:bold">\n</span><span style="color:#4070a0">&#34;</span>
-    <span style="color:#666">&lt;&lt;</span> <span style="color:#4070a0">&#34;Compiler: &#34;</span> <span style="color:#666">&lt;&lt;</span> CC <span style="color:#666">&lt;&lt;</span> <span style="color:#4070a0">&#34; &#34;</span> <span style="color:#666">&lt;&lt;</span> __VERSION__ <span style="color:#666">&lt;&lt;</span> <span style="color:#4070a0">&#39;\n&#39;</span>
-    <span style="color:#666">&lt;&lt;</span> <span style="color:#4070a0">&#34;Boost: &#34;</span> <span style="color:#666">&lt;&lt;</span> (BOOST_VERSION <span style="color:#666">/</span> <span style="color:#40a070">100000</span>) <span style="color:#666">&lt;&lt;</span> <span style="color:#4070a0">&#39;.&#39;</span>
-                 <span style="color:#666">&lt;&lt;</span> (BOOST_VERSION <span style="color:#666">/</span> <span style="color:#40a070">100</span> <span style="color:#666">%</span> <span style="color:#40a070">1000</span>) <span style="color:#666">&lt;&lt;</span> <span style="color:#4070a0">&#39;.&#39;</span>
-                 <span style="color:#666">&lt;&lt;</span> (BOOST_VERSION <span style="color:#666">%</span> <span style="color:#40a070">100</span>) <span style="color:#666">&lt;&lt;</span> <span style="color:#4070a0">&#39;\n&#39;</span>
-    <span style="color:#666">&lt;&lt;</span> <span style="color:#4070a0">&#34;POCO: &#34;</span> <span style="color:#666">&lt;&lt;</span> (Poco<span style="color:#666">::</span>Environment<span style="color:#666">::</span>libraryVersion() <span style="color:#666">&gt;&gt;</span> <span style="color:#40a070">24</span>) <span style="color:#666">&lt;&lt;</span> <span style="color:#4070a0">&#39;.&#39;</span>
-                <span style="color:#666">&lt;&lt;</span> (Poco<span style="color:#666">::</span>Environment<span style="color:#666">::</span>libraryVersion() <span style="color:#666">&gt;&gt;</span> <span style="color:#40a070">16</span> <span style="color:#666">&amp;</span> <span style="color:#40a070">0xff</span>) <span style="color:#666">&lt;&lt;</span> <span style="color:#4070a0">&#39;.&#39;</span>
-                <span style="color:#666">&lt;&lt;</span> (Poco<span style="color:#666">::</span>Environment<span style="color:#666">::</span>libraryVersion() <span style="color:#666">&gt;&gt;</span> <span style="color:#40a070">8</span> <span style="color:#666">&amp;</span> <span style="color:#40a070">0xff</span>)
-                <span style="color:#666">&lt;&lt;</span> <span style="color:#4070a0">&#39;\n&#39;</span>;
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;boost/lexical_cast.hpp&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;Poco/Environment.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">#if defined(__clang__)
+</span><span style="color:#75715e">#define CC &#34;clang++&#34;
+</span><span style="color:#75715e">#elif defined (__GNUC__)
+</span><span style="color:#75715e">#define CC &#34;g++&#34;
+</span><span style="color:#75715e">#else
+</span><span style="color:#75715e">#define CC &#34;&lt;unknown compiler&gt;&#34;
+</span><span style="color:#75715e">#endif
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+  std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;Hello World!</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>
+    <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;Compiler: &#34;</span> <span style="color:#f92672">&lt;&lt;</span> CC <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">&lt;&lt;</span> __VERSION__ <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#39;\n&#39;</span>
+    <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;Boost: &#34;</span> <span style="color:#f92672">&lt;&lt;</span> (BOOST_VERSION <span style="color:#f92672">/</span> <span style="color:#ae81ff">100000</span>) <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#39;.&#39;</span>
+                 <span style="color:#f92672">&lt;&lt;</span> (BOOST_VERSION <span style="color:#f92672">/</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">1000</span>) <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#39;.&#39;</span>
+                 <span style="color:#f92672">&lt;&lt;</span> (BOOST_VERSION <span style="color:#f92672">%</span> <span style="color:#ae81ff">100</span>) <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#39;\n&#39;</span>
+    <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;POCO: &#34;</span> <span style="color:#f92672">&lt;&lt;</span> (Poco<span style="color:#f92672">::</span>Environment<span style="color:#f92672">::</span>libraryVersion() <span style="color:#f92672">&gt;&gt;</span> <span style="color:#ae81ff">24</span>) <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#39;.&#39;</span>
+                <span style="color:#f92672">&lt;&lt;</span> (Poco<span style="color:#f92672">::</span>Environment<span style="color:#f92672">::</span>libraryVersion() <span style="color:#f92672">&gt;&gt;</span> <span style="color:#ae81ff">16</span> <span style="color:#f92672">&amp;</span> <span style="color:#ae81ff">0xff</span>) <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#39;.&#39;</span>
+                <span style="color:#f92672">&lt;&lt;</span> (Poco<span style="color:#f92672">::</span>Environment<span style="color:#f92672">::</span>libraryVersion() <span style="color:#f92672">&gt;&gt;</span> <span style="color:#ae81ff">8</span> <span style="color:#f92672">&amp;</span> <span style="color:#ae81ff">0xff</span>)
+                <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#39;\n&#39;</span>;
 }
 </code></pre></td></tr></table>
 </div>
@@ -108,9 +108,9 @@
 </figure>
 
 <h3 id="default-dot-nix">default.nix</h3>
-<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
@@ -127,20 +127,20 @@
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nix" data-lang="nix"><span style="color:#007020;font-weight:bold">with</span> <span style="color:#007020;font-weight:bold">import</span> <span style="color:#235388">&lt;nixpkgs&gt;</span> {};
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nix" data-lang="nix"><span style="color:#66d9ef">with</span> <span style="color:#f92672">import</span> <span style="color:#e6db74">&lt;nixpkgs&gt;</span> {};
 
-stdenv<span style="color:#666">.</span>mkDerivation {
-  name <span style="color:#666">=</span> <span style="color:#4070a0">&#34;my-app&#34;</span>;
-  src <span style="color:#666">=</span> <span style="color:#235388">./.</span>;
+stdenv<span style="color:#f92672">.</span>mkDerivation {
+  name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;my-app&#34;</span>;
+  src <span style="color:#f92672">=</span> <span style="color:#e6db74">./.</span>;
 
-  buildInputs <span style="color:#666">=</span> [ boost poco ];
+  buildInputs <span style="color:#f92672">=</span> [ boost poco ];
 
-  buildPhase <span style="color:#666">=</span> <span style="color:#4070a0">&#34;c++ -o printEnv printEnv.cpp -lPocoFoundation -lboost_system&#34;</span>;
+  buildPhase <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;c++ -o printEnv printEnv.cpp -lPocoFoundation -lboost_system&#34;</span>;
 
-  installPhase <span style="color:#666">=</span> <span style="color:#4070a0">&#39;&#39;
-</span><span style="color:#4070a0">    mkdir -p $out/bin
-</span><span style="color:#4070a0">    cp printEnv $out/bin/
-</span><span style="color:#4070a0">  &#39;&#39;</span>;
+  installPhase <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;
+</span><span style="color:#e6db74">    mkdir -p $out/bin
+</span><span style="color:#e6db74">    cp printEnv $out/bin/
+</span><span style="color:#e6db74">  &#39;&#39;</span>;
 }
 </code></pre></td></tr></table>
 </div>

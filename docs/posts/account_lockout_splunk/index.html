@@ -28,7 +28,7 @@
       <div class="content">
         <h1>Account Lockout - Splunk</h1>
         <p>Monitoring <a href="/posts/active_directory/">Active Directory</a> account lockouts with <a href="/posts/splunk/">Splunk</a></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">index=wineventlog Account_Name=&lt;&lt;accountNameHere&gt;&gt;&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">index=wineventlog Account_Name=&lt;&lt;accountNameHere&gt;&gt;&gt;
 (EventCode=4740 OR EventCode=4625 OR EventCode=644 OR EventCode=529 OR EventCode=675 OR EventCode=676 OR EventCode=681 OR EventCode=4771 OR EventCode=4770 OR EventCode=4768 OR EventCode=4776 OR EventCode=4777 OR EventCode=4725 OR EventCode=4723 OR EventCode=4724 OR EventCode=4767 OR EventCode=4800 OR EventCode=4801)
 | eval Account0=mvindex(Account_Name,0) | eval Account1=mvindex(Account_Name,1)
 | eval Account=case(EventCode==4624,Account1, EventCode==4625,Account1, EventCode==4648,Account1, EventCode==4722,Account1, EventCode==4723,Account1, EventCode==4724,Account1, EventCode==4725,Account1, EventCode==4738,Account1, EventCode==4740,Account1, EventCode==4767,Account1, EventCode==4768,Account0, EventCode==4769,Account0, EventCode==4771,Account0, EventCode==4770,Account0, EventCode==5140,Account0, EventCode==4778,Account0, EventCode==4779,Account0, EventCode==4800,Account0, EventCode==4801,Account0) | fillnull Value=&#34;-&#34; Account

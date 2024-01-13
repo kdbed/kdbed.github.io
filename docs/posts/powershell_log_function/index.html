@@ -28,24 +28,24 @@
       <div class="content">
         <h1>PowerShell - Log Function</h1>
         <h2 id="log-function-for-powershell--powershell-dot-md">Log Function for <a href="/posts/powershell/">powershell</a></h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#007020;font-weight:bold">function</span> <span style="color:#007020">Write-Log</span> {
-    [<span style="color:#007020;font-weight:bold">CmdletBinding</span>()]
-    <span style="color:#007020;font-weight:bold">param</span>(
-        [<span style="color:#007020;font-weight:bold">Parameter</span>()]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#66d9ef">function</span> Write-Log {
+    [<span style="color:#66d9ef">CmdletBinding</span>()]
+    <span style="color:#66d9ef">param</span>(
+        [<span style="color:#66d9ef">Parameter</span>()]
         [ValidateNotNullOrEmpty()]
-        <span style="color:#60add5">[string]</span><span style="color:#bb60d5">$Message</span>,
+        <span style="color:#66d9ef">[string]</span>$Message,
 
-        [<span style="color:#007020;font-weight:bold">Parameter</span>()]
+        [<span style="color:#66d9ef">Parameter</span>()]
         [ValidateNotNullOrEmpty()]
-        [<span style="color:#007020;font-weight:bold">ValidateSet</span>(<span style="color:#4070a0">&#39;Information&#39;</span>,<span style="color:#4070a0">&#39;Warning&#39;</span>,<span style="color:#4070a0">&#39;Error&#39;</span>)]
-        <span style="color:#60add5">[string]</span><span style="color:#bb60d5">$Severity</span> = <span style="color:#4070a0">&#39;Information&#39;</span>
+        [<span style="color:#66d9ef">ValidateSet</span>(<span style="color:#e6db74">&#39;Information&#39;</span>,<span style="color:#e6db74">&#39;Warning&#39;</span>,<span style="color:#e6db74">&#39;Error&#39;</span>)]
+        <span style="color:#66d9ef">[string]</span>$Severity = <span style="color:#e6db74">&#39;Information&#39;</span>
     )
 
-    <span style="color:#60add5">[pscustomobject]</span>@{
-        Time = (<span style="color:#007020">Get-Date</span> <span style="color:#666">-f</span> g)
-        Message = <span style="color:#bb60d5">$Message</span>
-        Severity = <span style="color:#bb60d5">$Severity</span>
-    } | <span style="color:#007020">Export-Csv</span> -Path <span style="color:#4070a0">&#34;$env:Temp\LogFile.csv&#34;</span> -Append -NoTypeInformation
+    <span style="color:#66d9ef">[pscustomobject]</span>@{
+        Time = (Get-Date <span style="color:#f92672">-f</span> g)
+        Message = $Message
+        Severity = $Severity
+    } | Export-Csv -Path <span style="color:#e6db74">&#34;$env:Temp\LogFile.csv&#34;</span> -Append -NoTypeInformation
  }
 </code></pre></div><p>From : <a href="https://adamtheautomator.com/powershell-log-function/">ATA</a></p>
 

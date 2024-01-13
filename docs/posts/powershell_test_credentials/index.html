@@ -28,9 +28,9 @@
       <div class="content">
         <h1>PowerShell - Test Credentials</h1>
         <h2 id="testing-credentials">Testing credentials</h2>
-<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
@@ -104,78 +104,78 @@
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">72
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#007020;font-weight:bold">function</span> Test-Cred <span style="color:#666">{</span>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#66d9ef">function</span> Test-Cred <span style="color:#f92672">{</span>
 
-    <span style="color:#666">[</span>CmdletBinding<span style="color:#666">()]</span>
-    <span style="color:#666">[</span>OutputType<span style="color:#666">([</span>String<span style="color:#666">])]</span>
+    <span style="color:#f92672">[</span>CmdletBinding<span style="color:#f92672">()]</span>
+    <span style="color:#f92672">[</span>OutputType<span style="color:#f92672">([</span>String<span style="color:#f92672">])]</span>
 
-    Param <span style="color:#666">(</span>
-        <span style="color:#666">[</span>Parameter<span style="color:#666">(</span>
-            <span style="color:#bb60d5">Mandatory</span> <span style="color:#666">=</span> <span style="color:#bb60d5">$false</span>,
-            <span style="color:#bb60d5">ValueFromPipeLine</span> <span style="color:#666">=</span> <span style="color:#bb60d5">$true</span>,
-            <span style="color:#bb60d5">ValueFromPipelineByPropertyName</span> <span style="color:#666">=</span> <span style="color:#bb60d5">$true</span>
-        <span style="color:#666">)]</span>
-        <span style="color:#666">[</span>Alias<span style="color:#666">(</span>
-            <span style="color:#4070a0">&#39;PSCredential&#39;</span>
-        <span style="color:#666">)]</span>
-        <span style="color:#666">[</span>ValidateNotNull<span style="color:#666">()]</span>
-        <span style="color:#666">[</span>System.Management.Automation.PSCredential<span style="color:#666">]</span>
-        <span style="color:#666">[</span>System.Management.Automation.Credential<span style="color:#666">()]</span>
-        <span style="color:#bb60d5">$Credentials</span>
-    <span style="color:#666">)</span>
-    <span style="color:#bb60d5">$Domain</span> <span style="color:#666">=</span> <span style="color:#bb60d5">$null</span>
-    <span style="color:#bb60d5">$Root</span> <span style="color:#666">=</span> <span style="color:#bb60d5">$null</span>
-    <span style="color:#bb60d5">$Username</span> <span style="color:#666">=</span> <span style="color:#bb60d5">$null</span>
-    <span style="color:#bb60d5">$Password</span> <span style="color:#666">=</span> <span style="color:#bb60d5">$null</span>
+    Param <span style="color:#f92672">(</span>
+        <span style="color:#f92672">[</span>Parameter<span style="color:#f92672">(</span>
+            Mandatory <span style="color:#f92672">=</span> $false,
+            ValueFromPipeLine <span style="color:#f92672">=</span> $true,
+            ValueFromPipelineByPropertyName <span style="color:#f92672">=</span> $true
+        <span style="color:#f92672">)]</span>
+        <span style="color:#f92672">[</span>Alias<span style="color:#f92672">(</span>
+            <span style="color:#e6db74">&#39;PSCredential&#39;</span>
+        <span style="color:#f92672">)]</span>
+        <span style="color:#f92672">[</span>ValidateNotNull<span style="color:#f92672">()]</span>
+        <span style="color:#f92672">[</span>System.Management.Automation.PSCredential<span style="color:#f92672">]</span>
+        <span style="color:#f92672">[</span>System.Management.Automation.Credential<span style="color:#f92672">()]</span>
+        $Credentials
+    <span style="color:#f92672">)</span>
+    $Domain <span style="color:#f92672">=</span> $null
+    $Root <span style="color:#f92672">=</span> $null
+    $Username <span style="color:#f92672">=</span> $null
+    $Password <span style="color:#f92672">=</span> $null
 
-    If<span style="color:#666">(</span><span style="color:#bb60d5">$Credentials</span> -eq <span style="color:#bb60d5">$null</span><span style="color:#666">)</span>
-    <span style="color:#666">{</span>
+    If<span style="color:#f92672">(</span>$Credentials -eq $null<span style="color:#f92672">)</span>
+    <span style="color:#f92672">{</span>
         Try
-        <span style="color:#666">{</span>
-            <span style="color:#bb60d5">$Credentials</span> <span style="color:#666">=</span> Get-Credential <span style="color:#4070a0">&#34;UHHS\$env:username&#34;</span> -ErrorAction Stop
-        <span style="color:#666">}</span>
+        <span style="color:#f92672">{</span>
+            $Credentials <span style="color:#f92672">=</span> Get-Credential <span style="color:#e6db74">&#34;UHHS\$env:username&#34;</span> -ErrorAction Stop
+        <span style="color:#f92672">}</span>
         Catch
-        <span style="color:#666">{</span>
-            <span style="color:#bb60d5">$ErrorMsg</span> <span style="color:#666">=</span> <span style="color:#bb60d5">$_</span>.Exception.Message
-            Write-Warning <span style="color:#4070a0">&#34;Failed to validate credentials: </span><span style="color:#bb60d5">$ErrorMsg</span><span style="color:#4070a0"> &#34;</span>
+        <span style="color:#f92672">{</span>
+            $ErrorMsg <span style="color:#f92672">=</span> $_.Exception.Message
+            Write-Warning <span style="color:#e6db74">&#34;Failed to validate credentials: </span>$ErrorMsg<span style="color:#e6db74"> &#34;</span>
             Pause
             Break
-        <span style="color:#666">}</span>
-    <span style="color:#666">}</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
 
-    <span style="color:#60a0b0;font-style:italic"># Checking module</span>
+    <span style="color:#75715e"># Checking module</span>
     Try
-    <span style="color:#666">{</span>
-        <span style="color:#60a0b0;font-style:italic"># Split username and password</span>
-        <span style="color:#bb60d5">$Username</span> <span style="color:#666">=</span> <span style="color:#bb60d5">$credentials</span>.username
-        <span style="color:#bb60d5">$Password</span> <span style="color:#666">=</span> <span style="color:#bb60d5">$credentials</span>.GetNetworkCredential<span style="color:#666">()</span>.password
+    <span style="color:#f92672">{</span>
+        <span style="color:#75715e"># Split username and password</span>
+        $Username <span style="color:#f92672">=</span> $credentials.username
+        $Password <span style="color:#f92672">=</span> $credentials.GetNetworkCredential<span style="color:#f92672">()</span>.password
 
-        <span style="color:#60a0b0;font-style:italic"># Get Domain</span>
-        <span style="color:#bb60d5">$Root</span> <span style="color:#666">=</span> <span style="color:#4070a0">&#34;LDAP://&#34;</span> + <span style="color:#666">([</span>ADSI<span style="color:#666">]</span><span style="color:#4070a0">&#39;&#39;</span><span style="color:#666">)</span>.distinguishedName
-        <span style="color:#bb60d5">$Domain</span> <span style="color:#666">=</span> New-Object System.DirectoryServices.DirectoryEntry<span style="color:#666">(</span><span style="color:#bb60d5">$Root</span>,<span style="color:#bb60d5">$UserName</span>,<span style="color:#bb60d5">$Password</span><span style="color:#666">)</span>
-    <span style="color:#666">}</span>
+        <span style="color:#75715e"># Get Domain</span>
+        $Root <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;LDAP://&#34;</span> + <span style="color:#f92672">([</span>ADSI<span style="color:#f92672">]</span><span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">)</span>.distinguishedName
+        $Domain <span style="color:#f92672">=</span> New-Object System.DirectoryServices.DirectoryEntry<span style="color:#f92672">(</span>$Root,$UserName,$Password<span style="color:#f92672">)</span>
+    <span style="color:#f92672">}</span>
     Catch
-    <span style="color:#666">{</span>
-        <span style="color:#bb60d5">$_</span>.Exception.Message
+    <span style="color:#f92672">{</span>
+        $_.Exception.Message
         Continue
-    <span style="color:#666">}</span>
+    <span style="color:#f92672">}</span>
 
-    If<span style="color:#666">(</span>!<span style="color:#bb60d5">$domain</span><span style="color:#666">)</span>
-    <span style="color:#666">{</span>
-        Write-Warning <span style="color:#4070a0">&#34;Something went wrong&#34;</span>
-    <span style="color:#666">}</span>
+    If<span style="color:#f92672">(</span>!$domain<span style="color:#f92672">)</span>
+    <span style="color:#f92672">{</span>
+        Write-Warning <span style="color:#e6db74">&#34;Something went wrong&#34;</span>
+    <span style="color:#f92672">}</span>
     Else
-    <span style="color:#666">{</span>
-        If <span style="color:#666">(</span><span style="color:#bb60d5">$domain</span>.name -ne <span style="color:#bb60d5">$null</span><span style="color:#666">)</span>
-        <span style="color:#666">{</span>
-            <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Authenticated&#34;</span>
-        <span style="color:#666">}</span>
+    <span style="color:#f92672">{</span>
+        If <span style="color:#f92672">(</span>$domain.name -ne $null<span style="color:#f92672">)</span>
+        <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Authenticated&#34;</span>
+        <span style="color:#f92672">}</span>
         Else
-        <span style="color:#666">{</span>
-            <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Not authenticated&#34;</span>
-        <span style="color:#666">}</span>
-    <span style="color:#666">}</span>
-<span style="color:#666">}</span>
+        <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Not authenticated&#34;</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
 </code></pre></td></tr></table>
 </div>
 </div>

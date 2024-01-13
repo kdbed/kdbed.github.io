@@ -29,22 +29,22 @@
         <h1>PowerShell - Script Encryption</h1>
         <h2 id="encrypt-powershell--powershell-dot-md--scripts">Encrypt <a href="/posts/powershell/">powershell</a> Scripts</h2>
 <p>Function to obfuscate code containing sensitive data:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#007020;font-weight:bold">function</span> <span style="color:#007020">Encrypt-Script</span>(<span style="color:#bb60d5">$path</span>, <span style="color:#bb60d5">$destination</span>) {
-    <span style="color:#bb60d5">$script</span> = <span style="color:#007020">Get-Content</span> <span style="color:#bb60d5">$path</span> | <span style="color:#007020">Out-String</span>
-    <span style="color:#bb60d5">$secure</span> = <span style="color:#007020">ConvertTo-SecureString</span> <span style="color:#bb60d5">$script</span> -asPlainText -force
-    <span style="color:#bb60d5">$export</span> = <span style="color:#bb60d5">$secure</span> | <span style="color:#007020">ConvertFrom-SecureString</span>
-    <span style="color:#007020">Set-Content</span> <span style="color:#bb60d5">$destination</span> <span style="color:#bb60d5">$export</span>
-    <span style="color:#4070a0">&#34;Script &#39;$path&#39; has been encrypted as &#39;$destination&#39;&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#66d9ef">function</span> Encrypt-Script($path, $destination) {
+    $script = Get-Content $path | Out-String
+    $secure = ConvertTo-SecureString $script -asPlainText -force
+    $export = $secure | ConvertFrom-SecureString
+    Set-Content $destination $export
+    <span style="color:#e6db74">&#34;Script &#39;$path&#39; has been encrypted as &#39;$destination&#39;&#34;</span>
 }
 
 
-<span style="color:#007020;font-weight:bold">function</span> <span style="color:#007020">Execute-EncryptedScript</span>(<span style="color:#bb60d5">$path</span>) {
-    <span style="color:#007020;font-weight:bold">trap</span> { <span style="color:#4070a0">&#34;Decryption failed&#34;</span>; <span style="color:#007020;font-weight:bold">break</span> }
-    <span style="color:#bb60d5">$raw</span> = <span style="color:#007020">Get-Content</span> <span style="color:#bb60d5">$path</span>
-    <span style="color:#bb60d5">$secure</span> = <span style="color:#007020">ConvertTo-SecureString</span> <span style="color:#bb60d5">$raw</span>
-    <span style="color:#bb60d5">$helper</span> = <span style="color:#007020">New-Object</span> system.Management.Automation.PSCredential(<span style="color:#4070a0">&#34;test&#34;</span>, <span style="color:#bb60d5">$secure</span>)
-    <span style="color:#bb60d5">$plain</span> = <span style="color:#bb60d5">$helper</span>.GetNetworkCredential().Password
-    <span style="color:#007020">Invoke-Expression</span> <span style="color:#bb60d5">$plain</span>
+<span style="color:#66d9ef">function</span> Execute-EncryptedScript($path) {
+    <span style="color:#66d9ef">trap</span> { <span style="color:#e6db74">&#34;Decryption failed&#34;</span>; <span style="color:#66d9ef">break</span> }
+    $raw = Get-Content $path
+    $secure = ConvertTo-SecureString $raw
+    $helper = New-Object system.Management.Automation.PSCredential(<span style="color:#e6db74">&#34;test&#34;</span>, $secure)
+    $plain = $helper.GetNetworkCredential().Password
+    Invoke-Expression $plain
 }
 </code></pre></div><p>From: <a href="https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/encrypting-powershell-scripts#">idera</a></p>
 
