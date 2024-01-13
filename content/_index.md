@@ -8,7 +8,7 @@ draft = false
 
 # Owlglass {#hi}
 
-![](./images/xor.png)
+![RICHARD LINDNER, BOY WITH MACHINE, 1954.](./images/richard_lindner.png)
 
 [full index](/posts/).
 
