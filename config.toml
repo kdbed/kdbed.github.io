@@ -1,6 +1,6 @@
 baseURL = "https://kdbed.github.io/"
 languageCode = "en-us"
-title = "Braindump"
+title = "Owlglass"
 theme = "cortex"
 publishDir = "docs"
 [params]
@@ -27,7 +27,7 @@ footer = "Icon by Freepik. Built with ♥ with Org-mode and Hugo."
 
   [markup.highlight]
     codeFences = true
-    guessSyntax = false
+    guessSyntax = true
     hl_Lines = ""
     lineNoStart = 1
     lineNos = false
