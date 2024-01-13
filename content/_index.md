@@ -8,7 +8,7 @@ draft = false
 
 # Owlglass {#hi}
 
-![image info](../static/images/xor.png)
+![](./images/xor.png)
 
 [full index](/posts/).
 
