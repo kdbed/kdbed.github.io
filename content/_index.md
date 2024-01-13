@@ -8,8 +8,7 @@ draft = false
 
 # Owlglass {#hi}
 
-
+![image info](../static/images/xor.png)
 
 [full index](/posts/).
 
-Have fun!
