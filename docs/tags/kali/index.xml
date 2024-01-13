@@ -15,7 +15,7 @@
       <description>:ID: cb51a9d3-842b-4b10-ae56-2d18573b5f3e
 :END:
 Filesystem FHS - Filesystem Hierarchy Standard - conventions used for layout of a UNIX system LinuxFoundation
-/bin : basic programs like ls, cd, cat /sbin : system programs like fdisk, makefs, sysctl /etc : configuration files bk /tmp : temporary files, typically deleted on boot /usr/bin : applications like apt, ncat, nmap /usr/share : application support and data files Basic Linux commands Finding files which searches through directories in the $PATH environment variable for a given file name; returns the full path to the file if a match is found</description>
+ /bin : basic programs like ls, cd, cat /sbin : system programs like fdisk, makefs, sysctl /etc : configuration files bk /tmp : temporary files, typically deleted on boot /usr/bin : applications like apt, ncat, nmap /usr/share : application support and data files  Basic Linux commands Finding files which searches through directories in the $PATH environment variable for a given file name; returns the full path to the file if a match is found</description>
     </item>
     
   </channel>

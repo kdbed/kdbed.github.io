@@ -13,10 +13,10 @@
       
       <guid>https://kdbed.github.io/posts/pentest_active_directory/</guid>
       <description>Active Directory Enumeration Legacy Windows Tools Use net.exe to gather user information
-1 net user /domain A more detailed view of specific users in the output above:
-1 net user &amp;lt;username&amp;gt; /domain Enumerate groups:
-1 net group /domain Specifying a group:
-1 net group &amp;lt;groupname&amp;gt; /domain PowerShell and .NET When RSAT tools aren&amp;rsquo;t available, we can use an Active Directory Services Interface ADSI (a set of interfaces built on COM as an LDAP provider.</description>
+1  net user /domain   A more detailed view of specific users in the output above:
+1  net user &amp;lt;username&amp;gt; /domain   Enumerate groups:
+1  net group /domain   Specifying a group:
+1  net group &amp;lt;groupname&amp;gt; /domain   PowerShell and .NET When RSAT tools aren&amp;rsquo;t available, we can use an Active Directory Services Interface ADSI (a set of interfaces built on COM as an LDAP provider.</description>
     </item>
     
     <item>
@@ -26,8 +26,8 @@
       
       <guid>https://kdbed.github.io/posts/pentest_active_information_gathering/</guid>
       <description>Active Information Gathering DNS DNS - Basics DNS Enumeration - Basics DNS forward lookup brute-forcing to determine additional IPs belonging to a domain:
-1 for ip in $(cat list.txt); do host $ip.domain.com; done Comprehensive lists available at SecLists. Based on IPs determined from the above, we can perform reverse lookups by scanning an associated range:
-1 for ip in $(seq 200 254); do host xxx.xxx.xxx.$ip; done | grep -v &amp;#34;not found&amp;#34; dnsrecon dnsenum2 nslookup TCP/UDP Port Scanning Simple port scan with Netcat:</description>
+1  for ip in $(cat list.txt); do host $ip.domain.com; done   Comprehensive lists available at SecLists. Based on IPs determined from the above, we can perform reverse lookups by scanning an associated range:
+1  for ip in $(seq 200 254); do host xxx.xxx.xxx.$ip; done | grep -v &amp;#34;not found&amp;#34;   dnsrecon dnsenum2 nslookup TCP/UDP Port Scanning Simple port scan with Netcat:</description>
     </item>
     
     <item>

@@ -13,7 +13,8 @@
       
       <guid>https://kdbed.github.io/posts/dll_hijacking/</guid>
       <description>Basic Ideas Windows DLL hijacking occurs when a trusted or legitimate application is tricked into loading an arbitrary DLL. Dll hijacking can be used to execute code, obtain persistence and escalate privileges, although privilege escalation is the least likely. hackTricks
-Approaches There are different approaches to DLL hijacking, and success will be determined by how the application is set to load its DLLs.</description>
+Approaches There are different approaches to DLL hijacking, and success will be determined by how the application is set to load its DLLs.
+   </description>
     </item>
     
     <item>
@@ -34,7 +35,8 @@ Execution: Run from memory and send back to attacker:
       
       <guid>https://kdbed.github.io/posts/pentest_windows_privilege_escalation/</guid>
       <description>From Service to SYSTEM Service Account Privileges Services can be run such that they don&amp;rsquo;t maintain the privs of NT AUTHORITY\LOCAL SERVICE account, eg with the -k LocalServiceAndNoImpersonation option.
-The task scheduler can be used to restore default privs: FullPowers itm4n. After executing FullPowers:</description>
+ The task scheduler can be used to restore default privs: FullPowers itm4n. After executing FullPowers:
+ </description>
     </item>
     
   </channel>

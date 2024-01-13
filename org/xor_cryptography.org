@@ -36,6 +36,7 @@ Inputs and outputs above are named as if XOR were being used as an encryption op
 ** Properties
 
 
+
 $$
 \frac{1}{2} \int f(x) dx \nabla^2\phi(x)
 $$

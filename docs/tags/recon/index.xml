@@ -13,7 +13,7 @@
       
       <guid>https://kdbed.github.io/posts/scapy_scanning/</guid>
       <description>Scanning Networks with Scapy Nmap implements several types of scans and can be used to detect the versions of operating systems and services; it can also perform custom vulnerability scanning. Here we&amp;rsquo;ll implement a couple of simple scans using scapy in Python.
-SYN scan : A SYN scan sends a TCP SYN packet to a port and looks for a SYN/ACK packet in response. DNS scan : A DNS scan tests whether a DNS server is running on the target system.</description>
+ SYN scan : A SYN scan sends a TCP SYN packet to a port and looks for a SYN/ACK packet in response. DNS scan : A DNS scan tests whether a DNS server is running on the target system.</description>
     </item>
     
     <item>

@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/c_programming/</guid>
-      <description>C Programming Basics Code Analysis clang-tidy static code analysis tool - clang-tidy checks Security standards : SEI CERT C Coding Standard : https://wiki.sei.cmu.edu/confluence/display/c Secure Coding in C and C++, 2/e by Robert Seacord </description>
+      <description>C Programming Basics Code Analysis  clang-tidy static code analysis tool - clang-tidy checks Security standards : SEI CERT C Coding Standard : https://wiki.sei.cmu.edu/confluence/display/c Secure Coding in C and C++, 2/e by Robert Seacord  </description>
     </item>
     
     <item>
@@ -21,7 +21,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/cpp_programming/</guid>
-      <description>C++ Programming Hello world 1 2 3 4 5 #include &amp;lt;iostream&amp;gt; int main(){ std::cout &amp;lt;&amp;lt; &amp;#34;Hello, world.&amp;#34; &amp;lt;&amp;lt; std::endl; } </description>
+      <description>C++ Programming Hello world 1 2 3 4 5  #include &amp;lt;iostream&amp;gt; int main(){ std::cout &amp;lt;&amp;lt; &amp;#34;Hello, world.&amp;#34; &amp;lt;&amp;lt; std::endl; }   </description>
     </item>
     
     <item>
@@ -30,7 +30,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/lang_test/</guid>
-      <description>Language tests in org Rust extern crate primal; use primal::Sieve; fn num_divisors(n: usize, primes: &amp;amp;Sieve) -&amp;gt; Option&amp;lt;usize&amp;gt; { match primes.factor(n) { Ok(factors) =&amp;gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))), Err(_) =&amp;gt; None, } } fn main() { println!(&amp;#34;24 days of Rust - primal (day 2)&amp;#34;); let sieve = Sieve::new(10000); let suspect = 5273; println!(&amp;#34;{} is prime: {}&amp;#34;, suspect, sieve.is_prime(suspect)); let not_a_prime = 1024; println!(&amp;#34;{} is prime: {}&amp;#34;, not_a_prime, sieve.</description>
+      <description>Language tests in org Rust extern crate primal; use primal::Sieve; fn num_divisors(n: usize, primes: &amp;amp;Sieve) -&amp;gt; Option&amp;lt;usize&amp;gt; { match primes.factor(n) { Ok(factors) =&amp;gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))), Err(_) =&amp;gt; None, } } fn main() { println!(&amp;quot;24 days of Rust - primal (day 2)&amp;quot;); let sieve = Sieve::new(10000); let suspect = 5273; println!(&amp;quot;{} is prime: {}&amp;quot;, suspect, sieve.is_prime(suspect)); let not_a_prime = 1024; println!(&amp;quot;{} is prime: {}&amp;quot;, not_a_prime, sieve.</description>
     </item>
     
   </channel>

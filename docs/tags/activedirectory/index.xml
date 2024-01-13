@@ -42,7 +42,7 @@ Kerberos S4u2Self How LastLogonTimeStamp is Updated with Kerberos S4u2Self S4U2s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/ntlm_authentication/</guid>
-      <description>NTLM Authentication Process I enter my username and password on my local computer. My computer runs the password I typed through the standard hashing algorithm used by both client machines like mine and the domain controllers (DCs) that provide authentication and authorization services. That gives it my password hash, which it will use in Step 5. My machine sends the nearest DC a logon request, which includes my username. The DC sends back a random number, which is known as a logon challenge.</description>
+      <description>NTLM Authentication Process  I enter my username and password on my local computer. My computer runs the password I typed through the standard hashing algorithm used by both client machines like mine and the domain controllers (DCs) that provide authentication and authorization services. That gives it my password hash, which it will use in Step 5. My machine sends the nearest DC a logon request, which includes my username. The DC sends back a random number, which is known as a logon challenge.</description>
     </item>
     
     <item>
@@ -52,10 +52,10 @@ Kerberos S4u2Self How LastLogonTimeStamp is Updated with Kerberos S4u2Self S4U2s
       
       <guid>https://kdbed.github.io/posts/pentest_active_directory/</guid>
       <description>Active Directory Enumeration Legacy Windows Tools Use net.exe to gather user information
-1 net user /domain A more detailed view of specific users in the output above:
-1 net user &amp;lt;username&amp;gt; /domain Enumerate groups:
-1 net group /domain Specifying a group:
-1 net group &amp;lt;groupname&amp;gt; /domain PowerShell and .NET When RSAT tools aren&amp;rsquo;t available, we can use an Active Directory Services Interface ADSI (a set of interfaces built on COM as an LDAP provider.</description>
+1  net user /domain   A more detailed view of specific users in the output above:
+1  net user &amp;lt;username&amp;gt; /domain   Enumerate groups:
+1  net group /domain   Specifying a group:
+1  net group &amp;lt;groupname&amp;gt; /domain   PowerShell and .NET When RSAT tools aren&amp;rsquo;t available, we can use an Active Directory Services Interface ADSI (a set of interfaces built on COM as an LDAP provider.</description>
     </item>
     
     <item>
@@ -107,7 +107,7 @@ netwrix</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/powershell_lengh_limits_ad_attributes/</guid>
-      <description>Determine character limits on AD attributes 1 2 dsquery * cn=Schema,cn=Configuration,dc=contoso,dc=com -filter &amp;#34;(LDAPDisplayName=department)&amp;#34; -attr rangeUpper dsquery * cn=Schema,cn=Configuration,dc=contoso,dc=com -filter &amp;#34;(LDAPDisplayName=department)&amp;#34; -attr rangeUpper </description>
+      <description>Determine character limits on AD attributes 1 2  dsquery * cn=Schema,cn=Configuration,dc=contoso,dc=com -filter &amp;#34;(LDAPDisplayName=department)&amp;#34; -attr rangeUpper dsquery * cn=Schema,cn=Configuration,dc=contoso,dc=com -filter &amp;#34;(LDAPDisplayName=department)&amp;#34; -attr rangeUpper   </description>
     </item>
     
     <item>

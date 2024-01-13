@@ -51,7 +51,7 @@ index=wineventlog Account_Name=&amp;lt;&amp;lt;accountNameHere&amp;gt;&amp;gt;&a
       
       <guid>https://kdbed.github.io/posts/scapy_scanning/</guid>
       <description>Scanning Networks with Scapy Nmap implements several types of scans and can be used to detect the versions of operating systems and services; it can also perform custom vulnerability scanning. Here we&amp;rsquo;ll implement a couple of simple scans using scapy in Python.
-SYN scan : A SYN scan sends a TCP SYN packet to a port and looks for a SYN/ACK packet in response. DNS scan : A DNS scan tests whether a DNS server is running on the target system.</description>
+ SYN scan : A SYN scan sends a TCP SYN packet to a port and looks for a SYN/ACK packet in response. DNS scan : A DNS scan tests whether a DNS server is running on the target system.</description>
     </item>
     
     <item>
@@ -115,7 +115,7 @@ Use the Impacket tool GetNPUsers.py to try to get a hash for each user</descript
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/c_programming/</guid>
-      <description>C Programming Basics Code Analysis clang-tidy static code analysis tool - clang-tidy checks Security standards : SEI CERT C Coding Standard : https://wiki.sei.cmu.edu/confluence/display/c Secure Coding in C and C++, 2/e by Robert Seacord </description>
+      <description>C Programming Basics Code Analysis  clang-tidy static code analysis tool - clang-tidy checks Security standards : SEI CERT C Coding Standard : https://wiki.sei.cmu.edu/confluence/display/c Secure Coding in C and C++, 2/e by Robert Seacord  </description>
     </item>
     
     <item>
@@ -135,8 +135,8 @@ Use the Impacket tool GetNPUsers.py to try to get a hash for each user</descript
       <guid>https://kdbed.github.io/posts/cpp_proj_nix/</guid>
       <description>Template Project in C++ using Nix Taken from this blog post.
 Creating a C++ project Create a sample C++ project with the following dependencies
-C++ compiler, of course. That might be GCC or Clang. Boost Poco The program does nothing more than printing what compiler it was built with and which versions of boost and poco it is linked against.
-Code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 #include &amp;lt;boost/lexical_cast.</description>
+ C++ compiler, of course. That might be GCC or Clang. Boost Poco  The program does nothing more than printing what compiler it was built with and which versions of boost and poco it is linked against.
+Code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23  #include &amp;lt;boost/lexical_cast.</description>
     </item>
     
     <item>
@@ -145,7 +145,7 @@ Code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 #include &amp;l
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/cpp_programming/</guid>
-      <description>C++ Programming Hello world 1 2 3 4 5 #include &amp;lt;iostream&amp;gt; int main(){ std::cout &amp;lt;&amp;lt; &amp;#34;Hello, world.&amp;#34; &amp;lt;&amp;lt; std::endl; } </description>
+      <description>C++ Programming Hello world 1 2 3 4 5  #include &amp;lt;iostream&amp;gt; int main(){ std::cout &amp;lt;&amp;lt; &amp;#34;Hello, world.&amp;#34; &amp;lt;&amp;lt; std::endl; }   </description>
     </item>
     
     <item>
@@ -211,7 +211,8 @@ $ANSIBLE_VAULT;1.1;AES256 326665343864353665376531366637316331386162643232303835
       
       <guid>https://kdbed.github.io/posts/dll_hijacking/</guid>
       <description>Basic Ideas Windows DLL hijacking occurs when a trusted or legitimate application is tricked into loading an arbitrary DLL. Dll hijacking can be used to execute code, obtain persistence and escalate privileges, although privilege escalation is the least likely. hackTricks
-Approaches There are different approaches to DLL hijacking, and success will be determined by how the application is set to load its DLLs.</description>
+Approaches There are different approaches to DLL hijacking, and success will be determined by how the application is set to load its DLLs.
+   </description>
     </item>
     
     <item>
@@ -222,7 +223,7 @@ Approaches There are different approaches to DLL hijacking, and success will be 
       <guid>https://kdbed.github.io/posts/dns_basics/</guid>
       <description>Domain Name System (DNS) The Domain Name System (DNS) is a distributed database responsible for translating domain names into IP addresses. It&amp;rsquo;s composed of a hierarchical structure that is divided into several zones, starting with the top-level root zone.
 Each domain can use different types of DNS records. Some of the most common types of DNS records include:
-NS: Nameserver records contain the name of the authoritative servers hosting the DNS records for a domain.</description>
+ NS: Nameserver records contain the name of the authoritative servers hosting the DNS records for a domain.</description>
     </item>
     
     <item>
@@ -259,7 +260,7 @@ How DNS Works DNS (Domain Name System) is like an Internet phonebook.</descripti
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/eikonal_approximation/</guid>
-      <description>Eikonal Approximation in Quantum Mechanics Introduction and Background The root eikon comes from eikenai, a transliteration of the Greek εικεναι meaning &amp;rsquo;to resemble&amp;rsquo;. In Greek the word εικον means image &amp;ndash; compare &amp;lsquo;icon&amp;rsquo; in English. The image provided by the eikonal approximation in scattering has its origin in optics, wherein one assumes (ray optics) that the size of an obstacle is large compared to the wavelength of scattered light. When diffraction is involved, one moves from the eikonal approximation (back) to Maxwell&amp;rsquo;s Equations.</description>
+      <description>Eikonal Approximation in Quantum Mechanics Introduction and Background The root eikon comes from eikenai, a transliteration of the Greek εικεναι meaning &amp;lsquo;to resemble&amp;rsquo;. In Greek the word εικον means image &amp;ndash; compare &amp;lsquo;icon&amp;rsquo; in English. The image provided by the eikonal approximation in scattering has its origin in optics, wherein one assumes (ray optics) that the size of an obstacle is large compared to the wavelength of scattered light. When diffraction is involved, one moves from the eikonal approximation (back) to Maxwell&amp;rsquo;s Equations.</description>
     </item>
     
     <item>
@@ -316,7 +317,7 @@ More Than the Sum of Their Parts </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/google_hacking/</guid>
-      <description>Operators ahrefs </description>
+      <description>Operators  ahrefs  </description>
     </item>
     
     <item>
@@ -362,7 +363,7 @@ Request smuggling https://lab.wallarm.com/http2smugl-http2-request-smuggling-sec
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/identityiqessentialsintroduction/</guid>
-      <description>Introduction Reading data: all systems from which data is read are called applications. Identity cubes created when aggregating accounts from an authoritative application (system of record), e.g., HR system or AD. Business modeling Governance Process Provisioning Process : User Request; Lifecycle event </description>
+      <description>Introduction  Reading data: all systems from which data is read are called applications. Identity cubes created when aggregating accounts from an authoritative application (system of record), e.g., HR system or AD. Business modeling Governance Process Provisioning Process : User Request; Lifecycle event  </description>
     </item>
     
     <item>
@@ -399,9 +400,9 @@ Request smuggling https://lab.wallarm.com/http2smugl-http2-request-smuggling-sec
       
       <guid>https://kdbed.github.io/posts/introtopwntools/</guid>
       <description>Basics of Binary Analysis
-Intro to Pwntools Source materials here dizmascyberlabs Install gdb-pwndbg-peda-gef
+Intro to Pwntools Source materials here dizmascyberlabs  Install gdb-pwndbg-peda-gef
 Checksec Same source code, compiled with different protections in place:
-1 checksec checksec/intro2pwn2 [*] &amp;#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn2&amp;#39; Arch: i386-32-little RELRO: Partial RELRO Stack: No canary found NX: NX disabled PIE: No PIE (0x8048000) RWX: Has RWX segments 1 checksec checksec/intro2pwn1 [*] &amp;#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn1&amp;#39; Arch: i386-32-little RELRO: Full RELRO Stack: Canary found NX: NX enabled PIE: PIE enabled RELRO = Relocation Read-Only; makes the global offset table (GOT) read-only after the linker resolves functions to it.</description>
+1  checksec checksec/intro2pwn2   [*] &amp;#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn2&amp;#39; Arch: i386-32-little RELRO: Partial RELRO Stack: No canary found NX: NX disabled PIE: No PIE (0x8048000) RWX: Has RWX segments 1  checksec checksec/intro2pwn1   [*] &amp;#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn1&amp;#39; Arch: i386-32-little RELRO: Full RELRO Stack: Canary found NX: NX enabled PIE: PIE enabled  RELRO = Relocation Read-Only; makes the global offset table (GOT) read-only after the linker resolves functions to it.</description>
     </item>
     
     <item>
@@ -422,7 +423,7 @@ Checksec Same source code, compiled with different protections in place:
       <description>:ID: cb51a9d3-842b-4b10-ae56-2d18573b5f3e
 :END:
 Filesystem FHS - Filesystem Hierarchy Standard - conventions used for layout of a UNIX system LinuxFoundation
-/bin : basic programs like ls, cd, cat /sbin : system programs like fdisk, makefs, sysctl /etc : configuration files bk /tmp : temporary files, typically deleted on boot /usr/bin : applications like apt, ncat, nmap /usr/share : application support and data files Basic Linux commands Finding files which searches through directories in the $PATH environment variable for a given file name; returns the full path to the file if a match is found</description>
+ /bin : basic programs like ls, cd, cat /sbin : system programs like fdisk, makefs, sysctl /etc : configuration files bk /tmp : temporary files, typically deleted on boot /usr/bin : applications like apt, ncat, nmap /usr/share : application support and data files  Basic Linux commands Finding files which searches through directories in the $PATH environment variable for a given file name; returns the full path to the file if a match is found</description>
     </item>
     
     <item>
@@ -458,7 +459,7 @@ Filesystem FHS - Filesystem Hierarchy Standard - conventions used for layout of 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/kerbrute_enumeration/</guid>
-      <description>Kerbrute based on obtaining a TGT. For example, using kinit on a Linux system, we can obtain and cache a Kerberos TGT. We&amp;rsquo;ll need to provide a username and password to do this. If the credentials are valid, we&amp;rsquo;ll obtain a TGT. The advantage of this technique is that it only uses two UDP frames to determine whether the password is valid, as it sends only an AS-REQ and examines the response.</description>
+      <description>Kerbrute  based on obtaining a TGT. For example, using kinit on a Linux system, we can obtain and cache a Kerberos TGT. We&amp;rsquo;ll need to provide a username and password to do this. If the credentials are valid, we&amp;rsquo;ll obtain a TGT. The advantage of this technique is that it only uses two UDP frames to determine whether the password is valid, as it sends only an AS-REQ and examines the response.</description>
     </item>
     
     <item>
@@ -467,7 +468,7 @@ Filesystem FHS - Filesystem Hierarchy Standard - conventions used for layout of 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/lang_test/</guid>
-      <description>Language tests in org Rust extern crate primal; use primal::Sieve; fn num_divisors(n: usize, primes: &amp;amp;Sieve) -&amp;gt; Option&amp;lt;usize&amp;gt; { match primes.factor(n) { Ok(factors) =&amp;gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))), Err(_) =&amp;gt; None, } } fn main() { println!(&amp;#34;24 days of Rust - primal (day 2)&amp;#34;); let sieve = Sieve::new(10000); let suspect = 5273; println!(&amp;#34;{} is prime: {}&amp;#34;, suspect, sieve.is_prime(suspect)); let not_a_prime = 1024; println!(&amp;#34;{} is prime: {}&amp;#34;, not_a_prime, sieve.</description>
+      <description>Language tests in org Rust extern crate primal; use primal::Sieve; fn num_divisors(n: usize, primes: &amp;amp;Sieve) -&amp;gt; Option&amp;lt;usize&amp;gt; { match primes.factor(n) { Ok(factors) =&amp;gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))), Err(_) =&amp;gt; None, } } fn main() { println!(&amp;quot;24 days of Rust - primal (day 2)&amp;quot;); let sieve = Sieve::new(10000); let suspect = 5273; println!(&amp;quot;{} is prime: {}&amp;quot;, suspect, sieve.is_prime(suspect)); let not_a_prime = 1024; println!(&amp;quot;{} is prime: {}&amp;quot;, not_a_prime, sieve.</description>
     </item>
     
     <item>
@@ -476,7 +477,7 @@ Filesystem FHS - Filesystem Hierarchy Standard - conventions used for layout of 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/rust_test/</guid>
-      <description> extern crate regex; use regex::Regex; fn main() { let re = Regex::new(r&amp;#34;^\d{4}-\d{2}-\d{2}$&amp;#34;).unwrap(); println!(&amp;#34;test&amp;#34;); assert!(re.is_match(&amp;#34;2014-01-01&amp;#34;)); } 1 2 3 4 5 #include &amp;lt;iostream&amp;gt; int main(){ std::cout&amp;lt;&amp;lt;&amp;#34;Hello, World.\n&amp;#34;; return 0; } Hello, World. </description>
+      <description>extern crate regex; use regex::Regex; fn main() { let re = Regex::new(r&amp;quot;^\d{4}-\d{2}-\d{2}$&amp;quot;).unwrap(); println!(&amp;quot;test&amp;quot;); assert!(re.is_match(&amp;quot;2014-01-01&amp;quot;)); } 1 2 3 4 5  #include &amp;lt;iostream&amp;gt;int main(){ std::cout&amp;lt;&amp;lt;&amp;#34;Hello, World.\n&amp;#34;; return 0; }   Hello, World. </description>
     </item>
     
     <item>
@@ -589,7 +590,7 @@ Execution: Run from memory and send back to attacker:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/ntlm_authentication/</guid>
-      <description>NTLM Authentication Process I enter my username and password on my local computer. My computer runs the password I typed through the standard hashing algorithm used by both client machines like mine and the domain controllers (DCs) that provide authentication and authorization services. That gives it my password hash, which it will use in Step 5. My machine sends the nearest DC a logon request, which includes my username. The DC sends back a random number, which is known as a logon challenge.</description>
+      <description>NTLM Authentication Process  I enter my username and password on my local computer. My computer runs the password I typed through the standard hashing algorithm used by both client machines like mine and the domain controllers (DCs) that provide authentication and authorization services. That gives it my password hash, which it will use in Step 5. My machine sends the nearest DC a logon request, which includes my username. The DC sends back a random number, which is known as a logon challenge.</description>
     </item>
     
     <item>
@@ -635,7 +636,8 @@ print(&amp;#39;ello, world!&amp;#39;) Create a plot import matplotlib.pyplot as 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/os_identification_ping/</guid>
-      <description>IP Time to Live (TTL) on the ICMP packets The default TTL on windows is 128, which gets decremented by one at the router between the host and the box to 127. On the other hand the default for Linux is typically 64, so expect to see 63 for a Linux host.</description>
+      <description>IP Time to Live (TTL) on the ICMP packets The default TTL on windows is 128, which gets decremented by one at the router between the host and the box to 127. On the other hand the default for Linux is typically 64, so expect to see 63 for a Linux host.
+ </description>
     </item>
     
     <item>
@@ -663,10 +665,10 @@ print(&amp;#39;ello, world!&amp;#39;) Create a plot import matplotlib.pyplot as 
       
       <guid>https://kdbed.github.io/posts/pentest_active_directory/</guid>
       <description>Active Directory Enumeration Legacy Windows Tools Use net.exe to gather user information
-1 net user /domain A more detailed view of specific users in the output above:
-1 net user &amp;lt;username&amp;gt; /domain Enumerate groups:
-1 net group /domain Specifying a group:
-1 net group &amp;lt;groupname&amp;gt; /domain PowerShell and .NET When RSAT tools aren&amp;rsquo;t available, we can use an Active Directory Services Interface ADSI (a set of interfaces built on COM as an LDAP provider.</description>
+1  net user /domain   A more detailed view of specific users in the output above:
+1  net user &amp;lt;username&amp;gt; /domain   Enumerate groups:
+1  net group /domain   Specifying a group:
+1  net group &amp;lt;groupname&amp;gt; /domain   PowerShell and .NET When RSAT tools aren&amp;rsquo;t available, we can use an Active Directory Services Interface ADSI (a set of interfaces built on COM as an LDAP provider.</description>
     </item>
     
     <item>
@@ -718,8 +720,8 @@ netwrix</description>
       
       <guid>https://kdbed.github.io/posts/pentest_active_information_gathering/</guid>
       <description>Active Information Gathering DNS DNS - Basics DNS Enumeration - Basics DNS forward lookup brute-forcing to determine additional IPs belonging to a domain:
-1 for ip in $(cat list.txt); do host $ip.domain.com; done Comprehensive lists available at SecLists. Based on IPs determined from the above, we can perform reverse lookups by scanning an associated range:
-1 for ip in $(seq 200 254); do host xxx.xxx.xxx.$ip; done | grep -v &amp;#34;not found&amp;#34; dnsrecon dnsenum2 nslookup TCP/UDP Port Scanning Simple port scan with Netcat:</description>
+1  for ip in $(cat list.txt); do host $ip.domain.com; done   Comprehensive lists available at SecLists. Based on IPs determined from the above, we can perform reverse lookups by scanning an associated range:
+1  for ip in $(seq 200 254); do host xxx.xxx.xxx.$ip; done | grep -v &amp;#34;not found&amp;#34;   dnsrecon dnsenum2 nslookup TCP/UDP Port Scanning Simple port scan with Netcat:</description>
     </item>
     
     <item>
@@ -737,8 +739,8 @@ netwrix</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/pentest_exploits/</guid>
-      <description>Publicly Available Exploits Exploit-DB packet storm GitHub Offsec SearchSploit Update exploitdb on kali:
-1 sudo apt update &amp;amp;&amp;amp; sudo apt install exploitdb NMap - NSE Scripts are located by default in: /usr/share/nmap/scripts</description>
+      <description>Publicly Available Exploits Exploit-DB packet storm GitHub  Offsec  SearchSploit Update exploitdb on kali:
+1  sudo apt update &amp;amp;&amp;amp; sudo apt install exploitdb   NMap - NSE Scripts are located by default in: /usr/share/nmap/scripts</description>
     </item>
     
     <item>
@@ -766,7 +768,7 @@ On Linux, gRPC provides a mechanism for building distributed systems by allowing
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/pentesting_mssql_microsoft_sql_server/</guid>
-      <description>Pentest Microsoft SQL Server Enumeration 1 nmap --script ms-sql-info,ms-sql-empty-password,ms-sql-xp-cmdshell,ms-sql-config,ms-sql-ntlm-info,ms-sql-tables,ms-sql-hasdbaccess,ms-sql-dac,ms-sql-dump-hashes --script-args mssql.instance-port=1433,mssql.username=sa,mssql.password=,mssql.instance-name=MSSQLSERVER -sV -p 1433 &amp;lt;IP&amp;gt; Test credentials 1 crackmapexec mssql &amp;lt;host&amp;gt; -u users.txt -p passwords.txt Establish connection impacket-mssqlclient -dc-ip &amp;lt;ip&amp;gt; -windows-auth domain/username:password@host List DBs 1 SELECT name FROM master..sysdatabases; Check permissions 1 2 3 4 Use master; EXEC sp_helprotect &amp;#39;xp_dirtree&amp;#39;; EXEC sp_helprotect &amp;#39;xp_subdirs&amp;#39;; EXEC sp_helprotect &amp;#39;xp_fileexist&amp;#39;; xp_dirtree 1 EXEC xp_dirtree &amp;#39;C:\inetpub\wwwroot&amp;#39;, 1, 1; hacktricks</description>
+      <description>Pentest Microsoft SQL Server Enumeration 1  nmap --script ms-sql-info,ms-sql-empty-password,ms-sql-xp-cmdshell,ms-sql-config,ms-sql-ntlm-info,ms-sql-tables,ms-sql-hasdbaccess,ms-sql-dac,ms-sql-dump-hashes --script-args mssql.instance-port=1433,mssql.username=sa,mssql.password=,mssql.instance-name=MSSQLSERVER -sV -p 1433 &amp;lt;IP&amp;gt;   Test credentials 1  crackmapexec mssql &amp;lt;host&amp;gt; -u users.txt -p passwords.txt   Establish connection impacket-mssqlclient -dc-ip &amp;lt;ip&amp;gt; -windows-auth domain/username:password@host List DBs 1  SELECTnameFROMmaster..sysdatabases;  Check permissions 1 2 3 4  Usemaster;EXECsp_helprotect&amp;#39;xp_dirtree&amp;#39;;EXECsp_helprotect&amp;#39;xp_subdirs&amp;#39;;EXECsp_helprotect&amp;#39;xp_fileexist&amp;#39;;  xp_dirtree 1  EXECxp_dirtree&amp;#39;C:\inetpub\wwwroot&amp;#39;,1,1;  hacktricks</description>
     </item>
     
     <item>
@@ -828,7 +830,7 @@ sudo apt install ssh-audit </description>
       <guid>https://kdbed.github.io/posts/pentest_stealing_chrome_cookies/</guid>
       <description>Stealing Chrome Cookies source: mango.pdf.zone
 Using Chrome&amp;rsquo;s remote debugging protocol to steal cookies. github - defaultnamehere
-requires rce on victim&amp;rsquo;s machine </description>
+ requires rce on victim&amp;rsquo;s machine  </description>
     </item>
     
     <item>
@@ -838,7 +840,8 @@ requires rce on victim&amp;rsquo;s machine </description>
       
       <guid>https://kdbed.github.io/posts/pentest_windows_privilege_escalation/</guid>
       <description>From Service to SYSTEM Service Account Privileges Services can be run such that they don&amp;rsquo;t maintain the privs of NT AUTHORITY\LOCAL SERVICE account, eg with the -k LocalServiceAndNoImpersonation option.
-The task scheduler can be used to restore default privs: FullPowers itm4n. After executing FullPowers:</description>
+ The task scheduler can be used to restore default privs: FullPowers itm4n. After executing FullPowers:
+ </description>
     </item>
     
     <item>
@@ -931,7 +934,7 @@ When you define a property, you should always define a type that sets a specific
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/powershell_convert_from_unix_time/</guid>
-      <description>Function to convert from Unix timestamps 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 function ConvertFrom-UnixTime { [CmdletBinding(DefaultParameterSetName = &amp;#34;Seconds&amp;#34;)] param ( [Parameter(Position = 0, ValueFromPipeline = $true, Mandatory = $true, ParameterSetName = &amp;#34;Seconds&amp;#34;)] [int] $Seconds, [Parameter(Position = 0, ValueFromPipeline = $true, Mandatory = $true, ParameterSetName = &amp;#34;Miliseconds&amp;#34;)] [bigint] $Miliseconds ) Begin { $date = (Get-Date &amp;#34;1970-01-01 00:00:00.</description>
+      <description>Function to convert from Unix timestamps 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34  function ConvertFrom-UnixTime { [CmdletBinding(DefaultParameterSetName = &amp;#34;Seconds&amp;#34;)] param ( [Parameter(Position = 0, ValueFromPipeline = $true, Mandatory = $true, ParameterSetName = &amp;#34;Seconds&amp;#34;)] [int] $Seconds, [Parameter(Position = 0, ValueFromPipeline = $true, Mandatory = $true, ParameterSetName = &amp;#34;Miliseconds&amp;#34;)] [bigint] $Miliseconds ) Begin { $date = (Get-Date &amp;#34;1970-01-01 00:00:00.</description>
     </item>
     
     <item>
@@ -941,7 +944,7 @@ When you define a property, you should always define a type that sets a specific
       
       <guid>https://kdbed.github.io/posts/powershell_custom_execution_timer/</guid>
       <description>Custom Execution Timer source: devblogs
-function Measure-CommandEx { [CmdletBinding()] param ( [Parameter(Mandatory, Position = 0)] [scriptblock]$Expression, [Parameter(ValueFromPipeline)] [psobject[]]$InputObject ) Begin { $stopWatch = New-Object -TypeName &amp;#39;System.Diagnostics.Stopwatch&amp;#39; &amp;lt;# We need to define result as a list because the way objects are passed to the pipeline. If you pass a collection of objects, the pipeline sends them one by one, and the result is always overridden by the last item. #&amp;gt; [System.Collections.Generic.List[PSObject]]$result = @() } Process { if ($InputObject) { # Starting the stopwatch.</description>
+function Measure-CommandEx { [CmdletBinding()] param ( [Parameter(Mandatory, Position = 0)] [scriptblock]$Expression, [Parameter(ValueFromPipeline)] [psobject[]]$InputObject ) Begin { $stopWatch = New-Object -TypeName &#39;System.Diagnostics.Stopwatch&#39; &amp;lt;# We need to define result as a list because the way objects are passed to the pipeline. If you pass a collection of objects, the pipeline sends them one by one, and the result is always overridden by the last item. #&amp;gt; [System.Collections.Generic.List[PSObject]]$result = @() } Process { if ($InputObject) { # Starting the stopwatch.</description>
     </item>
     
     <item>
@@ -960,7 +963,7 @@ function Measure-CommandEx { [CmdletBinding()] param ( [Parameter(Mandatory, Pos
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/powershell_lengh_limits_ad_attributes/</guid>
-      <description>Determine character limits on AD attributes 1 2 dsquery * cn=Schema,cn=Configuration,dc=contoso,dc=com -filter &amp;#34;(LDAPDisplayName=department)&amp;#34; -attr rangeUpper dsquery * cn=Schema,cn=Configuration,dc=contoso,dc=com -filter &amp;#34;(LDAPDisplayName=department)&amp;#34; -attr rangeUpper </description>
+      <description>Determine character limits on AD attributes 1 2  dsquery * cn=Schema,cn=Configuration,dc=contoso,dc=com -filter &amp;#34;(LDAPDisplayName=department)&amp;#34; -attr rangeUpper dsquery * cn=Schema,cn=Configuration,dc=contoso,dc=com -filter &amp;#34;(LDAPDisplayName=department)&amp;#34; -attr rangeUpper   </description>
     </item>
     
     <item>
@@ -978,7 +981,7 @@ function Measure-CommandEx { [CmdletBinding()] param ( [Parameter(Mandatory, Pos
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/powershell_regex_string_between_two_strings/</guid>
-      <description>Regex - string between two strings 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 function GetStringBetweenTwoStrings($firstString, $secondString, $importPath){ #Get content from file $file = gc -raw $importPath #Regex pattern to compare two strings $pattern = &amp;#39;$firstString(.*?)$secondString&amp;#39; #Perform the opperation $result = [regex]::Match($file,$pattern).Groups.Value #Return result write-host $result } </description>
+      <description>Regex - string between two strings 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  function GetStringBetweenTwoStrings($firstString, $secondString, $importPath){ #Get content from file $file = gc -raw $importPath #Regex pattern to compare two strings $pattern = &amp;#39;$firstString(.*?)$secondString&amp;#39; #Perform the opperation $result = [regex]::Match($file,$pattern).Groups.Value #Return result write-host $result }   </description>
     </item>
     
     <item>
@@ -1025,7 +1028,7 @@ Copy-Item -Path &amp;#34;Testfile.txt&amp;#34; -Destination &amp;#34;CopiedFile.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/powershell_test_credentials/</guid>
-      <description>Testing credentials 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 function Test-Cred { [CmdletBinding()] [OutputType([String])] Param ( [Parameter( Mandatory = $false, ValueFromPipeLine = $true, ValueFromPipelineByPropertyName = $true )] [Alias( &amp;#39;PSCredential&amp;#39; )] [ValidateNotNull()] [System.</description>
+      <description>Testing credentials 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72  function Test-Cred { [CmdletBinding()] [OutputType([String])] Param ( [Parameter( Mandatory = $false, ValueFromPipeLine = $true, ValueFromPipelineByPropertyName = $true )] [Alias( &amp;#39;PSCredential&amp;#39; )] [ValidateNotNull()] [System.</description>
     </item>
     
     <item>
@@ -1088,8 +1091,8 @@ Quote 2 &amp;ldquo;Meet these two here,&amp;rdquo; the man said. &amp;ldquo;Ask 
       
       <guid>https://kdbed.github.io/posts/recon_port_scanning_and_nmap/</guid>
       <description>Nmap scanning SYN (stealth) scan TCP handshake not completed (ACK not sent)
-1 nmap -sS &amp;lt;ip&amp;gt; Because the three-way handshake is never completed, the information is not passed to the application layer and as a result, will not appear in any application logs. A SYN scan is also faster and more efficient because fewer packets are sent and received.
-TCP Connect Scan 1 nmap -sT &amp;lt;ip&amp;gt; TCP SYN Scan and UDP Scan 1 nmap -sU -sS 192.</description>
+1  nmap -sS &amp;lt;ip&amp;gt;   Because the three-way handshake is never completed, the information is not passed to the application layer and as a result, will not appear in any application logs. A SYN scan is also faster and more efficient because fewer packets are sent and received.
+TCP Connect Scan 1  nmap -sT &amp;lt;ip&amp;gt;   TCP SYN Scan and UDP Scan 1  nmap -sU -sS 192.</description>
     </item>
     
     <item>
@@ -1147,7 +1150,7 @@ decompile pycdc</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/school_spending_and_educational_outcomes/</guid>
-      <description>Education spending and student learning outcomes DAVID EVANS|JANUARY 17, 2019 World Bank Blog Prior findings World Bank&amp;rsquo;s World Development Report 2004 showed little correlation between spending and access to school World Development Report 2018 shows a similarly weak correlation between spending and learning outcomes Vegas and Coffin, using a different econometric specification, do find a correlation between spending and learning outcomes up to US$8,000 per student annually. Does money matter? Yes.</description>
+      <description>Education spending and student learning outcomes  DAVID EVANS|JANUARY 17, 2019 World Bank Blog  Prior findings  World Bank&amp;rsquo;s World Development Report 2004 showed little correlation between spending and access to school World Development Report 2018 shows a similarly weak correlation between spending and learning outcomes Vegas and Coffin, using a different econometric specification, do find a correlation between spending and learning outcomes up to US$8,000 per student annually.   Does money matter?</description>
     </item>
     
     <item>
@@ -1165,7 +1168,11 @@ decompile pycdc</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/sha1cracker/</guid>
-      <description>Implementing a sha1 hash cracker in Rust use sha1::Digest; use std::{ env, error::Error, fs::File, io::{BufRead, BufReader}, }; const SHA1_HEX_STRING_LENGTH: usize = 40; fn main() -&amp;gt; Result&amp;lt;(), Box&amp;lt;dyn Error&amp;gt;&amp;gt; { let args: Vec&amp;lt;String&amp;gt; = env::args().collect(); if args.len() != 3 { println!(&amp;#34;Usage:&amp;#34;); println!(&amp;#34;sha1_cracker: &amp;lt;wordlist.txt&amp;gt; &amp;lt;sha1_hash&amp;gt;&amp;#34;); return Ok(()); } let hash_to_crack = args[2].trim(); if hash_to_crack.len() != SHA1_HEX_STRING_LENGTH { return Err(&amp;#34;sha1 hash is not valid.&amp;#34;.into()); } let wordlist_file = File::open(&amp;amp;args[1])?; let reader = BufReader::new(&amp;amp;wordlist_file); for line in reader.</description>
+      <description>Implementing a sha1 hash cracker in Rust usesha1::Digest;usestd::{env,error::Error,fs::File,io::{BufRead,BufReader},};constSHA1_HEX_STRING_LENGTH: usize =40;fn main()-&amp;gt; Result&amp;lt;(),Box&amp;lt;dynError&amp;gt;&amp;gt;{letargs: Vec&amp;lt;String&amp;gt;=env::args().collect();ifargs.len()!=3{println!(&amp;#34;Usage:&amp;#34;);println!(&amp;#34;sha1_cracker: &amp;lt;wordlist.txt&amp;gt; &amp;lt;sha1_hash&amp;gt;&amp;#34;);returnOk(());}lethash_to_crack=args[2].trim();ifhash_to_crack.len()!=SHA1_HEX_STRING_LENGTH{returnErr(&amp;#34;sha1 hash is not valid.&amp;#34;.into());}letwordlist_file=File::open(&amp;amp;args[1])?;letreader=BufReader::new(&amp;amp;wordlist_file);forlineinreader.lines(){letline=line?;letcommon_password=line.trim();ifhash_to_crack==&amp;amp;hex::encode(sha1::Sha1::digest(common_password.as_bytes())){println!(&amp;#34;Password found: {}&amp;#34;,&amp;amp;common_password);returnOk(());}}println!(&amp;#34;password not found in wordlist.&amp;#34;);Ok(())}Imports 
+usesha1::Digest;usestd::{env,error::Error,fs::File,io::{BufRead,BufReader},};constSHA1_HEX_STRING_LENGTH: usize =40;Inputs 
+letargs: Vec&amp;lt;String&amp;gt;=env::args().collect();ifargs.len()!=3{println!(&amp;#34;Usage:&amp;#34;);println!(&amp;#34;sha1_cracker: &amp;lt;wordlist.txt&amp;gt; &amp;lt;sha1_hash&amp;gt;&amp;#34;);returnOk(());}lethash_to_crack=args[2].trim();ifhash_to_crack.len()!=SHA1_HEX_STRING_LENGTH{returnErr(&amp;#34;sha1 hash is not valid.&amp;#34;.into());}Read File 
+letwordlist_file=File::open(&amp;amp;args[1])?;letreader=BufReader::new(&amp;amp;wordlist_file);Check Pass 
+forlineinreader.lines(){letline=line?;letcommon_password=line.trim();ifhash_to_crack==&amp;amp;hex::encode(sha1::Sha1::digest(common_password.as_bytes())){println!(&amp;#34;Password found: {}&amp;#34;,&amp;amp;common_password);returnOk(());}}Bibliography Black Hat Rust</description>
     </item>
     
     <item>
@@ -1202,7 +1209,7 @@ decompile pycdc</description>
       
       <guid>https://kdbed.github.io/posts/snmp/</guid>
       <description>SNMP The SNMP Management Information Base (MIB) is a database containing information usually related to network management. The database is organized like a tree, with branches that represent different organizations or network functions. The leaves of the tree (or final endpoints) correspond to specific variable values that can then be accessed and probed by an external user.
-Enumeration Nmap: sudo nmap -sU --open -p 161 192.168.50.1-254 -oG open-snmp.txt onesixtyone snmpcheck </description>
+Enumeration  Nmap: sudo nmap -sU --open -p 161 192.168.50.1-254 -oG open-snmp.txt onesixtyone snmpcheck  </description>
     </item>
     
     <item>
@@ -1242,7 +1249,7 @@ From the above post
       <guid>https://kdbed.github.io/posts/subdomainenumeration/</guid>
       <description>From DNS dig +nocmd trick.htb axfr +noall +answer @trick.htb WFuzz In case the subdomain has a certain naming convention (Trick/HTB):
 sed &amp;#39;s/^/preprod-/&amp;#39; subdomains-top1million-110000.txt Then use wfuzz:
-sudo wfuzz -c -f out -w wordlist -u &amp;#34;http://trick.htb&amp;#34; -H &amp;#34;Host: FUZZ.trick.htb&amp;#34; --hw 475 gobuster DNS 1 gobuster dns -d domain.com -w $wordlists/subdomains-top1million-110000.txt -t 20 vhost 1 gobuster vhost -u domain.com -w &amp;lt;wordlist&amp;gt; </description>
+sudo wfuzz -c -f out -w wordlist -u &amp;#34;http://trick.htb&amp;#34; -H &amp;#34;Host: FUZZ.trick.htb&amp;#34; --hw 475 gobuster DNS 1  gobuster dns -d domain.com -w $wordlists/subdomains-top1million-110000.txt -t 20   vhost 1  gobuster vhost -u domain.com -w &amp;lt;wordlist&amp;gt;   </description>
     </item>
     
     <item>
@@ -1270,7 +1277,8 @@ Changes in American Policy Many Americans will remember President Donald Trump&a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/web_pentest_browser_extensions/</guid>
-      <description>wappalyzer Wappalyzer is a browser extension that uncovers the technologies used on websites. It detects content management systems, eCommerce platforms, web servers, JavaScript frameworks, analytics tools and many more.</description>
+      <description>wappalyzer Wappalyzer is a browser extension that uncovers the technologies used on websites. It detects content management systems, eCommerce platforms, web servers, JavaScript frameworks, analytics tools and many more.
+ </description>
     </item>
     
     <item>
@@ -1289,8 +1297,8 @@ Reflected XSS Reflected XSS attacks usually include the payload in a crafted req
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/web_pentest_enumeration/</guid>
-      <description>Web Application Enumeration Nmap 1 nmap -p80 --script=http-enum 192.168.1.2 Wappalyzer Determine technologies used &amp;ndash; see Browser Extensions
-Directory Bruce Force Gobuster 1 gobuster dir -u 192.168.2.1 -w /usr/share/wordlists/dirb/common.txt -t 5 wfuzz Subdomain Enumeration dirb </description>
+      <description>Web Application Enumeration Nmap 1  nmap -p80 --script=http-enum 192.168.1.2   Wappalyzer Determine technologies used &amp;ndash; see Browser Extensions
+Directory Bruce Force Gobuster 1  gobuster dir -u 192.168.2.1 -w /usr/share/wordlists/dirb/common.txt -t 5   wfuzz  Subdomain Enumeration  dirb </description>
     </item>
     
     <item>
@@ -1299,7 +1307,7 @@ Directory Bruce Force Gobuster 1 gobuster dir -u 192.168.2.1 -w /usr/share/wordl
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/web_pentest_file_upload/</guid>
-      <description>File Upload Vulnerabilities Checklist from onsecurity Are filenames reflected back on the page? If so, are they HTML Entity encoded (XSS via file names)? Does it accept .zip files? Try a ZipSlip If it processes an image, check for Image Tragick (CVE-2016-3714) Can you bypass file type restrictions by changing the content-type value? Can you bypass file type restrictions by forging valid magic bytes? Can you upload a file with a less-common extension (such as .</description>
+      <description>File Upload Vulnerabilities Checklist from onsecurity  Are filenames reflected back on the page? If so, are they HTML Entity encoded (XSS via file names)? Does it accept .zip files? Try a ZipSlip If it processes an image, check for Image Tragick (CVE-2016-3714) Can you bypass file type restrictions by changing the content-type value? Can you bypass file type restrictions by forging valid magic bytes? Can you upload a file with a less-common extension (such as .</description>
     </item>
     
     <item>
@@ -1388,7 +1396,7 @@ Host access: the server has host access list (if a network address exists in thi
       <description>XOR Basics crypto101
 Exclusive or &amp;ndash; &amp;lsquo;XOR&amp;rsquo; &amp;ndash; is a Boolean binary operator that is true when either the first input or the second input, but not both, are true.
 XOR is a &amp;lsquo;programmable inverter&amp;rsquo;: one input bit decides whether to invert the other input bit or to just pass it through unchanged. &amp;lsquo;Inverting&amp;rsquo; bits is also called &amp;lsquo;flipping&amp;rsquo; bits.
-Inputs and outputs above are named as if XOR were being used as an encryption operation, with plaintext bit, key bit, ciphertext bit.</description>
+ Inputs and outputs above are named as if XOR were being used as an encryption operation, with plaintext bit, key bit, ciphertext bit.</description>
     </item>
     
     <item>

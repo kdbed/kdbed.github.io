@@ -33,8 +33,8 @@ Execution: Run from memory and send back to attacker:
       
       <guid>https://kdbed.github.io/posts/pentest_active_information_gathering/</guid>
       <description>Active Information Gathering DNS DNS - Basics DNS Enumeration - Basics DNS forward lookup brute-forcing to determine additional IPs belonging to a domain:
-1 for ip in $(cat list.txt); do host $ip.domain.com; done Comprehensive lists available at SecLists. Based on IPs determined from the above, we can perform reverse lookups by scanning an associated range:
-1 for ip in $(seq 200 254); do host xxx.xxx.xxx.$ip; done | grep -v &amp;#34;not found&amp;#34; dnsrecon dnsenum2 nslookup TCP/UDP Port Scanning Simple port scan with Netcat:</description>
+1  for ip in $(cat list.txt); do host $ip.domain.com; done   Comprehensive lists available at SecLists. Based on IPs determined from the above, we can perform reverse lookups by scanning an associated range:
+1  for ip in $(seq 200 254); do host xxx.xxx.xxx.$ip; done | grep -v &amp;#34;not found&amp;#34;   dnsrecon dnsenum2 nslookup TCP/UDP Port Scanning Simple port scan with Netcat:</description>
     </item>
     
     <item>
@@ -45,7 +45,7 @@ Execution: Run from memory and send back to attacker:
       <guid>https://kdbed.github.io/posts/subdomainenumeration/</guid>
       <description>From DNS dig +nocmd trick.htb axfr +noall +answer @trick.htb WFuzz In case the subdomain has a certain naming convention (Trick/HTB):
 sed &amp;#39;s/^/preprod-/&amp;#39; subdomains-top1million-110000.txt Then use wfuzz:
-sudo wfuzz -c -f out -w wordlist -u &amp;#34;http://trick.htb&amp;#34; -H &amp;#34;Host: FUZZ.trick.htb&amp;#34; --hw 475 gobuster DNS 1 gobuster dns -d domain.com -w $wordlists/subdomains-top1million-110000.txt -t 20 vhost 1 gobuster vhost -u domain.com -w &amp;lt;wordlist&amp;gt; </description>
+sudo wfuzz -c -f out -w wordlist -u &amp;#34;http://trick.htb&amp;#34; -H &amp;#34;Host: FUZZ.trick.htb&amp;#34; --hw 475 gobuster DNS 1  gobuster dns -d domain.com -w $wordlists/subdomains-top1million-110000.txt -t 20   vhost 1  gobuster vhost -u domain.com -w &amp;lt;wordlist&amp;gt;   </description>
     </item>
     
   </channel>

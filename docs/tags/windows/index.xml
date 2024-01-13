@@ -23,7 +23,8 @@ Use the Impacket tool GetNPUsers.py to try to get a hash for each user</descript
       
       <guid>https://kdbed.github.io/posts/pentest_windows_privilege_escalation/</guid>
       <description>From Service to SYSTEM Service Account Privileges Services can be run such that they don&amp;rsquo;t maintain the privs of NT AUTHORITY\LOCAL SERVICE account, eg with the -k LocalServiceAndNoImpersonation option.
-The task scheduler can be used to restore default privs: FullPowers itm4n. After executing FullPowers:</description>
+ The task scheduler can be used to restore default privs: FullPowers itm4n. After executing FullPowers:
+ </description>
     </item>
     
   </channel>

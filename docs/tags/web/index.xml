@@ -14,7 +14,7 @@
       <guid>https://kdbed.github.io/posts/pentest_stealing_chrome_cookies/</guid>
       <description>Stealing Chrome Cookies source: mango.pdf.zone
 Using Chrome&amp;rsquo;s remote debugging protocol to steal cookies. github - defaultnamehere
-requires rce on victim&amp;rsquo;s machine </description>
+ requires rce on victim&amp;rsquo;s machine  </description>
     </item>
     
     <item>
@@ -23,8 +23,8 @@ requires rce on victim&amp;rsquo;s machine </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/web_pentest_enumeration/</guid>
-      <description>Web Application Enumeration Nmap 1 nmap -p80 --script=http-enum 192.168.1.2 Wappalyzer Determine technologies used &amp;ndash; see Browser Extensions
-Directory Bruce Force Gobuster 1 gobuster dir -u 192.168.2.1 -w /usr/share/wordlists/dirb/common.txt -t 5 wfuzz Subdomain Enumeration dirb </description>
+      <description>Web Application Enumeration Nmap 1  nmap -p80 --script=http-enum 192.168.1.2   Wappalyzer Determine technologies used &amp;ndash; see Browser Extensions
+Directory Bruce Force Gobuster 1  gobuster dir -u 192.168.2.1 -w /usr/share/wordlists/dirb/common.txt -t 5   wfuzz  Subdomain Enumeration  dirb </description>
     </item>
     
     <item>
@@ -33,7 +33,7 @@ Directory Bruce Force Gobuster 1 gobuster dir -u 192.168.2.1 -w /usr/share/wordl
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/web_pentest_file_upload/</guid>
-      <description>File Upload Vulnerabilities Checklist from onsecurity Are filenames reflected back on the page? If so, are they HTML Entity encoded (XSS via file names)? Does it accept .zip files? Try a ZipSlip If it processes an image, check for Image Tragick (CVE-2016-3714) Can you bypass file type restrictions by changing the content-type value? Can you bypass file type restrictions by forging valid magic bytes? Can you upload a file with a less-common extension (such as .</description>
+      <description>File Upload Vulnerabilities Checklist from onsecurity  Are filenames reflected back on the page? If so, are they HTML Entity encoded (XSS via file names)? Does it accept .zip files? Try a ZipSlip If it processes an image, check for Image Tragick (CVE-2016-3714) Can you bypass file type restrictions by changing the content-type value? Can you bypass file type restrictions by forging valid magic bytes? Can you upload a file with a less-common extension (such as .</description>
     </item>
     
     <item>
