@@ -44,6 +44,17 @@ index=wineventlog Account_Name=&amp;lt;&amp;lt;accountNameHere&amp;gt;&amp;gt;&a
     </item>
     
     <item>
+      <title>Active Directory: lastLogon vs lastLogonTimestamp</title>
+      <link>https://kdbed.github.io/posts/lastlogon_vs_lastlogontimestamp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/lastlogon_vs_lastlogontimestamp/</guid>
+      <description>lastLogon vs lastLogonTimestamp lastLogon The lastLogon attribute contains a Windows FileTime representation of the last time a domain controller successfully authenticated the user. It is the granddaddy of user logon metadata, having been around since the first version Active Directory.
+Using the PowerShell command below, you can retrieve the last logon time and other user properties on a domain controller:
+1  Get-ADUser -Filter * -Properties lastLogon | Select samaccountname,@{Name=&amp;#34;lastLogon&amp;#34;;Expression={[datetime]::FromFileTime($_.&amp;#39;lastLogon&amp;#39;)}}   The LastLogon attribute is updated every time a domain controller successfully processes a logon request, but it is not a replicated attribute.</description>
+    </item>
+    
+    <item>
       <title>Active Scanning with Scapy</title>
       <link>https://kdbed.github.io/posts/scapy_scanning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -478,17 +489,6 @@ Filesystem FHS - Filesystem Hierarchy Standard - conventions used for layout of 
       
       <guid>https://kdbed.github.io/posts/rust_test/</guid>
       <description>extern crate regex; use regex::Regex; fn main() { let re = Regex::new(r&amp;quot;^\d{4}-\d{2}-\d{2}$&amp;quot;).unwrap(); println!(&amp;quot;test&amp;quot;); assert!(re.is_match(&amp;quot;2014-01-01&amp;quot;)); } 1 2 3 4 5  #include &amp;lt;iostream&amp;gt;int main(){ std::cout&amp;lt;&amp;lt;&amp;#34;Hello, World.\n&amp;#34;; return 0; }   Hello, World. </description>
-    </item>
-    
-    <item>
-      <title>lastLogon vs lastLogonTimestamp</title>
-      <link>https://kdbed.github.io/posts/lastlogon_vs_lastlogontimestamp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/lastlogon_vs_lastlogontimestamp/</guid>
-      <description>lastLogon vs lastLogonTimestamp If you ask for types of situations, then any logon event updates the lastlogontimestamp, but only some of them update lastlogon attribute.
-There are certain types of events that only emulate the logon without using the actual username and password that update only the lastlogon attribute.
-Kerberos S4u2Self How LastLogonTimeStamp is Updated with Kerberos S4u2Self S4U2self</description>
     </item>
     
     <item>

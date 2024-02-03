@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><title>lastLogon vs lastLogonTimestamp</title>
+<html><title>Active Directory: lastLogon vs lastLogonTimestamp</title>
 
 
 <meta charset="utf-8">
@@ -26,10 +26,32 @@
   <div class="grid">
     <div class="page" data-level="1">
       <div class="content">
-        <h1>lastLogon vs lastLogonTimestamp</h1>
+        <h1>Active Directory: lastLogon vs lastLogonTimestamp</h1>
         <h2 id="lastlogon-vs-lastlogontimestamp">lastLogon vs lastLogonTimestamp</h2>
-<p>If you ask for types of situations, then any logon event updates the lastlogontimestamp, but only some of them update lastlogon attribute.</p>
-<p>There are certain types of events that only emulate the logon without using the actual username and password that update only the lastlogon attribute.</p>
+<h3 id="lastlogon">lastLogon</h3>
+<p>The lastLogon attribute contains a Windows FileTime representation of the last time a domain controller successfully authenticated the user. It is the granddaddy of user logon metadata, having been around since the first version Active Directory.</p>
+<p>Using the PowerShell command below, you can retrieve the last logon time and other user properties on a domain controller:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Get-ADUser -Filter * -Properties lastLogon | Select samaccountname,@<span style="color:#f92672">{</span>Name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lastLogon&#34;</span>;Expression<span style="color:#f92672">={[</span>datetime<span style="color:#f92672">]</span>::FromFileTime<span style="color:#f92672">(</span>$_.<span style="color:#e6db74">&#39;lastLogon&#39;</span><span style="color:#f92672">)}}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>The LastLogon attribute is updated every time a domain controller successfully processes a logon request, but it is not a replicated attribute. Each domain controller (DCs) maintains its own version of the attribute for any specific user.</p>
+<h3 id="lastlogontimestamp">lastLogonTimestamp</h3>
+<p>The lastLogonTimestamp contains a Windows FileTime representation of a recent time the user logged on to a domain. This user attribute was introduced with Microsoft Windows Server 2003. Unlike the older lastLogon attribute, the lastLogonTimestamp attribute is a replicated attribute; its value for any specific user is synced to every domain controller. It is not always updated when a domain controller successfully processes a logon request. Instead, the attribute has a dynamic update frequency that is limited by the value of the <code>ms-DS-Logon-Time-Sync-Interval</code> attribute, which defaults to NOT SET and is treated as 14 days.</p>
+<h3 id="search">Search</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Search-ADAccount -AccountInactive -DateTime <span style="color:#f92672">((</span>Get-Date<span style="color:#f92672">)</span>.AddDays<span style="color:#f92672">(</span>-30<span style="color:#f92672">))</span> -UsersOnly | Select Name,LastLogonDate,DistinguishedName| Export-CSV c:<span style="color:#ae81ff">\p</span>sinactive_users.csv
+</code></pre></td></tr></table>
+</div>
+</div><p>From: <a href="https://blog.netwrix.com/2022/11/03/active-directory-logon-attributes/">netwrix</a></p>
 <h3 id="kerberos-s4u2self">Kerberos S4u2Self</h3>
 <p><a href="https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/how-lastlogontimestamp-is-updated-with-kerberos-s4u2self/ba-p/257135">How LastLogonTimeStamp is Updated with Kerberos S4u2Self</a>
 <a href="https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-sfu/02636893-7a1f-4357-af9a-b672e3e3de13">S4U2self</a></p>

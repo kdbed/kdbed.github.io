@@ -1,14 +1,28 @@
 :PROPERTIES:
 :ID:       ee8c6ccf-09c9-4658-bed0-f4f20b0e30c7
 :END:
-#+title: lastLogon vs lastLogonTimestamp
+#+title: Active Directory: lastLogon vs lastLogonTimestamp
 #+filetags: :kerberos:activeDirectory:
 #+hugo_base_dir:../
 
 * lastLogon vs lastLogonTimestamp
-If you ask for types of situations, then any logon event updates the lastlogontimestamp, but only some of them update lastlogon attribute.
+** lastLogon
+The lastLogon attribute contains a Windows FileTime representation of the last time a domain controller successfully authenticated the user. It is the granddaddy of user logon metadata, having been around since the first version Active Directory.
 
-There are certain types of events that only emulate the logon without using the actual username and password that update only the lastlogon attribute.
+Using the PowerShell command below, you can retrieve the last logon time and other user properties on a domain controller:
+
+#+begin_src shell -n
+Get-ADUser -Filter * -Properties lastLogon | Select samaccountname,@{Name="lastLogon";Expression={[datetime]::FromFileTime($_.'lastLogon')}}
+#+end_src
+The LastLogon attribute is updated every time a domain controller successfully processes a logon request, but it is not a replicated attribute. Each domain controller (DCs) maintains its own version of the attribute for any specific user.
+** lastLogonTimestamp
+The lastLogonTimestamp contains a Windows FileTime representation of a recent time the user logged on to a domain. This user attribute was introduced with Microsoft Windows Server 2003. Unlike the older lastLogon attribute, the lastLogonTimestamp attribute is a replicated attribute; its value for any specific user is synced to every domain controller. It is not always updated when a domain controller successfully processes a logon request. Instead, the attribute has a dynamic update frequency that is limited by the value of the =ms-DS-Logon-Time-Sync-Interval= attribute, which defaults to NOT SET and is treated as 14 days.
+** Search
+#+begin_src shell -n
+Search-ADAccount -AccountInactive -DateTime ((Get-Date).AddDays(-30)) -UsersOnly | Select Name,LastLogonDate,DistinguishedName| Export-CSV c:\psinactive_users.csv
+#+end_src
+
+From: [[https://blog.netwrix.com/2022/11/03/active-directory-logon-attributes/][netwrix]]
 
 ** Kerberos S4u2Self
 

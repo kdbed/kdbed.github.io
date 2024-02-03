@@ -108,6 +108,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/lastlogon_vs_lastlogontimestamp\/": {
+        
+        "title": "Active Directory: lastLogon vs lastLogonTimestamp",
+        "tags": ["kerberos","activeDirectory",],
+        "content": "lastLogon vs lastLogonTimestamp lastLogon The lastLogon attribute contains a Windows FileTime representation of the last time a domain controller successfully authenticated the user. It is the granddaddy of user logon metadata, having been around since the first version Active Directory.\nUsing the PowerShell command below, you can retrieve the last logon time and other user properties on a domain controller:\n1  Get-ADUser -Filter * -Properties lastLogon | Select samaccountname,@{Name=\u0026#34;lastLogon\u0026#34;;Expression={[datetime]::FromFileTime($_.\u0026#39;lastLogon\u0026#39;)}}   The LastLogon attribute is updated every time a domain controller successfully processes a logon request, but it is not a replicated attribute. Each domain controller (DCs) maintains its own version of the attribute for any specific user.\nlastLogonTimestamp The lastLogonTimestamp contains a Windows FileTime representation of a recent time the user logged on to a domain. This user attribute was introduced with Microsoft Windows Server 2003. Unlike the older lastLogon attribute, the lastLogonTimestamp attribute is a replicated attribute; its value for any specific user is synced to every domain controller. It is not always updated when a domain controller successfully processes a logon request. Instead, the attribute has a dynamic update frequency that is limited by the value of the ms-DS-Logon-Time-Sync-Interval attribute, which defaults to NOT SET and is treated as 14 days.\nSearch 1  Search-ADAccount -AccountInactive -DateTime ((Get-Date).AddDays(-30)) -UsersOnly | Select Name,LastLogonDate,DistinguishedName| Export-CSV c:\\psinactive_users.csv   From: netwrix\nKerberos S4u2Self How LastLogonTimeStamp is Updated with Kerberos S4u2Self S4U2self\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/lastlogon_vs_lastlogontimestamp\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/scapy_scanning\/": {
         
         "title": "Active Scanning with Scapy",
@@ -1074,16 +1084,6 @@ window.store = {
         "tags": [],
         "content": "extern crate regex; use regex::Regex; fn main() { let re = Regex::new(r\u0026quot;^\\d{4}-\\d{2}-\\d{2}$\u0026quot;).unwrap(); println!(\u0026quot;test\u0026quot;); assert!(re.is_match(\u0026quot;2014-01-01\u0026quot;)); } 1 2 3 4 5  #include \u0026lt;iostream\u0026gt;int main(){ std::cout\u0026lt;\u0026lt;\u0026#34;Hello, World.\\n\u0026#34;; return 0; }   Hello, World. ", 
         "url": "https:\/\/kdbed.github.io\/posts\/rust_test\/"
-    },
-    
-    
-    
-    "https:\/\/kdbed.github.io\/posts\/lastlogon_vs_lastlogontimestamp\/": {
-        
-        "title": "lastLogon vs lastLogonTimestamp",
-        "tags": ["kerberos","activeDirectory",],
-        "content": "lastLogon vs lastLogonTimestamp If you ask for types of situations, then any logon event updates the lastlogontimestamp, but only some of them update lastlogon attribute.\nThere are certain types of events that only emulate the logon without using the actual username and password that update only the lastlogon attribute.\nKerberos S4u2Self How LastLogonTimeStamp is Updated with Kerberos S4u2Self S4U2self\n", 
-        "url": "https:\/\/kdbed.github.io\/posts\/lastlogon_vs_lastlogontimestamp\/"
     },
     
     

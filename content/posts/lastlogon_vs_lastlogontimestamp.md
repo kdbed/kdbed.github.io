@@ -1,5 +1,5 @@
 +++
-title = "lastLogon vs lastLogonTimestamp"
+title = "Active Directory: lastLogon vs lastLogonTimestamp"
 author = ["svejk"]
 tags = ["kerberos", "activeDirectory"]
 draft = false
@@ -7,9 +7,32 @@ draft = false
 
 ## lastLogon vs lastLogonTimestamp {#lastlogon-vs-lastlogontimestamp}
 
-If you ask for types of situations, then any logon event updates the lastlogontimestamp, but only some of them update lastlogon attribute.
 
-There are certain types of events that only emulate the logon without using the actual username and password that update only the lastlogon attribute.
+### lastLogon {#lastlogon}
+
+The lastLogon attribute contains a Windows FileTime representation of the last time a domain controller successfully authenticated the user. It is the granddaddy of user logon metadata, having been around since the first version Active Directory.
+
+Using the PowerShell command below, you can retrieve the last logon time and other user properties on a domain controller:
+
+```shell { linenos=true, linenostart=1 }
+Get-ADUser -Filter * -Properties lastLogon | Select samaccountname,@{Name="lastLogon";Expression={[datetime]::FromFileTime($_.'lastLogon')}}
+```
+
+The LastLogon attribute is updated every time a domain controller successfully processes a logon request, but it is not a replicated attribute. Each domain controller (DCs) maintains its own version of the attribute for any specific user.
+
+
+### lastLogonTimestamp {#lastlogontimestamp}
+
+The lastLogonTimestamp contains a Windows FileTime representation of a recent time the user logged on to a domain. This user attribute was introduced with Microsoft Windows Server 2003. Unlike the older lastLogon attribute, the lastLogonTimestamp attribute is a replicated attribute; its value for any specific user is synced to every domain controller. It is not always updated when a domain controller successfully processes a logon request. Instead, the attribute has a dynamic update frequency that is limited by the value of the `ms-DS-Logon-Time-Sync-Interval` attribute, which defaults to NOT SET and is treated as 14 days.
+
+
+### Search {#search}
+
+```shell { linenos=true, linenostart=1 }
+Search-ADAccount -AccountInactive -DateTime ((Get-Date).AddDays(-30)) -UsersOnly | Select Name,LastLogonDate,DistinguishedName| Export-CSV c:\psinactive_users.csv
+```
+
+From: [netwrix](https://blog.netwrix.com/2022/11/03/active-directory-logon-attributes/)
 
 
 ### Kerberos S4u2Self {#kerberos-s4u2self}

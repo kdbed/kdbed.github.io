@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://kdbed.github.io/tags/kerberos/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Active Directory: lastLogon vs lastLogonTimestamp</title>
+      <link>https://kdbed.github.io/posts/lastlogon_vs_lastlogontimestamp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/lastlogon_vs_lastlogontimestamp/</guid>
+      <description>lastLogon vs lastLogonTimestamp lastLogon The lastLogon attribute contains a Windows FileTime representation of the last time a domain controller successfully authenticated the user. It is the granddaddy of user logon metadata, having been around since the first version Active Directory.
+Using the PowerShell command below, you can retrieve the last logon time and other user properties on a domain controller:
+1  Get-ADUser -Filter * -Properties lastLogon | Select samaccountname,@{Name=&amp;#34;lastLogon&amp;#34;;Expression={[datetime]::FromFileTime($_.&amp;#39;lastLogon&amp;#39;)}}   The LastLogon attribute is updated every time a domain controller successfully processes a logon request, but it is not a replicated attribute.</description>
+    </item>
+    
+    <item>
       <title>AS-REP Roasting</title>
       <link>https://kdbed.github.io/posts/as_rep_roasting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -14,17 +25,6 @@
       <guid>https://kdbed.github.io/posts/as_rep_roasting/</guid>
       <description>AS-REP Roasting Two key attacks on Kerberos security in Active Directory include kerberoasting and AS-REP Roasting. Kerberoasting typically requires credentials on the domain to authenticate with. There is an option for an account to have the property “Do not require Kerberos preauthentication” or UF_DONT_REQUIRE_PREAUTH set to true. AS-REP Roasting is an attack against Kerberos for these accounts.
 Use the Impacket tool GetNPUsers.py to try to get a hash for each user</description>
-    </item>
-    
-    <item>
-      <title>lastLogon vs lastLogonTimestamp</title>
-      <link>https://kdbed.github.io/posts/lastlogon_vs_lastlogontimestamp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kdbed.github.io/posts/lastlogon_vs_lastlogontimestamp/</guid>
-      <description>lastLogon vs lastLogonTimestamp If you ask for types of situations, then any logon event updates the lastlogontimestamp, but only some of them update lastlogon attribute.
-There are certain types of events that only emulate the logon without using the actual username and password that update only the lastlogon attribute.
-Kerberos S4u2Self How LastLogonTimeStamp is Updated with Kerberos S4u2Self S4U2self</description>
     </item>
     
   </channel>
