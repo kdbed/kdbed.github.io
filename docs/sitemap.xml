@@ -338,6 +338,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/powershell/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/powershell_check_windows_server_tls_settings/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/powershell_classes/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/powershell_clipboard_to_array/</loc>
@@ -384,6 +386,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/python_list_comprehensions/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/python_visualize_active_directory_data/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/quantum_mechanics/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/quantummechanics/</loc>
@@ -409,6 +413,8 @@
     <loc>https://kdbed.github.io/tags/revshell/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/rust/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/rust_programming/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/s_mime/</loc>
   </url><url>

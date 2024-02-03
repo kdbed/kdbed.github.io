@@ -119,5 +119,14 @@ netwrix</description>
       <description>Search-ADAccount shellgeek</description>
     </item>
     
+    <item>
+      <title>Python - Visualize Active Directory Data</title>
+      <link>https://kdbed.github.io/posts/python_visualize_active_directory_data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/python_visualize_active_directory_data/</guid>
+      <description>Pandas to plot AD Data 1 2 3 4 5 6 7 8 9  import pandas import matplotlib.pyplot as plt from sqlalchemy import create_engin engine = create_engine(&amp;#34;activedirectory:///?User=cn=Bob F,ou=Employees,dc=Domain&amp;amp;Password=bob123&amp;amp;Server=10.0.1.2&amp;amp;Port=389&amp;#34;) df = pandas.read_sql(&amp;#34;SELECT Id, LogonCount FROM User WHERE CN = &amp;#39;Administrator&amp;#39;&amp;#34;, engine) df.plot(kind=&amp;#34;bar&amp;#34;, x=&amp;#34;Id&amp;#34;, y=&amp;#34;LogonCount&amp;#34;) plt.show()   From: cdata.com</description>
+    </item>
+    
   </channel>
 </rss>

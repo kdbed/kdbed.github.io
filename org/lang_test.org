@@ -8,6 +8,7 @@
 
 * Language tests in org
 ** Rust
+
 #+BEGIN_SRC rustic :crates '((regex . 0.2)(primal . 0.3.2)) :output results
 extern crate primal;
 

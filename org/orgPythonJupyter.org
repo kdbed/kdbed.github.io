@@ -8,23 +8,29 @@
 
 * Create a Session
 Initialize server with org-babel-exp-src-block.  Afterwards, 'Enter' in the sourceblock will execute.
-#+begin_src jupyter-python :session hello
-print('ello, world!')
+#+begin_src python :session hello :results output
+print('hello, world!')
+a = 10
 #+end_src
 
 #+RESULTS:
-: ello, world!
+: hello, world!
 
 ** Create a plot
-#+begin_src jupyter-python :session hello
+#+begin_src python :results file link
+import matplotlib, numpy
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-fig, ax = plt.subplots()
-ax.plot([1, 2, 3, 4], [1, 4, 2, 3])
-pass
+fig=plt.figure(figsize=(4,2))
+x=numpy.linspace(-15,15)
+plt.plot(numpy.sin(x)/x)
+fig.tight_layout()
+plt.savefig('python-matplot-fig.png')
+return 'python-matplot-fig.png' # return filename to org-mode
 #+end_src
 
 #+RESULTS:
-[[file:./.ob-jupyter/b52e1cc392ed9e25b195906d382b298c1ea3670a.png]]
+[[file:python-matplot-fig.png]]
 
 * Ocaml
 

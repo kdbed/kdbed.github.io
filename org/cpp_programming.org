@@ -6,7 +6,7 @@
 #+title: C++ Programming
 
 
-* C++ Programming
+* Basics
 ** Hello world
 #+begin_src cpp -n :results output verbatim
 #include <iostream>
@@ -18,3 +18,23 @@ int main(){
 
 #+RESULTS:
 : Hello, world.
+* Templates
+** Basic Template
+#+begin_src cpp -n :results output verbatim
+#include <iostream>
+
+template<typename T>
+T add_em_up(T& lhs, T& rhs){
+    return lhs + rhs;
+    }
+
+int main(){
+
+    int a{ 72 };
+    int b{ 47 };
+    std::cout << add_em_up<int>(a,b) << "\n";
+}
+#+end_src
+
+#+RESULTS:
+: 119

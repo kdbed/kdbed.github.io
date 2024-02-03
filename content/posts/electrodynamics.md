@@ -5,3 +5,6 @@ draft = false
 +++
 
 [Physics]({{< relref "physics.md" >}})
+
+
+## Electrodynamics {#electrodynamics}

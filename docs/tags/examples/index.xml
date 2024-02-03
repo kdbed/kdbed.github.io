@@ -21,7 +21,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/cpp_programming/</guid>
-      <description>C++ Programming Hello world 1 2 3 4 5  #include &amp;lt;iostream&amp;gt; int main(){ std::cout &amp;lt;&amp;lt; &amp;#34;Hello, world.&amp;#34; &amp;lt;&amp;lt; std::endl; }   </description>
+      <description>Basics Hello world 1 2 3 4 5  #include &amp;lt;iostream&amp;gt; int main(){ std::cout &amp;lt;&amp;lt; &amp;#34;Hello, world.&amp;#34; &amp;lt;&amp;lt; std::endl; }   Templates Basic Template 1 2 3 4 5 6 7 8 9 10 11 12 13  #include &amp;lt;iostream&amp;gt; template&amp;lt;typename T&amp;gt; T add_em_up(T&amp;amp; lhs, T&amp;amp; rhs){ return lhs + rhs; } int main(){ int a{ 72 }; int b{ 47 }; std::cout &amp;lt;&amp;lt; add_em_up&amp;lt;int&amp;gt;(a,b) &amp;lt;&amp;lt; &amp;#34;\n&amp;#34;; }   </description>
     </item>
     
     <item>

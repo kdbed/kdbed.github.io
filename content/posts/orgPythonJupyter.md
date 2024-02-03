@@ -10,17 +10,23 @@ draft = false
 Initialize server with org-babel-exp-src-block.  Afterwards, 'Enter' in the sourceblock will execute.
 
 ```python
-print('ello, world!')
+print('hello, world!')
+a = 10
 ```
 
 
 ### Create a plot {#create-a-plot}
 
 ```python
+import matplotlib, numpy
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-fig, ax = plt.subplots()
-ax.plot([1, 2, 3, 4], [1, 4, 2, 3])
-pass
+fig=plt.figure(figsize=(4,2))
+x=numpy.linspace(-15,15)
+plt.plot(numpy.sin(x)/x)
+fig.tight_layout()
+plt.savefig('python-matplot-fig.png')
+return 'python-matplot-fig.png' # return filename to org-mode
 ```
 
 
