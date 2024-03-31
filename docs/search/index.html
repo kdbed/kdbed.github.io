@@ -838,6 +838,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/hashing_vs_encryption\/": {
+        
+        "title": "Hashing Vs Encryption",
+        "tags": ["cryptography",],
+        "content": "The difference between hashing and encryption The difference betwen hashing and encryption determines how likely an exposed password can be abused after a breach. Hashing is such that it can\u0026rsquo;t be directly reversed (hash \u0026ndash;\u0026gt; plaintext), but the plaintext can be guessed by hashing a large number of candidates and comparing the results. Password hashing is one-way and deterministic. This means that sites that store hashes never actually keep the password, but re-hashing at logon provides a reliable point of comparison.\nSource: troyhunt ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/hashing_vs_encryption\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/haskell\/": {
         
         "title": "haskell",
@@ -1934,6 +1944,16 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/tags\/python\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/python_functional_programming\/": {
+        
+        "title": "Python - Functional Programming",
+        "tags": [],
+        "content": "Functions as parameters Write a simple function that takes a function as a parameter:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  def inch2cm(x): return x*2.54 def convert(f,x): y = f(x) print(x,\u0026#34;=\u0026gt;\u0026#34;,y) convert(inch2cm, 3) # a function to convert celsius to fahrenheit def c2f(x): return x*1.8 + 32 convert(c2f,18) # convert integers to text def i2text(x): text = [\u0026#39;zero\u0026#39;,\u0026#39;one\u0026#39;,\u0026#39;two\u0026#39;,\u0026#39;three\u0026#39;] return text[x] convert(i2text,2)   The sorted function The built in sorted function will order numbers or alphabetize strings. The optional parameter key accepts a function:\n1 2 3 4 5 6 7 8 9 10 11 12  p = [\u0026#39;red\u0026#39;, \u0026#39;green\u0026#39;, \u0026#39;blue\u0026#39;, \u0026#39;yellow\u0026#39;, \u0026#39;cyan\u0026#39;] q = sorted(p, key=len) print(q) # sort a list of tuples by area def area(x): return x[0]*x[1] p = [(3, 3), (4, 2), (2, 2), (5, 2), (1, 7)] q = sorted(p, key=area) print(q)   Lambda functions ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/python_functional_programming\/"
     },
     
     

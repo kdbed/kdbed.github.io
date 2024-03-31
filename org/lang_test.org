@@ -120,11 +120,11 @@ namespace HelloWorld
 add_1 : Nat -> Nat
 add_1 x = x + 1
 
-add_1 5
+add_1 7
 #+end_src
 
 #+RESULTS:
-: 6
+: 8
 
 *** map
 #+begin_src haskell :exports both :post org-babel-haskell-formatter(*this*)

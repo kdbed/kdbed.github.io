@@ -351,6 +351,15 @@ More Than the Sum of Their Parts </description>
     </item>
     
     <item>
+      <title>Hashing Vs Encryption</title>
+      <link>https://kdbed.github.io/posts/hashing_vs_encryption/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/hashing_vs_encryption/</guid>
+      <description>The difference between hashing and encryption The difference betwen hashing and encryption determines how likely an exposed password can be abused after a breach. Hashing is such that it can&amp;rsquo;t be directly reversed (hash &amp;ndash;&amp;gt; plaintext), but the plaintext can be guessed by hashing a large number of candidates and comparing the results. Password hashing is one-way and deterministic. This means that sites that store hashes never actually keep the password, but re-hashing at logon provides a reliable point of comparison.</description>
+    </item>
+    
+    <item>
       <title>Haskell - Org Test</title>
       <link>https://kdbed.github.io/posts/haskelltest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1051,6 +1060,16 @@ Copy-Item -Path &amp;#34;Testfile.txt&amp;#34; -Destination &amp;#34;CopiedFile.
 Overview create a new class that derives from one of two base classes (Cmdlet or PsCmdlet), add properties to the class to accept your parameters, override one or more methods in the base class to provide your functionality, and decorate the class and properties with a few attributes.
 cmdlet name all defined in constants in the C# reference library
 VerbsCommon: Add, Clear, Close, Copy, Enter, Exit, Find, Format, Get, Hide, Join, Lock, Move, New, Open, Optimize, Pop, Push, Redo, Remove, Rename, Reset, Resize, Search, Select, Set, Show, Skip, Split, Step, Switch, Undo, Unlock, Watch</description>
+    </item>
+    
+    <item>
+      <title>Python - Functional Programming</title>
+      <link>https://kdbed.github.io/posts/python_functional_programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/python_functional_programming/</guid>
+      <description>Functions as parameters Write a simple function that takes a function as a parameter:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  def inch2cm(x): return x*2.54 def convert(f,x): y = f(x) print(x,&amp;#34;=&amp;gt;&amp;#34;,y) convert(inch2cm, 3) # a function to convert celsius to fahrenheit def c2f(x): return x*1.8 + 32 convert(c2f,18) # convert integers to text def i2text(x): text = [&amp;#39;zero&amp;#39;,&amp;#39;one&amp;#39;,&amp;#39;two&amp;#39;,&amp;#39;three&amp;#39;] return text[x] convert(i2text,2)   The sorted function The built in sorted function will order numbers or alphabetize strings.</description>
     </item>
     
     <item>

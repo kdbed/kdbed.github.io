@@ -164,6 +164,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/hashes/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/hashing_vs_encryption/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/haskell/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/haskelltest/</loc>
@@ -383,6 +385,8 @@
     <loc>https://kdbed.github.io/tags/pwntools/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/python/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/python_functional_programming/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/python_list_comprehensions/</loc>
   </url><url>

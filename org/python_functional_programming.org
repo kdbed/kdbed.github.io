@@ -1,0 +1,60 @@
+:PROPERTIES:
+:ID:       b1bfb812-fbaf-4c4c-bbca-576ee83a3597
+:END:
+#+title: Python - Functional Programming
+#+hugo_base_dir:../
+
+
+* Functions as parameters
+Write a simple function that takes a function as a parameter:
+#+begin_src python -n :results output verbatim
+def inch2cm(x):
+    return x*2.54
+def convert(f,x):
+    y = f(x)
+    print(x,"=>",y)
+
+convert(inch2cm, 3)
+
+# a function to convert celsius to fahrenheit
+def c2f(x):
+    return x*1.8 + 32
+
+convert(c2f,18)
+
+# convert integers to text
+def i2text(x):
+    text = ['zero','one','two','three']
+    return text[x]
+
+convert(i2text,2)
+#+end_src
+
+#+RESULTS:
+: 3 => 7.62
+: 18 => 64.4
+: 2 => two
+
+** The sorted function
+The built in =sorted= function will order numbers or alphabetize strings. The optional parameter ~key~ accepts a function:
+
+#+begin_src python -n :results output verbatim
+p = ['red', 'green', 'blue', 'yellow', 'cyan']
+q = sorted(p, key=len)
+print(q)
+
+# sort a list of tuples by area
+def area(x):
+    return x[0]*x[1]
+
+p = [(3, 3), (4, 2), (2, 2), (5, 2), (1, 7)]
+q = sorted(p, key=area)
+print(q)
+
+#+end_src
+
+#+RESULTS:
+: ['red', 'blue', 'cyan', 'green', 'yellow']
+: [(2, 2), (1, 7), (4, 2), (3, 3), (5, 2)]
+
+* Lambda functions
