@@ -71,22 +71,22 @@ int main(void){
 4 1.0000000000
 5 1.0000000000
 6 1.0000000000
-7 0.8571428571
-8 0.8750000000
-9 0.7777777778
-10 0.7000000000
+7 1.0000000000
+8 1.0000000000
+9 1.0000000000
+10 1.0000000000
 ```
 
 ```cpp { linenos=true, linenostart=1 }
 #include <iostream>
 int main(){
-    std::cout<<"Hello, World.\n";
+    std::cout<<"Hello, World!\n";
     return 0;
 }
 ```
 
 ```text
-Hello, World.
+Hello, World!
 ```
 
 
@@ -106,39 +106,51 @@ namespace HelloWorld
 }
 ```
 
-```text
-Hello World!
-```
-
 
 ### Haskell {#haskell}
 
 ```haskell
 add_1 : Nat -> Nat
 add_1 x = x + 1
-
 add_1 5
+
+
+
+
 ```
 
 ```text
-ghci> 6
+6
 ```
 
 
 #### map {#map}
 
+<a id="code-snippet--org-babel-haskell-formatter"></a>
+```emacs-lisp
+  (format "%s"
+          (replace-regexp-in-string
+           (rx line-start
+               (+ (| alphanumeric blank "." "|" ">")))
+           "" (format "%s" strr)))
+```
+
 ```haskell
+
 :{
--- a very verbose way to sum a sequence of numbers:
-sumInts :: Int -> Int -> Int
-sumInts a b =
-    if a == b
+    -- a very verbose way to sum a sequence of numbers:
+    sumInts :: Int -> Int -> Int
+    sumInts a b =
+      if a == b
         then b
         else (+ a) $ (sumInts (a + 1) b)
 :}
-map (\[a,b] -> sumInts a b) [[0, 1] , [1, 3], [1,5], [2,10]]
+
+    map (\[a,b] -> sumInts a b) [[0, 10] , [1, 3], [1,5], [2,10]]
+
+
 ```
 
-```text
-(1 6 15 54)
-```
+|    |   |    |    |
+|----|---|----|----|
+| 55 | 6 | 15 | 54 |

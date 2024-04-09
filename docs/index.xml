@@ -271,7 +271,7 @@ How DNS Works DNS (Domain Name System) is like an Internet phonebook.</descripti
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/eikonal_approximation/</guid>
-      <description>Eikonal Approximation in Quantum Mechanics Introduction and Background The root eikon comes from eikenai, a transliteration of the Greek εικεναι meaning &amp;lsquo;to resemble&amp;rsquo;. In Greek the word εικον means image &amp;ndash; compare &amp;lsquo;icon&amp;rsquo; in English. The image provided by the eikonal approximation in scattering has its origin in optics, wherein one assumes (ray optics) that the size of an obstacle is large compared to the wavelength of scattered light. When diffraction is involved, one moves from the eikonal approximation (back) to Maxwell&amp;rsquo;s Equations.</description>
+      <description>Eikonal Approximation in Quantum Mechanics Introduction and Background The root eikon comes from eikenai, a transliteration of the Greek \(\epsilon\iota\kappa\epsilon\nu\alpha\iota\) meaning &amp;lsquo;to resemble&amp;rsquo;. In Greek the word \(\epsilon\iota\kappa\omicron\nu\) means image &amp;ndash; compare &amp;lsquo;icon&amp;rsquo; in English. The image provided by the eikonal approximation in scattering has its origin in optics, wherein one assumes (ray optics) that the size of an obstacle is large compared to the wavelength of scattered light. When diffraction is involved, one moves from the eikonal approximation (back) to Maxwell&amp;rsquo;s Equations.</description>
     </item>
     
     <item>
@@ -360,12 +360,13 @@ More Than the Sum of Their Parts </description>
     </item>
     
     <item>
-      <title>Haskell - Org Test</title>
+      <title>Haskell Programming</title>
       <link>https://kdbed.github.io/posts/haskelltest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kdbed.github.io/posts/haskelltest/</guid>
-      <description>Map import Control.Monad :{ map (\x -&amp;gt; x*x + x + 1) [1..10] :} [3,7,13,21,31,43,57,73,91,111] </description>
+      <description>Basics **
+Map import Control.Monad :{ map (\x -&amp;gt; x*x + x+ 1) [1..10] :}                  3 7 13 21 31 43 57 73 91 111    </description>
     </item>
     
     <item>

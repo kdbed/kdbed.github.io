@@ -88,13 +88,13 @@ int main(void){
 #+begin_src cpp -n :exports both :results output verbatim
 #include <iostream>
 int main(){
-    std::cout<<"Hello, World.\n";
+    std::cout<<"Hello, World!\n";
     return 0;
 }
 #+end_src
 
 #+RESULTS:
-: Hello, World.
+: Hello, World!
 ** C#
 
 #+begin_src csharp -n :exports both :results output verbatim
@@ -119,25 +119,40 @@ namespace HelloWorld
 #+begin_src haskell :exports both
 add_1 : Nat -> Nat
 add_1 x = x + 1
+add_1 5
 
-add_1 7
+
+
+
 #+end_src
 
 #+RESULTS:
-: 8
+: 6
 
 *** map
-#+begin_src haskell :exports both :post org-babel-haskell-formatter(*this*)
+#+name: org-babel-haskell-formatter
+#+begin_src emacs-lisp :var strr="" :exports code
+  (format "%s"
+          (replace-regexp-in-string
+           (rx line-start
+               (+ (| alphanumeric blank "." "|" ">")))
+           "" (format "%s" strr)))
+    #+end_src
+#+begin_src haskell :exports both
+
 :{
--- a very verbose way to sum a sequence of numbers:
-sumInts :: Int -> Int -> Int
-sumInts a b =
-    if a == b
+    -- a very verbose way to sum a sequence of numbers:
+    sumInts :: Int -> Int -> Int
+    sumInts a b =
+      if a == b
         then b
         else (+ a) $ (sumInts (a + 1) b)
 :}
-map (\[a,b] -> sumInts a b) [[0, 1] , [1, 3], [1,5], [2,10]]
+
+    map (\[a,b] -> sumInts a b) [[0, 10] , [1, 3], [1,5], [2,10]]
+
+
 #+end_src
 
 #+RESULTS:
-: (1 6 15 54)
+| 55 | 6 | 15 | 54 |
