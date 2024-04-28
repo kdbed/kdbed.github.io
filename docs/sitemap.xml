@@ -172,6 +172,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/http_2/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/icacls/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/identityiqessentialsintroduction/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/impacket/</loc>
@@ -320,9 +322,13 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_windows_privilege_escalation/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/permissions/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/philosophy/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/physics/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/physics/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pie/</loc>
   </url><url>
@@ -457,6 +463,8 @@
     <loc>https://kdbed.github.io/posts/snmp/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/socialtheory/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/spacetime/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/splunk/</loc>
   </url><url>

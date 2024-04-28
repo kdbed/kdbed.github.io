@@ -366,7 +366,7 @@ More Than the Sum of Their Parts </description>
       
       <guid>https://kdbed.github.io/posts/haskelltest/</guid>
       <description>Basics **
-Map import Control.Monad :{ map (\x -&amp;gt; x*x + x+ 1) [1..10] :}                  3 7 13 21 31 43 57 73 91 111    </description>
+Map import Control.Monad :{ map (\x -&amp;gt; x*x + x + 1) [1..10] :}                  3 7 13 21 31 43 57 73 91 111    </description>
     </item>
     
     <item>
@@ -377,6 +377,16 @@ Map import Control.Monad :{ map (\x -&amp;gt; x*x + x+ 1) [1..10] :}            
       <guid>https://kdbed.github.io/posts/http_2/</guid>
       <description>https://portswigger.net/research/http2
 Request smuggling https://lab.wallarm.com/http2smugl-http2-request-smuggling-security-testing-tool/</description>
+    </item>
+    
+    <item>
+      <title>icacls</title>
+      <link>https://kdbed.github.io/posts/icacls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/icacls/</guid>
+      <description>icacls Propagate a single Suppose we need to push a single ACE through subdirectories:
+icacls &amp;#34;X:\PATH\TO\FOLDER\&amp;#34; /grant DOMAIN\group:(f) /t </description>
     </item>
     
     <item>
@@ -1255,6 +1265,15 @@ decompile pycdc</description>
       <guid>https://kdbed.github.io/posts/snmp/</guid>
       <description>SNMP The SNMP Management Information Base (MIB) is a database containing information usually related to network management. The database is organized like a tree, with branches that represent different organizations or network functions. The leaves of the tree (or final endpoints) correspond to specific variable values that can then be accessed and probed by an external user.
 Enumeration  Nmap: sudo nmap -sU --open -p 161 192.168.50.1-254 -oG open-snmp.txt onesixtyone snmpcheck  </description>
+    </item>
+    
+    <item>
+      <title>Spacetime</title>
+      <link>https://kdbed.github.io/posts/spacetime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/spacetime/</guid>
+      <description>Spacetime Spacetime is a four-dimensional topological manifold with smooth atlas carrying a torsion-free connection compatible with a Lorentzian metric and a time orientation satisfying the Einstein equations.</description>
     </item>
     
     <item>

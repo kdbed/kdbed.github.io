@@ -15,10 +15,9 @@ draft = false
 ```haskell
 import Control.Monad
 :{
-
-  map
-      (\x -> x*x + x+ 1)
-      [1..10]
+map
+  (\x -> x*x + x + 1)
+  [1..10]
 :}
 ```
 

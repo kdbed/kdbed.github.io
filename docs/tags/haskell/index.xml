@@ -13,7 +13,7 @@
       
       <guid>https://kdbed.github.io/posts/haskelltest/</guid>
       <description>Basics **
-Map import Control.Monad :{ map (\x -&amp;gt; x*x + x+ 1) [1..10] :}                  3 7 13 21 31 43 57 73 91 111    </description>
+Map import Control.Monad :{ map (\x -&amp;gt; x*x + x + 1) [1..10] :}                  3 7 13 21 31 43 57 73 91 111    </description>
     </item>
     
   </channel>

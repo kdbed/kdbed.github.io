@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       3a9eb784-1a26-4eb9-b334-c72947a25411
+:END:
+#+title: icacls
+#+filetags: :permissions:windows:
+#+hugo_base_dir:../
+
+* icacls
+** Propagate a single
+Suppose we need to push a single ACE through subdirectories:
+#+begin_src shell
+icacls "X:\PATH\TO\FOLDER\" /grant DOMAIN\group:(f) /t
+#+end_src

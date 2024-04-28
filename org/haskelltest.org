@@ -13,10 +13,9 @@
 #+begin_src haskell :exports both
 import Control.Monad
 :{
-
-  map
-      (\x -> x*x + x+ 1)
-      [1..10]
+map
+  (\x -> x*x + x + 1)
+  [1..10]
 :}
 #+end_src
 

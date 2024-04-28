@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       046418e6-8ba5-465d-810d-4026dc1a8d41
+:END:
+#+title: Spacetime
+#+filetags: :physics:
+#+hugo_base_dir:../
+
+
+* Spacetime
+ Spacetime is a four-dimensional topological manifold with smooth atlas carrying a torsion-free connection compatible with a Lorentzian metric and a time orientation satisfying the Einstein equations.

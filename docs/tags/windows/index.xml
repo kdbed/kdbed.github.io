@@ -17,6 +17,16 @@ Use the Impacket tool GetNPUsers.py to try to get a hash for each user</descript
     </item>
     
     <item>
+      <title>icacls</title>
+      <link>https://kdbed.github.io/posts/icacls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kdbed.github.io/posts/icacls/</guid>
+      <description>icacls Propagate a single Suppose we need to push a single ACE through subdirectories:
+icacls &amp;#34;X:\PATH\TO\FOLDER\&amp;#34; /grant DOMAIN\group:(f) /t </description>
+    </item>
+    
+    <item>
       <title>Pentest - Windows Privilege Escalation</title>
       <link>https://kdbed.github.io/posts/pentest_windows_privilege_escalation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
