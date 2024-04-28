@@ -385,7 +385,7 @@ Request smuggling https://lab.wallarm.com/http2smugl-http2-request-smuggling-sec
       
       <guid>https://kdbed.github.io/posts/icacls/</guid>
       <description>icacls Propagate a single Suppose we need to push a single ACE through subdirectories:
-icacls &amp;#34;X:\PATH\TO\FOLDER\&amp;#34; /grant DOMAIN\group:(f) /t </description>
+icacls &amp;#34;X:\PATH\TO\FOLDER\&amp;#34; /grant DOMAIN\group:(f) /t MS learn.microsoft</description>
     </item>
     
     <item>

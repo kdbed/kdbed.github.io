@@ -11,3 +11,5 @@ Suppose we need to push a single ACE through subdirectories:
 #+begin_src shell
 icacls "X:\PATH\TO\FOLDER\" /grant DOMAIN\group:(f) /t
 #+end_src
+** MS
+[[https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc753525(v=ws.11)?redirectedfrom=MSDN][learn.microsoft]]
