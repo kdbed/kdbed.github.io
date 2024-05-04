@@ -156,3 +156,12 @@ add_1 5
 
 #+RESULTS:
 | 55 | 6 | 15 | 54 |
+
+** Lean
+not working:
+#+begin_src lean4 -n :exports both :results output verbatim
+def main : IO Unit :=
+  IO.println s!"Hello, world!"
+
+#check id
+#+end_src
