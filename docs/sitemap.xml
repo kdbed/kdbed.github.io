@@ -16,6 +16,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/account_lockout_splunk/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/action/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/active_directory/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/lastlogon_vs_lastlogontimestamp/</loc>
@@ -25,6 +27,10 @@
     <loc>https://kdbed.github.io/tags/activedirectory/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/ad/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/affine_and_projective_spaces/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/algebraicgeometry/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/algorithms/</loc>
   </url><url>
@@ -114,6 +120,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/dopamine/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/edr/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/education/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/eikonal_approximation/</loc>
@@ -126,11 +134,15 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/encryption/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/endpoint_detection_and_response/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/endpointprotection/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/enumeration/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/essentials/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/eulerlagrange/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/eventlogs/</loc>
   </url><url>
@@ -169,6 +181,8 @@
     <loc>https://kdbed.github.io/tags/haskell/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/haskelltest/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/hooking_windows_apis_with_python/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/http_2/</loc>
   </url><url>
@@ -438,6 +452,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/secplus/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/security/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/securityplus/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/serviceaccounts/</loc>
@@ -491,6 +507,8 @@
     <loc>https://kdbed.github.io/tags/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/template/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/the_action_principle/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/tools/</loc>
   </url><url>

@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       598b2a38-cba3-4e7d-ac86-89a4f513845c
+:END:
+#+title: Hooking Windows APIs with Python
+#+hugo_base_dir:../
+
+
+* Windows API Hooking
+** The Hook
+API hooking refers to techniques for changing or extending the behavior of an OS or app by intercepting API function calls, messages, or events passed between software components. The code that performs the interception is called a *hook*. In Windows this can be done by injecting DLLs, injecting code, and using the Win32 Debug API toolset.
+
+
+
+* References
+
+[[https://www.apriorit.com/dev-blog/727-win-guide-to-hooking-windows-apis-with-python][apriorit]]

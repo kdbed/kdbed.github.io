@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       e485d6c7-821f-4194-b714-c4cf1c3f0bb5
+:END:
+#+title: Affine and Projective Spaces
+#+filetags: :algebraicGeometry:
+#+hugo_base_dir:../
+
+
+* Affine and Projective Spaces
