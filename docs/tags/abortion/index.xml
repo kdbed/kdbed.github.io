@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>abortion on Owlglass</title>
+    <title>Abortion on Owlglass</title>
     <link>https://kdbed.github.io/tags/abortion/</link>
-    <description>Recent content in abortion on Owlglass</description>
+    <description>Recent content in Abortion on Owlglass</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/abortion/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://kdbed.github.io/tags/abortion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Abortion and the Supreme Court: Roe V Wade, Dobbs V Jackson, etc</title>
       <link>https://kdbed.github.io/posts/roevwade/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/roevwade/</guid>
       <description>Abortion and the Supreme Court Roe V Wade Basic Conclusions - Roe Drawing on the First, Fourth, Ninth, and Fourteenth Amendments, the Court said that the Constitution protects an individual’s “zones of privacy.” Citing earlier cases that ruled that contraception, marriage, and child rearing were activities included in these “zones of privacy,” the Court found that the zone was “broad enough to encompass a woman’s decision whether or not to terminate her pregnancy.</description>
     </item>
-    
   </channel>
 </rss>

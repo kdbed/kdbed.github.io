@@ -5,37 +5,28 @@
     <link>https://kdbed.github.io/tags/windows/</link>
     <description>Recent content in Windows on Owlglass</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://kdbed.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AS-REP Roasting</title>
       <link>https://kdbed.github.io/posts/as_rep_roasting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/as_rep_roasting/</guid>
-      <description>AS-REP Roasting Two key attacks on Kerberos security in Active Directory include kerberoasting and AS-REP Roasting. Kerberoasting typically requires credentials on the domain to authenticate with. There is an option for an account to have the property “Do not require Kerberos preauthentication” or UF_DONT_REQUIRE_PREAUTH set to true. AS-REP Roasting is an attack against Kerberos for these accounts.
-Use the Impacket tool GetNPUsers.py to try to get a hash for each user</description>
+      <description>AS-REP Roasting Two key attacks on Kerberos security in Active Directory include kerberoasting and AS-REP Roasting. Kerberoasting typically requires credentials on the domain to authenticate with. There is an option for an account to have the property “Do not require Kerberos preauthentication” or UF_DONT_REQUIRE_PREAUTH set to true. AS-REP Roasting is an attack against Kerberos for these accounts.&#xA;Use the Impacket tool GetNPUsers.py to try to get a hash for each user</description>
     </item>
-    
     <item>
       <title>icacls</title>
       <link>https://kdbed.github.io/posts/icacls/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/icacls/</guid>
-      <description>icacls Propagate a single Suppose we need to push a single ACE through subdirectories:
-icacls &amp;#34;X:\PATH\TO\FOLDER\&amp;#34; /grant DOMAIN\group:(f) /t MS learn.microsoft</description>
+      <description>icacls Propagate a single Suppose we need to push a single ACE through subdirectories:&#xA;icacls &amp;#34;X:\PATH\TO\FOLDER\&amp;#34; /grant DOMAIN\group:(f) /t MS learn.microsoft</description>
     </item>
-    
     <item>
       <title>Pentest - Windows Privilege Escalation</title>
       <link>https://kdbed.github.io/posts/pentest_windows_privilege_escalation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/pentest_windows_privilege_escalation/</guid>
-      <description>From Service to SYSTEM Service Account Privileges Services can be run such that they don&amp;rsquo;t maintain the privs of NT AUTHORITY\LOCAL SERVICE account, eg with the -k LocalServiceAndNoImpersonation option.
- The task scheduler can be used to restore default privs: FullPowers itm4n. After executing FullPowers:
- </description>
+      <description>From Service to SYSTEM Service Account Privileges Services can be run such that they don&amp;rsquo;t maintain the privs of NT AUTHORITY\LOCAL SERVICE account, eg with the -k LocalServiceAndNoImpersonation option.&#xA;The task scheduler can be used to restore default privs: FullPowers itm4n. After executing FullPowers:</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,51 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>python on Owlglass</title>
+    <title>Python on Owlglass</title>
     <link>https://kdbed.github.io/tags/python/</link>
-    <description>Recent content in python on Owlglass</description>
+    <description>Recent content in Python on Owlglass</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://kdbed.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FTP - retrieve files with Python</title>
       <link>https://kdbed.github.io/posts/ftp_retrieve_files_with_python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/ftp_retrieve_files_with_python/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Org Mode - Python/Jupyter Example</title>
       <link>https://kdbed.github.io/posts/orgpythonjupyter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/orgpythonjupyter/</guid>
-      <description>Create a Session Initialize server with org-babel-exp-src-block. Afterwards, &amp;lsquo;Enter&amp;rsquo; in the sourceblock will execute.
-print(&amp;#39;hello, world!&amp;#39;) a = 10 Create a plot import matplotlib, numpy matplotlib.use(&amp;#39;Agg&amp;#39;) import matplotlib.pyplot as plt fig=plt.figure(figsize=(4,2)) x=numpy.linspace(-15,15) plt.plot(numpy.sin(x)/x) fig.tight_layout() plt.savefig(&amp;#39;python-matplot-fig.png&amp;#39;) return &amp;#39;python-matplot-fig.png&amp;#39; # return filename to org-mode Ocaml print_string &amp;#34;Hello world!\n&amp;#34; </description>
+      <description>Create a Session Initialize server with org-babel-exp-src-block. Afterwards, &amp;lsquo;Enter&amp;rsquo; in the sourceblock will execute.&#xA;print(&amp;#39;hello, world!&amp;#39;) a = 10 Create a plot import matplotlib, numpy matplotlib.use(&amp;#39;Agg&amp;#39;) import matplotlib.pyplot as plt fig=plt.figure(figsize=(4,2)) x=numpy.linspace(-15,15) plt.plot(numpy.sin(x)/x) fig.tight_layout() plt.savefig(&amp;#39;python-matplot-fig.png&amp;#39;) return &amp;#39;python-matplot-fig.png&amp;#39; # return filename to org-mode Ocaml print_string &amp;#34;Hello world!\n&amp;#34; </description>
     </item>
-    
     <item>
       <title>Python - List Comprehensions</title>
       <link>https://kdbed.github.io/posts/python_list_comprehensions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/python_list_comprehensions/</guid>
-      <description>Python - List Comprehensions List comprehensions are a compact way of defining a list by looping through another list or other data structure. Let&amp;rsquo;s say we want to double every element in a list. Without list comprehensions:
-sample_list = [4, 5, 6, 7] new_list = [] for i in range(len(sample_list)): new_list.append(sample_list[i]*2) print(new_list) [8, 10, 12, 14] A simplified way to do this:
-newer_list = [2*num for num in sample_list] print(newer_list) [8, 10, 12, 14] List Comprehensions on lists of strings sample_strings = [&amp;#34;python&amp;#34;, &amp;#34;is&amp;#34;, &amp;#34;awesome!</description>
+      <description>Python - List Comprehensions List comprehensions are a compact way of defining a list by looping through another list or other data structure. Let&amp;rsquo;s say we want to double every element in a list. Without list comprehensions:&#xA;sample_list = [4, 5, 6, 7] new_list = [] for i in range(len(sample_list)): new_list.append(sample_list[i]*2) print(new_list) [8, 10, 12, 14] A simplified way to do this:&#xA;newer_list = [2*num for num in sample_list] print(newer_list) [8, 10, 12, 14] List Comprehensions on lists of strings sample_strings = [&amp;#34;python&amp;#34;, &amp;#34;is&amp;#34;, &amp;#34;awesome!</description>
     </item>
-    
     <item>
       <title>Reversing - Python</title>
       <link>https://kdbed.github.io/posts/reversing_python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/reversing_python/</guid>
-      <description>Unpacking Python Executables fortinet
-extraction pyinstxtractor - extract the contents of a PyInstaller generated executable file
-decompile pycdc</description>
+      <description>Unpacking Python Executables fortinet&#xA;extraction pyinstxtractor - extract the contents of a PyInstaller generated executable file&#xA;decompile pycdc</description>
     </item>
-    
   </channel>
 </rss>

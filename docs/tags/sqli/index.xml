@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>sqli on Owlglass</title>
+    <title>Sqli on Owlglass</title>
     <link>https://kdbed.github.io/tags/sqli/</link>
-    <description>Recent content in sqli on Owlglass</description>
+    <description>Recent content in Sqli on Owlglass</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/sqli/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://kdbed.github.io/tags/sqli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SQL Injection</title>
       <link>https://kdbed.github.io/posts/sql_injection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/sql_injection/</guid>
-      <description>SQL Injection SQLi - websocket rayhan0x01 blind sql injection via websocket
-From the above post
-&amp;ldquo;If you didn&amp;rsquo;t know, the main difference between HTTP and WebSocket is that HTTP is built on a request-response model whereas WebSocket is like a Socket connection where both client and server can send data anytime asynchronously. So you can&amp;rsquo;t repeat the requests made in WebSocket as you would normally do for HTTP Requests in BurpSuite.</description>
+      <description>SQL Injection SQLi - websocket rayhan0x01 blind sql injection via websocket&#xA;From the above post&#xA;&amp;ldquo;If you didn&amp;rsquo;t know, the main difference between HTTP and WebSocket is that HTTP is built on a request-response model whereas WebSocket is like a Socket connection where both client and server can send data anytime asynchronously. So you can&amp;rsquo;t repeat the requests made in WebSocket as you would normally do for HTTP Requests in BurpSuite.</description>
     </item>
-    
   </channel>
 </rss>

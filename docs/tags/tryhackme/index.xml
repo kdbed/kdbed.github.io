@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tryHackMe on Owlglass</title>
+    <title>TryHackMe on Owlglass</title>
     <link>https://kdbed.github.io/tags/tryhackme/</link>
-    <description>Recent content in tryHackMe on Owlglass</description>
+    <description>Recent content in TryHackMe on Owlglass</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/tryhackme/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://kdbed.github.io/tags/tryhackme/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Intro to Pwntools - TryHackMe</title>
       <link>https://kdbed.github.io/posts/introtopwntools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/introtopwntools/</guid>
-      <description>Basics of Binary Analysis
-Intro to Pwntools Source materials here dizmascyberlabs  Install gdb-pwndbg-peda-gef
-Checksec Same source code, compiled with different protections in place:
-1  checksec checksec/intro2pwn2   [*] &amp;#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn2&amp;#39; Arch: i386-32-little RELRO: Partial RELRO Stack: No canary found NX: NX disabled PIE: No PIE (0x8048000) RWX: Has RWX segments 1  checksec checksec/intro2pwn1   [*] &amp;#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn1&amp;#39; Arch: i386-32-little RELRO: Full RELRO Stack: Canary found NX: NX enabled PIE: PIE enabled  RELRO = Relocation Read-Only; makes the global offset table (GOT) read-only after the linker resolves functions to it.</description>
+      <description>Basics of Binary Analysis&#xA;Intro to Pwntools Source materials here dizmascyberlabs Install gdb-pwndbg-peda-gef&#xA;Checksec Same source code, compiled with different protections in place:&#xA;1 checksec checksec/intro2pwn2 [*] &amp;#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn2&amp;#39; Arch: i386-32-little RELRO: Partial RELRO Stack: No canary found NX: NX disabled PIE: No PIE (0x8048000) RWX: Has RWX segments 1 checksec checksec/intro2pwn1 [*] &amp;#39;/home/kdb/Downloads/IntroToPwntools/IntroToPwntools/checksec/intro2pwn1&amp;#39; Arch: i386-32-little RELRO: Full RELRO Stack: Canary found NX: NX enabled PIE: PIE enabled RELRO = Relocation Read-Only; makes the global offset table (GOT) read-only after the linker resolves functions to it.</description>
     </item>
-    
   </channel>
 </rss>

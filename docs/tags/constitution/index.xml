@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>constitution on Owlglass</title>
+    <title>Constitution on Owlglass</title>
     <link>https://kdbed.github.io/tags/constitution/</link>
-    <description>Recent content in constitution on Owlglass</description>
+    <description>Recent content in Constitution on Owlglass</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/constitution/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://kdbed.github.io/tags/constitution/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Abortion and the Supreme Court: Roe V Wade, Dobbs V Jackson, etc</title>
       <link>https://kdbed.github.io/posts/roevwade/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/roevwade/</guid>
       <description>Abortion and the Supreme Court Roe V Wade Basic Conclusions - Roe Drawing on the First, Fourth, Ninth, and Fourteenth Amendments, the Court said that the Constitution protects an individual’s “zones of privacy.” Citing earlier cases that ruled that contraception, marriage, and child rearing were activities included in these “zones of privacy,” the Court found that the zone was “broad enough to encompass a woman’s decision whether or not to terminate her pregnancy.</description>
     </item>
-    
     <item>
       <title>Originalism</title>
       <link>https://kdbed.github.io/posts/originalism/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/originalism/</guid>
       <description>Originalism, the theory that the Constitution should be interpreted according to the meaning or intent of the drafters, has great appeal to Americans. At one time closely associated with the conservative movement, originalism is now commonly held as an important, if not the exclusive, device for interpreting the Constitution. This has not been our historic practice. Over thirty years ago, Munzer and Nickel (1977, 1029) wrote that “one does not have to dig very deeply into the literature of American constitutional law to suspect that many constitutional provisions do not mean today what their framers thought they meant.</description>
     </item>
-    
   </channel>
 </rss>

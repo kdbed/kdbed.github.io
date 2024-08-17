@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>climate on Owlglass</title>
+    <title>Climate on Owlglass</title>
     <link>https://kdbed.github.io/tags/climate/</link>
-    <description>Recent content in climate on Owlglass</description>
+    <description>Recent content in Climate on Owlglass</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/climate/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://kdbed.github.io/tags/climate/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Greenhouse Gas Emissions</title>
       <link>https://kdbed.github.io/posts/greenhouseemissions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/greenhouseemissions/</guid>
       <description>Raw Numbers Fifty-one billion is how many tons of greenhouse gases the world typically adds to the atmosphere every year. &amp;ndash;Bill Gates, How to Avoid a Climate Disaster (2021)</description>
     </item>
-    
   </channel>
 </rss>

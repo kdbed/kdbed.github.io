@@ -1,31 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>infosec on Owlglass</title>
+    <title>Infosec on Owlglass</title>
     <link>https://kdbed.github.io/tags/infosec/</link>
-    <description>Recent content in infosec on Owlglass</description>
+    <description>Recent content in Infosec on Owlglass</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://kdbed.github.io/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Recon - Port Scanning and Nmap</title>
       <link>https://kdbed.github.io/posts/recon_port_scanning_and_nmap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/recon_port_scanning_and_nmap/</guid>
-      <description>Nmap scanning SYN (stealth) scan TCP handshake not completed (ACK not sent)
-1  nmap -sS &amp;lt;ip&amp;gt;   Because the three-way handshake is never completed, the information is not passed to the application layer and as a result, will not appear in any application logs. A SYN scan is also faster and more efficient because fewer packets are sent and received.
-TCP Connect Scan 1  nmap -sT &amp;lt;ip&amp;gt;   TCP SYN Scan and UDP Scan 1  nmap -sU -sS 192.</description>
+      <description>Nmap scanning SYN (stealth) scan TCP handshake not completed (ACK not sent)&#xA;1 nmap -sS &amp;lt;ip&amp;gt; Because the three-way handshake is never completed, the information is not passed to the application layer and as a result, will not appear in any application logs. A SYN scan is also faster and more efficient because fewer packets are sent and received.&#xA;TCP Connect Scan 1 nmap -sT &amp;lt;ip&amp;gt; TCP SYN Scan and UDP Scan 1 nmap -sU -sS 192.</description>
     </item>
-    
     <item>
       <title>Web Pentest - Wordpress</title>
       <link>https://kdbed.github.io/posts/web_pentest_wordpress/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/web_pentest_wordpress/</guid>
-      <description>Wordpress WPScan Enumerate vulnerable plugins, users, db exports:
-wpscan --url &amp;lt;url&amp;gt; -e dbe,u,vp </description>
+      <description>Wordpress WPScan Enumerate vulnerable plugins, users, db exports:&#xA;wpscan --url &amp;lt;url&amp;gt; -e dbe,u,vp </description>
     </item>
-    
   </channel>
 </rss>

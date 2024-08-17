@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>jupyter on Owlglass</title>
+    <title>Jupyter on Owlglass</title>
     <link>https://kdbed.github.io/tags/jupyter/</link>
-    <description>Recent content in jupyter on Owlglass</description>
+    <description>Recent content in Jupyter on Owlglass</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/jupyter/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://kdbed.github.io/tags/jupyter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Org Mode - Python/Jupyter Example</title>
       <link>https://kdbed.github.io/posts/orgpythonjupyter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/orgpythonjupyter/</guid>
-      <description>Create a Session Initialize server with org-babel-exp-src-block. Afterwards, &amp;lsquo;Enter&amp;rsquo; in the sourceblock will execute.
-print(&amp;#39;hello, world!&amp;#39;) a = 10 Create a plot import matplotlib, numpy matplotlib.use(&amp;#39;Agg&amp;#39;) import matplotlib.pyplot as plt fig=plt.figure(figsize=(4,2)) x=numpy.linspace(-15,15) plt.plot(numpy.sin(x)/x) fig.tight_layout() plt.savefig(&amp;#39;python-matplot-fig.png&amp;#39;) return &amp;#39;python-matplot-fig.png&amp;#39; # return filename to org-mode Ocaml print_string &amp;#34;Hello world!\n&amp;#34; </description>
+      <description>Create a Session Initialize server with org-babel-exp-src-block. Afterwards, &amp;lsquo;Enter&amp;rsquo; in the sourceblock will execute.&#xA;print(&amp;#39;hello, world!&amp;#39;) a = 10 Create a plot import matplotlib, numpy matplotlib.use(&amp;#39;Agg&amp;#39;) import matplotlib.pyplot as plt fig=plt.figure(figsize=(4,2)) x=numpy.linspace(-15,15) plt.plot(numpy.sin(x)/x) fig.tight_layout() plt.savefig(&amp;#39;python-matplot-fig.png&amp;#39;) return &amp;#39;python-matplot-fig.png&amp;#39; # return filename to org-mode Ocaml print_string &amp;#34;Hello world!\n&amp;#34; </description>
     </item>
-    
   </channel>
 </rss>

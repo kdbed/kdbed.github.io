@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>privilegeEscalation on Owlglass</title>
+    <title>PrivilegeEscalation on Owlglass</title>
     <link>https://kdbed.github.io/tags/privilegeescalation/</link>
-    <description>Recent content in privilegeEscalation on Owlglass</description>
+    <description>Recent content in PrivilegeEscalation on Owlglass</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/privilegeescalation/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://kdbed.github.io/tags/privilegeescalation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pentest - Windows Privilege Escalation</title>
       <link>https://kdbed.github.io/posts/pentest_windows_privilege_escalation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/pentest_windows_privilege_escalation/</guid>
-      <description>From Service to SYSTEM Service Account Privileges Services can be run such that they don&amp;rsquo;t maintain the privs of NT AUTHORITY\LOCAL SERVICE account, eg with the -k LocalServiceAndNoImpersonation option.
- The task scheduler can be used to restore default privs: FullPowers itm4n. After executing FullPowers:
- </description>
+      <description>From Service to SYSTEM Service Account Privileges Services can be run such that they don&amp;rsquo;t maintain the privs of NT AUTHORITY\LOCAL SERVICE account, eg with the -k LocalServiceAndNoImpersonation option.&#xA;The task scheduler can be used to restore default privs: FullPowers itm4n. After executing FullPowers:</description>
     </item>
-    
   </channel>
 </rss>

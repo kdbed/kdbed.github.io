@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>eulerLagrange on Owlglass</title>
+    <title>EulerLagrange on Owlglass</title>
     <link>https://kdbed.github.io/tags/eulerlagrange/</link>
-    <description>Recent content in eulerLagrange on Owlglass</description>
+    <description>Recent content in EulerLagrange on Owlglass</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/eulerlagrange/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://kdbed.github.io/tags/eulerlagrange/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Action Principle</title>
       <link>https://kdbed.github.io/posts/the_action_principle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/the_action_principle/</guid>
-      <description>The Action Principle Define the Lagrangian as the following combination of the kinetic energy \(T\) and the potential energy \(V\):
-\[ L = T - V \]
-\(L\) is a function of the coordinates \(x\) and the velocity \(\dot{x}\), which are treated as independent variables. For a point particle
-\[ L(x,\dot{x}) = \frac{1}{2}m \sum_{i=1}^D (\dot{x}^i)^2 - V(x) \]
-Taking derivatives
-\begin{align*} \frac{\partial L}{\partial x^i} &amp;amp;= - \frac{\partial V}{\partial x^i} \\ \frac{\partial L}{\partial \dot{x}^i} &amp;amp;= m \dot{x}^i \end{align*}</description>
+      <description>The Action Principle Define the Lagrangian as the following combination of the kinetic energy \(T\) and the potential energy \(V\):&#xA;\[ L = T - V \]&#xA;\(L\) is a function of the coordinates \(x\) and the velocity \(\dot{x}\), which are treated as independent variables. For a point particle&#xA;\[ L(x,\dot{x}) = \frac{1}{2}m \sum_{i=1}^D (\dot{x}^i)^2 - V(x) \]&#xA;Taking derivatives&#xA;\begin{align*} \frac{\partial L}{\partial x^i} &amp;amp;= - \frac{\partial V}{\partial x^i} \\ \frac{\partial L}{\partial \dot{x}^i} &amp;amp;= m \dot{x}^i \end{align*}</description>
     </item>
-    
   </channel>
 </rss>

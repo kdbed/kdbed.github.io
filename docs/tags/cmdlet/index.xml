@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cmdlet on Owlglass</title>
+    <title>Cmdlet on Owlglass</title>
     <link>https://kdbed.github.io/tags/cmdlet/</link>
-    <description>Recent content in cmdlet on Owlglass</description>
+    <description>Recent content in Cmdlet on Owlglass</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/cmdlet/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://kdbed.github.io/tags/cmdlet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PowerShell - Writing cmdlets in C#</title>
       <link>https://kdbed.github.io/posts/powershell_writing_cmdlets_in_c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/powershell_writing_cmdlets_in_c/</guid>
-      <description>Writing powershell cmdlets in C# source: dotnetninja
-Overview create a new class that derives from one of two base classes (Cmdlet or PsCmdlet), add properties to the class to accept your parameters, override one or more methods in the base class to provide your functionality, and decorate the class and properties with a few attributes.
-cmdlet name all defined in constants in the C# reference library
-VerbsCommon: Add, Clear, Close, Copy, Enter, Exit, Find, Format, Get, Hide, Join, Lock, Move, New, Open, Optimize, Pop, Push, Redo, Remove, Rename, Reset, Resize, Search, Select, Set, Show, Skip, Split, Step, Switch, Undo, Unlock, Watch</description>
+      <description>Writing powershell cmdlets in C# source: dotnetninja&#xA;Overview create a new class that derives from one of two base classes (Cmdlet or PsCmdlet), add properties to the class to accept your parameters, override one or more methods in the base class to provide your functionality, and decorate the class and properties with a few attributes.&#xA;cmdlet name all defined in constants in the C# reference library&#xA;VerbsCommon: Add, Clear, Close, Copy, Enter, Exit, Find, Format, Get, Hide, Join, Lock, Move, New, Open, Optimize, Pop, Push, Redo, Remove, Rename, Reset, Resize, Search, Select, Set, Show, Skip, Split, Step, Switch, Undo, Unlock, Watch</description>
     </item>
-    
   </channel>
 </rss>

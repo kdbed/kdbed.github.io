@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>encryption on Owlglass</title>
+    <title>Encryption on Owlglass</title>
     <link>https://kdbed.github.io/tags/encryption/</link>
-    <description>Recent content in encryption on Owlglass</description>
+    <description>Recent content in Encryption on Owlglass</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/encryption/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://kdbed.github.io/tags/encryption/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PowerShell - Script Encryption</title>
       <link>https://kdbed.github.io/posts/powershell_script_encryption/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/powershell_script_encryption/</guid>
-      <description>Encrypt powershell Scripts Function to obfuscate code containing sensitive data:
-function Encrypt-Script($path, $destination) { $script = Get-Content $path | Out-String $secure = ConvertTo-SecureString $script -asPlainText -force $export = $secure | ConvertFrom-SecureString Set-Content $destination $export &amp;#34;Script &amp;#39;$path&amp;#39; has been encrypted as &amp;#39;$destination&amp;#39;&amp;#34; } function Execute-EncryptedScript($path) { trap { &amp;#34;Decryption failed&amp;#34;; break } $raw = Get-Content $path $secure = ConvertTo-SecureString $raw $helper = New-Object system.Management.Automation.PSCredential(&amp;#34;test&amp;#34;, $secure) $plain = $helper.GetNetworkCredential().Password Invoke-Expression $plain } From: idera</description>
+      <description>Encrypt powershell Scripts Function to obfuscate code containing sensitive data:&#xA;function Encrypt-Script($path, $destination) { $script = Get-Content $path | Out-String $secure = ConvertTo-SecureString $script -asPlainText -force $export = $secure | ConvertFrom-SecureString Set-Content $destination $export &amp;#34;Script &amp;#39;$path&amp;#39; has been encrypted as &amp;#39;$destination&amp;#39;&amp;#34; } function Execute-EncryptedScript($path) { trap { &amp;#34;Decryption failed&amp;#34;; break } $raw = Get-Content $path $secure = ConvertTo-SecureString $raw $helper = New-Object system.Management.Automation.PSCredential(&amp;#34;test&amp;#34;, $secure) $plain = $helper.GetNetworkCredential().Password Invoke-Expression $plain } From: idera</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>rust on Owlglass</title>
+    <title>Rust on Owlglass</title>
     <link>https://kdbed.github.io/tags/rust/</link>
-    <description>Recent content in rust on Owlglass</description>
+    <description>Recent content in Rust on Owlglass</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://kdbed.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PowerShell - Rust</title>
       <link>https://kdbed.github.io/posts/powershell_rust/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/powershell_rust/</guid>
       <description>Basic Rust Integration with powershell $rustPgm = @&amp;#34; #[no_mangle] pub extern &amp;#34;C&amp;#34; fn add_numbers(number1: i32, number2: i32) -&amp;gt; i32 { number1 + number2 } &amp;#34;@ $rustPgm | Set-Content -Encoding UTF8 .\lib.rs rustc .\lib.rs --crate-type dylib --crate-name powershell_to_rust ## start another PS so dll doesn&amp;#39;t get locked powershell -command { $definition = @&amp;#34; [DllImport(&amp;#34;powershell_to_rust.dll&amp;#34;)] public static extern Int32 add_numbers(Int32 number1, Int32 number2); &amp;#34;@ $target = Add-Type -MemberDefinition $definition -Name AddNum -PassThru $ans = $target::add_numbers(3, 8) write-host $ans } </description>
     </item>
-    
     <item>
       <title>sha1Cracker</title>
       <link>https://kdbed.github.io/posts/sha1cracker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/sha1cracker/</guid>
       <description>Implementing a sha1 hash cracker in Rust use sha1::Digest; use std::{ env, error::Error, fs::File, io::{BufRead, BufReader}, }; const SHA1_HEX_STRING_LENGTH: usize = 40; fn main() -&amp;gt; Result&amp;lt;(), Box&amp;lt;dyn Error&amp;gt;&amp;gt; { let args: Vec&amp;lt;String&amp;gt; = env::args().collect(); if args.len() != 3 { println!(&amp;#34;Usage:&amp;#34;); println!(&amp;#34;sha1_cracker: &amp;lt;wordlist.txt&amp;gt; &amp;lt;sha1_hash&amp;gt;&amp;#34;); return Ok(()); } let hash_to_crack = args[2].trim(); if hash_to_crack.len() != SHA1_HEX_STRING_LENGTH { return Err(&amp;#34;sha1 hash is not valid.&amp;#34;.into()); } let wordlist_file = File::open(&amp;amp;args[1])?; let reader = BufReader::new(&amp;amp;wordlist_file); for line in reader.</description>
     </item>
-    
   </channel>
 </rss>

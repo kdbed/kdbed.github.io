@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>kerberoasting on Owlglass</title>
+    <title>Kerberoasting on Owlglass</title>
     <link>https://kdbed.github.io/tags/kerberoasting/</link>
-    <description>Recent content in kerberoasting on Owlglass</description>
+    <description>Recent content in Kerberoasting on Owlglass</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/kerberoasting/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://kdbed.github.io/tags/kerberoasting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AS-REP Roasting</title>
       <link>https://kdbed.github.io/posts/as_rep_roasting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/as_rep_roasting/</guid>
-      <description>AS-REP Roasting Two key attacks on Kerberos security in Active Directory include kerberoasting and AS-REP Roasting. Kerberoasting typically requires credentials on the domain to authenticate with. There is an option for an account to have the property “Do not require Kerberos preauthentication” or UF_DONT_REQUIRE_PREAUTH set to true. AS-REP Roasting is an attack against Kerberos for these accounts.
-Use the Impacket tool GetNPUsers.py to try to get a hash for each user</description>
+      <description>AS-REP Roasting Two key attacks on Kerberos security in Active Directory include kerberoasting and AS-REP Roasting. Kerberoasting typically requires credentials on the domain to authenticate with. There is an option for an account to have the property “Do not require Kerberos preauthentication” or UF_DONT_REQUIRE_PREAUTH set to true. AS-REP Roasting is an attack against Kerberos for these accounts.&#xA;Use the Impacket tool GetNPUsers.py to try to get a hash for each user</description>
     </item>
-    
   </channel>
 </rss>

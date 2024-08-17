@@ -1,37 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>examples on Owlglass</title>
+    <title>Examples on Owlglass</title>
     <link>https://kdbed.github.io/tags/examples/</link>
-    <description>Recent content in examples on Owlglass</description>
+    <description>Recent content in Examples on Owlglass</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/examples/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://kdbed.github.io/tags/examples/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C Programming</title>
       <link>https://kdbed.github.io/posts/c_programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/c_programming/</guid>
-      <description>C Programming Basics Code Analysis  clang-tidy static code analysis tool - clang-tidy checks Security standards : SEI CERT C Coding Standard : https://wiki.sei.cmu.edu/confluence/display/c Secure Coding in C and C++, 2/e by Robert Seacord  </description>
+      <description>C Programming Basics Code Analysis clang-tidy static code analysis tool - clang-tidy checks Security standards : SEI CERT C Coding Standard : https://wiki.sei.cmu.edu/confluence/display/c Secure Coding in C and C++, 2/e by Robert Seacord </description>
     </item>
-    
     <item>
       <title>C&#43;&#43; Programming</title>
       <link>https://kdbed.github.io/posts/cpp_programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/cpp_programming/</guid>
-      <description>Basics Hello world 1 2 3 4 5  #include &amp;lt;iostream&amp;gt; int main(){ std::cout &amp;lt;&amp;lt; &amp;#34;Hello, world.&amp;#34; &amp;lt;&amp;lt; std::endl; }   Templates Basic Template 1 2 3 4 5 6 7 8 9 10 11 12 13  #include &amp;lt;iostream&amp;gt; template&amp;lt;typename T&amp;gt; T add_em_up(T&amp;amp; lhs, T&amp;amp; rhs){ return lhs + rhs; } int main(){ int a{ 72 }; int b{ 47 }; std::cout &amp;lt;&amp;lt; add_em_up&amp;lt;int&amp;gt;(a,b) &amp;lt;&amp;lt; &amp;#34;\n&amp;#34;; }   </description>
+      <description>Basics Hello world 1 2 3 4 5 #include &amp;lt;iostream&amp;gt; int main(){ std::cout &amp;lt;&amp;lt; &amp;#34;Hello, world.&amp;#34; &amp;lt;&amp;lt; std::endl; } Templates Basic Template 1 2 3 4 5 6 7 8 9 10 11 12 13 #include &amp;lt;iostream&amp;gt; template&amp;lt;typename T&amp;gt; T add_em_up(T&amp;amp; lhs, T&amp;amp; rhs){ return lhs + rhs; } int main(){ int a{ 72 }; int b{ 47 }; std::cout &amp;lt;&amp;lt; add_em_up&amp;lt;int&amp;gt;(a,b) &amp;lt;&amp;lt; &amp;#34;\n&amp;#34;; } </description>
     </item>
-    
     <item>
       <title>Lang - Test</title>
       <link>https://kdbed.github.io/posts/lang_test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/lang_test/</guid>
-      <description>Language tests in org Rust extern crate primal; use primal::Sieve; fn num_divisors(n: usize, primes: &amp;amp;Sieve) -&amp;gt; Option&amp;lt;usize&amp;gt; { match primes.factor(n) { Ok(factors) =&amp;gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))), Err(_) =&amp;gt; None, } } fn main() { println!(&amp;quot;24 days of Rust - primal (day 2)&amp;quot;); let sieve = Sieve::new(10000); let suspect = 5273; println!(&amp;quot;{} is prime: {}&amp;quot;, suspect, sieve.is_prime(suspect)); let not_a_prime = 1024; println!(&amp;quot;{} is prime: {}&amp;quot;, not_a_prime, sieve.</description>
+      <description>Language tests in org Rust extern crate primal; use primal::Sieve; fn num_divisors(n: usize, primes: &amp;amp;Sieve) -&amp;gt; Option&amp;lt;usize&amp;gt; { match primes.factor(n) { Ok(factors) =&amp;gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))), Err(_) =&amp;gt; None, } } fn main() { println!(&amp;#34;24 days of Rust - primal (day 2)&amp;#34;); let sieve = Sieve::new(10000); let suspect = 5273; println!(&amp;#34;{} is prime: {}&amp;#34;, suspect, sieve.is_prime(suspect)); let not_a_prime = 1024; println!(&amp;#34;{} is prime: {}&amp;#34;, not_a_prime, sieve.</description>
     </item>
-    
   </channel>
 </rss>

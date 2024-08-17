@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>categoryTheory on Owlglass</title>
+    <title>CategoryTheory on Owlglass</title>
     <link>https://kdbed.github.io/tags/categorytheory/</link>
-    <description>Recent content in categoryTheory on Owlglass</description>
+    <description>Recent content in CategoryTheory on Owlglass</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/categorytheory/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://kdbed.github.io/tags/categorytheory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Generative Effects: Orders and Galois Connections</title>
       <link>https://kdbed.github.io/posts/generativeeffects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/generativeeffects/</guid>
-      <description>Introduction From An Invitation to Applied Category Theory - Seven Sketches in Compositionality &amp;ndash; Fong/Spivak
-A wide variety of situations exhibit something called compositionality &amp;ndash; wherein systems or relationships can be combined to form new systems or relationships. Category-theoretic constructs can be used to describe the compositionality in such situations. A structural approach to modeling with Category Theory : introduction.
-More Than the Sum of Their Parts </description>
+      <description>Introduction From An Invitation to Applied Category Theory - Seven Sketches in Compositionality &amp;ndash; Fong/Spivak&#xA;A wide variety of situations exhibit something called compositionality &amp;ndash; wherein systems or relationships can be combined to form new systems or relationships. Category-theoretic constructs can be used to describe the compositionality in such situations. A structural approach to modeling with Category Theory : introduction.&#xA;More Than the Sum of Their Parts </description>
     </item>
-    
   </channel>
 </rss>

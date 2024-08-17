@@ -1,30 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>org on Owlglass</title>
+    <title>Org on Owlglass</title>
     <link>https://kdbed.github.io/tags/org/</link>
-    <description>Recent content in org on Owlglass</description>
+    <description>Recent content in Org on Owlglass</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://kdbed.github.io/tags/org/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://kdbed.github.io/tags/org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Haskell Programming</title>
       <link>https://kdbed.github.io/posts/haskelltest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/haskelltest/</guid>
-      <description>Basics **
-Map import Control.Monad :{ map (\x -&amp;gt; x*x + x + 10) [1..10] :}                  12 16 22 30 40 52 66 82 100 120    Applications Derivatives -- | alias R to be a Double as an approximate of a real number type R = Double type Time = R type Position = R type Derivative = (R -&amp;gt; R) -&amp;gt; R -&amp;gt; R derivative :: R -&amp;gt; Derivative derivative dt x t = (x (t + dt/2) - x(t - dt/2)) / dt carPosition :: Time -&amp;gt; Position carPosition t = cos t carVelocity :: Time -&amp;gt; Velocity carVelocity = derivative 0.</description>
+      <description>Basics **&#xA;Map import Control.Monad :{ map (\x -&amp;gt; x*x + x + 10) [1..10] :} 12 16 22 30 40 52 66 82 100 120 Applications Derivatives -- | alias R to be a Double as an approximate of a real number type R = Double type Time = R type Position = R type Derivative = (R -&amp;gt; R) -&amp;gt; R -&amp;gt; R derivative :: R -&amp;gt; Derivative derivative dt x t = (x (t + dt/2) - x(t - dt/2)) / dt carPosition :: Time -&amp;gt; Position carPosition t = cos t carVelocity :: Time -&amp;gt; Velocity carVelocity = derivative 0.</description>
     </item>
-    
     <item>
       <title>Org Mode - Python/Jupyter Example</title>
       <link>https://kdbed.github.io/posts/orgpythonjupyter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kdbed.github.io/posts/orgpythonjupyter/</guid>
-      <description>Create a Session Initialize server with org-babel-exp-src-block. Afterwards, &amp;lsquo;Enter&amp;rsquo; in the sourceblock will execute.
-print(&amp;#39;hello, world!&amp;#39;) a = 10 Create a plot import matplotlib, numpy matplotlib.use(&amp;#39;Agg&amp;#39;) import matplotlib.pyplot as plt fig=plt.figure(figsize=(4,2)) x=numpy.linspace(-15,15) plt.plot(numpy.sin(x)/x) fig.tight_layout() plt.savefig(&amp;#39;python-matplot-fig.png&amp;#39;) return &amp;#39;python-matplot-fig.png&amp;#39; # return filename to org-mode Ocaml print_string &amp;#34;Hello world!\n&amp;#34; </description>
+      <description>Create a Session Initialize server with org-babel-exp-src-block. Afterwards, &amp;lsquo;Enter&amp;rsquo; in the sourceblock will execute.&#xA;print(&amp;#39;hello, world!&amp;#39;) a = 10 Create a plot import matplotlib, numpy matplotlib.use(&amp;#39;Agg&amp;#39;) import matplotlib.pyplot as plt fig=plt.figure(figsize=(4,2)) x=numpy.linspace(-15,15) plt.plot(numpy.sin(x)/x) fig.tight_layout() plt.savefig(&amp;#39;python-matplot-fig.png&amp;#39;) return &amp;#39;python-matplot-fig.png&amp;#39; # return filename to org-mode Ocaml print_string &amp;#34;Hello world!\n&amp;#34; </description>
     </item>
-    
   </channel>
 </rss>
