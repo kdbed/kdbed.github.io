@@ -102,6 +102,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/csharp/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/data_transfer/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/dll_hijacking/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/dns/</loc>
@@ -143,6 +145,8 @@
     <loc>https://kdbed.github.io/tags/example/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/examples/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/exfiltration/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/exploit/</loc>
   </url><url>
@@ -348,6 +352,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/politics/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/port_forwarding/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/powershell/</loc>
@@ -514,6 +520,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/unpacking/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/unredact_pixelized_text/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/von_neumann_architecture/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/web/</loc>
@@ -525,6 +533,8 @@
     <loc>https://kdbed.github.io/posts/web_pentest_enumeration/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/web_pentest_file_upload/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/web_pentest_fuzzing/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/web_pentest_spring/</loc>
   </url><url>

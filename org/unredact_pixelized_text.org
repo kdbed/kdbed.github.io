@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       daeea863-7116-44a6-b460-9bbeea00b55b
+:END:
+#+title: Unredact Pixelized Text
+#+hugo_base_dir:../
+
+
+* Unredact Pixelized Text
+** Unredactor
+- [[https://bishopfox.com/tools/unredacter][BishopFox]]
+** Depix
+Output the images from the pdf: =pdfimages <pdf> <out>=; then run depix:
+#+begin_src shell -n
+python3 depix.py \\
+    -p test-000.ppm \\
+    -s images/searchimages/debruinseq_notepad_Windows10_closeAndSpaced.png
+#+end_src
+- [[https://github.com/spipm/Depix][github]]
+- [[https://www.spipm.nl/2030.html][spipm]]

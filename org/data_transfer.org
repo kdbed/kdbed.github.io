@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       d9230c0c-29a1-49e8-bb7e-c0ccf1adfedf
+:END:
+#+title: Data Transfer
+#+filetags: :exfiltration:pentest:
+#+hugo_base_dir:../
+
+
+
+* Data Transfer
+** certutil

