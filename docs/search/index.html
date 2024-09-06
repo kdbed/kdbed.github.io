@@ -2802,7 +2802,7 @@ window.store = {
         
         "title": "Windows - Cached Credentials as SYSTEM",
         "tags": [],
-        "content": "Credentials cached as SYSTEM Cached Passwords - SYSTEM\nThere are passwords that can be stored in the SYSTEM context that can\u0026rsquo;t be seen in the normal Credential Manager view.\nDownload PsExec.exe from Technet and copy it to C:\\Windows\\System32.\nFrom a command prompt run: .\nFrom the new DOS window run:\nRemove any items that appear in the list of Stored User Names and Passwords. Restart the computer.\n", 
+        "content": "Credentials cached as SYSTEM Cached Passwords - SYSTEM\nThere are passwords that can be stored in the SYSTEM context that can\u0026rsquo;t be seen in the normal Credential Manager view.\nDownload PsExec.exe from Technet and copy it to C:\\Windows\\System32.\nFrom a command prompt run: psexec -i -s -d cmd.exe.\nFrom the new DOS window run: rundll32 keymgr.dll,KRShowKeyMgr\nRemove any items that appear in the list of Stored User Names and Passwords. Restart the computer.\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/windows_cached_credentials_as_system\/"
     },
     

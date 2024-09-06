@@ -1111,7 +1111,7 @@
       <link>https://kdbed.github.io/posts/windows_cached_credentials_as_system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/windows_cached_credentials_as_system/</guid>
-      <description>Credentials cached as SYSTEM Cached Passwords - SYSTEM&#xA;There are passwords that can be stored in the SYSTEM context that can&amp;rsquo;t be seen in the normal Credential Manager view.&#xA;Download PsExec.exe from Technet and copy it to C:\Windows\System32.&#xA;From a command prompt run: .&#xA;From the new DOS window run:&#xA;Remove any items that appear in the list of Stored User Names and Passwords. Restart the computer.</description>
+      <description>Credentials cached as SYSTEM Cached Passwords - SYSTEM&#xA;There are passwords that can be stored in the SYSTEM context that can&amp;rsquo;t be seen in the normal Credential Manager view.&#xA;Download PsExec.exe from Technet and copy it to C:\Windows\System32.&#xA;From a command prompt run: psexec -i -s -d cmd.exe.&#xA;From the new DOS window run: rundll32 keymgr.dll,KRShowKeyMgr&#xA;Remove any items that appear in the list of Stored User Names and Passwords. Restart the computer.</description>
     </item>
     <item>
       <title>X11 Authorization</title>

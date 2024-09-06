@@ -31,8 +31,8 @@
 <p>Cached Passwords - SYSTEM</p>
 <p>There are passwords that can be stored in the SYSTEM context that can&rsquo;t be seen in the normal Credential Manager view.</p>
 <p>Download <code>PsExec.exe</code> from Technet and copy it to <code>C:\Windows\System32</code>.</p>
-<p>From a command prompt run:    .</p>
-<p>From the new DOS window run:</p>
+<p>From a command prompt run:    <code>psexec -i -s -d cmd.exe</code>.</p>
+<p>From the new DOS window run:  <code>rundll32 keymgr.dll,KRShowKeyMgr</code></p>
 <p>Remove any items that appear in the list of Stored User Names and Passwords.  Restart the computer.</p>
 
       </div>
