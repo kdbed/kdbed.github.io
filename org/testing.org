@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       f50f6c3a-fa25-4557-9c32-04593d0bb070
+:END:
+#+title: Testing
+#+hugo_base_dir:../
+
+
+* test
