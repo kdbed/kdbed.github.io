@@ -5,6 +5,8 @@
 #+hugo_base_dir:../
 
 
+
+
 * Calculated Property in Select-Object
 The proper syntax for forming the hash table:
 #+begin_src sh -n
