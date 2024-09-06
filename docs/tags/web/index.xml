@@ -36,6 +36,13 @@
       <description>Fuzzing ffuf Capture a request in Burpsuite, then copy as a curl command; use ffuf to fuzz:&#xA;1 ffuf -w /usr/share/wordlists/seclists/Fuzzing/... -u &amp;lt;url&amp;gt; &amp;lt;curl request&amp;gt; </description>
     </item>
     <item>
+      <title>Web Pentest - JWT</title>
+      <link>https://kdbed.github.io/posts/pentest_jwt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/pentest_jwt/</guid>
+      <description>JWT Vulnerabilities jwt.io jwt_tool hacktricks - JWT Vulnerabilities </description>
+    </item>
+    <item>
       <title>Web Pentest - Tools</title>
       <link>https://kdbed.github.io/posts/web_pentest_tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

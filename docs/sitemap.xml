@@ -208,6 +208,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/jupyter/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/jwt/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/kali/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/kali_basics/</loc>
@@ -359,6 +361,8 @@
     <loc>https://kdbed.github.io/posts/powershell/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/powershell/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/powershell_add_a_calculated_property_in_select_object/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/powershell_check_windows_server_tls_settings/</loc>
   </url><url>
@@ -535,6 +539,8 @@
     <loc>https://kdbed.github.io/posts/web_pentest_file_upload/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/web_pentest_fuzzing/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_jwt/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/web_pentest_spring/</loc>
   </url><url>

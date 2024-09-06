@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       308e9aba-52bc-4738-8409-b469e31477eb
+:END:
+#+title: PowerShell - Add a calculated property in Select-Object
+#+hugo_base_dir:../
+
+
+* Calculated Property in Select-Object
+The proper syntax for forming the hash table:
+#+begin_src sh -n
+Get-Service | Select-Object -Property @{Name = 'Name'; Expression = {$_.Name}}
+#+end_src

