@@ -13,9 +13,9 @@ In classical physics, the state of a system is given by a point in a phase space
 
 Quantum mechanics has different foundations:
 
--   **States**: The state of a quantum mechanical system is given by a nonzero vector in a complex vector space \\[\mathcal{H}\\] with Hermitian inner product \\[\langle \cdot, \cdot \rangle \\]. The state space is linear; a linear combination of states is also a state.  The state space is a complex vector space.  Dirac notation for vectors in the state space reads as follows:
+-   **States**: The state of a quantum mechanical system is given by a nonzero vector in a complex vector space \\(\mathcal{H}\\) with Hermitian inner product \\(\langle \cdot, \cdot \rangle \\). The state space is linear; a linear combination of states is also a state.  The state space is a complex vector space.  Dirac notation for vectors in the state space reads as follows:
     \\[ |\psi\rangle \\]
--   **Observables**: The observables of a quantum mechanical system are given by self-adjoint linear operators on \\[\mathcal{H}\\].
+-   **Observables**: The observables of a quantum mechanical system are given by self-adjoint linear operators on \\(\mathcal{H}\\).
 
 
 ## Sources {#sources}
@@ -27,10 +27,3 @@ My preferred treatment of quantum mechanics is provided by Peter Woit's excellen
 Most of my notes are taken directly from the above.
 
 -
-
-
-## test {#test}
-
-{{< figure src="../static/images/asy.jpg" >}}
-
-{{< figure src="/images/asy.jpg.jpg" >}}
