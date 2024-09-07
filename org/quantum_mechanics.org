@@ -2,4 +2,55 @@
 :ID:       124af3ba-84c1-4140-895b-aad55cdbe965
 :END:
 #+title: Quantum Mechanics
+#+filetags: :physics:
 #+hugo_base_dir:../
+
+
+* Quantum Mechanics - Basic Principles
+In quantum mechanics the state of a system is represented by a vector in a complex vector space with Hermitian inner product - the state space. Observable quantities are self-adjoint linear operators on the state space.
+
+In classical physics, the state of a system is given by a point in a phase space, or equivalently as the space of solutions of an equation of motion. Observable quantities are functions (of coordinates and momenta) on this space. The Hamiltonian determines how states evolve in time through Hamilton’s equations.
+
+Quantum mechanics has different foundations:
+
+- *States*: The state of a quantum mechanical system is given by a nonzero vector in a complex vector space \[\mathcal{H}\] with Hermitian inner product \[\langle \cdot, \cdot \rangle \]. The state space is linear; a linear combination of states is also a state.  The state space is a complex vector space.  Dirac notation for vectors in the state space reads as follows:
+  $$ |\psi\rangle $$
+- *Observables*: The observables of a quantum mechanical system are given by self-adjoint linear operators on \[\mathcal{H}\].
+
+
+* Sources
+My preferred treatment of quantum mechanics is provided by Peter Woit's excellent text:
+- [[https://www.math.columbia.edu/~woit/QM/qmbook.pdf][Quantum Theory, Groups and Representations: An Introduction; Woit]]
+Most of my notes are taken directly from the above.
+-
+
+* test
+#+header: :var n=8
+#+begin_src asymptote :file ../static/images/asy.jpg
+import geometry;
+
+size(15cm,0);
+
+picture pic;
+// on définit une courbe reliant les points (0,1) et (1,0)
+path c=(0,1){dir(-5)}..{dir(-5)}(1,0);
+// à l'aide de trois rotations, on définit
+// le motif (dans un carré de 2 sur 2) ...
+path motif=buildcycle(c,rotate(90)*c,
+                      rotate(180)*c,rotate(-90)*c);
+filldraw(pic,motif,lightred+white,black);
+// ... et une double boucle pour "paver"
+// suivant (Ox) et suivant (Oy)
+for(int i=0; i<n; ++i)
+  {
+    for(int j=0; j<n; ++j)
+      {
+        add(shift(2*i,2*j)*pic);
+      }
+  }
+#+end_src
+
+#+RESULTS:
+[[file:../static/images/asy.jpg]]
+
+[[../static/images/asy.jpg.jpg]]

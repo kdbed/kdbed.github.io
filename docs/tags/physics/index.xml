@@ -8,6 +8,13 @@
     <language>en-us</language>
     <atom:link href="https://kdbed.github.io/tags/physics/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Quantum Mechanics</title>
+      <link>https://kdbed.github.io/posts/quantum_mechanics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/quantum_mechanics/</guid>
+      <description>Quantum Mechanics - Basic Principles In quantum mechanics the state of a system is represented by a vector in a complex vector space with Hermitian inner product - the state space. Observable quantities are self-adjoint linear operators on the state space.&#xA;In classical physics, the state of a system is given by a point in a phase space, or equivalently as the space of solutions of an equation of motion. Observable quantities are functions (of coordinates and momenta) on this space.</description>
+    </item>
+    <item>
       <title>Spacetime</title>
       <link>https://kdbed.github.io/posts/spacetime/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

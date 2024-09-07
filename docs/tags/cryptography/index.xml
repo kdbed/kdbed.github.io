@@ -22,6 +22,13 @@
       <description>The difference between hashing and encryption The difference betwen hashing and encryption determines how likely an exposed password can be abused after a breach. Hashing is such that it can&amp;rsquo;t be directly reversed (hash &amp;ndash;&amp;gt; plaintext), but the plaintext can be guessed by hashing a large number of candidates and comparing the results. Password hashing is one-way and deterministic. This means that sites that store hashes never actually keep the password, but re-hashing at logon provides a reliable point of comparison.</description>
     </item>
     <item>
+      <title>One-way functions</title>
+      <link>https://kdbed.github.io/posts/one_way_functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/one_way_functions/</guid>
+      <description>One-way functions X X^3 [X^3 mod 15] 0 0 0 1 1 1 2 8 8 3 27 12 4 64 4 5 125 5 6 216 6 7 343 13 8 512 2 9 729 9 10 1000 10 11 1331 11 12 1728 3 13 2197 7 14 2744 14 </description>
+    </item>
+    <item>
       <title>sha1Cracker</title>
       <link>https://kdbed.github.io/posts/sha1cracker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
