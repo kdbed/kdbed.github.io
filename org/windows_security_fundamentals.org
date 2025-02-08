@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       2fe6fc07-e5da-4e17-b320-b842998acbe3
+:END:
+#+title: Windows - Security Fundamentals
+#+filetags: :windows:pentest:
+#+hugo_base_dir:../
+
+
+* Windows Security
+** PowerShell
+- script execution policy - determines what types of scripts PowerShell can execute. For Windows clients running PowerShell 5.1, the default is Restricted, which blocks all scripts from running unless they are signed with a trusted certificate. Change the execution policy to RemoteSigned - this execution policy allows the user to run unsigned PowerShell scripts if they’re created locally but will not allow us to execute unsigned scripts downloaded in a web browser or attached to emails.
+ #+begin_src shell -n
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force
+#+end_src

@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       944ac629-420d-41c8-96c9-91d0ce61b711
+:END:
+#+title: File Manipulation
+#+filetags: :pentest:
+#+hugo_base_dir:../
+
+
+* exiftool
+Use ~exiftool~ to check a document's metadata:
+#+begin_src shell -n
+exiftool test.docx
+#+end_src

@@ -8,13 +8,14 @@
 
 * Create a Session
 Initialize server with org-babel-exp-src-block.  Afterwards, 'Enter' in the sourceblock will execute.
+
 #+begin_src python :session hello :results output
-print('hello, world!')
+print('hello, world')
 a = 10
 #+end_src
 
 #+RESULTS:
-: hello, world!
+: hello, world
 
 ** Create a plot
 #+begin_src python :results file link

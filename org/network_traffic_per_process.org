@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       e4af2f80-4daf-4182-9ca8-f5771eb2545b
+:END:
+#+title: Network Traffic per Process
+#+hugo_base_dir:../
+
+
+* Examine network traffic based on PID
+Use netsh trace:
+#+begin_src shell -n
+netsh trace start capture=yes traceFile=c:\tracefolder\traceName.etl
+...
+netsh trace stop
+#+end_src
+Then open the .etl file with NetMon

@@ -10,7 +10,7 @@ draft = false
 Initialize server with org-babel-exp-src-block.  Afterwards, 'Enter' in the sourceblock will execute.
 
 ```python
-print('hello, world!')
+print('hello, world')
 a = 10
 ```
 

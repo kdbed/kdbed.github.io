@@ -178,6 +178,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/tags\/algo\/": {
+        
+        "title": "Algo",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/algo\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/algorithms\/": {
         
         "title": "Algorithms",
@@ -768,6 +778,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/file_manipulation\/": {
+        
+        "title": "File Manipulation",
+        "tags": ["pentest",],
+        "content": "exiftool Use exiftool to check a document\u0026rsquo;s metadata:\n1 exiftool test.docx ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/file_manipulation\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/fileless_malware\/": {
         
         "title": "Fileless Malware",
@@ -794,6 +814,16 @@ window.store = {
         "tags": ["pentest","ftp","python",],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/ftp_retrieve_files_with_python\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/pentest_ftp\/": {
+        
+        "title": "FTP - retrieve files with Python",
+        "tags": ["pentest","ftp","python",],
+        "content": "FTP file download 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 #!/usr/bin/python3 # # script to login with ftp, print the directory contents # and retrieve the files # # example: python3 ftp_python.py 8.8.8.8 \u0026#39;user\u0026#39; \u0026#39;password\u0026#39; from ftplib import FTP import sys import os ip = str(sys.argv[1]) name = str(sys.argv[2]) pss = str(sys.argv[3]) print(\u0026#39;\\n\u0026#39;) print(\u0026#39;Connecting to \u0026#39;+ip+\u0026#39; through FTP\u0026#39;) print(\u0026#34;+++++++++++++++++++++++++++++++\u0026#34;) with FTP(sys.argv[1]) as ftp: ftp.login(user=name,passwd=pss) print(\u0026#34;The current directory is: \u0026#34;+ ftp.pwd()) ftp.dir() filenames = ftp.nlst() os.makedirs(\u0026#39;./downloads\u0026#39;) for filename in filenames: filedata = open(\u0026#39;./downloads/\u0026#39;+filename,\u0026#39;wb\u0026#39;) ftp.retrbinary(\u0026#39;RETR \u0026#39;+filename, filedata.write) ftp.close() wget 1 2 wget -m ftp://anonymous:anonymous@10.10.10.98 #Donwload all wget -m --no-passive ftp://anonymous:anonymous@10.10.10.98 #Download all ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_ftp\/"
     },
     
     
@@ -1028,6 +1058,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/inverse_square_potential_in_quantum_mechanics\/": {
+        
+        "title": "Inverse-Square Potential in Quantum Mechanics",
+        "tags": ["quantumMechanics",],
+        "content": "The inverse-square potential in quantum mechanics Intro The inverse-square potential in quantum mechanics is connected to phenomena like electron capture by neutral polar molecules, the Efimov effect in a system of three identical bosons, the transition between asymptotically-free and conformal phases in QCD-like theories as a function of the ratio of the number of quark flavors to colors, and the AdS/CFT correspondence. The attractive \\[ 1/x^2 \\] potential is interesting because it naturally calls upon the framework of the Renormalization Group. This approach will be seen to mirror the modern treatment of quantum effective field theories whereby one demans that long-distance observables remain insensitive to the adjustment of fine details at short distances.\nPure Inverse-Square Potential Consider the potential \\[ V(x) = \\begin{cases} \\infty \u0026amp; \\text{if } x \\leq 0 \\\\ \\frac{\\alpha}{x^2} \u0026amp; \\text{if } x \u0026gt; 0 \\end{cases} \\] for \\[ -1/4 \u0026lt; \\alpha \u0026lt; 0\\]. Work in units with \\[ \\hbar = 1\\] so energy is the reciprocal of time, \\[ \\hbar^2/2m = 1 \\] so that energy is also the reciprocal of length-squared. Thus time and length-squared have equivalent dimensions. \\[\\alpha\\] is dimensionless.\nRef Taken directly from: https://arxiv.org/pdf/1707.04388\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/inverse_square_potential_in_quantum_mechanics\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/ip_time_to_live_ttl\/": {
         
         "title": "IP Time to Live (TTL)",
@@ -1044,6 +1084,16 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/tags\/ipsec\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/junkification_of_american_life\/": {
+        
+        "title": "Junkification of American Life",
+        "tags": [],
+        "content": "The Junkification of American Life Post-entertainment society creative people want to create art (work that puts demands on people), but all the commercial pressures push them to create entertainment (which gives audiences what they want). As a result, for the past many years, entertainment (superhero movies) has been swallowing up art (literary novels and serious dramas). But now, Gioia observed, even the entertainment business is in crisis. Hollywood studios are laying off employees. The number of new scripted TV series is down. That’s because entertainment is being swallowed up by distraction (TikTok, Instagram). Gioia wrote: “The tech platforms aren’t like the Medici in Florence, or those other rich patrons of the arts. They don’t want to find the next Michelangelo or Mozart. They want to create a world of junkies — because they will be the dealers.” The culture of consumerism, of secularism, of hedonism has undermined those institutions and that important work. Source David Brooks - nytimes Ted Gioia - honest-broker\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/junkification_of_american_life\/"
     },
     
     
@@ -1298,6 +1348,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/network_traffic_per_process\/": {
+        
+        "title": "Network Traffic per Process",
+        "tags": [],
+        "content": "Examine network traffic based on PID Use netsh trace:\n1 2 3 netsh trace start capture=yes traceFile=c:\\tracefolder\\traceName.etl ... netsh trace stop Then open the .etl file with NetMon\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/network_traffic_per_process\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/nietzsche\/": {
         
         "title": "Nietzsche",
@@ -1432,7 +1492,7 @@ window.store = {
         
         "title": "Org Mode - Python\/Jupyter Example",
         "tags": ["example","jupyter","python","org-roam","org",],
-        "content": "Create a Session Initialize server with org-babel-exp-src-block. Afterwards, \u0026lsquo;Enter\u0026rsquo; in the sourceblock will execute.\nprint(\u0026#39;hello, world!\u0026#39;) a = 10 Create a plot import matplotlib, numpy matplotlib.use(\u0026#39;Agg\u0026#39;) import matplotlib.pyplot as plt fig=plt.figure(figsize=(4,2)) x=numpy.linspace(-15,15) plt.plot(numpy.sin(x)/x) fig.tight_layout() plt.savefig(\u0026#39;python-matplot-fig.png\u0026#39;) return \u0026#39;python-matplot-fig.png\u0026#39; # return filename to org-mode Ocaml print_string \u0026#34;Hello world!\\n\u0026#34; ", 
+        "content": "Create a Session Initialize server with org-babel-exp-src-block. Afterwards, \u0026lsquo;Enter\u0026rsquo; in the sourceblock will execute.\nprint(\u0026#39;hello, world\u0026#39;) a = 10 Create a plot import matplotlib, numpy matplotlib.use(\u0026#39;Agg\u0026#39;) import matplotlib.pyplot as plt fig=plt.figure(figsize=(4,2)) x=numpy.linspace(-15,15) plt.plot(numpy.sin(x)/x) fig.tight_layout() plt.savefig(\u0026#39;python-matplot-fig.png\u0026#39;) return \u0026#39;python-matplot-fig.png\u0026#39; # return filename to org-mode Ocaml print_string \u0026#34;Hello world!\\n\u0026#34; ", 
         "url": "https:\/\/kdbed.github.io\/posts\/orgpythonjupyter\/"
     },
     
@@ -1672,7 +1732,7 @@ window.store = {
         
         "title": "Pentest - SMB p 139,445",
         "tags": ["crackmapexec","smbmap","smb","pentest",],
-        "content": "HackTricks\nPort 139 NetBIOS NetBIOS is Network Basic Input Output System, which is a software protocol that allows applications, PCs, and Desktops on a local area network (LAN) to communicate with network hardware and to transmit data across the network.\nPort 445 SMB - Server Message Block While Port 139 is known technically as ‘NBT over IP’, Port 445 is ‘SMB over IP’. SMB stands for ‘Server Message Blocks’.\nSMB Server Message Block (SMB) is a client-server protocol that regulates access to files and entire directories and other network resources such as printers, routers, or interfaces released for the network.\nServer Enumeration Search for hosts:\n1 nbtscan -r 192.168.1.1/24 SMB information 1 2 3 4 5 6 7 enum4linux -a [-u \u0026#34;\u0026lt;username\u0026gt;\u0026#34; -p \u0026#34;\u0026lt;passwd\u0026gt;\u0026#34;] \u0026lt;IP\u0026gt; enum4linux-ng -A [-u \u0026#34;\u0026lt;username\u0026gt;\u0026#34; -p \u0026#34;\u0026lt;passwd\u0026gt;\u0026#34;] \u0026lt;IP\u0026gt; # connect to rpc rpcclient -U \u0026#34;\u0026#34; -N \u0026lt;IP\u0026gt; #No creds rpcclient //machine.htb -U domain.local/USERNAME%754d87d42adabcca32bdb34a876cbffb --pw-nt-hash rpcclient -U \u0026#34;username%passwd\u0026#34; \u0026lt;IP\u0026gt; #With creds smbclient //10.10.10.10/Public -U \u0026#39;anonymous\u0026#39; -N See also impacket: samrdump, rpcdump\nUsers, Groups 1 2 3 4 5 6 7 crackmapexec smb 10.10.10.10 --users [-u \u0026lt;username\u0026gt; -p \u0026lt;password\u0026gt;] crackmapexec smb 10.10.10.10 --groups [-u \u0026lt;username\u0026gt; -p \u0026lt;password\u0026gt;] crackmapexec smb 10.10.10.10 --groups --loggedon-users [-u \u0026lt;username\u0026gt; -p \u0026lt;password\u0026gt;] crackmapexec smb 10.10.10.10 -u usernames.txt -p ‘’ --continue-on-success ldapsearch -x -b \u0026#34;DC=DOMAIN_NAME,DC=LOCAL\u0026#34; -s sub \u0026#34;(\u0026amp;(objectclass=user))\u0026#34; -h 10.10.10.10 | grep -i samaccountname: | cut -f 2 -d \u0026#34; \u0026#34; Anonymous logon crackmapexec smb \u0026lt;host\u0026gt; -u \u0026#39;a\u0026#39; -p \u0026#39;\u0026#39; --shares List files crackmapexec smb \u0026lt;host\u0026gt; -u \u0026#39;a\u0026#39; -p \u0026#39;\u0026#39; -M spider_plus Download files crackmapexec smb \u0026lt;host\u0026gt; -u \u0026#39;a\u0026#39; -p \u0026#39;\u0026#39; -M spider_plus -o DOWNLOAD_FLAG=TRUE EXCLUDE_DIR=IPC$ IPC$ Share With an anonymous null session you can access the IPC$ share and interact with services exposed via named pipes. The enum4linux utility within Kali Linux is particularly useful; with it, you can obtain the following:\nOperating system information Details of the parent domain A list of local users and groups Details of available SMB shares The effective system security policy RID cycling with crackmapexec\n1 crackmapexec smb \u0026lt;ip\u0026gt; -u \u0026#39;a\u0026#39; -p \u0026#39;\u0026#39; -d \u0026lt;domain\u0026gt; --rid-brute |grep User then, eg, check for UF_DONT_REQUIRE_PREAUTH and AS-REP Roasting. Then attempt crackmapexec with smb and username password combinations. Passwords from list (eg rockyou), customized list, usernames as passwords (backwards and forwards, case change, etc).\nSMB Command Execution 1 impacket-smbexec administrator:\u0026#39;\u0026lt;password\u0026gt;\u0026#39;@machine.htb Dump sam hashes 1 crackmapexec smb \u0026lt;IP\u0026gt; -u \u0026lt;username\u0026gt; -p \u0026#34;PASSWORD\u0026#34; --sam wmiexec 1 impacket-wmiexec \u0026lt;user\u0026gt;@\u0026lt;ip\u0026gt; -hashes \u0026#34;\u0026lt;user hash\u0026gt;\u0026#34; ", 
+        "content": "HackTricks\nPort 139 NetBIOS NetBIOS is Network Basic Input Output System, which is a software protocol that allows applications, PCs, and Desktops on a local area network (LAN) to communicate with network hardware and to transmit data across the network.\nPort 445 SMB - Server Message Block While Port 139 is known technically as ‘NBT over IP’, Port 445 is ‘SMB over IP’. SMB stands for ‘Server Message Blocks’.\nSMB Server Message Block (SMB) is a client-server protocol that regulates access to files and entire directories and other network resources such as printers, routers, or interfaces released for the network.\nServer Enumeration Search for hosts:\n1 nbtscan -r 192.168.1.1/24 SMB information 1 2 3 4 5 6 7 enum4linux -a [-u \u0026#34;\u0026lt;username\u0026gt;\u0026#34; -p \u0026#34;\u0026lt;passwd\u0026gt;\u0026#34;] \u0026lt;IP\u0026gt; enum4linux-ng -A [-u \u0026#34;\u0026lt;username\u0026gt;\u0026#34; -p \u0026#34;\u0026lt;passwd\u0026gt;\u0026#34;] \u0026lt;IP\u0026gt; # connect to rpc rpcclient -U \u0026#34;\u0026#34; -N \u0026lt;IP\u0026gt; #No creds rpcclient //machine.htb -U domain.local/USERNAME%754d87d42adabcca32bdb34a876cbffb --pw-nt-hash rpcclient -U \u0026#34;username%passwd\u0026#34; \u0026lt;IP\u0026gt; #With creds smbclient //10.10.10.10/Public -U \u0026#39;anonymous\u0026#39; -N smbclient -L //dc01.coder.htb -U Guest See also impacket: samrdump, rpcdump\nUsers, Groups 1 2 3 4 5 6 7 crackmapexec smb 10.10.10.10 --users [-u \u0026lt;username\u0026gt; -p \u0026lt;password\u0026gt;] crackmapexec smb 10.10.10.10 --groups [-u \u0026lt;username\u0026gt; -p \u0026lt;password\u0026gt;] crackmapexec smb 10.10.10.10 --groups --loggedon-users [-u \u0026lt;username\u0026gt; -p \u0026lt;password\u0026gt;] crackmapexec smb 10.10.10.10 -u usernames.txt -p ‘’ --continue-on-success ldapsearch -x -b \u0026#34;DC=DOMAIN_NAME,DC=LOCAL\u0026#34; -s sub \u0026#34;(\u0026amp;(objectclass=user))\u0026#34; -h 10.10.10.10 | grep -i samaccountname: | cut -f 2 -d \u0026#34; \u0026#34; Anonymous logon crackmapexec smb \u0026lt;host\u0026gt; -u \u0026#39;a\u0026#39; -p \u0026#39;\u0026#39; --shares List files crackmapexec smb \u0026lt;host\u0026gt; -u \u0026#39;a\u0026#39; -p \u0026#39;\u0026#39; -M spider_plus Download files crackmapexec smb \u0026lt;host\u0026gt; -u \u0026#39;a\u0026#39; -p \u0026#39;\u0026#39; -M spider_plus -o DOWNLOAD_FLAG=TRUE EXCLUDE_DIR=IPC$ IPC$ Share With an anonymous null session you can access the IPC$ share and interact with services exposed via named pipes. The enum4linux utility within Kali Linux is particularly useful; with it, you can obtain the following:\nOperating system information Details of the parent domain A list of local users and groups Details of available SMB shares The effective system security policy RID cycling with crackmapexec\n1 crackmapexec smb \u0026lt;ip\u0026gt; -u \u0026#39;a\u0026#39; -p \u0026#39;\u0026#39; -d \u0026lt;domain\u0026gt; --rid-brute |grep User then, eg, check for UF_DONT_REQUIRE_PREAUTH and AS-REP Roasting. Then attempt crackmapexec with smb and username password combinations. Passwords from list (eg rockyou), customized list, usernames as passwords (backwards and forwards, case change, etc).\nSMB Command Execution 1 impacket-smbexec administrator:\u0026#39;\u0026lt;password\u0026gt;\u0026#39;@machine.htb Dump sam hashes 1 crackmapexec smb \u0026lt;IP\u0026gt; -u \u0026lt;username\u0026gt; -p \u0026#34;PASSWORD\u0026#34; --sam wmiexec 1 impacket-wmiexec \u0026lt;user\u0026gt;@\u0026lt;ip\u0026gt; -hashes \u0026#34;\u0026lt;user hash\u0026gt;\u0026#34; ", 
         "url": "https:\/\/kdbed.github.io\/posts\/pentest_smb_p_139_445\/"
     },
     
@@ -1948,6 +2008,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/powershell_monitor_memory\/": {
+        
+        "title": "PowerShell - Monitor Memory",
+        "tags": [],
+        "content": "Monitor memory with PowerShell 1 2 3 4 5 6 7 8 $totalRam = (Get-CimInstance Win32_PhysicalMemory | Measure-Object -Property capacity -Sum).Sum while($true) { $date = Get-Date -Format \u0026#34;yyyy-MM-dd HH:mm:ss\u0026#34; $cpuTime = (Get-Counter \u0026#39;\\Processor(_Total)\\% Processor Time\u0026#39;).CounterSamples.CookedValue $availMem = (Get-Counter \u0026#39;\\Memory\\Available MBytes\u0026#39;).CounterSamples.CookedValue $date + \u0026#39; \u0026gt; CPU: \u0026#39; + $cpuTime.ToString(\u0026#34;#,0.000\u0026#34;) + \u0026#39;%, Avail. Mem.: \u0026#39; + $availMem.ToString(\u0026#34;N0\u0026#34;) + \u0026#39;MB (\u0026#39; + (104857600 * $availMem / $totalRam).ToString(\u0026#34;#,0.0\u0026#34;) + \u0026#39;%)\u0026#39; Start-Sleep -s 2 } ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/powershell_monitor_memory\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/powershell_regex_string_between_two_strings\/": {
         
         "title": "PowerShell - Regex - string between two strings",
@@ -2088,6 +2158,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/python_data_structures_and_algorithms\/": {
+        
+        "title": "Python - Data Structures and Algorithms",
+        "tags": ["algo","python",],
+        "content": "Python - Data Structures and Algorithms ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/python_data_structures_and_algorithms\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/python_functional_programming\/": {
         
         "title": "Python - Functional Programming",
@@ -2128,6 +2208,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/tags\/quantumfieldtheory\/": {
+        
+        "title": "QuantumFieldTheory",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/quantumfieldtheory\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/quantummechanics\/": {
         
         "title": "QuantumMechanics",
@@ -2142,7 +2232,7 @@ window.store = {
         
         "title": "Quotes and Notes",
         "tags": [],
-        "content": "Quotes and Notes 1 - Marx You would be wrong if you thought that I love books. I am a machine condemned to devour them in order to vomit them up in a new form, like manure on the soil of history.\n— Marx in a letter to his daughter Laura, 1868\n2 \u0026ldquo;Meet these two here,\u0026rdquo; the man said. \u0026ldquo;Ask them if they\u0026rsquo;ve got a Mississippi credit card.\u0026rdquo;\n\u0026ldquo;Oh, I know that one,\u0026rdquo; Ruthie explaimed cheerfully. \u0026ldquo;That\u0026rsquo;s four feet of garden hose to siphon gas, am I right?\u0026rdquo; She looked at Willie slyly, then turned to Liberty and showed her teeth.\nBreaking and Entering , Joy Williams, p17 3 \u0026ldquo;Something is profoundly wrong with the way we live today. For thirty years we have made a virtue out of the pursuit of material self-interest: indeed, this very pursuit now constitutes whatever remains of our sense of collective purpose. We know what things cost but have no idea what they are worth. We no longer ask of a judicial ruling or a legislative act: is it good? Is it fair? Is it just? Is it right? Will it help bring about a better society or a better world? These used to be the political questions, even if they invited no easy answers. We must learn once again to pose them.\u0026rdquo;\n\u0026ldquo;Why do we experience such difficulty even imagining a different sort of society? Why is it beyond us to conceive of a different set of arrangements to our common advantage? Are we doomed indefinitely to lurch between a dysfunctional \u0026lsquo;free market\u0026rsquo; and the much-advertised horrors of \u0026lsquo;socialism\u0026rsquo;?\nOur disability is discursive: we simply do not know how to talk about these things any more. For the last thirty years, when asking ourselves whether we support a policy, a proposal or an initiative, we have restricted ourselves to issues of profit and loss\u0026ndash;economic questions in the narrowest sense. But this is not an instinctive condition: it is an acquired taste.\u0026rdquo;\nIll Fares the Land - Tony Judt 4 \u0026ldquo;To see what is in front of one\u0026rsquo;s nose needs a constant struggle.\u0026rdquo;\nGeorge Orwell 5 \u0026ldquo;He\u0026rsquo;s that lazy he won\u0026rsquo;t get up off the ground sometimes when he stumbles.\u0026rdquo; - Dude Lester of Jeeter, Tobacco Road, Caldwell\n\u0026ldquo;Them two dirty holes in her face don\u0026rsquo;t do a man no good to look at.\u0026rdquo; Jester of Bessie\n6 \u0026ldquo;Eppur si muove\u0026rdquo; \u0026ndash; and yet it moves; supposedly muttered by Galileo in 1633; can mean that although someone who possesses true knowledge is forced to renounce it, it does not stop it from being true. The story can illustrate the exact opposite: a deeper symbolic truth can be illustrated by something untrue (true designation of Galileo\u0026rsquo;s subjective position even though it\u0026rsquo;s likely false); reality of fiction (Zizek)\n7 The premise of discursive materialism is to conceive language itself as a mode of production and to apply to it Marx\u0026rsquo;s logic of commodity fetishism.\n8 In a Hegelian way, the problem (ie reporting trauma) is here part of the solution: the very deficiencies of the traumatized subject\u0026rsquo;s report on the facts bear witness to the truthfulness of his report, since they signal that the reported content has contaminated the very form in which it is reported. - Zizek\n9 Chesterton: \u0026ldquo;Tolerance is the virtue of the man without convictions.\u0026rdquo;\nPaul Claudel: \u0026ldquo;Mais la tolérance? Il y a des maisons pour ça!\u0026rdquo;\n10 ", 
+        "content": "Quotes and Notes 1 - Marx You would be wrong if you thought that I love books. I am a machine condemned to devour them in order to vomit them up in a new form, like manure on the soil of history.\n— Marx in a letter to his daughter Laura, 1868\n2 \u0026ldquo;Meet these two here,\u0026rdquo; the man said. \u0026ldquo;Ask them if they\u0026rsquo;ve got a Mississippi credit card.\u0026rdquo;\n\u0026ldquo;Oh, I know that one,\u0026rdquo; Ruthie explaimed cheerfully. \u0026ldquo;That\u0026rsquo;s four feet of garden hose to siphon gas, am I right?\u0026rdquo; She looked at Willie slyly, then turned to Liberty and showed her teeth.\nBreaking and Entering , Joy Williams, p17 3 \u0026ldquo;Something is profoundly wrong with the way we live today. For thirty years we have made a virtue out of the pursuit of material self-interest: indeed, this very pursuit now constitutes whatever remains of our sense of collective purpose. We know what things cost but have no idea what they are worth. We no longer ask of a judicial ruling or a legislative act: is it good? Is it fair? Is it just? Is it right? Will it help bring about a better society or a better world? These used to be the political questions, even if they invited no easy answers. We must learn once again to pose them.\u0026rdquo;\n\u0026ldquo;Why do we experience such difficulty even imagining a different sort of society? Why is it beyond us to conceive of a different set of arrangements to our common advantage? Are we doomed indefinitely to lurch between a dysfunctional \u0026lsquo;free market\u0026rsquo; and the much-advertised horrors of \u0026lsquo;socialism\u0026rsquo;?\nOur disability is discursive: we simply do not know how to talk about these things any more. For the last thirty years, when asking ourselves whether we support a policy, a proposal or an initiative, we have restricted ourselves to issues of profit and loss\u0026ndash;economic questions in the narrowest sense. But this is not an instinctive condition: it is an acquired taste.\u0026rdquo;\nIll Fares the Land - Tony Judt 4 \u0026ldquo;To see what is in front of one\u0026rsquo;s nose needs a constant struggle.\u0026rdquo;\nGeorge Orwell 5 \u0026ldquo;He\u0026rsquo;s that lazy he won\u0026rsquo;t get up off the ground sometimes when he stumbles.\u0026rdquo; - Dude Lester of Jeeter, Tobacco Road, Caldwell\n\u0026ldquo;Them two dirty holes in her face don\u0026rsquo;t do a man no good to look at.\u0026rdquo; Jester of Bessie\n6 \u0026ldquo;Eppur si muove\u0026rdquo; \u0026ndash; and yet it moves; supposedly muttered by Galileo in 1633; can mean that although someone who possesses true knowledge is forced to renounce it, it does not stop it from being true. The story can illustrate the exact opposite: a deeper symbolic truth can be illustrated by something untrue (true designation of Galileo\u0026rsquo;s subjective position even though it\u0026rsquo;s likely false); reality of fiction (Zizek)\n7 The premise of discursive materialism is to conceive language itself as a mode of production and to apply to it Marx\u0026rsquo;s logic of commodity fetishism.\n8 In a Hegelian way, the problem (ie reporting trauma) is here part of the solution: the very deficiencies of the traumatized subject\u0026rsquo;s report on the facts bear witness to the truthfulness of his report, since they signal that the reported content has contaminated the very form in which it is reported. - Zizek\n9 Chesterton: \u0026ldquo;Tolerance is the virtue of the man without convictions.\u0026rdquo;\nPaul Claudel: \u0026ldquo;Mais la tolérance? Il y a des maisons pour ça!\u0026rdquo;\n10 Plato in Statesman: divisions (of genus into species) should be made at the proper joints. Eg, it is a mistake to divide the genus of all human beings into Greeks and \u0026lsquo;barbarians\u0026rsquo; \u0026ndash; not a proper form becaause it does not designate a positively defined group (species), but merely all persons who are not Greek. The positivity of the term \u0026lsquo;barbarian\u0026rsquo; thus conceals the fact that it serves as the container for all those who do not fit the form \u0026lsquo;Greek\u0026rsquo;. Hegel\u0026rsquo;s (and Lacan\u0026rsquo;s) hypothesis is that this holds for all divisions of a genus into species: every genus, in order to be fully divided into species, has to include such a negative pseudo-species, a \u0026lsquo;part of no part\u0026rsquo; of the genus, all those who belong to the genus but are not covered by one of the species. This \u0026lsquo;contradiction\u0026rsquo; between a genus and its species, embodied in an excessive group whose consistency is purely negative, is what sets a dialectical process in motion.\n11 Trends inequality: postindustrial, information age in which semi-skilled workers are no longer in demand; consequent increase in value of women\u0026rsquo;s labor, dual income model in which peers are more likely to marry; thus affect marriage and divorce rates and family as \u0026lsquo;incubator\u0026rsquo;; increasing inequality of opportunity can lead to inequality of outcome\n12 One cannot really understand the scientific worldview unless one assumes that the intelligibility of the world, as described by the laws that science has uncovered, is itself part of the deepest explanation of why things are as they are. \u0026ndash; T.Nagel\n13 Gossip theory of cognitive revolution; able to gossip (maintain trust, etc) on 150 folks; more than that requires myth-making; relation between individual myth (eg Hero 1000 Faces) and societal myth (statemaking);\n14 The problem this raises, of course, is-how is this possible? How does one mix things that don\u0026rsquo;t appear to mix? What allows Marx to construct theories-for this is what I am claiming-that are at the same time scientific, critical, visionary, and revolutionary? For the tale of two cities presented above, this translates as-what allows Marx to discover communism inside capitalism, and how does what he finds constitute both a criticism of capitalism and the basis of a strategy to overturn it? At the core of every science is a search for relations, especially relations that are not immediately obvious, and in studying capitalism Marx uncovers relations between what is, what could be, what shouldn\u0026rsquo;t be, and what can be done about it all. He finds all this, first of all, because it is there, but what permits him to find it-while most students of capitalism only come up with the appearances (mislabeled as \u0026ldquo;facts\u0026rdquo;)-is his dialectical method. It is dialectics, and Marx\u0026rsquo;s dialectics in particular, that not only allows but requires him to knit together what most others consign to separate mental compartments. - Dance of the Dialectic, Ollman\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/quotes\/"
     },
     
@@ -2184,6 +2274,26 @@ window.store = {
         "tags": [],
         "content": "https://www.redhat.com/en/blog/hardening-elf-binaries-using-relocation-read-only-relro\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/relro\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/renormalization\/": {
+        
+        "title": "Renormalization",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/renormalization\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/renormalization_group\/": {
+        
+        "title": "Renormalization Group",
+        "tags": ["renormalization","quantumFieldTheory","quantumMechanics",],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/posts\/renormalization_group\/"
     },
     
     
@@ -2642,7 +2752,7 @@ window.store = {
         
         "title": "Trump - Policies and Actions",
         "tags": ["politics","trump",],
-        "content": "An analysis of the coherence \u0026ndash; or lack thereof \u0026ndash; of Trump\u0026rsquo;s policies and politics , along with general remarks on what he did while in office.\nChanges in American Policy Many Americans will remember President Donald Trump\u0026rsquo;s presidency as a four-yearlong storm of tweets, rallies and on-air rants that ended in a mob riot and historic second impeachment. But there was more to the Trump presidency than attention-hogging political drama and conflict; often unnoticed, Trump and his administration actually did succeed in changing some of the ways Washington works.\nObamacare \u0026ndash; accidentally bolstered Trump came into office vowing to repeal Obamacare and even took the law to court when that failed in Congress. But his most significant imprint on the Affordable Care Act was an accidental boost that happened when he stumbled into pouring billions of extra federal dollars into subsidizing Americans\u0026rsquo; coverage.\nHouse Republicans had tried for years to cut off subsidies that helped low-income Obamacare enrollees with the co-pays, co-insurance and deductibles that come with their health plans. In 2017, Trump finally did it through administrative means after the GOP effort to replace the law fell apart, and he immediately drew intense outcry from Democrats and policy experts who called the move sabotage.\nThe health exchanges didn\u0026rsquo;t collapse, as Trump had hoped. Instead, health plans and states quickly figured out a way to claw back the federal dollars they lost: they built the costs of the subsidies into premiums for Obamacare\u0026rsquo;s benchmark \u0026ldquo;silver\u0026rdquo; policies. This meant that premiums for these \u0026ldquo;silver\u0026rdquo; plans spiked and as a result, the premium subsidies the government had to pay for low-income enrollees vastly increased. The concept, known as \u0026ldquo;silver-loading,\u0026rdquo; (Brookings , Bloomberg) grew government subsidizing of the exchanges by upwards of $20 billion per year.\nWhile Trump\u0026rsquo;s moves made Obamacare plans increasingly unaffordable for the unsubsidized, Democrats quickly tamped down their criticisms since it accomplished their goal of significantly boosting funding for Obamacare. The incoming Biden administration isn\u0026rsquo;t likely to reverse course.\nStrategy \u0026ndash; refocused national security on great power competition Trump administration\u0026rsquo;s National Defense Strategy stands out as one of the most important defense policy shifts of the last generation, reorienting the American military to confront rising and increasingly aggressive powers Russia and China.\nThe move: The 2018 strategy rewired the Defense Department\u0026rsquo;s vast bureaucracy away from a focus on fighting insurgents and terrorists in the Middle East toward a long-term strategic competition with China and Russia. As a result, the military is changing how it trains personnel, which technologies it buys, and the geographic areas of the world where it prioritizes its forces.\nThe impact: Already it has led to a reordering of the Pentagon budget and new investments supported by a bipartisan majority in Congress, including billions of dollars to beef up the U.S. military presence in the Asia-Pacific.\nThe upshot: Despite differences in tone and rhetoric, this is a refocusing of the United States\u0026rsquo; military posture that is expected to continue in the Biden administration.\nCoronavirus \u0026ndash; no workplace guidance Arguably the most consequential decision Trump made involving American workers was something it chose not to do: It declined to implement a so-called \u0026rsquo;emergency temporary standard\u0026rsquo; when the coronavirus pandemic hit. Such a standard, issued when the Occupational Safety and Health Administration determines workers are in \u0026lsquo;grave danger,\u0026rsquo; would have established immediate and mandatory workplace safety rules employers must follow to protect employees from exposure.\nThe move: Despite pressure from Democrats, unions and worker advocates, OSHA refused to set rules for worker safety during the pandemic. Republicans defended the decision by saying the burden on companies struggling to stay afloat amid the recession would be too great. In the absence of a standard, employers have only had to comply with a mix of optional guidelines, able to pick and choose what precautions they take.\nThe impact: The agency\u0026rsquo;s backseat approach to workplace safety means Americans still face a dangerously unpredictable range of safety conditions when they show up to work. Though OSHA has cited some companies for coronavirus-related transgressions, many large corporations received meager fines even in cases where workers died from Covid-19. Democrats have attempted to include language mandating an emergency temporary standard in future rounds of pandemic aid, but their efforts have been unsuccessful.\nThe upshot: One of the first things a Biden administration will likely move to do is instruct OSHA to step up worker safety enforcement, including by enacting an emergency standard and ramping up penalties on violators. Biden\u0026rsquo;s campaign also pledged to double the number of OSHA investigators to enforce the law and existing standards.\nReferences From: Politico\n", 
+        "content": "An analysis of the coherence \u0026ndash; or lack thereof \u0026ndash; of Trump\u0026rsquo;s policies and politics , along with general remarks on what he did while in office.\nChanges in American Policy Many Americans will remember President Donald Trump\u0026rsquo;s presidency as a four-yearlong storm of tweets, rallies and on-air rants that ended in a mob riot and historic second impeachment. But there was more to the Trump presidency than attention-hogging political drama and conflict; often unnoticed, Trump and his administration actually did succeed in changing some of the ways Washington works.\nObamacare \u0026ndash; accidentally bolstered Trump came into office vowing to repeal Obamacare and even took the law to court when that failed in Congress. But his most significant imprint on the Affordable Care Act was an accidental boost that happened when he stumbled into pouring billions of extra federal dollars into subsidizing Americans\u0026rsquo; coverage.\nHouse Republicans had tried for years to cut off subsidies that helped low-income Obamacare enrollees with the co-pays, co-insurance and deductibles that come with their health plans. In 2017, Trump finally did it through administrative means after the GOP effort to replace the law fell apart, and he immediately drew intense outcry from Democrats and policy experts who called the move sabotage.\nThe health exchanges didn\u0026rsquo;t collapse, as Trump had hoped. Instead, health plans and states quickly figured out a way to claw back the federal dollars they lost: they built the costs of the subsidies into premiums for Obamacare\u0026rsquo;s benchmark \u0026ldquo;silver\u0026rdquo; policies. This meant that premiums for these \u0026ldquo;silver\u0026rdquo; plans spiked and as a result, the premium subsidies the government had to pay for low-income enrollees vastly increased. The concept, known as \u0026ldquo;silver-loading,\u0026rdquo; (Brookings , Bloomberg) grew government subsidizing of the exchanges by upwards of $20 billion per year.\nWhile Trump\u0026rsquo;s moves made Obamacare plans increasingly unaffordable for the unsubsidized, Democrats quickly tamped down their criticisms since it accomplished their goal of significantly boosting funding for Obamacare. The incoming Biden administration isn\u0026rsquo;t likely to reverse course.\nStrategy \u0026ndash; refocused national security on great power competition Trump administration\u0026rsquo;s National Defense Strategy stands out as one of the most important defense policy shifts of the last generation, reorienting the American military to confront rising and increasingly aggressive powers Russia and China.\nThe move: The 2018 strategy rewired the Defense Department\u0026rsquo;s vast bureaucracy away from a focus on fighting insurgents and terrorists in the Middle East toward a long-term strategic competition with China and Russia. As a result, the military is changing how it trains personnel, which technologies it buys, and the geographic areas of the world where it prioritizes its forces.\nThe impact: Already it has led to a reordering of the Pentagon budget and new investments supported by a bipartisan majority in Congress, including billions of dollars to beef up the U.S. military presence in the Asia-Pacific.\nThe upshot: Despite differences in tone and rhetoric, this is a refocusing of the United States\u0026rsquo; military posture that is expected to continue in the Biden administration.\nCoronavirus \u0026ndash; no workplace guidance Arguably the most consequential decision Trump made involving American workers was something it chose not to do: It declined to implement a so-called \u0026rsquo;emergency temporary standard\u0026rsquo; when the coronavirus pandemic hit. Such a standard, issued when the Occupational Safety and Health Administration determines workers are in \u0026lsquo;grave danger,\u0026rsquo; would have established immediate and mandatory workplace safety rules employers must follow to protect employees from exposure.\nThe move: Despite pressure from Democrats, unions and worker advocates, OSHA refused to set rules for worker safety during the pandemic. Republicans defended the decision by saying the burden on companies struggling to stay afloat amid the recession would be too great. In the absence of a standard, employers have only had to comply with a mix of optional guidelines, able to pick and choose what precautions they take.\nThe impact: The agency\u0026rsquo;s backseat approach to workplace safety means Americans still face a dangerously unpredictable range of safety conditions when they show up to work. Though OSHA has cited some companies for coronavirus-related transgressions, many large corporations received meager fines even in cases where workers died from Covid-19. Democrats have attempted to include language mandating an emergency temporary standard in future rounds of pandemic aid, but their efforts have been unsuccessful.\nThe upshot: One of the first things a Biden administration will likely move to do is instruct OSHA to step up worker safety enforcement, including by enacting an emergency standard and ramping up penalties on violators. Biden\u0026rsquo;s campaign also pledged to double the number of OSHA investigators to enforce the law and existing standards.\nWhy Not - 2024 the guardian promised mass deportations that will ruin lives and sunder families threatened to dismantle ACA and appoint anti-vac conspiracy theorist Robert F Kennedy Jr to a position of authority on public health; pledged vast cuts to social security and medicare; promised persecution of dissidents and violent suppression of political enemies his vulgarity, corruption, pettiness, narcissism and bigotry have been rewarded, at our expense; once again, the nation will be plunged into chaos as his vanity, greed, incompetence and anger take precedence over the national interest; once again, a violently and grossly misogynist man has been elevated to a position of superlative power over a flawed but competent, hardworking woman Does America deserve Trump? In the years since he rose to power, one theory posits that he is merely the manifestation of the nation’s unexorcised demons – a vestige of the racism that allowed this country to build its economy off the backs of the enslaved, of the casual relationship to violence that allowed it to build its territory and its global hegemony through violent conquest and coercion, of the grubby love of money and shameless disregard for principle that have always motivated our rapacious economy. In this version of the story, Trump is not merely a morbid symptom, but something like America’s comeuppance, a punishment for our sins. Living under his rule takes on the grim appropriateness of one of those ironic punishments in the underworlds of classical mythology, or in the hell of Dante’s Inferno. It is a feature of this horror that those who suffer most under his rule are usually those who are least culpable for these trespasses. Because we never really atoned – not for slavery, not for empire, not for the slaughter and dispossession of Indigenous Americans or the wars on and exploitation of foreign countries – this is what we now must endure: a figure who brings these cruelties home and who mocks our self-flattering delusion that we ever were, ever could have been, anything else. The Atlantic - Frum a country where millions of our fellow citizens voted for a president who knowingly promotes hatred and division; who lies—blatantly, shamelessly—every time he appears in public; who plotted to overturn an election in 2020 and, had he not won, was planning to try again in 2024. the atlantic - Throughout the campaign, Trump told voters that President Joe Biden, Vice President Kamala Harris, and undocumented immigrants were responsible for inflation, and that he would fix the problem. His proposals were often incoherent and nonsensical. For example, Trump promised to both whip inflation and also institute enormous tariffs, a combination nearly all economists agree is impossible. The mass deportation that Trump has promised would also likely drive up prices, rather than soothing the economy. But in a country where roughly three-quarters of Americans feel that things are on the wrong track, a pledge to fix things was potent. People feel that they don\u0026rsquo;t have a meaningful say in how they\u0026rsquo;re governed; people feel that the moral fabric of community has been unraveling; no sense of belonging, pride, solidarity (bowling alone); grievances of working people who feel elites look down on them; deepening inequality; for decades, neoliberal market-friendly globalization project leaving stagnant wages and outsourced jobs; if you\u0026rsquo;re struggling, your failure is your fault; reversal of dem + repub, where the dems used to be the party of the working people \u0026ndash; dems emphasized market+meritocratic triumphalism; widening inequality + stalled mobility; If Trump were elected and decided to make Project 2025 a reality, his administration would take an existing piece of bureaucratic infrastructure, strip it of many of those who can check its power, and then wield that power to ideological ends and against their political enemies. And that prospect alarms me as much as the idea of putting a man who uncontrollably blurts out vulgarities in charge of our nukes. - Paul Krugman References From: Politico\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/trump_policies_and_actions\/"
     },
     
@@ -2824,6 +2934,16 @@ window.store = {
         "tags": [],
         "content": "Credentials cached as SYSTEM Cached Passwords - SYSTEM\nThere are passwords that can be stored in the SYSTEM context that can\u0026rsquo;t be seen in the normal Credential Manager view.\nDownload PsExec.exe from Technet and copy it to C:\\Windows\\System32.\nFrom a command prompt run: psexec -i -s -d cmd.exe.\nFrom the new DOS window run: rundll32 keymgr.dll,KRShowKeyMgr\nRemove any items that appear in the list of Stored User Names and Passwords. Restart the computer.\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/windows_cached_credentials_as_system\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/windows_security_fundamentals\/": {
+        
+        "title": "Windows - Security Fundamentals",
+        "tags": ["windows","pentest",],
+        "content": "Windows Security PowerShell script execution policy - determines what types of scripts PowerShell can execute. For Windows clients running PowerShell 5.1, the default is Restricted, which blocks all scripts from running unless they are signed with a trusted certificate. Change the execution policy to RemoteSigned - this execution policy allows the user to run unsigned PowerShell scripts if they’re created locally but will not allow us to execute unsigned scripts downloaded in a web browser or attached to emails. 1 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/windows_security_fundamentals\/"
     },
     
     

@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       032176f2-e6da-4141-b88c-d99b667d87e0
+:END:
+#+title: PowerShell - Monitor Memory
+#+hugo_base_dir:../
+
+
+* Monitor memory with PowerShell
+#+begin_src shell -n
+$totalRam = (Get-CimInstance Win32_PhysicalMemory | Measure-Object -Property capacity -Sum).Sum
+while($true) {
+     $date = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $cpuTime = (Get-Counter '\Processor(_Total)\% Processor Time').CounterSamples.CookedValue
+     $availMem = (Get-Counter '\Memory\Available MBytes').CounterSamples.CookedValue
+     $date + ' > CPU: ' + $cpuTime.ToString("#,0.000") + '%, Avail. Mem.: ' + $availMem.ToString("N0") + 'MB (' + (104857600 * $availMem / $totalRam).ToString("#,0.0") + '%)'
+     Start-Sleep -s 2
+ }
+#+end_src

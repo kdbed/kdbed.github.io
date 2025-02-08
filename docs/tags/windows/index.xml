@@ -28,5 +28,12 @@
       <guid>https://kdbed.github.io/posts/pentest_windows_privilege_escalation/</guid>
       <description>From Service to SYSTEM Service Account Privileges Services can be run such that they don&amp;rsquo;t maintain the privs of NT AUTHORITY\LOCAL SERVICE account, eg with the -k LocalServiceAndNoImpersonation option.&#xA;The task scheduler can be used to restore default privs: FullPowers itm4n. After executing FullPowers:</description>
     </item>
+    <item>
+      <title>Windows - Security Fundamentals</title>
+      <link>https://kdbed.github.io/posts/windows_security_fundamentals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/windows_security_fundamentals/</guid>
+      <description>Windows Security PowerShell script execution policy - determines what types of scripts PowerShell can execute. For Windows clients running PowerShell 5.1, the default is Restricted, which blocks all scripts from running unless they are signed with a trusted certificate. Change the execution policy to RemoteSigned - this execution policy allows the user to run unsigned PowerShell scripts if they’re created locally but will not allow us to execute unsigned scripts downloaded in a web browser or attached to emails.</description>
+    </item>
   </channel>
 </rss>

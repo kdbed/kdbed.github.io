@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       8f2f3db9-b92a-4ea4-871b-c82c8abc617e
+:END:
+#+title: Renormalization Group
+#+filetags: :renormalization:quantumFieldTheory:quantumMechanics:
+#+hugo_base_dir:../

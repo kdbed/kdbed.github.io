@@ -14,5 +14,19 @@
       <guid>https://kdbed.github.io/posts/eikonal_approximation/</guid>
       <description>Eikonal Approximation in Quantum Mechanics Introduction and Background The root eikon comes from eikenai, a transliteration of the Greek \(\epsilon\iota\kappa\epsilon\nu\alpha\iota\) meaning &amp;rsquo;to resemble&amp;rsquo;. In Greek the word \(\epsilon\iota\kappa\omicron\nu\) means image &amp;ndash; compare &amp;lsquo;icon&amp;rsquo; in English. The image provided by the eikonal approximation in scattering has its origin in optics, wherein one assumes (ray optics) that the size of an obstacle is large compared to the wavelength of scattered light. When diffraction is involved, one moves from the eikonal approximation (back) to Maxwell&amp;rsquo;s Equations.</description>
     </item>
+    <item>
+      <title>Inverse-Square Potential in Quantum Mechanics</title>
+      <link>https://kdbed.github.io/posts/inverse_square_potential_in_quantum_mechanics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/inverse_square_potential_in_quantum_mechanics/</guid>
+      <description>The inverse-square potential in quantum mechanics Intro The inverse-square potential in quantum mechanics is connected to phenomena like electron capture by neutral polar molecules, the Efimov effect in a system of three identical bosons, the transition between asymptotically-free and conformal phases in QCD-like theories as a function of the ratio of the number of quark flavors to colors, and the AdS/CFT correspondence. The attractive \[ 1/x^2 \] potential is interesting because it naturally calls upon the framework of the Renormalization Group.</description>
+    </item>
+    <item>
+      <title>Renormalization Group</title>
+      <link>https://kdbed.github.io/posts/renormalization_group/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/renormalization_group/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

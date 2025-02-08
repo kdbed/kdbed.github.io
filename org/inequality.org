@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       d90da49e-3b4e-4c96-bd07-59b3631278ca
+:END:
+#+title: Inequality
+#+hugo_base_dir:../

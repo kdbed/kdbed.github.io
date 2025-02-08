@@ -15,11 +15,25 @@
       <description></description>
     </item>
     <item>
+      <title>FTP - retrieve files with Python</title>
+      <link>https://kdbed.github.io/posts/pentest_ftp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/pentest_ftp/</guid>
+      <description>FTP file download 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 #!/usr/bin/python3 # # script to login with ftp, print the directory contents # and retrieve the files # # example: python3 ftp_python.py 8.8.8.8 &amp;#39;user&amp;#39; &amp;#39;password&amp;#39; from ftplib import FTP import sys import os ip = str(sys.argv[1]) name = str(sys.</description>
+    </item>
+    <item>
       <title>Org Mode - Python/Jupyter Example</title>
       <link>https://kdbed.github.io/posts/orgpythonjupyter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/orgpythonjupyter/</guid>
-      <description>Create a Session Initialize server with org-babel-exp-src-block. Afterwards, &amp;lsquo;Enter&amp;rsquo; in the sourceblock will execute.&#xA;print(&amp;#39;hello, world!&amp;#39;) a = 10 Create a plot import matplotlib, numpy matplotlib.use(&amp;#39;Agg&amp;#39;) import matplotlib.pyplot as plt fig=plt.figure(figsize=(4,2)) x=numpy.linspace(-15,15) plt.plot(numpy.sin(x)/x) fig.tight_layout() plt.savefig(&amp;#39;python-matplot-fig.png&amp;#39;) return &amp;#39;python-matplot-fig.png&amp;#39; # return filename to org-mode Ocaml print_string &amp;#34;Hello world!\n&amp;#34; </description>
+      <description>Create a Session Initialize server with org-babel-exp-src-block. Afterwards, &amp;lsquo;Enter&amp;rsquo; in the sourceblock will execute.&#xA;print(&amp;#39;hello, world&amp;#39;) a = 10 Create a plot import matplotlib, numpy matplotlib.use(&amp;#39;Agg&amp;#39;) import matplotlib.pyplot as plt fig=plt.figure(figsize=(4,2)) x=numpy.linspace(-15,15) plt.plot(numpy.sin(x)/x) fig.tight_layout() plt.savefig(&amp;#39;python-matplot-fig.png&amp;#39;) return &amp;#39;python-matplot-fig.png&amp;#39; # return filename to org-mode Ocaml print_string &amp;#34;Hello world!\n&amp;#34; </description>
+    </item>
+    <item>
+      <title>Python - Data Structures and Algorithms</title>
+      <link>https://kdbed.github.io/posts/python_data_structures_and_algorithms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/python_data_structures_and_algorithms/</guid>
+      <description>Python - Data Structures and Algorithms </description>
     </item>
     <item>
       <title>Python - List Comprehensions</title>

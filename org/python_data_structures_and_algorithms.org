@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       18665364-4294-4bd7-9ddd-b413809656f0
+:END:
+#+title: Python - Data Structures and Algorithms
+#+filetags: :algo:python:
+#+hugo_base_dir:../
+
+
+* Python - Data Structures and Algorithms

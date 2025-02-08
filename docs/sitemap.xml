@@ -32,6 +32,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/algebraicgeometry/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/algo/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/algorithms/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/ansible_playbook_weaponization/</loc>
@@ -150,11 +152,15 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/exploit/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/file_manipulation/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/fileless_malware/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/ftp/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/ftp_retrieve_files_with_python/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_ftp/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/generativeeffects/</loc>
   </url><url>
@@ -202,9 +208,13 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/introduction/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/inverse_square_potential_in_quantum_mechanics/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/ip_time_to_live_ttl/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/ipsec/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/junkification_of_american_life/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/jupyter/</loc>
   </url><url>
@@ -255,6 +265,8 @@
     <loc>https://kdbed.github.io/posts/netbios/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/network/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/network_traffic_per_process/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/nietzsche/</loc>
   </url><url>
@@ -386,6 +398,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/powershell_log_function/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/powershell_monitor_memory/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/powershell_regex_string_between_two_strings/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/powershell_rust/</loc>
@@ -414,6 +428,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/python/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/python_data_structures_and_algorithms/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/python_functional_programming/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/python_list_comprehensions/</loc>
@@ -421,6 +437,8 @@
     <loc>https://kdbed.github.io/posts/python_visualize_active_directory_data/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/quantum_mechanics/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/quantumfieldtheory/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/quantummechanics/</loc>
   </url><url>
@@ -433,6 +451,10 @@
     <loc>https://kdbed.github.io/posts/recon_port_scanning_and_nmap/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/relro/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/renormalization/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/renormalization_group/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/reverse_shell_upgrade_tty/</loc>
   </url><url>
@@ -561,6 +583,8 @@
     <loc>https://kdbed.github.io/tags/windows/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/windows_cached_credentials_as_system/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/windows_security_fundamentals/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/windowsexploitation/</loc>
   </url><url>
