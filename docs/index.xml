@@ -618,6 +618,13 @@
       <description>Antivirus Evasion YARA Backdooring shellter</description>
     </item>
     <item>
+      <title>Pentest - Azure AD</title>
+      <link>https://kdbed.github.io/posts/azure_ad_backdoor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/azure_ad_backdoor/</guid>
+      <description>User Account Enumeration chronlund&#xA;Password Spray Attacks with PowerShell chronlund&#xA;Conditional Access as Code chronlund&#xA;Breach Response chronlund&#xA;PIM Roles - PowerShell chronlund&#xA;CAP - Priv Workstation for GA chronlund&#xA;Tenant Enum with B2B guest accounts chronlund&#xA;Mapping Tenant chronlund&#xA;Attack CAP chronlund&#xA;365 Data Exfil chronlund&#xA;Incident Response hunters&#xA;Protect Identities cloudcoffee&#xA;Risky User Report office365itpros&#xA;Create Backdoor in AAD aadinternals&#xA;AADInternals PowerShell module:&#xA;module&#xA;Tokens trustedsec&#xA;Token Tactics: github</description>
+    </item>
+    <item>
       <title>Pentest - Exploits</title>
       <link>https://kdbed.github.io/posts/pentest_exploits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1204,6 +1211,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/z3_basics/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Zero-knowledge proofs</title>
+      <link>https://kdbed.github.io/posts/zero_knowledge_proofs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/zero_knowledge_proofs/</guid>
+      <description>Zero-knowledge proofs Background A zero-knowledge proof (ZKP) is a method of proving the validity of a statement without revealing anything other than the validity of the statement itself. It is a proof system with a prover, a verifier, and a challenge that gives users the ability to publicly share a proof of knowledge or ownership without revealing the details of it.&#xA;First appeared in this Zero Knowledge paper by Shafi Goldwasser, Silvio Micali, and Charles Rackoff:</description>
     </item>
   </channel>
 </rss>

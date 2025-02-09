@@ -46,6 +46,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/auth/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/azure/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/binary/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/binary_analysis/</loc>
@@ -100,6 +102,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/crackmapexec/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/crypto/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/cryptography/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/csharp/</loc>
@@ -135,6 +139,8 @@
     <loc>https://kdbed.github.io/posts/endpoint_detection_and_response/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/endpointprotection/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/entra/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/enumeration/</loc>
   </url><url>
@@ -329,6 +335,8 @@
     <loc>https://kdbed.github.io/posts/pentest_active_information_gathering/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_antivirus_evasion/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/azure_ad_backdoor/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_exploits/</loc>
   </url><url>
@@ -597,5 +605,7 @@
     <loc>https://kdbed.github.io/tags/z3/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/z3_basics/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/zero_knowledge_proofs/</loc>
   </url>
 </urlset>

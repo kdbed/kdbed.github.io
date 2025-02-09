@@ -1,0 +1,71 @@
+:PROPERTIES:
+:ID:       123011d6-eb43-46eb-a1d7-e3d4d8c785af
+:END:
+#+title: Pentest - Azure AD
+#+filetags: :entra:azure:pentest:
+#+hugo_base_dir:../
+
+
+* User Account Enumeration
+[[https://danielchronlund.com/2020/03/13/automatic-azure-ad-user-account-enumeration-with-powershell-scary-stuff/][chronlund]]
+
+* Password Spray Attacks with PowerShell
+[[https://danielchronlund.com/2020/03/17/azure-ad-password-spray-attacks-with-powershell-and-how-to-defend-your-tenant/][chronlund]]
+
+* Conditional Access as Code
+[[https://danielchronlund.com/2020/11/25/how-to-manage-conditional-access-as-code-the-ultimate-guide/][chronlund]]
+
+* Breach Response
+[[https://danielchronlund.com/2021/03/29/my-azure-ad-has-been-breached-what-now/][chronlund]]
+
+* PIM Roles - PowerShell
+[[https://danielchronlund.com/2021/09/17/activate-your-azure-ad-pim-roles-with-powershell/][chronlund]]
+
+* CAP - Priv Workstation for GA
+[[https://danielchronlund.com/2021/11/02/require-privileged-workstation-for-admin-access-with-conditional-access/][chronlund]]
+
+* Tenant Enum with B2B guest accounts
+[[https://danielchronlund.com/2021/11/18/scary-azure-ad-tenant-enumeration-using-regular-b2b-guest-accounts/][chronlund]]
+
+* Mapping Tenant
+[[https://danielchronlund.com/2021/11/23/how-to-find-valuable-targets-in-an-azure-ad-tenant-by-mapping-the-entire-organisation/][chronlund]]
+
+* Attack CAP
+[[https://danielchronlund.com/2022/01/07/the-attackers-guide-to-azure-ad-conditional-access/][chronlund]]
+
+* 365 Data Exfil
+[[https://danielchronlund.com/2023/02/09/microsoft-365-data-exfiltration-attack-and-defend/][chronlund]]
+
+* Incident Response
+[[https://www.hunters.security/en/blog/human-friendly-guide-incident-response-microsoft-and-threat-hunting-azure-1][hunters]]
+
+* Protect Identities
+[[https://www.cloudcoffee.ch/microsoft-azure/microsoft-entra-id-protection-protect-identities-detect-risks-and-mitigate-threats/][cloudcoffee]]
+
+* Risky User Report
+[[https://office365itpros.com/2023/08/16/entra-id-risky-users/][office365itpros]]
+
+* Create Backdoor in AAD
+[[https://aadinternals.com/post/aadbackdoor/][aadinternals]]
+
+AADInternals PowerShell module:
+
+[[https://aadinternals.com/aadinternals/][module]]
+
+* Tokens
+
+[[https://trustedsec.com/blog/hacking-your-cloud-tokens-edition-2-0][trustedsec]]
+
+Token Tactics: [[https://github.com/f-bader/TokenTacticsV2][github]]
+
+* Skeleton Key
+[[https://www.varonis.com/blog/azure-skeleton-key][varonis]]
+
+* AD Connect
+[[https://www.sygnia.co/blog/guarding-the-bridge-new-attack-vectors-in-azure-ad-connect/][sygnia]]
+
+* Azure MFA Bypass
+[[https://www.oasis.security/resources/blog/oasis-security-research-team-discovers-microsoft-azure-mfa-bypass][oasis]]
+
+* DC Toolbox
+[[https://github.com/DanielChronlund/DCToolbox][Chronlund]]

@@ -1,0 +1,62 @@
++++
+title = "Zero-knowledge proofs"
+author = ["svejk"]
+tags = ["crypto"]
+draft = false
++++
+
+## Zero-knowledge proofs {#zero-knowledge-proofs}
+
+
+### Background {#background}
+
+A zero-knowledge proof (ZKP) is a method of proving the validity of a statement without revealing anything other than the validity of the statement itself. It is a proof system with a prover, a verifier, and a challenge that gives users the ability to publicly share a proof of knowledge or ownership without revealing the details of it.
+
+First appeared in this [Zero Knowledge](http://users.cms.caltech.edu/~vidick/teaching/101_crypto/GMR85_ZeroKnowledge.pdf) paper by Shafi Goldwasser, Silvio Micali, and Charles Rackoff:
+
+“A zero-knowledge protocol is a method by which one party (the prover) can prove to another party (the verifier) that something is true, without revealing any information apart from the fact that this specific statement is true.”
+
+Zero-knowledge proofs must satisfy three properties:
+
+-   Completeness: if the statement is true, an honest verifier will be convinced by an honest prover.
+-   Soundness: if the statement is false, no dishonest prover can convince the honest verifier. The proof systems are truthful and do not allow cheating.
+-   Zero-Knowledge: if the statement is true, no verifier learns anything other than the fact that the statement is true
+
+Interactive zero-knowledge proofs require the prover and verifier to engage in a back-and-forth dialogue in order to complete the proof. Non-interactive zero-knowledge proofs are those in which the prover sends a single message to the verifier, who is then able to check the validity of the proof without any further communication from the prover.
+
+
+### Simplest Analogy {#simplest-analogy}
+
+Where's Waldo? You know where Waldo is in an image but your friend doesn't. To prove you know the location without giving it away, you take a massive piece of paper to cover up the entire image, showing your friend the image of Waldo through a cutout. You can prove that you really know Waldo’s location, yet your friend will not gain knowledge of where Waldo is since the exact coordinates of Waldo relative to the image would still be unknown to him.
+
+
+### Locked Safe {#locked-safe}
+
+You meet someone you do not know, yet she claims to also be a member of the group you are part of. How can you know if you can trust her? Luckily, your group has a locked safe, and only the members of your group know the secret combination code to gain access to the safe. So write a secret message and place it in the locked safe.
+
+-   The verifier puts the secret code in a locked safe.
+-   The prover, who fulfills (grou-membership) requirements, knows the combination and opens the safe.
+-   Prover returns message to verifier
+-   Verifier trusts the prover based on proven knowledge of combination without revealing combination
+
+Basic mechanics of interactive zero-knowledge proof works.
+
+
+### Opaque pricing {#opaque-pricing}
+
+You and a competitor want to know if you're paying the same price for supplies without divulging the price.
+
+Assume there are only four possible prices.
+
+-   Place four lockable boxes in a private, secure room, where each box corresponds to a possible price.
+-   You go into the room alone.  You take the key to the box labelled by your price and destroy the keys to the other boxes. You leave the room
+-   Your competitor enters alone, puts a slip of paper with a check into the box corresponding to the price they're paying, and slips of paper with X's into the other boxes. They leave the room
+-   You return to the room and open the box with the key you kept. You find a slip of paper with an X and know you're not paying the same price as your competitor
+-   You show the slip of paper to your competitor.
+
+You've determined if the price paid is the same without revealing the price.
+
+
+### Source {#source}
+
+[circularise](https://www.circularise.com/blogs/zero-knowledge-proofs-explained-in-3-examples)
