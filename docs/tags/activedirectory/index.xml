@@ -22,13 +22,6 @@
       <description>lastLogon vs lastLogonTimestamp lastLogon The lastLogon attribute contains a Windows FileTime representation of the last time a domain controller successfully authenticated the user. It is the granddaddy of user logon metadata, having been around since the first version Active Directory.&#xA;Using the PowerShell command below, you can retrieve the last logon time and other user properties on a domain controller:&#xA;1 Get-ADUser -Filter * -Properties lastLogon | Select samaccountname,@{Name=&amp;#34;lastLogon&amp;#34;;Expression={[datetime]::FromFileTime($_.&amp;#39;lastLogon&amp;#39;)}} The LastLogon attribute is updated every time a domain controller successfully processes a logon request, but it is not a replicated attribute.</description>
     </item>
     <item>
-      <title>Bloodhound</title>
-      <link>https://kdbed.github.io/posts/bloodhound/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kdbed.github.io/posts/bloodhound/</guid>
-      <description>Bloodhound bloodhound-python bloodhound-python -u &amp;#39;&amp;lt;user&amp;gt;&amp;#39; -p &amp;#39;&amp;lt;pw&amp;gt;&amp;#39; --dns-tcp -ns &amp;lt;ip&amp;gt; -d &amp;lt;domain&amp;gt; -c all root@kali:~# bloodhound-python -h usage: bloodhound-python [-h] [-c COLLECTIONMETHOD] [-d DOMAIN] [-v] [-u USERNAME] [-p PASSWORD] [-k] [--hashes HASHES] [-no-pass] [-aesKey hex key] [--auth-method {auto,ntlm,kerberos}] [-ns NAMESERVER] [--dns-tcp] [--dns-timeout DNS_TIMEOUT] [-dc HOST] [-gc HOST] [-w WORKERS] [--exclude-dcs] [--disable-pooling] [--disable-autogc] [--zip] [--computerfile COMPUTERFILE] [--cachefile CACHEFILE] Python based ingestor for BloodHound For help or reporting issues, visit https://github.com/Fox-IT/BloodHound.py options: -h, --help show this help message and exit -c COLLECTIONMETHOD, --collectionmethod COLLECTIONMETHOD Which information to collect.</description>
-    </item>
-    <item>
       <title>NTLM Authentication</title>
       <link>https://kdbed.github.io/posts/ntlm_authentication/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -41,6 +34,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/pentest_active_directory/</guid>
       <description>Active Directory Enumeration Legacy Windows Tools Use net.exe to gather user information&#xA;1 net user /domain A more detailed view of specific users in the output above:&#xA;1 net user &amp;lt;username&amp;gt; /domain Enumerate groups:&#xA;1 net group /domain Specifying a group:&#xA;1 net group &amp;lt;groupname&amp;gt; /domain PowerShell and .NET When RSAT tools aren&amp;rsquo;t available, we can use an Active Directory Services Interface ADSI (a set of interfaces built on COM as an LDAP provider.</description>
+    </item>
+    <item>
+      <title>Pentest - Active Directory - BloodyAD</title>
+      <link>https://kdbed.github.io/posts/pentest_active_directory_bloodyad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/pentest_active_directory_bloodyad/</guid>
+      <description>BloodyAD Privilege Escalation&#xA;1 2 bloodyAD --host &amp;#34;$IP&amp;#34; -d &amp;#34;domain.htb&amp;#34; -u &amp;#34;&amp;lt;user&amp;gt;&amp;#34; -p &amp;#34;&amp;lt;password&amp;gt;&amp;#34; set owner &amp;lt;group&amp;gt; &amp;lt;user&amp;gt; bloodyAD --host &amp;#34;$IP&amp;#34; -d &amp;#34;domain.htb&amp;#34; -u &amp;#34;&amp;lt;user&amp;gt;&amp;#34; -p &amp;#34;&amp;lt;password&amp;gt;&amp;#34; add groupMember &amp;lt;group&amp;gt; &amp;lt;user&amp;gt; CravateRouge</description>
     </item>
     <item>
       <title>Pentest - Active Directory - Certificate Services</title>
@@ -62,6 +62,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/pentest_active_directory_skeleton_key/</guid>
       <description>hacktricks&#xA;netwrix</description>
+    </item>
+    <item>
+      <title>Pentest - BloodHound</title>
+      <link>https://kdbed.github.io/posts/bloodhound/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/bloodhound/</guid>
+      <description>BloodHound bloodhound-python bloodhound-python -u &amp;#39;&amp;lt;user&amp;gt;&amp;#39; -p &amp;#39;&amp;lt;pw&amp;gt;&amp;#39; --dns-tcp -ns &amp;lt;ip&amp;gt; -d &amp;lt;domain&amp;gt; -c all root@kali:~# bloodhound-python -h usage: bloodhound-python [-h] [-c COLLECTIONMETHOD] [-d DOMAIN] [-v] [-u USERNAME] [-p PASSWORD] [-k] [--hashes HASHES] [-no-pass] [-aesKey hex key] [--auth-method {auto,ntlm,kerberos}] [-ns NAMESERVER] [--dns-tcp] [--dns-timeout DNS_TIMEOUT] [-dc HOST] [-gc HOST] [-w WORKERS] [--exclude-dcs] [--disable-pooling] [--disable-autogc] [--zip] [--computerfile COMPUTERFILE] [--cachefile CACHEFILE] Python based ingestor for BloodHound For help or reporting issues, visit https://github.com/Fox-IT/BloodHound.py options: -h, --help show this help message and exit -c COLLECTIONMETHOD, --collectionmethod COLLECTIONMETHOD Which information to collect.</description>
     </item>
     <item>
       <title>PowerShell - Get Domain Controllers in Forest</title>

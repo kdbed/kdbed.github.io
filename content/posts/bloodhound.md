@@ -1,11 +1,11 @@
 +++
-title = "Bloodhound"
+title = "Pentest - BloodHound"
 author = ["svejk"]
 tags = ["activedirectory", "enumeration", "pentest", "bloodhound"]
 draft = false
 +++
 
-## Bloodhound {#bloodhound}
+## BloodHound {#bloodhound}
 
 
 ### bloodhound-python {#bloodhound-python}
@@ -84,4 +84,11 @@ collection options:
                         any computer based methods
   --cachefile CACHEFILE
                         Cache file (experimental)
+```
+
+
+### nxc {#nxc}
+
+```shell { linenos=true, linenostart=1 }
+nxc ldap dc01.domain.com -u <username> -p <password> --bloodhound --collection All --dns-tcp --dns-server 10.10.10.10
 ```

@@ -1,11 +1,11 @@
 :PROPERTIES:
 :ID:       4dd9058d-b858-42c9-bc50-01ff7ce8474d
 :END:
-#+title: Bloodhound
+#+title: Pentest - BloodHound
 #+filetags: :activedirectory:enumeration:pentest:bloodhound:
 #+hugo_base_dir:../
 
-* Bloodhound
+* BloodHound
 ** bloodhound-python
 #+begin_src sh
 bloodhound-python -u '<user>' -p '<pw>' --dns-tcp  -ns <ip> -d <domain> -c all
@@ -82,4 +82,8 @@ collection options:
                         any computer based methods
   --cachefile CACHEFILE
                         Cache file (experimental)
+#+end_src
+** nxc
+#+begin_src shell -n
+nxc ldap dc01.domain.com -u <username> -p <password> --bloodhound --collection All --dns-tcp --dns-server 10.10.10.10
 #+end_src

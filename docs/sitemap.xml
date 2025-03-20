@@ -56,8 +56,6 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/bloodhound/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/bloodhound/</loc>
-  </url><url>
     <loc>https://kdbed.github.io/tags/browser/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/c_programming/</loc>
@@ -264,6 +262,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/master_boot_record_mbr/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/math/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/maxwell_s_equations/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/mimikatz/</loc>
@@ -320,9 +320,13 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/passwordattack/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/peano_axioms/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/pentest/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_active_directory/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_active_directory_bloodyad/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/active_directory_certificate_services_pentest/</loc>
   </url><url>
@@ -338,9 +342,13 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/azure_ad_backdoor/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/bloodhound/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/pentest_exploits/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_generatingwordlists/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_git/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_grpc_port_50051/</loc>
   </url><url>

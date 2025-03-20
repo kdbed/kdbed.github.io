@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       6f7cae1e-9bc3-415a-9ba7-85e431f4da5a
+:END:
+#+title: Peano Axioms
+#+filetags: :math:numberTheory:
+#+hugo_base_dir:../
+
+
+* Peano Axioms
+- ~Peano Axiom 1~: 1 is a natural number.
+- ~Peano Axiom 2~: Every natural number =n= has a unique successor =S(n)=, which is also a natural number.
+- ~Peano Axiom 3~: 1 is not the successor of any natural number.
+- ~Peano Axiom 4~: If =m= and =n= are natural numbers and $m \neq n$, then $S(m)\neq S(n)$.

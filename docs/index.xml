@@ -93,13 +93,6 @@
       <description>Birthday Attack The birthday attack is named after the birthday paradox. The name is based on fact that in a room with 23 people or more, the odds are greater than 50% that two will share the same birthday. Many find this counterintuitive, and the birthday paradox illustrates why many people’s instinct on probability (and risk) is wrong. You are not trying to match a specific birthday (such as yours); you are trying to match any birthday.</description>
     </item>
     <item>
-      <title>Bloodhound</title>
-      <link>https://kdbed.github.io/posts/bloodhound/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kdbed.github.io/posts/bloodhound/</guid>
-      <description>Bloodhound bloodhound-python bloodhound-python -u &amp;#39;&amp;lt;user&amp;gt;&amp;#39; -p &amp;#39;&amp;lt;pw&amp;gt;&amp;#39; --dns-tcp -ns &amp;lt;ip&amp;gt; -d &amp;lt;domain&amp;gt; -c all root@kali:~# bloodhound-python -h usage: bloodhound-python [-h] [-c COLLECTIONMETHOD] [-d DOMAIN] [-v] [-u USERNAME] [-p PASSWORD] [-k] [--hashes HASHES] [-no-pass] [-aesKey hex key] [--auth-method {auto,ntlm,kerberos}] [-ns NAMESERVER] [--dns-tcp] [--dns-timeout DNS_TIMEOUT] [-dc HOST] [-gc HOST] [-w WORKERS] [--exclude-dcs] [--disable-pooling] [--disable-autogc] [--zip] [--computerfile COMPUTERFILE] [--cachefile CACHEFILE] Python based ingestor for BloodHound For help or reporting issues, visit https://github.com/Fox-IT/BloodHound.py options: -h, --help show this help message and exit -c COLLECTIONMETHOD, --collectionmethod COLLECTIONMETHOD Which information to collect.</description>
-    </item>
-    <item>
       <title>C Programming</title>
       <link>https://kdbed.github.io/posts/c_programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -569,11 +562,25 @@
       <description>Pass the Ticket </description>
     </item>
     <item>
+      <title>Peano Axioms</title>
+      <link>https://kdbed.github.io/posts/peano_axioms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/peano_axioms/</guid>
+      <description>Peano Axioms Peano Axiom 1: 1 is a natural number. Peano Axiom 2: Every natural number n has a unique successor S(n), which is also a natural number. Peano Axiom 3: 1 is not the successor of any natural number. Peano Axiom 4: If m and n are natural numbers and \(m \neq n\), then \(S(m)\neq S(n)\). </description>
+    </item>
+    <item>
       <title>Pentest - Active Directory</title>
       <link>https://kdbed.github.io/posts/pentest_active_directory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/pentest_active_directory/</guid>
       <description>Active Directory Enumeration Legacy Windows Tools Use net.exe to gather user information&#xA;1 net user /domain A more detailed view of specific users in the output above:&#xA;1 net user &amp;lt;username&amp;gt; /domain Enumerate groups:&#xA;1 net group /domain Specifying a group:&#xA;1 net group &amp;lt;groupname&amp;gt; /domain PowerShell and .NET When RSAT tools aren&amp;rsquo;t available, we can use an Active Directory Services Interface ADSI (a set of interfaces built on COM as an LDAP provider.</description>
+    </item>
+    <item>
+      <title>Pentest - Active Directory - BloodyAD</title>
+      <link>https://kdbed.github.io/posts/pentest_active_directory_bloodyad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/pentest_active_directory_bloodyad/</guid>
+      <description>BloodyAD Privilege Escalation&#xA;1 2 bloodyAD --host &amp;#34;$IP&amp;#34; -d &amp;#34;domain.htb&amp;#34; -u &amp;#34;&amp;lt;user&amp;gt;&amp;#34; -p &amp;#34;&amp;lt;password&amp;gt;&amp;#34; set owner &amp;lt;group&amp;gt; &amp;lt;user&amp;gt; bloodyAD --host &amp;#34;$IP&amp;#34; -d &amp;#34;domain.htb&amp;#34; -u &amp;#34;&amp;lt;user&amp;gt;&amp;#34; -p &amp;#34;&amp;lt;password&amp;gt;&amp;#34; add groupMember &amp;lt;group&amp;gt; &amp;lt;user&amp;gt; CravateRouge</description>
     </item>
     <item>
       <title>Pentest - Active Directory - Certificate Services</title>
@@ -625,6 +632,13 @@
       <description>User Account Enumeration chronlund&#xA;Password Spray Attacks with PowerShell chronlund&#xA;Conditional Access as Code chronlund&#xA;Breach Response chronlund&#xA;PIM Roles - PowerShell chronlund&#xA;CAP - Priv Workstation for GA chronlund&#xA;Tenant Enum with B2B guest accounts chronlund&#xA;Mapping Tenant chronlund&#xA;Attack CAP chronlund&#xA;365 Data Exfil chronlund&#xA;Incident Response hunters&#xA;Protect Identities cloudcoffee&#xA;Risky User Report office365itpros&#xA;Create Backdoor in AAD aadinternals&#xA;AADInternals PowerShell module:&#xA;module&#xA;Tokens trustedsec&#xA;Token Tactics: github</description>
     </item>
     <item>
+      <title>Pentest - BloodHound</title>
+      <link>https://kdbed.github.io/posts/bloodhound/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/bloodhound/</guid>
+      <description>BloodHound bloodhound-python bloodhound-python -u &amp;#39;&amp;lt;user&amp;gt;&amp;#39; -p &amp;#39;&amp;lt;pw&amp;gt;&amp;#39; --dns-tcp -ns &amp;lt;ip&amp;gt; -d &amp;lt;domain&amp;gt; -c all root@kali:~# bloodhound-python -h usage: bloodhound-python [-h] [-c COLLECTIONMETHOD] [-d DOMAIN] [-v] [-u USERNAME] [-p PASSWORD] [-k] [--hashes HASHES] [-no-pass] [-aesKey hex key] [--auth-method {auto,ntlm,kerberos}] [-ns NAMESERVER] [--dns-tcp] [--dns-timeout DNS_TIMEOUT] [-dc HOST] [-gc HOST] [-w WORKERS] [--exclude-dcs] [--disable-pooling] [--disable-autogc] [--zip] [--computerfile COMPUTERFILE] [--cachefile CACHEFILE] Python based ingestor for BloodHound For help or reporting issues, visit https://github.com/Fox-IT/BloodHound.py options: -h, --help show this help message and exit -c COLLECTIONMETHOD, --collectionmethod COLLECTIONMETHOD Which information to collect.</description>
+    </item>
+    <item>
       <title>Pentest - Exploits</title>
       <link>https://kdbed.github.io/posts/pentest_exploits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -637,6 +651,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/pentest_generatingwordlists/</guid>
       <description>Generating Wordlists Username anarchy http://morningstarsecurity.com/research/username-anarchy https://github.com/urbanadventurer/username-anarchy/</description>
+    </item>
+    <item>
+      <title>Pentest - Git</title>
+      <link>https://kdbed.github.io/posts/pentest_git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/pentest_git/</guid>
+      <description>Git and Exposed Secrets Git repository on the web GitTools gitdumper : Usage - &amp;ldquo;bash gitdumper.sh http://target.tld/.git/ dest-dir [&amp;ndash;git-dir=otherdir]&amp;rdquo; extractor : in case downloaded repo is incomplete - $ ./extractor.sh /tmp/mygitrepo /tmp/mygitrepodump </description>
     </item>
     <item>
       <title>Pentest - gRPC Port 50051</title>
