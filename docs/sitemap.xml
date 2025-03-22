@@ -330,11 +330,17 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/active_directory_certificate_services_pentest/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_active_directory_dacl/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/pentest_active_directory_dcsync/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_active_directory_shadow_credentials/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_active_directory_sid_history_injection/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_active_directory_skeleton_key/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_active_directory_uac_bypass/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_active_information_gathering/</loc>
   </url><url>
