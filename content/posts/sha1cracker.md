@@ -1,5 +1,5 @@
 +++
-title = "sha1Cracker"
+title = "Rust - SHA1 Cracker"
 author = ["svejk"]
 tags = ["pentest", "crack", "password", "rust", "cryptography"]
 draft = false

