@@ -92,6 +92,13 @@
       <description>Birthday Attack The birthday attack is named after the birthday paradox. The name is based on fact that in a room with 23 people or more, the odds are greater than 50% that two will share the same birthday. Many find this counterintuitive, and the birthday paradox illustrates why many people’s instinct on probability (and risk) is wrong. You are not trying to match a specific birthday (such as yours); you are trying to match any birthday.</description>
     </item>
     <item>
+      <title>Breadth-first Search</title>
+      <link>https://kdbed.github.io/posts/breadth_first_search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/breadth_first_search/</guid>
+      <description>Breadth-first Search Algorithm The Breadth-First Search (BFS) algorithm is used to traverse or search a graph or tree data structure. It explores all the nodes at the current depth level before moving on to the nodes at the next depth level. BFS is often used to find the shortest path between two nodes in an unweighted graph.&#xA;import ast def convert_input_to_grid(input_string): # Use ast.literal_eval to safely evaluate the string into a list of lists grid = ast.</description>
+    </item>
+    <item>
       <title>C Programming</title>
       <link>https://kdbed.github.io/posts/c_programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

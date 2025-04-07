@@ -1,0 +1,83 @@
++++
+title = "Breadth-first Search"
+author = ["svejk"]
+tags = ["algorithms"]
+draft = false
++++
+
+## Breadth-first Search Algorithm {#breadth-first-search-algorithm}
+
+The Breadth-First Search (BFS) algorithm is used to traverse or search a graph or tree data structure. It explores all the nodes at the current depth level before moving on to the nodes at the next depth level. BFS is often used to find the shortest path between two nodes in an unweighted graph.
+
+```python
+import ast
+
+def convert_input_to_grid(input_string):
+    # Use ast.literal_eval to safely evaluate the string into a list of lists
+    grid = ast.literal_eval(input_string)
+    return grid
+
+# Example input string
+input_string = "[[0, 1, 1, 1, 0], [0, 0, 0, 1, 0], [0, 0, 1, 1, 1], [0, 0, 0, 0, 1], [0, 0, 0, 0, 0], [1, 1, 0, 1, 'E']]"
+
+# Convert the input string to grid
+
+grid = convert_input_to_grid(input_string)
+
+# Print the grid to verify
+for row in grid:
+    print(row)
+from collections import deque
+
+# Function to check if a cell is within bounds and walkable
+def is_valid_move(x, y, grid, visited):
+    rows, cols = len(grid), len(grid[0])
+    return 0 <= x < rows and 0 <= y < cols and grid[x][y] != 1 and not visited[x][y]
+
+# BFS function to find the shortest path
+def shortest_path_to_end(grid):
+    # Find the starting point (the first 0)
+    start_x, start_y = None, None
+    for i in range(len(grid)):
+        for j in range(len(grid[0])):
+            if grid[i][j] == 0:
+                start_x, start_y = i, j
+                break
+        if start_x is not None:
+            break
+
+    # Directions for up, down, left, right
+    directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+
+    # Initialize BFS queue
+    queue = deque([(start_x, start_y, 0)])  # (x, y, distance)
+
+    # Initialize visited grid
+    visited = [[False for _ in range(len(grid[0]))] for _ in range(len(grid))]
+    visited[start_x][start_y] = True
+
+    # BFS Loop
+    while queue:
+        x, y, dist = queue.popleft()
+
+        # If we reach 'E', return the distance
+        if grid[x][y] == 'E':
+            return dist
+
+        # Explore all possible directions (up, down, left, right)
+        for dx, dy in directions:
+            nx, ny = x + dx, y + dy
+
+            if is_valid_move(nx, ny, grid, visited):
+                visited[nx][ny] = True
+                queue.append((nx, ny, dist + 1))
+
+    # If 'E' is not reachable, return -1
+    return -1
+
+# Test the function with your given grid
+
+
+result = shortest_path_to_end(grid)
+print("Shortest path to 'E':", result)
+```
