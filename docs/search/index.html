@@ -168,6 +168,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/tags\/ai\/": {
+        
+        "title": "AI",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/ai\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/algebraicgeometry\/": {
         
         "title": "AlgebraicGeometry",
@@ -424,6 +434,16 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/tags\/cmdlet\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/collatz_conjecture\/": {
+        
+        "title": "Collatz conjecture",
+        "tags": [],
+        "content": "Collatz conjecture The Collatz conjecture[a] is one of the most famous unsolved problems in mathematics. The conjecture asks whether repeating two simple arithmetic operations will eventually transform every positive integer into 1. It concerns sequences of integers in which each term is obtained from the previous term as follows: if a term is even, the next term is one half of it. If a term is odd, the next term is 3 times the previous term plus 1. The conjecture is that these sequences always reach 1, no matter which positive integer is chosen to start the sequence. The conjecture has been shown to hold for all positive integers up to 2.95×10^20, but no general proof has been found.\nIn modular arithmetic notation, define the function f as follows:\n\\[ f(n) = \\begin{cases} \\dfrac{n}{2} \u0026amp; \\text{if } n \\equiv 0 \\pmod{2}, \\\\ 3n + 1 \u0026amp; \\text{if } n \\equiv 1 \\pmod{2}. \\end{cases} \\]\nNow form a sequence by performing this operation repeatedly, beginning with any positive integer, and taking the result at each step as the input at the next.\nIn notation:\n\\[ a_i = \\begin{cases} n \u0026amp; \\text{for } i = 0, \\\\ f(a_{i-1}) \u0026amp; \\text{for } i \u0026gt; 0. \\end{cases} \\]\nThe Collatz conjecture is: This process will eventually reach the number 1, regardless of which positive integer is chosen initially.\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/collatz_conjecture\/"
     },
     
     
@@ -1378,6 +1398,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/tags\/ml\/": {
+        
+        "title": "ML",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/ml\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/netbios\/": {
         
         "title": "NetBIOS",
@@ -1404,6 +1434,16 @@ window.store = {
         "tags": [],
         "content": "Examine network traffic based on PID Use netsh trace:\n1 2 3 netsh trace start capture=yes traceFile=c:\\tracefolder\\traceName.etl ... netsh trace stop Then open the .etl file with NetMon\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/network_traffic_per_process\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/neural_networks\/": {
+        
+        "title": "Neural Networks",
+        "tags": ["AI","ML",],
+        "content": "Neural Networks 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 #include \u0026lt;stdlib.h\u0026gt; #include \u0026lt;stdio.h\u0026gt; #include \u0026lt;math.h\u0026gt; // Simple nn that can learn XOR double sigmoid(double x) {return 1 / (1 + exp(-x)); } double dSigmoid(double x) {return x * (1-x); } double init_weights(){return ((double)rand()) / ((double)RAND_MAX); } void shuffle(int *array, size_t n){ if (n \u0026gt; 1){ size_t i; for (i = 0; i \u0026lt; n -1; i++){ size_t j = i + rand() / (RAND_MAX / (n - i) + 1); int t = array[j]; array[j] = array[i]; array[i] = t; } } } #define numInputs 2 #define numHiddenNodes 2 #define numOutputs 1 #define numTrainingSets 4 int main(void){ const double lr = 0.1f; double hiddenLayer[numHiddenNodes]; double outputLayer[numOutputs]; double hiddenLayerBias[numHiddenNodes]; double outputLayerBias[numOutputs]; double hiddenWeights[numInputs][numHiddenNodes]; double outputWeights[numHiddenNodes][numOutputs]; double training_inputs[numTrainingSets][numInputs] = {{0.0f,0.0f},{1.0f,0.0f},{0.0f,1.0f},{1.0f},{1.0f}}; double training_outputs[numTrainingSets][numOutputs] = {{0.0f},{1.0f},{1.0f},{0.0f}}; } ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/neural_networks\/"
     },
     
     
@@ -1894,6 +1934,16 @@ window.store = {
         "tags": ["web","browser","pentest",],
         "content": "Stealing Chrome Cookies source: mango.pdf.zone\nUsing Chrome\u0026rsquo;s remote debugging protocol to steal cookies. github - defaultnamehere\nrequires rce on victim\u0026rsquo;s machine ", 
         "url": "https:\/\/kdbed.github.io\/posts\/pentest_stealing_chrome_cookies\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/pentest_symbolic_links\/": {
+        
+        "title": "Pentest - Symbolic Links",
+        "tags": ["privEsc",],
+        "content": "Symbolic Links Windows The C: directory isn\u0026rsquo;t a real directory on disk, but a symbolic link object in the Windows Kernel - Object Manager namespace, which is isolated from the regular file system. The symbolic link holds the value of the physical path on the file system, the real device. The kernel calls ObpParseSymbolicLink to resolve the symlink.\nA regular user is limited in the creation and deletion of symlinks in the object manager. She can\u0026rsquo;t create/delete new symlinks under most object directories, such as \\Driver or \\Global??.\nThe object manager namespace is organized in a heirarchy tree. Each level is an object of the type OBJECT_DIRECTORY. EG the \\Device object directory contains the named device objects created by drivers.\nNTFS Symbolic Links Most recent implementation, used to link one file to another in the filesystem: mklink command.\nAlso through API:\n1 2 3 4 5 BOOLEAN CreateSymbolicLinkA( LPCSTR lpSymlinkFileName, LPCSTR lpTargetFileName, DWORD dwFlags ); NTFS Mount Points/Directory Junctions Link directories with mount point/directory junctions. The link directory needs to be empty and the user should have write handle to the parent directory.\n1 mklink /J systest C:\\Windows\\System32 1 2 3 4 5 6 7 8 9 10 BOOL DeviceIoControl( HANDLE hDevice, DWORD dwIoControlCode, LPVOID lpInBuffer, DWORD nInBufferSize, LPVOID lpOutBuffer, DWORD nOutBufferSize, LPDWORD lpBytesReturned, LPOVERLAPPED lpOverlapped ); Attack vector: First, create a directory junction, which is possible with write permission over a directory. The next part consists of, eg, creating an Object Manager symlink on a log file in that directory that would point to a file in a protected directory. If a privileged application performs write operations on a log file in a directory we control, it can perform that same operation on the file that the symlink points to. Let\u0026rsquo;s say we find a privileged app that tries to delete a file with NT AUTHORITY\\SYSTEM privs, then we can reparse the delete operation for any other file that we have access to.\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_symbolic_links\/"
     },
     
     
@@ -2898,6 +2948,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/underground_empire\/": {
+        
+        "title": "Underground Empire",
+        "tags": [],
+        "content": "Underground Empire Underground Empire - Henry Farrell, Abraham L. Newman ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/underground_empire\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/unpacking\/": {
         
         "title": "Unpacking",
@@ -3074,6 +3134,26 @@ window.store = {
         "tags": ["windows","pentest",],
         "content": "Windows Security PowerShell script execution policy - determines what types of scripts PowerShell can execute. For Windows clients running PowerShell 5.1, the default is Restricted, which blocks all scripts from running unless they are signed with a trusted certificate. Change the execution policy to RemoteSigned - this execution policy allows the user to run unsigned PowerShell scripts if they’re created locally but will not allow us to execute unsigned scripts downloaded in a web browser or attached to emails. 1 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force ", 
         "url": "https:\/\/kdbed.github.io\/posts\/windows_security_fundamentals\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/windows_kernel_object_manager\/": {
+        
+        "title": "Windows Kernel - Object Manager",
+        "tags": [],
+        "content": "Windows Kernel - Object Manager ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/windows_kernel_object_manager\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/windows_kernel\/": {
+        
+        "title": "Windows Kernel API Prefix-to-Subsystem Mapping",
+        "tags": [],
+        "content": "The Windows Kernel There are two parts of the running operating system: the kernel and the user-mode applications. The kernel makes the security decisions that determine what a user can do on the system. Most of the applications you use on a Windows machine run in user mode.\nThe Windows NTOS kernel executive The kernel provides all the OS\u0026rsquo;s privileged functionality, as well as interfaces through which user applications can communicate with the hardware. The kernel is split into multiple subsystems:\nEach subsystem exposes APIs for the other subsystems to call.\nPrefix Subsystem Example Nt/Zw System call interface NtOpenFile / ZwOpenFile Se Security Reference Monitor SeAccessCheck Ob Object manager ObReferenceObjectByHandle Ps Process and thread manager PsGetCurrentProcess Cm Configuration manager CmRegisterCallback Mm Memory manager MmMapIoSpace Io Input/output manager IoCreateFile Ci Code integrity CiValidateFileObject ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/windows_kernel\/"
     },
     
     

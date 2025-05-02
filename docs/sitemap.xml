@@ -30,6 +30,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/affine_and_projective_spaces/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/ai/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/algebraicgeometry/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/algo/</loc>
@@ -81,6 +83,8 @@
     <loc>https://kdbed.github.io/tags/climate/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/cmdlet/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/collatz_conjecture/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/compositionality/</loc>
   </url><url>
@@ -272,11 +276,15 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/mimikatz/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/ml/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/netbios/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/network/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/network_traffic_per_process/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/neural_networks/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/nietzsche/</loc>
   </url><url>
@@ -375,6 +383,8 @@
     <loc>https://kdbed.github.io/posts/pentest_ssh/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_stealing_chrome_cookies/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_symbolic_links/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_windows_privilege_escalation/</loc>
   </url><url>
@@ -576,6 +586,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/tryhackme/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/underground_empire/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/unpacking/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/unredact_pixelized_text/</loc>
@@ -611,6 +623,10 @@
     <loc>https://kdbed.github.io/posts/windows_cached_credentials_as_system/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/windows_security_fundamentals/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/windows_kernel_object_manager/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/windows_kernel/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/windowsexploitation/</loc>
   </url><url>

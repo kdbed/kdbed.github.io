@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       6442baa9-ecbc-424c-aaa4-54dbadd3e044
+:END:
+#+title: Windows Kernel
+#+hugo_base_dir:../
+
+
+* The Windows Kernel
+There are two parts of the running operating system: the kernel and the user-mode applications. The kernel makes the security decisions that determine what a user can do on the system. Most of the applications you use on a Windows machine run in user mode.
+
+** The Windows NTOS kernel executive
+The kernel provides all the OS's privileged functionality, as well as interfaces through which user applications can communicate with the hardware.  The kernel is split into multiple subsystems:
+
+
+#+attr_org: :width 700
+[[../static/images/kernel.jpg]]
+
+Each subsystem exposes APIs for the other subsystems to call.
+
+#+title: API Prefix-to-Subsystem Mapping
+
+| Prefix  | Subsystem                   | Example                       |
+|---------+-----------------------------+-------------------------------|
+| Nt/Zw   | System call interface       | NtOpenFile / ZwOpenFile       |
+| Se      | Security Reference Monitor  | SeAccessCheck                 |
+| Ob      | Object manager              | ObReferenceObjectByHandle     |
+| Ps      | Process and thread manager  | PsGetCurrentProcess           |
+| Cm      | Configuration manager       | CmRegisterCallback            |
+| Mm      | Memory manager              | MmMapIoSpace                  |
+| Io      | Input/output manager        | IoCreateFile                  |
+| Ci      | Code integrity              | CiValidateFileObject          |

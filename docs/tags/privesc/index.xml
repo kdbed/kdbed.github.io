@@ -29,6 +29,13 @@
       <description>BloodyAD Privilege Escalation&#xA;1 2 bloodyAD --host &amp;#34;$IP&amp;#34; -d &amp;#34;domain.htb&amp;#34; -u &amp;#34;&amp;lt;user&amp;gt;&amp;#34; -p &amp;#34;&amp;lt;password&amp;gt;&amp;#34; set owner &amp;lt;group&amp;gt; &amp;lt;user&amp;gt; bloodyAD --host &amp;#34;$IP&amp;#34; -d &amp;#34;domain.htb&amp;#34; -u &amp;#34;&amp;lt;user&amp;gt;&amp;#34; -p &amp;#34;&amp;lt;password&amp;gt;&amp;#34; add groupMember &amp;lt;group&amp;gt; &amp;lt;user&amp;gt; CravateRouge</description>
     </item>
     <item>
+      <title>Pentest - Symbolic Links</title>
+      <link>https://kdbed.github.io/posts/pentest_symbolic_links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/pentest_symbolic_links/</guid>
+      <description>Symbolic Links Windows The C: directory isn&amp;rsquo;t a real directory on disk, but a symbolic link object in the Windows Kernel - Object Manager namespace, which is isolated from the regular file system. The symbolic link holds the value of the physical path on the file system, the real device. The kernel calls ObpParseSymbolicLink to resolve the symlink.&#xA;A regular user is limited in the creation and deletion of symlinks in the object manager.</description>
+    </item>
+    <item>
       <title>Pentest - Windows Privilege Escalation</title>
       <link>https://kdbed.github.io/posts/pentest_windows_privilege_escalation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
