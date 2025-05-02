@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       31592873-39ca-4271-8532-c92e0d7f7604
+:END:
+#+title: Windows Kernel - Security Reference Monitor
+#+hugo_base_dir:../
+
+* Windows Kernel - Security Reference Monitor
+The =Security Reference Monitor (SRM)= implements the security mechanisms that restrict which users can access different resources.
+
+
+#+attr_org: :width 500
+[[../static/images/srm.jpg]]

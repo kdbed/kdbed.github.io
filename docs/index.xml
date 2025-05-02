@@ -1276,6 +1276,13 @@
       <description>Windows Kernel - Object Manager </description>
     </item>
     <item>
+      <title>Windows Kernel - Security Reference Monitor</title>
+      <link>https://kdbed.github.io/posts/windows_kernel_security_reference_monitor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/windows_kernel_security_reference_monitor/</guid>
+      <description>Windows Kernel - Security Reference Monitor The Security Reference Monitor (SRM) implements the security mechanisms that restrict which users can access different resources.</description>
+    </item>
+    <item>
       <title>Windows Kernel API Prefix-to-Subsystem Mapping</title>
       <link>https://kdbed.github.io/posts/windows_kernel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

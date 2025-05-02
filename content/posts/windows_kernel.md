@@ -27,3 +27,5 @@ Each subsystem exposes APIs for the other subsystems to call.
 | Mm     | Memory manager             | MmMapIoSpace              |
 | Io     | Input/output manager       | IoCreateFile              |
 | Ci     | Code integrity             | CiValidateFileObject      |
+
+**\***
