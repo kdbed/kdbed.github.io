@@ -14,6 +14,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/roevwade/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/abundance_politics/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/account_lockout_splunk/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/action/</loc>
@@ -346,6 +348,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_active_directory_dcsync/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_active_directory_dpapi_backup_key_theft/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/pentest_active_directory_shadow_credentials/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_active_directory_sid_history_injection/</loc>
@@ -370,9 +374,15 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_grpc_port_50051/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_ip_camera/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/pentesting_mssql_microsoft_sql_server/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_passive_information_gathering/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_password_cracking/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_phishing/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_python/</loc>
   </url><url>
@@ -580,6 +590,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/tools/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/tor/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/trump/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/trump_policies_and_actions/</loc>
@@ -623,6 +635,8 @@
     <loc>https://kdbed.github.io/posts/windows_cached_credentials_as_system/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/windows_security_fundamentals/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/windows_trusted_platform_module_tpm/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/windows_kernel_object_manager/</loc>
   </url><url>

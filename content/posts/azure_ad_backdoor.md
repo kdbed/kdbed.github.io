@@ -81,6 +81,10 @@ AADInternals PowerShell module:
 
 ## Tokens {#tokens}
 
+[Microsoft - Protecting Tokens](https://learn.microsoft.com/en-us/entra/identity/devices/protecting-tokens-microsoft-entra-id)
+
+[Token Theft - Red Team (TrustedSec)](https://trustedsec.com/blog/weaponization-of-token-theft-a-red-team-perspective)
+
 [trustedsec](https://trustedsec.com/blog/hacking-your-cloud-tokens-edition-2-0)
 
 Token Tactics: [github](https://github.com/f-bader/TokenTacticsV2)
@@ -104,3 +108,6 @@ Token Tactics: [github](https://github.com/f-bader/TokenTacticsV2)
 ## DC Toolbox {#dc-toolbox}
 
 [Chronlund](https://github.com/DanielChronlund/DCToolbox)
+
+
+## Graphrunner: [https://github.com/dafthack/GraphRunner](https://github.com/dafthack/GraphRunner) {#graphrunner-https-github-dot-com-dafthack-graphrunner}

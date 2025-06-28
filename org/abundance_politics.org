@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       351b08e7-3d7c-4c19-b6bc-def2728ef386
+:END:
+#+title: Abundance Politics
+#+hugo_base_dir:../
+
+
+* Abundance Politics
+- [[https://www.simonandschuster.com/books/Abundance/Ezra-Klein/9781668023488][Abundance - Klein, Thompson]]
+- [[https://www.vox.com/politics/405063/ezra-klein-thompson-abundance-book-criticism][Vox - Eric Levitz]]
+- [[https://www.politico.com/news/2023/12/05/congress-ev-chargers-billions-00129996][Politico - EV chargers]]
+- [[https://thebaffler.com/latest/whats-the-matter-with-abundance-harris][The Baffler - Malcolm Harris]]
+- [[https://rooseveltinstitute.org/publications/disgorge-the-cash/][Roosevelt Institute - Disgorge the Cash]]
+- [[https://www.theguardian.com/books/2025/mar/27/abundance-by-ezra-klein-and-derek-thompson-review-make-america-build-again][Guardian - Noah Kazis]]
+- [[https://prospect.org/economy/2024-11-26-abundance-agenda-neoliberalisms-rebrand/][The American Prospect - Dylan Gyauch-Lewis]]
+- [[https://washingtonmonthly.com/2025/03/23/the-meager-agenda-of-abundance-liberals/][Washington Monthly - Glastris, Weisberg]]
+- [[https://www.slowboring.com/p/what-abundance-means-to-me][Slow Boring - Yglesias]]
+- [[https://democracyjournal.org/magazine/76/the-abundance-doctrine/][Democracy - Mike Konczal]]
+- [[https://jacobin.com/2025/03/abundance-klein-thompson-book-review][Jacobin - Matt Bruenig]]
+- [[https://www.levernews.com/abundance-is-how-dems-lose-to-trump/][The Lever - David Sirota, Aaron Regunberg]]

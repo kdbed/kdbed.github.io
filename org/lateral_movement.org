@@ -18,3 +18,8 @@ Lateral Movement consists of techniques that adversaries use to enter and contro
 #+begin_src sh options
 ssh -L local_port:destination_server_ip:remote_port ssh_server_hostname
 #+end_src
+
+
+* Ligolo-ng
+[[https://github.com/nicocha30/ligolo-ng][nicocha30]]
+[[https://www.hackingarticles.in/a-detailed-guide-on-ligolo-ng/][hackingarticles]]

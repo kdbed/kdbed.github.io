@@ -31,4 +31,4 @@ Each subsystem exposes APIs for the other subsystems to call.
 | Ci      | Code integrity              | CiValidateFileObject          |
 
 
-***
+*** [[id:31592873-39ca-4271-8532-c92e0d7f7604][Windows Kernel - Security Reference Monitor]]

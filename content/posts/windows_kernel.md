@@ -28,4 +28,5 @@ Each subsystem exposes APIs for the other subsystems to call.
 | Io     | Input/output manager       | IoCreateFile              |
 | Ci     | Code integrity             | CiValidateFileObject      |
 
-**\***
+
+#### [Windows Kernel - Security Reference Monitor]({{< relref "windows_kernel_security_reference_monitor.md" >}}) {#windows-kernel-security-reference-monitor--windows-kernel-security-reference-monitor-dot-md}

@@ -93,3 +93,13 @@ Gossip theory of cognitive revolution; able to gossip (maintain trust, etc) on 1
 ### 14 {#14}
 
 The problem this raises, of course, is-how is this possible? How does one mix things that don't appear to mix? What allows Marx to construct theories-for this is what I am claiming-that are at the same time scientific, critical, visionary, and revolutionary? For the tale of two cities presented above, this translates as-what allows Marx to discover communism inside capitalism, and how does what he finds constitute both a criticism of capitalism and the basis of a strategy to overturn it? At the core of every science is a search for relations, especially relations that are not immediately obvious, and in studying capitalism Marx uncovers relations between what is, what could be, what shouldn't be, and what can be done about it all. He finds all this, first of all, because it is there, but what permits him to find it-while most students of capitalism only come up with the appearances (mislabeled as "facts")-is his dialectical method. It is dialectics, and Marx's dialectics in particular, that not only allows but requires him to knit together what most others consign to separate mental compartments. - <span class="underline">Dance of the Dialectic</span>, Ollman
+
+
+### 15 {#15}
+
+Four causes of potential crises: i) human pressures on Earth's ecosystem and climate; ii) rising population; iii) extreme poverty; iv) cynicism, defeatism, outdated institutions
+
+
+### 16 {#16}
+
+Coal liquefaction is a process of converting coal into liquid hydrocarbons: liquid fuels and petrochemicals. This process is often known as "coal to X" or "carbon to X", where X can be many different hydrocarbon-based products. However, the most common process chain is "coal to liquid fuels" (CTL).  Coal liquefactions originally was developed at the beginning of the 20th century.[2] The best-known CTL process is Fischer–Tropsch synthesis (FT), named after the inventors Franz Fischer and Hans Tropsch from the Kaiser Wilhelm Institute in the 1920s.[3] The FT synthesis is the basis for indirect coal liquefaction (ICL) technology. Friedrich Bergius, also a German chemist, invented direct coal liquefaction (DCL) as a way to convert lignite into synthetic oil in 1913.  ---- 1908-1914 Haber+Bosch process of synthesizing nitrogen-based chemical fertilizers (atmospheric N_2 --&gt; N-based compounds)

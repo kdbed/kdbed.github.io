@@ -22,6 +22,13 @@
       <description>Abortion and the Supreme Court Roe V Wade Basic Conclusions - Roe Drawing on the First, Fourth, Ninth, and Fourteenth Amendments, the Court said that the Constitution protects an individual’s “zones of privacy.” Citing earlier cases that ruled that contraception, marriage, and child rearing were activities included in these “zones of privacy,” the Court found that the zone was “broad enough to encompass a woman’s decision whether or not to terminate her pregnancy.</description>
     </item>
     <item>
+      <title>Abundance Politics</title>
+      <link>https://kdbed.github.io/posts/abundance_politics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/abundance_politics/</guid>
+      <description>Abundance Politics Abundance - Klein, Thompson Vox - Eric Levitz Politico - EV chargers The Baffler - Malcolm Harris Roosevelt Institute - Disgorge the Cash Guardian - Noah Kazis The American Prospect - Dylan Gyauch-Lewis Washington Monthly - Glastris, Weisberg Slow Boring - Yglesias Democracy - Mike Konczal Jacobin - Matt Bruenig The Lever - David Sirota, Aaron Regunberg </description>
+    </item>
+    <item>
       <title>Account Lockout - Splunk</title>
       <link>https://kdbed.github.io/posts/account_lockout_splunk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -624,6 +631,13 @@
       <description>DCSync In BloodHound&#xA;GetChanges GetChangesAll 1 impacket-secretsdump &amp;#34;&amp;lt;domain&amp;gt;/user:password&amp;#34;@&amp;#34;dc.domain.com&amp;#34; hacktricks - DCSync</description>
     </item>
     <item>
+      <title>Pentest - Active Directory - DPAPI Backup Key Theft</title>
+      <link>https://kdbed.github.io/posts/pentest_active_directory_dpapi_backup_key_theft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/pentest_active_directory_dpapi_backup_key_theft/</guid>
+      <description>DPAPI Backup Key Theft dsinternals</description>
+    </item>
+    <item>
       <title>Pentest - Active Directory - Shadow Credentials</title>
       <link>https://kdbed.github.io/posts/pentest_active_directory_shadow_credentials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -670,7 +684,7 @@
       <link>https://kdbed.github.io/posts/azure_ad_backdoor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/azure_ad_backdoor/</guid>
-      <description>User Account Enumeration chronlund&#xA;Password Spray Attacks with PowerShell chronlund&#xA;Conditional Access as Code chronlund&#xA;Breach Response chronlund&#xA;PIM Roles - PowerShell chronlund&#xA;CAP - Priv Workstation for GA chronlund&#xA;Tenant Enum with B2B guest accounts chronlund&#xA;Mapping Tenant chronlund&#xA;Attack CAP chronlund&#xA;365 Data Exfil chronlund&#xA;Incident Response hunters&#xA;Protect Identities cloudcoffee&#xA;Risky User Report office365itpros&#xA;Create Backdoor in AAD aadinternals&#xA;AADInternals PowerShell module:&#xA;module&#xA;Tokens trustedsec&#xA;Token Tactics: github</description>
+      <description>User Account Enumeration chronlund&#xA;Password Spray Attacks with PowerShell chronlund&#xA;Conditional Access as Code chronlund&#xA;Breach Response chronlund&#xA;PIM Roles - PowerShell chronlund&#xA;CAP - Priv Workstation for GA chronlund&#xA;Tenant Enum with B2B guest accounts chronlund&#xA;Mapping Tenant chronlund&#xA;Attack CAP chronlund&#xA;365 Data Exfil chronlund&#xA;Incident Response hunters&#xA;Protect Identities cloudcoffee&#xA;Risky User Report office365itpros&#xA;Create Backdoor in AAD aadinternals&#xA;AADInternals PowerShell module:&#xA;module&#xA;Tokens Microsoft - Protecting Tokens</description>
     </item>
     <item>
       <title>Pentest - BloodHound</title>
@@ -708,6 +722,13 @@
       <description>gRPC gRPC (short for Google Remote Procedure Call) is a modern open-source framework developed by Google for creating high-performance, language-agnostic remote procedure call (RPC) systems. It enables communication and interaction between different applications or services running on different platforms and written in different programming languages.&#xA;On Linux, gRPC provides a mechanism for building distributed systems by allowing services to communicate with each other efficiently and securely over a network. It utilizes HTTP/2 protocol as its transport layer and supports different serialization formats like Protocol Buffers (protobuf) for efficient data exchange.</description>
     </item>
     <item>
+      <title>Pentest - IP Camera</title>
+      <link>https://kdbed.github.io/posts/pentest_ip_camera/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/pentest_ip_camera/</guid>
+      <description>Hacking IP Cameras cameradar</description>
+    </item>
+    <item>
       <title>Pentest - MSSQL - Microsoft SQL Server p 1433</title>
       <link>https://kdbed.github.io/posts/pentesting_mssql_microsoft_sql_server/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -720,6 +741,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/pentest_passive_information_gathering/</guid>
       <description>Passive Information Gathering Also known as open-source intelligence OSINT &amp;ndash; the process of collecting freely-available information about a target, often with no direct interaction/contact with target assets. In a strict interpretation, there&amp;rsquo;s zero interaction with the target, eg all information is obtained through a third party. More loosely, passive information gathering allows for interaction with the target, but only as a normal user, eg registering for an account on the corporate website.</description>
+    </item>
+    <item>
+      <title>Pentest - Password Cracking</title>
+      <link>https://kdbed.github.io/posts/pentest_password_cracking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/pentest_password_cracking/</guid>
+      <description>Password Cracking Utilities md5decrypt.net crackstation.net List Generation cupp &amp;ndash; generate list based on user profiling (security question answers); github - Mebus crunch &amp;ndash; medium bopscrk CeWL cracken </description>
+    </item>
+    <item>
+      <title>Pentest - Phishing</title>
+      <link>https://kdbed.github.io/posts/pentest_phishing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/pentest_phishing/</guid>
+      <description>Phishing Evilginx: https://evilginx.com/ zscaler</description>
     </item>
     <item>
       <title>Pentest - Python</title>
@@ -754,7 +789,7 @@
       <link>https://kdbed.github.io/posts/pentest_stealing_chrome_cookies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/pentest_stealing_chrome_cookies/</guid>
-      <description>Stealing Chrome Cookies source: mango.pdf.zone&#xA;Using Chrome&amp;rsquo;s remote debugging protocol to steal cookies. github - defaultnamehere&#xA;requires rce on victim&amp;rsquo;s machine </description>
+      <description>Stealing Chrome Cookies source: mango.pdf.zone&#xA;Using Chrome&amp;rsquo;s remote debugging protocol to steal cookies. github - defaultnamehere&#xA;requires rce on victim&amp;rsquo;s machine Defense CyberArk</description>
     </item>
     <item>
       <title>Pentest - Symbolic Links</title>
@@ -1149,6 +1184,13 @@
       <description>The Action Principle Define the Lagrangian as the following combination of the kinetic energy \(T\) and the potential energy \(V\):&#xA;\[ L = T - V \]&#xA;\(L\) is a function of the coordinates \(x\) and the velocity \(\dot{x}\), which are treated as independent variables. For a point particle&#xA;\[ L(x,\dot{x}) = \frac{1}{2}m \sum_{i=1}^D (\dot{x}^i)^2 - V(x) \]&#xA;Taking derivatives&#xA;\begin{align*} \frac{\partial L}{\partial x^i} &amp;amp;= - \frac{\partial V}{\partial x^i} \\ \frac{\partial L}{\partial \dot{x}^i} &amp;amp;= m \dot{x}^i \end{align*}</description>
     </item>
     <item>
+      <title>Tor</title>
+      <link>https://kdbed.github.io/posts/tor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/tor/</guid>
+      <description>Tor oniux torproject</description>
+    </item>
+    <item>
       <title>Trump - Policies and Actions</title>
       <link>https://kdbed.github.io/posts/trump_policies_and_actions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1266,6 +1308,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/windows_security_fundamentals/</guid>
       <description>Windows Security PowerShell script execution policy - determines what types of scripts PowerShell can execute. For Windows clients running PowerShell 5.1, the default is Restricted, which blocks all scripts from running unless they are signed with a trusted certificate. Change the execution policy to RemoteSigned - this execution policy allows the user to run unsigned PowerShell scripts if they’re created locally but will not allow us to execute unsigned scripts downloaded in a web browser or attached to emails.</description>
+    </item>
+    <item>
+      <title>Windows - Trusted Platform Module (TPM)</title>
+      <link>https://kdbed.github.io/posts/windows_trusted_platform_module_tpm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/windows_trusted_platform_module_tpm/</guid>
+      <description>Trusted Platform Module A Trusted Platform Module (TPM) is a specialized chip on your computer&amp;rsquo;s motherboard designed to enhance security by securely storing cryptographic keys used for encryption and decryption. It ensures that your operating system and firmware are authentic and have not been tampered with. TPMs can be implemented as discrete chips, which are separate components on the motherboard, or as integrated solutions within the main processor.&#xA;For example, the Microsoft Pluton security processor is an integrated solution that embeds TPM functionality directly into the CPU.</description>
     </item>
     <item>
       <title>Windows Kernel - Object Manager</title>
