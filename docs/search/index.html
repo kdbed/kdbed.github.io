@@ -1922,7 +1922,7 @@ window.store = {
         
         "title": "Pentest - Password Cracking",
         "tags": [],
-        "content": "Password Cracking Utilities md5decrypt.net crackstation.net List Generation cupp \u0026ndash; generate list based on user profiling (security question answers); github - Mebus crunch \u0026ndash; medium bopscrk CeWL cracken ", 
+        "content": "Password Cracking Hashcat Sample bash script to derive a wordlist from a known base word:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 #!/bin/bash # Starting word (krakencorp) base_word=\u0026#34;krakencorp\u0026#34; # Output file to save the generated passwords output_file=\u0026#34;crackedpasswords.txt\u0026#34; # Clear the output file if it exists \u0026gt; \u0026#34;$output_file\u0026#34; # Loop over all the rules in /usr/share/hashcat/rules/ for rule in /usr/share/hashcat/rules/*.rule; do # Apply each rule and append the result to crackedpasswords.txt echo -n \u0026#34;$base_word\u0026#34; | hashcat --stdout -r \u0026#34;$rule\u0026#34; | grep -E \u0026#39;^.{11}$\u0026#39; \u0026gt;\u0026gt; \u0026#34;$output_file\u0026#34; done echo \u0026#34;Password generation complete. Check $output_file.\u0026#34; Utilities md5decrypt.net crackstation.net List Generation cupp \u0026ndash; generate list based on user profiling (security question answers); github - Mebus crunch \u0026ndash; medium bopscrk CeWL cracken ", 
         "url": "https:\/\/kdbed.github.io\/posts\/pentest_password_cracking\/"
     },
     
