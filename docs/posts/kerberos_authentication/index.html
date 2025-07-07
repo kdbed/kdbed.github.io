@@ -27,7 +27,31 @@
     <div class="page" data-level="1">
       <div class="content">
         <h1>Kerberos Authentication</h1>
-        <p>*</p>
+        <h2 id="kerberos-authentication">Kerberos Authentication</h2>
+<p>Kerberos is the default authentication service for Windows domains. It&rsquo;s intended to be more secure than NTLM, using third party ticket authorization and stronger encryption. Kerberos still has a handful of underlying vulnerabilities that can be used in a penetration test.</p>
+<h3 id="terms">Terms</h3>
+<ul>
+<li><code>Ticket Granting Ticket (TGT)</code> - A ticket-granting ticket is an authentication ticket used to request service tickets from the TGS for specific resources from the domain.</li>
+<li><code>Key Distribution Center (KDC)</code> - The Key Distribution Center is a service for issuing TGTs and service tickets; consists of the <span class="underline">Authentication Service</span> and the <span class="underline">Ticket Granting Service</span>.</li>
+<li><code>Authentication Service (AS)</code> - The Authentication Service issues TGTs to be used by the TGS in the domain to request access to other machines and service tickets.</li>
+<li><code>Ticket Granting Service (TGS)</code> - The Ticket Granting Service takes the TGT and returns a ticket to a machine on the domain.</li>
+<li><code>Service Principal Name (SPN)</code> - A Service Principal Name is an identifier given to a service instance to associate a service instance with a domain service account. Windows requires that services have a domain service account which is why a service needs an SPN set.</li>
+<li><code>KDC Long Term Secret Key (KDC LT Key)</code> - The KDC key is based on the KRBTGT service account. It is used to encrypt the TGT and sign the PAC.</li>
+<li><code>Client Long Term Secret Key (Client LT Key)</code> - The client key is based on the computer or service account. It is used to check the encrypted timestamp and encrypt the session key.</li>
+<li><code>Service Long Term Secret Key (Service LT Key)</code> - The service key is based on the service account. It is used to encrypt the service portion of the service ticket and sign the PAC.</li>
+<li><code>Session Key</code> - Issued by the KDC when a TGT is issued. The user will provide the session key to the KDC along with the TGT when requesting a service ticket.</li>
+<li><code>Privilege Attribute Certificate (PAC)</code> - The PAC holds all of the user&rsquo;s relevant information, it is sent along with the TGT to the KDC to be signed by the Target LT Key and the KDC LT Key in order to validate the user.</li>
+</ul>
+<h3 id="flow">Flow</h3>
+<figure><img src="/images/kerb.jpg"/>
+</figure>
+
+<p>AS-REQ - 1.) The client requests an Authentication Ticket or Ticket Granting Ticket (TGT).</p>
+<p>AS-REP - 2.) The Key Distribution Center verifies the client and sends back an encrypted TGT.</p>
+<p>TGS-REQ - 3.) The client sends the encrypted TGT to the Ticket Granting Server (TGS) with the Service Principal Name (SPN) of the service the client wants to access.</p>
+<p>TGS-REP - 4.) The Key Distribution Center (KDC) verifies the TGT of the user and that the user has access to the service, then sends a valid session key for the service to the client.</p>
+<p>AP-REQ - 5.) The client requests the service and sends the valid session key to prove the user has access.</p>
+<p>AP-REP - 6.) The service grants access</p>
 
       </div>
       
@@ -274,6 +298,8 @@
    
 
    
+      
+   
 
    
 
@@ -369,6 +395,8 @@
 
    
       
+   
+
    
 
    
@@ -695,6 +723,8 @@
     <h4>Links to this note</h4>
     <div class="backlinks">
       <ul>
+       
+          <li><a href="/posts/kerberos/">Kerberos</a></li>
        
           <li><a href="/posts/pentest_active_directory/">Pentest - Active Directory</a></li>
        

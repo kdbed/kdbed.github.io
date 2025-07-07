@@ -3,3 +3,23 @@
 :END:
 #+title: Kerberos
 #+hugo_base_dir:../
+
+* Kerberos
+** Protocol
+*** [[id:8f260d6f-e943-4811-8f2a-0e75c89a0dcc][Kerberos Authentication]]
+** Attacking Kerberos
+*** Overview
+The main ticket you will receive is a ticket-granting ticket (TGT). These can come in various forms, such as a .kirbi for Rubeus and .ccache for Impacket. A ticket is typically base64 encoded and can be used for multiple attacks.
+
+The ticket-granting ticket is only used to get service tickets from the KDC. When requesting a TGT from the KDC, the user will authenticate with their credentials to the KDC and request a ticket. The server will validate the credentials, create a TGT and encrypt it using the krbtgt key. The encrypted TGT and a session key will be sent to the user.
+
+When the user needs to request a service ticket, they will send the TGT and the session key to the KDC, along with the service principal name (SPN) of the service they wish to access. The KDC will validate the TGT and session key. If they are correct, the KDC will grant the user a service ticket, which can be used to authenticate to the corresponding service.
+*** Enumeration and Attacks
+[[id:d6ffa79f-f55e-4b01-97b8-29a6185f5bbc][Kerbrute]] Enumeration - No domain access required
+[[id:22765108-6400-4aae-a379-cb570c7afecf][Rubeus]] - Harvesting and Brute-forcing tickets
+[[id:22973ab0-77bb-4b77-8d4c-d52aa41e57a3][Pass the Ticket (PtT) Attack]]  - Access as a user to the domain required
+[[id:78221ca4-7b41-4377-aa13-88d50a4fd30d][Kerberoasting]]  - Access as any user required
+[[id:f6604f23-26b0-4da6-9c3d-f240b929526a][AS-REP Roasting]]  - Access as any user required
+[[id:765f95f9-1043-4e3a-8145-4e7d49834e32][Golden Ticket]]  - Full domain compromise (domain admin) required
+[[id:302b147c-f615-4e92-b84c-b81d182dab10][Silver Ticket]]  - Service hash required
+[[id:07bedb89-943c-437f-859f-3a34cc6c2354][Skeleton Key]]  - Full domain compromise (domain admin) required

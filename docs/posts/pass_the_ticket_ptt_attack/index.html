@@ -28,6 +28,14 @@
       <div class="content">
         <h1>Pass the Ticket (PtT) Attack</h1>
         <h2 id="pass-the-ticket">Pass the Ticket</h2>
+<p>Pass the ticket works by dumping the TGT from the LSASS memory of the machine. The Local Security Authority Subsystem Service (LSASS) is a memory process that stores credentials on an active directory server and can store Kerberos ticket along with other credential types to act as the gatekeeper and accept or reject the credentials provided. You can dump the Kerberos Tickets from the LSASS memory just like you can dump hashes. When you dump the tickets with mimikatz it will give us a .kirbi ticket which can be used to gain domain admin if a domain admin ticket is in the LSASS memory. This attack is great for privilege escalation and lateral movement if there are unsecured domain service account tickets laying around. The attack allows you to escalate to domain admin if you dump a domain admin&rsquo;s ticket and then impersonate that ticket using mimikatz PTT attack allowing you to act as that domain admin. You can think of a pass the ticket attack like reusing an existing ticket were not creating or destroying any tickets here were simply reusing an existing ticket from another user on the domain and impersonating that ticket.</p>
+<h3 id="mimikatz--mimikatz-dot-md"><a href="/posts/mimikatz/">Mimikatz</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mimikatz.exe
+</span></span><span style="display:flex;"><span>privilege::debug
+</span></span><span style="display:flex;"><span>sekurlsa::tickets /export
+</span></span><span style="display:flex;"><span>kerberos:ptt <span style="color:#f92672">[</span>0;131415<span style="color:#f92672">]</span>-2-0-40e10000-Administrator@krbtgt-CONTROLLER.LOCAL.kirbi
+</span></span></code></pre></div><h3 id="mitigation">Mitigation</h3>
+<p>Don&rsquo;t let your domain admins log onto anything except the domain controller - This is something so simple however a lot of domain admins still log onto low-level computers leaving tickets around that we can use to attack and move laterally with.</p>
 
       </div>
       
@@ -274,6 +282,8 @@
    
 
    
+      
+   
 
    
 
@@ -369,6 +379,8 @@
 
    
       
+   
+
    
 
    
@@ -695,6 +707,8 @@
     <h4>Links to this note</h4>
     <div class="backlinks">
       <ul>
+       
+          <li><a href="/posts/kerberos/">Kerberos</a></li>
        
           <li><a href="/posts/pentest_active_directory/">Pentest - Active Directory</a></li>
        

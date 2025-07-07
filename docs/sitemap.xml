@@ -354,8 +354,6 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_active_directory_sid_history_injection/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_active_directory_skeleton_key/</loc>
-  </url><url>
     <loc>https://kdbed.github.io/posts/pentest_active_directory_uac_bypass/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_active_information_gathering/</loc>
@@ -512,6 +510,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/revshell/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/rubeus/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/rust/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/sha1cracker/</loc>
@@ -541,6 +541,8 @@
     <loc>https://kdbed.github.io/tags/siem/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/silver_ticket/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_active_directory_skeleton_key/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/smb/</loc>
   </url><url>

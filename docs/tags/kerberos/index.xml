@@ -22,11 +22,60 @@
       <description>AS-REP Roasting Two key attacks on Kerberos security in Active Directory include kerberoasting and AS-REP Roasting. Kerberoasting typically requires credentials on the domain to authenticate with. There is an option for an account to have the property “Do not require Kerberos preauthentication” or UF_DONT_REQUIRE_PREAUTH set to true. AS-REP Roasting is an attack against Kerberos for these accounts.&#xA;Use the Impacket tool GetNPUsers.py to try to get a hash for each user</description>
     </item>
     <item>
+      <title>Golden Ticket</title>
+      <link>https://kdbed.github.io/posts/golden_ticket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/golden_ticket/</guid>
+      <description>Golden Ticket A Golden Ticket is a forged Kerberos Ticket Granting Ticket (TGT) created using the KRBTGT account’s NTLM hash. Once created, it can be used to impersonate any user in the domain, including domain admins, and grants unlimited access to services in the domain.&#xA;Overview Forged TGT signed with the KRBTGT hash Bypasses domain authentication controls Can impersonate any user in the domain Prerequisites SYSTEM or Domain Admin privileges on a domain-joined machine Access to the NTLM hash of the KRBTGT account Knowledge of: Domain SID Domain name (Optional) actual usernames Key Concepts KRBTGT account: Used by KDC to sign/encrypt TGTs SID: Used to tie forged ticket to domain TGT: Ticket Granting Ticket (used to request service tickets) Mimikatz Commands Dump KRBTGT Hash mimikatz # privilege::debug mimikatz # lsadump::lsa /inject /name:krbtgt Look for: Hash NTLM: a2c0b1f65a098dc5b3e3479e9d88cb5e</description>
+    </item>
+    <item>
+      <title>Kerberoasting</title>
+      <link>https://kdbed.github.io/posts/kerberoasting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/kerberoasting/</guid>
+      <description>Kerberoasting Kerberoasting allows a user to request a service ticket for any service with a registered SPN then use that ticket to crack the service password.&#xA;Rubeus 1 Rubeus.exe kerberoast Then crack the hashes with hashcat&#xA;1 hashcat -m 13100 -a 0 hash.txt Pass.txt Impacket 1 sudo python3 GetUserSPNs.py controller.local/Machine1:Password1 -dc-ip 10.10.239.179 -request </description>
+    </item>
+    <item>
+      <title>Kerbrute</title>
+      <link>https://kdbed.github.io/posts/kerbrute_enumeration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/kerbrute_enumeration/</guid>
+      <description>Kerbrute Kerbrute is a popular enumeration tool used to brute-force and enumerate valid active-directory users by abusing the Kerberos pre-authentication. based on obtaining a TGT. For example, using kinit on a Linux system, we can obtain and cache a Kerberos TGT. We&amp;rsquo;ll need to provide a username and password to do this. If the credentials are valid, we&amp;rsquo;ll obtain a TGT. The advantage of this technique is that it only uses two UDP frames to determine whether the password is valid, as it sends only an AS-REQ and examines the response.</description>
+    </item>
+    <item>
+      <title>Pass the Ticket (PtT) Attack</title>
+      <link>https://kdbed.github.io/posts/pass_the_ticket_ptt_attack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/pass_the_ticket_ptt_attack/</guid>
+      <description>Pass the Ticket Pass the ticket works by dumping the TGT from the LSASS memory of the machine. The Local Security Authority Subsystem Service (LSASS) is a memory process that stores credentials on an active directory server and can store Kerberos ticket along with other credential types to act as the gatekeeper and accept or reject the credentials provided. You can dump the Kerberos Tickets from the LSASS memory just like you can dump hashes.</description>
+    </item>
+    <item>
       <title>Pentest - Active Directory - Shadow Credentials</title>
       <link>https://kdbed.github.io/posts/pentest_active_directory_shadow_credentials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/pentest_active_directory_shadow_credentials/</guid>
       <description>Shadow Credentials pywhisker&#xA;Abuse the GenericWrite ACL to get control of an account by adding shadow credentials:&#xA;1 python3 /opt/pywhisker/pywhisker.py -d &amp;#34;certified.htb&amp;#34; -u &amp;#34;judith.mader&amp;#34; -p &amp;#34;judith09&amp;#34; --target &amp;#34;management_svc&amp;#34; --action &amp;#34;add The output is a PFX cert that can be used to authenticate as the user. Get a TGT for the user with PKINITtools:&#xA;1 python3 /opt/PKINITtools/gettgtpkinit.py -cert-pfx vGRMeeb9.pfx certified.htb/management_svc -pfx-pass &amp;#39;25nQ6mg4JUTeQEjjNRE2&amp;#39; management_svc.ccache This will create a Kerberos ticket called management_svc.ccache file, which we can export and use the key this output provides in conjunction with getnthash.</description>
+    </item>
+    <item>
+      <title>Rubeus</title>
+      <link>https://kdbed.github.io/posts/rubeus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/rubeus/</guid>
+      <description>Rubeus Harvesting and Brute-forcing tickets Rubeus has a wide variety of attacks and features that allow it to be a very versatile tool for attacking Kerberos. Just some of the many tools and attacks include overpass the hash, ticket requests and renewals, ticket management, ticket extraction, harvesting, pass the ticket, AS-REP Roasting, and Kerberoasting.&#xA;GhostPack&#xA;Harvest TGTs every 30 seconds: Rubeus.exe harvest /interval:30 Password spray against found users and provide a .</description>
+    </item>
+    <item>
+      <title>Silver Ticket</title>
+      <link>https://kdbed.github.io/posts/silver_ticket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/silver_ticket/</guid>
+      <description>Silver Ticket A Silver Ticket is a forged Kerberos Service Ticket (TGS) that allows access to a specific service without contacting a Domain Controller. It is created using the NTLM hash of the target service account, often a computer account (e.g., `HOST/`, `HTTP/`).&#xA;Overview Forged TGS for a specific service Does not require communication with a Domain Controller Uses the service account&amp;rsquo;s NTLM hash, not KRBTGT Lower privilege, more stealthy than a Golden Ticket Prerequisites SYSTEM or Administrator access on a domain-joined machine Knowledge of: NTLM hash of the target service account (e.</description>
+    </item>
+    <item>
+      <title>Skeleton Key</title>
+      <link>https://kdbed.github.io/posts/pentest_active_directory_skeleton_key/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/pentest_active_directory_skeleton_key/</guid>
+      <description>Skeleton Key A Skeleton Key is a stealthy backdoor attack where Mimikatz injects a patch into LSASS memory on a Domain Controller. This allows an attacker to authenticate as any domain user using a master password, in addition to their real credentials.&#xA;Overview Injects code into `lsass.exe` on a Domain Controller Leaves legitimate logins untouched Adds a universal password valid for all domain accounts Memory-resident: disappears on reboot Prerequisites SYSTEM-level access on a Domain Controller Ability to execute code and patch LSASS memory Mimikatz or similar tool Key Concepts LSASS: Local Security Authority Subsystem Service; handles authentication Patch: Modifies Kerberos/NTLM authentication providers in memory Backdoor password: An additional universal password accepted for all users Mimikatz Commands Load Skeleton Key Patch mimikatz # privilege::debug mimikatz # misc::skeleton Default password: mimikatz</description>
     </item>
   </channel>
 </rss>
