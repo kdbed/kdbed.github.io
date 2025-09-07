@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       0fefad02-132d-4f20-a8f7-3d604d976f4c
+:END:
+#+title: Home Ownership
+#+hugo_base_dir:../
+
+
+* Home Ownership
+[[https://www.theatlantic.com/newsletters/archive/2022/12/homeownership-real-estate-investment-renting/672511/
+]]

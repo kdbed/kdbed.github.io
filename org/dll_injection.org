@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       727c688e-2064-48c6-ad70-cad4d57a1099
+:END:
+#+title: DLL Injection
+#+filetags: :windowsExploitation:windows:
+#+hugo_base_dir:../
+
+
+* DLL Injection
+** API Hooks
+[[https://www.apriorit.com/dev-blog/679-windows-dll-injection-for-api-hooks]]
+[[https://www.apriorit.com/dev-blog/160-apihooks
+]][[https://www.apriorit.com/dev-blog/727-win-guide-to-hooking-windows-apis-with-python
+]]

@@ -46,6 +46,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/antivirus/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/application_shimming/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/architecture/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/as_rep_roasting/</loc>
@@ -82,7 +84,11 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/cert/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/chrome/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/climate/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/tags/cloud/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/cmdlet/</loc>
   </url><url>
@@ -119,6 +125,8 @@
     <loc>https://kdbed.github.io/posts/data_transfer/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/dll_hijacking/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/dll_injection/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/dns/</loc>
   </url><url>
@@ -166,6 +174,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/exploit/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/tags/exploitation/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/file_manipulation/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/fileless_malware/</loc>
@@ -177,6 +187,8 @@
     <loc>https://kdbed.github.io/posts/pentest_ftp/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/generativeeffects/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/golden_saml/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/golden_ticket/</loc>
   </url><url>
@@ -199,6 +211,8 @@
     <loc>https://kdbed.github.io/tags/haskell/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/haskelltest/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/home_ownership/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/hooking_windows_apis_with_python/</loc>
   </url><url>
@@ -611,6 +625,8 @@
     <loc>https://kdbed.github.io/tags/web/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/web_pentest_browser_extensions/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/web_pentest_chrome_memory/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/web_pentest_cross_site_scripting/</loc>
   </url><url>

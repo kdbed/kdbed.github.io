@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       0e1182a6-274f-46dc-a475-f91e9a669ee0
+:END:
+#+title: Golden SAML
+#+filetags: :exploitation:cloud:
+#+hugo_base_dir:../
+
+
+* Golden SAML
+[[https://www.cyberark.com/resources/threat-research-blog/golden-saml-newly-discovered-attack-technique-forges-authentication-to-cloud-apps]]

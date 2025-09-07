@@ -78,6 +78,13 @@
       <description>https://rioasmara.com/2022/03/21/ansible-playbook-weaponization/</description>
     </item>
     <item>
+      <title>Application Shimming</title>
+      <link>https://kdbed.github.io/posts/application_shimming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/application_shimming/</guid>
+      <description>Application Shimming https://intel471.com/blog/threat-hunt-deep-dives-application-shimming%20</description>
+    </item>
+    <item>
       <title>AS-REP Roasting</title>
       <link>https://kdbed.github.io/posts/as_rep_roasting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -190,6 +197,13 @@
       <description>Basic Ideas Windows DLL hijacking occurs when a trusted or legitimate application is tricked into loading an arbitrary DLL. Dll hijacking can be used to execute code, obtain persistence and escalate privileges, although privilege escalation is the least likely. hackTricks&#xA;Approaches There are different approaches to DLL hijacking, and success will be determined by how the application is set to load its DLLs.</description>
     </item>
     <item>
+      <title>DLL Injection</title>
+      <link>https://kdbed.github.io/posts/dll_injection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/dll_injection/</guid>
+      <description>DLL Injection API Hooks https://www.apriorit.com/dev-blog/679-windows-dll-injection-for-api-hooks https://www.apriorit.com/dev-blog/160-apihooks%20https://www.apriorit.com/dev-blog/727-win-guide-to-hooking-windows-apis-with-python%20</description>
+    </item>
+    <item>
       <title>DNS - Basics</title>
       <link>https://kdbed.github.io/posts/dns_basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -274,6 +288,13 @@
       <description>Introduction From An Invitation to Applied Category Theory - Seven Sketches in Compositionality &amp;ndash; Fong/Spivak&#xA;A wide variety of situations exhibit something called compositionality &amp;ndash; wherein systems or relationships can be combined to form new systems or relationships. Category-theoretic constructs can be used to describe the compositionality in such situations. A structural approach to modeling with Category Theory : introduction.&#xA;More Than the Sum of Their Parts </description>
     </item>
     <item>
+      <title>Golden SAML</title>
+      <link>https://kdbed.github.io/posts/golden_saml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/golden_saml/</guid>
+      <description>Golden SAML https://www.cyberark.com/resources/threat-research-blog/golden-saml-newly-discovered-attack-technique-forges-authentication-to-cloud-apps</description>
+    </item>
+    <item>
       <title>Golden Ticket</title>
       <link>https://kdbed.github.io/posts/golden_ticket/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -314,6 +335,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/haskelltest/</guid>
       <description>Basics **&#xA;Map import Control.Monad :{ map (\x -&amp;gt; x*x + x + 10) [1..10] :} 12 16 22 30 40 52 66 82 100 120 Applications Derivatives -- | alias R to be a Double as an approximate of a real number type R = Double type Time = R type Position = R type Derivative = (R -&amp;gt; R) -&amp;gt; R -&amp;gt; R derivative :: R -&amp;gt; Derivative derivative dt x t = (x (t + dt/2) - x(t - dt/2)) / dt carPosition :: Time -&amp;gt; Position carPosition t = cos t carVelocity :: Time -&amp;gt; Velocity carVelocity = derivative 0.</description>
+    </item>
+    <item>
+      <title>Home Ownership</title>
+      <link>https://kdbed.github.io/posts/home_ownership/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/home_ownership/</guid>
+      <description>Home Ownership https://www.theatlantic.com/newsletters/archive/2022/12/homeownership-real-estate-investment-renting/672511/%20</description>
     </item>
     <item>
       <title>Hooking Windows APIs with Python</title>
@@ -782,7 +810,7 @@
       <link>https://kdbed.github.io/posts/pentest_stealing_chrome_cookies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/pentest_stealing_chrome_cookies/</guid>
-      <description>Stealing Chrome Cookies source: mango.pdf.zone&#xA;Using Chrome&amp;rsquo;s remote debugging protocol to steal cookies. github - defaultnamehere&#xA;requires rce on victim&amp;rsquo;s machine Defense CyberArk</description>
+      <description>Stealing Chrome Cookies source: mango.pdf.zone&#xA;Using Chrome&amp;rsquo;s remote debugging protocol to steal cookies. github - defaultnamehere&#xA;requires rce on victim&amp;rsquo;s machine Defense CyberArk&#xA;Infostealers, Token Theft, Azure https://www.varonis.com/blog/cookie-bite</description>
     </item>
     <item>
       <title>Pentest - Symbolic Links</title>
@@ -1231,6 +1259,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/web_pentest_browser_extensions/</guid>
       <description>wappalyzer Wappalyzer is a browser extension that uncovers the technologies used on websites. It detects content management systems, eCommerce platforms, web servers, JavaScript frameworks, analytics tools and many more.</description>
+    </item>
+    <item>
+      <title>Web Pentest - Chrome Memory</title>
+      <link>https://kdbed.github.io/posts/web_pentest_chrome_memory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/web_pentest_chrome_memory/</guid>
+      <description>Chromium Memory https://www.cyberark.com/resources/threat-research-blog/extracting-clear-text-credentials-directly-from-chromium-s-memory https://www.cyberark.com/resources/threat-research-blog/go-blue-a-protection-plan-for-credentials-in-chromium-based-browsers%20</description>
     </item>
     <item>
       <title>Web Pentest - Cross-Site Scripting</title>

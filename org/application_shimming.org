@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       1eb41c38-1944-49bf-9e98-89241547c079
+:END:
+#+title: Application Shimming
+#+filetags: :exploitation:windows:
+#+hugo_base_dir:../
+
+
+* Application Shimming
+
+[[https://intel471.com/blog/threat-hunt-deep-dives-application-shimming
+]]
