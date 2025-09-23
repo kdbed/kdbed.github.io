@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       0bb3f658-dd28-4843-a4ad-aa0c901dda83
+:END:
+#+title: ngrok
+#+hugo_base_dir:../
+
+
+
+* ngrok
+Ngrok is used to create secure tunnels from the public internet to your local development environment
+
+[[https://ngrok.com/][ngrok]]

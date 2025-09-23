@@ -27,7 +27,22 @@
     <div class="page" data-level="1">
       <div class="content">
         <h1>Pentest - Azure AD</h1>
-        <h2 id="user-account-enumeration">User Account Enumeration</h2>
+        <h2 id="basic-recon">Basic Recon</h2>
+<p>Detect M365 usage: <code>https://login.microsoftonline.com/getuserrealm.srf?login=test@acmecorp.com&amp;xml=1</code>
+Tenant ID: <code>https://login.microsoftonline.com/&lt;target domain&gt;/v2.0/.well-known/openid-configuration</code>
+User enumeration: <code>https://login.Microsoft.com/common/oauth2/token</code>
+Detect invalid users while password spraying with: <a href="https://github.com/dafthack/MSOLSpray">MSOLSpray</a>
+Enumerate users via OneDrive: <a href="https://github.com/nyxgeek/onedrive_user_enum">onedrive_user_enum</a>
+Data in public Azure blobs:</p>
+<ul>
+<li>storage-acct-name.blob.core.windows.net</li>
+<li>storage-acct-name.file.core.windows.net</li>
+<li>storage-acct-name.table.core.windows.net</li>
+<li>storage-acct-name.queue.core.windows.net</li>
+</ul>
+<p>Cloud_enum - Chris Moberly <a href="https://github.com/initstring/cloud_enum">clound_enum</a>
+Azure Smart Lockout - protection from pw spray; bypass with FireProx + MSOLSpray <a href="https://github.com/ustayready/fireprox">fireprox</a></p>
+<h2 id="user-account-enumeration">User Account Enumeration</h2>
 <p><a href="https://danielchronlund.com/2020/03/13/automatic-azure-ad-user-account-enumeration-with-powershell-scary-stuff/">chronlund</a></p>
 <h2 id="password-spray-attacks-with-powershell">Password Spray Attacks with PowerShell</h2>
 <p><a href="https://danielchronlund.com/2020/03/17/azure-ad-password-spray-attacks-with-powershell-and-how-to-defend-your-tenant/">chronlund</a></p>
@@ -60,6 +75,9 @@
 <h2 id="tokens">Tokens</h2>
 <p><a href="https://learn.microsoft.com/en-us/entra/identity/devices/protecting-tokens-microsoft-entra-id">Microsoft - Protecting Tokens</a></p>
 <p><a href="https://trustedsec.com/blog/weaponization-of-token-theft-a-red-team-perspective">Token Theft - Red Team (TrustedSec)</a></p>
+<p><a href="https://cloud.google.com/blog/topics/threat-intelligence/shining-a-light-on-oauth-abuse-with-pwnauth/">pwnauth</a></p>
+<p><a href="https://github.com/AlteredSecurity/365-Stealer">AlteredSecurity-365Stealer</a></p>
+<p><a href="https://github.com/mandiant/PwnAuth">github</a></p>
 <p><a href="https://trustedsec.com/blog/hacking-your-cloud-tokens-edition-2-0">trustedsec</a></p>
 <p>Token Tactics: <a href="https://github.com/f-bader/TokenTacticsV2">github</a></p>
 <h2 id="skeleton-key">Skeleton Key</h2>
@@ -75,6 +93,8 @@
       </div>
       
 
+
+   
 
    
 

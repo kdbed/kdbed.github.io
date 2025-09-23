@@ -6,6 +6,21 @@
 #+hugo_base_dir:../
 
 
+* Basic Recon
+Detect M365 usage: =https://login.microsoftonline.com/getuserrealm.srf?login=test@acmecorp.com&xml=1=
+Tenant ID: =https://login.microsoftonline.com/<target domain>/v2.0/.well-known/openid-configuration=
+User enumeration: =https://login.Microsoft.com/common/oauth2/token=
+Detect invalid users while password spraying with: [[https://github.com/dafthack/MSOLSpray][MSOLSpray]]
+Enumerate users via OneDrive: [[https://github.com/nyxgeek/onedrive_user_enum][onedrive_user_enum]]
+Data in public Azure blobs:
+        - storage-acct-name.blob.core.windows.net
+        - storage-acct-name.file.core.windows.net
+        - storage-acct-name.table.core.windows.net
+        - storage-acct-name.queue.core.windows.net
+Cloud_enum - Chris Moberly [[https://github.com/initstring/cloud_enum][clound_enum]]
+Azure Smart Lockout - protection from pw spray; bypass with FireProx + MSOLSpray [[https://github.com/ustayready/fireprox][fireprox]]
+
+
 * User Account Enumeration
 [[https://danielchronlund.com/2020/03/13/automatic-azure-ad-user-account-enumeration-with-powershell-scary-stuff/][chronlund]]
 
@@ -58,7 +73,12 @@ AADInternals PowerShell module:
 
 [[https://trustedsec.com/blog/weaponization-of-token-theft-a-red-team-perspective][Token Theft - Red Team (TrustedSec)]]
 
+[[https://cloud.google.com/blog/topics/threat-intelligence/shining-a-light-on-oauth-abuse-with-pwnauth/][pwnauth]]
 
+[[https://github.com/AlteredSecurity/365-Stealer][AlteredSecurity-365Stealer]]
+
+
+[[https://github.com/mandiant/PwnAuth][github]]
 
 [[https://trustedsec.com/blog/hacking-your-cloud-tokens-edition-2-0][trustedsec]]
 

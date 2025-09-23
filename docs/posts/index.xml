@@ -540,6 +540,13 @@
       <description>Neural Networks 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 #include &amp;lt;stdlib.h&amp;gt; #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;math.h&amp;gt; // Simple nn that can learn XOR double sigmoid(double x) {return 1 / (1 + exp(-x)); } double dSigmoid(double x) {return x * (1-x); } double init_weights(){return ((double)rand()) / ((double)RAND_MAX); } void shuffle(int *array, size_t n){ if (n &amp;gt; 1){ size_t i; for (i = 0; i &amp;lt; n -1; i++){ size_t j = i + rand() / (RAND_MAX / (n - i) + 1); int t = array[j]; array[j] = array[i]; array[i] = t; } } } #define numInputs 2 #define numHiddenNodes 2 #define numOutputs 1 #define numTrainingSets 4 int main(void){ const double lr = 0.</description>
     </item>
     <item>
+      <title>ngrok</title>
+      <link>https://kdbed.github.io/posts/ngrok/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/ngrok/</guid>
+      <description>ngrok Ngrok is used to create secure tunnels from the public internet to your local development environment&#xA;ngrok</description>
+    </item>
+    <item>
       <title>Nietzsche</title>
       <link>https://kdbed.github.io/posts/nietzsche/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -705,7 +712,7 @@
       <link>https://kdbed.github.io/posts/azure_ad_backdoor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/azure_ad_backdoor/</guid>
-      <description>User Account Enumeration chronlund&#xA;Password Spray Attacks with PowerShell chronlund&#xA;Conditional Access as Code chronlund&#xA;Breach Response chronlund&#xA;PIM Roles - PowerShell chronlund&#xA;CAP - Priv Workstation for GA chronlund&#xA;Tenant Enum with B2B guest accounts chronlund&#xA;Mapping Tenant chronlund&#xA;Attack CAP chronlund&#xA;365 Data Exfil chronlund&#xA;Incident Response hunters&#xA;Protect Identities cloudcoffee&#xA;Risky User Report office365itpros&#xA;Create Backdoor in AAD aadinternals&#xA;AADInternals PowerShell module:&#xA;module&#xA;Tokens Microsoft - Protecting Tokens</description>
+      <description>Basic Recon Detect M365 usage: https://login.microsoftonline.com/getuserrealm.srf?login=test@acmecorp.com&amp;amp;xml=1 Tenant ID: https://login.microsoftonline.com/&amp;lt;target domain&amp;gt;/v2.0/.well-known/openid-configuration User enumeration: https://login.Microsoft.com/common/oauth2/token Detect invalid users while password spraying with: MSOLSpray Enumerate users via OneDrive: onedrive_user_enum Data in public Azure blobs:&#xA;storage-acct-name.blob.core.windows.net storage-acct-name.file.core.windows.net storage-acct-name.table.core.windows.net storage-acct-name.queue.core.windows.net Cloud_enum - Chris Moberly clound_enum Azure Smart Lockout - protection from pw spray; bypass with FireProx + MSOLSpray fireprox&#xA;User Account Enumeration chronlund&#xA;Password Spray Attacks with PowerShell chronlund&#xA;Conditional Access as Code chronlund&#xA;Breach Response chronlund</description>
     </item>
     <item>
       <title>Pentest - BloodHound</title>
@@ -810,7 +817,7 @@
       <link>https://kdbed.github.io/posts/pentest_stealing_chrome_cookies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/pentest_stealing_chrome_cookies/</guid>
-      <description>Stealing Chrome Cookies source: mango.pdf.zone&#xA;Using Chrome&amp;rsquo;s remote debugging protocol to steal cookies. github - defaultnamehere&#xA;requires rce on victim&amp;rsquo;s machine Defense CyberArk&#xA;Infostealers, Token Theft, Azure https://www.varonis.com/blog/cookie-bite</description>
+      <description>Stealing Chrome Cookies source: mango.pdf.zone&#xA;Using Chrome&amp;rsquo;s remote debugging protocol to steal cookies. github - defaultnamehere&#xA;requires rce on victim&amp;rsquo;s machine Defense CyberArk&#xA;Infostealers, Token Theft, Azure https://www.varonis.com/blog/cookie-bite&#xA;Chrome Forensics hindsight</description>
     </item>
     <item>
       <title>Pentest - Symbolic Links</title>
