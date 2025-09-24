@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Grpc on Owlglass</title>
-    <link>https://kdbed.github.io/tags/grpc/</link>
+    <link>http://localhost:8080/tags/grpc/</link>
     <description>Recent content in Grpc on Owlglass</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://kdbed.github.io/tags/grpc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:8080/tags/grpc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pentest - gRPC Port 50051</title>
-      <link>https://kdbed.github.io/posts/pentest_grpc_port_50051/</link>
+      <link>http://localhost:8080/posts/pentest_grpc_port_50051/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kdbed.github.io/posts/pentest_grpc_port_50051/</guid>
-      <description>gRPC gRPC (short for Google Remote Procedure Call) is a modern open-source framework developed by Google for creating high-performance, language-agnostic remote procedure call (RPC) systems. It enables communication and interaction between different applications or services running on different platforms and written in different programming languages.&#xA;On Linux, gRPC provides a mechanism for building distributed systems by allowing services to communicate with each other efficiently and securely over a network. It utilizes HTTP/2 protocol as its transport layer and supports different serialization formats like Protocol Buffers (protobuf) for efficient data exchange.</description>
+      <guid>http://localhost:8080/posts/pentest_grpc_port_50051/</guid>
+      <description>&lt;h2 id=&#34;grpc&#34;&gt;gRPC&lt;/h2&gt;&#xA;&lt;p&gt;gRPC (short for Google Remote Procedure Call) is a modern open-source framework developed by Google for creating high-performance, language-agnostic remote procedure call (RPC) systems. It enables communication and interaction between different applications or services running on different platforms and written in different programming languages.&lt;/p&gt;&#xA;&lt;p&gt;On Linux, gRPC provides a mechanism for building distributed systems by allowing services to communicate with each other efficiently and securely over a network. It utilizes &lt;a href=&#34;http://localhost:8080/posts/http_2/&#34;&gt;HTTP/2&lt;/a&gt; protocol as its transport layer and supports different serialization formats like Protocol Buffers (protobuf) for efficient data exchange.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -2,680 +2,680 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kdbed.github.io/</loc>
+    <loc>http://localhost:8080/</loc>
     <lastmod>2022-05-29T21:44:03+08:00</lastmod>
   </url><url>
-    <loc>https://kdbed.github.io/search/</loc>
+    <loc>http://localhost:8080/search/</loc>
     <lastmod>2022-05-29T21:44:03+08:00</lastmod>
   </url><url>
-    <loc>https://kdbed.github.io/tags/abortion/</loc>
+    <loc>http://localhost:8080/posts/abortion/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/abortion/</loc>
+    <loc>http://localhost:8080/tags/abortion/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/roevwade/</loc>
+    <loc>http://localhost:8080/posts/roevwade/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/abundance_politics/</loc>
+    <loc>http://localhost:8080/posts/abundance_politics/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/account_lockout_splunk/</loc>
+    <loc>http://localhost:8080/posts/account_lockout_splunk/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/action/</loc>
+    <loc>http://localhost:8080/tags/action/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/active_directory/</loc>
+    <loc>http://localhost:8080/posts/active_directory/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/lastlogon_vs_lastlogontimestamp/</loc>
+    <loc>http://localhost:8080/posts/lastlogon_vs_lastlogontimestamp/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/scapy_scanning/</loc>
+    <loc>http://localhost:8080/posts/scapy_scanning/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/activedirectory/</loc>
+    <loc>http://localhost:8080/tags/activedirectory/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/ad/</loc>
+    <loc>http://localhost:8080/tags/ad/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/affine_and_projective_spaces/</loc>
+    <loc>http://localhost:8080/posts/affine_and_projective_spaces/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/ai/</loc>
+    <loc>http://localhost:8080/tags/ai/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/algebraicgeometry/</loc>
+    <loc>http://localhost:8080/tags/algebraicgeometry/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/algo/</loc>
+    <loc>http://localhost:8080/tags/algo/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/algorithms/</loc>
+    <loc>http://localhost:8080/posts/algorithms/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/algorithms/</loc>
+    <loc>http://localhost:8080/tags/algorithms/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/ansible_playbook_weaponization/</loc>
+    <loc>http://localhost:8080/posts/ansible_playbook_weaponization/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/antivirus/</loc>
+    <loc>http://localhost:8080/tags/antivirus/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/application_shimming/</loc>
+    <loc>http://localhost:8080/posts/application_shimming/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/architecture/</loc>
+    <loc>http://localhost:8080/tags/architecture/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/as_rep_roasting/</loc>
+    <loc>http://localhost:8080/posts/as_rep_roasting/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/auth/</loc>
+    <loc>http://localhost:8080/tags/auth/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/azure/</loc>
+    <loc>http://localhost:8080/tags/azure/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/binary/</loc>
+    <loc>http://localhost:8080/tags/binary/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/binary_analysis/</loc>
+    <loc>http://localhost:8080/posts/binary_analysis/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/birthdayattack/</loc>
+    <loc>http://localhost:8080/posts/birthdayattack/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/bloodhound/</loc>
+    <loc>http://localhost:8080/tags/bloodhound/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/breadth_first_search/</loc>
+    <loc>http://localhost:8080/posts/breadth_first_search/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/browser/</loc>
+    <loc>http://localhost:8080/tags/browser/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/c_programming/</loc>
+    <loc>http://localhost:8080/posts/c_programming/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/c_stl/</loc>
+    <loc>http://localhost:8080/posts/c_stl/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/cpp_proj_nix/</loc>
+    <loc>http://localhost:8080/posts/cpp_proj_nix/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/cpp_programming/</loc>
+    <loc>http://localhost:8080/posts/cpp_programming/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/categories/</loc>
+    <loc>http://localhost:8080/categories/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/category_theory/</loc>
+    <loc>http://localhost:8080/posts/category_theory/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/categorytheory/</loc>
+    <loc>http://localhost:8080/tags/categorytheory/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/cert/</loc>
+    <loc>http://localhost:8080/tags/cert/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/chrome/</loc>
+    <loc>http://localhost:8080/tags/chrome/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/climate/</loc>
+    <loc>http://localhost:8080/tags/climate/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/cloud/</loc>
+    <loc>http://localhost:8080/tags/cloud/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/cmdlet/</loc>
+    <loc>http://localhost:8080/tags/cmdlet/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/collatz_conjecture/</loc>
+    <loc>http://localhost:8080/posts/collatz_conjecture/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/compositionality/</loc>
+    <loc>http://localhost:8080/tags/compositionality/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/securityplus/</loc>
+    <loc>http://localhost:8080/posts/securityplus/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/computation/</loc>
+    <loc>http://localhost:8080/tags/computation/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/computer_science/</loc>
+    <loc>http://localhost:8080/posts/computer_science/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/computerscience/</loc>
+    <loc>http://localhost:8080/tags/computerscience/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/conditions_of_causation/</loc>
+    <loc>http://localhost:8080/posts/conditions_of_causation/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/constitution/</loc>
+    <loc>http://localhost:8080/tags/constitution/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/cpp/</loc>
+    <loc>http://localhost:8080/tags/cpp/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/crack/</loc>
+    <loc>http://localhost:8080/tags/crack/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/cracking_pdf/</loc>
+    <loc>http://localhost:8080/posts/cracking_pdf/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/crackmapexec/</loc>
+    <loc>http://localhost:8080/tags/crackmapexec/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/crypto/</loc>
+    <loc>http://localhost:8080/tags/crypto/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/cryptography/</loc>
+    <loc>http://localhost:8080/tags/cryptography/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/csharp/</loc>
+    <loc>http://localhost:8080/tags/csharp/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/data_transfer/</loc>
+    <loc>http://localhost:8080/posts/data_transfer/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/dll_hijacking/</loc>
+    <loc>http://localhost:8080/posts/dll_hijacking/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/dll_injection/</loc>
+    <loc>http://localhost:8080/posts/dll_injection/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/dns/</loc>
+    <loc>http://localhost:8080/tags/dns/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/dns_basics/</loc>
+    <loc>http://localhost:8080/posts/dns_basics/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/dnszonetransfers/</loc>
+    <loc>http://localhost:8080/posts/dnszonetransfers/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/document_object_model_dom/</loc>
+    <loc>http://localhost:8080/posts/document_object_model_dom/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/dopamine/</loc>
+    <loc>http://localhost:8080/posts/dopamine/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/edr/</loc>
+    <loc>http://localhost:8080/tags/edr/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/education/</loc>
+    <loc>http://localhost:8080/tags/education/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/eikonal_approximation/</loc>
+    <loc>http://localhost:8080/posts/eikonal_approximation/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/electrodynamics/</loc>
+    <loc>http://localhost:8080/posts/electrodynamics/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/email/</loc>
+    <loc>http://localhost:8080/tags/email/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/emissions/</loc>
+    <loc>http://localhost:8080/tags/emissions/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/encryption/</loc>
+    <loc>http://localhost:8080/tags/encryption/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/endpoint_detection_and_response/</loc>
+    <loc>http://localhost:8080/posts/endpoint_detection_and_response/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/endpointprotection/</loc>
+    <loc>http://localhost:8080/tags/endpointprotection/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/entra/</loc>
+    <loc>http://localhost:8080/tags/entra/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/enumeration/</loc>
+    <loc>http://localhost:8080/tags/enumeration/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/essentials/</loc>
+    <loc>http://localhost:8080/tags/essentials/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/eulerlagrange/</loc>
+    <loc>http://localhost:8080/tags/eulerlagrange/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/eventlogs/</loc>
+    <loc>http://localhost:8080/tags/eventlogs/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/example/</loc>
+    <loc>http://localhost:8080/tags/example/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/examples/</loc>
+    <loc>http://localhost:8080/tags/examples/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/exfiltration/</loc>
+    <loc>http://localhost:8080/tags/exfiltration/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/exploit/</loc>
+    <loc>http://localhost:8080/tags/exploit/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/exploitation/</loc>
+    <loc>http://localhost:8080/tags/exploitation/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/file_manipulation/</loc>
+    <loc>http://localhost:8080/posts/file_manipulation/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/fileless_malware/</loc>
+    <loc>http://localhost:8080/posts/fileless_malware/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/ftp/</loc>
+    <loc>http://localhost:8080/tags/ftp/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/ftp_retrieve_files_with_python/</loc>
+    <loc>http://localhost:8080/posts/ftp_retrieve_files_with_python/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_ftp/</loc>
+    <loc>http://localhost:8080/posts/pentest_ftp/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/generativeeffects/</loc>
+    <loc>http://localhost:8080/posts/generativeeffects/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/golden_saml/</loc>
+    <loc>http://localhost:8080/posts/golden_saml/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/golden_ticket/</loc>
+    <loc>http://localhost:8080/posts/golden_ticket/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/google/</loc>
+    <loc>http://localhost:8080/tags/google/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/google_hacking/</loc>
+    <loc>http://localhost:8080/posts/google_hacking/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/greenhouseemissions/</loc>
+    <loc>http://localhost:8080/posts/greenhouseemissions/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/grpc/</loc>
+    <loc>http://localhost:8080/tags/grpc/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/happiness/</loc>
+    <loc>http://localhost:8080/posts/happiness/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/hashcollision/</loc>
+    <loc>http://localhost:8080/tags/hashcollision/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/hashes/</loc>
+    <loc>http://localhost:8080/tags/hashes/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/hashing_vs_encryption/</loc>
+    <loc>http://localhost:8080/posts/hashing_vs_encryption/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/haskell/</loc>
+    <loc>http://localhost:8080/tags/haskell/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/haskelltest/</loc>
+    <loc>http://localhost:8080/posts/haskelltest/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/home_ownership/</loc>
+    <loc>http://localhost:8080/posts/home_ownership/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/hooking_windows_apis_with_python/</loc>
+    <loc>http://localhost:8080/posts/hooking_windows_apis_with_python/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/http_2/</loc>
+    <loc>http://localhost:8080/posts/http_2/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/icacls/</loc>
+    <loc>http://localhost:8080/posts/icacls/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/identityiqessentialsintroduction/</loc>
+    <loc>http://localhost:8080/posts/identityiqessentialsintroduction/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/impacket/</loc>
+    <loc>http://localhost:8080/posts/impacket/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/impacket/</loc>
+    <loc>http://localhost:8080/tags/impacket/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/information_security/</loc>
+    <loc>http://localhost:8080/posts/information_security/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/infosec/</loc>
+    <loc>http://localhost:8080/tags/infosec/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/isakmp/</loc>
+    <loc>http://localhost:8080/posts/isakmp/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/introtopwntools/</loc>
+    <loc>http://localhost:8080/posts/introtopwntools/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/introduction/</loc>
+    <loc>http://localhost:8080/tags/introduction/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/inverse_square_potential_in_quantum_mechanics/</loc>
+    <loc>http://localhost:8080/posts/inverse_square_potential_in_quantum_mechanics/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/ip_time_to_live_ttl/</loc>
+    <loc>http://localhost:8080/posts/ip_time_to_live_ttl/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/ipsec/</loc>
+    <loc>http://localhost:8080/tags/ipsec/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/junkification_of_american_life/</loc>
+    <loc>http://localhost:8080/posts/junkification_of_american_life/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/jupyter/</loc>
+    <loc>http://localhost:8080/tags/jupyter/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/jwt/</loc>
+    <loc>http://localhost:8080/tags/jwt/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/kali/</loc>
+    <loc>http://localhost:8080/tags/kali/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/kali_basics/</loc>
+    <loc>http://localhost:8080/posts/kali_basics/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/kerberoasting/</loc>
+    <loc>http://localhost:8080/posts/kerberoasting/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/kerberoasting/</loc>
+    <loc>http://localhost:8080/tags/kerberoasting/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/kerberos/</loc>
+    <loc>http://localhost:8080/posts/kerberos/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/kerberos/</loc>
+    <loc>http://localhost:8080/tags/kerberos/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/kerberos_authentication/</loc>
+    <loc>http://localhost:8080/posts/kerberos_authentication/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/kerbrute_enumeration/</loc>
+    <loc>http://localhost:8080/posts/kerbrute_enumeration/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/keyexchange/</loc>
+    <loc>http://localhost:8080/tags/keyexchange/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/lang_test/</loc>
+    <loc>http://localhost:8080/posts/lang_test/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/rust_test/</loc>
+    <loc>http://localhost:8080/posts/rust_test/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/lateral_movement/</loc>
+    <loc>http://localhost:8080/posts/lateral_movement/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/law/</loc>
+    <loc>http://localhost:8080/tags/law/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/linpeas/</loc>
+    <loc>http://localhost:8080/posts/linpeas/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/linux/</loc>
+    <loc>http://localhost:8080/tags/linux/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/malware/</loc>
+    <loc>http://localhost:8080/posts/malware/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/malware/</loc>
+    <loc>http://localhost:8080/tags/malware/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/marx/</loc>
+    <loc>http://localhost:8080/posts/marx/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/master_boot_record_mbr/</loc>
+    <loc>http://localhost:8080/posts/master_boot_record_mbr/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/math/</loc>
+    <loc>http://localhost:8080/tags/math/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/maxwell_s_equations/</loc>
+    <loc>http://localhost:8080/posts/maxwell_s_equations/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/mimikatz/</loc>
+    <loc>http://localhost:8080/posts/mimikatz/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/ml/</loc>
+    <loc>http://localhost:8080/tags/ml/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/netbios/</loc>
+    <loc>http://localhost:8080/posts/netbios/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/network/</loc>
+    <loc>http://localhost:8080/tags/network/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/network_traffic_per_process/</loc>
+    <loc>http://localhost:8080/posts/network_traffic_per_process/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/neural_networks/</loc>
+    <loc>http://localhost:8080/posts/neural_networks/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/ngrok/</loc>
+    <loc>http://localhost:8080/posts/ngrok/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/nietzsche/</loc>
+    <loc>http://localhost:8080/posts/nietzsche/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/nietzsche/</loc>
+    <loc>http://localhost:8080/tags/nietzsche/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/nietzsche_and_stoicism/</loc>
+    <loc>http://localhost:8080/posts/nietzsche_and_stoicism/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/nix/</loc>
+    <loc>http://localhost:8080/tags/nix/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/nmap/</loc>
+    <loc>http://localhost:8080/tags/nmap/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/ntlm_authentication/</loc>
+    <loc>http://localhost:8080/posts/ntlm_authentication/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/numbertheory/</loc>
+    <loc>http://localhost:8080/tags/numbertheory/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/nx/</loc>
+    <loc>http://localhost:8080/posts/nx/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/objectorientedprogramming/</loc>
+    <loc>http://localhost:8080/tags/objectorientedprogramming/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/one_way_functions/</loc>
+    <loc>http://localhost:8080/posts/one_way_functions/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/operatingsystem/</loc>
+    <loc>http://localhost:8080/tags/operatingsystem/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/optics/</loc>
+    <loc>http://localhost:8080/posts/optics/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/org/</loc>
+    <loc>http://localhost:8080/tags/org/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/orgpythonjupyter/</loc>
+    <loc>http://localhost:8080/posts/orgpythonjupyter/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/org-roam/</loc>
+    <loc>http://localhost:8080/tags/org-roam/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/originalism/</loc>
+    <loc>http://localhost:8080/posts/originalism/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/os_identification_ping/</loc>
+    <loc>http://localhost:8080/posts/os_identification_ping/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/osint/</loc>
+    <loc>http://localhost:8080/tags/osint/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/osint/</loc>
+    <loc>http://localhost:8080/posts/osint/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/p200/</loc>
+    <loc>http://localhost:8080/tags/p200/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pass_the_ticket_ptt_attack/</loc>
+    <loc>http://localhost:8080/posts/pass_the_ticket_ptt_attack/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/password/</loc>
+    <loc>http://localhost:8080/tags/password/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/passwordattack/</loc>
+    <loc>http://localhost:8080/tags/passwordattack/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/peano_axioms/</loc>
+    <loc>http://localhost:8080/posts/peano_axioms/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/pentest/</loc>
+    <loc>http://localhost:8080/tags/pentest/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_active_directory/</loc>
+    <loc>http://localhost:8080/posts/pentest_active_directory/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_active_directory_bloodyad/</loc>
+    <loc>http://localhost:8080/posts/pentest_active_directory_bloodyad/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/active_directory_certificate_services_pentest/</loc>
+    <loc>http://localhost:8080/posts/active_directory_certificate_services_pentest/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_active_directory_dacl/</loc>
+    <loc>http://localhost:8080/posts/pentest_active_directory_dacl/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_active_directory_dcsync/</loc>
+    <loc>http://localhost:8080/posts/pentest_active_directory_dcsync/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_active_directory_dpapi_backup_key_theft/</loc>
+    <loc>http://localhost:8080/posts/pentest_active_directory_dpapi_backup_key_theft/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_active_directory_shadow_credentials/</loc>
+    <loc>http://localhost:8080/posts/pentest_active_directory_shadow_credentials/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_active_directory_sid_history_injection/</loc>
+    <loc>http://localhost:8080/posts/pentest_active_directory_sid_history_injection/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_active_directory_uac_bypass/</loc>
+    <loc>http://localhost:8080/posts/pentest_active_directory_uac_bypass/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_active_information_gathering/</loc>
+    <loc>http://localhost:8080/posts/pentest_active_information_gathering/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_antivirus_evasion/</loc>
+    <loc>http://localhost:8080/posts/pentest_antivirus_evasion/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/azure_ad_backdoor/</loc>
+    <loc>http://localhost:8080/posts/azure_ad_backdoor/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/bloodhound/</loc>
+    <loc>http://localhost:8080/posts/bloodhound/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_exploits/</loc>
+    <loc>http://localhost:8080/posts/pentest_exploits/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_generatingwordlists/</loc>
+    <loc>http://localhost:8080/posts/pentest_generatingwordlists/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_git/</loc>
+    <loc>http://localhost:8080/posts/pentest_git/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_grpc_port_50051/</loc>
+    <loc>http://localhost:8080/posts/pentest_grpc_port_50051/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_ip_camera/</loc>
+    <loc>http://localhost:8080/posts/pentest_ip_camera/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentesting_mssql_microsoft_sql_server/</loc>
+    <loc>http://localhost:8080/posts/pentesting_mssql_microsoft_sql_server/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_passive_information_gathering/</loc>
+    <loc>http://localhost:8080/posts/pentest_passive_information_gathering/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_password_cracking/</loc>
+    <loc>http://localhost:8080/posts/pentest_password_cracking/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_phishing/</loc>
+    <loc>http://localhost:8080/posts/pentest_phishing/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_python/</loc>
+    <loc>http://localhost:8080/posts/pentest_python/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_smb_p_139_445/</loc>
+    <loc>http://localhost:8080/posts/pentest_smb_p_139_445/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_sql/</loc>
+    <loc>http://localhost:8080/posts/pentest_sql/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_ssh/</loc>
+    <loc>http://localhost:8080/posts/pentest_ssh/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_stealing_chrome_cookies/</loc>
+    <loc>http://localhost:8080/posts/pentest_stealing_chrome_cookies/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_symbolic_links/</loc>
+    <loc>http://localhost:8080/posts/pentest_symbolic_links/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_windows_privilege_escalation/</loc>
+    <loc>http://localhost:8080/posts/pentest_windows_privilege_escalation/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/permissions/</loc>
+    <loc>http://localhost:8080/tags/permissions/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/philosophy/</loc>
+    <loc>http://localhost:8080/posts/philosophy/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/physics/</loc>
+    <loc>http://localhost:8080/posts/physics/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/physics/</loc>
+    <loc>http://localhost:8080/tags/physics/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pie/</loc>
+    <loc>http://localhost:8080/posts/pie/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/pivoting/</loc>
+    <loc>http://localhost:8080/tags/pivoting/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/political_science/</loc>
+    <loc>http://localhost:8080/posts/political_science/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/politics/</loc>
+    <loc>http://localhost:8080/posts/politics/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/politics/</loc>
+    <loc>http://localhost:8080/tags/politics/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/port_forwarding/</loc>
+    <loc>http://localhost:8080/posts/port_forwarding/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/</loc>
+    <loc>http://localhost:8080/posts/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/powershell/</loc>
+    <loc>http://localhost:8080/posts/powershell/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/powershell/</loc>
+    <loc>http://localhost:8080/tags/powershell/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/powershell_add_a_calculated_property_in_select_object/</loc>
+    <loc>http://localhost:8080/posts/powershell_add_a_calculated_property_in_select_object/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/powershell_check_windows_server_tls_settings/</loc>
+    <loc>http://localhost:8080/posts/powershell_check_windows_server_tls_settings/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/powershell_classes/</loc>
+    <loc>http://localhost:8080/posts/powershell_classes/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/powershell_clipboard_to_array/</loc>
+    <loc>http://localhost:8080/posts/powershell_clipboard_to_array/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/powershell_common_members_of_two_groups/</loc>
+    <loc>http://localhost:8080/posts/powershell_common_members_of_two_groups/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/powershell_convert_from_unix_time/</loc>
+    <loc>http://localhost:8080/posts/powershell_convert_from_unix_time/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/powershell_custom_execution_timer/</loc>
+    <loc>http://localhost:8080/posts/powershell_custom_execution_timer/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/powershell_get_domain_controllers_in_forest/</loc>
+    <loc>http://localhost:8080/posts/powershell_get_domain_controllers_in_forest/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/powershell_lengh_limits_ad_attributes/</loc>
+    <loc>http://localhost:8080/posts/powershell_lengh_limits_ad_attributes/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/powershell_log_function/</loc>
+    <loc>http://localhost:8080/posts/powershell_log_function/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/powershell_monitor_memory/</loc>
+    <loc>http://localhost:8080/posts/powershell_monitor_memory/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/powershell_regex_string_between_two_strings/</loc>
+    <loc>http://localhost:8080/posts/powershell_regex_string_between_two_strings/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/powershell_rust/</loc>
+    <loc>http://localhost:8080/posts/powershell_rust/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/powershell_script_encryption/</loc>
+    <loc>http://localhost:8080/posts/powershell_script_encryption/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/powershell_search_adaccount/</loc>
+    <loc>http://localhost:8080/posts/powershell_search_adaccount/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/powershell_splatting/</loc>
+    <loc>http://localhost:8080/posts/powershell_splatting/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/powershell_test_credentials/</loc>
+    <loc>http://localhost:8080/posts/powershell_test_credentials/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/powershell_writing_cmdlets_in_c/</loc>
+    <loc>http://localhost:8080/posts/powershell_writing_cmdlets_in_c/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/privesc/</loc>
+    <loc>http://localhost:8080/tags/privesc/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/privilegeescalation/</loc>
+    <loc>http://localhost:8080/tags/privilegeescalation/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/programming/</loc>
+    <loc>http://localhost:8080/tags/programming/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/protocol/</loc>
+    <loc>http://localhost:8080/tags/protocol/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/pwn/</loc>
+    <loc>http://localhost:8080/tags/pwn/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/pwntools/</loc>
+    <loc>http://localhost:8080/tags/pwntools/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/python/</loc>
+    <loc>http://localhost:8080/tags/python/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/python_data_structures_and_algorithms/</loc>
+    <loc>http://localhost:8080/posts/python_data_structures_and_algorithms/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/python_functional_programming/</loc>
+    <loc>http://localhost:8080/posts/python_functional_programming/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/python_list_comprehensions/</loc>
+    <loc>http://localhost:8080/posts/python_list_comprehensions/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/python_visualize_active_directory_data/</loc>
+    <loc>http://localhost:8080/posts/python_visualize_active_directory_data/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/quantum_mechanics/</loc>
+    <loc>http://localhost:8080/posts/quantum_mechanics/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/quantumfieldtheory/</loc>
+    <loc>http://localhost:8080/tags/quantumfieldtheory/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/quantummechanics/</loc>
+    <loc>http://localhost:8080/tags/quantummechanics/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/quotes/</loc>
+    <loc>http://localhost:8080/posts/quotes/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/recon/</loc>
+    <loc>http://localhost:8080/tags/recon/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/recon_autorecon/</loc>
+    <loc>http://localhost:8080/posts/recon_autorecon/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/recon_port_scanning_and_nmap/</loc>
+    <loc>http://localhost:8080/posts/recon_port_scanning_and_nmap/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/relro/</loc>
+    <loc>http://localhost:8080/posts/relro/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/renormalization/</loc>
+    <loc>http://localhost:8080/tags/renormalization/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/renormalization_group/</loc>
+    <loc>http://localhost:8080/posts/renormalization_group/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/reverse_shell_upgrade_tty/</loc>
+    <loc>http://localhost:8080/posts/reverse_shell_upgrade_tty/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/reversing/</loc>
+    <loc>http://localhost:8080/tags/reversing/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/reversing_java/</loc>
+    <loc>http://localhost:8080/posts/reversing_java/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/reversing_python/</loc>
+    <loc>http://localhost:8080/posts/reversing_python/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/revshell/</loc>
+    <loc>http://localhost:8080/tags/revshell/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/rubeus/</loc>
+    <loc>http://localhost:8080/posts/rubeus/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/rust/</loc>
+    <loc>http://localhost:8080/tags/rust/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/sha1cracker/</loc>
+    <loc>http://localhost:8080/posts/sha1cracker/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/rust_programming/</loc>
+    <loc>http://localhost:8080/posts/rust_programming/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/s_mime/</loc>
+    <loc>http://localhost:8080/posts/s_mime/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/scanning/</loc>
+    <loc>http://localhost:8080/tags/scanning/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/scapy/</loc>
+    <loc>http://localhost:8080/tags/scapy/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/scattering/</loc>
+    <loc>http://localhost:8080/tags/scattering/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/school_spending_and_educational_outcomes/</loc>
+    <loc>http://localhost:8080/posts/school_spending_and_educational_outcomes/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/secplus/</loc>
+    <loc>http://localhost:8080/tags/secplus/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/security/</loc>
+    <loc>http://localhost:8080/tags/security/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/securityplus/</loc>
+    <loc>http://localhost:8080/tags/securityplus/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/serviceaccounts/</loc>
+    <loc>http://localhost:8080/tags/serviceaccounts/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/sha1/</loc>
+    <loc>http://localhost:8080/posts/sha1/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/siem/</loc>
+    <loc>http://localhost:8080/tags/siem/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/silver_ticket/</loc>
+    <loc>http://localhost:8080/posts/silver_ticket/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_active_directory_skeleton_key/</loc>
+    <loc>http://localhost:8080/posts/pentest_active_directory_skeleton_key/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/smb/</loc>
+    <loc>http://localhost:8080/tags/smb/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/smb_server_message_block/</loc>
+    <loc>http://localhost:8080/posts/smb_server_message_block/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/smbmap/</loc>
+    <loc>http://localhost:8080/tags/smbmap/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/smt/</loc>
+    <loc>http://localhost:8080/tags/smt/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/smtps/</loc>
+    <loc>http://localhost:8080/posts/smtps/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/snmp/</loc>
+    <loc>http://localhost:8080/posts/snmp/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/socialtheory/</loc>
+    <loc>http://localhost:8080/tags/socialtheory/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/spacetime/</loc>
+    <loc>http://localhost:8080/posts/spacetime/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/splunk/</loc>
+    <loc>http://localhost:8080/posts/splunk/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/splunk/</loc>
+    <loc>http://localhost:8080/tags/splunk/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/sql/</loc>
+    <loc>http://localhost:8080/tags/sql/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/sql_injection/</loc>
+    <loc>http://localhost:8080/posts/sql_injection/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/sqli/</loc>
+    <loc>http://localhost:8080/tags/sqli/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/ssh/</loc>
+    <loc>http://localhost:8080/tags/ssh/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/stack_canaries/</loc>
+    <loc>http://localhost:8080/posts/stack_canaries/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/stoicism/</loc>
+    <loc>http://localhost:8080/tags/stoicism/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/subdomain/</loc>
+    <loc>http://localhost:8080/tags/subdomain/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/subdomainenumeration/</loc>
+    <loc>http://localhost:8080/posts/subdomainenumeration/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/supremecourt/</loc>
+    <loc>http://localhost:8080/tags/supremecourt/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/</loc>
+    <loc>http://localhost:8080/tags/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/template/</loc>
+    <loc>http://localhost:8080/tags/template/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/testing/</loc>
+    <loc>http://localhost:8080/posts/testing/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/the_action_principle/</loc>
+    <loc>http://localhost:8080/posts/the_action_principle/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/tools/</loc>
+    <loc>http://localhost:8080/tags/tools/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/tor/</loc>
+    <loc>http://localhost:8080/posts/tor/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/trump/</loc>
+    <loc>http://localhost:8080/tags/trump/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/trump_policies_and_actions/</loc>
+    <loc>http://localhost:8080/posts/trump_policies_and_actions/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/tryhackme/</loc>
+    <loc>http://localhost:8080/tags/tryhackme/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/underground_empire/</loc>
+    <loc>http://localhost:8080/posts/underground_empire/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/unpacking/</loc>
+    <loc>http://localhost:8080/tags/unpacking/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/unredact_pixelized_text/</loc>
+    <loc>http://localhost:8080/posts/unredact_pixelized_text/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/von_neumann_architecture/</loc>
+    <loc>http://localhost:8080/posts/von_neumann_architecture/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/web/</loc>
+    <loc>http://localhost:8080/tags/web/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/web_pentest_browser_extensions/</loc>
+    <loc>http://localhost:8080/posts/web_pentest_browser_extensions/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/web_pentest_chrome_memory/</loc>
+    <loc>http://localhost:8080/posts/web_pentest_chrome_memory/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/web_pentest_cross_site_scripting/</loc>
+    <loc>http://localhost:8080/posts/web_pentest_cross_site_scripting/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/web_pentest_enumeration/</loc>
+    <loc>http://localhost:8080/posts/web_pentest_enumeration/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/web_pentest_file_upload/</loc>
+    <loc>http://localhost:8080/posts/web_pentest_file_upload/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/web_pentest_fuzzing/</loc>
+    <loc>http://localhost:8080/posts/web_pentest_fuzzing/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/pentest_jwt/</loc>
+    <loc>http://localhost:8080/posts/pentest_jwt/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/web_pentest_spring/</loc>
+    <loc>http://localhost:8080/posts/web_pentest_spring/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/web_pentest_tools/</loc>
+    <loc>http://localhost:8080/posts/web_pentest_tools/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/web_pentest_wordpress/</loc>
+    <loc>http://localhost:8080/posts/web_pentest_wordpress/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/wfuzz/</loc>
+    <loc>http://localhost:8080/posts/wfuzz/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/wildcard_certificate/</loc>
+    <loc>http://localhost:8080/posts/wildcard_certificate/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/windows/</loc>
+    <loc>http://localhost:8080/tags/windows/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/windows_cached_credentials_as_system/</loc>
+    <loc>http://localhost:8080/posts/windows_cached_credentials_as_system/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/windows_security_fundamentals/</loc>
+    <loc>http://localhost:8080/posts/windows_security_fundamentals/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/windows_trusted_platform_module_tpm/</loc>
+    <loc>http://localhost:8080/posts/windows_trusted_platform_module_tpm/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/windows_kernel_object_manager/</loc>
+    <loc>http://localhost:8080/posts/windows_kernel_object_manager/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/windows_kernel_security_reference_monitor/</loc>
+    <loc>http://localhost:8080/posts/windows_kernel_security_reference_monitor/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/windows_kernel/</loc>
+    <loc>http://localhost:8080/posts/windows_kernel/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/windowsexploitation/</loc>
+    <loc>http://localhost:8080/tags/windowsexploitation/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/wordlists/</loc>
+    <loc>http://localhost:8080/tags/wordlists/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/x11_authorization/</loc>
+    <loc>http://localhost:8080/posts/x11_authorization/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/xor_cryptography/</loc>
+    <loc>http://localhost:8080/posts/xor_cryptography/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/tags/z3/</loc>
+    <loc>http://localhost:8080/tags/z3/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/z3_basics/</loc>
+    <loc>http://localhost:8080/posts/z3_basics/</loc>
   </url><url>
-    <loc>https://kdbed.github.io/posts/zero_knowledge_proofs/</loc>
+    <loc>http://localhost:8080/posts/zero_knowledge_proofs/</loc>
   </url>
 </urlset>

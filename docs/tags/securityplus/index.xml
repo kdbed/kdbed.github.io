@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SecurityPlus on Owlglass</title>
-    <link>https://kdbed.github.io/tags/securityplus/</link>
+    <link>http://localhost:8080/tags/securityplus/</link>
     <description>Recent content in SecurityPlus on Owlglass</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://kdbed.github.io/tags/securityplus/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:8080/tags/securityplus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Birthday Attack</title>
-      <link>https://kdbed.github.io/posts/birthdayattack/</link>
+      <link>http://localhost:8080/posts/birthdayattack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kdbed.github.io/posts/birthdayattack/</guid>
-      <description>Birthday Attack The birthday attack is named after the birthday paradox. The name is based on fact that in a room with 23 people or more, the odds are greater than 50% that two will share the same birthday. Many find this counterintuitive, and the birthday paradox illustrates why many people’s instinct on probability (and risk) is wrong. You are not trying to match a specific birthday (such as yours); you are trying to match any birthday.</description>
+      <guid>http://localhost:8080/posts/birthdayattack/</guid>
+      <description>&lt;h2 id=&#34;birthday-attack&#34;&gt;Birthday Attack&lt;/h2&gt;&#xA;&lt;p&gt;The birthday attack is named after the birthday paradox. The name is based on fact that in a room with 23 people or more, the odds are greater than 50% that two will share the same birthday. Many find this counterintuitive, and the birthday paradox illustrates why many people’s instinct on probability (and risk) is wrong. You are not trying to match a specific birthday (such as yours); you are trying to match any birthday.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DNS Zone Transfers</title>
-      <link>https://kdbed.github.io/posts/dnszonetransfers/</link>
+      <link>http://localhost:8080/posts/dnszonetransfers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kdbed.github.io/posts/dnszonetransfers/</guid>
-      <description>DNS Zone Transfers DNS zone transfers using the AXFR protocol are the simplest mechanism to replicate DNS records across DNS servers. To avoid the need to edit information on multiple DNS servers, you can edit information on one server and use AXFR to copy information to other servers. However, if you do not protect your servers, malicious parties may use AXFR to get information about all your hosts.&#xA;How DNS Works DNS (Domain Name System) is like an Internet phonebook.</description>
+      <guid>http://localhost:8080/posts/dnszonetransfers/</guid>
+      <description>&lt;h2 id=&#34;dns-zone-transfers&#34;&gt;DNS Zone Transfers&lt;/h2&gt;&#xA;&lt;p&gt;DNS zone transfers using the AXFR protocol are the simplest mechanism to replicate DNS records across DNS servers. To avoid the need to edit information on multiple DNS servers, you can edit information on one server and use AXFR to copy information to other servers. However, if you do not protect your servers, malicious parties may use AXFR to get information about all your hosts.&lt;/p&gt;&#xA;&lt;h3 id=&#34;how-dns-works&#34;&gt;How DNS Works&lt;/h3&gt;&#xA;&lt;p&gt;DNS (Domain Name System) is like an Internet phonebook. It is responsible for resolving human-readable hostnames into machine-readable IP addresses. The system includes authoritative DNS servers that provide information and DNS caches that store that information temporarily for client lookups. A typical DNS query is very simple: a client provides a human-readable hostname and in response receives an IP address. However, the system assumes that the querying client knows the hostname.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Internet Security Association and Key Management Protocol (ISAKMP)</title>
-      <link>https://kdbed.github.io/posts/isakmp/</link>
+      <link>http://localhost:8080/posts/isakmp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kdbed.github.io/posts/isakmp/</guid>
-      <description>Internet Security Association and Key Management Protocol (ISAKMP) Wiki Overview ISAKMP defines the procedures for authenticating a communicating peer, creation and management of Security Associations, key generation techniques and threat mitigation (e.g. denial of service and replay attacks). As a framework,[1] ISAKMP typically utilizes IKE for key exchange, although other methods have been implemented such as Kerberized Internet Negotiation of Keys. A Preliminary SA is formed using this protocol; later a fresh keying is done.</description>
+      <guid>http://localhost:8080/posts/isakmp/</guid>
+      <description>&lt;h2 id=&#34;internet-security-association-and-key-management-protocol--isakmp&#34;&gt;Internet Security Association and Key Management Protocol (ISAKMP)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;wiki-overview&#34;&gt;Wiki Overview&lt;/h3&gt;&#xA;&lt;p&gt;ISAKMP defines the procedures for authenticating a communicating peer, creation and management of Security Associations, key generation techniques and threat mitigation (e.g. denial of service and replay attacks). As a framework,[1] ISAKMP typically utilizes IKE for key exchange, although other methods have been implemented such as Kerberized Internet Negotiation of Keys. A Preliminary SA is formed using this protocol; later a fresh keying is done.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

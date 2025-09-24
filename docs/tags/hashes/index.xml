@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hashes on Owlglass</title>
-    <link>https://kdbed.github.io/tags/hashes/</link>
+    <link>http://localhost:8080/tags/hashes/</link>
     <description>Recent content in Hashes on Owlglass</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://kdbed.github.io/tags/hashes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:8080/tags/hashes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Birthday Attack</title>
-      <link>https://kdbed.github.io/posts/birthdayattack/</link>
+      <link>http://localhost:8080/posts/birthdayattack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kdbed.github.io/posts/birthdayattack/</guid>
-      <description>Birthday Attack The birthday attack is named after the birthday paradox. The name is based on fact that in a room with 23 people or more, the odds are greater than 50% that two will share the same birthday. Many find this counterintuitive, and the birthday paradox illustrates why many people’s instinct on probability (and risk) is wrong. You are not trying to match a specific birthday (such as yours); you are trying to match any birthday.</description>
+      <guid>http://localhost:8080/posts/birthdayattack/</guid>
+      <description>&lt;h2 id=&#34;birthday-attack&#34;&gt;Birthday Attack&lt;/h2&gt;&#xA;&lt;p&gt;The birthday attack is named after the birthday paradox. The name is based on fact that in a room with 23 people or more, the odds are greater than 50% that two will share the same birthday. Many find this counterintuitive, and the birthday paradox illustrates why many people’s instinct on probability (and risk) is wrong. You are not trying to match a specific birthday (such as yours); you are trying to match any birthday.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

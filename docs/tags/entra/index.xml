@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Entra on Owlglass</title>
-    <link>https://kdbed.github.io/tags/entra/</link>
+    <link>http://localhost:8080/tags/entra/</link>
     <description>Recent content in Entra on Owlglass</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://kdbed.github.io/tags/entra/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:8080/tags/entra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pentest - Azure AD</title>
-      <link>https://kdbed.github.io/posts/azure_ad_backdoor/</link>
+      <link>http://localhost:8080/posts/azure_ad_backdoor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kdbed.github.io/posts/azure_ad_backdoor/</guid>
-      <description>Basic Recon Detect M365 usage: https://login.microsoftonline.com/getuserrealm.srf?login=test@acmecorp.com&amp;amp;xml=1 Tenant ID: https://login.microsoftonline.com/&amp;lt;target domain&amp;gt;/v2.0/.well-known/openid-configuration User enumeration: https://login.Microsoft.com/common/oauth2/token Detect invalid users while password spraying with: MSOLSpray Enumerate users via OneDrive: onedrive_user_enum Data in public Azure blobs:&#xA;storage-acct-name.blob.core.windows.net storage-acct-name.file.core.windows.net storage-acct-name.table.core.windows.net storage-acct-name.queue.core.windows.net Cloud_enum - Chris Moberly clound_enum Azure Smart Lockout - protection from pw spray; bypass with FireProx + MSOLSpray fireprox&#xA;User Account Enumeration chronlund&#xA;Password Spray Attacks with PowerShell chronlund&#xA;Conditional Access as Code chronlund&#xA;Breach Response chronlund</description>
+      <guid>http://localhost:8080/posts/azure_ad_backdoor/</guid>
+      <description>&lt;h2 id=&#34;basic-recon&#34;&gt;Basic Recon&lt;/h2&gt;&#xA;&lt;p&gt;Detect M365 usage: &lt;code&gt;https://login.microsoftonline.com/getuserrealm.srf?login=test@acmecorp.com&amp;amp;xml=1&lt;/code&gt;&#xA;Tenant ID: &lt;code&gt;https://login.microsoftonline.com/&amp;lt;target domain&amp;gt;/v2.0/.well-known/openid-configuration&lt;/code&gt;&#xA;User enumeration: &lt;code&gt;https://login.Microsoft.com/common/oauth2/token&lt;/code&gt;&#xA;Detect invalid users while password spraying with: &lt;a href=&#34;https://github.com/dafthack/MSOLSpray&#34;&gt;MSOLSpray&lt;/a&gt;&#xA;Enumerate users via OneDrive: &lt;a href=&#34;https://github.com/nyxgeek/onedrive_user_enum&#34;&gt;onedrive_user_enum&lt;/a&gt;&#xA;Data in public Azure blobs:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;storage-acct-name.blob.core.windows.net&lt;/li&gt;&#xA;&lt;li&gt;storage-acct-name.file.core.windows.net&lt;/li&gt;&#xA;&lt;li&gt;storage-acct-name.table.core.windows.net&lt;/li&gt;&#xA;&lt;li&gt;storage-acct-name.queue.core.windows.net&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Cloud_enum - Chris Moberly &lt;a href=&#34;https://github.com/initstring/cloud_enum&#34;&gt;clound_enum&lt;/a&gt;&#xA;Azure Smart Lockout - protection from pw spray; bypass with FireProx + MSOLSpray &lt;a href=&#34;https://github.com/ustayready/fireprox&#34;&gt;fireprox&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;user-account-enumeration&#34;&gt;User Account Enumeration&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://danielchronlund.com/2020/03/13/automatic-azure-ad-user-account-enumeration-with-powershell-scary-stuff/&#34;&gt;chronlund&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;password-spray-attacks-with-powershell&#34;&gt;Password Spray Attacks with PowerShell&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://danielchronlund.com/2020/03/17/azure-ad-password-spray-attacks-with-powershell-and-how-to-defend-your-tenant/&#34;&gt;chronlund&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;conditional-access-as-code&#34;&gt;Conditional Access as Code&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://danielchronlund.com/2020/11/25/how-to-manage-conditional-access-as-code-the-ultimate-guide/&#34;&gt;chronlund&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;breach-response&#34;&gt;Breach Response&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://danielchronlund.com/2021/03/29/my-azure-ad-has-been-breached-what-now/&#34;&gt;chronlund&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;pim-roles-powershell&#34;&gt;PIM Roles - PowerShell&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://danielchronlund.com/2021/09/17/activate-your-azure-ad-pim-roles-with-powershell/&#34;&gt;chronlund&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

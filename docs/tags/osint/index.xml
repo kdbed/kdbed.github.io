@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Osint on Owlglass</title>
-    <link>https://kdbed.github.io/tags/osint/</link>
+    <link>http://localhost:8080/tags/osint/</link>
     <description>Recent content in Osint on Owlglass</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://kdbed.github.io/tags/osint/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:8080/tags/osint/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google Hacking</title>
-      <link>https://kdbed.github.io/posts/google_hacking/</link>
+      <link>http://localhost:8080/posts/google_hacking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kdbed.github.io/posts/google_hacking/</guid>
-      <description>Operators ahrefs </description>
+      <guid>http://localhost:8080/posts/google_hacking/</guid>
+      <description>&lt;h2 id=&#34;operators&#34;&gt;Operators&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://ahrefs.com/blog/google-advanced-search-operators/&#34;&gt;ahrefs&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

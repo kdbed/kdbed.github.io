@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OperatingSystem on Owlglass</title>
-    <link>https://kdbed.github.io/tags/operatingsystem/</link>
+    <link>http://localhost:8080/tags/operatingsystem/</link>
     <description>Recent content in OperatingSystem on Owlglass</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://kdbed.github.io/tags/operatingsystem/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:8080/tags/operatingsystem/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Master Boot Record (MBR)</title>
-      <link>https://kdbed.github.io/posts/master_boot_record_mbr/</link>
+      <link>http://localhost:8080/posts/master_boot_record_mbr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kdbed.github.io/posts/master_boot_record_mbr/</guid>
+      <guid>http://localhost:8080/posts/master_boot_record_mbr/</guid>
       <description></description>
     </item>
   </channel>

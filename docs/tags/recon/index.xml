@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recon on Owlglass</title>
-    <link>https://kdbed.github.io/tags/recon/</link>
+    <link>http://localhost:8080/tags/recon/</link>
     <description>Recent content in Recon on Owlglass</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://kdbed.github.io/tags/recon/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:8080/tags/recon/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Active Scanning with Scapy</title>
-      <link>https://kdbed.github.io/posts/scapy_scanning/</link>
+      <link>http://localhost:8080/posts/scapy_scanning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kdbed.github.io/posts/scapy_scanning/</guid>
-      <description>Scanning Networks with Scapy Nmap implements several types of scans and can be used to detect the versions of operating systems and services; it can also perform custom vulnerability scanning. Here we&amp;rsquo;ll implement a couple of simple scans using scapy in Python.&#xA;SYN scan : A SYN scan sends a TCP SYN packet to a port and looks for a SYN/ACK packet in response. DNS scan : A DNS scan tests whether a DNS server is running on the target system.</description>
+      <guid>http://localhost:8080/posts/scapy_scanning/</guid>
+      <description>&lt;h2 id=&#34;scanning-networks-with-scapy&#34;&gt;Scanning Networks with Scapy&lt;/h2&gt;&#xA;&lt;p&gt;Nmap implements several types of scans and can be used to detect the versions of operating systems and services; it can also perform custom vulnerability scanning.  Here we&amp;rsquo;ll implement a couple of simple scans using &lt;code&gt;scapy&lt;/code&gt; in Python.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;span class=&#34;underline&#34;&gt;SYN scan&lt;/span&gt; : A SYN scan sends a TCP SYN packet to a port and looks for a SYN/ACK packet in response.&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;underline&#34;&gt;DNS scan&lt;/span&gt; : A DNS scan tests whether a DNS server is running on the target system.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;code&gt;Scapy&lt;/code&gt; makes it easy to create and send custom packets over the network and to sniff network traffic for responses.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Recon - AutoRecon</title>
-      <link>https://kdbed.github.io/posts/recon_autorecon/</link>
+      <link>http://localhost:8080/posts/recon_autorecon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kdbed.github.io/posts/recon_autorecon/</guid>
-      <description>AutoRecon https://github.com/Tib3rius/AutoRecon</description>
+      <guid>http://localhost:8080/posts/recon_autorecon/</guid>
+      <description>&lt;h2 id=&#34;autorecon&#34;&gt;AutoRecon&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/Tib3rius/AutoRecon&#34;&gt;https://github.com/Tib3rius/AutoRecon&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
