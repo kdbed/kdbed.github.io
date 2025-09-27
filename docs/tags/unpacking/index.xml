@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Unpacking on Owlglass</title>
-    <link>http://localhost:8080/tags/unpacking/</link>
+    <link>http://localhost:1313/tags/unpacking/</link>
     <description>Recent content in Unpacking on Owlglass</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:8080/tags/unpacking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/unpacking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reversing - Python</title>
-      <link>http://localhost:8080/posts/reversing_python/</link>
+      <link>http://localhost:1313/posts/reversing_python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8080/posts/reversing_python/</guid>
+      <guid>http://localhost:1313/posts/reversing_python/</guid>
       <description>&lt;h2 id=&#34;unpacking-python-executables&#34;&gt;Unpacking Python Executables&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.fortinet.com/blog/threat-research/unpacking-python-executables-windows-linux&#34;&gt;fortinet&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;extraction&#34;&gt;extraction&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/extremecoders-re/pyinstxtractor&#34;&gt;pyinstxtractor&lt;/a&gt; - extract the contents of a PyInstaller generated executable file&lt;/p&gt;&#xA;&lt;h3 id=&#34;decompile&#34;&gt;decompile&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/zrax/pycdc&#34;&gt;pycdc&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>

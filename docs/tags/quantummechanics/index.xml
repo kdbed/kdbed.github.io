@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>QuantumMechanics on Owlglass</title>
-    <link>http://localhost:8080/tags/quantummechanics/</link>
+    <link>http://localhost:1313/tags/quantummechanics/</link>
     <description>Recent content in QuantumMechanics on Owlglass</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:8080/tags/quantummechanics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/quantummechanics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Eikonal Approximation</title>
-      <link>http://localhost:8080/posts/eikonal_approximation/</link>
+      <link>http://localhost:1313/posts/eikonal_approximation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8080/posts/eikonal_approximation/</guid>
-      <description>&lt;h2 id=&#34;eikonal-approximation-in-quantum-mechanics--quantum-mechanics-dot-md&#34;&gt;Eikonal Approximation in &lt;a href=&#34;http://localhost:8080/posts/quantum_mechanics/&#34;&gt;Quantum Mechanics&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;introduction-and-background&#34;&gt;Introduction and Background&lt;/h3&gt;&#xA;&lt;p&gt;The root eikon comes from &lt;strong&gt;eikenai&lt;/strong&gt;, a transliteration of the Greek \(\epsilon\iota\kappa\epsilon\nu\alpha\iota\) meaning &amp;rsquo;to resemble&amp;rsquo;.  In Greek the word \(\epsilon\iota\kappa\omicron\nu\) means image &amp;ndash; compare &amp;lsquo;icon&amp;rsquo; in English. The image provided by the eikonal approximation in scattering has its origin in optics, wherein one assumes (ray optics) that the size of an obstacle is large compared to the wavelength of scattered light. When diffraction is involved, one moves from the eikonal approximation (back) to &lt;a href=&#34;http://localhost:8080/posts/maxwell_s_equations/&#34;&gt;Maxwell&amp;rsquo;s Equations&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/eikonal_approximation/</guid>
+      <description>&lt;h2 id=&#34;eikonal-approximation-in-quantum-mechanics--quantum-mechanics-dot-md&#34;&gt;Eikonal Approximation in &lt;a href=&#34;http://localhost:1313/posts/quantum_mechanics/&#34;&gt;Quantum Mechanics&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;introduction-and-background&#34;&gt;Introduction and Background&lt;/h3&gt;&#xA;&lt;p&gt;The root eikon comes from &lt;strong&gt;eikenai&lt;/strong&gt;, a transliteration of the Greek \(\epsilon\iota\kappa\epsilon\nu\alpha\iota\) meaning &amp;rsquo;to resemble&amp;rsquo;.  In Greek the word \(\epsilon\iota\kappa\omicron\nu\) means image &amp;ndash; compare &amp;lsquo;icon&amp;rsquo; in English. The image provided by the eikonal approximation in scattering has its origin in optics, wherein one assumes (ray optics) that the size of an obstacle is large compared to the wavelength of scattered light. When diffraction is involved, one moves from the eikonal approximation (back) to &lt;a href=&#34;http://localhost:1313/posts/maxwell_s_equations/&#34;&gt;Maxwell&amp;rsquo;s Equations&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Inverse-Square Potential in Quantum Mechanics</title>
-      <link>http://localhost:8080/posts/inverse_square_potential_in_quantum_mechanics/</link>
+      <link>http://localhost:1313/posts/inverse_square_potential_in_quantum_mechanics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8080/posts/inverse_square_potential_in_quantum_mechanics/</guid>
-      <description>&lt;h2 id=&#34;the-inverse-square-potential-in-quantum-mechanics&#34;&gt;The inverse-square potential in quantum mechanics&lt;/h2&gt;&#xA;&lt;h3 id=&#34;intro&#34;&gt;Intro&lt;/h3&gt;&#xA;&lt;p&gt;The inverse-square potential in quantum mechanics is connected to phenomena like electron capture by neutral polar molecules, the Efimov effect in a system of three identical bosons, the transition between asymptotically-free and conformal phases in QCD-like theories as a function of the ratio of the number of quark flavors to colors, and the AdS/CFT correspondence. The attractive \[ 1/x^2 \] potential is interesting because it naturally calls upon the framework of the &lt;a href=&#34;http://localhost:8080/posts/renormalization_group/&#34;&gt;Renormalization Group&lt;/a&gt;. This approach will be seen to mirror the modern treatment of quantum effective field theories whereby one demans that long-distance observables remain insensitive to the adjustment of fine details at short distances.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/inverse_square_potential_in_quantum_mechanics/</guid>
+      <description>&lt;h2 id=&#34;the-inverse-square-potential-in-quantum-mechanics&#34;&gt;The inverse-square potential in quantum mechanics&lt;/h2&gt;&#xA;&lt;h3 id=&#34;intro&#34;&gt;Intro&lt;/h3&gt;&#xA;&lt;p&gt;The inverse-square potential in quantum mechanics is connected to phenomena like electron capture by neutral polar molecules, the Efimov effect in a system of three identical bosons, the transition between asymptotically-free and conformal phases in QCD-like theories as a function of the ratio of the number of quark flavors to colors, and the AdS/CFT correspondence. The attractive \[ 1/x^2 \] potential is interesting because it naturally calls upon the framework of the &lt;a href=&#34;http://localhost:1313/posts/renormalization_group/&#34;&gt;Renormalization Group&lt;/a&gt;. This approach will be seen to mirror the modern treatment of quantum effective field theories whereby one demans that long-distance observables remain insensitive to the adjustment of fine details at short distances.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Renormalization Group</title>
-      <link>http://localhost:8080/posts/renormalization_group/</link>
+      <link>http://localhost:1313/posts/renormalization_group/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8080/posts/renormalization_group/</guid>
+      <guid>http://localhost:1313/posts/renormalization_group/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stoicism on Owlglass</title>
-    <link>http://localhost:8080/tags/stoicism/</link>
+    <link>http://localhost:1313/tags/stoicism/</link>
     <description>Recent content in Stoicism on Owlglass</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:8080/tags/stoicism/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/stoicism/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nietzsche and Stoicism</title>
-      <link>http://localhost:8080/posts/nietzsche_and_stoicism/</link>
+      <link>http://localhost:1313/posts/nietzsche_and_stoicism/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8080/posts/nietzsche_and_stoicism/</guid>
+      <guid>http://localhost:1313/posts/nietzsche_and_stoicism/</guid>
       <description>&lt;h2 id=&#34;nietzsche-and-stoicism&#34;&gt;Nietzsche and Stoicism&lt;/h2&gt;&#xA;&lt;h3 id=&#34;resolution-of-contradictions&#34;&gt;Resolution of contradictions&lt;/h3&gt;&#xA;&lt;p&gt;After describing the Stoics’ essential psychological characteristics, Nietzsche advances two obscure but critical remarks. First, he questions whether the Stoics’ attainment of their ethical ideal is significant on the grounds that the decision to adopt Stoic therapy is determined in advance by one’s character. Second, he rebukes the Stoics for underestimating the worth of pain and passion, and for the fatalistic acceptance of life that their therapy produces. Confusingly, however, Nietzsche elsewhere celebrates characteristics for which Stoicism is well known; for instance, self-sufficiency and its associated characteristics, such as hardness, independence, and self-mastery. Moreover, the Stoic’s fatalistic declaration, ‘I want nothing different!’, seems to express precisely the love of fate, or amor fati, that Nietzsche himself embraces.&lt;/p&gt;</description>
     </item>
   </channel>

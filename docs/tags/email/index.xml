@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Email on Owlglass</title>
-    <link>http://localhost:8080/tags/email/</link>
+    <link>http://localhost:1313/tags/email/</link>
     <description>Recent content in Email on Owlglass</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:8080/tags/email/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/email/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>S_MIME</title>
-      <link>http://localhost:8080/posts/s_mime/</link>
+      <link>http://localhost:1313/posts/s_mime/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8080/posts/s_mime/</guid>
-      <description>&lt;h2 id=&#34;s-mime&#34;&gt;S/MIME&lt;/h2&gt;&#xA;&lt;h2 id=&#34;compttia-security-plus--securityplus-dot-md&#34;&gt;&lt;a href=&#34;http://localhost:8080/posts/securityplus/&#34;&gt;ComptTIA Security+&lt;/a&gt;&lt;/h2&gt;</description>
+      <guid>http://localhost:1313/posts/s_mime/</guid>
+      <description>&lt;h2 id=&#34;s-mime&#34;&gt;S/MIME&lt;/h2&gt;&#xA;&lt;h2 id=&#34;compttia-security-plus--securityplus-dot-md&#34;&gt;&lt;a href=&#34;http://localhost:1313/posts/securityplus/&#34;&gt;ComptTIA Security+&lt;/a&gt;&lt;/h2&gt;</description>
     </item>
   </channel>
 </rss>

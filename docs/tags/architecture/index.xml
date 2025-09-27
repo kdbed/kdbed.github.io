@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Architecture on Owlglass</title>
-    <link>http://localhost:8080/tags/architecture/</link>
+    <link>http://localhost:1313/tags/architecture/</link>
     <description>Recent content in Architecture on Owlglass</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:8080/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>von Neumann Architecture</title>
-      <link>http://localhost:8080/posts/von_neumann_architecture/</link>
+      <link>http://localhost:1313/posts/von_neumann_architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8080/posts/von_neumann_architecture/</guid>
+      <guid>http://localhost:1313/posts/von_neumann_architecture/</guid>
       <description>&lt;h2 id=&#34;von-neumann-architecture&#34;&gt;von Neumann Architecture&lt;/h2&gt;</description>
     </item>
   </channel>

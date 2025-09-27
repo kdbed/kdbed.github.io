@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DNS on Owlglass</title>
-    <link>http://localhost:8080/tags/dns/</link>
+    <link>http://localhost:1313/tags/dns/</link>
     <description>Recent content in DNS on Owlglass</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:8080/tags/dns/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/dns/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DNS Zone Transfers</title>
-      <link>http://localhost:8080/posts/dnszonetransfers/</link>
+      <link>http://localhost:1313/posts/dnszonetransfers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8080/posts/dnszonetransfers/</guid>
+      <guid>http://localhost:1313/posts/dnszonetransfers/</guid>
       <description>&lt;h2 id=&#34;dns-zone-transfers&#34;&gt;DNS Zone Transfers&lt;/h2&gt;&#xA;&lt;p&gt;DNS zone transfers using the AXFR protocol are the simplest mechanism to replicate DNS records across DNS servers. To avoid the need to edit information on multiple DNS servers, you can edit information on one server and use AXFR to copy information to other servers. However, if you do not protect your servers, malicious parties may use AXFR to get information about all your hosts.&lt;/p&gt;&#xA;&lt;h3 id=&#34;how-dns-works&#34;&gt;How DNS Works&lt;/h3&gt;&#xA;&lt;p&gt;DNS (Domain Name System) is like an Internet phonebook. It is responsible for resolving human-readable hostnames into machine-readable IP addresses. The system includes authoritative DNS servers that provide information and DNS caches that store that information temporarily for client lookups. A typical DNS query is very simple: a client provides a human-readable hostname and in response receives an IP address. However, the system assumes that the querying client knows the hostname.&lt;/p&gt;</description>
     </item>
   </channel>

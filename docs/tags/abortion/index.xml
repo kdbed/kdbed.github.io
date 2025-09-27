@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abortion on Owlglass</title>
-    <link>http://localhost:8080/tags/abortion/</link>
+    <link>http://localhost:1313/tags/abortion/</link>
     <description>Recent content in Abortion on Owlglass</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:8080/tags/abortion/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/abortion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Abortion and the Supreme Court: Roe V Wade, Dobbs V Jackson, etc</title>
-      <link>http://localhost:8080/posts/roevwade/</link>
+      <link>http://localhost:1313/posts/roevwade/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8080/posts/roevwade/</guid>
-      <description>&lt;h2 id=&#34;abortion--abortion-dot-md--and-the-supreme-court&#34;&gt;&lt;a href=&#34;http://localhost:8080/posts/abortion/&#34;&gt;Abortion&lt;/a&gt; and the Supreme Court&lt;/h2&gt;&#xA;&lt;h3 id=&#34;roe-v-wade&#34;&gt;Roe V Wade&lt;/h3&gt;&#xA;&lt;h4 id=&#34;basic-conclusions-roe&#34;&gt;Basic Conclusions - Roe&lt;/h4&gt;&#xA;&lt;p&gt;Drawing on the First, Fourth, Ninth, and Fourteenth Amendments, the Court said that the Constitution protects an individual’s “zones of privacy.” Citing earlier cases that ruled that contraception, marriage, and child rearing were activities included in these “zones of privacy,” the Court found that the zone was “broad enough to encompass a woman’s decision whether or not to terminate her pregnancy.”&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/roevwade/</guid>
+      <description>&lt;h2 id=&#34;abortion--abortion-dot-md--and-the-supreme-court&#34;&gt;&lt;a href=&#34;http://localhost:1313/posts/abortion/&#34;&gt;Abortion&lt;/a&gt; and the Supreme Court&lt;/h2&gt;&#xA;&lt;h3 id=&#34;roe-v-wade&#34;&gt;Roe V Wade&lt;/h3&gt;&#xA;&lt;h4 id=&#34;basic-conclusions-roe&#34;&gt;Basic Conclusions - Roe&lt;/h4&gt;&#xA;&lt;p&gt;Drawing on the First, Fourth, Ninth, and Fourteenth Amendments, the Court said that the Constitution protects an individual’s “zones of privacy.” Citing earlier cases that ruled that contraception, marriage, and child rearing were activities included in these “zones of privacy,” the Court found that the zone was “broad enough to encompass a woman’s decision whether or not to terminate her pregnancy.”&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

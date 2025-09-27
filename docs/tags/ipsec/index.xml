@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IPsec on Owlglass</title>
-    <link>http://localhost:8080/tags/ipsec/</link>
+    <link>http://localhost:1313/tags/ipsec/</link>
     <description>Recent content in IPsec on Owlglass</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:8080/tags/ipsec/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/ipsec/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Internet Security Association and Key Management Protocol (ISAKMP)</title>
-      <link>http://localhost:8080/posts/isakmp/</link>
+      <link>http://localhost:1313/posts/isakmp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8080/posts/isakmp/</guid>
+      <guid>http://localhost:1313/posts/isakmp/</guid>
       <description>&lt;h2 id=&#34;internet-security-association-and-key-management-protocol--isakmp&#34;&gt;Internet Security Association and Key Management Protocol (ISAKMP)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;wiki-overview&#34;&gt;Wiki Overview&lt;/h3&gt;&#xA;&lt;p&gt;ISAKMP defines the procedures for authenticating a communicating peer, creation and management of Security Associations, key generation techniques and threat mitigation (e.g. denial of service and replay attacks). As a framework,[1] ISAKMP typically utilizes IKE for key exchange, although other methods have been implemented such as Kerberized Internet Negotiation of Keys. A Preliminary SA is formed using this protocol; later a fresh keying is done.&lt;/p&gt;</description>
     </item>
   </channel>

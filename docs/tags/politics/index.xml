@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Politics on Owlglass</title>
-    <link>http://localhost:8080/tags/politics/</link>
+    <link>http://localhost:1313/tags/politics/</link>
     <description>Recent content in Politics on Owlglass</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:8080/tags/politics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/politics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Trump - Policies and Actions</title>
-      <link>http://localhost:8080/posts/trump_policies_and_actions/</link>
+      <link>http://localhost:1313/posts/trump_policies_and_actions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8080/posts/trump_policies_and_actions/</guid>
-      <description>&lt;p&gt;An analysis of the coherence &amp;ndash; or lack thereof &amp;ndash; of Trump&amp;rsquo;s policies and &lt;a href=&#34;http://localhost:8080/posts/politics/&#34;&gt;politics&lt;/a&gt; , along with general remarks on what he did while in office.&lt;/p&gt;&#xA;&lt;h2 id=&#34;changes-in-american-policy&#34;&gt;Changes in American Policy&lt;/h2&gt;&#xA;&lt;p&gt;Many Americans will remember President Donald Trump&amp;rsquo;s presidency as a four-yearlong storm of tweets, rallies and on-air rants that ended in a mob riot and historic second impeachment. But there was more to the Trump presidency than attention-hogging political drama and conflict; often unnoticed, Trump and his administration actually did succeed in changing some of the ways Washington works.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/trump_policies_and_actions/</guid>
+      <description>&lt;p&gt;An analysis of the coherence &amp;ndash; or lack thereof &amp;ndash; of Trump&amp;rsquo;s policies and &lt;a href=&#34;http://localhost:1313/posts/politics/&#34;&gt;politics&lt;/a&gt; , along with general remarks on what he did while in office.&lt;/p&gt;&#xA;&lt;h2 id=&#34;changes-in-american-policy&#34;&gt;Changes in American Policy&lt;/h2&gt;&#xA;&lt;p&gt;Many Americans will remember President Donald Trump&amp;rsquo;s presidency as a four-yearlong storm of tweets, rallies and on-air rants that ended in a mob riot and historic second impeachment. But there was more to the Trump presidency than attention-hogging political drama and conflict; often unnoticed, Trump and his administration actually did succeed in changing some of the ways Washington works.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
