@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jwt on Owlglass</title>
-    <link>http://localhost:1313/tags/jwt/</link>
+    <link>https://kdbed.github.io/tags/jwt/</link>
     <description>Recent content in Jwt on Owlglass</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/jwt/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kdbed.github.io/tags/jwt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Web Pentest - JWT</title>
-      <link>http://localhost:1313/posts/pentest_jwt/</link>
+      <link>https://kdbed.github.io/posts/pentest_jwt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/pentest_jwt/</guid>
-      <description>&lt;h2 id=&#34;jwt-vulnerabilities&#34;&gt;JWT Vulnerabilities&lt;/h2&gt;&#xA;&lt;h3 id=&#34;jwt-dot-io&#34;&gt;&lt;a href=&#34;https://jwt.io&#34;&gt;jwt.io&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;jwt-tool&#34;&gt;&lt;a href=&#34;https://github.com/ticarpi/jwt_tool&#34;&gt;jwt_tool&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;hacktricks-jwt-vulnerabilities&#34;&gt;&lt;a href=&#34;https://book.hacktricks.xyz/pentesting-web/hacking-jwt-json-web-tokens&#34;&gt;hacktricks - JWT Vulnerabilities&lt;/a&gt;&lt;/h3&gt;</description>
+      <guid>https://kdbed.github.io/posts/pentest_jwt/</guid>
+      <description>JWT Vulnerabilities jwt.io jwt_tool hacktricks - JWT Vulnerabilities </description>
     </item>
   </channel>
 </rss>

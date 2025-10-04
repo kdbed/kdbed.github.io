@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Exfiltration on Owlglass</title>
-    <link>http://localhost:1313/tags/exfiltration/</link>
+    <link>https://kdbed.github.io/tags/exfiltration/</link>
     <description>Recent content in Exfiltration on Owlglass</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/exfiltration/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kdbed.github.io/tags/exfiltration/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data Transfer</title>
-      <link>http://localhost:1313/posts/data_transfer/</link>
+      <link>https://kdbed.github.io/posts/data_transfer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/data_transfer/</guid>
-      <description>&lt;h2 id=&#34;data-transfer&#34;&gt;Data Transfer&lt;/h2&gt;&#xA;&lt;h3 id=&#34;certutil&#34;&gt;certutil&lt;/h3&gt;</description>
+      <guid>https://kdbed.github.io/posts/data_transfer/</guid>
+      <description>Data Transfer certutil </description>
     </item>
   </channel>
 </rss>

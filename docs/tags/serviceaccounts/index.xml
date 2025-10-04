@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ServiceAccounts on Owlglass</title>
-    <link>http://localhost:1313/tags/serviceaccounts/</link>
+    <link>https://kdbed.github.io/tags/serviceaccounts/</link>
     <description>Recent content in ServiceAccounts on Owlglass</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/serviceaccounts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kdbed.github.io/tags/serviceaccounts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pentest - Windows Privilege Escalation</title>
-      <link>http://localhost:1313/posts/pentest_windows_privilege_escalation/</link>
+      <link>https://kdbed.github.io/posts/pentest_windows_privilege_escalation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/pentest_windows_privilege_escalation/</guid>
-      <description>&lt;h2 id=&#34;from-service-to-system&#34;&gt;From Service to &lt;code&gt;SYSTEM&lt;/code&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;service-account-privileges&#34;&gt;Service Account Privileges&lt;/h3&gt;&#xA;&lt;p&gt;Services can be run such that they don&amp;rsquo;t maintain the privs of &lt;code&gt;NT AUTHORITY\LOCAL SERVICE&lt;/code&gt; account, eg with the &lt;code&gt;-k LocalServiceAndNoImpersonation&lt;/code&gt; option.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/impersonate.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;The task scheduler can be used to restore default privs: &lt;a href=&#34;https://github.com/itm4n/FullPowers.git&#34;&gt;FullPowers&lt;/a&gt; &lt;a href=&#34;https://itm4n.github.io/localservice-privileges/&#34;&gt;itm4n&lt;/a&gt;. After executing FullPowers:&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/fullPowers.png&#34;&gt;&#xA;&lt;/figure&gt;</description>
+      <guid>https://kdbed.github.io/posts/pentest_windows_privilege_escalation/</guid>
+      <description>From Service to SYSTEM Service Account Privileges Services can be run such that they don&amp;rsquo;t maintain the privs of NT AUTHORITY\LOCAL SERVICE account, eg with the -k LocalServiceAndNoImpersonation option.&#xA;The task scheduler can be used to restore default privs: FullPowers itm4n. After executing FullPowers:</description>
     </item>
   </channel>
 </rss>

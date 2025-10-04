@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Smb on Owlglass</title>
-    <link>http://localhost:1313/tags/smb/</link>
+    <link>https://kdbed.github.io/tags/smb/</link>
     <description>Recent content in Smb on Owlglass</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/smb/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kdbed.github.io/tags/smb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pentest - SMB p 139,445</title>
-      <link>http://localhost:1313/posts/pentest_smb_p_139_445/</link>
+      <link>https://kdbed.github.io/posts/pentest_smb_p_139_445/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/pentest_smb_p_139_445/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://book.hacktricks.xyz/network-services-pentesting/pentesting-smb&#34;&gt;HackTricks&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;port-139-netbios--netbios-dot-md&#34;&gt;Port 139 &lt;a href=&#34;http://localhost:1313/posts/netbios/&#34;&gt;NetBIOS&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;span class=&#34;underline&#34;&gt;NetBIOS&lt;/span&gt; is &lt;code&gt;Network Basic Input Output System&lt;/code&gt;, which is a software protocol that allows applications, PCs, and Desktops on a local area network (LAN) to communicate with network hardware and to transmit data across the network.&lt;/p&gt;&#xA;&lt;h2 id=&#34;port-445-smb-server-message-block--smb-server-message-block-dot-md&#34;&gt;Port 445 &lt;a href=&#34;http://localhost:1313/posts/smb_server_message_block/&#34;&gt;SMB - Server Message Block&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;While Port 139 is known technically as ‘NBT over IP’, Port 445 is ‘SMB over IP’. SMB stands for ‘Server Message Blocks’.&lt;/p&gt;&#xA;&lt;h3 id=&#34;smb&#34;&gt;SMB&lt;/h3&gt;&#xA;&lt;p&gt;Server Message Block (SMB) is a client-server protocol that regulates access to files and entire directories and other network resources such as printers, routers, or interfaces released for the network.&lt;/p&gt;</description>
+      <guid>https://kdbed.github.io/posts/pentest_smb_p_139_445/</guid>
+      <description>HackTricks&#xA;Port 139 NetBIOS NetBIOS is Network Basic Input Output System, which is a software protocol that allows applications, PCs, and Desktops on a local area network (LAN) to communicate with network hardware and to transmit data across the network.&#xA;Port 445 SMB - Server Message Block While Port 139 is known technically as ‘NBT over IP’, Port 445 is ‘SMB over IP’. SMB stands for ‘Server Message Blocks’.&#xA;SMB Server Message Block (SMB) is a client-server protocol that regulates access to files and entire directories and other network resources such as printers, routers, or interfaces released for the network.</description>
     </item>
   </channel>
 </rss>

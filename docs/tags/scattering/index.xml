@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scattering on Owlglass</title>
-    <link>http://localhost:1313/tags/scattering/</link>
+    <link>https://kdbed.github.io/tags/scattering/</link>
     <description>Recent content in Scattering on Owlglass</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/scattering/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kdbed.github.io/tags/scattering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Eikonal Approximation</title>
-      <link>http://localhost:1313/posts/eikonal_approximation/</link>
+      <link>https://kdbed.github.io/posts/eikonal_approximation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/eikonal_approximation/</guid>
-      <description>&lt;h2 id=&#34;eikonal-approximation-in-quantum-mechanics--quantum-mechanics-dot-md&#34;&gt;Eikonal Approximation in &lt;a href=&#34;http://localhost:1313/posts/quantum_mechanics/&#34;&gt;Quantum Mechanics&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;introduction-and-background&#34;&gt;Introduction and Background&lt;/h3&gt;&#xA;&lt;p&gt;The root eikon comes from &lt;strong&gt;eikenai&lt;/strong&gt;, a transliteration of the Greek \(\epsilon\iota\kappa\epsilon\nu\alpha\iota\) meaning &amp;rsquo;to resemble&amp;rsquo;.  In Greek the word \(\epsilon\iota\kappa\omicron\nu\) means image &amp;ndash; compare &amp;lsquo;icon&amp;rsquo; in English. The image provided by the eikonal approximation in scattering has its origin in optics, wherein one assumes (ray optics) that the size of an obstacle is large compared to the wavelength of scattered light. When diffraction is involved, one moves from the eikonal approximation (back) to &lt;a href=&#34;http://localhost:1313/posts/maxwell_s_equations/&#34;&gt;Maxwell&amp;rsquo;s Equations&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid>https://kdbed.github.io/posts/eikonal_approximation/</guid>
+      <description>Eikonal Approximation in Quantum Mechanics Introduction and Background The root eikon comes from eikenai, a transliteration of the Greek \(\epsilon\iota\kappa\epsilon\nu\alpha\iota\) meaning &amp;rsquo;to resemble&amp;rsquo;. In Greek the word \(\epsilon\iota\kappa\omicron\nu\) means image &amp;ndash; compare &amp;lsquo;icon&amp;rsquo; in English. The image provided by the eikonal approximation in scattering has its origin in optics, wherein one assumes (ray optics) that the size of an obstacle is large compared to the wavelength of scattered light. When diffraction is involved, one moves from the eikonal approximation (back) to Maxwell&amp;rsquo;s Equations.</description>
     </item>
   </channel>
 </rss>

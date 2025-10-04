@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cloud on Owlglass</title>
-    <link>http://localhost:1313/tags/cloud/</link>
+    <link>https://kdbed.github.io/tags/cloud/</link>
     <description>Recent content in Cloud on Owlglass</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kdbed.github.io/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Golden SAML</title>
-      <link>http://localhost:1313/posts/golden_saml/</link>
+      <link>https://kdbed.github.io/posts/golden_saml/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/golden_saml/</guid>
-      <description>&lt;h2 id=&#34;golden-saml&#34;&gt;Golden SAML&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.cyberark.com/resources/threat-research-blog/golden-saml-newly-discovered-attack-technique-forges-authentication-to-cloud-apps&#34;&gt;https://www.cyberark.com/resources/threat-research-blog/golden-saml-newly-discovered-attack-technique-forges-authentication-to-cloud-apps&lt;/a&gt;&lt;/p&gt;</description>
+      <guid>https://kdbed.github.io/posts/golden_saml/</guid>
+      <description>Golden SAML https://www.cyberark.com/resources/threat-research-blog/golden-saml-newly-discovered-attack-technique-forges-authentication-to-cloud-apps</description>
     </item>
   </channel>
 </rss>

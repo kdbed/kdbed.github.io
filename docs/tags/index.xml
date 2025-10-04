@@ -2,926 +2,926 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Owlglass</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://kdbed.github.io/tags/</link>
     <description>Recent content in Tags on Owlglass</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kdbed.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Abortion</title>
-      <link>http://localhost:1313/tags/abortion/</link>
+      <link>https://kdbed.github.io/tags/abortion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/abortion/</guid>
+      <guid>https://kdbed.github.io/tags/abortion/</guid>
       <description></description>
     </item>
     <item>
       <title>Action</title>
-      <link>http://localhost:1313/tags/action/</link>
+      <link>https://kdbed.github.io/tags/action/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/action/</guid>
+      <guid>https://kdbed.github.io/tags/action/</guid>
       <description></description>
     </item>
     <item>
       <title>ActiveDirectory</title>
-      <link>http://localhost:1313/tags/activedirectory/</link>
+      <link>https://kdbed.github.io/tags/activedirectory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/activedirectory/</guid>
+      <guid>https://kdbed.github.io/tags/activedirectory/</guid>
       <description></description>
     </item>
     <item>
       <title>AD</title>
-      <link>http://localhost:1313/tags/ad/</link>
+      <link>https://kdbed.github.io/tags/ad/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ad/</guid>
+      <guid>https://kdbed.github.io/tags/ad/</guid>
       <description></description>
     </item>
     <item>
       <title>AI</title>
-      <link>http://localhost:1313/tags/ai/</link>
+      <link>https://kdbed.github.io/tags/ai/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ai/</guid>
+      <guid>https://kdbed.github.io/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>AlgebraicGeometry</title>
-      <link>http://localhost:1313/tags/algebraicgeometry/</link>
+      <link>https://kdbed.github.io/tags/algebraicgeometry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/algebraicgeometry/</guid>
+      <guid>https://kdbed.github.io/tags/algebraicgeometry/</guid>
       <description></description>
     </item>
     <item>
       <title>Algo</title>
-      <link>http://localhost:1313/tags/algo/</link>
+      <link>https://kdbed.github.io/tags/algo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/algo/</guid>
+      <guid>https://kdbed.github.io/tags/algo/</guid>
       <description></description>
     </item>
     <item>
       <title>Algorithms</title>
-      <link>http://localhost:1313/tags/algorithms/</link>
+      <link>https://kdbed.github.io/tags/algorithms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/algorithms/</guid>
+      <guid>https://kdbed.github.io/tags/algorithms/</guid>
       <description></description>
     </item>
     <item>
       <title>Antivirus</title>
-      <link>http://localhost:1313/tags/antivirus/</link>
+      <link>https://kdbed.github.io/tags/antivirus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/antivirus/</guid>
+      <guid>https://kdbed.github.io/tags/antivirus/</guid>
       <description></description>
     </item>
     <item>
       <title>Architecture</title>
-      <link>http://localhost:1313/tags/architecture/</link>
+      <link>https://kdbed.github.io/tags/architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/architecture/</guid>
+      <guid>https://kdbed.github.io/tags/architecture/</guid>
       <description></description>
     </item>
     <item>
       <title>Auth</title>
-      <link>http://localhost:1313/tags/auth/</link>
+      <link>https://kdbed.github.io/tags/auth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/auth/</guid>
+      <guid>https://kdbed.github.io/tags/auth/</guid>
       <description></description>
     </item>
     <item>
       <title>Azure</title>
-      <link>http://localhost:1313/tags/azure/</link>
+      <link>https://kdbed.github.io/tags/azure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/azure/</guid>
+      <guid>https://kdbed.github.io/tags/azure/</guid>
       <description></description>
     </item>
     <item>
       <title>Binary</title>
-      <link>http://localhost:1313/tags/binary/</link>
+      <link>https://kdbed.github.io/tags/binary/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/binary/</guid>
+      <guid>https://kdbed.github.io/tags/binary/</guid>
       <description></description>
     </item>
     <item>
       <title>Bloodhound</title>
-      <link>http://localhost:1313/tags/bloodhound/</link>
+      <link>https://kdbed.github.io/tags/bloodhound/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/bloodhound/</guid>
+      <guid>https://kdbed.github.io/tags/bloodhound/</guid>
       <description></description>
     </item>
     <item>
       <title>Browser</title>
-      <link>http://localhost:1313/tags/browser/</link>
+      <link>https://kdbed.github.io/tags/browser/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/browser/</guid>
+      <guid>https://kdbed.github.io/tags/browser/</guid>
       <description></description>
     </item>
     <item>
       <title>CategoryTheory</title>
-      <link>http://localhost:1313/tags/categorytheory/</link>
+      <link>https://kdbed.github.io/tags/categorytheory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/categorytheory/</guid>
+      <guid>https://kdbed.github.io/tags/categorytheory/</guid>
       <description></description>
     </item>
     <item>
       <title>Cert</title>
-      <link>http://localhost:1313/tags/cert/</link>
+      <link>https://kdbed.github.io/tags/cert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cert/</guid>
+      <guid>https://kdbed.github.io/tags/cert/</guid>
       <description></description>
     </item>
     <item>
       <title>Chrome</title>
-      <link>http://localhost:1313/tags/chrome/</link>
+      <link>https://kdbed.github.io/tags/chrome/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/chrome/</guid>
+      <guid>https://kdbed.github.io/tags/chrome/</guid>
       <description></description>
     </item>
     <item>
       <title>Climate</title>
-      <link>http://localhost:1313/tags/climate/</link>
+      <link>https://kdbed.github.io/tags/climate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/climate/</guid>
+      <guid>https://kdbed.github.io/tags/climate/</guid>
       <description></description>
     </item>
     <item>
       <title>Cloud</title>
-      <link>http://localhost:1313/tags/cloud/</link>
+      <link>https://kdbed.github.io/tags/cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cloud/</guid>
+      <guid>https://kdbed.github.io/tags/cloud/</guid>
       <description></description>
     </item>
     <item>
       <title>Cmdlet</title>
-      <link>http://localhost:1313/tags/cmdlet/</link>
+      <link>https://kdbed.github.io/tags/cmdlet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cmdlet/</guid>
+      <guid>https://kdbed.github.io/tags/cmdlet/</guid>
       <description></description>
     </item>
     <item>
       <title>Compositionality</title>
-      <link>http://localhost:1313/tags/compositionality/</link>
+      <link>https://kdbed.github.io/tags/compositionality/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/compositionality/</guid>
+      <guid>https://kdbed.github.io/tags/compositionality/</guid>
       <description></description>
     </item>
     <item>
       <title>Computation</title>
-      <link>http://localhost:1313/tags/computation/</link>
+      <link>https://kdbed.github.io/tags/computation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/computation/</guid>
+      <guid>https://kdbed.github.io/tags/computation/</guid>
       <description></description>
     </item>
     <item>
       <title>ComputerScience</title>
-      <link>http://localhost:1313/tags/computerscience/</link>
+      <link>https://kdbed.github.io/tags/computerscience/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/computerscience/</guid>
+      <guid>https://kdbed.github.io/tags/computerscience/</guid>
       <description></description>
     </item>
     <item>
       <title>Constitution</title>
-      <link>http://localhost:1313/tags/constitution/</link>
+      <link>https://kdbed.github.io/tags/constitution/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/constitution/</guid>
+      <guid>https://kdbed.github.io/tags/constitution/</guid>
       <description></description>
     </item>
     <item>
       <title>Cpp</title>
-      <link>http://localhost:1313/tags/cpp/</link>
+      <link>https://kdbed.github.io/tags/cpp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cpp/</guid>
+      <guid>https://kdbed.github.io/tags/cpp/</guid>
       <description></description>
     </item>
     <item>
       <title>Crack</title>
-      <link>http://localhost:1313/tags/crack/</link>
+      <link>https://kdbed.github.io/tags/crack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/crack/</guid>
+      <guid>https://kdbed.github.io/tags/crack/</guid>
       <description></description>
     </item>
     <item>
       <title>Crackmapexec</title>
-      <link>http://localhost:1313/tags/crackmapexec/</link>
+      <link>https://kdbed.github.io/tags/crackmapexec/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/crackmapexec/</guid>
+      <guid>https://kdbed.github.io/tags/crackmapexec/</guid>
       <description></description>
     </item>
     <item>
       <title>Crypto</title>
-      <link>http://localhost:1313/tags/crypto/</link>
+      <link>https://kdbed.github.io/tags/crypto/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/crypto/</guid>
+      <guid>https://kdbed.github.io/tags/crypto/</guid>
       <description></description>
     </item>
     <item>
       <title>Cryptography</title>
-      <link>http://localhost:1313/tags/cryptography/</link>
+      <link>https://kdbed.github.io/tags/cryptography/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cryptography/</guid>
+      <guid>https://kdbed.github.io/tags/cryptography/</guid>
       <description></description>
     </item>
     <item>
       <title>Csharp</title>
-      <link>http://localhost:1313/tags/csharp/</link>
+      <link>https://kdbed.github.io/tags/csharp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/csharp/</guid>
+      <guid>https://kdbed.github.io/tags/csharp/</guid>
       <description></description>
     </item>
     <item>
       <title>DNS</title>
-      <link>http://localhost:1313/tags/dns/</link>
+      <link>https://kdbed.github.io/tags/dns/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/dns/</guid>
+      <guid>https://kdbed.github.io/tags/dns/</guid>
       <description></description>
     </item>
     <item>
       <title>Edr</title>
-      <link>http://localhost:1313/tags/edr/</link>
+      <link>https://kdbed.github.io/tags/edr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/edr/</guid>
+      <guid>https://kdbed.github.io/tags/edr/</guid>
       <description></description>
     </item>
     <item>
       <title>Education</title>
-      <link>http://localhost:1313/tags/education/</link>
+      <link>https://kdbed.github.io/tags/education/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/education/</guid>
+      <guid>https://kdbed.github.io/tags/education/</guid>
       <description></description>
     </item>
     <item>
       <title>Email</title>
-      <link>http://localhost:1313/tags/email/</link>
+      <link>https://kdbed.github.io/tags/email/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/email/</guid>
+      <guid>https://kdbed.github.io/tags/email/</guid>
       <description></description>
     </item>
     <item>
       <title>Emissions</title>
-      <link>http://localhost:1313/tags/emissions/</link>
+      <link>https://kdbed.github.io/tags/emissions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/emissions/</guid>
+      <guid>https://kdbed.github.io/tags/emissions/</guid>
       <description></description>
     </item>
     <item>
       <title>Encryption</title>
-      <link>http://localhost:1313/tags/encryption/</link>
+      <link>https://kdbed.github.io/tags/encryption/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/encryption/</guid>
+      <guid>https://kdbed.github.io/tags/encryption/</guid>
       <description></description>
     </item>
     <item>
       <title>EndpointProtection</title>
-      <link>http://localhost:1313/tags/endpointprotection/</link>
+      <link>https://kdbed.github.io/tags/endpointprotection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/endpointprotection/</guid>
+      <guid>https://kdbed.github.io/tags/endpointprotection/</guid>
       <description></description>
     </item>
     <item>
       <title>Entra</title>
-      <link>http://localhost:1313/tags/entra/</link>
+      <link>https://kdbed.github.io/tags/entra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/entra/</guid>
+      <guid>https://kdbed.github.io/tags/entra/</guid>
       <description></description>
     </item>
     <item>
       <title>Enumeration</title>
-      <link>http://localhost:1313/tags/enumeration/</link>
+      <link>https://kdbed.github.io/tags/enumeration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/enumeration/</guid>
+      <guid>https://kdbed.github.io/tags/enumeration/</guid>
       <description></description>
     </item>
     <item>
       <title>Essentials</title>
-      <link>http://localhost:1313/tags/essentials/</link>
+      <link>https://kdbed.github.io/tags/essentials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/essentials/</guid>
+      <guid>https://kdbed.github.io/tags/essentials/</guid>
       <description></description>
     </item>
     <item>
       <title>EulerLagrange</title>
-      <link>http://localhost:1313/tags/eulerlagrange/</link>
+      <link>https://kdbed.github.io/tags/eulerlagrange/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/eulerlagrange/</guid>
+      <guid>https://kdbed.github.io/tags/eulerlagrange/</guid>
       <description></description>
     </item>
     <item>
       <title>EventLogs</title>
-      <link>http://localhost:1313/tags/eventlogs/</link>
+      <link>https://kdbed.github.io/tags/eventlogs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/eventlogs/</guid>
+      <guid>https://kdbed.github.io/tags/eventlogs/</guid>
       <description></description>
     </item>
     <item>
       <title>Example</title>
-      <link>http://localhost:1313/tags/example/</link>
+      <link>https://kdbed.github.io/tags/example/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/example/</guid>
+      <guid>https://kdbed.github.io/tags/example/</guid>
       <description></description>
     </item>
     <item>
       <title>Examples</title>
-      <link>http://localhost:1313/tags/examples/</link>
+      <link>https://kdbed.github.io/tags/examples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/examples/</guid>
+      <guid>https://kdbed.github.io/tags/examples/</guid>
       <description></description>
     </item>
     <item>
       <title>Exfiltration</title>
-      <link>http://localhost:1313/tags/exfiltration/</link>
+      <link>https://kdbed.github.io/tags/exfiltration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/exfiltration/</guid>
+      <guid>https://kdbed.github.io/tags/exfiltration/</guid>
       <description></description>
     </item>
     <item>
       <title>Exploit</title>
-      <link>http://localhost:1313/tags/exploit/</link>
+      <link>https://kdbed.github.io/tags/exploit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/exploit/</guid>
+      <guid>https://kdbed.github.io/tags/exploit/</guid>
       <description></description>
     </item>
     <item>
       <title>Exploitation</title>
-      <link>http://localhost:1313/tags/exploitation/</link>
+      <link>https://kdbed.github.io/tags/exploitation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/exploitation/</guid>
+      <guid>https://kdbed.github.io/tags/exploitation/</guid>
       <description></description>
     </item>
     <item>
       <title>Ftp</title>
-      <link>http://localhost:1313/tags/ftp/</link>
+      <link>https://kdbed.github.io/tags/ftp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ftp/</guid>
+      <guid>https://kdbed.github.io/tags/ftp/</guid>
       <description></description>
     </item>
     <item>
       <title>Google</title>
-      <link>http://localhost:1313/tags/google/</link>
+      <link>https://kdbed.github.io/tags/google/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/google/</guid>
+      <guid>https://kdbed.github.io/tags/google/</guid>
       <description></description>
     </item>
     <item>
       <title>Grpc</title>
-      <link>http://localhost:1313/tags/grpc/</link>
+      <link>https://kdbed.github.io/tags/grpc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/grpc/</guid>
+      <guid>https://kdbed.github.io/tags/grpc/</guid>
       <description></description>
     </item>
     <item>
       <title>HashCollision</title>
-      <link>http://localhost:1313/tags/hashcollision/</link>
+      <link>https://kdbed.github.io/tags/hashcollision/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/hashcollision/</guid>
+      <guid>https://kdbed.github.io/tags/hashcollision/</guid>
       <description></description>
     </item>
     <item>
       <title>Hashes</title>
-      <link>http://localhost:1313/tags/hashes/</link>
+      <link>https://kdbed.github.io/tags/hashes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/hashes/</guid>
+      <guid>https://kdbed.github.io/tags/hashes/</guid>
       <description></description>
     </item>
     <item>
       <title>Haskell</title>
-      <link>http://localhost:1313/tags/haskell/</link>
+      <link>https://kdbed.github.io/tags/haskell/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/haskell/</guid>
+      <guid>https://kdbed.github.io/tags/haskell/</guid>
       <description></description>
     </item>
     <item>
       <title>Impacket</title>
-      <link>http://localhost:1313/tags/impacket/</link>
+      <link>https://kdbed.github.io/tags/impacket/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/impacket/</guid>
+      <guid>https://kdbed.github.io/tags/impacket/</guid>
       <description></description>
     </item>
     <item>
       <title>Infosec</title>
-      <link>http://localhost:1313/tags/infosec/</link>
+      <link>https://kdbed.github.io/tags/infosec/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/infosec/</guid>
+      <guid>https://kdbed.github.io/tags/infosec/</guid>
       <description></description>
     </item>
     <item>
       <title>Introduction</title>
-      <link>http://localhost:1313/tags/introduction/</link>
+      <link>https://kdbed.github.io/tags/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/introduction/</guid>
+      <guid>https://kdbed.github.io/tags/introduction/</guid>
       <description></description>
     </item>
     <item>
       <title>IPsec</title>
-      <link>http://localhost:1313/tags/ipsec/</link>
+      <link>https://kdbed.github.io/tags/ipsec/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ipsec/</guid>
+      <guid>https://kdbed.github.io/tags/ipsec/</guid>
       <description></description>
     </item>
     <item>
       <title>Jupyter</title>
-      <link>http://localhost:1313/tags/jupyter/</link>
+      <link>https://kdbed.github.io/tags/jupyter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/jupyter/</guid>
+      <guid>https://kdbed.github.io/tags/jupyter/</guid>
       <description></description>
     </item>
     <item>
       <title>Jwt</title>
-      <link>http://localhost:1313/tags/jwt/</link>
+      <link>https://kdbed.github.io/tags/jwt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/jwt/</guid>
+      <guid>https://kdbed.github.io/tags/jwt/</guid>
       <description></description>
     </item>
     <item>
       <title>Kali</title>
-      <link>http://localhost:1313/tags/kali/</link>
+      <link>https://kdbed.github.io/tags/kali/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/kali/</guid>
+      <guid>https://kdbed.github.io/tags/kali/</guid>
       <description></description>
     </item>
     <item>
       <title>Kerberoasting</title>
-      <link>http://localhost:1313/tags/kerberoasting/</link>
+      <link>https://kdbed.github.io/tags/kerberoasting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/kerberoasting/</guid>
+      <guid>https://kdbed.github.io/tags/kerberoasting/</guid>
       <description></description>
     </item>
     <item>
       <title>Kerberos</title>
-      <link>http://localhost:1313/tags/kerberos/</link>
+      <link>https://kdbed.github.io/tags/kerberos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/kerberos/</guid>
+      <guid>https://kdbed.github.io/tags/kerberos/</guid>
       <description></description>
     </item>
     <item>
       <title>KeyExchange</title>
-      <link>http://localhost:1313/tags/keyexchange/</link>
+      <link>https://kdbed.github.io/tags/keyexchange/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/keyexchange/</guid>
+      <guid>https://kdbed.github.io/tags/keyexchange/</guid>
       <description></description>
     </item>
     <item>
       <title>Law</title>
-      <link>http://localhost:1313/tags/law/</link>
+      <link>https://kdbed.github.io/tags/law/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/law/</guid>
+      <guid>https://kdbed.github.io/tags/law/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
+      <link>https://kdbed.github.io/tags/linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
+      <guid>https://kdbed.github.io/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Malware</title>
-      <link>http://localhost:1313/tags/malware/</link>
+      <link>https://kdbed.github.io/tags/malware/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/malware/</guid>
+      <guid>https://kdbed.github.io/tags/malware/</guid>
       <description></description>
     </item>
     <item>
       <title>Math</title>
-      <link>http://localhost:1313/tags/math/</link>
+      <link>https://kdbed.github.io/tags/math/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/math/</guid>
+      <guid>https://kdbed.github.io/tags/math/</guid>
       <description></description>
     </item>
     <item>
       <title>ML</title>
-      <link>http://localhost:1313/tags/ml/</link>
+      <link>https://kdbed.github.io/tags/ml/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ml/</guid>
+      <guid>https://kdbed.github.io/tags/ml/</guid>
       <description></description>
     </item>
     <item>
       <title>Network</title>
-      <link>http://localhost:1313/tags/network/</link>
+      <link>https://kdbed.github.io/tags/network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/network/</guid>
+      <guid>https://kdbed.github.io/tags/network/</guid>
       <description></description>
     </item>
     <item>
       <title>Nietzsche</title>
-      <link>http://localhost:1313/tags/nietzsche/</link>
+      <link>https://kdbed.github.io/tags/nietzsche/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/nietzsche/</guid>
+      <guid>https://kdbed.github.io/tags/nietzsche/</guid>
       <description></description>
     </item>
     <item>
       <title>Nix</title>
-      <link>http://localhost:1313/tags/nix/</link>
+      <link>https://kdbed.github.io/tags/nix/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/nix/</guid>
+      <guid>https://kdbed.github.io/tags/nix/</guid>
       <description></description>
     </item>
     <item>
       <title>Nmap</title>
-      <link>http://localhost:1313/tags/nmap/</link>
+      <link>https://kdbed.github.io/tags/nmap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/nmap/</guid>
+      <guid>https://kdbed.github.io/tags/nmap/</guid>
       <description></description>
     </item>
     <item>
       <title>NumberTheory</title>
-      <link>http://localhost:1313/tags/numbertheory/</link>
+      <link>https://kdbed.github.io/tags/numbertheory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/numbertheory/</guid>
+      <guid>https://kdbed.github.io/tags/numbertheory/</guid>
       <description></description>
     </item>
     <item>
       <title>ObjectOrientedProgramming</title>
-      <link>http://localhost:1313/tags/objectorientedprogramming/</link>
+      <link>https://kdbed.github.io/tags/objectorientedprogramming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/objectorientedprogramming/</guid>
+      <guid>https://kdbed.github.io/tags/objectorientedprogramming/</guid>
       <description></description>
     </item>
     <item>
       <title>OperatingSystem</title>
-      <link>http://localhost:1313/tags/operatingsystem/</link>
+      <link>https://kdbed.github.io/tags/operatingsystem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/operatingsystem/</guid>
+      <guid>https://kdbed.github.io/tags/operatingsystem/</guid>
       <description></description>
     </item>
     <item>
       <title>Org</title>
-      <link>http://localhost:1313/tags/org/</link>
+      <link>https://kdbed.github.io/tags/org/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/org/</guid>
+      <guid>https://kdbed.github.io/tags/org/</guid>
       <description></description>
     </item>
     <item>
       <title>Org-Roam</title>
-      <link>http://localhost:1313/tags/org-roam/</link>
+      <link>https://kdbed.github.io/tags/org-roam/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/org-roam/</guid>
+      <guid>https://kdbed.github.io/tags/org-roam/</guid>
       <description></description>
     </item>
     <item>
       <title>Osint</title>
-      <link>http://localhost:1313/tags/osint/</link>
+      <link>https://kdbed.github.io/tags/osint/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/osint/</guid>
+      <guid>https://kdbed.github.io/tags/osint/</guid>
       <description></description>
     </item>
     <item>
       <title>P200</title>
-      <link>http://localhost:1313/tags/p200/</link>
+      <link>https://kdbed.github.io/tags/p200/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/p200/</guid>
+      <guid>https://kdbed.github.io/tags/p200/</guid>
       <description></description>
     </item>
     <item>
       <title>Password</title>
-      <link>http://localhost:1313/tags/password/</link>
+      <link>https://kdbed.github.io/tags/password/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/password/</guid>
+      <guid>https://kdbed.github.io/tags/password/</guid>
       <description></description>
     </item>
     <item>
       <title>PasswordAttack</title>
-      <link>http://localhost:1313/tags/passwordattack/</link>
+      <link>https://kdbed.github.io/tags/passwordattack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/passwordattack/</guid>
+      <guid>https://kdbed.github.io/tags/passwordattack/</guid>
       <description></description>
     </item>
     <item>
       <title>Pentest</title>
-      <link>http://localhost:1313/tags/pentest/</link>
+      <link>https://kdbed.github.io/tags/pentest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/pentest/</guid>
+      <guid>https://kdbed.github.io/tags/pentest/</guid>
       <description></description>
     </item>
     <item>
       <title>Permissions</title>
-      <link>http://localhost:1313/tags/permissions/</link>
+      <link>https://kdbed.github.io/tags/permissions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/permissions/</guid>
+      <guid>https://kdbed.github.io/tags/permissions/</guid>
       <description></description>
     </item>
     <item>
       <title>Physics</title>
-      <link>http://localhost:1313/tags/physics/</link>
+      <link>https://kdbed.github.io/tags/physics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/physics/</guid>
+      <guid>https://kdbed.github.io/tags/physics/</guid>
       <description></description>
     </item>
     <item>
       <title>Pivoting</title>
-      <link>http://localhost:1313/tags/pivoting/</link>
+      <link>https://kdbed.github.io/tags/pivoting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/pivoting/</guid>
+      <guid>https://kdbed.github.io/tags/pivoting/</guid>
       <description></description>
     </item>
     <item>
       <title>Politics</title>
-      <link>http://localhost:1313/tags/politics/</link>
+      <link>https://kdbed.github.io/tags/politics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/politics/</guid>
+      <guid>https://kdbed.github.io/tags/politics/</guid>
       <description></description>
     </item>
     <item>
       <title>Powershell</title>
-      <link>http://localhost:1313/tags/powershell/</link>
+      <link>https://kdbed.github.io/tags/powershell/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/powershell/</guid>
+      <guid>https://kdbed.github.io/tags/powershell/</guid>
       <description></description>
     </item>
     <item>
       <title>PrivEsc</title>
-      <link>http://localhost:1313/tags/privesc/</link>
+      <link>https://kdbed.github.io/tags/privesc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/privesc/</guid>
+      <guid>https://kdbed.github.io/tags/privesc/</guid>
       <description></description>
     </item>
     <item>
       <title>PrivilegeEscalation</title>
-      <link>http://localhost:1313/tags/privilegeescalation/</link>
+      <link>https://kdbed.github.io/tags/privilegeescalation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/privilegeescalation/</guid>
+      <guid>https://kdbed.github.io/tags/privilegeescalation/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
-      <link>http://localhost:1313/tags/programming/</link>
+      <link>https://kdbed.github.io/tags/programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/programming/</guid>
+      <guid>https://kdbed.github.io/tags/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Protocol</title>
-      <link>http://localhost:1313/tags/protocol/</link>
+      <link>https://kdbed.github.io/tags/protocol/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/protocol/</guid>
+      <guid>https://kdbed.github.io/tags/protocol/</guid>
       <description></description>
     </item>
     <item>
       <title>Pwn</title>
-      <link>http://localhost:1313/tags/pwn/</link>
+      <link>https://kdbed.github.io/tags/pwn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/pwn/</guid>
+      <guid>https://kdbed.github.io/tags/pwn/</guid>
       <description></description>
     </item>
     <item>
       <title>Pwntools</title>
-      <link>http://localhost:1313/tags/pwntools/</link>
+      <link>https://kdbed.github.io/tags/pwntools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/pwntools/</guid>
+      <guid>https://kdbed.github.io/tags/pwntools/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
+      <link>https://kdbed.github.io/tags/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/python/</guid>
+      <guid>https://kdbed.github.io/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>QuantumFieldTheory</title>
-      <link>http://localhost:1313/tags/quantumfieldtheory/</link>
+      <link>https://kdbed.github.io/tags/quantumfieldtheory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/quantumfieldtheory/</guid>
+      <guid>https://kdbed.github.io/tags/quantumfieldtheory/</guid>
       <description></description>
     </item>
     <item>
       <title>QuantumMechanics</title>
-      <link>http://localhost:1313/tags/quantummechanics/</link>
+      <link>https://kdbed.github.io/tags/quantummechanics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/quantummechanics/</guid>
+      <guid>https://kdbed.github.io/tags/quantummechanics/</guid>
       <description></description>
     </item>
     <item>
       <title>Recon</title>
-      <link>http://localhost:1313/tags/recon/</link>
+      <link>https://kdbed.github.io/tags/recon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/recon/</guid>
+      <guid>https://kdbed.github.io/tags/recon/</guid>
       <description></description>
     </item>
     <item>
       <title>Renormalization</title>
-      <link>http://localhost:1313/tags/renormalization/</link>
+      <link>https://kdbed.github.io/tags/renormalization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/renormalization/</guid>
+      <guid>https://kdbed.github.io/tags/renormalization/</guid>
       <description></description>
     </item>
     <item>
       <title>Reversing</title>
-      <link>http://localhost:1313/tags/reversing/</link>
+      <link>https://kdbed.github.io/tags/reversing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/reversing/</guid>
+      <guid>https://kdbed.github.io/tags/reversing/</guid>
       <description></description>
     </item>
     <item>
       <title>Revshell</title>
-      <link>http://localhost:1313/tags/revshell/</link>
+      <link>https://kdbed.github.io/tags/revshell/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/revshell/</guid>
+      <guid>https://kdbed.github.io/tags/revshell/</guid>
       <description></description>
     </item>
     <item>
       <title>Rust</title>
-      <link>http://localhost:1313/tags/rust/</link>
+      <link>https://kdbed.github.io/tags/rust/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/rust/</guid>
+      <guid>https://kdbed.github.io/tags/rust/</guid>
       <description></description>
     </item>
     <item>
       <title>Scanning</title>
-      <link>http://localhost:1313/tags/scanning/</link>
+      <link>https://kdbed.github.io/tags/scanning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/scanning/</guid>
+      <guid>https://kdbed.github.io/tags/scanning/</guid>
       <description></description>
     </item>
     <item>
       <title>Scapy</title>
-      <link>http://localhost:1313/tags/scapy/</link>
+      <link>https://kdbed.github.io/tags/scapy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/scapy/</guid>
+      <guid>https://kdbed.github.io/tags/scapy/</guid>
       <description></description>
     </item>
     <item>
       <title>Scattering</title>
-      <link>http://localhost:1313/tags/scattering/</link>
+      <link>https://kdbed.github.io/tags/scattering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/scattering/</guid>
+      <guid>https://kdbed.github.io/tags/scattering/</guid>
       <description></description>
     </item>
     <item>
       <title>SecPlus</title>
-      <link>http://localhost:1313/tags/secplus/</link>
+      <link>https://kdbed.github.io/tags/secplus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/secplus/</guid>
+      <guid>https://kdbed.github.io/tags/secplus/</guid>
       <description></description>
     </item>
     <item>
       <title>Security</title>
-      <link>http://localhost:1313/tags/security/</link>
+      <link>https://kdbed.github.io/tags/security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/security/</guid>
+      <guid>https://kdbed.github.io/tags/security/</guid>
       <description></description>
     </item>
     <item>
       <title>SecurityPlus</title>
-      <link>http://localhost:1313/tags/securityplus/</link>
+      <link>https://kdbed.github.io/tags/securityplus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/securityplus/</guid>
+      <guid>https://kdbed.github.io/tags/securityplus/</guid>
       <description></description>
     </item>
     <item>
       <title>ServiceAccounts</title>
-      <link>http://localhost:1313/tags/serviceaccounts/</link>
+      <link>https://kdbed.github.io/tags/serviceaccounts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/serviceaccounts/</guid>
+      <guid>https://kdbed.github.io/tags/serviceaccounts/</guid>
       <description></description>
     </item>
     <item>
       <title>SIEM</title>
-      <link>http://localhost:1313/tags/siem/</link>
+      <link>https://kdbed.github.io/tags/siem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/siem/</guid>
+      <guid>https://kdbed.github.io/tags/siem/</guid>
       <description></description>
     </item>
     <item>
       <title>Smb</title>
-      <link>http://localhost:1313/tags/smb/</link>
+      <link>https://kdbed.github.io/tags/smb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/smb/</guid>
+      <guid>https://kdbed.github.io/tags/smb/</guid>
       <description></description>
     </item>
     <item>
       <title>Smbmap</title>
-      <link>http://localhost:1313/tags/smbmap/</link>
+      <link>https://kdbed.github.io/tags/smbmap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/smbmap/</guid>
+      <guid>https://kdbed.github.io/tags/smbmap/</guid>
       <description></description>
     </item>
     <item>
       <title>SMT</title>
-      <link>http://localhost:1313/tags/smt/</link>
+      <link>https://kdbed.github.io/tags/smt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/smt/</guid>
+      <guid>https://kdbed.github.io/tags/smt/</guid>
       <description></description>
     </item>
     <item>
       <title>SocialTheory</title>
-      <link>http://localhost:1313/tags/socialtheory/</link>
+      <link>https://kdbed.github.io/tags/socialtheory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/socialtheory/</guid>
+      <guid>https://kdbed.github.io/tags/socialtheory/</guid>
       <description></description>
     </item>
     <item>
       <title>Splunk</title>
-      <link>http://localhost:1313/tags/splunk/</link>
+      <link>https://kdbed.github.io/tags/splunk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/splunk/</guid>
+      <guid>https://kdbed.github.io/tags/splunk/</guid>
       <description></description>
     </item>
     <item>
       <title>Sql</title>
-      <link>http://localhost:1313/tags/sql/</link>
+      <link>https://kdbed.github.io/tags/sql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sql/</guid>
+      <guid>https://kdbed.github.io/tags/sql/</guid>
       <description></description>
     </item>
     <item>
       <title>Sqli</title>
-      <link>http://localhost:1313/tags/sqli/</link>
+      <link>https://kdbed.github.io/tags/sqli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sqli/</guid>
+      <guid>https://kdbed.github.io/tags/sqli/</guid>
       <description></description>
     </item>
     <item>
       <title>Ssh</title>
-      <link>http://localhost:1313/tags/ssh/</link>
+      <link>https://kdbed.github.io/tags/ssh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ssh/</guid>
+      <guid>https://kdbed.github.io/tags/ssh/</guid>
       <description></description>
     </item>
     <item>
       <title>Stoicism</title>
-      <link>http://localhost:1313/tags/stoicism/</link>
+      <link>https://kdbed.github.io/tags/stoicism/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/stoicism/</guid>
+      <guid>https://kdbed.github.io/tags/stoicism/</guid>
       <description></description>
     </item>
     <item>
       <title>Subdomain</title>
-      <link>http://localhost:1313/tags/subdomain/</link>
+      <link>https://kdbed.github.io/tags/subdomain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/subdomain/</guid>
+      <guid>https://kdbed.github.io/tags/subdomain/</guid>
       <description></description>
     </item>
     <item>
       <title>SupremeCourt</title>
-      <link>http://localhost:1313/tags/supremecourt/</link>
+      <link>https://kdbed.github.io/tags/supremecourt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/supremecourt/</guid>
+      <guid>https://kdbed.github.io/tags/supremecourt/</guid>
       <description></description>
     </item>
     <item>
       <title>Template</title>
-      <link>http://localhost:1313/tags/template/</link>
+      <link>https://kdbed.github.io/tags/template/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/template/</guid>
+      <guid>https://kdbed.github.io/tags/template/</guid>
       <description></description>
     </item>
     <item>
       <title>Tools</title>
-      <link>http://localhost:1313/tags/tools/</link>
+      <link>https://kdbed.github.io/tags/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/tools/</guid>
+      <guid>https://kdbed.github.io/tags/tools/</guid>
       <description></description>
     </item>
     <item>
       <title>Trump</title>
-      <link>http://localhost:1313/tags/trump/</link>
+      <link>https://kdbed.github.io/tags/trump/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/trump/</guid>
+      <guid>https://kdbed.github.io/tags/trump/</guid>
       <description></description>
     </item>
     <item>
       <title>TryHackMe</title>
-      <link>http://localhost:1313/tags/tryhackme/</link>
+      <link>https://kdbed.github.io/tags/tryhackme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/tryhackme/</guid>
+      <guid>https://kdbed.github.io/tags/tryhackme/</guid>
       <description></description>
     </item>
     <item>
       <title>Unpacking</title>
-      <link>http://localhost:1313/tags/unpacking/</link>
+      <link>https://kdbed.github.io/tags/unpacking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/unpacking/</guid>
+      <guid>https://kdbed.github.io/tags/unpacking/</guid>
       <description></description>
     </item>
     <item>
       <title>Web</title>
-      <link>http://localhost:1313/tags/web/</link>
+      <link>https://kdbed.github.io/tags/web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/web/</guid>
+      <guid>https://kdbed.github.io/tags/web/</guid>
       <description></description>
     </item>
     <item>
       <title>Windows</title>
-      <link>http://localhost:1313/tags/windows/</link>
+      <link>https://kdbed.github.io/tags/windows/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/windows/</guid>
+      <guid>https://kdbed.github.io/tags/windows/</guid>
       <description></description>
     </item>
     <item>
       <title>WindowsExploitation</title>
-      <link>http://localhost:1313/tags/windowsexploitation/</link>
+      <link>https://kdbed.github.io/tags/windowsexploitation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/windowsexploitation/</guid>
+      <guid>https://kdbed.github.io/tags/windowsexploitation/</guid>
       <description></description>
     </item>
     <item>
       <title>Wordlists</title>
-      <link>http://localhost:1313/tags/wordlists/</link>
+      <link>https://kdbed.github.io/tags/wordlists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/wordlists/</guid>
+      <guid>https://kdbed.github.io/tags/wordlists/</guid>
       <description></description>
     </item>
     <item>
       <title>Z3</title>
-      <link>http://localhost:1313/tags/z3/</link>
+      <link>https://kdbed.github.io/tags/z3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/z3/</guid>
+      <guid>https://kdbed.github.io/tags/z3/</guid>
       <description></description>
     </item>
   </channel>

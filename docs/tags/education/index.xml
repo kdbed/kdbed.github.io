@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Education on Owlglass</title>
-    <link>http://localhost:1313/tags/education/</link>
+    <link>https://kdbed.github.io/tags/education/</link>
     <description>Recent content in Education on Owlglass</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/education/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kdbed.github.io/tags/education/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>School Spending and Educational Outcomes</title>
-      <link>http://localhost:1313/posts/school_spending_and_educational_outcomes/</link>
+      <link>https://kdbed.github.io/posts/school_spending_and_educational_outcomes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/school_spending_and_educational_outcomes/</guid>
-      <description>&lt;h2 id=&#34;education-spending-and-student-learning-outcomes&#34;&gt;Education spending and student learning outcomes&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;DAVID EVANS|JANUARY 17, 2019 &lt;a href=&#34;https://blogs.worldbank.org/impactevaluations/education-spending-and-student-learning-outcomes&#34;&gt;World Bank Blog&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;prior-findings&#34;&gt;Prior findings&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;World Bank&amp;rsquo;s &lt;a href=&#34;https://openknowledge.worldbank.org/bitstream/handle/10986/5986/WDR%202004%20-%20English.pdf?sequence=1&amp;amp;isAllowed=y&#34;&gt;World Development Report 2004&lt;/a&gt; showed little correlation between spending and access to school&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.worldbank.org/en/publication/wdr2018&#34;&gt;World Development Report 2018&lt;/a&gt; shows a similarly weak correlation between spending and learning outcomes&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.researchgate.net/publication/276421255_When_Education_Expenditure_Matters_An_Empirical_Analysis_of_Recent_International_Data&#34;&gt;Vegas and Coffin&lt;/a&gt;, using a different econometric specification, do find a correlation between spending and learning outcomes up to US$8,000 per student annually.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/outcomes.jpg&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h3 id=&#34;does-money-matter-yes-dot&#34;&gt;Does money matter? Yes.&lt;/h3&gt;&#xA;&lt;p&gt;[section copied from source]&lt;/p&gt;</description>
+      <guid>https://kdbed.github.io/posts/school_spending_and_educational_outcomes/</guid>
+      <description>Education spending and student learning outcomes DAVID EVANS|JANUARY 17, 2019 World Bank Blog Prior findings World Bank&amp;rsquo;s World Development Report 2004 showed little correlation between spending and access to school World Development Report 2018 shows a similarly weak correlation between spending and learning outcomes Vegas and Coffin, using a different econometric specification, do find a correlation between spending and learning outcomes up to US$8,000 per student annually. Does money matter? Yes.</description>
     </item>
   </channel>
 </rss>
