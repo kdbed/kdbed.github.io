@@ -4,7 +4,7 @@
     <title>Reversing on Owlglass</title>
     <link>https://kdbed.github.io/tags/reversing/</link>
     <description>Recent content in Reversing on Owlglass</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://kdbed.github.io/tags/reversing/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,7 +12,7 @@
       <link>https://kdbed.github.io/posts/reversing_python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/reversing_python/</guid>
-      <description>Unpacking Python Executables fortinet&#xA;extraction pyinstxtractor - extract the contents of a PyInstaller generated executable file&#xA;decompile pycdc</description>
+      <description>&lt;h2 id=&#34;unpacking-python-executables&#34;&gt;Unpacking Python Executables&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.fortinet.com/blog/threat-research/unpacking-python-executables-windows-linux&#34;&gt;fortinet&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;extraction&#34;&gt;extraction&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/extremecoders-re/pyinstxtractor&#34;&gt;pyinstxtractor&lt;/a&gt; - extract the contents of a PyInstaller generated executable file&lt;/p&gt;&#xA;&lt;h3 id=&#34;decompile&#34;&gt;decompile&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/zrax/pycdc&#34;&gt;pycdc&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

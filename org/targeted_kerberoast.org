@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       38f3437e-50b7-4ff2-b10c-7da71988828f
+:END:
+#+title: Targeted Kerberoast
+#+hugo_base_dir:../
+
+
+* Targeted Kerberoast
