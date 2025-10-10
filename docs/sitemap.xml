@@ -364,7 +364,13 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_active_directory_dcsync/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_active_directory_dns/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/pentest_active_directory_dpapi_backup_key_theft/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_active_directory_gmsa_dump/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_active_directory_ldap_enumeration/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_active_directory_shadow_credentials/</loc>
   </url><url>
@@ -599,6 +605,8 @@
     <loc>https://kdbed.github.io/tags/supremecourt/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/targeted_kerberoast/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/template/</loc>
   </url><url>

