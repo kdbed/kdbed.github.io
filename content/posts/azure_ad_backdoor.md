@@ -23,6 +23,13 @@ Cloud_enum - Chris Moberly [clound_enum](https://github.com/initstring/cloud_enu
 Azure Smart Lockout - protection from pw spray; bypass with FireProx + MSOLSpray [fireprox](https://github.com/ustayready/fireprox)
 
 
+## Authentication {#authentication}
+
+-   Forms of auth: Password hash synchronization; pass through authentication; Active Directory Federation Services (ADFS); certificate-based auth; conditional access policies; long-term access tokens; legacy authentication portals
+-   If CAP applies to Device Platforms, it only reads user-agent string - easily spoofed
+-   Find gaps in CAP - [dafthack/MFASweep](https://github.com/dafthack/MFASweep)
+
+
 ## User Account Enumeration {#user-account-enumeration}
 
 [chronlund](https://danielchronlund.com/2020/03/13/automatic-azure-ad-user-account-enumeration-with-powershell-scary-stuff/)
