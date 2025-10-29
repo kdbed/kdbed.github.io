@@ -72,7 +72,7 @@
 <p>Resource for properties involved in <code>checksec</code> : <a href="https://blog.siphos.be/2011/07/high-level-explanation-on-some-binary-executable-security/">siphos</a></p>
 <h3 id="cyclic">Cyclic</h3>
 <p>If we look at the files and permissions in the cyclic directory:</p>
-<figure><img src="/images/cyclic1.jpg">
+<figure><img src="/images/cyclic1.jpg"/>
 </figure>
 
 <p>You will see that the flag file and intro2pwn3 are owned by the same user, and that the suid bit is set for intro2pwn3. This means that the program will keep its permissions when it executes.</p>
@@ -112,7 +112,7 @@
 </span></span></code></pre></div><p>We see that although we (buzz) can run this program, the <code>print_flag()</code> function isn&rsquo;t executed. This program is vulnerable to a buffer overflow, because it uses the gets() function, which does not check to see if the user input is actually in bounds. In our case, the name variable has 24 bytes allocated, so if we input more than 24 bytes, we can write to other parts of memory. An important part of the memory we can overwrite is the instruction pointer (IP), which is called the eip on 32-bit machines, and rip on 64-bit machines. The IP points to the next instruction to be executed, so if we redirect the eip in our binary to the <code>print_flag()</code> function, we can print the flag.</p>
 <h4 id="cyclic">Cyclic</h4>
 <p>To control the IP, the first thing we need do is to is overflow the stack with a pattern, so we can see where the IP is.  A file <code>alphabet</code> is provided; start gdb with <code>gdb intro2pwn3</code> and run with the alphabet file <code>r &lt; alphabet</code>:</p>
-<figure><img src="/images/over1.jpg">
+<figure><img src="/images/over1.jpg"/>
 </figure>
 
 <p>We&rsquo;ve caused a segmentation fault, and you may observe that there is an invalid address at 0x4a4a4a4a. If you scroll up, you can see the values at each register. For eip, it has been overwritten with 0x4a4a4a4a.</p>
@@ -130,6 +130,10 @@
       </div>
       
 
+
+   
+
+   
 
    
 

@@ -31,66 +31,70 @@
 <p>There are two parts of the running operating system: the kernel and the user-mode applications. The kernel makes the security decisions that determine what a user can do on the system. Most of the applications you use on a Windows machine run in user mode.</p>
 <h3 id="the-windows-ntos-kernel-executive">The Windows NTOS kernel executive</h3>
 <p>The kernel provides all the OS&rsquo;s privileged functionality, as well as interfaces through which user applications can communicate with the hardware.  The kernel is split into multiple subsystems:</p>
-<figure><img src="/images/kernel.jpg">
+<figure><img src="/images/kernel.jpg"/>
 </figure>
 
 <p>Each subsystem exposes APIs for the other subsystems to call.</p>
 <table>
-  <thead>
-      <tr>
-          <th>Prefix</th>
-          <th>Subsystem</th>
-          <th>Example</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Nt/Zw</td>
-          <td>System call interface</td>
-          <td>NtOpenFile / ZwOpenFile</td>
-      </tr>
-      <tr>
-          <td>Se</td>
-          <td>Security Reference Monitor</td>
-          <td>SeAccessCheck</td>
-      </tr>
-      <tr>
-          <td>Ob</td>
-          <td>Object manager</td>
-          <td>ObReferenceObjectByHandle</td>
-      </tr>
-      <tr>
-          <td>Ps</td>
-          <td>Process and thread manager</td>
-          <td>PsGetCurrentProcess</td>
-      </tr>
-      <tr>
-          <td>Cm</td>
-          <td>Configuration manager</td>
-          <td>CmRegisterCallback</td>
-      </tr>
-      <tr>
-          <td>Mm</td>
-          <td>Memory manager</td>
-          <td>MmMapIoSpace</td>
-      </tr>
-      <tr>
-          <td>Io</td>
-          <td>Input/output manager</td>
-          <td>IoCreateFile</td>
-      </tr>
-      <tr>
-          <td>Ci</td>
-          <td>Code integrity</td>
-          <td>CiValidateFileObject</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>Prefix</th>
+<th>Subsystem</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nt/Zw</td>
+<td>System call interface</td>
+<td>NtOpenFile / ZwOpenFile</td>
+</tr>
+<tr>
+<td>Se</td>
+<td>Security Reference Monitor</td>
+<td>SeAccessCheck</td>
+</tr>
+<tr>
+<td>Ob</td>
+<td>Object manager</td>
+<td>ObReferenceObjectByHandle</td>
+</tr>
+<tr>
+<td>Ps</td>
+<td>Process and thread manager</td>
+<td>PsGetCurrentProcess</td>
+</tr>
+<tr>
+<td>Cm</td>
+<td>Configuration manager</td>
+<td>CmRegisterCallback</td>
+</tr>
+<tr>
+<td>Mm</td>
+<td>Memory manager</td>
+<td>MmMapIoSpace</td>
+</tr>
+<tr>
+<td>Io</td>
+<td>Input/output manager</td>
+<td>IoCreateFile</td>
+</tr>
+<tr>
+<td>Ci</td>
+<td>Code integrity</td>
+<td>CiValidateFileObject</td>
+</tr>
+</tbody>
 </table>
 <h4 id="windows-kernel-security-reference-monitor--windows-kernel-security-reference-monitor-dot-md"><a href="/posts/windows_kernel_security_reference_monitor/">Windows Kernel - Security Reference Monitor</a></h4>
 
       </div>
       
 
+
+   
+
+   
 
    
 

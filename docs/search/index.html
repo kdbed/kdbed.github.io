@@ -58,22 +58,22 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/posts\/abortion\/": {
-        
-        "title": "Abortion",
-        "tags": [],
-        "content": "", 
-        "url": "https:\/\/kdbed.github.io\/posts\/abortion\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/tags\/abortion\/": {
         
         "title": "Abortion",
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/tags\/abortion\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/abortion\/": {
+        
+        "title": "Abortion",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/posts\/abortion\/"
     },
     
     
@@ -208,22 +208,22 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/posts\/algorithms\/": {
-        
-        "title": "Algorithms",
-        "tags": [],
-        "content": "", 
-        "url": "https:\/\/kdbed.github.io\/posts\/algorithms\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/tags\/algorithms\/": {
         
         "title": "Algorithms",
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/tags\/algorithms\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/algorithms\/": {
+        
+        "title": "Algorithms",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/posts\/algorithms\/"
     },
     
     
@@ -642,7 +642,7 @@ window.store = {
         
         "title": "DLL Hijacking",
         "tags": ["privesc","exploit","windowsExploitation",],
-        "content": "Basic Ideas Windows DLL hijacking occurs when a trusted or legitimate application is tricked into loading an arbitrary DLL. Dll hijacking can be used to execute code, obtain persistence and escalate privileges, although privilege escalation is the least likely. hackTricks\nApproaches There are different approaches to DLL hijacking, and success will be determined by how the application is set to load its DLLs.\n1.\n", 
+        "content": "Basic Ideas Windows DLL hijacking occurs when a trusted or legitimate application is tricked into loading an arbitrary DLL. Dll hijacking can be used to execute code, obtain persistence and escalate privileges, although privilege escalation is the least likely. hackTricks\nApproaches There are different approaches to DLL hijacking, and success will be determined by how the application is set to load its DLLs.\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/dll_hijacking\/"
     },
     
@@ -1128,6 +1128,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/tags\/impacket\/": {
+        
+        "title": "Impacket",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/impacket\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/impacket\/": {
         
         "title": "Impacket",
@@ -1138,12 +1148,12 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/tags\/impacket\/": {
+    "https:\/\/kdbed.github.io\/posts\/impacket_secrets_dump\/": {
         
-        "title": "Impacket",
+        "title": "Impacket - Secrets Dump",
         "tags": [],
-        "content": "", 
-        "url": "https:\/\/kdbed.github.io\/tags\/impacket\/"
+        "content": "Impacket - SecretsDump secretsdump is a tool in the Impacket collection that extracts account secrets from a Windows domain — typically NT/NTLM password hashes, cached credentials, and other LSA secrets. It supports multiple modes (offline extraction from files, or remote extraction using replication/LSA APIs). The important point: the tool reads encrypted credential data and then uses system key material to decrypt it so the raw hashes/credentials become visible.\nNTDS.dit NTDS.dit is the main Active Directory database (an Extensible Storage Engine / ESE database).\nIt contains domain objects: users, groups, computer accounts — and importantly the credential hashes for domain accounts (e.g., NTLM hashes and other secret blobs stored with the user objects), plus other secret blobs used by AD.\nThe credential data inside NTDS.dit is not stored in plaintext; parts of it are encrypted or protected.\nSYSTEM (the SYSTEM registry hive) The SYSTEM hive (the offline file is typically C:\\Windows\\System32\\config\\SYSTEM) contains the machine’s BootKey (sometimes called the syskey) and other registry data.\nThat BootKey (plus other key material derived from the machine’s LSA/DPAPI keys) is used to decrypt certain secrets stored by the system and in NTDS.dit (and LSA secrets). Without the SYSTEM hive (or the equivalent keys), the encrypted blobs in NTDS.dit cannot be trivially decrypted.\nWhere those files are found in AD environments NTDS.dit (on a Domain Controller)\nDefault path on a DC: C:\\Windows\\NTDS\\NTDS.dit (or a custom NTDS folder if the DC was configured differently).\nOnly domain controllers host the authoritative NTDS.dit for the domain.\nSYSTEM hive (on any Windows system)\nOn a live system it’s in memory / the registry. The on-disk hive lives as: C:\\Windows\\System32\\config\\SYSTEM.\nCopies of the SYSTEM hive can also be obtained from offline backups or from Volume Shadow Copies.\nRelated artifacts The SAM and SECURITY hives (also in C:\\Windows\\System32\\config\\) contain additional secrets for local accounts and LSA secrets; secretsdump can use those as well for local/standalone machines.\nVolume Shadow Copy snapshots and Windows Backup files are common sources attackers use to get offline copies of these hives and the NTDS database.\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/impacket_secrets_dump\/"
     },
     
     
@@ -1278,16 +1288,6 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/posts\/kerberoasting\/": {
-        
-        "title": "Kerberoasting",
-        "tags": ["activeDirectory","kerberos",],
-        "content": "Kerberoasting Kerberoasting allows a user to request a service ticket for any service with a registered SPN then use that ticket to crack the service password.\nRubeus 1 Rubeus.exe kerberoast Then crack the hashes with hashcat\n1 hashcat -m 13100 -a 0 hash.txt Pass.txt Impacket 1 sudo python3 GetUserSPNs.py controller.local/Machine1:Password1 -dc-ip 10.10.239.179 -request ", 
-        "url": "https:\/\/kdbed.github.io\/posts\/kerberoasting\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/tags\/kerberoasting\/": {
         
         "title": "Kerberoasting",
@@ -1298,12 +1298,12 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/posts\/kerberos\/": {
+    "https:\/\/kdbed.github.io\/posts\/kerberoasting\/": {
         
-        "title": "Kerberos",
-        "tags": [],
-        "content": "Kerberos Protocol Kerberos Authentication Attacking Kerberos Overview The main ticket you will receive is a ticket-granting ticket (TGT). These can come in various forms, such as a .kirbi for Rubeus and .ccache for Impacket. A ticket is typically base64 encoded and can be used for multiple attacks.\nThe ticket-granting ticket is only used to get service tickets from the KDC. When requesting a TGT from the KDC, the user will authenticate with their credentials to the KDC and request a ticket. The server will validate the credentials, create a TGT and encrypt it using the krbtgt key. The encrypted TGT and a session key will be sent to the user.\nWhen the user needs to request a service ticket, they will send the TGT and the session key to the KDC, along with the service principal name (SPN) of the service they wish to access. The KDC will validate the TGT and session key. If they are correct, the KDC will grant the user a service ticket, which can be used to authenticate to the corresponding service.\nEnumeration and Attacks Kerbrute Enumeration - No domain access required Rubeus - Harvesting and Brute-forcing tickets Pass the Ticket (PtT) Attack - Access as a user to the domain required Kerberoasting - Access as any user required AS-REP Roasting - Access as any user required Golden Ticket - Full domain compromise (domain admin) required Silver Ticket - Service hash required Skeleton Key - Full domain compromise (domain admin) required\n", 
-        "url": "https:\/\/kdbed.github.io\/posts\/kerberos\/"
+        "title": "Kerberoasting",
+        "tags": ["activeDirectory","kerberos",],
+        "content": "Kerberoasting Kerberoasting allows a user to request a service ticket for any service with a registered SPN then use that ticket to crack the service password.\nWhen a privileged domain account is configured to run a service in the environment, such as MS SQL, a Service Principal Name (SPN) is assigned in the domain to associate the service with that interactive service account. However, it’s important to remember that many service accounts historically have too many administrative rights. Every least privileged user who wants to use that specific resource receives a Kerberos ticket signed with an NTLM hash of the privileged account that is running the service.\nThis inherently creates a vulnerability, and a malicious actor could then take the Kerberos ticket offline onto his/her attacking machine that utilizes password cracking methods such as brute force, rainbow tables, etc., until the correct service account password is discovered. From there, the attacker can utilize that service account’s cleartext password to move laterally throughout the entire network.\nRubeus 1 Rubeus.exe kerberoast Then crack the hashes with hashcat\n1 hashcat -m 13100 -a 0 hash.txt Pass.txt Impacket 1 sudo python3 GetUserSPNs.py controller.local/Machine1:Password1 -dc-ip 10.10.239.179 -request ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/kerberoasting\/"
     },
     
     
@@ -1314,6 +1314,16 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/tags\/kerberos\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/kerberos\/": {
+        
+        "title": "Kerberos",
+        "tags": [],
+        "content": "Kerberos Protocol Kerberos Authentication Attacking Kerberos Overview The main ticket you will receive is a ticket-granting ticket (TGT). These can come in various forms, such as a .kirbi for Rubeus and .ccache for Impacket. A ticket is typically base64 encoded and can be used for multiple attacks.\nThe ticket-granting ticket is only used to get service tickets from the KDC. When requesting a TGT from the KDC, the user will authenticate with their credentials to the KDC and request a ticket. The server will validate the credentials, create a TGT and encrypt it using the krbtgt key. The encrypted TGT and a session key will be sent to the user.\nWhen the user needs to request a service ticket, they will send the TGT and the session key to the KDC, along with the service principal name (SPN) of the service they wish to access. The KDC will validate the TGT and session key. If they are correct, the KDC will grant the user a service ticket, which can be used to authenticate to the corresponding service.\nEnumeration and Attacks Kerbrute Enumeration - No domain access required Rubeus - Harvesting and Brute-forcing tickets Pass the Ticket (PtT) Attack - Access as a user to the domain required Kerberoasting - Access as any user required AS-REP Roasting - Access as any user required Golden Ticket - Full domain compromise (domain admin) required Silver Ticket - Service hash required Skeleton Key - Full domain compromise (domain admin) required\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/kerberos\/"
     },
     
     
@@ -1352,7 +1362,7 @@ window.store = {
         
         "title": "Lang - Test",
         "tags": ["programming","examples",],
-        "content": "Language tests in org Rust extern crate primal;\ruse primal::Sieve;\rfn num_divisors(n: usize, primes: \u0026amp;Sieve) -\u0026gt; Option\u0026lt;usize\u0026gt; {\rmatch primes.factor(n) {\rOk(factors) =\u0026gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))),\rErr(_) =\u0026gt; None,\r}\r}\rfn main() {\rprintln!(\u0026#34;24 days of Rust - primal (day 2)\u0026#34;);\rlet sieve = Sieve::new(10000);\rlet suspect = 5273;\rprintln!(\u0026#34;{} is prime: {}\u0026#34;, suspect, sieve.is_prime(suspect));\rlet not_a_prime = 1024;\rprintln!(\u0026#34;{} is prime: {}\u0026#34;, not_a_prime, sieve.is_prime(not_a_prime));\rlet n = 1000;\rmatch sieve.primes_from(0).nth(n - 1) {\rSome(number) =\u0026gt; println!(\u0026#34;{}th prime is {}\u0026#34;, n, number),\rNone =\u0026gt; println!(\u0026#34;I don\u0026#39;t know anything about {}th prime.\u0026#34;, n),\r}\rprintln!(\u0026#34;{:?}\u0026#34;, sieve.factor(2610));\rprintln!(\u0026#34;{:?}\u0026#34;, num_divisors(2610, \u0026amp;sieve));\r} C++ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 #include \u0026lt;stdio.h\u0026gt; #include \u0026lt;stdlib.h\u0026gt; #include \u0026lt;time.h\u0026gt; int main(void){ int niter=10; //Specify the number of samples. srand((unsigned)time(NULL)); //Set the seed of random number generator. int n_in=0; //Initialize the counter. /*************/ /* Main loop */ /*************/ for(int iter=1;iter\u0026lt;niter+1;iter++){ double x = (double)rand()/RAND_MAX; double y = (double)rand()/RAND_MAX; //Generate random numbers x,y in [0,1]. if(x*x+y*y \u0026lt; 1e0) //If xˆ2+yˆ2\u0026lt;1.... n_in=n_in+1; //Add 1 to n_in. printf(\u0026#34;%d %.10f\\n\u0026#34;,iter,(double)n_in/iter);} } 1 1.0000000000 2 1.0000000000 3 1.0000000000 4 0.7500000000 5 0.8000000000 6 0.6666666667 7 0.5714285714 8 0.5000000000 9 0.4444444444 10 0.4000000000 1 2 3 4 5 #include \u0026lt;iostream\u0026gt; int main(){ std::cout\u0026lt;\u0026lt;\u0026#34;Hello, World!\\n\u0026#34;; return 0; } Hello, World! C# 1 2 3 4 5 6 7 8 9 10 11 // Hello World! program namespace HelloWorld { class Hello { static void Main(string[] args) { System.Console.WriteLine(\u0026#34;Hello World!\u0026#34;); } } } Haskell add_1 : Nat -\u0026gt; Nat add_1 x = x + 1 add_1 5 6 map (format \u0026#34;%s\u0026#34; (replace-regexp-in-string (rx line-start (+ (| alphanumeric blank \u0026#34;.\u0026#34; \u0026#34;|\u0026#34; \u0026#34;\u0026gt;\u0026#34;))) \u0026#34;\u0026#34; (format \u0026#34;%s\u0026#34; strr))) :{ -- a very verbose way to sum a sequence of numbers: sumInts :: Int -\u0026gt; Int -\u0026gt; Int sumInts a b = if a == b then b else (+ a) $ (sumInts (a + 1) b) :} map (\\[a,b] -\u0026gt; sumInts a b) [[0, 10] , [1, 3], [1,5], [2,10]] 55 6 15 54 Lean not working:\n1 2 3 4 def main : IO Unit := IO.println s!\u0026#34;Hello, world!\u0026#34; #check id ", 
+        "content": "Language tests in org Rust extern crate primal; use primal::Sieve; fn num_divisors(n: usize, primes: \u0026amp;Sieve) -\u0026gt; Option\u0026lt;usize\u0026gt; { match primes.factor(n) { Ok(factors) =\u0026gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))), Err(_) =\u0026gt; None, } } fn main() { println!(\u0026#34;24 days of Rust - primal (day 2)\u0026#34;); let sieve = Sieve::new(10000); let suspect = 5273; println!(\u0026#34;{} is prime: {}\u0026#34;, suspect, sieve.is_prime(suspect)); let not_a_prime = 1024; println!(\u0026#34;{} is prime: {}\u0026#34;, not_a_prime, sieve.is_prime(not_a_prime)); let n = 1000; match sieve.primes_from(0).nth(n - 1) { Some(number) =\u0026gt; println!(\u0026#34;{}th prime is {}\u0026#34;, n, number), None =\u0026gt; println!(\u0026#34;I don\u0026#39;t know anything about {}th prime.\u0026#34;, n), } println!(\u0026#34;{:?}\u0026#34;, sieve.factor(2610)); println!(\u0026#34;{:?}\u0026#34;, num_divisors(2610, \u0026amp;sieve)); } C++ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 #include \u0026lt;stdio.h\u0026gt; #include \u0026lt;stdlib.h\u0026gt; #include \u0026lt;time.h\u0026gt; int main(void){ int niter=10; //Specify the number of samples. srand((unsigned)time(NULL)); //Set the seed of random number generator. int n_in=0; //Initialize the counter. /*************/ /* Main loop */ /*************/ for(int iter=1;iter\u0026lt;niter+1;iter++){ double x = (double)rand()/RAND_MAX; double y = (double)rand()/RAND_MAX; //Generate random numbers x,y in [0,1]. if(x*x+y*y \u0026lt; 1e0) //If xˆ2+yˆ2\u0026lt;1.... n_in=n_in+1; //Add 1 to n_in. printf(\u0026#34;%d %.10f\\n\u0026#34;,iter,(double)n_in/iter);} } 1 1.0000000000 2 1.0000000000 3 1.0000000000 4 0.7500000000 5 0.8000000000 6 0.6666666667 7 0.5714285714 8 0.5000000000 9 0.4444444444 10 0.4000000000 1 2 3 4 5 #include \u0026lt;iostream\u0026gt; int main(){ std::cout\u0026lt;\u0026lt;\u0026#34;Hello, World!\\n\u0026#34;; return 0; } Hello, World! C# 1 2 3 4 5 6 7 8 9 10 11 // Hello World! program namespace HelloWorld { class Hello { static void Main(string[] args) { System.Console.WriteLine(\u0026#34;Hello World!\u0026#34;); } } } Haskell add_1 : Nat -\u0026gt; Nat add_1 x = x + 1 add_1 5 6 map (format \u0026#34;%s\u0026#34; (replace-regexp-in-string (rx line-start (+ (| alphanumeric blank \u0026#34;.\u0026#34; \u0026#34;|\u0026#34; \u0026#34;\u0026gt;\u0026#34;))) \u0026#34;\u0026#34; (format \u0026#34;%s\u0026#34; strr))) :{ -- a very verbose way to sum a sequence of numbers: sumInts :: Int -\u0026gt; Int -\u0026gt; Int sumInts a b = if a == b then b else (+ a) $ (sumInts (a + 1) b) :} map (\\[a,b] -\u0026gt; sumInts a b) [[0, 10] , [1, 3], [1,5], [2,10]] 55 6 15 54 Lean not working:\ndef main : IO Unit := IO.println s!\u0026#34;Hello, world!\u0026#34; #check id ", 
         "url": "https:\/\/kdbed.github.io\/posts\/lang_test\/"
     },
     
@@ -1362,7 +1372,7 @@ window.store = {
         
         "title": "Lang - Test",
         "tags": [],
-        "content": "\rextern crate regex;\ruse regex::Regex;\rfn main() {\rlet re = Regex::new(r\u0026#34;^\\d{4}-\\d{2}-\\d{2}$\u0026#34;).unwrap();\rprintln!(\u0026#34;test\u0026#34;);\rassert!(re.is_match(\u0026#34;2014-01-01\u0026#34;));\r} 1 2 3 4 5 #include \u0026lt;iostream\u0026gt; int main(){ std::cout\u0026lt;\u0026lt;\u0026#34;Hello, World.\\n\u0026#34;; return 0; } Hello, World. ", 
+        "content": " extern crate regex; use regex::Regex; fn main() { let re = Regex::new(r\u0026#34;^\\d{4}-\\d{2}-\\d{2}$\u0026#34;).unwrap(); println!(\u0026#34;test\u0026#34;); assert!(re.is_match(\u0026#34;2014-01-01\u0026#34;)); } 1 2 3 4 5 #include \u0026lt;iostream\u0026gt; int main(){ std::cout\u0026lt;\u0026lt;\u0026#34;Hello, World.\\n\u0026#34;; return 0; } Hello, World. ", 
         "url": "https:\/\/kdbed.github.io\/posts\/rust_test\/"
     },
     
@@ -1408,22 +1418,22 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/posts\/malware\/": {
-        
-        "title": "Malware",
-        "tags": [],
-        "content": "Information Security\n", 
-        "url": "https:\/\/kdbed.github.io\/posts\/malware\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/tags\/malware\/": {
         
         "title": "Malware",
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/tags\/malware\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/malware\/": {
+        
+        "title": "Malware",
+        "tags": [],
+        "content": "Information Security\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/malware\/"
     },
     
     
@@ -1538,22 +1548,22 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/posts\/nietzsche\/": {
-        
-        "title": "Nietzsche",
-        "tags": [],
-        "content": "", 
-        "url": "https:\/\/kdbed.github.io\/posts\/nietzsche\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/tags\/nietzsche\/": {
         
         "title": "Nietzsche",
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/tags\/nietzsche\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/nietzsche\/": {
+        
+        "title": "Nietzsche",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/posts\/nietzsche\/"
     },
     
     
@@ -1948,6 +1958,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/pentest_domain_credential_access\/": {
+        
+        "title": "Pentest - Domain Credential Access",
+        "tags": [],
+        "content": "Domain Credential Access Clear-text credentials in the domain Capture the hash Forced authentication Kerberos Kerberos Kerberoasting Kerberos Authentication Targeted Kerberoast AS-REP Roasting Automatic password management NTDS Secrets Impacket - Secrets Dump DCSync Pentest - Active Directory - DCSync DPAPI Pentest - Active Directory - DPAPI Backup Key Theft ", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_domain_credential_access\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/pentest_exploits\/": {
         
         "title": "Pentest - Exploits",
@@ -2128,22 +2148,22 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/posts\/physics\/": {
-        
-        "title": "Physics",
-        "tags": [],
-        "content": "", 
-        "url": "https:\/\/kdbed.github.io\/posts\/physics\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/tags\/physics\/": {
         
         "title": "Physics",
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/tags\/physics\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/physics\/": {
+        
+        "title": "Physics",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/posts\/physics\/"
     },
     
     
@@ -2532,7 +2552,7 @@ window.store = {
         
         "title": "Quantum Mechanics",
         "tags": ["physics",],
-        "content": "Quantum Mechanics - Basic Principles In quantum mechanics the state of a system is represented by a vector in a complex vector space with Hermitian inner product - the state space. Observable quantities are self-adjoint linear operators on the state space.\nIn classical physics, the state of a system is given by a point in a phase space, or equivalently as the space of solutions of an equation of motion. Observable quantities are functions (of coordinates and momenta) on this space. The Hamiltonian determines how states evolve in time through Hamilton’s equations.\nQuantum mechanics has different foundations:\nStates: The state of a quantum mechanical system is given by a nonzero vector in a complex vector space \\(\\mathcal{H}\\) with Hermitian inner product \\(\\langle \\cdot, \\cdot \\rangle \\). The state space is linear; a linear combination of states is also a state. The state space is a complex vector space. Dirac notation for vectors in the state space reads as follows: \\[ |\\psi\\rangle \\] Observables: The observables of a quantum mechanical system are given by self-adjoint linear operators on \\(\\mathcal{H}\\). Sources My preferred treatment of quantum mechanics is provided by Peter Woit\u0026rsquo;s excellent text:\nQuantum Theory, Groups and Representations: An Introduction; Woit Most of my notes are taken directly from the above.\n-\n", 
+        "content": "Quantum Mechanics - Basic Principles In quantum mechanics the state of a system is represented by a vector in a complex vector space with Hermitian inner product - the state space. Observable quantities are self-adjoint linear operators on the state space.\nIn classical physics, the state of a system is given by a point in a phase space, or equivalently as the space of solutions of an equation of motion. Observable quantities are functions (of coordinates and momenta) on this space. The Hamiltonian determines how states evolve in time through Hamilton’s equations.\nQuantum mechanics has different foundations:\nStates: The state of a quantum mechanical system is given by a nonzero vector in a complex vector space \\(\\mathcal{H}\\) with Hermitian inner product \\(\\langle \\cdot, \\cdot \\rangle \\). The state space is linear; a linear combination of states is also a state. The state space is a complex vector space. Dirac notation for vectors in the state space reads as follows: \\[ |\\psi\\rangle \\] Observables: The observables of a quantum mechanical system are given by self-adjoint linear operators on \\(\\mathcal{H}\\). Sources My preferred treatment of quantum mechanics is provided by Peter Woit\u0026rsquo;s excellent text:\nQuantum Theory, Groups and Representations: An Introduction; Woit Most of my notes are taken directly from the above.\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/quantum_mechanics\/"
     },
     
@@ -2712,7 +2732,7 @@ window.store = {
         
         "title": "Rust Programming",
         "tags": ["programming",],
-        "content": "Basics Hello World // comment\rfn main() {\r// print text to console\rprintln!(\u0026#34;Hello World\u0026#34;);\rprintln!(\u0026#34;I\u0026#39;m a Rustacean!\u0026#34;);\r} Comments fn main(){\r// line comment\r/* block comment\r* continued\r* ...\r*/\rlet x = 5 + 90 + 5;\rprintln!(\u0026#34;Is `x` 10 or 100? x = {}\u0026#34;, x);\r} Formatted Print Printing is handled by a series of macros defined in std::fmt, some of which are:\nformat! : write formatted text to String print! : same as format! but text is printed to console (io:stdout) println! : same as print! but new line appended eprint! : same as print! but text is printed to standard error (io::stderr) eprintln!: same as eprint! but new line is appended fn main() {\r// In general, the `{}` will be automatically replaced with stringified arguments\rprintln!(\u0026#34;{} days\u0026#34;, 31);\r// positional arguments can be used, starting at 0\rprintln!(\u0026#34;{0}, this is {1}. {1}, this is {0}\u0026#34;, \u0026#34;Alice\u0026#34;, \u0026#34;Bob\u0026#34;);\r// named arguments\rprintln!(\u0026#34;{subject} {verb} {object}\u0026#34;,\robject=\u0026#34;the lazy dog\u0026#34;,\rsubject=\u0026#34;the quick brown fox\u0026#34;,\rverb=\u0026#34;jumps over\u0026#34;);\r// format char after `:`\rprintln!(\u0026#34;Base 10: {}\u0026#34;, 69420); //69420\rprintln!(\u0026#34;Base 2 (binary): {:b}\u0026#34;, 69420);\rprintln!(\u0026#34;Base 8 (octal): {:o}\u0026#34;, 69420);//207454\rprintln!(\u0026#34;Base 16 (hexadecimal): {:x}\u0026#34;, 69420);//10f2c\rprintln!(\u0026#34;Base 16 (hexadecimal): {:X}\u0026#34;,69420);//10F2C\r// right-justify text with specified width\rprintln!(\u0026#34;{number:\u0026gt;5}\u0026#34;, number=1);\r// pad numbers with extras zeroes\rprintln!(\u0026#34;{number:0\u0026gt;5}\u0026#34;, number=1); // 00001\rprintln!(\u0026#34;{number:0\u0026lt;5}\u0026#34;, number=1); // 10000\rprintln!(\u0026#34;{number:0\u0026gt;width$}\u0026#34;, number=1, width=5);\r// rust checks to ensure correct number of arguments\r// only types that implement fmt::Display can be formatted with `{}`; user-defined types do not have this by default\rlet number: f64 = 1.0;\rlet width: usize = 5;\rprintln!(\u0026#34;{number:\u0026gt;width$}\u0026#34;);\rlet pi: f64 = 3.141592;\rprintln!(\u0026#34;pi is approximately {pi:.prec$}\u0026#34;, prec=3);\r} Examples Sieve extern crate primal;\ruse primal::Sieve;\rfn num_divisors(n: usize, primes: \u0026amp;Sieve) -\u0026gt; Option\u0026lt;usize\u0026gt; {\rmatch primes.factor(n) {\rOk(factors) =\u0026gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))),\rErr(_) =\u0026gt; None,\r}\r}\rfn main() {\rprintln!(\u0026#34;24 days of Rust - primal (day 2)\u0026#34;);\rlet sieve = Sieve::new(10000);\rlet suspect = 5273;\rprintln!(\u0026#34;{} is prime: {}\u0026#34;, suspect, sieve.is_prime(suspect));\rlet not_a_prime = 1024;\rprintln!(\u0026#34;{} is prime: {}\u0026#34;, not_a_prime, sieve.is_prime(not_a_prime));\rlet n = 1000;\rmatch sieve.primes_from(0).nth(n - 1) {\rSome(number) =\u0026gt; println!(\u0026#34;{}th prime is {}\u0026#34;, n, number),\rNone =\u0026gt; println!(\u0026#34;I don\u0026#39;t know anything about {}th prime.\u0026#34;, n),\r}\rprintln!(\u0026#34;{:?}\u0026#34;, sieve.factor(2610));\rprintln!(\u0026#34;{:?}\u0026#34;, num_divisors(2610, \u0026amp;sieve));\r} ", 
+        "content": "Basics Hello World // comment fn main() { // print text to console println!(\u0026#34;Hello World\u0026#34;); println!(\u0026#34;I\u0026#39;m a Rustacean!\u0026#34;); } Comments fn main(){ // line comment /* block comment * continued * ... */ let x = 5 + 90 + 5; println!(\u0026#34;Is `x` 10 or 100? x = {}\u0026#34;, x); } Formatted Print Printing is handled by a series of macros defined in std::fmt, some of which are:\nformat! : write formatted text to String print! : same as format! but text is printed to console (io:stdout) println! : same as print! but new line appended eprint! : same as print! but text is printed to standard error (io::stderr) eprintln!: same as eprint! but new line is appended fn main() { // In general, the `{}` will be automatically replaced with stringified arguments println!(\u0026#34;{} days\u0026#34;, 31); // positional arguments can be used, starting at 0 println!(\u0026#34;{0}, this is {1}. {1}, this is {0}\u0026#34;, \u0026#34;Alice\u0026#34;, \u0026#34;Bob\u0026#34;); // named arguments println!(\u0026#34;{subject} {verb} {object}\u0026#34;, object=\u0026#34;the lazy dog\u0026#34;, subject=\u0026#34;the quick brown fox\u0026#34;, verb=\u0026#34;jumps over\u0026#34;); // format char after `:` println!(\u0026#34;Base 10: {}\u0026#34;, 69420); //69420 println!(\u0026#34;Base 2 (binary): {:b}\u0026#34;, 69420); println!(\u0026#34;Base 8 (octal): {:o}\u0026#34;, 69420);//207454 println!(\u0026#34;Base 16 (hexadecimal): {:x}\u0026#34;, 69420);//10f2c println!(\u0026#34;Base 16 (hexadecimal): {:X}\u0026#34;,69420);//10F2C // right-justify text with specified width println!(\u0026#34;{number:\u0026gt;5}\u0026#34;, number=1); // pad numbers with extras zeroes println!(\u0026#34;{number:0\u0026gt;5}\u0026#34;, number=1); // 00001 println!(\u0026#34;{number:0\u0026lt;5}\u0026#34;, number=1); // 10000 println!(\u0026#34;{number:0\u0026gt;width$}\u0026#34;, number=1, width=5); // rust checks to ensure correct number of arguments // only types that implement fmt::Display can be formatted with `{}`; user-defined types do not have this by default let number: f64 = 1.0; let width: usize = 5; println!(\u0026#34;{number:\u0026gt;width$}\u0026#34;); let pi: f64 = 3.141592; println!(\u0026#34;pi is approximately {pi:.prec$}\u0026#34;, prec=3); } Examples Sieve extern crate primal; use primal::Sieve; fn num_divisors(n: usize, primes: \u0026amp;Sieve) -\u0026gt; Option\u0026lt;usize\u0026gt; { match primes.factor(n) { Ok(factors) =\u0026gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))), Err(_) =\u0026gt; None, } } fn main() { println!(\u0026#34;24 days of Rust - primal (day 2)\u0026#34;); let sieve = Sieve::new(10000); let suspect = 5273; println!(\u0026#34;{} is prime: {}\u0026#34;, suspect, sieve.is_prime(suspect)); let not_a_prime = 1024; println!(\u0026#34;{} is prime: {}\u0026#34;, not_a_prime, sieve.is_prime(not_a_prime)); let n = 1000; match sieve.primes_from(0).nth(n - 1) { Some(number) =\u0026gt; println!(\u0026#34;{}th prime is {}\u0026#34;, n, number), None =\u0026gt; println!(\u0026#34;I don\u0026#39;t know anything about {}th prime.\u0026#34;, n), } println!(\u0026#34;{:?}\u0026#34;, sieve.factor(2610)); println!(\u0026#34;{:?}\u0026#34;, num_divisors(2610, \u0026amp;sieve)); } ", 
         "url": "https:\/\/kdbed.github.io\/posts\/rust_programming\/"
     },
     
@@ -2928,22 +2948,22 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/posts\/splunk\/": {
-        
-        "title": "Splunk",
-        "tags": [],
-        "content": "", 
-        "url": "https:\/\/kdbed.github.io\/posts\/splunk\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/tags\/splunk\/": {
         
         "title": "Splunk",
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/tags\/splunk\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/splunk\/": {
+        
+        "title": "Splunk",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/posts\/splunk\/"
     },
     
     
