@@ -4,7 +4,7 @@
     <title>Physics on Owlglass</title>
     <link>https://kdbed.github.io/tags/physics/</link>
     <description>Recent content in Physics on Owlglass</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://kdbed.github.io/tags/physics/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,21 +12,21 @@
       <link>https://kdbed.github.io/posts/quantum_mechanics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/quantum_mechanics/</guid>
-      <description>Quantum Mechanics - Basic Principles In quantum mechanics the state of a system is represented by a vector in a complex vector space with Hermitian inner product - the state space. Observable quantities are self-adjoint linear operators on the state space.&#xA;In classical physics, the state of a system is given by a point in a phase space, or equivalently as the space of solutions of an equation of motion. Observable quantities are functions (of coordinates and momenta) on this space.</description>
+      <description>&lt;h2 id=&#34;quantum-mechanics-basic-principles&#34;&gt;Quantum Mechanics - Basic Principles&lt;/h2&gt;&#xA;&lt;p&gt;In quantum mechanics the state of a system is represented by a vector in a complex vector space with Hermitian inner product - the state space. Observable quantities are self-adjoint linear operators on the state space.&lt;/p&gt;&#xA;&lt;p&gt;In classical physics, the state of a system is given by a point in a phase space, or equivalently as the space of solutions of an equation of motion. Observable quantities are functions (of coordinates and momenta) on this space. The Hamiltonian determines how states evolve in time through Hamilton’s equations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Spacetime</title>
       <link>https://kdbed.github.io/posts/spacetime/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/spacetime/</guid>
-      <description>Spacetime Spacetime is a four-dimensional topological manifold with smooth atlas carrying a torsion-free connection compatible with a Lorentzian metric and a time orientation satisfying the Einstein equations.</description>
+      <description>&lt;h2 id=&#34;spacetime&#34;&gt;Spacetime&lt;/h2&gt;&#xA;&lt;p&gt;Spacetime is a four-dimensional topological manifold with smooth atlas carrying a torsion-free connection compatible with a Lorentzian metric and a time orientation satisfying the Einstein equations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Action Principle</title>
       <link>https://kdbed.github.io/posts/the_action_principle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/the_action_principle/</guid>
-      <description>The Action Principle Define the Lagrangian as the following combination of the kinetic energy \(T\) and the potential energy \(V\):&#xA;\[ L = T - V \]&#xA;\(L\) is a function of the coordinates \(x\) and the velocity \(\dot{x}\), which are treated as independent variables. For a point particle&#xA;\[ L(x,\dot{x}) = \frac{1}{2}m \sum_{i=1}^D (\dot{x}^i)^2 - V(x) \]&#xA;Taking derivatives&#xA;\begin{align*} \frac{\partial L}{\partial x^i} &amp;amp;= - \frac{\partial V}{\partial x^i} \\ \frac{\partial L}{\partial \dot{x}^i} &amp;amp;= m \dot{x}^i \end{align*}</description>
+      <description>&lt;h2 id=&#34;the-action-principle&#34;&gt;The Action Principle&lt;/h2&gt;&#xA;&lt;p&gt;Define the Lagrangian as the following combination of the kinetic energy \(T\) and the potential energy \(V\):&lt;/p&gt;&#xA;&lt;p&gt;\[&#xA;L = T - V&#xA;\]&lt;/p&gt;&#xA;&lt;p&gt;\(L\) is a function of the coordinates \(x\) and the velocity \(\dot{x}\), which are treated as independent variables.&#xA;For a point particle&lt;/p&gt;&#xA;&lt;p&gt;\[&#xA;L(x,\dot{x}) = \frac{1}{2}m \sum_{i=1}^D (\dot{x}^i)^2 - V(x)&#xA;\]&lt;/p&gt;&#xA;&lt;p&gt;Taking derivatives&lt;/p&gt;&#xA;&lt;p&gt;\begin{align*}&#xA;\frac{\partial L}{\partial x^i} &amp;amp;= - \frac{\partial V}{\partial x^i} \\&#xA;\frac{\partial L}{\partial \dot{x}^i} &amp;amp;= m \dot{x}^i&#xA;\end{align*}&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
