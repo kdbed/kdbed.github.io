@@ -1,5 +1,5 @@
 +++
-title = "Windows Kernel API Prefix-to-Subsystem Mapping"
+title = "Windows Kernel"
 author = ["svejk"]
 draft = false
 +++
@@ -17,6 +17,8 @@ The kernel provides all the OS's privileged functionality, as well as interfaces
 
 Each subsystem exposes APIs for the other subsystems to call.
 
+-   API Prefix-to-Subsystem Mapping
+
 | Prefix | Subsystem                  | Example                   |
 |--------|----------------------------|---------------------------|
 | Nt/Zw  | System call interface      | NtOpenFile / ZwOpenFile   |
@@ -30,3 +32,6 @@ Each subsystem exposes APIs for the other subsystems to call.
 
 
 #### [Windows Kernel - Security Reference Monitor]({{< relref "windows_kernel_security_reference_monitor.md" >}}) {#windows-kernel-security-reference-monitor--windows-kernel-security-reference-monitor-dot-md}
+
+
+#### [Windows Kernel - Object Manager]({{< relref "windows_kernel_object_manager.md" >}}) {#windows-kernel-object-manager--windows-kernel-object-manager-dot-md}

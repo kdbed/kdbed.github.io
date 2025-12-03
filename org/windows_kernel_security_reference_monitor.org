@@ -9,4 +9,4 @@ The =Security Reference Monitor (SRM)= implements the security mechanisms that r
 
 
 #+attr_org: :width 500
-[[../static/images/srm.jpg]]
+[[../static/images/srm1.jpg]]

@@ -1409,6 +1409,13 @@
       <description>Trusted Platform Module A Trusted Platform Module (TPM) is a specialized chip on your computer&amp;rsquo;s motherboard designed to enhance security by securely storing cryptographic keys used for encryption and decryption. It ensures that your operating system and firmware are authentic and have not been tampered with. TPMs can be implemented as discrete chips, which are separate components on the motherboard, or as integrated solutions within the main processor.&#xA;For example, the Microsoft Pluton security processor is an integrated solution that embeds TPM functionality directly into the CPU.</description>
     </item>
     <item>
+      <title>Windows Kernel</title>
+      <link>https://kdbed.github.io/posts/windows_kernel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/windows_kernel/</guid>
+      <description>The Windows Kernel There are two parts of the running operating system: the kernel and the user-mode applications. The kernel makes the security decisions that determine what a user can do on the system. Most of the applications you use on a Windows machine run in user mode.&#xA;The Windows NTOS kernel executive The kernel provides all the OS&amp;rsquo;s privileged functionality, as well as interfaces through which user applications can communicate with the hardware.</description>
+    </item>
+    <item>
       <title>Windows Kernel - Object Manager</title>
       <link>https://kdbed.github.io/posts/windows_kernel_object_manager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1421,13 +1428,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/windows_kernel_security_reference_monitor/</guid>
       <description>Windows Kernel - Security Reference Monitor The Security Reference Monitor (SRM) implements the security mechanisms that restrict which users can access different resources.</description>
-    </item>
-    <item>
-      <title>Windows Kernel API Prefix-to-Subsystem Mapping</title>
-      <link>https://kdbed.github.io/posts/windows_kernel/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kdbed.github.io/posts/windows_kernel/</guid>
-      <description>The Windows Kernel There are two parts of the running operating system: the kernel and the user-mode applications. The kernel makes the security decisions that determine what a user can do on the system. Most of the applications you use on a Windows machine run in user mode.&#xA;The Windows NTOS kernel executive The kernel provides all the OS&amp;rsquo;s privileged functionality, as well as interfaces through which user applications can communicate with the hardware.</description>
     </item>
     <item>
       <title>X11 Authorization</title>

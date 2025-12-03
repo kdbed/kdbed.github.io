@@ -8,4 +8,4 @@ draft = false
 
 The `Security Reference Monitor (SRM)` implements the security mechanisms that restrict which users can access different resources.
 
-{{< figure src="/images/srm.jpg" >}}
+{{< figure src="/images/srm1.jpg" >}}

@@ -17,7 +17,7 @@ The kernel provides all the OS's privileged functionality, as well as interfaces
 
 Each subsystem exposes APIs for the other subsystems to call.
 
-#+title: API Prefix-to-Subsystem Mapping
+- API Prefix-to-Subsystem Mapping
 
 | Prefix  | Subsystem                   | Example                       |
 |---------+-----------------------------+-------------------------------|
@@ -32,3 +32,4 @@ Each subsystem exposes APIs for the other subsystems to call.
 
 
 *** [[id:31592873-39ca-4271-8532-c92e0d7f7604][Windows Kernel - Security Reference Monitor]]
+*** [[id:394cd557-40ac-47e8-b475-ee4b99350171][Windows Kernel - Object Manager]]
