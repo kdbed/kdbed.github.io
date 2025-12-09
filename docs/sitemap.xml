@@ -400,6 +400,10 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_ip_camera/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_llms/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/pentest_microsoft_teams/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/pentesting_mssql_microsoft_sql_server/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/pentest_passive_information_gathering/</loc>
@@ -657,6 +661,8 @@
     <loc>https://kdbed.github.io/posts/web_pentest_tools/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/web_pentest_wordpress/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/webauthn/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/wfuzz/</loc>
   </url><url>

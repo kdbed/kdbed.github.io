@@ -741,7 +741,7 @@
       <link>https://kdbed.github.io/posts/azure_ad_backdoor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/azure_ad_backdoor/</guid>
-      <description>Basic Recon Detect M365 usage: https://login.microsoftonline.com/getuserrealm.srf?login=test@acmecorp.com&amp;amp;xml=1 Tenant ID: https://login.microsoftonline.com/&amp;lt;target domain&amp;gt;/v2.0/.well-known/openid-configuration User enumeration: https://login.Microsoft.com/common/oauth2/token Detect invalid users while password spraying with: MSOLSpray Enumerate users via OneDrive: onedrive_user_enum Data in public Azure blobs:&#xA;storage-acct-name.blob.core.windows.net storage-acct-name.file.core.windows.net storage-acct-name.table.core.windows.net storage-acct-name.queue.core.windows.net Cloud_enum - Chris Moberly clound_enum Azure Smart Lockout - protection from pw spray; bypass with FireProx + MSOLSpray fireprox&#xA;Authentication Forms of auth: Password hash synchronization; pass through authentication; Active Directory Federation Services (ADFS); certificate-based auth; conditional access policies; long-term access tokens; legacy authentication portals If CAP applies to Device Platforms, it only reads user-agent string - easily spoofed Find gaps in CAP - dafthack/MFASweep User Account Enumeration chronlund</description>
+      <description>Basic Recon Detect M365 usage: https://login.microsoftonline.com/getuserrealm.srf?login=test@acmecorp.com&amp;amp;xml=1 Tenant ID: https://login.microsoftonline.com/&amp;lt;target domain&amp;gt;/v2.0/.well-known/openid-configuration User enumeration: https://login.Microsoft.com/common/oauth2/token Detect invalid users while password spraying with: MSOLSpray Enumerate users via OneDrive: onedrive_user_enum Data in public Azure blobs:&#xA;storage-acct-name.blob.core.windows.net storage-acct-name.file.core.windows.net storage-acct-name.table.core.windows.net storage-acct-name.queue.core.windows.net Cloud_enum - Chris Moberly clound_enum Azure Smart Lockout - protection from pw spray; bypass with FireProx + MSOLSpray fireprox GraphSpy&#xA;Authentication Forms of auth: Password hash synchronization; pass through authentication; Active Directory Federation Services (ADFS); certificate-based auth; conditional access policies; long-term access tokens; legacy authentication portals If CAP applies to Device Platforms, it only reads user-agent string - easily spoofed Find gaps in CAP - dafthack/MFASweep User Account Enumeration chronlund</description>
     </item>
     <item>
       <title>Pentest - BloodHound</title>
@@ -791,6 +791,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/pentest_ip_camera/</guid>
       <description>Hacking IP Cameras cameradar</description>
+    </item>
+    <item>
+      <title>Pentest - LLMs</title>
+      <link>https://kdbed.github.io/posts/pentest_llms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/pentest_llms/</guid>
+      <description>Pentest LLMs thehackernews</description>
+    </item>
+    <item>
+      <title>Pentest - Microsoft Teams</title>
+      <link>https://kdbed.github.io/posts/pentest_microsoft_teams/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/pentest_microsoft_teams/</guid>
+      <description>Microsoft Teams GIFShell bufferzonesecurity</description>
     </item>
     <item>
       <title>Pentest - MSSQL - Microsoft SQL Server p 1433</title>
@@ -1372,6 +1386,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/web_pentest_wordpress/</guid>
       <description>Wordpress WPScan Enumerate vulnerable plugins, users, db exports:&#xA;wpscan --url &amp;lt;url&amp;gt; -e dbe,u,vp </description>
+    </item>
+    <item>
+      <title>WebAuthn</title>
+      <link>https://kdbed.github.io/posts/webauthn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/webauthn/</guid>
+      <description>WebAuthn webauthn.guide</description>
     </item>
     <item>
       <title>wfuzz</title>

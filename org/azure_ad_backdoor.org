@@ -19,6 +19,7 @@ Data in public Azure blobs:
         - storage-acct-name.queue.core.windows.net
 Cloud_enum - Chris Moberly [[https://github.com/initstring/cloud_enum][clound_enum]]
 Azure Smart Lockout - protection from pw spray; bypass with FireProx + MSOLSpray [[https://github.com/ustayready/fireprox][fireprox]]
+[[https://github.com/RedByte1337/GraphSpy][GraphSpy]]
 * Authentication
 - Forms of auth: Password hash synchronization; pass through authentication; Active Directory Federation Services (ADFS); certificate-based auth; conditional access policies; long-term access tokens; legacy authentication portals
 - If CAP applies to Device Platforms, it only reads user-agent string - easily spoofed

@@ -21,6 +21,7 @@ Data in public Azure blobs:
 
 Cloud_enum - Chris Moberly [clound_enum](https://github.com/initstring/cloud_enum)
 Azure Smart Lockout - protection from pw spray; bypass with FireProx + MSOLSpray [fireprox](https://github.com/ustayready/fireprox)
+[GraphSpy](https://github.com/RedByte1337/GraphSpy)
 
 
 ## Authentication {#authentication}

