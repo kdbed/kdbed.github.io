@@ -4,7 +4,7 @@
     <title>ObjectOrientedProgramming on Owlglass</title>
     <link>https://kdbed.github.io/tags/objectorientedprogramming/</link>
     <description>Recent content in ObjectOrientedProgramming on Owlglass</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://kdbed.github.io/tags/objectorientedprogramming/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,7 +12,7 @@
       <link>https://kdbed.github.io/posts/powershell_classes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/powershell_classes/</guid>
-      <description>powershell - Classes Introduction PowerShell is an object-oriented language. When you run commands, see the output on your screen, those are objects.&#xA;Skeleton of a class called student:&#xA;class student { } Classes have properties that look like parameters that are attributes that describe that class. The example below shows a class called student with two properties; FirstName and LastName.&#xA;When you define a property, you should always define a type that sets a specific schema for what property values can hold.</description>
+      <description>&lt;h2 id=&#34;powershell--powershell-dot-md--classes&#34;&gt;&lt;a href=&#34;https://kdbed.github.io/posts/powershell/&#34;&gt;powershell&lt;/a&gt; - Classes&lt;/h2&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;PowerShell is an object-oriented language. When you run commands, see the output on your screen, those are objects.&lt;/p&gt;&#xA;&lt;p&gt;Skeleton of a class called &lt;code&gt;student&lt;/code&gt;:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; student {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Classes have properties that look like parameters that are attributes that describe that class. The example below shows a class called student with two properties; &lt;code&gt;FirstName&lt;/code&gt; and &lt;code&gt;LastName&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;When you define a property, you should always define a type that sets a specific &lt;em&gt;schema&lt;/em&gt; for what property values can hold. In the example below, both properties are defined as strings.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

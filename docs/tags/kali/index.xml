@@ -4,7 +4,7 @@
     <title>Kali on Owlglass</title>
     <link>https://kdbed.github.io/tags/kali/</link>
     <description>Recent content in Kali on Owlglass</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://kdbed.github.io/tags/kali/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,7 +12,7 @@
       <link>https://kdbed.github.io/posts/kali_basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/kali_basics/</guid>
-      <description>:ID: cb51a9d3-842b-4b10-ae56-2d18573b5f3e&#xA;:END:&#xA;Filesystem FHS - Filesystem Hierarchy Standard - conventions used for layout of a UNIX system LinuxFoundation&#xA;/bin : basic programs like ls, cd, cat /sbin : system programs like fdisk, makefs, sysctl /etc : configuration files bk /tmp : temporary files, typically deleted on boot /usr/bin : applications like apt, ncat, nmap /usr/share : application support and data files Basic Linux commands Finding files which searches through directories in the $PATH environment variable for a given file name; returns the full path to the file if a match is found</description>
+      <description>&lt;p&gt;:ID:       cb51a9d3-842b-4b10-ae56-2d18573b5f3e&lt;/p&gt;&#xA;&lt;p&gt;:END:&lt;/p&gt;&#xA;&lt;h2 id=&#34;filesystem&#34;&gt;Filesystem&lt;/h2&gt;&#xA;&lt;p&gt;FHS - Filesystem Hierarchy Standard - conventions used for layout of a UNIX system &lt;a href=&#34;https://wiki.linuxfoundation.org/lsb/fhs&#34;&gt;LinuxFoundation&lt;/a&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;/bin : basic programs like &lt;code&gt;ls&lt;/code&gt;, &lt;code&gt;cd&lt;/code&gt;, &lt;code&gt;cat&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;/sbin : system programs like &lt;code&gt;fdisk&lt;/code&gt;, &lt;code&gt;makefs&lt;/code&gt;, &lt;code&gt;sysctl&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;/etc : configuration files bk&lt;/li&gt;&#xA;&lt;li&gt;/tmp : temporary files, typically deleted on boot&lt;/li&gt;&#xA;&lt;li&gt;/usr/bin : applications like &lt;code&gt;apt&lt;/code&gt;, &lt;code&gt;ncat&lt;/code&gt;, &lt;code&gt;nmap&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;/usr/share : application support and data files&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;basic-linux-commands&#34;&gt;Basic Linux commands&lt;/h2&gt;&#xA;&lt;h2 id=&#34;finding-files&#34;&gt;Finding files&lt;/h2&gt;&#xA;&lt;h3 id=&#34;which&#34;&gt;&lt;code&gt;which&lt;/code&gt;&lt;/h3&gt;&#xA;&lt;p&gt;searches through directories in the &lt;code&gt;$PATH&lt;/code&gt; environment variable for a given file name; returns the full path to the file if a match is found&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

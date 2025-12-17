@@ -4,7 +4,7 @@
     <title>SecPlus on Owlglass</title>
     <link>https://kdbed.github.io/tags/secplus/</link>
     <description>Recent content in SecPlus on Owlglass</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://kdbed.github.io/tags/secplus/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,7 +12,7 @@
       <link>https://kdbed.github.io/posts/s_mime/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/s_mime/</guid>
-      <description>S/MIME ComptTIA Security+ </description>
+      <description>&lt;h2 id=&#34;s-mime&#34;&gt;S/MIME&lt;/h2&gt;&#xA;&lt;h2 id=&#34;compttia-security-plus--securityplus-dot-md&#34;&gt;&lt;a href=&#34;https://kdbed.github.io/posts/securityplus/&#34;&gt;ComptTIA Security+&lt;/a&gt;&lt;/h2&gt;</description>
     </item>
   </channel>
 </rss>

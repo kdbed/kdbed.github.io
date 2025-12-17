@@ -58,22 +58,22 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/tags\/abortion\/": {
-        
-        "title": "Abortion",
-        "tags": [],
-        "content": "", 
-        "url": "https:\/\/kdbed.github.io\/tags\/abortion\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/posts\/abortion\/": {
         
         "title": "Abortion",
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/abortion\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/abortion\/": {
+        
+        "title": "Abortion",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/abortion\/"
     },
     
     
@@ -208,22 +208,22 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/tags\/algorithms\/": {
-        
-        "title": "Algorithms",
-        "tags": [],
-        "content": "", 
-        "url": "https:\/\/kdbed.github.io\/tags\/algorithms\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/posts\/algorithms\/": {
         
         "title": "Algorithms",
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/algorithms\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/algorithms\/": {
+        
+        "title": "Algorithms",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/algorithms\/"
     },
     
     
@@ -642,7 +642,7 @@ window.store = {
         
         "title": "DLL Hijacking",
         "tags": ["privesc","exploit","windowsExploitation",],
-        "content": "Basic Ideas Windows DLL hijacking occurs when a trusted or legitimate application is tricked into loading an arbitrary DLL. Dll hijacking can be used to execute code, obtain persistence and escalate privileges, although privilege escalation is the least likely. hackTricks\nApproaches There are different approaches to DLL hijacking, and success will be determined by how the application is set to load its DLLs.\n", 
+        "content": "Basic Ideas Windows DLL hijacking occurs when a trusted or legitimate application is tricked into loading an arbitrary DLL. Dll hijacking can be used to execute code, obtain persistence and escalate privileges, although privilege escalation is the least likely. hackTricks\nApproaches There are different approaches to DLL hijacking, and success will be determined by how the application is set to load its DLLs.\n1.\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/dll_hijacking\/"
     },
     
@@ -684,6 +684,16 @@ window.store = {
         "tags": ["securityPlus","DNS",],
         "content": "DNS Zone Transfers DNS zone transfers using the AXFR protocol are the simplest mechanism to replicate DNS records across DNS servers. To avoid the need to edit information on multiple DNS servers, you can edit information on one server and use AXFR to copy information to other servers. However, if you do not protect your servers, malicious parties may use AXFR to get information about all your hosts.\nHow DNS Works DNS (Domain Name System) is like an Internet phonebook. It is responsible for resolving human-readable hostnames into machine-readable IP addresses. The system includes authoritative DNS servers that provide information and DNS caches that store that information temporarily for client lookups. A typical DNS query is very simple: a client provides a human-readable hostname and in response receives an IP address. However, the system assumes that the querying client knows the hostname.\nDNS servers host zones. A DNS zone is a portion of the domain name space that is served by a DNS server. For example, example.com with all its subdomains may be a zone. However, second.example.com may also be a separate zone.\nWhy DNS Zone Transfer is Needed DNS is a critical service. If a DNS server for a zone is not working and cached information has expired, the domain is inaccessible to all services (web, mail, and more). Therefore, each zone should have at least two DNS servers. For more critical zones, there may be even more.\nHowever, a zone may be large and may require frequent changes. If you manually edit zone data on each server separately, it takes a lot of time and there is a a lot of potential for a mistake. This is why DNS zone transfer is needed.\nYou can use different mechanisms for DNS zone transfer but the simplest one is AXFR (technically speaking, AXFR refers to the protocol used during a DNS zone transfer). It is a client-initiated request. Therefore, you can edit information on the primary DNS server and then use AXFR from the secondary DNS server to download the entire zone.\nHow to Initiate a DNS Zone Transfer Initiating an AXFR zone-transfer request from a secondary server is as simple as using the following dig commands, where zonetransfer.me is the domain that we want to initiate a zone transfer for. First, we need to get the list of DNS servers for the domain:\ndig +short ns zonetransfer.me Now, we can initiate an AXFR request to get a copy of the zone from the primary server:\ndig axfr zonetransfer.me @nsztm1.digi.ninja ; \u0026lt;\u0026lt;\u0026gt;\u0026gt; DiG 9.16.24 \u0026lt;\u0026lt;\u0026gt;\u0026gt; axfr zonetransfer.me @nsztm1.digi.ninja ;; global options: +cmd zonetransfer.me.\t7200\tIN\tSOA\tnsztm1.digi.ninja. robin.digi.ninja. 2019100801 172800 900 1209600 3600 zonetransfer.me.\t300\tIN\tHINFO\t\u0026#34;Casio fx-700G\u0026#34; \u0026#34;Windows XP\u0026#34; zonetransfer.me.\t301\tIN\tTXT\t\u0026#34;google-site-verification=tyP28J7JAUHA9fw2sHXMgcCC0I6XBmmoVi04VlMewxA\u0026#34; zonetransfer.me.\t7200\tIN\tMX\t0 ASPMX.L.GOOGLE.COM. zonetransfer.me.\t7200\tIN\tMX\t10 ALT1.ASPMX.L.GOOGLE.COM. zonetransfer.me.\t7200\tIN\tMX\t10 ALT2.ASPMX.L.GOOGLE.COM. zonetransfer.me.\t7200\tIN\tMX\t20 ASPMX2.GOOGLEMAIL.COM. zonetransfer.me.\t7200\tIN\tMX\t20 ASPMX3.GOOGLEMAIL.COM. zonetransfer.me.\t7200\tIN\tMX\t20 ASPMX4.GOOGLEMAIL.COM. zonetransfer.me.\t7200\tIN\tMX\t20 ASPMX5.GOOGLEMAIL.COM. zonetransfer.me.\t7200\tIN\tA\t5.196.105.14 zonetransfer.me.\t7200\tIN\tNS\tnsztm1.digi.ninja. zonetransfer.me.\t7200\tIN\tNS\tnsztm2.digi.ninja. _acme-challenge.zonetransfer.me. 301 IN\tTXT\t\u0026#34;6Oa05hbUJ9xSsvYy7pApQvwCUSSGgxvrbdizjePEsZI\u0026#34; _sip._tcp.zonetransfer.me. 14000 IN\tSRV\t0 0 5060 www.zonetransfer.me. 14.105.196.5.IN-ADDR.ARPA.zonetransfer.me. 7200\tIN PTR www.zonetransfer.me. asfdbauthdns.zonetransfer.me. 7900 IN\tAFSDB\t1 asfdbbox.zonetransfer.me. asfdbbox.zonetransfer.me. 7200\tIN\tA\t127.0.0.1 asfdbvolume.zonetransfer.me. 7800 IN\tAFSDB\t1 asfdbbox.zonetransfer.me. canberra-office.zonetransfer.me. 7200 IN A\t202.14.81.230 cmdexec.zonetransfer.me. 300\tIN\tTXT\t\u0026#34;; ls\u0026#34; contact.zonetransfer.me. 2592000 IN\tTXT\t\u0026#34;Remember to call or email Pippa on +44 123 4567890 or pippa@zonetransfer.me when making DNS changes\u0026#34; dc-office.zonetransfer.me. 7200\tIN\tA\t143.228.181.132 deadbeef.zonetransfer.me. 7201\tIN\tAAAA\tdead:beaf:: dr.zonetransfer.me.\t300\tIN\tLOC\t53 20 56.558 N 1 38 33.526 W 0.00m 1m 10000m 10m DZC.zonetransfer.me.\t7200\tIN\tTXT\t\u0026#34;AbCdEfG\u0026#34; email.zonetransfer.me.\t2222\tIN\tNAPTR\t1 1 \u0026#34;P\u0026#34; \u0026#34;E2U+email\u0026#34; \u0026#34;\u0026#34; email.zonetransfer.me.zonetransfer.me. email.zonetransfer.me.\t7200\tIN\tA\t74.125.206.26 Hello.zonetransfer.me.\t7200\tIN\tTXT\t\u0026#34;Hi to Josh and all his class\u0026#34; home.zonetransfer.me.\t7200\tIN\tA\t127.0.0.1 Info.zonetransfer.me.\t7200\tIN\tTXT\t\u0026#34;ZoneTransfer.me service provided by Robin Wood - robin@digi.ninja. See http://digi.ninja/projects/zonetransferme.php for more information.\u0026#34; internal.zonetransfer.me. 300\tIN\tNS\tintns1.zonetransfer.me. internal.zonetransfer.me. 300\tIN\tNS\tintns2.zonetransfer.me. intns1.zonetransfer.me.\t300\tIN\tA\t81.4.108.41 intns2.zonetransfer.me.\t300\tIN\tA\t167.88.42.94 office.zonetransfer.me.\t7200\tIN\tA\t4.23.39.254 ipv6actnow.org.zonetransfer.me.\t7200 IN\tAAAA\t2001:67c:2e8:11::c100:1332 owa.zonetransfer.me.\t7200\tIN\tA\t207.46.197.32 robinwood.zonetransfer.me. 302\tIN\tTXT\t\u0026#34;Robin Wood\u0026#34; rp.zonetransfer.me.\t321\tIN\tRP\trobin.zonetransfer.me. robinwood.zonetransfer.me. sip.zonetransfer.me.\t3333\tIN\tNAPTR\t2 3 \u0026#34;P\u0026#34; \u0026#34;E2U+sip\u0026#34; \u0026#34;!^.*$!sip:customer-service@zonetransfer.me!\u0026#34; . sqli.zonetransfer.me.\t300\tIN\tTXT\t\u0026#34;\u0026#39; or 1=1 --\u0026#34; sshock.zonetransfer.me.\t7200\tIN\tTXT\t\u0026#34;() { :]}; echo ShellShocked\u0026#34; staging.zonetransfer.me. 7200\tIN\tCNAME\twww.sydneyoperahouse.com. alltcpportsopen.firewall.test.zonetransfer.me. 301 IN A\t127.0.0.1 testing.zonetransfer.me. 301\tIN\tCNAME\twww.zonetransfer.me. vpn.zonetransfer.me.\t4000\tIN\tA\t174.36.59.154 www.zonetransfer.me.\t7200\tIN\tA\t5.196.105.14 xss.zonetransfer.me.\t300\tIN\tTXT\t\u0026#34;\u0026#39;\u0026gt;\u0026lt;script\u0026gt;alert(\u0026#39;Boo\u0026#39;)\u0026lt;/script\u0026gt;\u0026#34; zonetransfer.me.\t7200\tIN\tSOA\tnsztm1.digi.ninja. robin.digi.ninja. 2019100801 172800 900 1209600 3600 ;; Query time: 120 msec ;; SERVER: 81.4.108.41#53(81.4.108.41) ;; WHEN: Sat Feb 05 21:45:59 EST 2022 ;; XFR size: 50 records (messages 1, bytes 1994) AXFR Vulnerability and Prevention AXFR offers no authentication, so any client can ask a DNS server for a copy of the entire zone. This means that unless some kind of protection is introduced, an attacker can get a list of all hosts for a domain, which gives them a lot of potential attack vectors.\nIn order to prevent this vulnerability from occurring, the DNS server should be configured to only allow zone transfers from trusted IP addresses. The following is an example of how this can be accomplished in the BIND DNS server.\n# /etc/named.conf acl trusted-nameservers { 192.168.0.10; //ns2 192.168.1.20; //ns3 }; zone zonetransfer.me { type master; file \u0026#34;zones/zonetransfer.me\u0026#34;; allow-transfer { trusted-nameservers; }; }; Additionally, it’s also recommended to use transaction signatures (TSIG) for zone transfers to prevent IP spoofing attempts.\nComptTIA Security+ Acunetix ", 
         "url": "https:\/\/kdbed.github.io\/posts\/dnszonetransfers\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/posts\/docker_escape\/": {
+        
+        "title": "Docker Escape",
+        "tags": [],
+        "content": "Docker Escape hdks\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/docker_escape\/"
     },
     
     
@@ -1128,22 +1138,22 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/tags\/impacket\/": {
-        
-        "title": "Impacket",
-        "tags": [],
-        "content": "", 
-        "url": "https:\/\/kdbed.github.io\/tags\/impacket\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/posts\/impacket\/": {
         
         "title": "Impacket",
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/impacket\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/impacket\/": {
+        
+        "title": "Impacket",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/impacket\/"
     },
     
     
@@ -1288,16 +1298,6 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/tags\/kerberoasting\/": {
-        
-        "title": "Kerberoasting",
-        "tags": [],
-        "content": "", 
-        "url": "https:\/\/kdbed.github.io\/tags\/kerberoasting\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/posts\/kerberoasting\/": {
         
         "title": "Kerberoasting",
@@ -1308,12 +1308,12 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/tags\/kerberos\/": {
+    "https:\/\/kdbed.github.io\/tags\/kerberoasting\/": {
         
-        "title": "Kerberos",
+        "title": "Kerberoasting",
         "tags": [],
         "content": "", 
-        "url": "https:\/\/kdbed.github.io\/tags\/kerberos\/"
+        "url": "https:\/\/kdbed.github.io\/tags\/kerberoasting\/"
     },
     
     
@@ -1324,6 +1324,16 @@ window.store = {
         "tags": [],
         "content": "Kerberos Protocol Kerberos Authentication Attacking Kerberos Overview The main ticket you will receive is a ticket-granting ticket (TGT). These can come in various forms, such as a .kirbi for Rubeus and .ccache for Impacket. A ticket is typically base64 encoded and can be used for multiple attacks.\nThe ticket-granting ticket is only used to get service tickets from the KDC. When requesting a TGT from the KDC, the user will authenticate with their credentials to the KDC and request a ticket. The server will validate the credentials, create a TGT and encrypt it using the krbtgt key. The encrypted TGT and a session key will be sent to the user.\nWhen the user needs to request a service ticket, they will send the TGT and the session key to the KDC, along with the service principal name (SPN) of the service they wish to access. The KDC will validate the TGT and session key. If they are correct, the KDC will grant the user a service ticket, which can be used to authenticate to the corresponding service.\nEnumeration and Attacks Kerbrute Enumeration - No domain access required Rubeus - Harvesting and Brute-forcing tickets Pass the Ticket (PtT) Attack - Access as a user to the domain required Kerberoasting - Access as any user required AS-REP Roasting - Access as any user required Golden Ticket - Full domain compromise (domain admin) required Silver Ticket - Service hash required Skeleton Key - Full domain compromise (domain admin) required\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/kerberos\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/kerberos\/": {
+        
+        "title": "Kerberos",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/kerberos\/"
     },
     
     
@@ -1362,7 +1372,7 @@ window.store = {
         
         "title": "Lang - Test",
         "tags": ["programming","examples",],
-        "content": "Language tests in org Rust extern crate primal; use primal::Sieve; fn num_divisors(n: usize, primes: \u0026amp;Sieve) -\u0026gt; Option\u0026lt;usize\u0026gt; { match primes.factor(n) { Ok(factors) =\u0026gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))), Err(_) =\u0026gt; None, } } fn main() { println!(\u0026#34;24 days of Rust - primal (day 2)\u0026#34;); let sieve = Sieve::new(10000); let suspect = 5273; println!(\u0026#34;{} is prime: {}\u0026#34;, suspect, sieve.is_prime(suspect)); let not_a_prime = 1024; println!(\u0026#34;{} is prime: {}\u0026#34;, not_a_prime, sieve.is_prime(not_a_prime)); let n = 1000; match sieve.primes_from(0).nth(n - 1) { Some(number) =\u0026gt; println!(\u0026#34;{}th prime is {}\u0026#34;, n, number), None =\u0026gt; println!(\u0026#34;I don\u0026#39;t know anything about {}th prime.\u0026#34;, n), } println!(\u0026#34;{:?}\u0026#34;, sieve.factor(2610)); println!(\u0026#34;{:?}\u0026#34;, num_divisors(2610, \u0026amp;sieve)); } C++ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 #include \u0026lt;stdio.h\u0026gt; #include \u0026lt;stdlib.h\u0026gt; #include \u0026lt;time.h\u0026gt; int main(void){ int niter=10; //Specify the number of samples. srand((unsigned)time(NULL)); //Set the seed of random number generator. int n_in=0; //Initialize the counter. /*************/ /* Main loop */ /*************/ for(int iter=1;iter\u0026lt;niter+1;iter++){ double x = (double)rand()/RAND_MAX; double y = (double)rand()/RAND_MAX; //Generate random numbers x,y in [0,1]. if(x*x+y*y \u0026lt; 1e0) //If xˆ2+yˆ2\u0026lt;1.... n_in=n_in+1; //Add 1 to n_in. printf(\u0026#34;%d %.10f\\n\u0026#34;,iter,(double)n_in/iter);} } 1 1.0000000000 2 1.0000000000 3 1.0000000000 4 0.7500000000 5 0.8000000000 6 0.6666666667 7 0.5714285714 8 0.5000000000 9 0.4444444444 10 0.4000000000 1 2 3 4 5 #include \u0026lt;iostream\u0026gt; int main(){ std::cout\u0026lt;\u0026lt;\u0026#34;Hello, World!\\n\u0026#34;; return 0; } Hello, World! C# 1 2 3 4 5 6 7 8 9 10 11 // Hello World! program namespace HelloWorld { class Hello { static void Main(string[] args) { System.Console.WriteLine(\u0026#34;Hello World!\u0026#34;); } } } Haskell add_1 : Nat -\u0026gt; Nat add_1 x = x + 1 add_1 5 6 map (format \u0026#34;%s\u0026#34; (replace-regexp-in-string (rx line-start (+ (| alphanumeric blank \u0026#34;.\u0026#34; \u0026#34;|\u0026#34; \u0026#34;\u0026gt;\u0026#34;))) \u0026#34;\u0026#34; (format \u0026#34;%s\u0026#34; strr))) :{ -- a very verbose way to sum a sequence of numbers: sumInts :: Int -\u0026gt; Int -\u0026gt; Int sumInts a b = if a == b then b else (+ a) $ (sumInts (a + 1) b) :} map (\\[a,b] -\u0026gt; sumInts a b) [[0, 10] , [1, 3], [1,5], [2,10]] 55 6 15 54 Lean not working:\ndef main : IO Unit := IO.println s!\u0026#34;Hello, world!\u0026#34; #check id ", 
+        "content": "Language tests in org Rust extern crate primal;\ruse primal::Sieve;\rfn num_divisors(n: usize, primes: \u0026amp;Sieve) -\u0026gt; Option\u0026lt;usize\u0026gt; {\rmatch primes.factor(n) {\rOk(factors) =\u0026gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))),\rErr(_) =\u0026gt; None,\r}\r}\rfn main() {\rprintln!(\u0026#34;24 days of Rust - primal (day 2)\u0026#34;);\rlet sieve = Sieve::new(10000);\rlet suspect = 5273;\rprintln!(\u0026#34;{} is prime: {}\u0026#34;, suspect, sieve.is_prime(suspect));\rlet not_a_prime = 1024;\rprintln!(\u0026#34;{} is prime: {}\u0026#34;, not_a_prime, sieve.is_prime(not_a_prime));\rlet n = 1000;\rmatch sieve.primes_from(0).nth(n - 1) {\rSome(number) =\u0026gt; println!(\u0026#34;{}th prime is {}\u0026#34;, n, number),\rNone =\u0026gt; println!(\u0026#34;I don\u0026#39;t know anything about {}th prime.\u0026#34;, n),\r}\rprintln!(\u0026#34;{:?}\u0026#34;, sieve.factor(2610));\rprintln!(\u0026#34;{:?}\u0026#34;, num_divisors(2610, \u0026amp;sieve));\r} C++ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 #include \u0026lt;stdio.h\u0026gt; #include \u0026lt;stdlib.h\u0026gt; #include \u0026lt;time.h\u0026gt; int main(void){ int niter=10; //Specify the number of samples. srand((unsigned)time(NULL)); //Set the seed of random number generator. int n_in=0; //Initialize the counter. /*************/ /* Main loop */ /*************/ for(int iter=1;iter\u0026lt;niter+1;iter++){ double x = (double)rand()/RAND_MAX; double y = (double)rand()/RAND_MAX; //Generate random numbers x,y in [0,1]. if(x*x+y*y \u0026lt; 1e0) //If xˆ2+yˆ2\u0026lt;1.... n_in=n_in+1; //Add 1 to n_in. printf(\u0026#34;%d %.10f\\n\u0026#34;,iter,(double)n_in/iter);} } 1 1.0000000000 2 1.0000000000 3 1.0000000000 4 0.7500000000 5 0.8000000000 6 0.6666666667 7 0.5714285714 8 0.5000000000 9 0.4444444444 10 0.4000000000 1 2 3 4 5 #include \u0026lt;iostream\u0026gt; int main(){ std::cout\u0026lt;\u0026lt;\u0026#34;Hello, World!\\n\u0026#34;; return 0; } Hello, World! C# 1 2 3 4 5 6 7 8 9 10 11 // Hello World! program namespace HelloWorld { class Hello { static void Main(string[] args) { System.Console.WriteLine(\u0026#34;Hello World!\u0026#34;); } } } Haskell add_1 : Nat -\u0026gt; Nat add_1 x = x + 1 add_1 5 6 map (format \u0026#34;%s\u0026#34; (replace-regexp-in-string (rx line-start (+ (| alphanumeric blank \u0026#34;.\u0026#34; \u0026#34;|\u0026#34; \u0026#34;\u0026gt;\u0026#34;))) \u0026#34;\u0026#34; (format \u0026#34;%s\u0026#34; strr))) :{ -- a very verbose way to sum a sequence of numbers: sumInts :: Int -\u0026gt; Int -\u0026gt; Int sumInts a b = if a == b then b else (+ a) $ (sumInts (a + 1) b) :} map (\\[a,b] -\u0026gt; sumInts a b) [[0, 10] , [1, 3], [1,5], [2,10]] 55 6 15 54 Lean not working:\n1 2 3 4 def main : IO Unit := IO.println s!\u0026#34;Hello, world!\u0026#34; #check id ", 
         "url": "https:\/\/kdbed.github.io\/posts\/lang_test\/"
     },
     
@@ -1372,7 +1382,7 @@ window.store = {
         
         "title": "Lang - Test",
         "tags": [],
-        "content": " extern crate regex; use regex::Regex; fn main() { let re = Regex::new(r\u0026#34;^\\d{4}-\\d{2}-\\d{2}$\u0026#34;).unwrap(); println!(\u0026#34;test\u0026#34;); assert!(re.is_match(\u0026#34;2014-01-01\u0026#34;)); } 1 2 3 4 5 #include \u0026lt;iostream\u0026gt; int main(){ std::cout\u0026lt;\u0026lt;\u0026#34;Hello, World.\\n\u0026#34;; return 0; } Hello, World. ", 
+        "content": "\rextern crate regex;\ruse regex::Regex;\rfn main() {\rlet re = Regex::new(r\u0026#34;^\\d{4}-\\d{2}-\\d{2}$\u0026#34;).unwrap();\rprintln!(\u0026#34;test\u0026#34;);\rassert!(re.is_match(\u0026#34;2014-01-01\u0026#34;));\r} 1 2 3 4 5 #include \u0026lt;iostream\u0026gt; int main(){ std::cout\u0026lt;\u0026lt;\u0026#34;Hello, World.\\n\u0026#34;; return 0; } Hello, World. ", 
         "url": "https:\/\/kdbed.github.io\/posts\/rust_test\/"
     },
     
@@ -1418,22 +1428,22 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/tags\/malware\/": {
-        
-        "title": "Malware",
-        "tags": [],
-        "content": "", 
-        "url": "https:\/\/kdbed.github.io\/tags\/malware\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/posts\/malware\/": {
         
         "title": "Malware",
         "tags": [],
         "content": "Information Security\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/malware\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/malware\/": {
+        
+        "title": "Malware",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/malware\/"
     },
     
     
@@ -1548,22 +1558,22 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/tags\/nietzsche\/": {
-        
-        "title": "Nietzsche",
-        "tags": [],
-        "content": "", 
-        "url": "https:\/\/kdbed.github.io\/tags\/nietzsche\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/posts\/nietzsche\/": {
         
         "title": "Nietzsche",
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/nietzsche\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/nietzsche\/": {
+        
+        "title": "Nietzsche",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/nietzsche\/"
     },
     
     
@@ -2168,22 +2178,22 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/tags\/physics\/": {
-        
-        "title": "Physics",
-        "tags": [],
-        "content": "", 
-        "url": "https:\/\/kdbed.github.io\/tags\/physics\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/posts\/physics\/": {
         
         "title": "Physics",
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/physics\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/physics\/": {
+        
+        "title": "Physics",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/physics\/"
     },
     
     
@@ -2572,7 +2582,7 @@ window.store = {
         
         "title": "Quantum Mechanics",
         "tags": ["physics",],
-        "content": "Quantum Mechanics - Basic Principles In quantum mechanics the state of a system is represented by a vector in a complex vector space with Hermitian inner product - the state space. Observable quantities are self-adjoint linear operators on the state space.\nIn classical physics, the state of a system is given by a point in a phase space, or equivalently as the space of solutions of an equation of motion. Observable quantities are functions (of coordinates and momenta) on this space. The Hamiltonian determines how states evolve in time through Hamilton’s equations.\nQuantum mechanics has different foundations:\nStates: The state of a quantum mechanical system is given by a nonzero vector in a complex vector space \\(\\mathcal{H}\\) with Hermitian inner product \\(\\langle \\cdot, \\cdot \\rangle \\). The state space is linear; a linear combination of states is also a state. The state space is a complex vector space. Dirac notation for vectors in the state space reads as follows: \\[ |\\psi\\rangle \\] Observables: The observables of a quantum mechanical system are given by self-adjoint linear operators on \\(\\mathcal{H}\\). Sources My preferred treatment of quantum mechanics is provided by Peter Woit\u0026rsquo;s excellent text:\nQuantum Theory, Groups and Representations: An Introduction; Woit Most of my notes are taken directly from the above.\n", 
+        "content": "Quantum Mechanics - Basic Principles In quantum mechanics the state of a system is represented by a vector in a complex vector space with Hermitian inner product - the state space. Observable quantities are self-adjoint linear operators on the state space.\nIn classical physics, the state of a system is given by a point in a phase space, or equivalently as the space of solutions of an equation of motion. Observable quantities are functions (of coordinates and momenta) on this space. The Hamiltonian determines how states evolve in time through Hamilton’s equations.\nQuantum mechanics has different foundations:\nStates: The state of a quantum mechanical system is given by a nonzero vector in a complex vector space \\(\\mathcal{H}\\) with Hermitian inner product \\(\\langle \\cdot, \\cdot \\rangle \\). The state space is linear; a linear combination of states is also a state. The state space is a complex vector space. Dirac notation for vectors in the state space reads as follows: \\[ |\\psi\\rangle \\] Observables: The observables of a quantum mechanical system are given by self-adjoint linear operators on \\(\\mathcal{H}\\). Sources My preferred treatment of quantum mechanics is provided by Peter Woit\u0026rsquo;s excellent text:\nQuantum Theory, Groups and Representations: An Introduction; Woit Most of my notes are taken directly from the above.\n-\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/quantum_mechanics\/"
     },
     
@@ -2752,7 +2762,7 @@ window.store = {
         
         "title": "Rust Programming",
         "tags": ["programming",],
-        "content": "Basics Hello World // comment fn main() { // print text to console println!(\u0026#34;Hello World\u0026#34;); println!(\u0026#34;I\u0026#39;m a Rustacean!\u0026#34;); } Comments fn main(){ // line comment /* block comment * continued * ... */ let x = 5 + 90 + 5; println!(\u0026#34;Is `x` 10 or 100? x = {}\u0026#34;, x); } Formatted Print Printing is handled by a series of macros defined in std::fmt, some of which are:\nformat! : write formatted text to String print! : same as format! but text is printed to console (io:stdout) println! : same as print! but new line appended eprint! : same as print! but text is printed to standard error (io::stderr) eprintln!: same as eprint! but new line is appended fn main() { // In general, the `{}` will be automatically replaced with stringified arguments println!(\u0026#34;{} days\u0026#34;, 31); // positional arguments can be used, starting at 0 println!(\u0026#34;{0}, this is {1}. {1}, this is {0}\u0026#34;, \u0026#34;Alice\u0026#34;, \u0026#34;Bob\u0026#34;); // named arguments println!(\u0026#34;{subject} {verb} {object}\u0026#34;, object=\u0026#34;the lazy dog\u0026#34;, subject=\u0026#34;the quick brown fox\u0026#34;, verb=\u0026#34;jumps over\u0026#34;); // format char after `:` println!(\u0026#34;Base 10: {}\u0026#34;, 69420); //69420 println!(\u0026#34;Base 2 (binary): {:b}\u0026#34;, 69420); println!(\u0026#34;Base 8 (octal): {:o}\u0026#34;, 69420);//207454 println!(\u0026#34;Base 16 (hexadecimal): {:x}\u0026#34;, 69420);//10f2c println!(\u0026#34;Base 16 (hexadecimal): {:X}\u0026#34;,69420);//10F2C // right-justify text with specified width println!(\u0026#34;{number:\u0026gt;5}\u0026#34;, number=1); // pad numbers with extras zeroes println!(\u0026#34;{number:0\u0026gt;5}\u0026#34;, number=1); // 00001 println!(\u0026#34;{number:0\u0026lt;5}\u0026#34;, number=1); // 10000 println!(\u0026#34;{number:0\u0026gt;width$}\u0026#34;, number=1, width=5); // rust checks to ensure correct number of arguments // only types that implement fmt::Display can be formatted with `{}`; user-defined types do not have this by default let number: f64 = 1.0; let width: usize = 5; println!(\u0026#34;{number:\u0026gt;width$}\u0026#34;); let pi: f64 = 3.141592; println!(\u0026#34;pi is approximately {pi:.prec$}\u0026#34;, prec=3); } Examples Sieve extern crate primal; use primal::Sieve; fn num_divisors(n: usize, primes: \u0026amp;Sieve) -\u0026gt; Option\u0026lt;usize\u0026gt; { match primes.factor(n) { Ok(factors) =\u0026gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))), Err(_) =\u0026gt; None, } } fn main() { println!(\u0026#34;24 days of Rust - primal (day 2)\u0026#34;); let sieve = Sieve::new(10000); let suspect = 5273; println!(\u0026#34;{} is prime: {}\u0026#34;, suspect, sieve.is_prime(suspect)); let not_a_prime = 1024; println!(\u0026#34;{} is prime: {}\u0026#34;, not_a_prime, sieve.is_prime(not_a_prime)); let n = 1000; match sieve.primes_from(0).nth(n - 1) { Some(number) =\u0026gt; println!(\u0026#34;{}th prime is {}\u0026#34;, n, number), None =\u0026gt; println!(\u0026#34;I don\u0026#39;t know anything about {}th prime.\u0026#34;, n), } println!(\u0026#34;{:?}\u0026#34;, sieve.factor(2610)); println!(\u0026#34;{:?}\u0026#34;, num_divisors(2610, \u0026amp;sieve)); } ", 
+        "content": "Basics Hello World // comment\rfn main() {\r// print text to console\rprintln!(\u0026#34;Hello World\u0026#34;);\rprintln!(\u0026#34;I\u0026#39;m a Rustacean!\u0026#34;);\r} Comments fn main(){\r// line comment\r/* block comment\r* continued\r* ...\r*/\rlet x = 5 + 90 + 5;\rprintln!(\u0026#34;Is `x` 10 or 100? x = {}\u0026#34;, x);\r} Formatted Print Printing is handled by a series of macros defined in std::fmt, some of which are:\nformat! : write formatted text to String print! : same as format! but text is printed to console (io:stdout) println! : same as print! but new line appended eprint! : same as print! but text is printed to standard error (io::stderr) eprintln!: same as eprint! but new line is appended fn main() {\r// In general, the `{}` will be automatically replaced with stringified arguments\rprintln!(\u0026#34;{} days\u0026#34;, 31);\r// positional arguments can be used, starting at 0\rprintln!(\u0026#34;{0}, this is {1}. {1}, this is {0}\u0026#34;, \u0026#34;Alice\u0026#34;, \u0026#34;Bob\u0026#34;);\r// named arguments\rprintln!(\u0026#34;{subject} {verb} {object}\u0026#34;,\robject=\u0026#34;the lazy dog\u0026#34;,\rsubject=\u0026#34;the quick brown fox\u0026#34;,\rverb=\u0026#34;jumps over\u0026#34;);\r// format char after `:`\rprintln!(\u0026#34;Base 10: {}\u0026#34;, 69420); //69420\rprintln!(\u0026#34;Base 2 (binary): {:b}\u0026#34;, 69420);\rprintln!(\u0026#34;Base 8 (octal): {:o}\u0026#34;, 69420);//207454\rprintln!(\u0026#34;Base 16 (hexadecimal): {:x}\u0026#34;, 69420);//10f2c\rprintln!(\u0026#34;Base 16 (hexadecimal): {:X}\u0026#34;,69420);//10F2C\r// right-justify text with specified width\rprintln!(\u0026#34;{number:\u0026gt;5}\u0026#34;, number=1);\r// pad numbers with extras zeroes\rprintln!(\u0026#34;{number:0\u0026gt;5}\u0026#34;, number=1); // 00001\rprintln!(\u0026#34;{number:0\u0026lt;5}\u0026#34;, number=1); // 10000\rprintln!(\u0026#34;{number:0\u0026gt;width$}\u0026#34;, number=1, width=5);\r// rust checks to ensure correct number of arguments\r// only types that implement fmt::Display can be formatted with `{}`; user-defined types do not have this by default\rlet number: f64 = 1.0;\rlet width: usize = 5;\rprintln!(\u0026#34;{number:\u0026gt;width$}\u0026#34;);\rlet pi: f64 = 3.141592;\rprintln!(\u0026#34;pi is approximately {pi:.prec$}\u0026#34;, prec=3);\r} Examples Sieve extern crate primal;\ruse primal::Sieve;\rfn num_divisors(n: usize, primes: \u0026amp;Sieve) -\u0026gt; Option\u0026lt;usize\u0026gt; {\rmatch primes.factor(n) {\rOk(factors) =\u0026gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))),\rErr(_) =\u0026gt; None,\r}\r}\rfn main() {\rprintln!(\u0026#34;24 days of Rust - primal (day 2)\u0026#34;);\rlet sieve = Sieve::new(10000);\rlet suspect = 5273;\rprintln!(\u0026#34;{} is prime: {}\u0026#34;, suspect, sieve.is_prime(suspect));\rlet not_a_prime = 1024;\rprintln!(\u0026#34;{} is prime: {}\u0026#34;, not_a_prime, sieve.is_prime(not_a_prime));\rlet n = 1000;\rmatch sieve.primes_from(0).nth(n - 1) {\rSome(number) =\u0026gt; println!(\u0026#34;{}th prime is {}\u0026#34;, n, number),\rNone =\u0026gt; println!(\u0026#34;I don\u0026#39;t know anything about {}th prime.\u0026#34;, n),\r}\rprintln!(\u0026#34;{:?}\u0026#34;, sieve.factor(2610));\rprintln!(\u0026#34;{:?}\u0026#34;, num_divisors(2610, \u0026amp;sieve));\r} ", 
         "url": "https:\/\/kdbed.github.io\/posts\/rust_programming\/"
     },
     
@@ -2968,22 +2978,22 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/tags\/splunk\/": {
-        
-        "title": "Splunk",
-        "tags": [],
-        "content": "", 
-        "url": "https:\/\/kdbed.github.io\/tags\/splunk\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/posts\/splunk\/": {
         
         "title": "Splunk",
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/splunk\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/splunk\/": {
+        
+        "title": "Splunk",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/splunk\/"
     },
     
     
