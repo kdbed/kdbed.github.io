@@ -1,6 +1,7 @@
 +++
 title = "Kerberos Authentication"
 author = ["svejk"]
+tags = ["kerberos"]
 draft = false
 +++
 

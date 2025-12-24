@@ -29,6 +29,7 @@ When the user needs to request a service ticket, they will send the TGT and the 
 
 [Kerbrute]({{< relref "kerbrute_enumeration.md" >}}) Enumeration - No domain access required
 [Rubeus]({{< relref "rubeus.md" >}}) - Harvesting and Brute-forcing tickets
+[Targeted Kerberoast]({{< relref "targeted_kerberoast.md" >}})
 [Pass the Ticket (PtT) Attack]({{< relref "pass_the_ticket_ptt_attack.md" >}})  - Access as a user to the domain required
 [Kerberoasting]({{< relref "kerberoasting.md" >}})  - Access as any user required
 [AS-REP Roasting]({{< relref "as_rep_roasting.md" >}})  - Access as any user required

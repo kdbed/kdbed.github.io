@@ -17,6 +17,7 @@ When the user needs to request a service ticket, they will send the TGT and the 
 *** Enumeration and Attacks
 [[id:d6ffa79f-f55e-4b01-97b8-29a6185f5bbc][Kerbrute]] Enumeration - No domain access required
 [[id:22765108-6400-4aae-a379-cb570c7afecf][Rubeus]] - Harvesting and Brute-forcing tickets
+[[id:38f3437e-50b7-4ff2-b10c-7da71988828f][Targeted Kerberoast]]
 [[id:22973ab0-77bb-4b77-8d4c-d52aa41e57a3][Pass the Ticket (PtT) Attack]]  - Access as a user to the domain required
 [[id:78221ca4-7b41-4377-aa13-88d50a4fd30d][Kerberoasting]]  - Access as any user required
 [[id:f6604f23-26b0-4da6-9c3d-f240b929526a][AS-REP Roasting]]  - Access as any user required
