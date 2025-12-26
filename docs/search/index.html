@@ -58,22 +58,22 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/tags\/abortion\/": {
-        
-        "title": "Abortion",
-        "tags": [],
-        "content": "", 
-        "url": "https:\/\/kdbed.github.io\/tags\/abortion\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/posts\/abortion\/": {
         
         "title": "Abortion",
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/abortion\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/abortion\/": {
+        
+        "title": "Abortion",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/abortion\/"
     },
     
     
@@ -208,22 +208,22 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/tags\/algorithms\/": {
-        
-        "title": "Algorithms",
-        "tags": [],
-        "content": "", 
-        "url": "https:\/\/kdbed.github.io\/tags\/algorithms\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/posts\/algorithms\/": {
         
         "title": "Algorithms",
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/algorithms\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/algorithms\/": {
+        
+        "title": "Algorithms",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/algorithms\/"
     },
     
     
@@ -642,7 +642,7 @@ window.store = {
         
         "title": "DLL Hijacking",
         "tags": ["privesc","exploit","windowsExploitation",],
-        "content": "Basic Ideas Windows DLL hijacking occurs when a trusted or legitimate application is tricked into loading an arbitrary DLL. Dll hijacking can be used to execute code, obtain persistence and escalate privileges, although privilege escalation is the least likely. hackTricks\nApproaches There are different approaches to DLL hijacking, and success will be determined by how the application is set to load its DLLs.\n", 
+        "content": "Basic Ideas Windows DLL hijacking occurs when a trusted or legitimate application is tricked into loading an arbitrary DLL. Dll hijacking can be used to execute code, obtain persistence and escalate privileges, although privilege escalation is the least likely. hackTricks\nApproaches There are different approaches to DLL hijacking, and success will be determined by how the application is set to load its DLLs.\n1.\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/dll_hijacking\/"
     },
     
@@ -1038,6 +1038,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/harvesting_netntlm\/": {
+        
+        "title": "Harvesting NetNTLM",
+        "tags": [],
+        "content": "Harvesting NetNTLM Obtaining hashes from SMB (445) is non-trivial without administrator rights and even then the approaches may not be desirable from an OpSec perspective. An alternate approach is over HTTP by abusing the WebDAV Mini-Redirector.\nDistributed Authoring and Versioning (DAV) is an extension of the HTTP protocol that facilitates file sharing over HTTP. Windows implements WebDAV using the WebClient service, which has the purpose of making file interactions through native API calls seamless for Windows applications; that is it’s treated as a remote file system. The beauty of this is that the remote HTTP server can operate on any port, providing significant flexibility from a red team perspective and allows us to avoid tackling the already bound SMB port.\nWhen a file operation is triggered to the WebDAV enabled UNC path, the authenticating host will do the following:\nIssue an OPTIONS method to discover what the supported features are of the web server, If PROPFIND is supported, a PROPFIND request method is issued to discover the directory structure, If the web server responds with a 401 Unauthorised and a request for NTLM authentication via the WWW-Authenticate header, the WebDAV Mini-Redirector will then proceed to initiate the NTLM challenge response authentication which ultimately supplies the NetNTLM hash to the web server. Coercing Authentication One of the most well known techniques for forcing this authentication is through an SCF file, although this appears to have been resolved. The idea is that a remotely hosted icon gets parsed by explorer, causing a remote authentication to the location pointed to by the UNC path (eg the Farmer WebDAV service). Short list of file types:\nWindows Shortcuts (.lnk) URL files (.url) Windows Library Files (.library-ms) Windows Search Connectors (.searchConnector-ms) Source: MDSec\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/harvesting_netntlm\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/tags\/hashcollision\/": {
         
         "title": "HashCollision",
@@ -1138,22 +1148,22 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/tags\/impacket\/": {
-        
-        "title": "Impacket",
-        "tags": [],
-        "content": "", 
-        "url": "https:\/\/kdbed.github.io\/tags\/impacket\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/posts\/impacket\/": {
         
         "title": "Impacket",
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/impacket\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/impacket\/": {
+        
+        "title": "Impacket",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/impacket\/"
     },
     
     
@@ -1298,16 +1308,6 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/tags\/kerberoasting\/": {
-        
-        "title": "Kerberoasting",
-        "tags": [],
-        "content": "", 
-        "url": "https:\/\/kdbed.github.io\/tags\/kerberoasting\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/posts\/kerberoasting\/": {
         
         "title": "Kerberoasting",
@@ -1318,12 +1318,12 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/tags\/kerberos\/": {
+    "https:\/\/kdbed.github.io\/tags\/kerberoasting\/": {
         
-        "title": "Kerberos",
+        "title": "Kerberoasting",
         "tags": [],
         "content": "", 
-        "url": "https:\/\/kdbed.github.io\/tags\/kerberos\/"
+        "url": "https:\/\/kdbed.github.io\/tags\/kerberoasting\/"
     },
     
     
@@ -1334,6 +1334,16 @@ window.store = {
         "tags": [],
         "content": "Kerberos Protocol Kerberos Authentication Attacking Kerberos Overview The main ticket you will receive is a ticket-granting ticket (TGT). These can come in various forms, such as a .kirbi for Rubeus and .ccache for Impacket. A ticket is typically base64 encoded and can be used for multiple attacks.\nThe ticket-granting ticket is only used to get service tickets from the KDC. When requesting a TGT from the KDC, the user will authenticate with their credentials to the KDC and request a ticket. The server will validate the credentials, create a TGT and encrypt it using the krbtgt key. The encrypted TGT and a session key will be sent to the user.\nWhen the user needs to request a service ticket, they will send the TGT and the session key to the KDC, along with the service principal name (SPN) of the service they wish to access. The KDC will validate the TGT and session key. If they are correct, the KDC will grant the user a service ticket, which can be used to authenticate to the corresponding service.\nEnumeration and Attacks Kerbrute Enumeration - No domain access required Rubeus - Harvesting and Brute-forcing tickets Targeted Kerberoast Pass the Ticket (PtT) Attack - Access as a user to the domain required Kerberoasting - Access as any user required AS-REP Roasting - Access as any user required Golden Ticket - Full domain compromise (domain admin) required Silver Ticket - Service hash required Skeleton Key - Full domain compromise (domain admin) required\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/kerberos\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/kerberos\/": {
+        
+        "title": "Kerberos",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/kerberos\/"
     },
     
     
@@ -1372,7 +1382,7 @@ window.store = {
         
         "title": "Lang - Test",
         "tags": ["programming","examples",],
-        "content": "Language tests in org Rust extern crate primal; use primal::Sieve; fn num_divisors(n: usize, primes: \u0026amp;Sieve) -\u0026gt; Option\u0026lt;usize\u0026gt; { match primes.factor(n) { Ok(factors) =\u0026gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))), Err(_) =\u0026gt; None, } } fn main() { println!(\u0026#34;24 days of Rust - primal (day 2)\u0026#34;); let sieve = Sieve::new(10000); let suspect = 5273; println!(\u0026#34;{} is prime: {}\u0026#34;, suspect, sieve.is_prime(suspect)); let not_a_prime = 1024; println!(\u0026#34;{} is prime: {}\u0026#34;, not_a_prime, sieve.is_prime(not_a_prime)); let n = 1000; match sieve.primes_from(0).nth(n - 1) { Some(number) =\u0026gt; println!(\u0026#34;{}th prime is {}\u0026#34;, n, number), None =\u0026gt; println!(\u0026#34;I don\u0026#39;t know anything about {}th prime.\u0026#34;, n), } println!(\u0026#34;{:?}\u0026#34;, sieve.factor(2610)); println!(\u0026#34;{:?}\u0026#34;, num_divisors(2610, \u0026amp;sieve)); } C++ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 #include \u0026lt;stdio.h\u0026gt; #include \u0026lt;stdlib.h\u0026gt; #include \u0026lt;time.h\u0026gt; int main(void){ int niter=10; //Specify the number of samples. srand((unsigned)time(NULL)); //Set the seed of random number generator. int n_in=0; //Initialize the counter. /*************/ /* Main loop */ /*************/ for(int iter=1;iter\u0026lt;niter+1;iter++){ double x = (double)rand()/RAND_MAX; double y = (double)rand()/RAND_MAX; //Generate random numbers x,y in [0,1]. if(x*x+y*y \u0026lt; 1e0) //If xˆ2+yˆ2\u0026lt;1.... n_in=n_in+1; //Add 1 to n_in. printf(\u0026#34;%d %.10f\\n\u0026#34;,iter,(double)n_in/iter);} } 1 1.0000000000 2 1.0000000000 3 1.0000000000 4 0.7500000000 5 0.8000000000 6 0.6666666667 7 0.5714285714 8 0.5000000000 9 0.4444444444 10 0.4000000000 1 2 3 4 5 #include \u0026lt;iostream\u0026gt; int main(){ std::cout\u0026lt;\u0026lt;\u0026#34;Hello, World!\\n\u0026#34;; return 0; } Hello, World! C# 1 2 3 4 5 6 7 8 9 10 11 // Hello World! program namespace HelloWorld { class Hello { static void Main(string[] args) { System.Console.WriteLine(\u0026#34;Hello World!\u0026#34;); } } } Haskell add_1 : Nat -\u0026gt; Nat add_1 x = x + 1 add_1 5 6 map (format \u0026#34;%s\u0026#34; (replace-regexp-in-string (rx line-start (+ (| alphanumeric blank \u0026#34;.\u0026#34; \u0026#34;|\u0026#34; \u0026#34;\u0026gt;\u0026#34;))) \u0026#34;\u0026#34; (format \u0026#34;%s\u0026#34; strr))) :{ -- a very verbose way to sum a sequence of numbers: sumInts :: Int -\u0026gt; Int -\u0026gt; Int sumInts a b = if a == b then b else (+ a) $ (sumInts (a + 1) b) :} map (\\[a,b] -\u0026gt; sumInts a b) [[0, 10] , [1, 3], [1,5], [2,10]] 55 6 15 54 Lean not working:\ndef main : IO Unit := IO.println s!\u0026#34;Hello, world!\u0026#34; #check id ", 
+        "content": "Language tests in org Rust extern crate primal;\ruse primal::Sieve;\rfn num_divisors(n: usize, primes: \u0026amp;Sieve) -\u0026gt; Option\u0026lt;usize\u0026gt; {\rmatch primes.factor(n) {\rOk(factors) =\u0026gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))),\rErr(_) =\u0026gt; None,\r}\r}\rfn main() {\rprintln!(\u0026#34;24 days of Rust - primal (day 2)\u0026#34;);\rlet sieve = Sieve::new(10000);\rlet suspect = 5273;\rprintln!(\u0026#34;{} is prime: {}\u0026#34;, suspect, sieve.is_prime(suspect));\rlet not_a_prime = 1024;\rprintln!(\u0026#34;{} is prime: {}\u0026#34;, not_a_prime, sieve.is_prime(not_a_prime));\rlet n = 1000;\rmatch sieve.primes_from(0).nth(n - 1) {\rSome(number) =\u0026gt; println!(\u0026#34;{}th prime is {}\u0026#34;, n, number),\rNone =\u0026gt; println!(\u0026#34;I don\u0026#39;t know anything about {}th prime.\u0026#34;, n),\r}\rprintln!(\u0026#34;{:?}\u0026#34;, sieve.factor(2610));\rprintln!(\u0026#34;{:?}\u0026#34;, num_divisors(2610, \u0026amp;sieve));\r} C++ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 #include \u0026lt;stdio.h\u0026gt; #include \u0026lt;stdlib.h\u0026gt; #include \u0026lt;time.h\u0026gt; int main(void){ int niter=10; //Specify the number of samples. srand((unsigned)time(NULL)); //Set the seed of random number generator. int n_in=0; //Initialize the counter. /*************/ /* Main loop */ /*************/ for(int iter=1;iter\u0026lt;niter+1;iter++){ double x = (double)rand()/RAND_MAX; double y = (double)rand()/RAND_MAX; //Generate random numbers x,y in [0,1]. if(x*x+y*y \u0026lt; 1e0) //If xˆ2+yˆ2\u0026lt;1.... n_in=n_in+1; //Add 1 to n_in. printf(\u0026#34;%d %.10f\\n\u0026#34;,iter,(double)n_in/iter);} } 1 1.0000000000 2 1.0000000000 3 1.0000000000 4 0.7500000000 5 0.8000000000 6 0.6666666667 7 0.5714285714 8 0.5000000000 9 0.4444444444 10 0.4000000000 1 2 3 4 5 #include \u0026lt;iostream\u0026gt; int main(){ std::cout\u0026lt;\u0026lt;\u0026#34;Hello, World!\\n\u0026#34;; return 0; } Hello, World! C# 1 2 3 4 5 6 7 8 9 10 11 // Hello World! program namespace HelloWorld { class Hello { static void Main(string[] args) { System.Console.WriteLine(\u0026#34;Hello World!\u0026#34;); } } } Haskell add_1 : Nat -\u0026gt; Nat add_1 x = x + 1 add_1 5 6 map (format \u0026#34;%s\u0026#34; (replace-regexp-in-string (rx line-start (+ (| alphanumeric blank \u0026#34;.\u0026#34; \u0026#34;|\u0026#34; \u0026#34;\u0026gt;\u0026#34;))) \u0026#34;\u0026#34; (format \u0026#34;%s\u0026#34; strr))) :{ -- a very verbose way to sum a sequence of numbers: sumInts :: Int -\u0026gt; Int -\u0026gt; Int sumInts a b = if a == b then b else (+ a) $ (sumInts (a + 1) b) :} map (\\[a,b] -\u0026gt; sumInts a b) [[0, 10] , [1, 3], [1,5], [2,10]] 55 6 15 54 Lean not working:\n1 2 3 4 def main : IO Unit := IO.println s!\u0026#34;Hello, world!\u0026#34; #check id ", 
         "url": "https:\/\/kdbed.github.io\/posts\/lang_test\/"
     },
     
@@ -1382,7 +1392,7 @@ window.store = {
         
         "title": "Lang - Test",
         "tags": [],
-        "content": " extern crate regex; use regex::Regex; fn main() { let re = Regex::new(r\u0026#34;^\\d{4}-\\d{2}-\\d{2}$\u0026#34;).unwrap(); println!(\u0026#34;test\u0026#34;); assert!(re.is_match(\u0026#34;2014-01-01\u0026#34;)); } 1 2 3 4 5 #include \u0026lt;iostream\u0026gt; int main(){ std::cout\u0026lt;\u0026lt;\u0026#34;Hello, World.\\n\u0026#34;; return 0; } Hello, World. ", 
+        "content": "\rextern crate regex;\ruse regex::Regex;\rfn main() {\rlet re = Regex::new(r\u0026#34;^\\d{4}-\\d{2}-\\d{2}$\u0026#34;).unwrap();\rprintln!(\u0026#34;test\u0026#34;);\rassert!(re.is_match(\u0026#34;2014-01-01\u0026#34;));\r} 1 2 3 4 5 #include \u0026lt;iostream\u0026gt; int main(){ std::cout\u0026lt;\u0026lt;\u0026#34;Hello, World.\\n\u0026#34;; return 0; } Hello, World. ", 
         "url": "https:\/\/kdbed.github.io\/posts\/rust_test\/"
     },
     
@@ -1428,22 +1438,22 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/tags\/malware\/": {
-        
-        "title": "Malware",
-        "tags": [],
-        "content": "", 
-        "url": "https:\/\/kdbed.github.io\/tags\/malware\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/posts\/malware\/": {
         
         "title": "Malware",
         "tags": [],
         "content": "Information Security\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/malware\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/malware\/": {
+        
+        "title": "Malware",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/malware\/"
     },
     
     
@@ -1558,22 +1568,22 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/tags\/nietzsche\/": {
-        
-        "title": "Nietzsche",
-        "tags": [],
-        "content": "", 
-        "url": "https:\/\/kdbed.github.io\/tags\/nietzsche\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/posts\/nietzsche\/": {
         
         "title": "Nietzsche",
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/nietzsche\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/nietzsche\/": {
+        
+        "title": "Nietzsche",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/nietzsche\/"
     },
     
     
@@ -1972,7 +1982,7 @@ window.store = {
         
         "title": "Pentest - Domain Credential Access",
         "tags": [],
-        "content": "Domain Credential Access Clear-text credentials in the domain Capture the hash Network Attacks ARP Poisoning is possible when an attacker is sitting between the client and the server. The success ratio of this attack depends on the network topology and hardening. Also, it can cause severe network disruptions. DNS spoofing requires the attacker to introduce a malicious DNS server in the network for the clients via ARP/DHCPv6 spoofing. Then, the attacker can reply to the received client’s requests. DHCP poisoning happens by injecting a malicious WPAD or DNS server address into the client’s DHCP reply. The client’s request for wpad.dat will trigger a malicious server to request authentication. DHCPv6 spoofing is possible because IPv6 in Windows has higher priority than IPv4 and it is a multicast protocol. The attacker can provide the client with a malicious config and proceed with DNS spoofing later. Local-Link Multicast Name Resolution (LLMNR), NetBIOS Name Service (NBT-NS), and Multicast Domain Name System (mDNS) spoofing are possible because of multicast name resolution protocols used in Windows environments. If DNS fails, these protocols will be used for resolution as a fallback option. The attacker can answer queries and then ask the client to authenticate. WSUS spoofing requires ARP poisoning and an evil WSUS server to deploy malicious updates to the clients. ADIDNS poisoning is an attack on Active Directory-integrated DNS. The idea is to inject malicious DDNS records. WPAD spoofing abuses the feature of helping clients locate proxy configuration scripts. After the MS16-077 security update, this attack is only possible through ADIDNS or DHCPv6 spoofing. Forced authentication If these network protocols are disabled and MITM is not really an option, there are a few ways we can force the client to authenticate to us. Recently, some intriguing research was published by MDSec. There are certain types of files that we can put on the writable share and Windows will automatically authenticate and send an NTLM response to a remote machine: SCF, URL, library-ms, and searchConnector-ms. An important remark is that the attacker’s machine should be within the local intranet zone, meaning that the network connection can be established by using a UNC path. The idea in the research was to use a WebDAV-enabled HTTP server to collect hashes, which is called farmer, and the tool to create files is called crop. MS-RPRN abuse (PrinterBug) The idea is that by using a domain username and password, the attacker can trigger the RpcRemoteFindFirstPrinterChangeNotificationEx method and force authentication over SMB. MS-EFSR abuse (PetitPotam) The Encrypting File System Remote (EFSR) protocol can be abused via a number of RPC calls, such as EfsRpcOpenFileRaw, to coerce Windows hosts to authenticate to other machines. This RPC interface is available through different SMB pipes, including \\pipe\\samr and \\pipe\\lsarpc. WebDAV Abuse MS-FSRVP abuse (ShadowCoerce) Microsoft’s File Server Remote VSS Protocol (MS-FSRVP) is used to make shadow copies on the remote computer. Two methods are supported. Invocation is possible through an SMB named pipe. An attack is not possible if File Server VSS Agent Service is not enabled on the target machine. Also, patch KB5014692 prevents coercion attacks. MS-DFSNM abuse (DFSCoerce) The same as other coerce methods, this one uses the RPC interface available through an SMB named pipe (\\pipe\\netdfs) in Microsoft’s Distributed File System Namespace Management protocol. Filip Dragovic found two methods (NetrDfsAddStdRoot and NetrDfsRemoveStdRoot) that can be used to force authentication. Kerberos Attacking Kerberos Automatic password management NTDS Secrets Impacket - Secrets Dump DCSync Pentest - Active Directory - DCSync DPAPI Pentest - Active Directory - DPAPI Backup Key Theft ", 
+        "content": "Domain Credential Access Clear-text credentials in the domain Capture the hash Network Attacks ARP Poisoning is possible when an attacker is sitting between the client and the server. The success ratio of this attack depends on the network topology and hardening. Also, it can cause severe network disruptions. DNS spoofing requires the attacker to introduce a malicious DNS server in the network for the clients via ARP/DHCPv6 spoofing. Then, the attacker can reply to the received client’s requests. DHCP poisoning happens by injecting a malicious WPAD or DNS server address into the client’s DHCP reply. The client’s request for wpad.dat will trigger a malicious server to request authentication. DHCPv6 spoofing is possible because IPv6 in Windows has higher priority than IPv4 and it is a multicast protocol. The attacker can provide the client with a malicious config and proceed with DNS spoofing later. Local-Link Multicast Name Resolution (LLMNR), NetBIOS Name Service (NBT-NS), and Multicast Domain Name System (mDNS) spoofing are possible because of multicast name resolution protocols used in Windows environments. If DNS fails, these protocols will be used for resolution as a fallback option. The attacker can answer queries and then ask the client to authenticate. WSUS spoofing requires ARP poisoning and an evil WSUS server to deploy malicious updates to the clients. ADIDNS poisoning is an attack on Active Directory-integrated DNS. The idea is to inject malicious DDNS records. WPAD spoofing abuses the feature of helping clients locate proxy configuration scripts. After the MS16-077 security update, this attack is only possible through ADIDNS or DHCPv6 spoofing. Forced authentication Harvesting NetNTLM If these network protocols are disabled and MITM is not really an option, there are a few ways we can force the client to authenticate to us. Recently, some intriguing research was published by MDSec. There are certain types of files that we can put on the writable share and Windows will automatically authenticate and send an NTLM response to a remote machine: SCF, URL, library-ms, and searchConnector-ms. An important remark is that the attacker’s machine should be within the local intranet zone, meaning that the network connection can be established by using a UNC path. The idea in the research was to use a WebDAV-enabled HTTP server to collect hashes, which is called farmer, and the tool to create files is called crop. MS-RPRN abuse (PrinterBug) The idea is that by using a domain username and password, the attacker can trigger the RpcRemoteFindFirstPrinterChangeNotificationEx method and force authentication over SMB. MS-EFSR abuse (PetitPotam) The Encrypting File System Remote (EFSR) protocol can be abused via a number of RPC calls, such as EfsRpcOpenFileRaw, to coerce Windows hosts to authenticate to other machines. This RPC interface is available through different SMB pipes, including \\pipe\\samr and \\pipe\\lsarpc. WebDAV Abuse MS-FSRVP abuse (ShadowCoerce) Microsoft’s File Server Remote VSS Protocol (MS-FSRVP) is used to make shadow copies on the remote computer. Two methods are supported. Invocation is possible through an SMB named pipe. An attack is not possible if File Server VSS Agent Service is not enabled on the target machine. Also, patch KB5014692 prevents coercion attacks. MS-DFSNM abuse (DFSCoerce) The same as other coerce methods, this one uses the RPC interface available through an SMB named pipe (\\pipe\\netdfs) in Microsoft’s Distributed File System Namespace Management protocol. Filip Dragovic found two methods (NetrDfsAddStdRoot and NetrDfsRemoveStdRoot) that can be used to force authentication. Kerberos Attacking Kerberos Automatic password management NTDS Secrets Impacket - Secrets Dump DCSync Pentest - Active Directory - DCSync DPAPI Pentest - Active Directory - DPAPI Backup Key Theft ", 
         "url": "https:\/\/kdbed.github.io\/posts\/pentest_domain_credential_access\/"
     },
     
@@ -2178,22 +2188,22 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/tags\/physics\/": {
-        
-        "title": "Physics",
-        "tags": [],
-        "content": "", 
-        "url": "https:\/\/kdbed.github.io\/tags\/physics\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/posts\/physics\/": {
         
         "title": "Physics",
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/physics\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/physics\/": {
+        
+        "title": "Physics",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/physics\/"
     },
     
     
@@ -2582,7 +2592,7 @@ window.store = {
         
         "title": "Quantum Mechanics",
         "tags": ["physics",],
-        "content": "Quantum Mechanics - Basic Principles In quantum mechanics the state of a system is represented by a vector in a complex vector space with Hermitian inner product - the state space. Observable quantities are self-adjoint linear operators on the state space.\nIn classical physics, the state of a system is given by a point in a phase space, or equivalently as the space of solutions of an equation of motion. Observable quantities are functions (of coordinates and momenta) on this space. The Hamiltonian determines how states evolve in time through Hamilton’s equations.\nQuantum mechanics has different foundations:\nStates: The state of a quantum mechanical system is given by a nonzero vector in a complex vector space \\(\\mathcal{H}\\) with Hermitian inner product \\(\\langle \\cdot, \\cdot \\rangle \\). The state space is linear; a linear combination of states is also a state. The state space is a complex vector space. Dirac notation for vectors in the state space reads as follows: \\[ |\\psi\\rangle \\] Observables: The observables of a quantum mechanical system are given by self-adjoint linear operators on \\(\\mathcal{H}\\). Sources My preferred treatment of quantum mechanics is provided by Peter Woit\u0026rsquo;s excellent text:\nQuantum Theory, Groups and Representations: An Introduction; Woit Most of my notes are taken directly from the above.\n", 
+        "content": "Quantum Mechanics - Basic Principles In quantum mechanics the state of a system is represented by a vector in a complex vector space with Hermitian inner product - the state space. Observable quantities are self-adjoint linear operators on the state space.\nIn classical physics, the state of a system is given by a point in a phase space, or equivalently as the space of solutions of an equation of motion. Observable quantities are functions (of coordinates and momenta) on this space. The Hamiltonian determines how states evolve in time through Hamilton’s equations.\nQuantum mechanics has different foundations:\nStates: The state of a quantum mechanical system is given by a nonzero vector in a complex vector space \\(\\mathcal{H}\\) with Hermitian inner product \\(\\langle \\cdot, \\cdot \\rangle \\). The state space is linear; a linear combination of states is also a state. The state space is a complex vector space. Dirac notation for vectors in the state space reads as follows: \\[ |\\psi\\rangle \\] Observables: The observables of a quantum mechanical system are given by self-adjoint linear operators on \\(\\mathcal{H}\\). Sources My preferred treatment of quantum mechanics is provided by Peter Woit\u0026rsquo;s excellent text:\nQuantum Theory, Groups and Representations: An Introduction; Woit Most of my notes are taken directly from the above.\n-\n", 
         "url": "https:\/\/kdbed.github.io\/posts\/quantum_mechanics\/"
     },
     
@@ -2762,7 +2772,7 @@ window.store = {
         
         "title": "Rust Programming",
         "tags": ["programming",],
-        "content": "Basics Hello World // comment fn main() { // print text to console println!(\u0026#34;Hello World\u0026#34;); println!(\u0026#34;I\u0026#39;m a Rustacean!\u0026#34;); } Comments fn main(){ // line comment /* block comment * continued * ... */ let x = 5 + 90 + 5; println!(\u0026#34;Is `x` 10 or 100? x = {}\u0026#34;, x); } Formatted Print Printing is handled by a series of macros defined in std::fmt, some of which are:\nformat! : write formatted text to String print! : same as format! but text is printed to console (io:stdout) println! : same as print! but new line appended eprint! : same as print! but text is printed to standard error (io::stderr) eprintln!: same as eprint! but new line is appended fn main() { // In general, the `{}` will be automatically replaced with stringified arguments println!(\u0026#34;{} days\u0026#34;, 31); // positional arguments can be used, starting at 0 println!(\u0026#34;{0}, this is {1}. {1}, this is {0}\u0026#34;, \u0026#34;Alice\u0026#34;, \u0026#34;Bob\u0026#34;); // named arguments println!(\u0026#34;{subject} {verb} {object}\u0026#34;, object=\u0026#34;the lazy dog\u0026#34;, subject=\u0026#34;the quick brown fox\u0026#34;, verb=\u0026#34;jumps over\u0026#34;); // format char after `:` println!(\u0026#34;Base 10: {}\u0026#34;, 69420); //69420 println!(\u0026#34;Base 2 (binary): {:b}\u0026#34;, 69420); println!(\u0026#34;Base 8 (octal): {:o}\u0026#34;, 69420);//207454 println!(\u0026#34;Base 16 (hexadecimal): {:x}\u0026#34;, 69420);//10f2c println!(\u0026#34;Base 16 (hexadecimal): {:X}\u0026#34;,69420);//10F2C // right-justify text with specified width println!(\u0026#34;{number:\u0026gt;5}\u0026#34;, number=1); // pad numbers with extras zeroes println!(\u0026#34;{number:0\u0026gt;5}\u0026#34;, number=1); // 00001 println!(\u0026#34;{number:0\u0026lt;5}\u0026#34;, number=1); // 10000 println!(\u0026#34;{number:0\u0026gt;width$}\u0026#34;, number=1, width=5); // rust checks to ensure correct number of arguments // only types that implement fmt::Display can be formatted with `{}`; user-defined types do not have this by default let number: f64 = 1.0; let width: usize = 5; println!(\u0026#34;{number:\u0026gt;width$}\u0026#34;); let pi: f64 = 3.141592; println!(\u0026#34;pi is approximately {pi:.prec$}\u0026#34;, prec=3); } Examples Sieve extern crate primal; use primal::Sieve; fn num_divisors(n: usize, primes: \u0026amp;Sieve) -\u0026gt; Option\u0026lt;usize\u0026gt; { match primes.factor(n) { Ok(factors) =\u0026gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))), Err(_) =\u0026gt; None, } } fn main() { println!(\u0026#34;24 days of Rust - primal (day 2)\u0026#34;); let sieve = Sieve::new(10000); let suspect = 5273; println!(\u0026#34;{} is prime: {}\u0026#34;, suspect, sieve.is_prime(suspect)); let not_a_prime = 1024; println!(\u0026#34;{} is prime: {}\u0026#34;, not_a_prime, sieve.is_prime(not_a_prime)); let n = 1000; match sieve.primes_from(0).nth(n - 1) { Some(number) =\u0026gt; println!(\u0026#34;{}th prime is {}\u0026#34;, n, number), None =\u0026gt; println!(\u0026#34;I don\u0026#39;t know anything about {}th prime.\u0026#34;, n), } println!(\u0026#34;{:?}\u0026#34;, sieve.factor(2610)); println!(\u0026#34;{:?}\u0026#34;, num_divisors(2610, \u0026amp;sieve)); } ", 
+        "content": "Basics Hello World // comment\rfn main() {\r// print text to console\rprintln!(\u0026#34;Hello World\u0026#34;);\rprintln!(\u0026#34;I\u0026#39;m a Rustacean!\u0026#34;);\r} Comments fn main(){\r// line comment\r/* block comment\r* continued\r* ...\r*/\rlet x = 5 + 90 + 5;\rprintln!(\u0026#34;Is `x` 10 or 100? x = {}\u0026#34;, x);\r} Formatted Print Printing is handled by a series of macros defined in std::fmt, some of which are:\nformat! : write formatted text to String print! : same as format! but text is printed to console (io:stdout) println! : same as print! but new line appended eprint! : same as print! but text is printed to standard error (io::stderr) eprintln!: same as eprint! but new line is appended fn main() {\r// In general, the `{}` will be automatically replaced with stringified arguments\rprintln!(\u0026#34;{} days\u0026#34;, 31);\r// positional arguments can be used, starting at 0\rprintln!(\u0026#34;{0}, this is {1}. {1}, this is {0}\u0026#34;, \u0026#34;Alice\u0026#34;, \u0026#34;Bob\u0026#34;);\r// named arguments\rprintln!(\u0026#34;{subject} {verb} {object}\u0026#34;,\robject=\u0026#34;the lazy dog\u0026#34;,\rsubject=\u0026#34;the quick brown fox\u0026#34;,\rverb=\u0026#34;jumps over\u0026#34;);\r// format char after `:`\rprintln!(\u0026#34;Base 10: {}\u0026#34;, 69420); //69420\rprintln!(\u0026#34;Base 2 (binary): {:b}\u0026#34;, 69420);\rprintln!(\u0026#34;Base 8 (octal): {:o}\u0026#34;, 69420);//207454\rprintln!(\u0026#34;Base 16 (hexadecimal): {:x}\u0026#34;, 69420);//10f2c\rprintln!(\u0026#34;Base 16 (hexadecimal): {:X}\u0026#34;,69420);//10F2C\r// right-justify text with specified width\rprintln!(\u0026#34;{number:\u0026gt;5}\u0026#34;, number=1);\r// pad numbers with extras zeroes\rprintln!(\u0026#34;{number:0\u0026gt;5}\u0026#34;, number=1); // 00001\rprintln!(\u0026#34;{number:0\u0026lt;5}\u0026#34;, number=1); // 10000\rprintln!(\u0026#34;{number:0\u0026gt;width$}\u0026#34;, number=1, width=5);\r// rust checks to ensure correct number of arguments\r// only types that implement fmt::Display can be formatted with `{}`; user-defined types do not have this by default\rlet number: f64 = 1.0;\rlet width: usize = 5;\rprintln!(\u0026#34;{number:\u0026gt;width$}\u0026#34;);\rlet pi: f64 = 3.141592;\rprintln!(\u0026#34;pi is approximately {pi:.prec$}\u0026#34;, prec=3);\r} Examples Sieve extern crate primal;\ruse primal::Sieve;\rfn num_divisors(n: usize, primes: \u0026amp;Sieve) -\u0026gt; Option\u0026lt;usize\u0026gt; {\rmatch primes.factor(n) {\rOk(factors) =\u0026gt; Some(factors.into_iter().fold(1, |acc, (_, x)| acc * (x + 1))),\rErr(_) =\u0026gt; None,\r}\r}\rfn main() {\rprintln!(\u0026#34;24 days of Rust - primal (day 2)\u0026#34;);\rlet sieve = Sieve::new(10000);\rlet suspect = 5273;\rprintln!(\u0026#34;{} is prime: {}\u0026#34;, suspect, sieve.is_prime(suspect));\rlet not_a_prime = 1024;\rprintln!(\u0026#34;{} is prime: {}\u0026#34;, not_a_prime, sieve.is_prime(not_a_prime));\rlet n = 1000;\rmatch sieve.primes_from(0).nth(n - 1) {\rSome(number) =\u0026gt; println!(\u0026#34;{}th prime is {}\u0026#34;, n, number),\rNone =\u0026gt; println!(\u0026#34;I don\u0026#39;t know anything about {}th prime.\u0026#34;, n),\r}\rprintln!(\u0026#34;{:?}\u0026#34;, sieve.factor(2610));\rprintln!(\u0026#34;{:?}\u0026#34;, num_divisors(2610, \u0026amp;sieve));\r} ", 
         "url": "https:\/\/kdbed.github.io\/posts\/rust_programming\/"
     },
     
@@ -2978,22 +2988,22 @@ window.store = {
     
     
     
-    "https:\/\/kdbed.github.io\/tags\/splunk\/": {
-        
-        "title": "Splunk",
-        "tags": [],
-        "content": "", 
-        "url": "https:\/\/kdbed.github.io\/tags\/splunk\/"
-    },
-    
-    
-    
     "https:\/\/kdbed.github.io\/posts\/splunk\/": {
         
         "title": "Splunk",
         "tags": [],
         "content": "", 
         "url": "https:\/\/kdbed.github.io\/posts\/splunk\/"
+    },
+    
+    
+    
+    "https:\/\/kdbed.github.io\/tags\/splunk\/": {
+        
+        "title": "Splunk",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/kdbed.github.io\/tags\/splunk\/"
     },
     
     

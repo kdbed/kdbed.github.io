@@ -4,7 +4,7 @@
     <title>NumberTheory on Owlglass</title>
     <link>https://kdbed.github.io/tags/numbertheory/</link>
     <description>Recent content in NumberTheory on Owlglass</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://kdbed.github.io/tags/numbertheory/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,14 +12,14 @@
       <link>https://kdbed.github.io/posts/one_way_functions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/one_way_functions/</guid>
-      <description>One-way functions X X^3 [X^3 mod 15] 0 0 0 1 1 1 2 8 8 3 27 12 4 64 4 5 125 5 6 216 6 7 343 13 8 512 2 9 729 9 10 1000 10 11 1331 11 12 1728 3 13 2197 7 14 2744 14 </description>
+      <description>&lt;h2 id=&#34;one-way-functions&#34;&gt;One-way functions&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;X&lt;/th&gt;&#xA;          &lt;th&gt;X^3&lt;/th&gt;&#xA;          &lt;th&gt;[X^3 mod 15]&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;0&lt;/td&gt;&#xA;          &lt;td&gt;0&lt;/td&gt;&#xA;          &lt;td&gt;0&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;2&lt;/td&gt;&#xA;          &lt;td&gt;8&lt;/td&gt;&#xA;          &lt;td&gt;8&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;3&lt;/td&gt;&#xA;          &lt;td&gt;27&lt;/td&gt;&#xA;          &lt;td&gt;12&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;4&lt;/td&gt;&#xA;          &lt;td&gt;64&lt;/td&gt;&#xA;          &lt;td&gt;4&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;5&lt;/td&gt;&#xA;          &lt;td&gt;125&lt;/td&gt;&#xA;          &lt;td&gt;5&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;6&lt;/td&gt;&#xA;          &lt;td&gt;216&lt;/td&gt;&#xA;          &lt;td&gt;6&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;7&lt;/td&gt;&#xA;          &lt;td&gt;343&lt;/td&gt;&#xA;          &lt;td&gt;13&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;8&lt;/td&gt;&#xA;          &lt;td&gt;512&lt;/td&gt;&#xA;          &lt;td&gt;2&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;9&lt;/td&gt;&#xA;          &lt;td&gt;729&lt;/td&gt;&#xA;          &lt;td&gt;9&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;10&lt;/td&gt;&#xA;          &lt;td&gt;1000&lt;/td&gt;&#xA;          &lt;td&gt;10&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;11&lt;/td&gt;&#xA;          &lt;td&gt;1331&lt;/td&gt;&#xA;          &lt;td&gt;11&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;12&lt;/td&gt;&#xA;          &lt;td&gt;1728&lt;/td&gt;&#xA;          &lt;td&gt;3&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;13&lt;/td&gt;&#xA;          &lt;td&gt;2197&lt;/td&gt;&#xA;          &lt;td&gt;7&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;14&lt;/td&gt;&#xA;          &lt;td&gt;2744&lt;/td&gt;&#xA;          &lt;td&gt;14&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;</description>
     </item>
     <item>
       <title>Peano Axioms</title>
       <link>https://kdbed.github.io/posts/peano_axioms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/peano_axioms/</guid>
-      <description>Peano Axioms Peano Axiom 1: 1 is a natural number. Peano Axiom 2: Every natural number n has a unique successor S(n), which is also a natural number. Peano Axiom 3: 1 is not the successor of any natural number. Peano Axiom 4: If m and n are natural numbers and \(m \neq n\), then \(S(m)\neq S(n)\). </description>
+      <description>&lt;h2 id=&#34;peano-axioms&#34;&gt;Peano Axioms&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;Peano Axiom 1&lt;/code&gt;: 1 is a natural number.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Peano Axiom 2&lt;/code&gt;: Every natural number &lt;code&gt;n&lt;/code&gt; has a unique successor &lt;code&gt;S(n)&lt;/code&gt;, which is also a natural number.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Peano Axiom 3&lt;/code&gt;: 1 is not the successor of any natural number.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Peano Axiom 4&lt;/code&gt;: If &lt;code&gt;m&lt;/code&gt; and &lt;code&gt;n&lt;/code&gt; are natural numbers and \(m \neq n\), then \(S(m)\neq S(n)\).&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

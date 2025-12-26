@@ -44,8 +44,8 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> args: Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> <span style="color:#f92672">=</span> env::args().collect();
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> args.len() <span style="color:#f92672">!=</span> <span style="color:#ae81ff">3</span> {
-</span></span><span style="display:flex;"><span>        println!(<span style="color:#e6db74">&#34;Usage:&#34;</span>);
-</span></span><span style="display:flex;"><span>        println!(<span style="color:#e6db74">&#34;sha1_cracker: &lt;wordlist.txt&gt; &lt;sha1_hash&gt;&#34;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">println!</span>(<span style="color:#e6db74">&#34;Usage:&#34;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">println!</span>(<span style="color:#e6db74">&#34;sha1_cracker: &lt;wordlist.txt&gt; &lt;sha1_hash&gt;&#34;</span>);
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> Ok(());
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>
@@ -61,12 +61,12 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> line <span style="color:#f92672">=</span> line<span style="color:#f92672">?</span>;
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> common_password <span style="color:#f92672">=</span> line.trim();
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> hash_to_crack <span style="color:#f92672">==</span> <span style="color:#f92672">&amp;</span>hex::encode(sha1::Sha1::digest(common_password.as_bytes())) {
-</span></span><span style="display:flex;"><span>            println!(<span style="color:#e6db74">&#34;Password found: </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, <span style="color:#f92672">&amp;</span>common_password);
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">println!</span>(<span style="color:#e6db74">&#34;Password found: </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, <span style="color:#f92672">&amp;</span>common_password);
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> Ok(());
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    println!(<span style="color:#e6db74">&#34;password not found in wordlist.&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">println!</span>(<span style="color:#e6db74">&#34;password not found in wordlist.&#34;</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    Ok(())
 </span></span><span style="display:flex;"><span>
@@ -87,8 +87,8 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> args: Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> <span style="color:#f92672">=</span> env::args().collect();
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> args.len() <span style="color:#f92672">!=</span> <span style="color:#ae81ff">3</span> {
-</span></span><span style="display:flex;"><span>    println!(<span style="color:#e6db74">&#34;Usage:&#34;</span>);
-</span></span><span style="display:flex;"><span>    println!(<span style="color:#e6db74">&#34;sha1_cracker: &lt;wordlist.txt&gt; &lt;sha1_hash&gt;&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">println!</span>(<span style="color:#e6db74">&#34;Usage:&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">println!</span>(<span style="color:#e6db74">&#34;sha1_cracker: &lt;wordlist.txt&gt; &lt;sha1_hash&gt;&#34;</span>);
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> Ok(());
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
@@ -106,7 +106,7 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> line <span style="color:#f92672">=</span> line<span style="color:#f92672">?</span>;
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> common_password <span style="color:#f92672">=</span> line.trim();
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> hash_to_crack <span style="color:#f92672">==</span> <span style="color:#f92672">&amp;</span>hex::encode(sha1::Sha1::digest(common_password.as_bytes())) {
-</span></span><span style="display:flex;"><span>        println!(<span style="color:#e6db74">&#34;Password found: </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, <span style="color:#f92672">&amp;</span>common_password);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">println!</span>(<span style="color:#e6db74">&#34;Password found: </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, <span style="color:#f92672">&amp;</span>common_password);
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> Ok(());
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
@@ -116,6 +116,8 @@
       </div>
       
 
+
+   
 
    
 
