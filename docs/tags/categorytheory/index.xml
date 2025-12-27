@@ -4,7 +4,7 @@
     <title>CategoryTheory on Owlglass</title>
     <link>https://kdbed.github.io/tags/categorytheory/</link>
     <description>Recent content in CategoryTheory on Owlglass</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <atom:link href="https://kdbed.github.io/tags/categorytheory/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,7 +12,7 @@
       <link>https://kdbed.github.io/posts/generativeeffects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/generativeeffects/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;From &lt;em&gt;An Invitation to Applied Category Theory - Seven Sketches in Compositionality&lt;/em&gt; &amp;ndash; Fong/Spivak&lt;/p&gt;&#xA;&lt;p&gt;A wide variety of situations exhibit something called &lt;em&gt;compositionality&lt;/em&gt; &amp;ndash; wherein systems or relationships can be combined to form new systems or relationships. Category-theoretic constructs can be used to describe the compositionality in such situations. A structural approach to modeling with &lt;a href=&#34;https://kdbed.github.io/posts/category_theory/&#34;&gt;Category Theory&lt;/a&gt; : introduction.&lt;/p&gt;&#xA;&lt;h2 id=&#34;more-than-the-sum-of-their-parts&#34;&gt;More Than the Sum of Their Parts&lt;/h2&gt;</description>
+      <description>Introduction From An Invitation to Applied Category Theory - Seven Sketches in Compositionality &amp;ndash; Fong/Spivak&#xA;A wide variety of situations exhibit something called compositionality &amp;ndash; wherein systems or relationships can be combined to form new systems or relationships. Category-theoretic constructs can be used to describe the compositionality in such situations. A structural approach to modeling with Category Theory : introduction.&#xA;More Than the Sum of Their Parts </description>
     </item>
   </channel>
 </rss>
