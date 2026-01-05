@@ -4,7 +4,7 @@
     <title>AD on Owlglass</title>
     <link>https://kdbed.github.io/tags/ad/</link>
     <description>Recent content in AD on Owlglass</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <atom:link href="https://kdbed.github.io/tags/ad/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,7 +12,7 @@
       <link>https://kdbed.github.io/posts/kerbrute_enumeration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/kerbrute_enumeration/</guid>
-      <description>&lt;h2 id=&#34;kerbrute&#34;&gt;Kerbrute&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Kerbrute is a popular enumeration tool used to brute-force and enumerate valid active-directory users by abusing the Kerberos pre-authentication.&lt;/li&gt;&#xA;&lt;li&gt;based on obtaining a TGT. For example, using kinit on a Linux system, we can obtain and cache a Kerberos TGT. We&amp;rsquo;ll need to provide a username and password to do this. If the credentials are valid, we&amp;rsquo;ll obtain a TGT. The advantage of this technique is that it only uses two UDP frames to determine whether the password is valid, as it sends only an AS-REQ and examines the response. By brute-forcing Kerberos pre-authentication, you do not trigger the account failed to log on event which can throw up red flags to blue teams.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;kerberos-pre-authentication-behavior&#34;&gt;Kerberos Pre-Authentication Behavior&lt;/h3&gt;&#xA;&lt;p&gt;Kerberos authentication starts with an AS-REQ (Authentication Service Request) sent to the Key Distribution Center (KDC), which is typically the domain controller.&lt;/p&gt;</description>
+      <description>Kerbrute Kerbrute is a popular enumeration tool used to brute-force and enumerate valid active-directory users by abusing the Kerberos pre-authentication. based on obtaining a TGT. For example, using kinit on a Linux system, we can obtain and cache a Kerberos TGT. We&amp;rsquo;ll need to provide a username and password to do this. If the credentials are valid, we&amp;rsquo;ll obtain a TGT. The advantage of this technique is that it only uses two UDP frames to determine whether the password is valid, as it sends only an AS-REQ and examines the response.</description>
     </item>
   </channel>
 </rss>
