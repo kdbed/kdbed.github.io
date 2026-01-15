@@ -29,7 +29,7 @@
         <h1>Windows Kernel - Security Reference Monitor</h1>
         <h2 id="windows-kernel-security-reference-monitor">Windows Kernel - Security Reference Monitor</h2>
 <p>The <code>Security Reference Monitor (SRM)</code> implements the security mechanisms that restrict which users can access different resources.</p>
-<figure><img src="/images/srm1.jpg">
+<figure><img src="/images/srm1.jpg"/>
 </figure>
 
 <p>Every process running on the system is assigned an access token when it’s created. This access token is managed by the SRM and defines the identity of the user associated with that process. The SRM can then perform an operation called an access check. This operation queries a resource’s security descriptor, compares it to the process’s access token, and either calculates the level of granted access or indicates that access is denied to the caller.</p>
