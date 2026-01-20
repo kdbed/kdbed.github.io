@@ -11,7 +11,11 @@ Initialize server with org-babel-exp-src-block.  Afterwards, 'Enter' in the sour
 
 ```python
 print('hello, world')
-a = 10
+a = 20
+```
+
+```python { linenos=true, linenostart=1 }
+print(a)
 ```
 
 

@@ -253,6 +253,13 @@
       <description>Physics&#xA;Electrodynamics </description>
     </item>
     <item>
+      <title>End Times Fascism</title>
+      <link>https://kdbed.github.io/posts/end_times_fascism/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/end_times_fascism/</guid>
+      <description>End Times Fascism Exit Inspired by a warped reading of the political philosopher Albert Hirschman, figures including Goff, Thiel and the investor and writer Balaji Srinivasan have been championing what they call “exit” – the principle that those with means have the right to walk away from the obligations of citizenship, especially taxes and burdensome regulation. Retooling and rebranding the old ambitions and privileges of empires, they dream of splintering governments and carving up the world into hyper-capitalist, democracy-free havens under the sole control of the supremely wealthy, protected by private mercenaries, serviced by AI robots and financed by cryptocurrencies.</description>
+    </item>
+    <item>
       <title>Endpoint Detection and Response</title>
       <link>https://kdbed.github.io/posts/endpoint_detection_and_response/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -614,7 +621,7 @@
       <link>https://kdbed.github.io/posts/orgpythonjupyter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/orgpythonjupyter/</guid>
-      <description>Create a Session Initialize server with org-babel-exp-src-block. Afterwards, &amp;lsquo;Enter&amp;rsquo; in the sourceblock will execute.&#xA;print(&amp;#39;hello, world&amp;#39;) a = 10 Create a plot import matplotlib, numpy matplotlib.use(&amp;#39;Agg&amp;#39;) import matplotlib.pyplot as plt fig=plt.figure(figsize=(4,2)) x=numpy.linspace(-15,15) plt.plot(numpy.sin(x)/x) fig.tight_layout() plt.savefig(&amp;#39;python-matplot-fig.png&amp;#39;) return &amp;#39;python-matplot-fig.png&amp;#39; # return filename to org-mode Ocaml print_string &amp;#34;Hello world!\n&amp;#34; </description>
+      <description>Create a Session Initialize server with org-babel-exp-src-block. Afterwards, &amp;lsquo;Enter&amp;rsquo; in the sourceblock will execute.&#xA;print(&amp;#39;hello, world&amp;#39;) a = 20 1 print(a) Create a plot import matplotlib, numpy matplotlib.use(&amp;#39;Agg&amp;#39;) import matplotlib.pyplot as plt fig=plt.figure(figsize=(4,2)) x=numpy.linspace(-15,15) plt.plot(numpy.sin(x)/x) fig.tight_layout() plt.savefig(&amp;#39;python-matplot-fig.png&amp;#39;) return &amp;#39;python-matplot-fig.png&amp;#39; # return filename to org-mode Ocaml print_string &amp;#34;Hello world!\n&amp;#34; </description>
     </item>
     <item>
       <title>Originalism</title>

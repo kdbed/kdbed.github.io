@@ -11,11 +11,19 @@ Initialize server with org-babel-exp-src-block.  Afterwards, 'Enter' in the sour
 
 #+begin_src python :session hello :results output
 print('hello, world')
-a = 10
+a = 20
 #+end_src
 
 #+RESULTS:
 : hello, world
+
+
+#+begin_src python -n :results output verbatim :session hello
+print(a)
+#+end_src
+
+#+RESULTS:
+: 20
 
 ** Create a plot
 #+begin_src python :results file link
