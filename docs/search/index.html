@@ -2098,6 +2098,16 @@ window.store = {
     
     
     
+    "https:\/\/kdbed.github.io\/posts\/pentest_persistence_registry\/": {
+        
+        "title": "Pentest - Persistence - Registry",
+        "tags": [],
+        "content": "Registry Persistence Registry persistence remains one of the most reliable ways to survive a reboot. Run keys, shell extensions, COM hijacks.\nRegistry Writes without Registry Callbacks Registry Callbacks EDR solutions monitor registry modifications through CmRegisterCallbackEx. This kernel callback mechanism allows drivers to intercept registry operations before they complete. When a process calls RegSetValue or RegCreateKey, registered callbacks receive notification with full context: the key path, the data being written, and the process responsible.\nKernel Patch Protection (PatchGuard) prevents vendors from hooking the kernel directly. CmRegisterCallbackEx provides a supported alternative, and most endpoint security products rely on it for registry visibility.\nBypass with ntuser.man Article by Rad Kawar: ntuser.man\n", 
+        "url": "https:\/\/kdbed.github.io\/posts\/pentest_persistence_registry\/"
+    },
+    
+    
+    
     "https:\/\/kdbed.github.io\/posts\/pentest_phishing\/": {
         
         "title": "Pentest - Phishing",

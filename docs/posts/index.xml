@@ -848,6 +848,13 @@
       <description>Password Cracking Hashcat Sample bash script to derive a wordlist from a known base word:&#xA;1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 #!/bin/bash # Starting word (krakencorp) base_word=&amp;#34;krakencorp&amp;#34; # Output file to save the generated passwords output_file=&amp;#34;crackedpasswords.txt&amp;#34; # Clear the output file if it exists &amp;gt; &amp;#34;$output_file&amp;#34; # Loop over all the rules in /usr/share/hashcat/rules/ for rule in /usr/share/hashcat/rules/*.rule; do # Apply each rule and append the result to crackedpasswords.</description>
     </item>
     <item>
+      <title>Pentest - Persistence - Registry</title>
+      <link>https://kdbed.github.io/posts/pentest_persistence_registry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/pentest_persistence_registry/</guid>
+      <description>Registry Persistence Registry persistence remains one of the most reliable ways to survive a reboot. Run keys, shell extensions, COM hijacks.&#xA;Registry Writes without Registry Callbacks Registry Callbacks EDR solutions monitor registry modifications through CmRegisterCallbackEx. This kernel callback mechanism allows drivers to intercept registry operations before they complete. When a process calls RegSetValue or RegCreateKey, registered callbacks receive notification with full context: the key path, the data being written, and the process responsible.</description>
+    </item>
+    <item>
       <title>Pentest - Phishing</title>
       <link>https://kdbed.github.io/posts/pentest_phishing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
