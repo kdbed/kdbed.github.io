@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       3f3c63c4-0f58-4be7-bb92-c6af38f7ed14
+:END:
+#+title: Inverted Totalitarianism
+#+hugo_base_dir:../
+
+
+* Democracy Incorporated - Sheldon S. Wolin
