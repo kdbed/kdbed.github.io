@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       65113969-a013-4bbb-b8d6-09f7056b0541
+:END:
+#+title: Misconfiguration Manager
+#+hugo_base_dir:../
+
+
+* Microsoft Configuration Manager tradecraft
+[[https://github.com/subat0mik/Misconfiguration-Manager][subat0mik]]
+[[https://specterops.io/blog/2024/03/05/misconfiguration-manager-overlooked-and-overprivileged/][specterops]]

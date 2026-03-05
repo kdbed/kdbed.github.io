@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       d22ebef3-4a77-4426-8488-eadfa055e9a0
+:END:
+#+title: ICMP Data Exfiltration
+#+hugo_base_dir:../
+
+* ICMP Data Exfiltration
+[[https://github.com/NaotaClone/Himitsu][NaotaClone]]
+[[https://infosecwriteups.com/icmp-exfiltration-with-himitsu-eed56c0b1cc7][infosecwriteups]]

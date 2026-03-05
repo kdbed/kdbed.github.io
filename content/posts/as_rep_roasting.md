@@ -1,6 +1,6 @@
 +++
 title = "AS-REP Roasting"
-author = ["svejk"]
+author = ["Kyle Bednar"]
 tags = ["impacket", "pentest", "kerberoasting", "kerberos", "Windows"]
 draft = false
 +++
@@ -50,3 +50,8 @@ hashcat -m 18200 -a 0  hash.txt wordlist.txt
 ```
 
 The hash is quickly cracked with `hashcat`.
+
+
+### ASRepCatcher {#asrepcatcher}
+
+[ASRepCatcher](https://github.com/Yaxxine7/ASRepCatcher)

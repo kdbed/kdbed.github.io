@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       62d72431-2fc0-4376-893f-a5ad4e8ad681
+:END:
+#+title: The Enshittification of American Power
+#+hugo_base_dir:../
+
+
+* The Enshittification of American Power
+[[https://www.wired.com/story/enshittification-of-american-power/?_sp=c442ee52-9973-49d2-8aaf-0b0c88aed2fd.1772155672641][wired]]

@@ -386,6 +386,13 @@
       <description>&lt;h2 id=&#34;icacls&#34;&gt;icacls&lt;/h2&gt;&#xA;&lt;h3 id=&#34;propagate-a-single&#34;&gt;Propagate a single&lt;/h3&gt;&#xA;&lt;p&gt;Suppose we need to push a single ACE through subdirectories:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;icacls &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;X:\PATH\TO\FOLDER\&amp;#34; /grant DOMAIN\group:(f) /t&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;ms&#34;&gt;MS&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc753525(v=ws.11)?redirectedfrom=MSDN&#34;&gt;learn.microsoft&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>ICMP Data Exfiltration</title>
+      <link>https://kdbed.github.io/posts/icmp_data_exfiltration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/icmp_data_exfiltration/</guid>
+      <description>&lt;h2 id=&#34;icmp-data-exfiltration&#34;&gt;ICMP Data Exfiltration&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/NaotaClone/Himitsu&#34;&gt;NaotaClone&lt;/a&gt;&#xA;&lt;a href=&#34;https://infosecwriteups.com/icmp-exfiltration-with-himitsu-eed56c0b1cc7&#34;&gt;infosecwriteups&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>IdentityIQEssentialsIntroduction</title>
       <link>https://kdbed.github.io/posts/identityiqessentialsintroduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -552,6 +559,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/mimikatz/</guid>
       <description>&lt;p&gt;**&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Misconfiguration Manager</title>
+      <link>https://kdbed.github.io/posts/misconfiguration_manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/misconfiguration_manager/</guid>
+      <description>&lt;h2 id=&#34;microsoft-configuration-manager-tradecraft&#34;&gt;Microsoft Configuration Manager tradecraft&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/subat0mik/Misconfiguration-Manager&#34;&gt;subat0mik&lt;/a&gt;&#xA;&lt;a href=&#34;https://specterops.io/blog/2024/03/05/misconfiguration-manager-overlooked-and-overprivileged/&#34;&gt;specterops&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>NetBIOS</title>
@@ -1315,6 +1329,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kdbed.github.io/posts/the_action_principle/</guid>
       <description>&lt;h2 id=&#34;the-action-principle&#34;&gt;The Action Principle&lt;/h2&gt;&#xA;&lt;p&gt;Define the Lagrangian as the following combination of the kinetic energy \(T\) and the potential energy \(V\):&lt;/p&gt;&#xA;&lt;p&gt;\[&#xA;L = T - V&#xA;\]&lt;/p&gt;&#xA;&lt;p&gt;\(L\) is a function of the coordinates \(x\) and the velocity \(\dot{x}\), which are treated as independent variables.&#xA;For a point particle&lt;/p&gt;&#xA;&lt;p&gt;\[&#xA;L(x,\dot{x}) = \frac{1}{2}m \sum_{i=1}^D (\dot{x}^i)^2 - V(x)&#xA;\]&lt;/p&gt;&#xA;&lt;p&gt;Taking derivatives&lt;/p&gt;&#xA;&lt;p&gt;\begin{align*}&#xA;\frac{\partial L}{\partial x^i} &amp;amp;= - \frac{\partial V}{\partial x^i} \\&#xA;\frac{\partial L}{\partial \dot{x}^i} &amp;amp;= m \dot{x}^i&#xA;\end{align*}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Enshittification of American Power</title>
+      <link>https://kdbed.github.io/posts/the_enshittification_of_american_power/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/the_enshittification_of_american_power/</guid>
+      <description>&lt;h2 id=&#34;the-enshittification-of-american-power&#34;&gt;The Enshittification of American Power&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.wired.com/story/enshittification-of-american-power/?_sp=c442ee52-9973-49d2-8aaf-0b0c88aed2fd.1772155672641&#34;&gt;wired&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tor</title>
