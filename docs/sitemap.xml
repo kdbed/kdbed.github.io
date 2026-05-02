@@ -56,6 +56,8 @@
   </url><url>
     <loc>https://kdbed.github.io/tags/azure/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/bad_successor_abusing_dmsa/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/tags/binary/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/binary_analysis/</loc>
@@ -524,6 +526,8 @@
   </url><url>
     <loc>https://kdbed.github.io/posts/python_visualize_active_directory_data/</loc>
   </url><url>
+    <loc>https://kdbed.github.io/posts/python_jail/</loc>
+  </url><url>
     <loc>https://kdbed.github.io/posts/quantum_mechanics/</loc>
   </url><url>
     <loc>https://kdbed.github.io/tags/quantumfieldtheory/</loc>
@@ -653,6 +657,8 @@
     <loc>https://kdbed.github.io/tags/unpacking/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/unredact_pixelized_text/</loc>
+  </url><url>
+    <loc>https://kdbed.github.io/posts/usb_pcap_analysis/</loc>
   </url><url>
     <loc>https://kdbed.github.io/posts/von_neumann_architecture/</loc>
   </url><url>

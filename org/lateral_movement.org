@@ -23,3 +23,5 @@ ssh -L local_port:destination_server_ip:remote_port ssh_server_hostname
 * Ligolo-ng
 [[https://github.com/nicocha30/ligolo-ng][nicocha30]]
 [[https://www.hackingarticles.in/a-detailed-guide-on-ligolo-ng/][hackingarticles]]
+[[https://arth0s.medium.com/ligolo-ng-pivoting-reverse-shells-and-file-transfers-6bfb54593fa5][arth0s]]
+[[https://infosecwriteups.com/from-foothold-to-takeover-mastering-pivoting-moves-d57310a86d37][infosecwriteups]]

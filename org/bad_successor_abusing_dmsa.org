@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       8b0ccb49-1aaf-49ae-930f-229a35f5da39
+:END:
+#+title: Bad Successor - Abusing dMSA
+#+hugo_base_dir:../
+
+
+* Bad Successor - Abusing dMSA
+[[https://www.akamai.com/blog/security-research/abusing-dmsa-for-privilege-escalation-in-active-directory][akamai]]

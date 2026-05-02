@@ -1,6 +1,6 @@
 +++
 title = "Lateral Movement"
-author = ["svejk"]
+author = ["Kyle Bednar"]
 tags = ["pivoting", "pentest"]
 draft = false
 +++
@@ -28,3 +28,5 @@ ssh -L local_port:destination_server_ip:remote_port ssh_server_hostname
 
 [nicocha30](https://github.com/nicocha30/ligolo-ng)
 [hackingarticles](https://www.hackingarticles.in/a-detailed-guide-on-ligolo-ng/)
+[arth0s](https://arth0s.medium.com/ligolo-ng-pivoting-reverse-shells-and-file-transfers-6bfb54593fa5)
+[infosecwriteups](https://infosecwriteups.com/from-foothold-to-takeover-mastering-pivoting-moves-d57310a86d37)
