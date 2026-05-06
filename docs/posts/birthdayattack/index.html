@@ -27,10 +27,249 @@
     <div class="page" data-level="1">
       <div class="content">
         <h1>Birthday Attack</h1>
-        <h2 id="birthday-attack">Birthday Attack</h2>
-<p>The birthday attack is named after the birthday paradox. The name is based on fact that in a room with 23 people or more, the odds are greater than 50% that two will share the same birthday. Many find this counterintuitive, and the birthday paradox illustrates why many people’s instinct on probability (and risk) is wrong. You are not trying to match a specific birthday (such as yours); you are trying to match any birthday.</p>
-<p>If you are in a room full of 23 people, you have a 1 in 365 chance of sharing a birthday with each of the 22 other people in the room, for a total of 22/365 chances. If you fail to match, you leave the room and Joe has a 21/365 chance of sharing a birthday with the remaining people. If Joe fails to match, he leaves the room and Morgan has a 20/365 chance, and so on. If you add 22/365 + 21/365 + 20/365 + 19/365 … + 1/365, you pass 50% probability.</p>
-<p>The birthday attack is used to create hash collisions. Just as matching your birthday is difficult, finding a specific input with a hash that collides with another input is difficult. However, just like matching any birthday is easier, finding any input that creates a colliding hash with any other input is easier due to the birthday attack.</p>
+        <h2 id="birthday-paradox">Birthday Paradox</h2>
+<h3 id="problem-statement">Problem Statement</h3>
+<p>What is the probability that at least two people in a group share the same birthday?</p>
+<h3 id="assumptions">Assumptions</h3>
+<ul>
+<li>365 days in a year (ignore leap years)</li>
+<li>Birthdays are uniformly distributed</li>
+<li>Each person&rsquo;s birthday is independent</li>
+</ul>
+<h3 id="key-insight">Key Insight</h3>
+<p>It is easier to compute the complement:</p>
+<p>Probability(at least one shared birthday) =
+1 - Probability(no shared birthdays)</p>
+<h3 id="probability-derivation">Probability Derivation</h3>
+<p>For n people:</p>
+<ul>
+<li>Person 1: 365/365</li>
+<li>Person 2: 364/365</li>
+<li>Person 3: 363/365</li>
+<li>&hellip;</li>
+<li>Person n: (365 - n + 1) / 365</li>
+</ul>
+<p>So:</p>
+<p>\[
+P(no\ match) = \frac{365}{365} \cdot \frac{364}{365} \cdot \frac{363}{365} \cdots \frac{365-n+1}{365}
+\]</p>
+<p>\[
+P(match) = 1 - P(no\ match)
+\]</p>
+<h3 id="key-results">Key Results</h3>
+<table>
+  <thead>
+      <tr>
+          <th>People</th>
+          <th>Probability of Match</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>10</td>
+          <td>11.7%</td>
+      </tr>
+      <tr>
+          <td>20</td>
+          <td>41.1%</td>
+      </tr>
+      <tr>
+          <td>23</td>
+          <td>50.7%</td>
+      </tr>
+      <tr>
+          <td>30</td>
+          <td>70.6%</td>
+      </tr>
+      <tr>
+          <td>50</td>
+          <td>97.0%</td>
+      </tr>
+      <tr>
+          <td>70</td>
+          <td>99.9%</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="why-it-s-counterintuitive">Why It’s Counterintuitive</h3>
+<p>People assume:
+&ldquo;There are 365 days, so we need ~180 people.&rdquo;</p>
+<p>But actually:</p>
+<ul>
+<li>We compare <strong>pairs</strong>, not individuals vs a fixed date</li>
+<li>Number of pairs:</li>
+</ul>
+<p>\[
+\frac{n(n-1)}{2}
+\]</p>
+<p>Example:</p>
+<ul>
+<li>n = 23 → 253 comparisons</li>
+</ul>
+<h3 id="intuition">Intuition</h3>
+<ul>
+<li>Probability grows <strong>nonlinearly</strong></li>
+<li>Around 23 people → ~50%</li>
+<li>Around 50 people → almost certain</li>
+</ul>
+<h3 id="real-world-notes">Real-World Notes</h3>
+<ul>
+<li>Birthdays are not perfectly uniform</li>
+<li>Seasonal effects exist</li>
+<li>Twins increase clustering slightly</li>
+</ul>
+<p>Despite this, the approximation is very accurate.</p>
+<h2 id="hash-collision-analysis--birthday-paradox-applied">Hash Collision Analysis (Birthday Paradox Applied)</h2>
+<h3 id="core-idea">Core Idea</h3>
+<p>A hash function maps a large input space into a finite output space.</p>
+<p>This is mathematically identical to:</p>
+<ul>
+<li>People → inputs</li>
+<li>Birthdays → hash outputs</li>
+</ul>
+<p>So:</p>
+<ul>
+<li>A &ldquo;collision&rdquo; = two inputs producing the same hash</li>
+</ul>
+<h3 id="birthday-bound">Birthday Bound</h3>
+<p>For a hash with N possible outputs:</p>
+<p>\[
+N = 2^k
+\]</p>
+<p>The number of random inputs needed for ~50% collision probability:</p>
+<p>\[
+n \approx 1.2 \cdot \sqrt{N} = 1.2 \cdot 2^{k/2}
+\]</p>
+<h3 id="key-insight">Key Insight</h3>
+<ul>
+<li>You do NOT need 2^k attempts to find a collision</li>
+<li>You only need ~2^(k/2)</li>
+</ul>
+<p>This is the <strong>birthday attack</strong></p>
+<h3 id="examples">Examples</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Hash Size</th>
+          <th>Possible Outputs</th>
+          <th>~50% Collision at</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>32-bit</td>
+          <td>2^32</td>
+          <td>~2^16 ≈ 65K</td>
+      </tr>
+      <tr>
+          <td>64-bit</td>
+          <td>2^64</td>
+          <td>~2^32 ≈ 4B</td>
+      </tr>
+      <tr>
+          <td>128-bit</td>
+          <td>2^128</td>
+          <td>~2^64</td>
+      </tr>
+      <tr>
+          <td>256-bit</td>
+          <td>2^256</td>
+          <td>~2^128</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="security-implications">Security Implications</h3>
+<h4 id="weak-hashes">Weak Hashes</h4>
+<ul>
+<li>32-bit or 64-bit hashes are trivially collision-prone</li>
+<li>Unsafe for identifiers or security use</li>
+</ul>
+<h4 id="cryptographic-hashes">Cryptographic Hashes</h4>
+<p>Designed to resist:</p>
+<ul>
+<li>Collision attacks</li>
+<li>Preimage attacks</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>MD5 → broken (collisions practical)</li>
+<li>SHA-1 → broken (collision attacks demonstrated)</li>
+<li>SHA-256 → currently secure</li>
+</ul>
+<h3 id="attack-types">Attack Types</h3>
+<h4 id="birthday-attack">Birthday Attack</h4>
+<p>Goal:</p>
+<ul>
+<li>Find ANY two inputs with same hash</li>
+</ul>
+<p>Complexity:
+\[
+O(2^{k/2})
+\]</p>
+<h4 id="preimage-attack">Preimage Attack</h4>
+<p>Goal:</p>
+<ul>
+<li>Given hash H, find input that produces it</li>
+</ul>
+<p>Complexity:
+\[
+O(2^k)
+\]</p>
+<h4 id="second-preimage-attack">Second Preimage Attack</h4>
+<p>Goal:</p>
+<ul>
+<li>Given input A, find different input B with same hash</li>
+</ul>
+<p>Complexity:
+\[
+O(2^k)
+\]</p>
+<h3 id="practical-security-takeaways">Practical Security Takeaways</h3>
+<ul>
+<li>Doubling hash size squares attack difficulty</li>
+<li>128-bit security requires 256-bit hashes (collision resistance)</li>
+<li>Never rely on:
+<ul>
+<li>Short hashes</li>
+<li>Truncated hashes without analysis</li>
+</ul>
+</li>
+</ul>
+<h3 id="real-world-applications">Real-World Applications</h3>
+<h4 id="where-collisions-matter">Where Collisions Matter</h4>
+<ul>
+<li>File integrity verification</li>
+<li>Digital signatures</li>
+<li>Certificate systems (PKI)</li>
+<li>Blockchain</li>
+</ul>
+<h4 id="where-collisions-can-break-systems">Where Collisions Can Break Systems</h4>
+<ul>
+<li>Deduplication systems</li>
+<li>Cache keys</li>
+<li>Session IDs</li>
+<li>Object storage identifiers</li>
+</ul>
+<h3 id="example-intuition">Example Intuition</h3>
+<p>If you generate random 64-bit IDs:</p>
+<ul>
+<li>After ~4 billion IDs</li>
+<li>You have a ~50% chance of at least one collision</li>
+</ul>
+<p>This surprises many engineers and leads to:</p>
+<ul>
+<li>Silent data corruption risks</li>
+<li>ID conflicts at scale</li>
+</ul>
+<h3 id="optional-approximation-formula">Optional: Approximation Formula</h3>
+<p>\[
+P(\text{collision}) \approx 1 - e^{-\frac{n(n-1)}{2N}}
+\]</p>
+<p>Where:</p>
+<ul>
+<li>n = number of inputs</li>
+<li>N = total hash space</li>
+</ul>
 <h2 id="compttia-security-plus--securityplus-dot-md"><a href="/posts/securityplus/">ComptTIA Security+</a></h2>
 
       </div>
