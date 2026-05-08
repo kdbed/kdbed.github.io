@@ -1387,6 +1387,13 @@
       <description>&lt;h2 id=&#34;usb-pcap-analysis&#34;&gt;USB PCAP Analysis&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://05t3.github.io/posts/Dissecting-USB-Traffic/#filtering-data&#34;&gt;05t3&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Userland Rootkit via LD_PRELOAD</title>
+      <link>https://kdbed.github.io/posts/userland_rootkit_via_ld_preload/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kdbed.github.io/posts/userland_rootkit_via_ld_preload/</guid>
+      <description>&lt;h2 id=&#34;userland-rootkit-via-ld-preload&#34;&gt;Userland Rootkit via LD_PRELOAD&lt;/h2&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;This challenge demonstrated a userland rootkit leveraging the dynamic linker (ld-linux) and LD_PRELOAD to manipulate program behavior without modifying the kernel.&lt;/p&gt;&#xA;&lt;p&gt;The rootkit:&lt;/p&gt;&#xA;&lt;p&gt;Injected a malicious shared library into all dynamically linked binaries&#xA;Hooked libc functions (e.g., &lt;code&gt;readdir&lt;/code&gt;, &lt;code&gt;fopen&lt;/code&gt;)&#xA;Hid files/directories by filtering results in userspace&lt;/p&gt;&#xA;&lt;p&gt;This resulted in:&lt;/p&gt;&#xA;&lt;p&gt;Missing directories despite known existence&#xA;Abnormal library loading behavior in SSH&#xA;Key Indicators of Compromise (IOCs)&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>von Neumann Architecture</title>
       <link>https://kdbed.github.io/posts/von_neumann_architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
